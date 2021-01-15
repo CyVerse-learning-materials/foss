@@ -1,119 +1,154 @@
 .. include:: cyverse_rst_defined_substitutions.txt
-.. include:: custom_urls.txt
+*****
+DEPRECATED: Visit `FOSS-2020 <https://cyverse-foss-2020.readthedocs-hosted.com/en/latest/>`_ for current pages
+*****
 
-|CyVerse_logo|_
+|foss-main|
 
-|Home_Icon|_
-`Learning Center Home <http://learning.cyverse.org/>`_
+CyVerse Learning Institute - Foundational Open Science Skills (FOSS) 2019
+------------------------------------
 
+Foundational Open Science Skills (FOSS) is a novel, camp-style training designed to prepare principal investigators and their lab teams, both new and established, to meet the growing expectations of funding agencies, publishers, and research institutions for scientific reproducibility and data accessibility.
 
-**WORKSHOP NAME**
-=================
-
-.. #### Comment: If the platform has an ICON place it here
-
-Welcome to [Longer_Workshop_Name]!
------------------------
-.. #### Comment: If the platform has an ICON place it here
-
-----
+Prior to the workshop, please visit the `Before you arrive <before/main.html>`_ page.
 
 
+**Workshop Level**
 
-.. toctree::
-	:maxdepth: 1
-  :caption: Before [Workshop] Starts
+There are no pre-requisites for FOSS, but the course will cover a lot of material in a short time. Participants who have limited computational experience should try to view the `Software Carpentry Core Lessons <https://software-carpentry.org/lessons/>`_ before attending.
 
-  before/main <self>
-  before/installation
-  before/faq
-  before/code_of_conduct
-  
-
-
-.. toctree::
-	:maxdepth: 1
-  :caption: Key information
-
-getting_started/agenda
-getting_started/instructors
-getting_started/glossary
-
-
-
-.. toctree::
-  :maxdepth: 1
-  :caption: [Area_1]
-
-  area_1/topic_1 <topic1.rst>
-  area_1/topic_2 <topic2.rst>
-
-
-
-  .. toctree::
-    :maxdepth: 1
-    :caption: [Area_2]
-
-    area_2/topic_1 <topicX.rst>
-    area_2/topic_2 <topicY.rst>
-
-
-
-	Delete this example guide page <example_directives_delete.rst>
-
-..
-	#### Comment: This manual has multiple pages. The table of contents assumes
-	you have an additional page called 'Platform Dashboard/Landing Page' with
-	content located in 'topic1.rst'. Copy 'topic2.rst' as many times as needed
-	for each major feature you using, and increment the number in your filename.
-	Finally, make sure that the last major feature uses the 'step3.rst' template,
-	as it has slightly different formatting to end the document.
-	Edit these titles and filenames as needed. Finally use 'faq.rst' to
-	create your list of Frequently Asked Questions. ####
-
-----
-
-.. #### Comment: Each platform should have a quick slide show or possibly video
-   tour. Slide shows should be HTML5, videos from YouTube
-
-.. raw:: html
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0;
-    overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="./_static/slides/index.html" frameborder="0" allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%;
-        height: 100%;"></iframe>
-    </div>
-
-----
-[About this workshop]
-.. #### Comment: Explain the main purpose of this workshop, intended audience,
-  Prerequisites, and anything else you think may be helpful for a person to
-  decide to attend.
-
-
+-----
 
 Expected outcomes:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
-.. #### Comment: Give ONE SENTENCE answers to each of the following, think
-   Elevator pitch, not campaign speech. At the end of this workshop, you should
-   be able to...
+- Familiarity with productivity software for organizing your lab group, communications, and research
+- How to scale out your computation from laptop to cloud and high performance computing (HPC) systems
+- How to manage data for open science and reproducibility
 
-- [Outcome_1]
-- [Outcome_2]
-- [Outcome_3]
+.. toctree::
+   :maxdepth: 1
+
+   FOSS 2019 Home <self>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Before you Arrive
+
+   before/main
+   before/installation
+   before/about_cyverse
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Getting Started
+
+   getting_started/intro
+   getting_started/code_of_conduct
+   getting_started/agenda
+   getting_started/open_sci_lab
+   getting_started/glossary
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Software Essentials
+
+   software_essentials/linux
+   software_essentials/version_control
+   software_essentials/communication
+   software_essentials/websites
+   software_essentials/commandline
+   software_essentials/R_Studio
+   software_essentials/RStudio_Git
+   software_essentials/continuous_integration
+
+.. toctree::
+   :maxdepth: 1
+   :caption: CyVerse
+
+   CyVerse/intro_to_cyverse
+   CyVerse/de
+   CyVerse/data_store
+   CyVerse/vice
+   CyVerse/atmo
+   CyVerse/tool_integration_app_building_DE
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Data Management
+
+   Data_management/overview
+   Data_management/FAIR
+   Data_management/dmp
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Moving On
+
+   moving_on/xsede
+   moving_on/cyberinfrastructure
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Containers
+
+   Containers/dockeronatmo
+   Containers/biocontainers
+   Containers/dockerintro
+   Containers/dockeradvanced
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Instructions and Reporting
 
 
 ----
 
+Course Instructors
+---------------------
+- Amanda Cooksey
+- Tina Lee
+- Tyson Swetnam
+- Ramona Walls
 
-Quick Links
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Guest instructors:
++++++++++++++++++++++
+- Fernando Rios (UA Libraries)
+- Michael Mandel (UA Eller College of Management)
 
+About CyVerse
+-------------
 
-- Schedule
-- [Feedback Link]
+**CyVerse Vision:** Transforming science through data-driven discovery.
+
+**CyVerse Mission:** Design, deploy, and expand a national
+cyberinfrastructure for life sciences research and train scientists in
+its use.
+
+CyVerse provides life scientists with powerful computational
+infrastructure to handle huge datasets and complex analyses, thus
+enabling data-driven discovery. Our powerful extensible platforms
+provide data storage, bioinformatics tools, image analyses, cloud
+services, APIs, and more.
+
+While originally created with the name iPlant Collaborative to serve
+U.S. plant science communities, CyVerse cyberinfrastructure is germane
+to all life sciences disciplines and works equally well on data from
+plants, animals, or microbes. By democratizing access to supercomputing
+capabilities, we provide a crucial resource to enable scientists to find
+solutions for the future.
+
+**CyVerse Homepage:** `http://www.cyverse.org <http://www.cyverse.org>`_
+
+Funding and Citations
+---------------------
+
+CyVerse is funded by the National Science Foundation under
+Award Numbers DBI-0735191, DBI-1265383, and DBI-1743442.
+
+Please cite CyVerse appropriately when you make use of our resources,
+`CyVerse citation policy <http://www.cyverse.org/acknowledge-cite-cyverse>`__
 
 
 ----
@@ -126,43 +161,15 @@ Quick Links
   click |Intercom| on the lower right-hand side of the page
 - Report an issue or submit a change:
   |Github Repo Link|
-- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
+- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+
 
 ----
 
-|Home_Icon|_
+.. |CyVerse logo| image:: ./img/cyverse_rgb.png
+	:width: 500
+	:height: 100
 
-`Learning Center Home <http://learning.cyverse.org/>`__
-
-
-.. Comment: Place Images Below This Line
-   use :width: to give a desired width for your image
-   use :height: to give a desired height for your image
-   replace the image name/location and URL if hyperlinked
-
-
- .. |Clickable hyperlinked image| image:: ./img/IMAGENAME.png
-    :width: 500
-    :height: 100
- .. _CyVerse logo: http://learning.cyverse.org/
-
- .. |Static image| image:: ./img/IMAGENAME.png
-    :width: 25
-    :height: 25
-
-
-
-.. Comment: Place URLS Below This Line
-
-   # Use this example to ensure that links open in new tabs, avoiding
-   # forcing users to leave the document, and making it easy to update links
-   # In a single place in this document
-
-   .. |Substitution| raw:: html # Place this anywhere in the text you want a hyperlink
-
-      <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
-
-
-.. |Github Repo Link|  raw:: html
-
-   <a href="FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX" target="blank">Github Repo Link</a>
+.. |foss-main| image:: ./img/foss-main.png
+  :width: 800
