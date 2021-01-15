@@ -15,7 +15,7 @@ We will cover both internal and external communication strategies during the wor
 
 Choosing which software to use for your internal lab communication can be complicated by the cost of setting up, the cost of maintaining, and simply by the sheer number of platforms that are out there.
 
-For this workshop, we are use `SLACK <https://slack.com/>`_ (Searchable Log of All Conversation & Knowledge). Microsoft's competitor to SLACK is `Microsoft Teams <https://teams.microsoft.com/start>`_.
+For this workshop, we use `SLACK <https://slack.com/>`_ (Searchable Log of All Conversation & Knowledge). Microsoft's competitor to SLACK is `Microsoft Teams <https://teams.microsoft.com/start>`_.
 
 Remember, the intention of these platforms are to **improve productivity** & not become a distraction.
 
@@ -24,7 +24,7 @@ Remember, the intention of these platforms are to **improve productivity** & not
 	**SLACK**
 
 	- Slack has `plenty of apps <https://slack.com/apps>`_ for coordinating multiple services, i.e. Calendars, Github, GoogleDrive, Box, etc.
-	- Slack is limiting unless you're willing to pay for the professional support. 
+	- Slack is limiting unless you're willing to pay for the professional support.
 
 	**Microsoft Teams**
 
@@ -39,13 +39,13 @@ Remember, the intention of these platforms are to **improve productivity** & not
 """"""""""""""""""""""""""
 
   - `BaseCamp <https://basecamp.com/>`_
-  
+
   - `Discord <https://discordapp.com/>`_
-  
+
   - `Mastodon <https://joinmastodon.org/>`_
-  
+
   - `Mattermost <https://mattermost.com/>`_
- 
+
 
 ----
 
@@ -55,13 +55,13 @@ Remember, the intention of these platforms are to **improve productivity** & not
   1. `Create a new Workspace <https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace>`_
 
   2. `Create channels, add apps & tools <https://get.slack.help/hc/en-us/articles/217626298-tips-for-team-creators-and-admins>`_
-    
+
 
 *Create a Gitter*
 ~~~~~~~~
 
    1. `Create a Workspace <https://gitter.im>`_
-   
+
    2. `Create channels <https://gitter.im/home/learn>`_
 ..
 	#### Comment: Suggested style guide:
@@ -80,16 +80,16 @@ Although we didn't cover it explicitly in the announcement for the workshop, com
 
 There are many ways scientists use social media and the web to share their data science ideas:
 
-1. `"Science Twitter" <https://www.sciencemag.org/news/2018/08/scientists-do-you-want-succeed-twitter-here-s-how-many-followers-you-need>`_ - is really just regular `Twitter <https://twitter.com/hashtag/science?lang=en>`_, but with a focus on following other scientists and organizations, and tweeting about research you're interested in. By building up a significant following, more people will know you, know about your work, and you'll have a higher likelihood of meeting other new collaborators. 
+1. `"Science Twitter" <https://www.sciencemag.org/news/2018/08/scientists-do-you-want-succeed-twitter-here-s-how-many-followers-you-need>`_ - is really just regular `Twitter <https://twitter.com/hashtag/science?lang=en>`_, but with a focus on following other scientists and organizations, and tweeting about research you're interested in. By building up a significant following, more people will know you, know about your work, and you'll have a higher likelihood of meeting other new collaborators.
 
-2. `Blogs <https://blogging.org/blog/top-science-blogs/>`_ - there are numerous platforms for blogging about research, the older platforms tend to dominate this space. Other platforms like, `Medium <https://medium.com/topic/data-science>`_ offer a place for reseachers to create personalized reading spaces and self publish. 
+2. `Blogs <https://blogging.org/blog/top-science-blogs/>`_ - there are numerous platforms for blogging about research, the older platforms tend to dominate this space. Other platforms like, `Medium <https://medium.com/topic/data-science>`_ offer a place for reseachers to create personalized reading spaces and self publish.
 
-3. Community groups - There are lists (and lists of lists) of `nationals research organizations <https://www.google.com/search?q=list+of+professional+science+organizations>`_, in which a researcher can become involved. These older organziations still rely on official websites, science journal blogs, and email lists to communicate with their members. In the earth sciences there are open groups which focus on communication like the `Earth Science Information Partners (ESIP) <https://www.esipfed.org/>`_ with progressive ideas about how data and science can be done. Other groups, like `The Carpentries <https://carpentries.org/>`_ and `Research Bazaar <https://resbazblog.wordpress.com/about/>`_ are focused on data science training and digital literacy. 
+3. Community groups - There are lists (and lists of lists) of `nationals research organizations <https://www.google.com/search?q=list+of+professional+science+organizations>`_, in which a researcher can become involved. These older organziations still rely on official websites, science journal blogs, and email lists to communicate with their members. In the earth sciences there are open groups which focus on communication like the `Earth Science Information Partners (ESIP) <https://www.esipfed.org/>`_ with progressive ideas about how data and science can be done. Other groups, like `The Carpentries <https://carpentries.org/>`_ and `Research Bazaar <https://resbazblog.wordpress.com/about/>`_ are focused on data science training and digital literacy.
 
 .. IMPORTANT::
    **Remember** Personal and Professional Accounts are Not Isolated
 
-   You decide what you post on the internet. Your scientist identity may be a part of your personal identity on social media, it might be separate. A future employer or current employer can see your old posts. What you post in your personal accounts can be considered a reflection of the organization you work for and may be used in decisions about hiring or dismissal. 
+   You decide what you post on the internet. Your scientist identity may be a part of your personal identity on social media, it might be separate. A future employer or current employer can see your old posts. What you post in your personal accounts can be considered a reflection of the organization you work for and may be used in decisions about hiring or dismissal.
 
 *Self-Paced Material*
 ---------------------

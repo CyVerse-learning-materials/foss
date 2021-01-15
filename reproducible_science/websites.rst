@@ -14,9 +14,9 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 
 `Bookdown <https://bookdown.org/>`_  is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
 
-`GitHub Pages <https://pages.github.com/>`_ using `Jekyll <https://jekyllrb.com/>`_, are another popular way of hosting websites on GitHub.
+`GitHub Pages <https://pages.github.com/>`_ using `Jekyll <https://jekyllrb.com/>`_ or `Bootstrap.js <https://getbootstrap.com/>`_, are another popular way of hosting websites via GitHub.
 
-`Confluence Wikis (CyVerse) <https://wiki.cyverse.org>`_ are another tool for documenting your workflow. 
+`Confluence Wikis (CyVerse) <https://wiki.cyverse.org>`_ are another tool for documenting your workflow.
 
 .. #### Comment: short description
 
@@ -28,7 +28,7 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 
 - publishing websites via `ReadTheDocs.com <https://readthedocs.com/dashboard/>`_ costs money.
 - You can work in an offline state, where you develop the materials and publish them to your localhost using `Sphinx <https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html>`_
-- You can work on a website template in a GitHub repository, and pushes are updated in near real time using ReadTheDocs.com. 
+- You can work on a website template in a GitHub repository, and pushes are updated in near real time using ReadTheDocs.com.
 
 *Bookdown*
 ~~~~~~~~~
@@ -46,7 +46,7 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 ~~~~~~~~~~~~~
 
 - CyVerse is paying for Confluence access.
-- Integration with other platforms like Jira. 
+- Integration with other platforms like Jira.
 - Scripting in the Confluence Wiki is different than other platforms and may be less reprodicuble.
 
 
@@ -59,19 +59,19 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
   1. `Install <https://docs.readthedocs.io/en/stable/install.html>`_
 
   2. `Use Github <https://github.com/rtfd/readthedocs.org>`_
-  
+
   3. `Create a ReadTheDocs account <https://readthedocs.org/accounts/signup/>`_
-    
+
 
 *Bookdown*
 ~~~~~~~~~~
 
    1. `Install R and RStudio <https://www.rstudio.com/products/rstudio/download/>`_
- 
+
    2. Install Bookdown package
-   
+
    .. code-block:: bash
-   
+
       install.packages("bookdown", dependencies=TRUE)
 
    3. Open the Bookdown demo and get started
@@ -80,20 +80,20 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 ~~~~~~~~~~~~~~
 
    1. Create a GitHub account
-   
+
    2. Clone the repo ``https://github.com/username/username.github.io``
-   
+
    3. Create an ``index.html``
-   
+
    4. Push it back to GitHub
 
 *CyVerse Confluence Wiki*
 ~~~~~~~~~~~~~~
 
-   1. Create a CyVerse Account and log into https://wiki.cyverse.org 
-   
+   1. Create a CyVerse Account and log into https://wiki.cyverse.org
+
    2. Create a a new Blank Page
-   
+
    3. Set permissions to share or make private
 
 **Methodology**

@@ -8,11 +8,11 @@
 **CI/CD**
 ======
 
-Building your own software, data management or workflow management systems requires you to do a significant amount of interpersonnel management, as well as tracking of development. 
+Building your own software, data management or workflow management systems requires you to do a significant amount of interpersonnel management, as well as tracking of development.
 
-Software engineers having long suffered under the burden of disorganization and communication with clients, have come up with a framework for developing software and sharing it with their users. 
+Software engineers having long suffered under the burden of disorganization and communication with clients, have come up with a framework for developing software and sharing it with their users.
 
-While data science applications have a different audience and intended result, the organizational practices of software developers are a valuable and useful tool to consider integrating into your open science lab group. 
+While data science applications have a different audience and intended result, the organizational practices of software developers are a valuable and useful tool to consider integrating into your open science lab group.
 
 **Frequently Used Terms**
 
@@ -22,14 +22,14 @@ While data science applications have a different audience and intended result, t
 - **Continuous Development:** a process for iterative software development and is an umbrella over several other processes including 'continuous integration', 'continuous testing', 'continuous delivery' and 'continuous deployment'
 - **Continuous Testing:** a process of testing and automating software development.
 - **Development:** the environment on your computer where you write code
-- **DevOps:** **Dev**\elopment and information techology **Op**\erations is the set of practices surrounding CI/CD 
+- **DevOps:** **Dev**\elopment and information techology **Op**\erations is the set of practices surrounding CI/CD
 - **Production:** environment where users access the final code after all of the updates and testing
 - **Stage:**  environment that is as similar to the production environment as can be for final testing
 
-**Continuous Development** 
+**Continuous Development**
 ~~~~~~~~~~~~~~~~~
 
-The software developer concept of 'continuous delivery' can be applied to your data science projects and lab. 
+The software developer concept of 'continuous delivery' can be applied to your data science projects and lab.
 
 As we've discussed, version control is an important component of modern software development. Critically, version control can also be used in data science applications and for research project management. There are two dominant forms of project management for continuous delivery in open source software: `Waterfall <https://en.wikipedia.org/wiki/Waterfall_model>`_ and `Agile Scrum <https://en.wikipedia.org/wiki/Agile_software_development>`_.
 
@@ -38,22 +38,22 @@ https://www.atlassian.com/continuous-delivery/principles/continuous-integration-
 **Agile**
 """""""""
 
-Agile development practices involve organizing a team around short term (1-2 week long) 'sprints'. Sprints are organized by `scrum master <https://en.wikipedia.org/wiki/Scrum_(software_development)>`_. Team members are assigned tasks and evaluate their results during sprint reviews and planning sessions. 
+Agile development practices involve organizing a team around short term (1-2 week long) 'sprints'. Sprints are organized by `scrum master <https://en.wikipedia.org/wiki/Scrum_(software_development)>`_. Team members are assigned tasks and evaluate their results during sprint reviews and planning sessions.
 
 **Waterfall**
 """""""""
 
-Similar to the common `Gantt chart <https://en.wikipedia.org/wiki/Gantt_chart>`_ a `waterfall model <https://en.wikipedia.org/wiki/Waterfall_model>`_ is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialisation of tasks. 
+Similar to the common `Gantt chart <https://en.wikipedia.org/wiki/Gantt_chart>`_ a `waterfall model <https://en.wikipedia.org/wiki/Waterfall_model>`_ is a breakdown of project activities into linear sequential phases, where each phase depends on the deliverables of the previous one and corresponds to a specialisation of tasks.
 
 
-.. note:: 
+.. note::
 
-   In this workshop, we're working with GitHub, but there are other services, like `GitLab <https://about.gitlab.com/>`_ or `Bitbucket <https://bitbucket.org>`_ which might fit your needs better. 
+   In this workshop, we're working with GitHub, but there are other services, like `GitLab <https://about.gitlab.com/>`_ or `Bitbucket <https://bitbucket.org>`_ which might fit your needs better.
 
 **Continuous Integration**
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Doing reproducible science requires you to host your code and versioned software used to complete the analysis, in addition to the actual data. GitHub or Gitlab could become the central point supporting your data science lab.  
+Doing reproducible science requires you to host your code and versioned software used to complete the analysis, in addition to the actual data. GitHub or Gitlab could become the central point supporting your data science lab.
 
 Powerful uses of GitHub include integration with other web services, like container registries (`DockerHub <https://hub.docker.com/>`_), websites (`ReadTheDocs <https://readthedocs.org/>`_, web sites `<https://pages.github.com/>`_), continuous integration (`CircleCI <https://circleci.com>`_, `Jenkins <https://jenkins.io/>`_, `Travis <https://travis-ci.org/>`_), and workflow managers `GitHub Actions <https://github.com/features/actions>`_.
 
@@ -72,8 +72,8 @@ The most popular CI tools are:
 
  * building or hosting services to a community
  * developing versioned copies of containers for public consumption
- * DevOps + Data Science 
- 
+ * DevOps + Data Science
+
 **Travis CI**
 """""""""
 
@@ -107,7 +107,7 @@ You can view a diverse list of different badges on `Shields.io <https://shields.
 ---------
 
 Now you can pass the ``style`` GET argument,
-to get custom styled badges same as you would for shields.io. 
+to get custom styled badges same as you would for shields.io.
 If no argument is passed, ``flat`` is used as default.
 
 +---------------+---------------------+

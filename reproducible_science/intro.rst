@@ -89,7 +89,7 @@ FOSS in the context of creating a reproducible experiment. The goal will be
 to give an example of how connecting various software pieces and practices can
 generate a well-documented research project. Though the example will be drawn
 from a biological example, the ideas an approaches apply to the sciences in
-general. 
+general.
 
 - |Reproducibility Tutorial|
 
