@@ -8,9 +8,6 @@
 **FAIR Data**
 --------------------
 
-Read the `FAIR paper <https://www.nature.com/articles/sdata201618>`_. It's short.
-
-
 **Vocabulary**
   - Metadata
   - PID: Permanent Identifier
@@ -21,6 +18,10 @@ Read the `FAIR paper <https://www.nature.com/articles/sdata201618>`_. It's short
   - Search Index
   - Access protocol
 
+FAIR Principles
+===============
+
+In 2016, the |FAIR Guiding Principles|_ for scientific data management and stewardship were published in Scientific Data. Read it. Its short.
 
 **Findable**
  - F1. (meta)data are assigned a globally unique and persistent identifier
@@ -45,6 +46,30 @@ Read the `FAIR paper <https://www.nature.com/articles/sdata201618>`_. It's short
  - R1.2. (meta)data are associated with detailed provenance
  - R1.3. (meta)data meet domain-relevant community standard
 
+CARE Principles
+===============
+
+The |CARE principles|_ for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event “Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop,” 8 November 2018, Gaborone, Botswana.
+
+**Collective Benefit**
+  - C1. For inclusive development and innovation
+  - C2. For improved governance and citizen engagement
+  - C3. For equitable outcomes
+
+**Authority to Control**
+  - A1. Recognizing rights and interests
+  - A2. Data for governance
+  - A3. Governance of data
+
+**Responsibility**
+  - R1. For positive relationships
+  - R2. For expanding capability and capacity
+  - R3. For Indigenous languages and worldviews
+
+**Ethics**
+  - E1. For minimizing harm and maximizing benefit
+  - E2. For justice
+  - E3. For future use
 
 FAIR - TLC
 ===============
@@ -121,7 +146,14 @@ https://www.nature.com/articles/sdata201618
 
       <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
 
+.. |FAIR Guiding Principles| raw:: html
 
-.. |Github Repo Link|  raw:: html
+   <a href="https://www.nature.com/articles/sdata201618" target="_blank">FAIR Guiding Principles</a>
+
+.. |CARE principles| raw:: html
+
+   <a href="https://www.gida-global.org/care" target="_blank">CARE principles</a>
+
+.. |Github Repo Link| raw:: html
 
    <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/Data_management/FAIR.rst" target="blank">Github Repo Link</a>

@@ -11,7 +11,7 @@
 .. #### Comment: Overview of the DE and hands on of basic features
 
 |DE_icon|
- 
+
 **Why use the DE?**
 ^^^^^^^^^^^^^^^^^^^
 
@@ -68,7 +68,7 @@ When adding new apps to the DE, developers have the option of adding the app to 
 `Analyses window <https://wiki.cyverse.org/wiki/display/DEmanual/Using+the+Analyses+Window>`_
 -----------------------------------------------------------------------------------------------
 
-The analysis window provides the status (submitted, running, failed, completed) of each of your analyses. 
+The analysis window provides the status (submitted, running, failed, completed) of each of your analyses.
 
 |DE_analyses|
 
@@ -114,20 +114,20 @@ Additional resources
 
 .. |DE_apps_operation| image:: ../img/de/DE_apps_operation.png
     :width: 750
-    
+
 .. |DE_blank| image:: ../img/de/DE_blank.png
     :width: 750
-    
+
 .. |DE_dots_menu| image:: ../img/de/DE_dots_menu.png
     :width: 750
-    
+
 .. |DE_word_count| image:: ../img/de/DE_word_count.png
     :width: 750
 
 .. |DE_communities| image:: ../img/de/DE_communities.png
     :width: 750
 
-    
+
 .. Comment: Place URLS Below This Line
 
    # Use this example to ensure that links open in new tabs, avoiding

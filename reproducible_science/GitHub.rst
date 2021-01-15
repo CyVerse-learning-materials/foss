@@ -8,7 +8,7 @@
 **GitHub**
 ===================
 
-`Version Control <https://en.wikipedia.org/wiki/Version_control>`_ is an important component in software development which manages changes to documents, websites, code, or other digital information. Version control can save you when code changes break things. Web hosting of your code repositories lets you share and work on code together and save your work in the event of a hardware failure. 
+`Version Control <https://en.wikipedia.org/wiki/Version_control>`_ is an important component in software development which manages changes to documents, websites, code, or other digital information. Version control can save you when code changes break things. Web hosting of your code repositories lets you share and work on code together and save your work in the event of a hardware failure.
 
 The `most commmon version control software <https://en.wikipedia.org/wiki/List_of_version-control_software>`_ in data science are ``git``, ``svn``, ``cvs``, and ``bzr``.
 
@@ -38,7 +38,7 @@ In this lesson you will learn how to:
 
 
 .. Prerequisites::
-	
+
    In order to complete this exercise you should have already installed ``git`` for the command line (`instructions <https://git-scm.com/downloads>`_) & created an account on the `GitHub <https://github.com/>`_
 
 .. Important::
@@ -100,7 +100,7 @@ OR
    cd
    mkdir -p github/lab
    cd github/lab
-   
+
 
 2. Initialize folder as a repository with ``git``
 
@@ -234,7 +234,7 @@ OR
 
    cd path/to/repo
    #common practice to pull before commiting anything
-   git pull #does a fetch for you 
+   git pull #does a fetch for you
    git checkout -b new-branch #creates a new branch and puts you on that branch
    #set new branch upstream
    git push --set-upstream origin new-branch
@@ -252,7 +252,7 @@ OR
 .. code-block:: bash
 
    git pull
-   git add 
+   git add
    commit -am "changed a file" #stage changes and write a message
    git push
 
@@ -330,7 +330,7 @@ Pull requests are useful to have another set of eyes to review changes  before m
 ~~~~~~~~
 These are *Online only*
 
-- Versioning 
+- Versioning
 	1. Go to "Releases"
 	2. Click "Create a new release"
 	3. Tag version: Version #
@@ -349,37 +349,37 @@ These are *Online only*
 .. Definitions::
 
    **Git** - tool for version control.
-   
+
    **GitHub** - hosted server that is also interactive.
-   
+
    **repo** - short for repository; GitHub lets you create a remote repository online.
-   
+
    **local** - on your personal computer.
-   
+
    **clone** - copy of a repository that lives locally on your computer. Pushing changes will affect the repository online.
-   
+
    **fetch** - getting latest changes to the repository on your local computer.
-   
+
    **branch** - parallel to the master branch; allows you to make changes without affecting the master branch. Changes made on a branch can be merged back to the master.
-   
+
    **fork** - copy of someone else's repository stored locally on your account. From forks, you can make pull requests to the master branch.
-   
+
    **upstream** - primary or master branch of original repository.
-   
+
    **downstream** - branch or fork of repository.
-   
+
    **untracked** - changes made locally but not yet commited or pushed to the online repo.
-   
+
    **staged** - item added to the repo.
-   
+
    **commit** - finalize a change.
-   
+
    **push** - add changes back to the remote repository.
-   
+
    **merge** - takes changes from a branch or fork and applies them to the master.
-   
+
    **pull request** - proposed changes to/within a repository.
-   
+
    **issue** - suggestions or tasks needed for the repository. Allows you to track decisions, bugs with the repository, etc.
 
 
@@ -393,18 +393,18 @@ Here is a list of the most important commands in Git:
 
     * - Git Task
       - Command
-      - Description 
+      - Description
     * - Set up your profile locally
       - ``git config --global user.name "Cy Unicorn"``
       - Set your user name
-    * - 
+    * -
       - ``git config --global user.email Cy1@cyverse.org``
       - Set your email address
     * - Create a Repository locally
       - ``git init``
       - Initialize a folder as a  ``git`` repository
     * - Get an existing repository from a web service
-      - ``git clone ssh://git@github.com/[username]/[repository-name].git`` 
+      - ``git clone ssh://git@github.com/[username]/[repository-name].git``
       - Create a local copy of a remote repository
 
 .. list-table::
@@ -412,92 +412,92 @@ Here is a list of the most important commands in Git:
 
     * - Basic Snapshots
       - Command
-      - Description 
-    * - 
-      - ``git status`` 
+      - Description
+    * -
+      - ``git status``
       - Check status of the repository
-    * -  
-      - ``git add [file-name.txt]`` 
+    * -
+      - ``git add [file-name.txt]``
       - Add a file to "the staging area"
     * -
-      - ``git add -A`` 
-      - Add all new and changed files to "the staging area" 
+      - ``git add -A``
+      - Add all new and changed files to "the staging area"
     * -
       - ``git commit -m "[brief commit message]"``
       - Commit changes to "the staging area"
-    * - 
-      - ``git rm -r [file-name.txt]`` 
-      - Remove a file (or folder) 
     * -
-      -`git push` 
+      - ``git rm -r [file-name.txt]``
+      - Remove a file (or folder)
+    * -
+      -`git push`
       - Push changes to remote repository (remembered branch)
 
 .. list-table::
     :header-rows: 1
 
     * - Branching & Merging
-      - Description 
-    * - ``git branch`` 
-      - List branches (the asterisk denotes the current branch) 
-    * - ``git branch -a`` 
-      - List all branches (local and remote) 
-    * - ``git branch [branch name]`` 
-      - Create a new branch 
-    * - ``git branch -d [branch name]`` 
-      - Delete a branch 
+      - Description
+    * - ``git branch``
+      - List branches (the asterisk denotes the current branch)
+    * - ``git branch -a``
+      - List all branches (local and remote)
+    * - ``git branch [branch name]``
+      - Create a new branch
+    * - ``git branch -d [branch name]``
+      - Delete a branch
     * - ``git push origin --delete [branch name]``
-      - Delete a remote branch 
-    * - ``git checkout -b [branch name]`` 
-      - Create a new branch and switch to it 
-    * - ``git checkout -b [branch name] origin/[branch name]`` 
-      - Clone a remote branch and switch to it 
-    * - ``git checkout [branch name]`` 
-      - Switch to a branch 
-    * - ``git checkout -`` 
-      - Switch to the branch last checked out 
-    * - ``git checkout -- [file-name.txt]`` 
-      - Discard changes to a file 
-    * - ``git merge [branch name]`` 
-      - Merge a branch into the active branch 
-    * - ``git merge [source branch] [target branch]`` 
-      - Merge a branch into a target branch 
-    * - ``git stash`` 
-      - Stash changes in a dirty working directory 
-    * - ``git stash clear`` 
-      - Remove all stashed entries 
+      - Delete a remote branch
+    * - ``git checkout -b [branch name]``
+      - Create a new branch and switch to it
+    * - ``git checkout -b [branch name] origin/[branch name]``
+      - Clone a remote branch and switch to it
+    * - ``git checkout [branch name]``
+      - Switch to a branch
+    * - ``git checkout -``
+      - Switch to the branch last checked out
+    * - ``git checkout -- [file-name.txt]``
+      - Discard changes to a file
+    * - ``git merge [branch name]``
+      - Merge a branch into the active branch
+    * - ``git merge [source branch] [target branch]``
+      - Merge a branch into a target branch
+    * - ``git stash``
+      - Stash changes in a dirty working directory
+    * - ``git stash clear``
+      - Remove all stashed entries
 
 .. list-table::
     :header-rows: 1
 
     * - Sharing & Updating Projects
-      - Description 
-    * - ``git push origin [branch name]`` 
-      - Push a branch to your remote repository 
-    * - ``git push -u origin [branch name]`` 
+      - Description
+    * - ``git push origin [branch name]``
+      - Push a branch to your remote repository
+    * - ``git push -u origin [branch name]``
       - Push changes to remote repository (and remember the branch)
-    * - ``git push`` 
+    * - ``git push``
       - Push changes to remote repository (remembered branch)
-    * - ``git push origin --delete [branch name]`` 
+    * - ``git push origin --delete [branch name]``
       - Delete a remote branch
-    * - ``git pull`` 
+    * - ``git pull``
       - Update local repository to the newest commit
-    * - ``git pull origin [branch name]`` 
-      - Pull changes from remote repository 
-    * - ``git remote add origin ssh://git@github.com/[username]/[repository-name].git`` 
-      - Add a remote repository 
-    * - ``git remote set-url origin ssh://git@github.com/[username]/[repository-name].git`` 
-      - Set a repository's origin branch to SSH 
+    * - ``git pull origin [branch name]``
+      - Pull changes from remote repository
+    * - ``git remote add origin ssh://git@github.com/[username]/[repository-name].git``
+      - Add a remote repository
+    * - ``git remote set-url origin ssh://git@github.com/[username]/[repository-name].git``
+      - Set a repository's origin branch to SSH
 
 .. list-table::
     :header-rows: 1
 
     * - Inspection & Comparison
-      - Description 
-    * - ``git log`` 
+      - Description
+    * - ``git log``
       - View changes
-    * - ``git log --summary`` 
+    * - ``git log --summary``
       - View changes (detailed)
-    * - ``git diff [source branch] [target branch]`` 
+    * - ``git diff [source branch] [target branch]``
       - Preview changes before merging
 
 .. |Git_Hub| image:: ../img/git-logo.png

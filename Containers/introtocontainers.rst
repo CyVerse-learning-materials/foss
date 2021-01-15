@@ -44,7 +44,7 @@ We can move and scale our containerized applications; containers effectively gua
 |dockerdocs|
 ^^^^^^^^^^^^
 
-Docker is a platform  to build, share, and run applications with containers. Docker Engine is available on a variety of |linuxdocker| , |macdocker| and |windowsdocker| through Docker Desktop. 
+Docker is a platform  to build, share, and run applications with containers. Docker Engine is available on a variety of |linuxdocker| , |macdocker| and |windowsdocker| through Docker Desktop.
 
 Docker images are built from Dockerfiles. A **Dockerfile** is a text document that contains all the commands you would normally execute manually in order to build a Docker image. Docker can build images automatically by reading the instructions from a Dockerfile.
 
@@ -67,11 +67,11 @@ Other things to note about Docker:
 ^^^^^^^^^^^^^^^^^
 Singularity was created to run complex applications on HPC clusters in a simple, portable, and reproducible way. You are the **same user inside a container as outside**, and cannot gain additional privilege on the host system by default.
 
-Singularity images are built from `definition files <https://sylabs.io/guides/3.5/user-guide/cli/singularity_build.html>`_. Like Dockerfiles, they provide a list of commands necessary to build the image. They also have a very specific format although it is a different format from Dockerfiles. 
+Singularity images are built from `definition files <https://sylabs.io/guides/3.5/user-guide/cli/singularity_build.html>`_. Like Dockerfiles, they provide a list of commands necessary to build the image. They also have a very specific format although it is a different format from Dockerfiles.
 
 Fortunately, Singularity will automatically convert and run Docker images (so you may not need to learn how to build a Singularity image at all).
 
-Once built, the Singularity image will be saved as a .sif file in your local working directory. You can easily see your image when you list your files but you may have images files saved to lots of different directories. 
+Once built, the Singularity image will be saved as a .sif file in your local working directory. You can easily see your image when you list your files but you may have images files saved to lots of different directories.
 
 |kubernetes|
 
@@ -97,7 +97,7 @@ Once the application instances are created, a Kubernetes Deployment Controller c
 
 **Image registry:** a storage and content delivery system, such as that used by Docker
 
-.. Warning:: 
+.. Warning::
 
     Only use images from trusted sources or images for which you can see the Dockerfile. An image from an untrusted source could contain something other than what it's labeled (eg. malware). If you can see the Dockerfile you can see exactly what is in the image.
 
@@ -131,17 +131,17 @@ Although anyone can create a BioContainer, the majority of BioContainers are cre
 - |biocondagithub| is a channel for the conda package manager specializing in bioinformatics software. It consists of:
 
 - Over 800 contributors that add, modify, update and maintain the recipes
-- A repository of > 7000 bioinformatics packages ready to use 
+- A repository of > 7000 bioinformatics packages ready to use
 - **Each package added to Bioconda also has a corresponding Docker BioContainer automatically created and uploaded to Quay.io**
 - You can `contribute <https://bioconda.github.io/contributing.html>`_ to the Bioconda project by building your own packages. Each package will also be made available as a BioContainer at |quayio|
 
 
-.. Note:: 
+.. Note::
 
-    The BioContainers registry search returns partial matches and matches to the tool description. So, if you want to find all the tools relevant to Nanopore analysis you can search for 'nanopore'. 
+    The BioContainers registry search returns partial matches and matches to the tool description. So, if you want to find all the tools relevant to Nanopore analysis you can search for 'nanopore'.
 
 
-.. Note:: You want the docker images, not the Conda packages. Conda packages are not containers. 
+.. Note:: You want the docker images, not the Conda packages. Conda packages are not containers.
 
 |quayio|
 ^^^^^^^^^
@@ -150,27 +150,27 @@ Quay is another general image registry. It works the same way as Docker Hub. How
 **Hands-on**
 ------------
 
-To run your BioContainer you will need a computer with Docker installed. 
+To run your BioContainer you will need a computer with Docker installed.
 
-Launch this Atmosphere instance: **Ubuntu 18.04 GUI XFCE Base** 
- 
+Launch this Atmosphere instance: **Ubuntu 18.04 GUI XFCE Base**
+
 How to install Docker
 ^^^^^^^^^^^^^^^^^^^^^
 
-Installing Docker on your computer takes a little time but it is reasonably straight forward and it is a one-time setup. |How to install Docker|. 
+Installing Docker on your computer takes a little time but it is reasonably straight forward and it is a one-time setup. |How to install Docker|.
 
 Docker installation is much easier on an Atmosphere instance with the 'ezd' command.
 
 .. code-block:: bash
 
     $ ezd
-    
 
-Get data to use with your container 
+
+Get data to use with your container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |setupicommands|
- 
+
 .. code-block:: bash
 
    $ cd Desktop
@@ -180,9 +180,9 @@ Get data to use with your container
 Use 'docker pull' to get the image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to |quayio| and search for 'porechop' in the search bar at the top of the page. 
+Go to |quayio| and search for 'porechop' in the search bar at the top of the page.
 
-Click on the 'tag' icon on the left side of the screen to show all the available 'porechop' images. 
+Click on the 'tag' icon on the left side of the screen to show all the available 'porechop' images.
 
 |biocontainers3|
 
@@ -190,9 +190,9 @@ Click the 'fetch tag' icon at the right and choose 'Docker pull (by tag)' from t
 
 |biocontainers8|
 
-Now you will need to pull the image from the registry onto your computer. Use the 'docker pull' command you copied from the registry above. 
+Now you will need to pull the image from the registry onto your computer. Use the 'docker pull' command you copied from the registry above.
 
-.. Note:: 
+.. Note::
     If you are working on a system for which you don't have root permissions you will need to use 'sudo' and provide your password. Like this:
 
 .. code-block:: bash
@@ -209,20 +209,20 @@ The easiest way to test the container to run the help command for the tool. In t
 .. code-block:: bash
 
 	$ sudo docker run --rm -v $(pwd):/working-dir -w /working-dir --entrypoint="porechop" quay.io/biocontainers/porechop:0.2.3_seqan2.1.1--py36h2d50403_3 -h
-	
+
 From the result we are able to see the only required option is '-i INPUT'. Options in [square brackets] are not required.
 
 Now we can run the container with our data file to see the output.
 
 .. code-block:: bash
-	
+
 	$ sudo docker run --rm -v $(pwd):/working-dir -w /working-dir --entrypoint="porechop" quay.io/biocontainers/porechop:0.2.3_seqan2.1.1--py36h2d50403_3 -i SRR6059710.fastq -o porechop_output.fastq
 
 We can break the command down into pieces so it is easier to read (the backslash represents where we have broken the line).
 
 .. code-block:: bash
 
-    sudo \ 
+    sudo \
     docker run \
     --rm \
     -v $(pwd):/working-dir \
@@ -246,7 +246,7 @@ What it All Means
 
 
 
-.. Important:: 
+.. Important::
 
     You must supply an entrypoint on the command line when you run a BioContainer. It is possible to build entrypoints into a container but that is not he case with BioContainers.
 
@@ -255,7 +255,7 @@ What it All Means
 |porechopdone|
 
 
-The output from Porechop is saved into the working directory within the container. We ran the container we mounted our current *local* working directory into the working directory *within the container*. The analysis has finished, the container has been removed (remember --rm) and now we should find our outputs in our *local* current working directory. 
+The output from Porechop is saved into the working directory within the container. We ran the container we mounted our current *local* working directory into the working directory *within the container*. The analysis has finished, the container has been removed (remember --rm) and now we should find our outputs in our *local* current working directory.
 
 List the files:
 
@@ -282,7 +282,7 @@ Useful Links
 Some examples of public/private registries to consider for your research needs:
 
 - `Docker Cloud <https://cloud.docker.com/>`_
-- `Docker Hub <https://hub.docker.com/>`_ 
+- `Docker Hub <https://hub.docker.com/>`_
 - `Docker Trusted Registry <https://docs.docker.com/ee/dtr/>`_
 - `Amazon Elastic Container Registry <https://aws.amazon.com/ecr/>`_
 - `Google Container Registry <https://aws.amazon.com/ecr/>`_
@@ -356,7 +356,7 @@ Some examples of public/private registries to consider for your research needs:
 .. |windowsdocker|  raw:: html
 
    <a href="https://docs.docker.com/docker-for-windows/install" target="blank">Windows</a>
-   
+
 .. |setupicommands|  raw:: html
 
     <a href="https://cyverse-data-store-quickstart.readthedocs-hosted.com/en/latest/" target="blank">Install iCommands</a>
@@ -387,7 +387,7 @@ Some examples of public/private registries to consider for your research needs:
 
 .. |pullquayio| image:: ../img/biocontainers11.png
   :width: 750
-  
+
 .. |porechoprun| image:: ../img/biocontainers6.png
   :width: 750
 
@@ -399,7 +399,3 @@ Some examples of public/private registries to consider for your research needs:
 
 .. |porechopout| image:: ../img/biocontainers12.png
   :width: 750
-
-
-
-

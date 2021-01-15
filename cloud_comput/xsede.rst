@@ -11,14 +11,14 @@
 
 While CyVerse provides free and open resources for data storage and computing, you may find that your work is pushing the limits of what CyVerse offers in its core services.
 
-By design, there are other national research organizations whom you should be aware of, and ready to interface with. CyVerse is a partner with numerous other organizations, and can be used as a nexus to send your data and algorithms to the largest public research computing centers in the world. 
+By design, there are other national research organizations whom you should be aware of, and ready to interface with. CyVerse is a partner with numerous other organizations, and can be used as a nexus to send your data and algorithms to the largest public research computing centers in the world.
 
 **XSEDE**
 --------
 
 The `eXtreme Science and Engineering Discovery Environment (XSEDE) <https://www.xsede.org/>`_ is a single virtual system that scientists can use to interactively share computing resources, data and expertise. People around the world use these resources and services — things like supercomputers, collections of data and new tools.
 
-**Exercise** 
+**Exercise**
 
 1. Sign up for an XSEDE account via the `User Portal <https://portal.xsede.org/>`_
 
@@ -29,9 +29,9 @@ The `eXtreme Science and Engineering Discovery Environment (XSEDE) <https://www.
 **Jetstream**
 ~~~~~~~~
 
-Jetstream is CyVerse Atmosphere deployed on XSEDE. Allocations can be requested using the XSEDE portal. 
+Jetstream is CyVerse Atmosphere deployed on XSEDE. Allocations can be requested using the XSEDE portal.
 
-With Jetstream, you can launch larger VMs than on CyVerse (currently up to 44-cores) with an option for GPU computing in the near future. 
+With Jetstream, you can launch larger VMs than on CyVerse (currently up to 44-cores) with an option for GPU computing in the near future.
 
 `Jetstream API Documentation <https://iujetstream.atlassian.net/wiki/spaces/JWT/overview>`_
 
@@ -43,12 +43,12 @@ CyVerse resources are mirrored between the University of Arizona and the `Texas 
 **Open Science Grid**
 ~~~~~~~
 
-The `OpenScienceGrid (OSG) <https://opensciencegrid.org/>`_ is another CyVerse partner. You can use the OSG through our Discovery Environmetn to launch high throughput computing jobs. 
+The `OpenScienceGrid (OSG) <https://opensciencegrid.org/>`_ is another CyVerse partner. You can use the OSG through our Discovery Environmetn to launch high throughput computing jobs.
 
 **CyVerse Powered By**
 ------------
 
-CyVerse supports "`Powered by <http://www.cyverse.org/powered-by-cyverse>`_" projects which utilize more of the available CyVerse cyberinfrastructure than are exposed through its public services. 
+CyVerse supports "`Powered by <http://www.cyverse.org/powered-by-cyverse>`_" projects which utilize more of the available CyVerse cyberinfrastructure than are exposed through its public services.
 
 ----
 

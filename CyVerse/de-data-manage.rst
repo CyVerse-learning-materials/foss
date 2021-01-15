@@ -11,7 +11,7 @@
 .. #### Comment: Data management in the DE
 |DE_icon|
 
- 
+
 DE Basics Walkthrough
 ===============
  - Log in at https://de.cyverse.org/
@@ -30,24 +30,24 @@ Data Window
 |DE_dots_menu|
 
  - `Download <https://wiki.cyverse.org/wiki/display/DEmanual/Downloading+Files+and+Folders>`_ the shared file.
- 
+
 
 Using metadata in the DE
 ========================
 
  - `Using metadata in the DE <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE>`_ :
- 
+
 |DE_metadata|
- 
+
  - `Search <https://wiki.cyverse.org/wiki/display/DEmanual/Searching+for+Data+Items>`_ for data in the DE:
- 
+
 |DE_search|
 
  - Try a simple search for the word "maize"
  - Try an advanced search for attribute = subject and value = maize
  - Other options to be covered on Tuesday:
  	- `bulk metadata application <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Addingbulkmetadatatomultiplefilesorfolders>`_
-	- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_ 
+	- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_
 
 
 Advanced Metadata Usage
@@ -55,9 +55,9 @@ Advanced Metadata Usage
 
 The Data Commons provides advanced metadata features in the Discovery Environment, including:
 
-- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_ 
+- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_
 
-**Exercise:** 
+**Exercise:**
 - Open the DE
 - Apply a Plant Ontology template to a folder.
 - Apply an ontology term to a file or folder.
@@ -81,9 +81,9 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
  - Move into B123
  - Upload >> Import from URL...
  - paste each of the URLs below into a slot. This must be done in two batches.
- 
+
  .. code-block:: bash
- 
+
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/012.txt
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/123.txt
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/234.txt
@@ -93,8 +93,8 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/678.txt
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/789.txt
       https://raw.githubusercontent.com/CyVerse-learning-materials/foss-2020/master/slides/B123/Rice_metadata.csv
-      
- 
+
+
 2. Apply metadata
 - In the DE apply the DE apply metadata to the contents of B123
 	- Browse to B123
@@ -106,7 +106,7 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
 	- Select the file B123/Rice_metadata.csv
 	- Browse back to B123
 	- View the metadata of the different files in the directory
-	
+
 3. Advanced search
 - Click on the search magnifying glass
 - Click +
