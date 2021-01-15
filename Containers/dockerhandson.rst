@@ -24,7 +24,7 @@ For this simple hands-on exercise, let's containerize ``fastqe`` tool - https://
 Given a fastq file in Illumina 1.8+/Sanger format, calculate the mean (rounded) score for each position and print a corresponding emoji!
 
 .. Tip::
-	
+
 	Natively you would install this tool like ``pip install fastqe``. Now think of how you can dockerize this with appropriate base image and dependencies
 
 After dockerizing the tool, for this exercise we don't have to bind mount the volume but just print the `fastqe` help and make sure that it is actually working.

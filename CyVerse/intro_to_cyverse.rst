@@ -5,17 +5,32 @@
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-**Introduction to CyVerse**
-===========================
+**About CyVerse**
+=================
 
+**CyVerse Vision:** Transforming science through data-driven discovery.
 
-**Vision:** 
-Transforming Science through Data-Driven Discovery.
+**CyVerse Mission:** Design, deploy, and expand a national
+cyberinfrastructure for life sciences research and train scientists in
+its use.
 
+CyVerse provides life scientists with powerful computational
+infrastructure to handle huge datasets and complex analyses, thus
+enabling data-driven discovery. Our powerful extensible platforms
+provide data storage, bioinformatics tools, image analyses, cloud
+services, APIs, and more.
 
-**Mission:** 
-To design, deploy, and expand a national Cyberinfrastructure for Life Sciences research, and to train scientists in its use.
+Originally created as the iPlant Collaborative to serve
+U.S. plant science communities, the cyberinfrastructure we have built is germane
+to all life sciences disciplines and works equally well on data from
+plants, animals, or microbes. Thus, iPlant was renamed CyVerse to reflect the broader community now served by our infrastructure. By democratizing access to supercomputing
+capabilities, we provide a crucial resource to enable scientists to find
+solutions for the future. CyVerse is of, by, and for the community, and community-driven needs
+shape our mission. We rely on your feedback to provide the
+infrastructure you need most to advance your science, development, and
+educational agenda.
 
+**CyVerse Homepage:** `http://www.cyverse.org <http://www.cyverse.org>`_
 
 **Evolution of CyVerse**
 
@@ -30,12 +45,12 @@ Over the past 10 years CyVerse priorities have focused on genomics and transcrip
 What is Cyberinfrastructure?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Cyberinfrastructure is a combination of 
+Cyberinfrastructure is a combination of
     - platforms, tools and datasets researchers need to do their work
     - storage and compute hardware necessary for modern analyses
     - people who provide training and support
-    
-The CyVerse cyberinfrastructure can be thought of in layers. The bottom layer (on which everything else is built) consists of the hardware resources. On top of that are the services necessary to make a functional system. The next layer represents extensible services, or those parts of the system that may be adopted and used by thrid parties. Most users will interact primarily with the top layer which represents the various analysis and distribution platforms. While the bottom layers are the most flexible, the top layers are the most user-friendly. 
+
+The CyVerse cyberinfrastructure can be thought of in layers. The bottom layer (on which everything else is built) consists of the hardware resources. On top of that are the services necessary to make a functional system. The next layer represents extensible services, or those parts of the system that may be adopted and used by thrid parties. Most users will interact primarily with the top layer which represents the various analysis and distribution platforms. While the bottom layers are the most flexible, the top layers are the most user-friendly.
 
 |layer cake|
 
@@ -59,7 +74,7 @@ Manage access to CyVerse platforms/services
 **Manage workshops you've attended or hosted**
 
 **Access 'Powered by CyVerse' projects**
-     
+
 User portal forms
     - Request a Data Store allocation increase
     - Request a community released data folder
@@ -75,7 +90,7 @@ User portal forms
 |datastorelogo|
 
 **Securely store data for active analyses or sharing with your collaborators.**
- 
+
     - Upload, download and share your data
         - DE simple upload/download. Convenient but not good for large files.
         - Cyberduck is a third-party software with graphic interface for transferring data. Available for Mac and Windows.
@@ -116,7 +131,7 @@ User portal forms
     - Fully customize your software setup
     - Choose (or build) an image that best suits your needs
     - `Atmosphere guide <https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/>`_
-        
+
 `Bisque <https://bisque.cyverse.org/client_service/>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -141,7 +156,7 @@ User portal forms
             - assemble gene models
             - investigate genomes
             - work with phylogenetic trees
-            - analyze DNA barcodes 
+            - analyze DNA barcodes
     - Analyze your own data or the sample data provided
     - `DNA Subway guide <https://cyverse-dnasubway-guide.readthedocs-hosted.com/en/latest/>`_
 
@@ -168,7 +183,7 @@ Science APIs
     - Build your own app store of scientific codes and workflows
     - Agave API for HPC
     - Terrain API for DE
-    
+
 `SciApps <https://www.sciapps.org/>`_
 ^^^^^^^
 
@@ -182,7 +197,7 @@ Science APIs
 
 |PBlogo|
 
-**Third-party projects can leverage the CyVerse cyberinfrastructure components to provide services to their users.** 
+**Third-party projects can leverage the CyVerse cyberinfrastructure components to provide services to their users.**
 
     Some 'Powered by CyVerse' projects you may be familiar with
         - CoGe
@@ -198,7 +213,7 @@ Science APIs
         - SoyKB
         - TERRA-REF
         - TNRS- Taxonomic Name Resolution Service
-        
+
 
 `The CyVerse Learning Center <https://learning.cyverse.org/en/latest/#>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -214,20 +229,30 @@ Science APIs
 `The CyVerse Wiki <https://wiki.cyverse.org>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**This collaborative documentation site is used to record important information about CyVerse, its products and services, and community collaborators and their projects.** 
+**This collaborative documentation site is used to record important information about CyVerse, its products and services, and community collaborators and their projects.**
 
     - Anyone with a CyVerse account is welcome to help out.
     - User have their own spaces and can add content
     - Much of the CyVerse documentation has been moved the Learning center but some things will continue to be in the Wiki
         - DE app documentation
         - Many tutorials
-    
+
 Intercom
 ^^^^^^^^^^^^
 
 |intercomlogo|
 
 Intercom is our live-chat user support app. You will find the Intercom 'smiley' logo in the bottom right corner of the Discovery Environment, Atmosphere, the Wiki and the user portal.
+
+
+**Funding and Citations**
+
+CyVerse is funded entirely by the National Science Foundation under
+Award Numbers DBI-0735191, DBI-1265383 and DBI-1743442.
+
+Please cite CyVerse appropriately when you make use of our resources,
+`CyVerse citation
+policy <http://www.cyverse.org/acknowledge-and-cite-cyverse>`__
 
 ----
 
@@ -252,14 +277,14 @@ Intercom is our live-chat user support app. You will find the Intercom 'smiley' 
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/CyVerse/intro_to_cyverse.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/intro_to_cyverse.rst" target="blank">Github Repo Link</a>
 
 
 .. |cyverse logo| image:: ../img/cyverse_cmyk.png
   :width: 750
   :height: 175
 
-.. |layer cake| image:: ../img/Layer_Cake_Updated.png
+.. |layer cake| image:: ../img/layercake.png
   :width: 750
   :height: 600
 
@@ -302,8 +327,7 @@ Intercom is our live-chat user support app. You will find the Intercom 'smiley' 
 .. |evolcyverse| image:: ../img/evolutionofcyverse.png
   :width: 750
   :height: 200
-  
+
 .. |sciAPIslogo| image:: ../img/agave/ScienceAPIs_DkBlue.png
   :width: 100
   :height: 75
-  

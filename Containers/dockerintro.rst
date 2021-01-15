@@ -15,23 +15,23 @@ Getting all the tooling setup on your computer can be a daunting task, but not w
 
 The getting started guide on Docker has detailed instructions for setting up Docker on `Mac <https://docs.docker.com/docker-for-mac/install/>`_/`Windows <https://docs.docker.com/docker-for-windows/install/>`_/`Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_.
 
-.. Note:: 
+.. Note::
 
-	If you're using Docker for Windows make sure you have `shared your drive <https://docs.docker.com/docker-for-windows/#shared-drives>`_. 
-	
-	If you're using an older version of Windows or MacOS you may need to use `Docker Machine <https://docs.docker.com/machine/overview/>`_ instead. 
-	
+	If you're using Docker for Windows make sure you have `shared your drive <https://docs.docker.com/docker-for-windows/#shared-drives>`_.
+
+	If you're using an older version of Windows or MacOS you may need to use `Docker Machine <https://docs.docker.com/machine/overview/>`_ instead.
+
 	All commands work in either Bash or Powershell on Windows.
 
 .. Note::
 
-	Depending on how you've installed Docker on your system, you might see a ``permission denied`` error after running the above command. If you're on Linux, you may need to prefix your Docker commands with sudo. Alternatively to run docker command without sudo, you need to add your user (who has root privileges) to docker group. 
-	For this run: 
+	Depending on how you've installed Docker on your system, you might see a ``permission denied`` error after running the above command. If you're on Linux, you may need to prefix your Docker commands with sudo. Alternatively to run docker command without sudo, you need to add your user (who has root privileges) to docker group.
+	For this run:
 
 	Create the docker group::
 
 		$ sudo groupadd docker
-	
+
 	Add your user to the docker group::
 
 		$ sudo usermod -aG docker $USER
@@ -79,7 +79,7 @@ Now that you have everything setup, it's time to get our hands dirty. In this se
 
 But wait, what exactly is a container and image?
 
-**Containers** - Running instances of Docker images — containers run the actual applications. A container includes an application and all of its dependencies. It shares the kernel with other containers, and runs as an isolated process in user space on the host OS. 
+**Containers** - Running instances of Docker images — containers run the actual applications. A container includes an application and all of its dependencies. It shares the kernel with other containers, and runs as an isolated process in user space on the host OS.
 
 **Images** - The file system and configuration of our application which are used to create containers. To find out more about a Docker image, run ``docker inspect hello-world``. In the demo above, you could have used the ``docker pull`` command to download the ``hello-world`` image. However when you executed the command ``docker run hello-world``, it also did a ``docker pull`` behind the scenes to download the ``hello-world`` image with ``latest`` tag (we will learn more about tags little later).
 
@@ -97,7 +97,7 @@ Now that we know what a container and image is, let's run the following command 
 	drwxr-xr-x    5 root     root          4096 Dec 26  2016 media
 	........
 
-Similar to ``docker run hello-world`` command in the demo above, ``docker run alpine ls -l`` command fetches the ``alpine:latest`` image from the Docker registry first, saves it in our system and then runs a container from that saved image. 
+Similar to ``docker run hello-world`` command in the demo above, ``docker run alpine ls -l`` command fetches the ``alpine:latest`` image from the Docker registry first, saves it in our system and then runs a container from that saved image.
 
 When you run ``docker run alpine``, you provided a command ``ls -l``, so Docker started the command specified and you saw the listing
 
@@ -125,7 +125,7 @@ Try another command.
 
 	$ docker run alpine sh
 
-Wait, nothing happened! Is that a bug? Well, no. These interactive shells will exit after running any scripted commands such as ``sh``, unless they are run in an interactive terminal - so for this example to not exit, you need to ``docker run -it alpine sh``. You are now inside the container shell and you can try out a few commands like ``ls -l``, ``uname -a`` and others. 
+Wait, nothing happened! Is that a bug? Well, no. These interactive shells will exit after running any scripted commands such as ``sh``, unless they are run in an interactive terminal - so for this example to not exit, you need to ``docker run -it alpine sh``. You are now inside the container shell and you can try out a few commands like ``ls -l``, ``uname -a`` and others.
 
 Before doing that, now it's time to see the ``docker ps`` command which shows you all containers that are currently running.
 
@@ -145,7 +145,7 @@ Since no containers are running, you see a blank line. Let's try a more useful v
 	ff0a5c3750b9        alpine             "ls -l"                   8 minutes ago       Exited (0) 8 minutes ago                        elated_ramanujan
 	c317d0a9e3d2        hello-world         "/hello"                 34 seconds ago      Exited (0) 12 minutes ago                       stupefied_mcclintock
 
-What you see above is a list of all containers that you ran. Notice that the STATUS column shows that these containers exited a few minutes ago. 
+What you see above is a list of all containers that you ran. Notice that the STATUS column shows that these containers exited a few minutes ago.
 
 If you want to run scripted commands such as ``sh``, they should be run in an interactive terminal. In addition, interactive terminal allows you to run more than one command in a container. Let's try that now:
 
@@ -192,7 +192,7 @@ Great! so you have now looked at ``docker run``, played with a Docker containers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Note::
-	
+
 	Code for this section is in this repo in the `examples/ <https://github.com/CyVerse-learning-materials/container_camp_workshop_2019/tree/master/examples>`_ directory
 
 In this section, let's dive deeper into what Docker images are. Later on we will build our own image and use that image to run an application locally.
@@ -235,30 +235,30 @@ To get a new Docker image you can either get it from a registry (such as the Doc
 
 	$ docker search ubuntu
 	  NAME                                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
-	  ubuntu                                                 Ubuntu is a Debian-based Linux operating sys…   7310                [OK]                
+	  ubuntu                                                 Ubuntu is a Debian-based Linux operating sys…   7310                [OK]
 	  dorowu/ubuntu-desktop-lxde-vnc                         Ubuntu with openssh-server and NoVNC            163                                     [OK]
 	  rastasheep/ubuntu-sshd                                 Dockerized SSH service, built on top of offi…   131                                     [OK]
 	  ansible/ubuntu14.04-ansible                            Ubuntu 14.04 LTS with ansible                   90                                      [OK]
-	  ubuntu-upstart                                         Upstart is an event-based replacement for th…   81                  [OK]                
-	  neurodebian                                            NeuroDebian provides neuroscience research s…   43                  [OK]                
-	  ubuntu-debootstrap                                     debootstrap --variant=minbase --components=m…   35                  [OK]                
+	  ubuntu-upstart                                         Upstart is an event-based replacement for th…   81                  [OK]
+	  neurodebian                                            NeuroDebian provides neuroscience research s…   43                  [OK]
+	  ubuntu-debootstrap                                     debootstrap --variant=minbase --components=m…   35                  [OK]
 	  1and1internet/ubuntu-16-nginx-php-phpmyadmin-mysql-5   ubuntu-16-nginx-php-phpmyadmin-mysql-5          26                                      [OK]
 	  nuagebec/ubuntu                                        Simple always updated Ubuntu docker images w…   22                                      [OK]
-	  tutum/ubuntu                                           Simple Ubuntu docker images with SSH access     18                                      
-	  ppc64le/ubuntu                                         Ubuntu is a Debian-based Linux operating sys…   11                                      
-	  i386/ubuntu                                            Ubuntu is a Debian-based Linux operating sys…   9                                       
+	  tutum/ubuntu                                           Simple Ubuntu docker images with SSH access     18
+	  ppc64le/ubuntu                                         Ubuntu is a Debian-based Linux operating sys…   11
+	  i386/ubuntu                                            Ubuntu is a Debian-based Linux operating sys…   9
 	  1and1internet/ubuntu-16-apache-php-7.0                 ubuntu-16-apache-php-7.0                        7                                       [OK]
 	  eclipse/ubuntu_jdk8                                    Ubuntu, JDK8, Maven 3, git, curl, nmap, mc, …   5                                       [OK]
 	  darksheer/ubuntu                                       Base Ubuntu Image -- Updated hourly             3                                       [OK]
 	  codenvy/ubuntu_jdk8                                    Ubuntu, JDK8, Maven 3, git, curl, nmap, mc, …   3                                       [OK]
 	  1and1internet/ubuntu-16-nginx-php-5.6-wordpress-4      ubuntu-16-nginx-php-5.6-wordpress-4             2                                       [OK]
 	  1and1internet/ubuntu-16-nginx                          ubuntu-16-nginx                                 2                                       [OK]
-	  pivotaldata/ubuntu                                     A quick freshening-up of the base Ubuntu doc…   1                                       
+	  pivotaldata/ubuntu                                     A quick freshening-up of the base Ubuntu doc…   1
 	  smartentry/ubuntu                                      ubuntu with smartentry                          0                                       [OK]
-	  pivotaldata/ubuntu-gpdb-dev                            Ubuntu images for GPDB development              0                                       
+	  pivotaldata/ubuntu-gpdb-dev                            Ubuntu images for GPDB development              0
 	  1and1internet/ubuntu-16-healthcheck                    ubuntu-16-healthcheck                           0                                       [OK]
-	  thatsamguy/ubuntu-build-image                          Docker webapp build images based on Ubuntu      0                                       
-	  ossobv/ubuntu                                          Custom ubuntu image from scratch (based on o…   0                                       
+	  thatsamguy/ubuntu-build-image                          Docker webapp build images based on Ubuntu      0
+	  ossobv/ubuntu                                          Custom ubuntu image from scratch (based on o…   0
 	  1and1internet/ubuntu-16-sshd                           ubuntu-16-sshd                                  0                                       [OK]
 
 An important distinction with regard to images is between base images and child images and official images and user images (Both of which can be base images or child images.).
@@ -275,7 +275,7 @@ An important distinction with regard to images is between base images and child 
 4.1.2 Meet our Python app
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now that you have a better understanding of images, it's time to create an image that sandboxes a small Python application. We'll do this by creating a small Python script which prints a welcome message, then dockerizing it by writing a Dockerfile, and finally we'll build the image and run it. 
+Now that you have a better understanding of images, it's time to create an image that sandboxes a small Python application. We'll do this by creating a small Python script which prints a welcome message, then dockerizing it by writing a Dockerfile, and finally we'll build the image and run it.
 
 - Create a Python script
 - Build the image
@@ -312,8 +312,8 @@ Create the ``app.py`` file with the following content. You can use any of favori
 
 	You should see the message:
 
-		:code:`hello world!`  
-		:code:`this is my first attempt`  
+		:code:`hello world!`
+		:code:`this is my first attempt`
 
 	This is totally optional - but some people like to see what the app’s supposed to do before they try to Dockerize it.
 
@@ -325,7 +325,7 @@ A **Dockerfile** is a text file that contains a list of commands that the Docker
 
 We want to create a Docker image with this app. As mentioned above, all user images are based on a base image. Since our application is written in Python, we will build our own Python image based on ``Alpine``. We'll do that using a Dockerfile.
 
-Create a file called Dockerfile in the ``simple-script`` directory, and add content to it as described below. 
+Create a file called Dockerfile in the ``simple-script`` directory, and add content to it as described below.
 
 .. code-block:: bash
 
@@ -427,7 +427,7 @@ When Docker can successfully build your Dockerfile, test it by starting a new co
 You should see something like this:
 
 .. code-block:: bash
-	
+
 	hello world!
 	this is my first attempt
 
@@ -446,17 +446,17 @@ Search for images on Docker Hub which contain the string 'jupyter'
 
 	$ docker search jupyter
 	NAME                                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
-	jupyter/datascience-notebook           Jupyter Notebook Data Science Stack from htt…   446                                     
-	jupyter/all-spark-notebook             Jupyter Notebook Python, Scala, R, Spark, Me…   223                                     
+	jupyter/datascience-notebook           Jupyter Notebook Data Science Stack from htt…   446
+	jupyter/all-spark-notebook             Jupyter Notebook Python, Scala, R, Spark, Me…   223
 	jupyterhub/jupyterhub                  JupyterHub: multi-user Jupyter notebook serv…   195                                     [OK]
-	jupyter/scipy-notebook                 Jupyter Notebook Scientific Python Stack fro…   155                                     
-	jupyter/tensorflow-notebook            Jupyter Notebook Scientific Python Stack w/ …   116                                     
-	jupyter/pyspark-notebook               Jupyter Notebook Python, Spark, Mesos Stack …   95                                      
-	jupyter/minimal-notebook               Minimal Jupyter Notebook Stack from https://…   73                                      
+	jupyter/scipy-notebook                 Jupyter Notebook Scientific Python Stack fro…   155
+	jupyter/tensorflow-notebook            Jupyter Notebook Scientific Python Stack w/ …   116
+	jupyter/pyspark-notebook               Jupyter Notebook Python, Spark, Mesos Stack …   95
+	jupyter/minimal-notebook               Minimal Jupyter Notebook Stack from https://…   73
 	ermaker/keras-jupyter                  Jupyter with Keras (with Theano backend and …   66                                      [OK]
-	jupyter/base-notebook                  Small base image for Jupyter Notebook stacks…   60                                      
+	jupyter/base-notebook                  Small base image for Jupyter Notebook stacks…   60
 	xblaster/tensorflow-jupyter            Dockerized Jupyter with tensorflow              52                                      [OK]
-	jupyter/r-notebook                     Jupyter Notebook R Stack from https://github…   22                                      
+	jupyter/r-notebook                     Jupyter Notebook R Stack from https://github…   22
 	jupyterhub/singleuser                  single-user docker images for use with Jupyt…   21                                      [OK]
 	...
 
@@ -503,12 +503,12 @@ Since we want to use a Jupyter notebook to call our function, we will build an i
 
 .. Note::
 
-	This is one of the official Docker images provided by the Jupyter project for you to build your own data science notebooks on:  
-	
+	This is one of the official Docker images provided by the Jupyter project for you to build your own data science notebooks on:
+
 	https://jupyter-docker-stacks.readthedocs.io/en/latest/
 
 
-Create a file called Dockerfile in the ``myfirstapp`` directory, and add content to it as described below. 
+Create a file called Dockerfile in the ``myfirstapp`` directory, and add content to it as described below.
 
 .. code-block:: bash
 
@@ -610,8 +610,8 @@ You should see something like this:
 	[I 07:21:25.611 NotebookApp] The Jupyter Notebook is running at:
 	[I 07:21:25.611 NotebookApp] http://(29a022bb5807 or 127.0.0.1):8888/?token=copy-your-own-token-not-this-one
 	[I 07:21:25.611 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-	[C 07:21:25.612 NotebookApp] 
-	    
+	[C 07:21:25.612 NotebookApp]
+
 	    Copy/paste this URL into your browser when you connect for the first time,
 	    to login with a token:
 	        http://(29a022bb5807 or 127.0.0.1):8888/?token=copy-your-own-token-not-this-one
@@ -678,8 +678,8 @@ Use the following Docker commands to deploy Portainer. Now the second line of co
 
 - If you are running Docker on Atmosphere/Jetstream or on any other cloud, you can open ``ipaddress:9000``. For my case this is ``http://128.196.142.26:9000``
 
-.. Note:: 
-	
+.. Note::
+
 	The `-v /var/run/docker.sock:/var/run/docker.sock` option can be used in mac/linux environments only.
 
 |portainer_demo|

@@ -14,7 +14,7 @@
 
 (Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
-`Example DMP <slides/DMPFuTRES_v2.docx>`_
+`Example DMP <../slides/DMPFuTRES_v2.docx>`_
 
 **Why bother?**
 
@@ -52,7 +52,7 @@ Elements of a good DMP
        - Personnel time for data preparation, management, documentation, and preservation (including time)
        - Hardware and/or software for data management, back up, security, documentation, and preservation (including time)
        - Publication/archiving costs (including time)
- 
+
 Not only what, but *who* (roles).
 
 Extra challenges for collaborative projects.
@@ -60,19 +60,17 @@ Extra challenges for collaborative projects.
 Machine actionable DMPs
 =======================
 
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006750
-
  - DMPs describe research methods that will evolve over the course of a project
  - to be a useful tool for researchers and others, the content must be updated to capture the methods that are employed and the data that are produced
- 
+
 |maDMP|
- 
+
  (Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
 
 Tools for DMPs
 ============================
 
-https://dmptool.org/ 
+https://dmptool.org/
 
 Exercise: Log in to DMP tools and create a mock DMP.
 

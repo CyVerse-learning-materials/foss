@@ -18,65 +18,16 @@ DE Features
  - Seamlessly integrated with data and high performance computing – not dependent on your hardware
  - Create and publish Apps and workflows so anyone can use them
  - Analysis history and provenance – “avoid forensic bioinformatics”
- - Securetly and easily manage, share, and publish data 
- 
-DE Basics Walkthrough
-===============
- - Log in at https://de.cyverse.org/
+ - Securetly and easily manage, share, and publish data
 
-|DE_blank|
 
-Data Window
-~~~~~~~~~~~~~~
 
- - Open the data window and upload a file:
+Using the DE
+============
 
-|DE_data_upload|
+`Data Management <https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/de-data-manage.rst>`_
+`Data Analysis <https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/de-data-analysis.rst>`_
 
- - `Create a new text file <https://wiki.cyverse.org/wiki/display/DEmanual/Creating+New+Files+and+Folders>`_ and share it with someone in the class:
-
-|DE_dots_menu|
-
- - `Download <https://wiki.cyverse.org/wiki/display/DEmanual/Downloading+Files+and+Folders>`_ the shared file.
- 
-Apps Window
-~~~~~~~~~~~~~~
-
- - Find an app by browsing:
-
-|DE_apps_operation|
-
- - Find an app by `searching <https://wiki.cyverse.org/wiki/display/DEmanual/Searching+for+an+App,+Workflow,+or+Tool>`_
- - `Launch an analysis <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Apps>`_ using the word count app
- 
-|DE_word_count|
-
-Analyses Window
-~~~~~~~~~~~~~~
-
- - Open the `Analyses window <https://wiki.cyverse.org/wiki/display/DEmanual/Using+the+Analyses+Window>`_ and view analysis status:
-
-|DE_analyses|
-
- - `Relaunch or cancel <https://wiki.cyverse.org/wiki/display/DEmanual/Relaunching%2C+Canceling%2C+and+Deleting+Analyses%2C+Viewing+Analysis+Outputs+and+Info>`_ an analysis
- -  `Share an analysis <https://wiki.cyverse.org/wiki/display/DEmanual/Sharing+and+Unsharing+an+Analysis>`_ with a collaborator.
-
-Using metadata in the DE
-========================
-
- - `Using metadata in the DE <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE>`_ :
- 
-|DE_metadata|
- 
- - `Search <https://wiki.cyverse.org/wiki/display/DEmanual/Searching+for+Data+Items>`_ for data in the DE:
- 
-|DE_search|
-
- - Try a simple search for the word "maize"
- - Try an advanced search for attribute = subject and value = maize
- - Other options to be covered on Thursday:
- 	- `bulk metadata application <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Addingbulkmetadatatomultiplefilesorfolders>`_
-	- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_ 
 
 Additional resources
 =========================
@@ -130,4 +81,4 @@ Additional resources
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/CyVerse/de.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/de.rst" target="blank">Github Repo Link</a>

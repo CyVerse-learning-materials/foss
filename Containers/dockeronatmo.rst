@@ -17,7 +17,7 @@ You don't need to do the first 5 steps if you are running the 'DataCarpentry Gen
 
 3. Wait for Docker to install
 
-4. Close or Refresh the Web Shell browser tab. 
+4. Close or Refresh the Web Shell browser tab.
 
 5. type ``docker run hello-world``
 
@@ -26,8 +26,8 @@ You don't need to do the first 5 steps if you are running the 'DataCarpentry Gen
 
 .. note::
    You may receive an error if Docker did not add your username to the ``docker`` group, you'll need to use the ``sudo`` invocation, e.g. ``sudo docker run hello-world``
-   
-   To add yourself to the docker group type ``sudo usermod -aG docker $USER`` and refresh your terminal window. 
+
+   To add yourself to the docker group type ``sudo usermod -aG docker $USER`` and refresh your terminal window.
 
 ----
 

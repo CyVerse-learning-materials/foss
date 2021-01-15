@@ -8,7 +8,7 @@
 **Pre-Workshop Setup**
 ======================
 
-Please complete the minimum Setup Instructions to prepare for the FOSS Camp at CyVerse, The University of Arizona, which will run from June 3-7, 2019.
+Please complete the minimum Setup Instructions to prepare for the FOSS Camp at CyVerse, The University of Arizona, which will run from February 17-21, 2020.
 
 .. list-table::
     :header-rows: 1
@@ -49,18 +49,17 @@ Listed below are some extra downloads that are not required for the workshop, bu
       - Link
     * - SSH Clients (Windows)
       - PuTTY allows SSH connection to a remote machine, and is designed for
-        Windows users who do not have a Mac/Linux terminal. MobaXterm is a single 
-        Windows application that provides a ton of functions for programmers, webmasters, 
+        Windows users who do not have a Mac/Linux terminal. MobaXterm is a single
+        Windows application that provides a ton of functions for programmers, webmasters,
         IT administrators, and anybody is looking to manage system remotely
       - - `Download PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_
         - `Download mobaXterm <https://mobaxterm.mobatek.net>`_
-        - `Install Windows Subsystem for Linux (WSL) <https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/>`_ 
-        - `Coming Soon: WSL 2 <https://devblogs.microsoft.com/commandline/announcing-wsl-2/>`_
+        - `Install Windows Subsystem for Linux (WSL) 2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_
     * - Text Editors
       - There is no 'best' text editor, but some are easier to use than others. Do some reading and pick one.
       - - `Atom <https://atom.io/>`_
         - `SublimeText <https://www.sublimetext.com/>`_
-        - `VisualStudioCode <https://code.visualstudio.com/>`_       
+        - `VisualStudioCode <https://code.visualstudio.com/>`_
         - `Vim <http://www.vim.org/>`_
         - `Emacs <https://www.gnu.org/software/emacs/>`_
         - `Nano <https://www.nano-editor.org>`_
@@ -70,12 +69,12 @@ Listed below are some extra downloads that are not required for the workshop, bu
         to download Cyberduck and the connection profile. We will go through
         configuration and installation at the workshop.
       - - `Download Cyberduck <https://cyberduck.io/>`_
-        - `Download CyVerse Cyberduck connection profile <https://wiki.cyverse.org/wiki/download/attachments/18188197/iPlant%20Data%20Store.cyberduckprofile?version=1&modificationDate=1436557522000&api=v2>`_
+        - `Installation for CyVerse <https://learning.cyverse.org/projects/data_store_guide/en/latest/step1.html#download-and-first-time-configuration-of-cyberduck>`_
     * - iCommands
       - iCommands are third-party software for command-line connection to the
         CyVerse Data Store.
       - Download and installation instructions available at `CyVerse Learning Center <https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/step2.html>`__
-      
+
 ----
 
 **Fix or improve this documentation:**
