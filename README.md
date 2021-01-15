@@ -1,6 +1,6 @@
-# foss-2020
-Documenation for the 2020 CyVerse Learning Institute Foundations of Open Science Skills course.
+# foss-2021
+Documentation for CyVerse Learning's Foundations of Spring 2021 Open Science Skills course.
 
-Course will take place February 17-21, 2020, in Tucson, Arizona.
+Course will take place February 9-April 21, 2021, online.
 
-Contents are organized by subject, rather than day, with links to each day from the agenda (getting_started/agenda.rst).
+Contents are organized by subject, rather than day, with links to each day from the agenda (getting_started/schedule.rst).
