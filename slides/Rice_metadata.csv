@@ -1,0 +1,9 @@
+filename,plantID,species,type,treatment,day_of_year
+012.txt,OS763,'Oryza sative',indica,cold,234
+123.txt,OS769,'Oryza sative',indica,cold,242
+234.txt,OS761,'Oryza sative',indica,warm,234
+345.txt,OS770,'Oryza sative',indica,warm,242
+456.txt,OS781,'Oryza sative',japonica,cold,234
+567.txt,OS783,'Oryza sative',japonica,cold,242
+678.txt,OS785,'Oryza sative',japonica,warm,234
+789.txt,OS797,'Oryza sative',japonica,warm,242

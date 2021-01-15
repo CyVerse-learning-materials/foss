@@ -103,13 +103,13 @@
 
 .. Comment: images
 
-.. |CyVerse_logo| image:: ./img/cyverse_learning.png
+.. |CyVerse logo| image:: ./img/cyverse_rgb.png
     :width: 500
-
-.. _CyVerse_logo: http://learning.cyverse.org/
+    :height: 100
+.. _CyVerse logo: http://learning.cyverse.org/
 .. |CyVerse_logo2| image:: ../img/cyverse_cmyk.png
     :width: 500
-
+    :height: 100
 .. _CyVerse_logo2: http://learning.cyverse.org/
 .. |Home_Icon| image:: ./img/homeicon.png
     :width: 25

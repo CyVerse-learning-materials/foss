@@ -23,8 +23,8 @@ The most popular CI tools are:
 
  * building or hosting services to a community
  * developing versioned copies of containers for public consumption
- * DevOps + Data Science 
- 
+ * DevOps + Data Science
+
 **Travis CI**
 ~~~~~~~~~~
 
@@ -42,6 +42,11 @@ Jenkins is a bit harder to set up because you need a dedicated server
 
 `Setup <https://jenkins.io/doc/book/installing/>`_
 
+**GitHub Actions**
+~~~~~~~~~~~~
+
+GitHub now offers 'actions' which serve as an `integrated CI for your repositories <https://help.github.com/en/actions/building-and-testing-code-with-continuous-integration/setting-up-continuous-integration-using-github-actions>`_
+
 
 **Badges**
 ~~~~~~~~~
@@ -54,7 +59,7 @@ You can view a diverse list of different badges on `Shields.io <https://shields.
 ---------
 
 Now you can pass the ``style`` GET argument,
-to get custom styled badges same as you would for shields.io. 
+to get custom styled badges same as you would for shields.io.
 If no argument is passed, ``flat`` is used as default.
 
 +---------------+---------------------+

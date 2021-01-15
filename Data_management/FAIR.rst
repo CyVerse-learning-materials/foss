@@ -11,6 +11,17 @@
 Read the `FAIR paper <https://www.nature.com/articles/sdata201618>`_. It's short.
 
 
+**Vocabulary**
+  - Metadata
+  - PID: Permanent Identifier
+  - GUID: Globally Unique Identifier
+  - Ontology
+  - Provenance
+  - License
+  - Search Index
+  - Access protocol
+
+
 **Findable**
  - F1. (meta)data are assigned a globally unique and persistent identifier
  - F2. data are described with rich metadata (defined by R1 below)
@@ -35,10 +46,38 @@ Read the `FAIR paper <https://www.nature.com/articles/sdata201618>`_. It's short
  - R1.3. (meta)data meet domain-relevant community standard
 
 
+FAIR - TLC
+===============
+**Traceable, Licensed, and Connected**
+ - The need for metrics: https://zenodo.org/record/203295#.XkrzTxNKjzI
 
+.. admonition:: Question
+   :class: admonition-question
 
+   Which do you think is the hardest, F, A, I, or R, and why?
 
+.. admonition:: Question
+   :class: admonition-question
 
+   What is the best way to cite data?
+
+.. admonition:: Question
+   :class: admonition-question
+
+   What are the relative values of a data publication verus a peer-reviewed paper?
+
+.. admonition:: Question
+   :class: admonition-question
+
+   What role do ontologies play in FAIR-TLC?
+
+Hands on Exercise - Metadata in CyVerse
+======================
+
+ - `Using metadata in the DE <../CyVerse/de-data-manage.html#using-metadata-in-the-de>`_
+ - iCommands metadata: `imeta <https://docs.irods.org/4.2.0/icommands/metadata/>`_
+  - example 1: ``imeta add -C B123 test_metadata value unit``
+  - example 2: ``imeta add -d B123/0123.txt test_metadata value unit``
 ----
 
 References and Resources
