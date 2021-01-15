@@ -1,0 +1,146 @@
+/* Version 2.0, May 2020 */
+
+html_theme_options = {
+    'cssfiles': ["http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
+}
+
+/* Table wrapping */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+/* admonition colors */
+
+.rst-content .admonition-note,
+.rst-content .admonition-warning,
+.rst-content .admonition-question,
+.rst-content .admonition-answer,
+.rst-content .admonition-expand-to-read-more {
+  margin: 3em 0;
+}
+
+.rst-content .admonition-question .admonition-answer .admonition-expand-to-read-more {
+  margin-top: 0.5em;
+}
+
+.rst-content li {
+  margin-bottom: 0.5em;
+}
+
+.rst-content .figure {
+  margin-bottom: 0.5em;
+}
+
+.rst-content .admonition-question {
+  background: #f6e7ee;
+  padding: 12px;
+  line-height: 24px;
+}
+
+.rst-content .admonition-answer {
+  background: #e9f8f5;
+  padding: 12px;
+  line-height: 24px;
+  margin-bottom: 1em;
+}
+
+div.admonition-learning-objectives.admonition {
+  background: #e9f2f8;
+  padding: 12px;
+  line-height: 24px;
+}
+
+.rst-content .admonition-learning-objectives .admonition-title {
+ background:#2C80BB;
+
+}
+
+.rst-content .admonition-learning-objectives .admonition-title::before {
+  content: "\f044";
+}
+
+
+.rst-content .admonition-answer .admonition-title {
+  background: #0F933B;
+}
+
+.rst-content .admonition-question .admonition-title {
+  background: #aa1155;
+}
+
+.rst-content .admonition-question .admonition-title::before {
+  content: "\f059";
+}
+
+.rst-content .admonition-question p:last-child,
+.rst-content .admonition-expand-to-read-more p:last-child,
+.rst-content .admonition-question ul,
+.rst-content .admonition-expand-to-read-more ul {
+  margin-bottom: 0;
+}
+
+.rst-content .admonition-expand-to-read-more {
+  background: #e9f8f5;
+  padding: 12px;
+  line-height: 24px;
+  margin-bottom: 0.5em;
+}
+
+.rst-content .admonition-expand-to-read-more .admonition-title {
+  background: #0F933B;
+}
+
+.rst-content .admonition-expand-to-read-more .admonition-title::before {
+  content: "\f044";
+}
+
+.rst-content .tip .admonition-title::before {
+  content: "\f0d0";
+}
+
+.rst-content .admonition-answer .admonition-title::before {
+  content: "\f044";
+}
+
+/**
+ * Toggle visibility of a section
+ */
+.rst-content .admonition-expand-to-read-more .admonition-title:after,
+.rst-content .admonition-expand-to-read-more .admonition-title.expanded:after {
+  font-family: "FontAwesome";
+  margin-left: 0.3em;
+  cursor: pointer;
+}
+
+.rst-content .admonition-answer .admonition-title:after,
+.rst-content .admonition-answer .admonition-title.expanded:after {
+  font-family: "FontAwesome";
+  margin-left: 0.3em;
+  cursor: pointer;
+}
+
+.rst-content .admonition-answer .admonition-title::before {
+  content: "\f044";
+}
+
+.rst-content .admonition-answer .admonition-title:after,
+.rst-content .admonition-expand-to-read-more .admonition-title:after {
+  content: "\f139";
+}
+
+.rst-content .admonition-answer .admonition-title.expanded:after,
+.rst-content .admonition-expand-to-read-more .admonition-title.expanded:after {
+  content: "\f13a";
+}
+    /*content: "\f139";*/
+.rst-content dl dd,
+.rst-content .section ol > li {
+  margin-bottom: 2.5em;
+}
+
+.rst-content .figure p.caption {
+  font-style: normal;
+  font-size: 0.85em;
+  line-height: 1.4em;
+}

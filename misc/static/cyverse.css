@@ -1,0 +1,201 @@
+/* Version 2.0, May 2020 */
+
+html_theme_options = {
+    'cssfiles': ["http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
+}
+
+/*Learning Objectives */
+
+div.admonition-learning-objectives.admonition {
+  background: #e9f2f8;
+  padding: 12px;
+  line-height: 24px;
+}
+
+.rst-content .admonition-learning-objectives .admonition-title {
+ background:#2C80BB;
+
+}
+
+.rst-content .admonition-learning-objectives .admonition-title::before {
+  content: "\f044";
+}
+
+
+/* Table wrapping */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+/* admonition colors */
+
+div.admonition-sample-data.admonition {
+    padding: 3em;
+    color: #FF8E00;
+    display:block;
+    color: #000000;
+    background: #FFC67F;
+    margin: 0px;
+    padding:6px 12px;
+    margin-bottom:12px}
+
+.wy-alert-title,.rst-content .admonition-title {
+ color:#fff;
+ font-weight:bold;
+ display:block;
+ color:#fff;
+ background:#FF8E00;
+ margin:-12px;
+ padding:6px 12px;
+ margin-bottom:12px
+}
+
+
+.wy-alert.wy-alert-warning,
+.rst-content .wy-alert-warning.note,
+.rst-content .attention,
+.rst-content .caution,
+.rst-content .wy-alert-warning.danger,
+.rst-content .wy-alert-warning.error,
+.rst-content .wy-alert-warning.hint,
+.rst-content .wy-alert-warning.important,
+.rst-content .wy-alert-warning.tip,
+.rst-content .warning,
+.rst-content .wy-alert-warning.seealso,
+.rst-content .admonition-todo,
+.rst-content .wy-alert-warning.admonition {
+ background:#f8c3c4
+}
+
+.wy-alert.wy-alert-warning .wy-alert-title,
+.rst-content .wy-alert-warning.note .wy-alert-title,
+.rst-content .attention .wy-alert-title,
+.rst-content .caution .wy-alert-title,
+.rst-content .wy-alert-warning.danger .wy-alert-title,
+.rst-content .wy-alert-warning.error .wy-alert-title,
+.rst-content .wy-alert-warning.hint .wy-alert-title,
+.rst-content .wy-alert-warning.important .wy-alert-title,
+.rst-content .wy-alert-warning.tip .wy-alert-title,
+.rst-content .warning .wy-alert-title,
+.rst-content .wy-alert-warning.seealso .wy-alert-title,
+.rst-content .admonition-todo .wy-alert-title,
+.rst-content .wy-alert-warning.admonition .wy-alert-title,
+.wy-alert.wy-alert-warning .rst-content .admonition-title,
+.rst-content .wy-alert.wy-alert-warning .admonition-title,
+.rst-content .wy-alert-warning.note .admonition-title,
+.rst-content .attention .admonition-title,
+.rst-content .caution .admonition-title,
+.rst-content .wy-alert-warning.danger .admonition-title,
+.rst-content .wy-alert-warning.error .admonition-title,
+.rst-content .wy-alert-warning.hint .admonition-title,
+.rst-content .wy-alert-warning.important .admonition-title,
+.rst-content .wy-alert-warning.tip .admonition-title,
+.rst-content .warning .admonition-title,
+.rst-content .wy-alert-warning.seealso .admonition-title,
+.rst-content .admonition-todo .admonition-title,
+.rst-content .wy-alert-warning.admonition .admonition-title {
+ background:#f07e82;
+}
+
+
+/*Question and answer*/
+
+
+
+.rst-content .admonition-note,
+.rst-content .admonition-warning,
+.rst-content .admonition-question,
+.rst-content .admonition-answer {
+  margin: 3em 0;
+}
+
+.rst-content .admonition-question .admonition-answer {
+  margin-top: 0.5em;
+}
+
+.rst-content li {
+  margin-bottom: 0.5em;
+}
+
+.rst-content .figure {
+  margin-bottom: 2em;
+}
+
+.rst-content .admonition-question {
+  background: #f6e7ee;
+  padding: 12px;
+  line-height: 24px;
+}
+
+.rst-content .admonition-question .admonition-title {
+  background: #aa1155;
+}
+
+.rst-content .admonition-question .admonition-title::before {
+  content: "\f059";
+}
+
+.rst-content .admonition-question p:last-child,
+.rst-content .admonition-answer p:last-child,
+.rst-content .admonition-question ul,
+.rst-content .admonition-answer ul {
+  margin-bottom: 0;
+}
+
+.rst-content .admonition-answer {
+  background: #e9f8f5;
+  padding: 12px;
+  line-height: 24px;
+  margin-bottom: 6em;
+}
+
+.rst-content .admonition-answer .admonition-title {
+  background: #0F933B;
+}
+
+.rst-content .admonition-answer .admonition-title::before {
+  content: "\f044";
+}
+
+.rst-content .tip .admonition-title::before {
+  content: "\f0d0";
+}
+
+
+/**
+ * Toggle visibility of a section
+ */
+.rst-content .admonition-answer .admonition-title:after,
+.rst-content .admonition-answer .admonition-title.expanded:after {
+  font-family: "FontAwesome";
+  margin-left: 0.3em;
+  cursor: pointer;
+}
+
+.rst-content .admonition-answer .admonition-title:after {
+  content: "\f13a";
+}
+
+.rst-content .admonition-answer .admonition-title.expanded:after {
+  content: "\f139";
+}
+
+
+/* make iframe for youtube videos responseive*/
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
