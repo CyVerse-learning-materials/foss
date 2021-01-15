@@ -8,7 +8,7 @@
 **Code of Conduct**
 ============================
 
-In conjunction with our Policies |CyVerse Policies| for using CyVerse cyberinfrastructure, this Code of Conduct applies to all Event participants and their activities while using CyVerse resources.
+In conjunction with |CyVerse Policies| for using CyVerse cyberinfrastructure, this Code of Conduct applies to all Event participants and their activities while using CyVerse resources.
 
 CyVerse is dedicated to providing professional computational research and educational experiences for all of our users, regardless of domain focus, academic status, educational level, gender/gender identity/expression, age, sexual orientation, mental or physical ability, physical appearance, body size, race, ethnicity, religion (or lack thereof), technology choices, dietary preferences, or any other personal characteristic. 
 
