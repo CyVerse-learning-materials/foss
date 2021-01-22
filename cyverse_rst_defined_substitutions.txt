@@ -107,7 +107,7 @@
     :width: 500
 
 .. _CyVerse_logo: http://learning.cyverse.org/
-.. |CyVerse_logo2| image:: ../img/cyverse_cmyk.png
+.. |CyVerse_logo2| image:: ../img/cyverse_learning.png
     :width: 500
 
 .. _CyVerse_logo2: http://learning.cyverse.org/
