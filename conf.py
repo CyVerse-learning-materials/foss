@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'CyVerse Learning Institute Foundational Open Science Skills 2021'
+project = 'CyVerse Learning Foundational Open Science Skills 2021'
 copyright = '2021, CyVerse'
 author = 'CyVerse'
 version = 'spring-2021'
