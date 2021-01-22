@@ -6,12 +6,10 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-Foundations of Open Science Skills (FOSS) Online 2021
+Foundations of Open Science Skills 2021
 ------------------------------------
 
 Foundational Open Science Skills (FOSS) is a novel, camp-style training designed to prepare principal investigators and their lab teams, both new and established, to meet the growing expectations of funding agencies, publishers, and research institutions for scientific reproducibility and data accessibility.
-
-There are no pre-requisites for FOSS, but the course will cover a lot of material in a short time. Participants who have limited computational experience should try to view the `Software Carpentry Core Lessons <https://software-carpentry.org/lessons/>`_ before attending.
 
 |foss-main|
 
@@ -20,12 +18,16 @@ There are no pre-requisites for FOSS, but the course will cover a lot of materia
 Expected outcomes:
 ------------------
 
-- Become familiar with productivity software for organizing your lab group, communications, and research
-- Learn how to scale out your computation from laptop to cloud and high performance computing (HPC) systems
-- Learn how to manage data for open science and reproducibility
+- Proficiently organize your lab, communications, and research with productivity software
+- Capably scale out your computation from laptop to cloud and HPC systems
+- Skillfully manage the data lifecycle for open science and reproducibility
+- Connect with colleagues across institutional boundaries and research domains
+- Engage with the community of Open Science practitioners
 
+.. note::
+  There are no pre-requisites for FOSS, but the course will cover a lot of material in a short time. Participants who have limited computational experience should try to view the `Software Carpentry Core Lessons <https://software-carpentry.org/lessons/>`_ before attending.
 
-By working through an example project relevant to their interests, participants will practice open science skills using CyVerse, GitHub, R or Python, and other resources. At the end of the week, students will present a plan for how to integrate open science into their labs.
+By working through an example project relevant to your interests, you will practice open science skills using CyVerse, GitHub, R or Python, and other resources. At the end of the course, you and your team will present a plan for how to integrate open science into your research, lab, or other areas of your choosing.
 
 
 .. toctree::
@@ -170,7 +172,7 @@ Documentation contained in this repo is made available under CC BY 4.0 License: 
   click |Intercom| on the lower right-hand side of the page
 - Report an issue or submit a change:
   |Github Repo Link|
-- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+- Send feedback: `Learning@CyVerse.org <Learning@CyVerse.org>`_
 
 
 

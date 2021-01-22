@@ -1,6 +1,6 @@
 .. include:: ../cyverse_rst_defined_substitutions.txt
 
-|CyVerse_logo2|_
+|CyVerse_logo|_
 
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -21,7 +21,7 @@
 
 `Nirav Merchant <https://datascience.arizona.edu/person/nirav-merchant>`_, Data Science Director | nirav@email.arizona.edu
 
-.. ## `Sateesh Peri <https://sateeshperi.github.io/>`_, Ph.D. Candidate, Plant Sciences University of Arizona | 
+.. ## `Sateesh Peri <https://sateeshperi.github.io/>`_, Ph.D. Candidate, Plant Sciences University of Arizona |
 
 `Tyson Swetnam <https://tyson-swetnam.github.io/>`_, Research Assistant Professor, University of Arizona | tswetnam@cyverse.org
 

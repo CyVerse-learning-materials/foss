@@ -1,6 +1,6 @@
 .. include:: ../cyverse_rst_defined_substitutions.txt
 
-|CyVerse_logo2|_
+|CyVerse_logo|_
 
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -11,7 +11,7 @@
 **A**
 
 - **action:** automate a workflow in the context of CI/CD, see `GitHub Actions <https://github.com/features/actions>`_
-- **agile:** `development methodology <https://en.wikipedia.org/wiki/Agile_software_development>`_ for organizing a team to complete tasks organized over short periods called 'sprints' 
+- **agile:** `development methodology <https://en.wikipedia.org/wiki/Agile_software_development>`_ for organizing a team to complete tasks organized over short periods called 'sprints'
 - **allocation:** portion of a resource assigned to a particular recipient, typical unit is a core or node hour
 - **Anaconda:** open source data science platform. `Anaconda.com <https://www.anaconda.com/>`_
 - **application:** also called an 'app', a software designed to help the user to perform specific task
@@ -22,14 +22,14 @@
 
 - **beta:** :math:`\beta`, a software version which is not yet ready for publication but is being tested
 - **bash:** Bash is the GNU Project's shell, the `Bourne-Again Shell <https://www.gnu.org/software/bash/>`_
-- **biocontainer:** a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics packages (e.g conda) and containers (e.g docker, singularity) 
+- **biocontainer:** a community-driven project that provides the infrastructure and basic guidelines to create, manage and distribute bioinformatics packages (e.g conda) and containers (e.g docker, singularity)
 -  **bioconda:** a channel for the conda package manager specializing in bioinformatics software
 
 **C**
 
 - **CLI:** (1) the UNIX shell `command line interface <https://en.wikipedia.org/wiki/Command-line_interface>`_, most typically  BASH (2) the `CyVerse Learning Institute <https://learning.cyverse.org>`_
-- **command:** a set of instructions sent to the computer, typically in a typed interface 
-- **conda:** an installation type of the Anaconda data science platform. Command line application for managing packages and environments 
+- **command:** a set of instructions sent to the computer, typically in a typed interface
+- **conda:** an installation type of the Anaconda data science platform. Command line application for managing packages and environments
 - **container:** virtualization of an operating system run within an isolated user space
 - **Continuous Integration:** (CI) is testing automation to check that the application is not broken whenever new commits are integrated into the main branch
 - **Continuous Delivery:** (CD) is an extension of 'continuous integration' to make sure that you can release new changes in a sustainable way
@@ -68,7 +68,7 @@
 - **gitter:** a Github based messaging service that uses markdown `gitter.im <https://gitter.im>`_
 - **GitHub:** a website for hosting ``git`` repositories -- owned by Microsoft `GitHub <https://github.com>`_
 - **GitLab:** a website for hosting ``git`` repositories `GitLab <https://gitlab.com>`_
-- **GitOps:** using ``git`` framework as a means of deploying infrastructure on cloud using Kubernetes 
+- **GitOps:** using ``git`` framework as a means of deploying infrastructure on cloud using Kubernetes
 - **GPU:** graphic processing unit
 - **GUI:** graphical user interface
 
@@ -83,9 +83,9 @@
 - **IaaS:** `Infrastructure as a Service <https://en.wikipedia.org/wiki/Infrastructure_as_a_service>`_. online services that provide APIs
 - **iCommands:** `command line application <https://docs.irods.org/master/icommands/user/>`_ for accessing iRODS Data Store
 - **IDE:** integrated development environment, typically a graphical interface for working with code language or packages
-- **instance:** a single virtul machine 
+- **instance:** a single virtul machine
 - **image:** self-contained, read-only ‘snapshot’ of your applications and packages, with all their dependencies
-- **iRODS:** an open source integrated Rule-Oriented Data Management System, `iRODS.org <https://irods.org/>`_ 
+- **iRODS:** an open source integrated Rule-Oriented Data Management System, `iRODS.org <https://irods.org/>`_
 
 **J**
 
@@ -101,14 +101,14 @@
 
 **L**
 
-- **lib:** a UNIX library 
+- **lib:** a UNIX library
 - **linux:** open source Unix-like operating system
 
 **M**
 
 - **makefile:** a file containing a set of directives used by a `make build automation tool <https://www.gnu.org/software/make/>`_
 - **markdown:** a lightweight markup language with plain text formatting syntax
-- **metadata::** data about data, useful for searching and querying  
+- **metadata::** data about data, useful for searching and querying
 - **multi-thread:** a process which runs on more than one CPU or GPU core at the same time
 - **master node:** responsible for deciding what runs on all of the cluster's nodes. Can include scheduling workloads, like containerized applications, and managing the workloads' lifecycle, scaling, and upgrades. The master also manages network and storage resources for those workloads
 - **Mac OS X:** Apple's popular desktop OS
@@ -140,9 +140,9 @@
 **R**
 
 - **R:** data science programming language `R Project <https://cran.r-project.org/>`_
-- **recipe file:** a file with installation scripts used for building software such as containers, e.g. Dockerfile 
+- **recipe file:** a file with installation scripts used for building software such as containers, e.g. Dockerfile
 - **registry:** a storage and content delivery system, such as that used by Docker
-- **remote desktop:** a VM with a graphic user interface accessed via a browser 
+- **remote desktop:** a VM with a graphic user interface accessed via a browser
 - **repo(sitory):** a directory structure for hosting code and data
 - **RST:** ReStructuredText, a markdown type file
 - **ReadTheDocs:** a web service for rendering documentation (that this website uses) `readthedocs.org <https://readthedocs.org>`_ and `readthedocs.com <https://readthedocs.com/>`_
@@ -151,7 +151,7 @@
 **S**
 
 - **SaaS:** `Software as a Service <https://en.wikipedia.org/wiki/Software_as_a_service>`_ web based platform for using software
-- **schema:** a metadata standard for labeling, tagging or coding for recording & cataloging information or structuring descriptive records. see `schema.org <https://schema.org/>`_ 
+- **schema:** a metadata standard for labeling, tagging or coding for recording & cataloging information or structuring descriptive records. see `schema.org <https://schema.org/>`_
 - **scrum:** daily set of tasks and evalautions as part of a sprint.
 - **shell:** is a command line interface program that runs other programs (may be complex, technical programs or very simple programs such as making a directory). These simple, stand-alone programs are called commands
 - **Singularity:** a container software, used widely on HPC, created by `SyLabs <https://sylabs.io/>`_
@@ -164,21 +164,21 @@
 
 - **tar:**  software utility for collecting many files into one archive file, often referred to as a tarball
 - **tensor:** algebraic object that describes a linear mapping from one set of algebraic objects to another
-- **terminal:** a windowed emulator for directly enterinc commands to a computer 
+- **terminal:** a windowed emulator for directly enterinc commands to a computer
 - **thread:** a CPU process or a series of linked messages in a discussion board
-- **tool:** In the context of CyVerse Discovery Environment, a Docker Container 
+- **tool:** In the context of CyVerse Discovery Environment, a Docker Container
 - **TPU:** tensor processing unit
 - **Travis:** `Travis-CI <https://travis-ci.org/>`_, a continuous integration software
 
 **U**
 
 - **Ubuntu:** most popular `Linux OS distribution <https://ubuntu.com/>`_, based on Debian
-- **UNIX:** operating system 
+- **UNIX:** operating system
 - **user:** the profile under which applications are started and run, ``root`` is the most powerful system administrator
 
 **V**
 
-- **VICE:** `Visual Interactive Computing Environment <https://learning.cyverse.org/projects/vice/en/latest/>`_ - Cyverse Data Science Workbench 
+- **VICE:** `Visual Interactive Computing Environment <https://learning.cyverse.org/projects/vice/en/latest/>`_ - Cyverse Data Science Workbench
 - **virtual machine:** is a software computer that, like a physical computer, runs an operating system and applications
 
 **W**
