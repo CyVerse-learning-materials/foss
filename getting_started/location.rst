@@ -1,6 +1,6 @@
 .. include:: ../cyverse_rst_defined_substitutions.txt
 
-|CyVerse_logo2|_
+|CyVerse_logo|_
 
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
@@ -8,7 +8,7 @@
 **Location**
 ~~~~~~
 
-FOSS will be held in the `Health Sciences Innovation Building (HSIB)(UA Building #216) <https://goo.gl/maps/mEMjXTBcfKRbexiu9>`_, located at 1670 E Drachmann St. 
+FOSS will be held in the `Health Sciences Innovation Building (HSIB)(UA Building #216) <https://goo.gl/maps/mEMjXTBcfKRbexiu9>`_, located at 1670 E Drachmann St.
 
 .. raw:: html
 
@@ -45,24 +45,24 @@ Catalyst Studios are located inside the `UA Main Library <https://goo.gl/maps/PN
     <embed>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d843.7527072628939!2d-110.94939547075977!3d32.23087489882127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671aa3ef9532b%3A0x59551e45070c368f!2s1510%20E%20University%20Blvd%2C%20Tucson%2C%20AZ%2085721!5e0!3m2!1sen!2sus!4v1582144637122!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </embed>
-    
+
 
 **SERVICES**
 
-HSIB is adjacent the Banner University Medical Center. In the event of a medical emergency, attendees may be transported to Banner, or to the nearest `urgent care <https://goo.gl/maps/ZkLMyDcDQPQEAAia9>`_ facility. 
+HSIB is adjacent the Banner University Medical Center. In the event of a medical emergency, attendees may be transported to Banner, or to the nearest `urgent care <https://goo.gl/maps/ZkLMyDcDQPQEAAia9>`_ facility.
 
-Lactation rooms are available in HSIB 406 and in BSRL on 2nd floor -- ask Tina if you need help locating them. 
+Lactation rooms are available in HSIB 406 and in BSRL on 2nd floor -- ask Tina if you need help locating them.
 
 **PARKING**
 
-Nearest public parking is the Highland Garage, about 3 blocks west of HSIB ($1/hr with $8/day max) or you can take the Purple or Green CatTran shuttle to the northern terminus (the AHSL Library stop). 
+Nearest public parking is the Highland Garage, about 3 blocks west of HSIB ($1/hr with $8/day max) or you can take the Purple or Green CatTran shuttle to the northern terminus (the AHSL Library stop).
 
 HSIB is an approximate 10 minute walk from The Aloft Hotel.
 
 UArizona Campus Map: https://map.arizona.edu/
 
-CatTran Route Map: https://parking.arizona.edu/cattran/cat-tran-routes/     
- 
+CatTran Route Map: https://parking.arizona.edu/cattran/cat-tran-routes/
+
 ----
 
 **Fix or improve this documentation:**
