@@ -6,7 +6,7 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-CyVerse Learning - Foundations of Open Science Skills (FOSS) Online 2020
+Foundations of Open Science Skills (FOSS) Online 2021
 ------------------------------------
 
 Foundational Open Science Skills (FOSS) is a novel, camp-style training designed to prepare principal investigators and their lab teams, both new and established, to meet the growing expectations of funding agencies, publishers, and research institutions for scientific reproducibility and data accessibility.
