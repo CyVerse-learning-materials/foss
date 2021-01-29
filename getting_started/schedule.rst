@@ -17,9 +17,11 @@
 
 Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After March 14, 2021)
 
+Week 1: Feb. 9, 10
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 1: Feb. 9, 10
 
     * - Time
       - Activity (Instructor)
@@ -46,11 +48,15 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
       - Introduce yourself via QUBES Profile
       - Learn about how to navigate and operate on the QUBES website
 
+
 ----
+
+Week 2: Feb. 16,17
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows: 1
-    :caption: Week 2: Feb. 16,17
+
 
     * - Time
       - Activity (Instructor)
@@ -69,11 +75,15 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
       -
       -
 
+
 ----
+
+Week 3: Feb. 23, 24
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows: 1
-    :caption: Week 3: Feb. 23, 24
+
 
     * - Time
       - Activity (Instructor)
@@ -92,11 +102,15 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
       -
       -
 
+
 ----
+
+Week 4: Mar. 2, 3
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
     :header-rows: 1
-    :caption: Week 4: Mar. 2, 3
+
 
     * - Time
       - Activity (Instructor)
@@ -121,9 +135,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 5: Mar. 9, 10
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 5: Mar. 9, 10
+
 
     * - Time
       - Activity (Instructor)
@@ -146,9 +163,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 6: 23, 24
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 6: 23, 24
+
 
     * - Time
       - Activity (Instructor)
@@ -169,9 +189,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 7: Mar. 30, 31
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 7: Mar. 30, 31
+
 
     * - Time
       - Activity (Instructor)
@@ -192,9 +215,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 8: Apr. 6, 7
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 8: Apr. 6, 7
+
 
     * - Time
       - Activity (Instructor)
@@ -216,9 +242,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 9: Apr. 13, 14
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 9: Apr. 13, 14
+
 
     * - Time
       - Activity (Instructor)
@@ -239,9 +268,12 @@ Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After
 
 ----
 
+Week 10: Apr. 20, 21
+^^^^^^^^^^^^^^^^^^
+
 .. list-table::
     :header-rows: 1
-    :caption: Week 10: Apr. 20, 21
+
 
     * - Time
       - Activity (Instructor)
