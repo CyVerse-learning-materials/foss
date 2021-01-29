@@ -33,7 +33,7 @@ By working through an example project relevant to your interests, you will pract
 .. toctree::
    :maxdepth: 1
 
-   Home <self>
+   Workshop Home <self>
 
 .. toctree::
    :maxdepth: 1
@@ -47,7 +47,7 @@ By working through an example project relevant to your interests, you will pract
    :maxdepth: 1
    :caption: Key Information
 
-   getting_started/agenda
+   getting_started/schedule
    getting_started/instructors
    getting_started/glossary
 
