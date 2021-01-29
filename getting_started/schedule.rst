@@ -44,14 +44,14 @@ Week 1: Feb. 9, 10
       - Navigating the Portal, Discovery Environment, Data Store, and other platforms
       - Optional: Launching executable and interactive apps. `Add a tool and app <https://learning.cyverse.org/projects/cyverse-foss-2020/en/latest/CyVerse/tool_integration_app_building_DE.html>`_
     * -
-      - Homework for Week 1
+      - Week 1 Homework
       - Introduce yourself via QUBES Profile
       - Learn about how to navigate and operate on the QUBES website
 
 
 ----
 
-Week 2: Feb. 16,17
+Week 2: Feb. 16, 17
 ^^^^^^^^^^^^^^^^^^
 
 .. list-table::
@@ -65,13 +65,13 @@ Week 2: Feb. 16,17
     * - 0:00
       - Key Concepts: `Communication <https://learning.cyverse.org/projects/foss-2020/en/latest/reproducible_science/communication.html>`_ & `Documentation <https://learning.cyverse.org/projects/foss-2020/en/latest/reproducible_science/websites.html>`_ (Swetnam `slides <https://gitpitch.com/tyson-swetnam/foss-2020>`_)
       - Using tools like Slack, Medium, Twitter
-      - Project management tools, and public relations with social media.
+      - Project management tools, and public relations with social media
     * - 0:45
       - Breakout Sessions
       - Communication & Project Management Tools
       - Discuss how you can use GitHub, Websites, and Project Management Tools to empower your open-science lab
     * -
-      - Homework for Week 2
+      - Week 2 Homework
       -
       -
 
@@ -98,7 +98,7 @@ Week 3: Feb. 23, 24
       - Hands on with git
       - Understanding of `git <https://git-scm.com/>`_ and GitHub for use with your research.
     * -
-      - Homework for Week 3
+      - Week 3 Homework
       -
       -
 
@@ -129,7 +129,7 @@ Week 4: Mar. 2, 3
       -
       -
     * -
-      - Homework for Week 4
+      - Week 4 Homework
       -
       -
 
@@ -157,7 +157,7 @@ Week 5: Mar. 9, 10
       - Open Science Framework, Protocols.io, CyVerse DataCommons
       - Creating data management plans, work with metadata
     * -
-      - Homework for Week 5: `Data Management Plans <../Data_management/dmp.html>`_ (Walls)
+      - Week 5 Homework: `Data Management Plans <../Data_management/dmp.html>`_ (Walls)
       - Writing a Data Management Plan
       - Learn how to write an excellent DMP!
 
@@ -183,7 +183,7 @@ Week 6: 23, 24
       - OpenScienceGrid, XSEDE, HPC, Commercial Services
       -
     * -
-      - Homework for Week 6
+      - Week 6 Homework
       -
       -
 
@@ -209,7 +209,7 @@ Week 7: Mar. 30, 31
       - Intro to BioContainers, Docker, Singularity, and Kubernetes
       - Search for, locate, and launch a container anywhere
     * -
-      - Homework for Week 7
+      - Week 7 Homework
       -
       -
 
@@ -235,7 +235,7 @@ Week 8: Apr. 6, 7
       - Basics of Docker, creating your own containers
       -
     * -
-      - Homework for Week 8
+      - Week 8 Homework
       -
       -
 
@@ -262,7 +262,7 @@ Week 9: Apr. 13, 14
       - Connecting your work in CyVerse VICE
       - Learn to create a VICE app
     * -
-      - Homework for Week 9
+      - Week 9 Homework
       -
       -
 
