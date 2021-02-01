@@ -15,7 +15,7 @@
 
 .. Comment: Last year’s syllabus as a chart (for reference): https://docs.google.com/spreadsheets/d/1n5zCJlT9g_vyWx6z-5vmT300ZH-vC6AP4TYKFeJIMZo/edit#gid=0
 
-.. list-table:: Agenda
+.. list-table:: 
     :header-rows: 1
 
     * - Week, Dates, Topics
