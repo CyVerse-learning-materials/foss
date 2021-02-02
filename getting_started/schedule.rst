@@ -21,7 +21,7 @@
 
 **Wednesdays**: 11:00AM – 1:00PM US Pacific Time (2:00PM – 4:00PM US Eastern Time)
 
-- Listed below as Week Number: Month Tuesday's Date, Wednesday's Date
+The weekly schedule is listed below as Week Number: Month Tuesday's Date, Wednesday's Date
 
 ----
 
