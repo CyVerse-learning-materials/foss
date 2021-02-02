@@ -39,7 +39,6 @@ By working through an example project relevant to your interests, you will pract
    :maxdepth: 1
    :caption: Before FOSS Starts
 
-   before/main
    before/installation
 
 
@@ -48,18 +47,10 @@ By working through an example project relevant to your interests, you will pract
    :caption: Key Information
 
    getting_started/schedule
-   getting_started/instructors
-   getting_started/glossary
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Getting Started
-
-   getting_started/intro
+   Instructors <https://www.cyverse.org/foss#instructors>
    getting_started/code_of_conduct
-   getting_started/open_sci_lab
-   getting_started/colab_culture
+   getting_started/glossary
+   getting_started/goals
 
 
 .. toctree::
@@ -68,6 +59,8 @@ By working through an example project relevant to your interests, you will pract
 
    software_essentials/commandline
    software_essentials/linux
+   getting_started/open_sci_lab
+   getting_started/colab_culture
 
 
 .. toctree::
