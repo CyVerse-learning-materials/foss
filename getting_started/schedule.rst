@@ -10,7 +10,7 @@
 
 .. IMPORTANT::
 
-    Please fill out the weekly lesson feedback `Google Form <https://docs.google.com/forms/d/e/1FAIpQLSenaWAujZE-_3CNGNwyt9atS42O5ZAqe20owtjR_mMvgi5HSQ/viewform?usp=sf_link>`_
+    Please fill out the `weekly feedback form <https://docs.google.com/forms/d/e/1FAIpQLScEFhSXB52OegkXwXE0HISxIjCuBIiyi-qD4DYuDHhRe1k3fg/viewform?usp=sf_link>`_
 
 
 .. Comment: Last year’s syllabus as a chart (for reference): https://docs.google.com/spreadsheets/d/1n5zCJlT9g_vyWx6z-5vmT300ZH-vC6AP4TYKFeJIMZo/edit#gid=0
