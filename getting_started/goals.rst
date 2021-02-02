@@ -23,7 +23,7 @@ By the end, participants should have the basic skills needed to:
 
 
 **Approach**
-~~~~~
+====================
 
 FOSS focuses on hands on activities -- participants should learn skills by practicing them. Most of the skill taught in this course are interdependent, and lessons are designed to reinforce skills learned earlier in the course. Some material may be completely new to you, and some may be familiar. If you have experience with a subject, please help your less-experienced neighbor.
 
