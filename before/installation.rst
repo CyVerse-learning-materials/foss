@@ -37,8 +37,8 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
         Recommended ones include SublimeText and Atom (more in Optional Downloads below)
       - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
     * - Slack for networking
-      - We will be using Slack extensively for communication and networking purposes, especially between online class sessions
-      - Register for Slack at `https://slack.com/ <https://slack.com/>`_.
+      - We will be using Slack extensively for communication and networking purposes, especially between online class sessions.
+      - Check your email for our invitation.
     * - ORCID ID
       - If you haven't set up an Open Researcher and Contributor ID (ORCID) yet, please consider doing so (and add it to your CyVerse account profile)
       - Register for ORCID at `https://orcid.org/ <https://orcid.org/>`_.
