@@ -20,9 +20,6 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
       - You should be able to use any laptop (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
       - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
         - `Download Chrome <https://www.google.com/chrome/browser/>`_
-    * - Zoom Account
-      - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
-      - Register for your Zoom account at http://www.zoom.us/.
     * - CyVerse Account
       - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
       - Register for your CyVerse account at http://user.cyverse.org/.
@@ -34,7 +31,7 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
       - Register for your Dockerhub account at `https://hub.docker.com/ <https://hub.docker.com/>`_.
     * - Text Editor
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
-        Recommended ones include SublimeText and Atom (more in Optional Downloads below)
+        SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
       - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
     * - Slack for networking
       - We will be using Slack extensively for communication and networking purposes, especially between online class sessions.
@@ -54,8 +51,7 @@ Below are some other downloads that are not required for FOSS, but which provide
       - Notes
       - Link
     * - A Second Monitor (highly recommended)
-      - Having two monitors enables you to full-screen stream the instructional portion of the course while working on a second screen.
-      This is particularly helpful if you currently only have a laptop screen.
+      - Having two monitors enables you to full-screen stream the Zoom instructional portion of the course while working on a second screen, e.g., on a tutorial. This is particularly helpful if you currently only have a laptop screen.
       -
     * - SSH Clients (Windows)
       - PuTTY allows SSH connection to a remote machine, and is designed for
