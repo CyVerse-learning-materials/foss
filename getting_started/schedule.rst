@@ -6,7 +6,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 **Schedule**
-==========
+============
 
 .. IMPORTANT::
 
@@ -23,6 +23,7 @@
 
 - Listed below as Week Number: Month Tuesday's Date, Wednesday's Date
 
+----
 
 Week 1: Feb. 9, 10
 ^^^^^^^^^^^^^^^^^^
