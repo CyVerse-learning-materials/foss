@@ -21,8 +21,9 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
       - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
         - `Download Chrome <https://www.google.com/chrome/browser/>`_
     * - CyVerse Account
-      - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
-      - - `Register for your CyVerse account <http://user.cyverse.org/>`_.
+      - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered. Then be sure to validate your account by logging in to the Discovery Environment.
+      - - `Register for your CyVerse account <http://user.cyverse.org/>`_
+        - `Log in to the Discovery Environment <http://de.cyverse.org/>`_
     * - GitHub Account
       - Please ensure that you have a GitHub account if you don't have one already
       - - `Register for your GitHub account <https://github.com/>`_.
