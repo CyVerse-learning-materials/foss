@@ -8,7 +8,7 @@
 **Pre-FOSS Setup**
 ======================
 
-Welcome to FOSS Online, we're happy you're here! To get you ready to hit the ground running, please set up the Prerequisite accounts and software listed below ahead of the start of the course ; help setting up both Prerequisites and Optional Downloads will be available during Onboarding.
+Welcome to FOSS Online, we're happy you're here! To get you ready to hit the ground running, please set up the prerequisite accounts and software listed below before the course starts.
 
 .. list-table::
     :header-rows: 1
@@ -19,20 +19,21 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
     * - Wi-Fi-enabled laptop
       - You should be able to use any laptop (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
       - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
-        - `Download Chrome <https://www.google.com/chrome/browser/>`_
+      - - `Download Chrome <https://www.google.com/chrome/browser/>`_
     * - CyVerse Account
       - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
-      - Register for your CyVerse account at http://user.cyverse.org/.
+      - -`CyVerse account sign-up <http://user.cyverse.org/>`_
     * - GitHub Account
       - Please ensure that you have a GitHub account if you don't have one already
-      - Register for your GitHub account at `https://github.com/ <https://github.com/>`_.
+      - -`GitHub account <https://github.com/>`_.
     * - Dockerhub Account
       - Please ensure that you have a Dockerhub account if you don't have one already
-      - Register for your Dockerhub account at `https://hub.docker.com/ <https://hub.docker.com/>`_.
+      - -`Dockerhub account at <https://hub.docker.com/>`_.
     * - Text Editor
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
         SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
-      - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
+      - -`Sublime <https://www.sublimetext.com/>`_. 
+      - -`Atom <https://atom.io/>`_.
     * - Google Drive for sharing docs/files
       - This is a central location for uploading homework and shared project files.
       - - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
