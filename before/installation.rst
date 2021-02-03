@@ -32,8 +32,8 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
     * - Text Editor
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
         SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
-      - -`Sublime <https://www.sublimetext.com/>`_.
-        -`Atom <https://atom.io/>`_.
+      - - `Sublime <https://www.sublimetext.com/>`_.
+        - `Atom <https://atom.io/>`_.
     * - Google Drive for sharing docs/files
       - This is a central location for uploading homework and shared project files.
       - - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
