@@ -8,7 +8,7 @@
 **Pre-FOSS Setup**
 ======================
 
-Please set up the Prerequisite accounts and software to prepare for FOSS Online; help setting up both Prerequisites and Optional Downloads will be available during Onboarding.
+Welcome to FOSS Online, we're happy you're here! To get you ready to hit the ground running, please set up the Prerequisite accounts and software listed below ahead of the start of the course ; help setting up both Prerequisites and Optional Downloads will be available during Onboarding.
 
 .. list-table::
     :header-rows: 1
@@ -18,8 +18,8 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
       - Links
     * - Wi-Fi-enabled laptop
       - You should be able to use any laptop (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
-      - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
-        `Download Chrome <https://www.google.com/chrome/browser/>`_
+      - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
+        - `Download Chrome <https://www.google.com/chrome/browser/>`_
     * - CyVerse Account
       - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
       - Register for your CyVerse account at http://user.cyverse.org/.
@@ -35,7 +35,7 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
       - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
     * - Google Drive for sharing docs/files
       - This is a central location for uploading homework and shared project files.
-      - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
+      - - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
     * - Slack for networking
       - We will be using Slack extensively for communication and networking purposes, especially between online class sessions.
       - Check your email for our invitation.
@@ -61,24 +61,24 @@ Below are some other downloads that are not required for FOSS, but which provide
         Windows users who do not have a Mac/Linux terminal. MobaXterm is a single
         Windows application that provides a ton of functions for programmers, webmasters,
         IT administrators, and anybody is looking to manage system remotely
-      - `Download PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_
-        `Download mobaXterm <https://mobaxterm.mobatek.net>`_
-        `Install Windows Subsystem for Linux (WSL) 2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_
+      - - `Download PuTTY <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_
+        - `Download mobaXterm <https://mobaxterm.mobatek.net>`_
+        - `Install Windows Subsystem for Linux (WSL) 2 <https://docs.microsoft.com/en-us/windows/wsl/wsl2-install>`_
     * - Text Editors
       - There is no 'best' text editor, but some are easier to use than others. Do some reading and pick one.
-      - `Atom <https://atom.io/>`_
-        `SublimeText <https://www.sublimetext.com/>`_
-        `VisualStudioCode <https://code.visualstudio.com/>`_
-        `Vim <http://www.vim.org/>`_
-        `Emacs <https://www.gnu.org/software/emacs/>`_
-        `Nano <https://www.nano-editor.org>`_
+      - - `Atom <https://atom.io/>`_
+        - `SublimeText <https://www.sublimetext.com/>`_
+        - `VisualStudioCode <https://code.visualstudio.com/>`_
+        - `Vim <http://www.vim.org/>`_
+        - `Emacs <https://www.gnu.org/software/emacs/>`_
+        - `Nano <https://www.nano-editor.org>`_
     * - Cyberduck
       - Cyberduck is a third-party tool for uploading/downloading data to the CyVerse Data Store.
         Currently, this tool is available for Windows/MacOS only. You will need
         to download Cyberduck and the connection profile. We will go through
         configuration and installation during FOSS Onboarding.
-      - `Download Cyberduck <https://cyberduck.io/>`_
-        `Installation for CyVerse <https://learning.cyverse.org/projects/data_store_guide/en/latest/step1.html#download-and-first-time-configuration-of-cyberduck>`_
+      - - `Download Cyberduck <https://cyberduck.io/>`_
+        - `Installation for CyVerse <https://learning.cyverse.org/projects/data_store_guide/en/latest/step1.html#download-and-first-time-configuration-of-cyberduck>`_
     * - iCommands
       - iCommands are third-party software for command-line connection to the
         CyVerse Data Store.
