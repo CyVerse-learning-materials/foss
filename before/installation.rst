@@ -16,7 +16,7 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
     * - Prerequisite
       - Notes
       - Links
-    * - Wi-Fi-enabled laptop
+    * - Browser(s)
       - You should be able to use any laptop (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
       - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
       - - `Download Chrome <https://www.google.com/chrome/browser/>`_
