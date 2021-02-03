@@ -97,4 +97,4 @@ Below are some other downloads that are not required for FOSS, but which provide
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/CyVerse/before/installation.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/blob/master/before/installation.rst" target="blank">Github Repo Link</a>
