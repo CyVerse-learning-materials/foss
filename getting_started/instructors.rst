@@ -1,10 +1,10 @@
-.. include:: ../cyverse_rst_defined_substitutions.txt
+.. include:: cyverse_rst_defined_substitutions.txt
+.. include:: ./cyverse_rst_defined_substitutions.txt
 
 |CyVerse_logo|_
 
-|Home_Icon2|_
+|Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
-
 
 **Instructors**
 ===============
@@ -20,6 +20,8 @@
 .. ## `Michael Mandell <https://eller.arizona.edu/people/michael-mandel>`_, Lecturer in Business Communications, Eller College of Management | mkmandel@email.arizona.edu
 
 `Nirav Merchant <https://datascience.arizona.edu/person/nirav-merchant>`_, Data Science Director | nirav@email.arizona.edu
+
+`Ryan Bartelme <https://rbartelme.github.io/>`_, Science Analyst, CyVerse | rbartelme@email.arizona.edu
 
 .. ## `Sateesh Peri <https://sateeshperi.github.io/>`_, Ph.D. Candidate, Plant Sciences University of Arizona |
 

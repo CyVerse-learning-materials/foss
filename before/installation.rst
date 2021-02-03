@@ -31,11 +31,15 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
       - `Register for your Dockerhub account <https://hub.docker.com/>`_.
     * - Text Editor
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
-        Recommended ones include SublimeText and Atom (more in Optional Downloads below)
-      - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
+        SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
+      - -`Sublime <https://www.sublimetext.com/>`_. 
+      - -`Atom <https://atom.io/>`_.
+    * - Google Drive for sharing docs/files
+      - This is a central location for uploading homework and shared project files.
+      - - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
     * - Slack for networking
-      - We will be using Slack extensively for communication and networking purposes, especially between online class sessions
-      - Register for Slack at `https://slack.com/ <https://slack.com/>`_.
+      - We will be using Slack extensively for communication and networking purposes, especially between online class sessions.
+      - Check your email for our invitation.
     * - ORCID ID
       - If you haven't set up an Open Researcher and Contributor ID (ORCID) yet, please consider doing so (and add it to your CyVerse account profile)
       - Register for ORCID at `https://orcid.org/ <https://orcid.org/>`_.
@@ -51,8 +55,7 @@ Below are some other downloads that are not required for FOSS, but which provide
       - Notes
       - Link
     * - A Second Monitor (highly recommended)
-      - Having two monitors enables you to full-screen stream the instructional portion of the course while working on a second screen.
-      This is particularly helpful if you currently only have a laptop screen.
+      - Having two monitors enables you to full-screen stream the Zoom instructional portion of the course while working on a second screen, e.g., on a tutorial. This is particularly helpful if you currently only have a laptop screen.
       -
     * - SSH Clients (Windows)
       - PuTTY allows SSH connection to a remote machine, and is designed for
@@ -95,4 +98,4 @@ Below are some other downloads that are not required for FOSS, but which provide
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/CyVerse/before/installation.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/before/installation.rst" target="blank">Github Repo Link</a>

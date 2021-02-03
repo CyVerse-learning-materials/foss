@@ -6,7 +6,7 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 **Schedule**
-==========
+============
 
 .. IMPORTANT::
 
@@ -15,7 +15,15 @@
 
 .. Comment: Last year’s syllabus as a chart (for reference): https://docs.google.com/spreadsheets/d/1n5zCJlT9g_vyWx6z-5vmT300ZH-vC6AP4TYKFeJIMZo/edit#gid=0
 
-Note: Times are shown in Arizona Time GMT-7 (same as Pacific Daylight Time After March 14, 2021)
+**Tuesdays**: 9:00AM – 11:00AM US Pacific Time (12:00PM – 2:00PM US Eastern Time)
+
+*or*
+
+**Wednesdays**: 11:00AM – 1:00PM US Pacific Time (2:00PM – 4:00PM US Eastern Time)
+
+The weekly schedule is listed below as Week Number: Month Tuesday's Date, Wednesday's Date
+
+----
 
 Week 1: Feb. 9, 10
 ^^^^^^^^^^^^^^^^^^

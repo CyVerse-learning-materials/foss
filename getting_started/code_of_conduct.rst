@@ -8,21 +8,27 @@
 **Code of Conduct**
 ============================
 
-All attendees, speakers, sponsors and volunteers at FOSS Camp are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe, inclusive, and collaborative environment for everybody.
+In conjunction with |CyVerse Policies| for using CyVerse cyberinfrastructure, this Code of Conduct applies to all Event participants and their activities while using CyVerse resources and/or attending the Event.
 
-Harassment by any individual will not be tolerated and may result in the individual being removed from the Camp.
+CyVerse is dedicated to providing professional computational research and educational experiences for all of our users, regardless of domain focus, academic status, educational level, gender/gender identity/expression, age, sexual orientation, mental or physical ability, physical appearance, body size, race, ethnicity, religion (or lack thereof), technology choices, dietary preferences, or any other personal characteristic. 
 
-Harassment includes: offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, technology choices, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+When using CyVerse or participating at an Event, we expect you to:
 
-Workshop staff are also subject to the anti-harassment policy. In particular, staff should not use sexualised images, activities, or other material that conflicts with the code of conduct.
+- Interact with others and use CyVerse professionally and ethically by complying with our Policies.
+- Constructively critize ideas and processes, not people.
+- Follow the Golden Rule (treat others as you want to be treated) when interacting online or in-person with collaborators, trainers, and support staff. 
+- Comply with this Code in spirit as much as the letter, as it is neither exhaustive nor complete in identifying any and all possible unacceptable conduct.
 
-Participants who are asked to stop any harassing behavior are expected to comply immediately. If a participant engages in harassing behavior, the workshop organisers may take any action they deem appropriate, including warning the offender or expulsion from the workshop with no refund.
+We do not tolerate harassment of other users or staff in any form (including, but not limited to, violent threats or language, derogatory language or jokes, doxing, insults, advocating for or encouraging any of these behaviors). Sexual language and imagery are not appropriate at any time (excludes Protected Health Information in compliance with HIPAA). Any user violating this Code may be expelled from the platform and the workshop at CyVerse’s sole discretion without warning.
 
-If you are being harassed, or notice that someone else is being harassed, or have any other concerns, please contact a member of the workshop staff immediately. Workshop staff will be happy to help participants contact local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the workshop. We value your attendance.
+To report a violation of this Code, directly message a trainer via Slack or email info@cyverse.org with the following information:
 
-We expect participants to follow these rules at conference and workshop venues and conference-related social events.
+- Your contact information
+- Names (real, username, pseudonyms) of any individuals involved, and or witness(es) if any.
+- Your account of what occurred and if the incident is ongoing. If there is a publicly available record (a tweet, public chat log, etc.), please include a link or attachment.
+- Any additional information that may be helpful in resolving the issue.
 
-See http://www.ashedryden.com/blog/codes-of-conduct-101-faq or The Carpentries https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html for more information on Codes of Conduct.
+
 
 ----
 
@@ -37,4 +43,9 @@ See http://www.ashedryden.com/blog/codes-of-conduct-101-faq or The Carpentries h
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/getting_started/code_of_conduct.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/code_of_conduct.rst" target="blank">Github Repo Link</a>
+
+.. |CyVerse Policies|  raw:: html
+
+   <a href="https://cyverse.org/policies" target="blank">CyVerse Policies</a>
+
