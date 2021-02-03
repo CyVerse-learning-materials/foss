@@ -43,7 +43,7 @@ To report a violation of this Code, directly message a trainer via Slack or emai
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss/blob/master/getting_started/code_of_conduct.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/code_of_conduct.rst" target="blank">Github Repo Link</a>
 
 .. |CyVerse Policies|  raw:: html
 
