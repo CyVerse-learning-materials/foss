@@ -33,6 +33,9 @@ Please set up the Prerequisite accounts and software to prepare for FOSS Online;
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
         SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
       - Register for Sublime at `https://www.sublimetext.com/ <https://www.sublimetext.com/>`_. Register for Atom at `https://atom.io/ <https://atom.io/>`_.
+    * - Google Drive for sharing docs/files
+      - This is a central location for uploading homework and shared project files.
+      - - `FOSS Online 2021 <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
     * - Slack for networking
       - We will be using Slack extensively for communication and networking purposes, especially between online class sessions.
       - Check your email for our invitation.
