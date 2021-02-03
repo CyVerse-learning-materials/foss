@@ -17,18 +17,18 @@ Welcome to FOSS Online, we're happy you're here! To get you ready to hit the gro
       - Notes
       - Links
     * - Browser(s)
-      - You should be able to use any laptop (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
+      - You should be able to use any operating system (Windows/MacOS/Linux.). We **strongly recommend** Firefox or Chrome as your browser. It is recommended that you have administrative/install permissions on your laptop.
       - - `Download FireFox <https://www.mozilla.org/en-US/firefox/new/?scene=2>`_
-      - - `Download Chrome <https://www.google.com/chrome/browser/>`_
+        - `Download Chrome <https://www.google.com/chrome/browser/>`_
     * - CyVerse Account
       - Please ensure that you have a CyVerse account and have **verified** your account by completing the verification steps in the email you got when you registered.
-      - -`CyVerse account sign-up <http://user.cyverse.org/>`_
+      - `Register for your CyVerse account <http://user.cyverse.org/>`_.
     * - GitHub Account
       - Please ensure that you have a GitHub account if you don't have one already
-      - -`GitHub account <https://github.com/>`_.
+      - `Register for your GitHub account <https://github.com/>`_.
     * - Dockerhub Account
       - Please ensure that you have a Dockerhub account if you don't have one already
-      - -`Dockerhub account at <https://hub.docker.com/>`_.
+      - `Register for your Dockerhub account <https://hub.docker.com/>`_.
     * - Text Editor
       - Please ensure that you have a Text Editor of your choice. Any decent Text Editor would be sufficient.
         SublimeText and Atom (more in Optional Downloads below) are ones we recommend.
