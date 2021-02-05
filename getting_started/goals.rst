@@ -74,4 +74,4 @@ For up to one year following FOSS, CyVerse will provide concierge service to par
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/getting_started/intro.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/goals.rst" target="blank">Github Repo Link</a>
