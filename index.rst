@@ -49,9 +49,9 @@ By working through an example project relevant to your interests, you will pract
    getting_started/schedule
    Instructors <https://www.cyverse.org/foss#instructors>
    getting_started/code_of_conduct
-   getting_started/glossary
-   getting_started/goals
    getting_started/open_sci_lab
+   getting_started/goals
+   getting_started/glossary
 
 
 .. toctree::
