@@ -217,4 +217,4 @@
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/CyVerse/getting_started/agenda.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/glossary.rst" target="blank">Github Repo Link</a>
