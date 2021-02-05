@@ -51,6 +51,7 @@ By working through an example project relevant to your interests, you will pract
    getting_started/code_of_conduct
    getting_started/glossary
    getting_started/goals
+   getting_started/open_sci_lab
 
 
 .. toctree::
@@ -60,10 +61,7 @@ By working through an example project relevant to your interests, you will pract
    CyVerse/intro_to_cyverse
    CyVerse/data_store
    CyVerse/de-data-manage
-   CyVerse/de-data-analysis
-   CyVerse/tool_integration_app_building_DE
-   CyVerse/vice
-
+   
 
 .. toctree::
    :maxdepth: 1
@@ -89,9 +87,12 @@ By working through an example project relevant to your interests, you will pract
    :maxdepth: 1
    :caption: Essential Skills
 
+   CyVerse/de-data-analysis
+   CyVerse/tool_integration_app_building_DE
+   CyVerse/vice
    software_essentials/commandline
    software_essentials/linux
-   getting_started/open_sci_lab
+
 
 
 .. toctree::
