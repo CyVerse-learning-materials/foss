@@ -33,7 +33,7 @@ We don't expect anyone to be experts at these skills after one meeting. Instead,
 
 For up to one year following FOSS, CyVerse will provide concierge service to participants, to ensure that they are able to take full advantage of CyVerse infrastructure for their open science projects.
 
-`See the Schedule <schedule.rst>`_
+`See the Schedule <schedule.html>`_
 
 ----
 
