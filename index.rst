@@ -60,7 +60,6 @@ By working through an example project relevant to your interests, you will pract
    software_essentials/commandline
    software_essentials/linux
    getting_started/open_sci_lab
-   getting_started/colab_culture
 
 
 .. toctree::
@@ -70,8 +69,8 @@ By working through an example project relevant to your interests, you will pract
    reproducible_science/intro
    reproducible_science/communication
    reproducible_science/GitHub
-   reproducible_science/cicd
    reproducible_science/websites
+   documentation/githubpages
 
 
 .. toctree::
@@ -114,28 +113,6 @@ By working through an example project relevant to your interests, you will pract
    Containers/dockerintro
    Containers/dockeradvanced
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Using RStudio
-
-   software_essentials/R_Studio
-   software_essentials/RStudio_Git
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Instructions and Reporting
-
-.. toctree::
-   :maxdepth: 1
-   :caption: GitHub Action and EHT
-
-   github_action/eht
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Experimental
-
-   documentation/githubpages
 
 ----
 
