@@ -55,35 +55,6 @@ By working through an example project relevant to your interests, you will pract
 
 .. toctree::
    :maxdepth: 1
-   :caption: Essential Skills
-
-   software_essentials/commandline
-   software_essentials/linux
-   getting_started/open_sci_lab
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reproducible Science
-
-   reproducible_science/intro
-   reproducible_science/communication
-   reproducible_science/GitHub
-   reproducible_science/websites
-   documentation/githubpages
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Data Management
-
-   Data_management/overview
-   Data_management/FAIR
-   Data_management/dmp
-   Data_management/dmtools
-
-.. toctree::
-   :maxdepth: 1
    :caption: Using CyVerse
 
    CyVerse/intro_to_cyverse
@@ -102,6 +73,36 @@ By working through an example project relevant to your interests, you will pract
    cloud_comput/atmo
    cloud_comput/xsede
    cloud_comput/cyberinfrastructure
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Data Management
+
+   Data_management/overview
+   Data_management/FAIR
+   Data_management/dmp
+   Data_management/dmtools
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Essential Skills
+
+   software_essentials/commandline
+   software_essentials/linux
+   getting_started/open_sci_lab
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reproducible Science
+
+   reproducible_science/intro
+   reproducible_science/communication
+   reproducible_science/GitHub
+   reproducible_science/websites
+   documentation/githubpages
 
 
 .. toctree::
