@@ -156,4 +156,4 @@ https://www.nature.com/articles/sdata201618
 
 .. |Github Repo Link| raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/Data_management/FAIR.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/Data_management/FAIR.rst" target="blank">Github Repo Link</a>
