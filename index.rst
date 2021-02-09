@@ -150,6 +150,9 @@ Documentation contained in this repo is made available under CC BY 4.0 License: 
 
 ----
 
+.. |Github Repo Link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/index.rst" target="blank">Github Repo Link</a>
 
 .. |CyVerse_logo2| image:: ./img/cyverse_cmyk.png
     :width: 500
