@@ -5,6 +5,7 @@
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
+
 **Schedule**
 ============
 
@@ -33,9 +34,8 @@ Week 1: Feb. 9, 10 - What is Open Science? Overview and Onboarding
 
 - Welcome
 - Self-introductions
-- Intro to FOSS
-- CyVerse Tour
-- Setup on CyVerse Data Store
+- `Intro to FOSS <https://docs.google.com/presentation/d/19z8wUqk1fhpFx3T3mf61kN-n9llWGGdMgUjjwvwNGsg/edit#slide=id.g62cece6a8e_2_75>`_
+- `CyVerse Tour <https://drive.google.com/file/d/1bpNFspFJKmoIsz88EcV86Om0g39kqDrD/view?usp=sharing>`_
 
 
 **Content:**
@@ -48,8 +48,24 @@ Understand and align shared expectations. Start orientation to technology we wil
 
 **Homework:**
 
-- Skill Self-Assessment
-- Introductory Videos
+Due by: Monday February 15 (Tuesday cohort), Tuesday February 16 (Wednesday cohort)
+
+`Take the Skills Self-assessment <https://docs.google.com/forms/d/e/1FAIpQLSenWNmetN7QpO30rW2fPP07tqKzgeBxrCBi2s7Bz-D36N7gxA/viewform?usp=sf_link>`_
+
+  - Make a SHORT video introducing yourself. You can use slides or not (your choice). Tell us:
+  - Who you are/what you do (career stage, research focus, location, etc.)
+  - What you most want to gain from the course
+  - Keep to 3 minutes or less
+  - `Upload your video to the FOSS google drive <https://drive.google.com/drive/folders/16KgiQXpjlCai81_iEydCW87e-TO9VtbO?usp=sharing>`_
+  - Have fun!
+
+Recording suggestions:
+  - Use a smartphone movie/video function
+  - If you have access to Zoom, you can record this way
+  - You can also create a video on YouTube if you have an account (you can keep the video unlisted)
+
+And if you haven’t yet, finish setting up your accounts on CyVerse, GitHub, and DockerHub and get an ORCID. Install any optional software you would like to use. `Here is a link to the pre-setup instructions <https://learning.cyverse.org/projects/foss-2020/en/latest/before/installation.html>`_.
+
 
 ----
 
