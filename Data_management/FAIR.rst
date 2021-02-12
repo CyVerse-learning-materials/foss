@@ -21,7 +21,7 @@
 FAIR Principles
 ===============
 
-In 2016, the |FAIR Guiding Principles|_ for scientific data management and stewardship were published in Scientific Data. Read it. Its short.
+In 2016, the `FAIR Guiding Principles <https://www.nature.com/articles/sdata201618>`_ for scientific data management and stewardship were published in Scientific Data. Read it. Its short.
 
 **Findable**
  - F1. (meta)data are assigned a globally unique and persistent identifier
@@ -149,10 +149,6 @@ https://www.nature.com/articles/sdata201618
 .. |CARE principles| raw:: html
 
    <a href="https://www.gida-global.org/care" target="_blank">CARE principles</a>
-   
-.. |FAIR Guiding Principles| raw:: html
-
-   <a href="https://www.nature.com/articles/sdata201618" target="_blank">FAIR Guiding Principles</a>
    
 .. |Github Repo Link| raw:: html
 
