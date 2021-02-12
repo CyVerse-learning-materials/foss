@@ -12,7 +12,7 @@
 |DE_icon|
 
 
-DE Basics Walkthrough
+Classic DE Data Store Walkthrough
 ===============
  - Log in at https://de.cyverse.org/
 
