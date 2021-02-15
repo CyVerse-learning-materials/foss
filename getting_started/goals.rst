@@ -33,7 +33,7 @@ We don't expect anyone to be experts at these skills after one meeting. Instead,
 
 For up to one year following FOSS, CyVerse will provide concierge service to participants, to ensure that they are able to take full advantage of CyVerse infrastructure for their open science projects.
 
-`See the Schedule <schedule.rst>`_
+`See the Schedule <schedule.html>`_
 
 ----
 
@@ -74,4 +74,4 @@ For up to one year following FOSS, CyVerse will provide concierge service to par
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/getting_started/intro.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/goals.rst" target="blank">Github Repo Link</a>

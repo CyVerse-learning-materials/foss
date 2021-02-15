@@ -49,39 +49,10 @@ By working through an example project relevant to your interests, you will pract
    getting_started/schedule
    Instructors <https://www.cyverse.org/foss#instructors>
    getting_started/code_of_conduct
-   getting_started/glossary
-   getting_started/goals
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Essential Skills
-
-   software_essentials/commandline
-   software_essentials/linux
    getting_started/open_sci_lab
-   getting_started/colab_culture
+   getting_started/goals
+   getting_started/glossary
 
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reproducible Science
-
-   reproducible_science/intro
-   reproducible_science/communication
-   reproducible_science/GitHub
-   reproducible_science/cicd
-   reproducible_science/websites
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Data Management
-
-   Data_management/overview
-   Data_management/FAIR
-   Data_management/dmp
-   Data_management/dmtools
 
 .. toctree::
    :maxdepth: 1
@@ -90,10 +61,7 @@ By working through an example project relevant to your interests, you will pract
    CyVerse/intro_to_cyverse
    CyVerse/data_store
    CyVerse/de-data-manage
-   CyVerse/de-data-analysis
-   CyVerse/tool_integration_app_building_DE
-   CyVerse/vice
-
+   
 
 .. toctree::
    :maxdepth: 1
@@ -107,6 +75,39 @@ By working through an example project relevant to your interests, you will pract
 
 .. toctree::
    :maxdepth: 1
+   :caption: Data Management
+
+   Data_management/overview
+   Data_management/FAIR
+   Data_management/dmp
+   Data_management/dmtools
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Essential Skills
+
+   CyVerse/de-data-analysis
+   CyVerse/tool_integration_app_building_DE
+   CyVerse/vice
+   software_essentials/commandline
+   software_essentials/linux
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reproducible Science
+
+   reproducible_science/intro
+   reproducible_science/communication
+   reproducible_science/GitHub
+   reproducible_science/websites
+   documentation/githubpages
+
+
+.. toctree::
+   :maxdepth: 1
    :caption: Containers
 
    Containers/introtocontainers
@@ -114,28 +115,6 @@ By working through an example project relevant to your interests, you will pract
    Containers/dockerintro
    Containers/dockeradvanced
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Using RStudio
-
-   software_essentials/R_Studio
-   software_essentials/RStudio_Git
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Instructions and Reporting
-
-.. toctree::
-   :maxdepth: 1
-   :caption: GitHub Action and EHT
-
-   github_action/eht
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Experimental
-
-   documentation/githubpages
 
 ----
 
@@ -171,6 +150,9 @@ Documentation contained in this repo is made available under CC BY 4.0 License: 
 
 ----
 
+.. |Github Repo Link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/index.rst" target="blank">Github Repo Link</a>
 
 .. |CyVerse_logo2| image:: ./img/cyverse_cmyk.png
     :width: 500

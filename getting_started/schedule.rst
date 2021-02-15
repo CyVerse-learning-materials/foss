@@ -26,8 +26,8 @@ The weekly schedule is listed below as Week Number: Month Tuesday's Date, Wednes
 
 ----
 
-Week 1: Feb. 9, 10
-^^^^^^^^^^^^^^^^^^
+Week 1: Feb. 9, 10 - What is Open Science? Overview and Onboarding 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Activity:**
@@ -69,8 +69,8 @@ And if you haven’t yet, finish setting up your accounts on CyVerse, GitHub, an
 
 ----
 
-Week 2: Feb. 16, 17
-^^^^^^^^^^^^^^^^^^
+Week 2: Feb. 16, 17 - Working with Data: Intro to Data Store, Scale and Challenges of Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Activity:**
@@ -96,8 +96,8 @@ Understand how your research and associated data challenges fit into the context
 
 ----
 
-Week 3: Feb. 23, 24
-^^^^^^^^^^^^^^^^^^
+Week 3: Feb. 23, 24 - Essential Skills: Key Concepts of Linux Command Line, VICE Apps
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Activity:**
@@ -121,8 +121,8 @@ Beginning learners will gain basic understanding of the command line (survival s
 
 ----
 
-Week 4: Mar. 2, 3
-^^^^^^^^^^^^^^^^^^
+Week 4: Mar. 2, 3 - Planning Your Open Science Lab
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Activity:**
@@ -147,8 +147,8 @@ Know some of the basic tools for documenting and sharing your work in an open so
 
 ----
 
-Week 5: Mar. 9, 10
-^^^^^^^^^^^^^^^^^^
+Week 5: Mar. 9, 10 - Using Git: Issues, Pull Request, and more
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 **Activity:**
@@ -172,8 +172,8 @@ Be able to use authoring tools and Github to develop a simple website that docum
 
 ----
 
-Week 6: Mar. 23, 24
-^^^^^^^^^^^^^^^^^^^
+Week 6: Mar. 23, 24 - Reproducibility Tutorial I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
 
@@ -193,8 +193,8 @@ As assigned.
 
 ----
 
-Week 7: Mar. 30, 31
-^^^^^^^^^^^^^^^^^^
+Week 7: Mar. 30, 31 - Reproducibility Tutorial II: Containers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
 
@@ -214,8 +214,8 @@ As assigned.
 
 ----
 
-Week 8: Apr. 6, 7
-^^^^^^^^^^^^^^^^^^
+Week 8: Apr. 6, 7 - Reproducibility Tutorial III: Workflows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
 
@@ -237,8 +237,8 @@ Understand how automated workflows can save time and make research more reproduc
 
 ----
 
-Week 9: Apr. 13, 14
-^^^^^^^^^^^^^^^^^^^
+Week 9: Apr. 13, 14 - Putting It All Together I
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
 
@@ -259,8 +259,8 @@ Be able to collaborate as a team to deliver a product that makes use of the skil
 
 ----
 
-Week 10: Apr. 20, 21
-^^^^^^^^^^^^^^^^^^^^
+Week 10: Apr. 20, 21 - Putting It All Together II
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
 

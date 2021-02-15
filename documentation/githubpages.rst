@@ -75,7 +75,7 @@ but you can throw up a basic website, use |themes|, and extend it.
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2019/tree/master/Data_management/dmp.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/documentation/githubpages.rst" target="blank">Github Repo Link</a>
 
 .. |GitHub Pages|  raw:: html
 

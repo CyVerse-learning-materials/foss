@@ -12,7 +12,7 @@
 |DE_icon|
 
 
-DE Basics Walkthrough
+Classic DE Data Store Walkthrough
 ===============
  - Log in at https://de.cyverse.org/
 
@@ -166,4 +166,4 @@ Additional resources
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/de-data-manage.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/CyVerse/de-data-manage.rst" target="blank">Github Repo Link</a>
