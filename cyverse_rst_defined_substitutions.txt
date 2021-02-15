@@ -117,6 +117,10 @@
 
    <a href="http://learning.cyverse.org/en/latest/" target="blank">BisQue Guide</a>
 
+.. |Data Commons| raw:: html
+
+   <a href="http://datacommons.cyverse.org/" target="blank">Data Commons</a>
+
 
 .. Comment: images
 
