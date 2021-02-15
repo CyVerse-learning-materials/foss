@@ -8,31 +8,16 @@
 **FAIR Data**
 --------------------
 
-How to make data findable, accessible, interoperable, and reusable.
+.. admonition:: learning-objectives
 
-See the `FAIR data page <./FAIR.html>`_.
-
-Open versus Public versus FAIR:
-
-One definition of open: http://opendefinition.org/
-
-FAIR does not demand that data be open.
-
-
-**Vocabulary**
-  - Metadata
-  - PID: Permanent Identifier
-  - GUID: Globally Unique Identifier
-  - Ontology
-  - Provenance
-  - License
-  - Search Index
-  - Access protocol
+       - Recall the meaning of FAIR
+       - Understand why FAIR is a collection of principles (rather than rules)
+       - Use self-assessments to evaluate the FAIRness of your data
 
 FAIR Principles
-===============
+~~~~~~~~~~~~~~~~~
 
-In 2016, the `FAIR Guiding Principles <https://www.nature.com/articles/sdata201618>`_ for scientific data management and stewardship were published in Scientific Data. Read it. Its short.
+In 2016, the |FAIR Guiding Principles| <https://www.nature.com/articles/sdata201618>`_ for scientific data management and stewardship were published in Scientific Data. Read it. Its short.
 
 **Findable**
  - F1. (meta)data are assigned a globally unique and persistent identifier
@@ -56,6 +41,13 @@ In 2016, the `FAIR Guiding Principles <https://www.nature.com/articles/sdata2016
  - R1.1. (meta)data are released with a clear and accessible data usage license
  - R1.2. (meta)data are associated with detailed provenance
  - R1.3. (meta)data meet domain-relevant community standard
+
+ Open versus Public versus FAIR:
+
+ One definition of open: http://opendefinition.org/
+
+ FAIR does not demand that data be open.
+
 
 CARE Principles
 ===============

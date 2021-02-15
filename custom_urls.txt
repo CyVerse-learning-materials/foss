@@ -105,9 +105,9 @@
 
 .. |lifecycle| image:: ../img/data_life_cycle.png
 
-.. |LINK| raw:: html
+.. |Data management general guidance| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://dmptool.org/general_guidance#types-of-data" target="blank">Data management general guidance</a>
 
 .. |LINK| raw:: html
 
