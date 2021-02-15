@@ -8,6 +8,17 @@
 **FAIR Data**
 --------------------
 
+How to make data findable, accessible, interoperable, and reusable.
+
+See the `FAIR data page <./FAIR.html>`_.
+
+Open versus Public versus FAIR:
+
+One definition of open: http://opendefinition.org/
+
+FAIR does not demand that data be open.
+
+
 **Vocabulary**
   - Metadata
   - PID: Permanent Identifier
@@ -149,7 +160,7 @@ https://www.nature.com/articles/sdata201618
 .. |CARE principles| raw:: html
 
    <a href="https://www.gida-global.org/care" target="_blank">CARE principles</a>
-   
+
 .. |Github Repo Link| raw:: html
 
    <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/Data_management/FAIR.rst" target="blank">Github Repo Link</a>
