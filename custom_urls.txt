@@ -105,22 +105,22 @@
 
 .. |lifecycle| image:: ../img/data_life_cycle.png
 
-.. |LINK| raw:: html
+.. |Data management general guidance| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://dmptool.org/general_guidance#types-of-data" target="blank">Data management general guidance</a>
 
-.. |LINK| raw:: html
+.. |FAIR Guiding Principles| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://www.nature.com/articles/sdata201618" target="blank">FAIR Guiding Principles</a>
 
-.. |LINK| raw:: html
+.. |CARE principles| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://www.gida-global.org/care" target="blank">CARE principles</a>
 
-.. |LINK| raw:: html
+.. |FAIR assessment| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://ardc.edu.au/resources/working-with-data/fair-data/fair-self-assessment-tool/" target="blank">FAIR assessment</a>
 
-.. |LINK| raw:: html
+.. |Data Stewardship Wizzard| raw:: html
 
-   <a href="URL" target="blank">LINK</a>
+   <a href="https://ds-wizard.org/" target="blank">Data Stewardship Wizzard</a>
