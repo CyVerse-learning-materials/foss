@@ -7,13 +7,13 @@
 
 
 **Discovery Environment - Data Management**
--------------
+-------------------------------------------
 .. #### Comment: Data management in the DE
 |DE_icon|
 
 
 Classic DE Data Store Walkthrough
-===============
+==================================
  - Log in at https://de.cyverse.org/
 
 |DE_blank|
@@ -32,8 +32,8 @@ Data Window
  - `Download <https://wiki.cyverse.org/wiki/display/DEmanual/Downloading+Files+and+Folders>`_ the shared file.
 
 
-Using metadata in the DE
-========================
+Using metadata in the Classic DE
+================================
 
  - `Using metadata in the DE <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE>`_ :
 
@@ -50,8 +50,50 @@ Using metadata in the DE
 	- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_
 
 
-Advanced Metadata Usage
+----
+
+
+DE2 Data Store Walkthrough
+===========================
+ - Log in at https://de2.cyverse.org/
+
+
+Data Window
+~~~~~~~~~~~
+
+|DE2_data_icon|
+
+
+
+Community Data on DE2
 ~~~~~~~~~~~~~~~~~~~~~
+
+|DE2_community_data|
+
+
+Changing Locations on DE2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|DE2_change_location|
+
+
+Sorting Folders in DE2
+~~~~~~~~~~~~~~~~~~~~~~
+
+|DE2_sorting_options|
+
+
+Please Leave Feedback on the Layout and User Interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|Feedback on DE2|
+
+
+----
+
+
+Advanced Metadata Usage in Classic DE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Data Commons provides advanced metadata features in the Discovery Environment, including:
 
@@ -152,6 +194,18 @@ Additional resources
 .. |DE_metadata| image:: ../img/de/DE_metadata.png
 
 .. |DE_search| image:: ../img/de/DE_search.png
+
+.. |DE2_data_icon| image:: ../img/de2_datastore1.png
+
+.. |DE2_community_data| image:: ../img/de2_datastore2.png
+
+.. |DE2_change_location| image:: ../img/de2_datastore3.png
+
+.. |DE2_sorting_options| image:: ../img/de2_datastore4.png
+
+.. |Feedback on DE2| raw:: html
+
+	<a href="https://sonora.cyverse.org/help" target="blank">Leave Feedback for the DE2</a>
 
 .. Comment: Place URLS Below This Line
 
