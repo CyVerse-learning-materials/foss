@@ -18,7 +18,7 @@
 CyVerse Data Commons
 =======================
 
-- Metadata capability (covered earlier - see `Using metadata in the DE <../CyVerse/de-data-manage.html#using-metadata-in-the-de>`_
+- `Using metadata in the DE <../CyVerse/de-data-manage.html#using-metadata-in-the-de>`_
 - `Managing a shared project on CyVerse <https://cyverse-group-project-quickstart.readthedocs-hosted.com/en/latest/>`_
 - `Community Released Data Folders <https://wiki.cyverse.org/wiki/display/DC/Publishing+Data+through+the+Data+Commons>`_
 - `DOIs for datasets <https://cyverse-doi-request-quickstart.readthedocs-hosted.com/en/latest/>`_

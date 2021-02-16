@@ -1,4 +1,5 @@
 .. include:: ../cyverse_rst_defined_substitutions.txt
+.. include:: ../custom_urls.txt
 
 |CyVerse_logo|_
 
@@ -6,7 +7,14 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 **Data Management Plans (DMP)**
-----------------------
+--------------------------------
+
+.. admonition:: learning-objectives
+
+       - Describe the purpose of a data management plan
+       - Describe the important elements of a data management plan
+       - Use a self-assessment to design a data management plan
+
 
 .. #### Comment: Introduction to basic data management principles
 
@@ -16,19 +24,44 @@
 
 `Example DMP <../slides/DMPFuTRES_v2.docx>`_
 
-**Why bother?**
+----
 
-**Stick:** `You have to make one <https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp>`_
+**Why bother with a DMP?**
 
-Reviewers definitely look at them, but they may not be enforced.
 
-**Carrot:** Make your life easier
+  .. admonition:: How would you answer?
+
+     Do you have a data management plan? If so, how do you use it?
+
+ *"Those who fail to plan, plan to fail"*
+
+Returning to the assertion that data (and its value) is at the foundation of
+your science, working without a data management plan should be considered
+scientific misconduct.
+
+Those are strong words. And while we might have an intuition of the boundaries
+of research ethics - data mismanagement seems more like an annoyance than
+misconduct. However, if your mismanagement leads to error in your research
+data, or the inability to make publicly-funded research open to the public,
+these are serious consequences. Increasingly, funders realize this.
+
+
+**Stick:**
+
+ - `You have to make one <https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp>`_
+ - Reviewers definitely look at them, but they may not be enforced.
+
+**Carrot:**
+
+ - Make your life easier
  - Planning for you project makes it run more smoothly
  - Avoid surprise costs
 
 Elements of a good DMP
-====================
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
  - Information about data & data format(s)
+
        - data types
        - data sources
        - analysis methods
@@ -37,17 +70,21 @@ Elements of a good DMP
        - version control
        - **data life cycle**
  - Metadata content and format(s)
+
        - format
        - standards
  - Policies for access, sharing, and re-use
+
        - funder obligations
        - ethical and privacy issues (data justice)
        - intellectual property, copyright, citation
        - timeline for releases
  - Long-term storage, data management, and preservation
+
        - which data to preserve
        - which archive/repository
  - Budget (`PAPPG <https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_2.jsp#IIC2gvib>`_)
+
        - each of the above elements cost time/money
        - Personnel time for data preparation, management, documentation, and preservation (including time)
        - Hardware and/or software for data management, back up, security, documentation, and preservation (including time)
@@ -68,18 +105,17 @@ Machine actionable DMPs
  (Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
 
 Tools for DMPs
-============================
+~~~~~~~~~~~~~~~~~~~
 
-https://dmptool.org/
+.. admonition:: Exercise
 
-Exercise: Log in to DMP tools and create a mock DMP.
-
+    Thinking about a dataset you work with, complete the |Data Stewardship Wizzard|.
 
 
 ----
 
 References and Resources
-=================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  - `NSF Guidelines on DMPs <https://www.nsf.gov/bio/biodmp.jsp>`_
  - https://dmptool.org/general_guidance

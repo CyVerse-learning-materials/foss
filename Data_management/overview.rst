@@ -9,25 +9,39 @@
 **Data Management Overview**
 -----------------------------
 
-.. #### Comment: Introduction to basic data management principles
+.. admonition:: learning-objectives
+
+       - Recognize data as the foundation of open science and be able to
+         describe the "life cycle of data"
+       - Use self-assessments to evaluate your current data management practices
+       - Cite tools and resources to improve your data management practices
+       - Know the biggest challenge to effective data management
+
 
 Why should you care about data management?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you give your data to a colleague who has not been involved with your project, will they be able to make sense of it? Will they be able to use it effectively and properly?
+Data is the raw currency of open science. Most work centers on creating data or
+adding to its value. The goal of this section is to highlight how you can make
+your data more valuable by managing it more effectively and with less effort.
 
-If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it effectively and properly?
+  .. admonition:: How would you answer?
 
-When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
+     If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?
 
-Data management produces self-describing datasets that:
+     If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?
+
+     When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
+
+Data management skills produce self-describing datasets that:
 
  - Make life much easier for you and your collaborators
  - Benefit the scientific research community by allowing others to
    reuse your data
  - Are required by most funders and many journals
- - Recent |Dear Colleague letter| from NSF
- - NSF |proposal preparation guidelines|
+
+   - Recent |Dear Colleague letter| from NSF
+   - NSF |proposal preparation guidelines|
 
 ----
 
@@ -103,22 +117,87 @@ Data Types
 ~~~~~~~~~~
 
 Different types of data require different management practices.
-What are some data types you might use in your work?
+What are some data types and sources you might use in your work? (Adapted from
+DMP Tool |Data management general guidance|)
 
- - Tabular data
- - Images
- - Sound or video recordings
- - Geospatial data
- - Sensor data
- - Raw versus processed data
- - Files vs. datasets
+**Data Types**
+
+    - Text: field or laboratory notes, survey responses
+    - Numeric: tables, counts, measurements
+    - Audiovisual: images, sound recordings, video
+    - Models, computer code
+    - Discipline-specific: FASTA in biology, FITS in astronomy, CIF in
+      chemistry
+    - Instrument-specific: equipment outputs
+
+**Data Sources**
+
+*Observational*
+
+    - Captured in real-time, typically outside the lab
+    - Usually irreplaceable and therefore the most important to safeguard
+    - Examples: Sensor readings, telemetry, survey results, images
+
+*Experimental*
+
+    - Typically generated in the lab or under controlled conditions
+    - Often reproducible, but can be expensive or time-consuming
+    - Examples: gene sequences, chromatograms, magnetic field readings
+
+*Simulation*
+
+    - Machine generated from test models
+    - Likely to be reproducible if the model and inputs are preserved
+    - Examples: climate models, economic models
+
+*Derived / Compiled*
+
+    - Generated from existing datasets
+    - Reproducible, but can be very expensive and time-consuming
+    - Examples: text and data mining, compiled database, 3D models
+
+
+**Part II: Data-specific questions**
+
+Here are some questions about how you manage and work with data. We will complete some more formal assessments later, but for now let's see where you are.
+
+  .. admonition:: Question
+
+     In small groups, discuss the following questions. You will be provided
+     with a space for documenting our shared answers.
+
+     1. Which of the following data types (above) do you frequently work with?
+
+     2. Do you follow specific recommendations for managing the data you
+        work with? If not, do you know if guidelines exist?
+
 
 ----
 
 Best practices for the data life cycle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The summary below is adapted from the excellent |DataONE best practices primer|.
+**The most important thing to remember about data management is that you are
+not alone.** There are data management experts within your discipline, many of
+them not farther away than your university library system. In addition, there
+are many organizations (including many cited below) which work to solve.
+
+  .. warning::
+
+    **The biggest challenge to effective data management**
+
+    The biggest challenge to data management making it an afterthought.
+
+    Unfortunately, poor data management doesn't have a high upfront cost. You
+    can do substantial work before realizing you are in trouble. Like a swimmer
+    in rip current, by the time you realize you are in trouble, you may already
+    be close to drowning.
+
+    The solution? Make data management the first thing you consider when
+    starting a research project. It also needs to be a policy you institute
+    right away for your research group.
+
+Here are some excellent steps to consider. The summary below is adapted from the excellent |DataONE best practices primer|.
 
 **Plan**
 
