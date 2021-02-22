@@ -184,6 +184,7 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
 Additional Resources
 ====================
 
+
  - `DE Guide <https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/>`_
  - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
  - `Using CyVerse for a shared project <https://learning.cyverse.org/projects/cyverse-group-project-quickstart/en/latest/index.html?highlight=group%20project>`_
