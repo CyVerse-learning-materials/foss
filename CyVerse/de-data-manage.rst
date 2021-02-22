@@ -189,6 +189,21 @@ Additional resources
 
 .. |DE_search| image:: ../img/de/DE_search.png
 
+
+.. |DE_search| image:: ../img/de/DE_search.png
+
+.. |DE2_data_icon| image:: ../img/de2_datastore1.png
+
+.. |DE2_community_data| image:: ../img/de2_datastore2.png
+
+.. |DE2_change_location| image:: ../img/de2_datastore3.png
+
+.. |DE2_sorting_options| image:: ../img/de2_datastore4.png
+
+.. |Feedback on DE2| raw:: html
+
+	<a href="https://sonora.cyverse.org/help" target="blank">Leave Feedback for the DE2</a>
+
 .. Comment: Place URLS Below This Line
 
    # Use this example to ensure that links open in new tabs, avoiding
