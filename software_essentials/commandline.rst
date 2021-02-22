@@ -329,8 +329,7 @@ I would write the following:
 
 .. hint::
 
-    - You need to add `i:` to the beginning of the file/folder argument to tell iRODS
-    the location of items in the data store.
+    - You need to add `i:` to the beginning of the file/folder argument to tell iRODS the location of items in the data store.
     - `irsync` behaves differently with `/` after the folder name than without the slash.
 
 ----
