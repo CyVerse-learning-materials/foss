@@ -40,7 +40,38 @@ DE2 Data Store Walkthrough
 
 |DE2_sorting_options|
 
+*Navigate to the FOSS Folder*
 
+The folder is inside `Community Data` and called `foss`
+
+|FOSS Folder Location|
+
+Which contains:
+
+|FOSS Folder Contents|
+
+*Creating Folders in the Data Store*
+
+Navigate to the `spring-2021` folder, you should see the following:
+
+|FOSS Spring 2021 Contents|
+
+Inside the folder that matches the day that you attend FOSS,
+create a folder that matches your CyVerse username.
+
+|Create a Folder|
+
+*What can we do with this?*
+
+.. admonition:: Question
+
+    In small groups discuss the following questions:
+
+    1. How might you use the Data Store in your work?
+
+    2. Does the data store allow your data to be FAIR?
+
+    3. What is one way you could use the data store in FOSS for your group work?
 
 
 Leave Feedback on the DE2 Layout and User Interface
@@ -150,8 +181,9 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
 - Under Attribute, type `treatment`, under Value type `cold`
 - Hit Search
 
-Additional resources
-~~~~~~~~~~~~~~~~~~~~
+Additional Resources
+====================
+
 
  - `DE Guide <https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/>`_
  - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
@@ -189,6 +221,13 @@ Additional resources
 
 .. |DE_search| image:: ../img/de/DE_search.png
 
+.. |FOSS Folder Location| image:: ../img/foss_folder_de2.png
+
+.. |FOSS Folder Contents| image:: ../img/foss_folder_contents_de2.png
+
+.. |FOSS Spring 2021 Contents| image:: ../img/spring-2021_contents.png
+
+.. |Create a Folder| image:: ../img/spring_day_contents.png
 
 .. |DE_search| image:: ../img/de/DE_search.png
 
