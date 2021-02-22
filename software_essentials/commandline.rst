@@ -342,7 +342,7 @@ Further Practice
     This is was just a brief summary of how to use the command line.
     There is much, much more you can do.
 
-For more information check out the `Software Caprentry Shell Lesson<https://swcarpentry.github.io/shell-novice/>`_ page.
+For more information check out the |The Carpentries Shell| page.
 This lesson uses the folder `data-shell` which is already in your Jupyter Lab instance.
 Work through these lessons on your own or in groups as homework.
 
@@ -352,6 +352,11 @@ Work through these lessons on your own or in groups as homework.
 - On Github: |Github Repo Link|
 - Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
 ------------------
+
+.. |The Carpentries Shell| raw:: html
+
+	<a href="https://swcarpentry.github.io/shell-novice/" target="blank">The Carpentries Shell Lesson</a>
+	
 
 .. |App Search DE2| image:: ../img/jupyter_de2search.png
   :width: 750
@@ -378,12 +383,8 @@ Work through these lessons on your own or in groups as homework.
   :height: 150
 
 .. |Jupyter Shell Icon Screenshot| image:: ../img/launch_terminal_jupyter.png
-  :width: 750
-  :height: 150
 
 .. |Jupyter Dark Theme| image:: ../img/jupyter_dark_theme.png
-  :width: 750
-  :height: 150
 
 .. |shelllooklike| image:: ../img/cmd1.png
   :width: 750
