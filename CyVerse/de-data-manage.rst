@@ -7,19 +7,87 @@
 
 
 **Discovery Environment - Data Management**
--------------
+--------------------------------------------
 .. #### Comment: Data management in the DE
 |DE_icon|
 
+DE2 Data Store Walkthrough
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+ - Log in at https://de2.cyverse.org/
+
+ .. admonition:: learning objectives
+
+      - Recognize the data store environment and how to navigate it
+      - Use data store through GUI to interact with community datasets
+      - Describe how to create a directory in the data store
+
+*Data Window*
+
+|DE2_data_icon|
+
+
+*Community Data on DE2*
+
+|DE2_community_data|
+
+
+*Changing Locations on DE2*
+
+|DE2_change_location|
+
+
+*Sorting Folders in DE2*
+
+|DE2_sorting_options|
+
+*Navigate to the FOSS Folder*
+
+The folder is inside `Community Data` and called `foss`
+
+|FOSS Folder Location|
+
+Which contains:
+
+|FOSS Folder Contents|
+
+*Creating Folders in the Data Store*
+
+Navigate to the `spring-2021` folder, you should see the following:
+
+|FOSS Spring 2021 Contents|
+
+Inside the folder that matches the day that you attend FOSS,
+create a folder that matches your CyVerse username.
+
+|Create a Folder|
+
+*What can we do with this?*
+
+.. admonition:: Question
+
+    In small groups discuss the following questions:
+
+    1. How might you use the Data Store in your work?
+
+    2. Does the data store allow your data to be FAIR?
+
+    3. What is one way you could use the data store in FOSS for your group work?
+
+
+Leave Feedback on the DE2 Layout and User Interface
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|Feedback on DE2|
+
+
 
 Classic DE Data Store Walkthrough
-===============
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  - Log in at https://de.cyverse.org/
 
 |DE_blank|
 
-Data Window
-~~~~~~~~~~~~~~
+*Data Window*
 
  - Open the data window and upload a file:
 
@@ -32,8 +100,8 @@ Data Window
  - `Download <https://wiki.cyverse.org/wiki/display/DEmanual/Downloading+Files+and+Folders>`_ the shared file.
 
 
-Using metadata in the DE
-========================
+*Using metadata in the Classic DE*
+
 
  - `Using metadata in the DE <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE>`_ :
 
@@ -50,8 +118,7 @@ Using metadata in the DE
 	- `metadata templates <https://wiki.cyverse.org/wiki/display/DEmanual/Using+Metadata+in+the+DE#UsingMetadataintheDE-Usingmetadatatemplates>`_
 
 
-Advanced Metadata Usage
-~~~~~~~~~~~~~~~~~~~~~
+*Advanced Metadata Usage in Classic DE*
 
 The Data Commons provides advanced metadata features in the Discovery Environment, including:
 
@@ -114,8 +181,8 @@ The Data Commons provides advanced metadata features in the Discovery Environmen
 - Under Attribute, type `treatment`, under Value type `cold`
 - Hit Search
 
-Additional resources
-=========================
+Additional Resources
+====================
 
  - `DE Guide <https://learning.cyverse.org/projects/discovery-environment-guide/en/latest/>`_
  - `DE Manual <https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents>`_
@@ -152,6 +219,28 @@ Additional resources
 .. |DE_metadata| image:: ../img/de/DE_metadata.png
 
 .. |DE_search| image:: ../img/de/DE_search.png
+
+.. |FOSS Folder Location| image:: ../img/foss_folder_de2.png
+
+.. |FOSS Folder Contents| image:: ../img/foss_folder_contents_de2.png
+
+.. |FOSS Spring 2021 Contents| image:: ../img/spring-2021_contents.png
+
+.. |Create a Folder| image:: ../img/spring_day_contents.png
+
+.. |DE_search| image:: ../img/de/DE_search.png
+
+.. |DE2_data_icon| image:: ../img/de2_datastore1.png
+
+.. |DE2_community_data| image:: ../img/de2_datastore2.png
+
+.. |DE2_change_location| image:: ../img/de2_datastore3.png
+
+.. |DE2_sorting_options| image:: ../img/de2_datastore4.png
+
+.. |Feedback on DE2| raw:: html
+
+	<a href="https://sonora.cyverse.org/help" target="blank">Leave Feedback for the DE2</a>
 
 .. Comment: Place URLS Below This Line
 
