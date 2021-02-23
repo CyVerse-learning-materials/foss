@@ -336,7 +336,7 @@ I would write the following:
 
     - You need to add `i:` to the beginning of the file/folder argument to tell iRODS the location of items in the data store.
     - `irsync` behaves differently with `/` after the folder name than without the slash.
-    - Look up the flags provided above in the irsync manual. Which flag enables a method that checks the validity of the data? 
+    - Look up the flags provided above in the irsync manual. Which flag enables a method that checks the validity of the data?
 
 
 ----
@@ -364,7 +364,7 @@ Work through these lessons on your own or in groups as homework.
 	<a href="https://swcarpentry.github.io/shell-novice/" target="blank">The Carpentries Shell Lesson</a>
 
 .. |irsync manual| raw:: html
-	
+
 	<a href="https://docs.irods.org/master/icommands/user/#irsync target="blank">iRODS irsync manual</a>
 
 .. |App Search DE2| image:: ../img/jupyter_de2search.png
@@ -381,7 +381,9 @@ Work through these lessons on your own or in groups as homework.
 
 .. |Jupyter Shell Icon Screenshot| image:: ../img/launch_terminal_jupyter.png
 
-.. |Jupyter Dark Theme| image:: ../img/jupyter_dark_theme.png
+.. |Jupyter Shell Prompt| image:: ../img/JupyterShellPrompt.png
+
+.. |Dark Theme| image:: ../img/jupyter_dark_theme.png
 
 .. |shelllooklike| image:: ../img/cmd1.png
   :width: 750
