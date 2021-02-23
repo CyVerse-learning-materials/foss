@@ -12,6 +12,7 @@
 .. admonition:: learning-objectives
 
        - Know the command line's utility
+       - Define what the filesysem is
        - Use basic navigation commands to interact with the file system
        - Recognize the similarities between shell commands and iRODS
        - Describe resources to continue learning command line applications
@@ -61,6 +62,10 @@ The Shell is a **program which runs other programs** rather than doing calculati
     - **simple programs used to perform stand alone tasks are usually refered to as commands.**
     - most popular Unix shell is **Bash**, (the Bourne Again SHell).
     - Bash is the default shell on most modern implementations of Unix
+
+Whether accessed through the graphical user interface or the shell, all computers contain a file system.
+
+|TheFileSystem|
 
 ----
 
@@ -232,7 +237,6 @@ We can also use the `touch` command to create files.
 How large is `my_file.txt`?? What command can we use to check this?
 
 
-
 *Getting help with commands*
 
 We can pass a --help option to the command, such as:
@@ -321,16 +325,19 @@ I would write the following:
 
 
 
-.. admonition:: FAIR Data Challenge
+.. admonition:: FAIR Data Group Challenge
 
     In small groups determine how you can use `irsync` with the flags `-rKva`
     to transfer the folder `molecules` from the `data-shell` directory
     to the data store folder you created in the foss directory in the Data Store.
+    From the |irsync manual| determine as a group what makes the command "FAIR".
 
 .. hint::
 
     - You need to add `i:` to the beginning of the file/folder argument to tell iRODS the location of items in the data store.
     - `irsync` behaves differently with `/` after the folder name than without the slash.
+    - Look up the flags provided above in the irsync manual. Which flag enables a method that checks the validity of the data? 
+
 
 ----
 
@@ -355,31 +362,22 @@ Work through these lessons on your own or in groups as homework.
 .. |The Carpentries Shell| raw:: html
 
 	<a href="https://swcarpentry.github.io/shell-novice/" target="blank">The Carpentries Shell Lesson</a>
+
+.. |irsync manual| raw:: html
 	
+	<a href="https://docs.irods.org/master/icommands/user/#irsync target="blank">iRODS irsync manual</a>
 
 .. |App Search DE2| image:: ../img/jupyter_de2search.png
-  :width: 750
-  :height: 150
 
 .. |DE2 App Outputs| image:: ../img/jupyter_outputs.png
-  :width: 750
-  :height: 150
 
 .. |Add input folder DE2| image:: ../img/jupyter_input_folder1.png
-  :width: 750
-  :height: 150
 
 .. |Select Folder| image:: ../img/de2_select_input.png
-  :width: 750
-  :height: 150
 
 .. |Set Memory for Container DE2| image:: ../img/set_memory_de2.png
-  :width: 750
-  :height: 150
 
 .. |Launch App| image:: ../img/launch_app_de2.png
-  :width: 750
-  :height: 150
 
 .. |Jupyter Shell Icon Screenshot| image:: ../img/launch_terminal_jupyter.png
 
