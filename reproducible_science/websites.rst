@@ -23,6 +23,16 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 *Some things to remember*
 ----------------------
 
+*Open Science Framework*
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Provides tools via `osf.io <https://osf.io/>`_ for free
+- Can be directly linked to your ORCID
+- Integrated project management tools
+- Uses templates to create a project website
+- Can publish preprints from within project management tools
+
+
 *ReadTheDocs*
 ~~~~~~~~~~~
 
@@ -42,16 +52,20 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 - You can pull templates from other GitHub users for your website, e.g. `jekyll themes <http://themes.jekyllrc.org/>`_
 - GitHub pages are free, fast, and easy to build, but limited in use of subdomain or URLs.
 
-*Confluence Wiki*
-~~~~~~~~~~~~~
 
-- CyVerse is paying for Confluence access.
-- Integration with other platforms like Jira.
-- Scripting in the Confluence Wiki is different than other platforms and may be less reprodicuble.
+
+**Websites to Host Methods & Protocols**
+-----------------------------------------
+
+`Protocols.io <https://www.protocols.io/>`_ - collaborative platform and preprint server for: science methods, computational workflows, clinical trials, operational procedures, safety checklists, and instructions / manuals.
+
+`QUBES <https://qubeshub.org/>`_ - community of math and biology educators who share resources and methods for preparing students to tackle real, complex, biological problems.
+
 
 
 **Build your own Website**
 --------------------------
+
 
 *ReadTheDocs*
 ~~~~~~~~~~~~~
@@ -87,21 +101,6 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 
    4. Push it back to GitHub
 
-*CyVerse Confluence Wiki*
-~~~~~~~~~~~~~~
-
-   1. Create a CyVerse Account and log into https://wiki.cyverse.org
-
-   2. Create a a new Blank Page
-
-   3. Set permissions to share or make private
-
-**Methodology**
-----------
-
-`Protocols.io <https://www.protocols.io/>`_ - collaborative platform and preprint server for: science methods, computational workflows, clinical trials, operational procedures, safety checklists, and instructions / manuals.
-
-`QUBES <https://qubeshub.org/>`_ - community of math and biology educators who share resources and methods for preparing students to tackle real, complex, biological problems.
 
 ----
 
