@@ -5,8 +5,8 @@
 |Home_Icon2|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-**GitHub**
-===================
+**GitHub Overview**
+-------------------
 
 `Version Control <https://en.wikipedia.org/wiki/Version_control>`_ is an important component in software development which manages changes to documents, websites, code, or other digital information. Version control can save you when code changes break things. Web hosting of your code repositories lets you share and work on code together and save your work in the event of a hardware failure.
 
@@ -45,11 +45,11 @@ In this lesson you will learn how to:
 
    GitHub is not really intended for storing or manipulating data
 
-**Navigating & Interacting with GitHub**
-------------------------------------------
+Navigating & Interacting with GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Basic Layout
-~~~~~~~~~~~~
+**Basic Layout:**
+
 
 |Git_Hub|
 
@@ -64,8 +64,8 @@ The basic layout includes:
 - Contributions
 - Watch / Unwatch repos
 
-**Add a Collaborator**
-~~~~~~~~~~~~~~~~~~~~~~
+**Add a Collaborator:**
+
 
 *Online only*
 
@@ -77,8 +77,8 @@ OR
 
 1. Can add collaborators under "Settings" -> "Collaborators"
 
-**Create a Repo Online & Locally**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Create a Repository Online:**
+
 
 *Online*
 
@@ -91,7 +91,7 @@ OR
 5. Go to "Clone or Download" and clone to local folder / directory titled "Lab"
 6. Can delete repo under "Settings" -> "Options"
 
-**Command Line**
+**Create a Repository in the Command Line:**
 
 1. Locate or create a local folder / directory structure titled "Lab"
 
@@ -115,21 +115,21 @@ OR
 
    **Documentation is vital** *You will be doing this for YOU 6 months from now*
 
-**Interact with GitHub**
-~~~~~~~~~~~~~~~~~~~~~~~~
+Interact with the GitHub Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Clone a repo**
+**Clone a repository:**
 
 This is used to work *locally* rather than online.
 
-*Online*
+*Using GitHub Website User Interface:*
 
 1. Click the down arrow "Clone or download"
 2. Click "Open in Desktop"
 3. Select where to save it
    - Create a folder for GitHub repos on your computer locally
 
-*Command Line*
+*Using git in the Command Line:*
 
 .. code-block:: bash
 
@@ -138,9 +138,10 @@ This is used to work *locally* rather than online.
    #URL of thte repository on GitHub
    #rename the directory (optional)
 
-**Commit**
+"Committing" your work to GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Online*
+*Using Website User Interface:*
 
 1. Create a file  by clicking "Create a new file"
 2. Name file (/name)
@@ -153,7 +154,7 @@ OR
 2. Click "Upload files"
 3. Select file(s) within a folder
 
-*Command Line*
+*Using the Command Line:*
 
 1. Create a file
 
@@ -175,11 +176,12 @@ OR
 
     It is good practice to write commmit messages to remember what you added or fixed.
 
-**Create an Issue**
+Create an Issue in a Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Issues are great for tracking decisions made or to-do lists
 
-*Online only*
+**GitHub Website User Interface:**
 
 1. Click on the repository you just created.
 2. Click on "Issues"
@@ -194,14 +196,15 @@ Issues are great for tracking decisions made or to-do lists
    Create a new issue and relate it back to the issue you just created.
 
 
-**Version Control**
+Version Control Features
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Online*
+**View Version Control History Online:**
 
 1. Click on file
 2. Click "History"
 
-*Command Line*
+**View Version Control history in the Command Line:*
 
 .. code-block:: bash
 
@@ -211,13 +214,14 @@ Issues are great for tracking decisions made or to-do lists
    git log --pretty=format:"%h - %an, %ar : %s #lots of options for pretty=format
    q #to quit
 
-**Create a branch**
+Branching in Git
+~~~~~~~~~~~~~~~~
 
-Branches are useful to working on code etc. without disturbing the *master branch*.
+Branches are useful to working on code etc. without disturbing the *main branch*.
 
-*Online*
+*Create a Branch using the GitHub Website User Interface:*
 
-1. Select the down arrow on the repository page that says "Branch:master"
+1. Select the down arrow on the repository page that says "Branch:main"
 2. Create a new branch name
 
 OR
@@ -226,7 +230,7 @@ OR
 2. Write a commit message.
 3. Select "Create a **new branch**"
 
-*Command Line*
+*Creating a Branch Using the Command Line interface:*
 
 1. Create a new branch
 
@@ -257,11 +261,12 @@ OR
    git push
 
 
-**Make a pull request**
+Make a pull request
+~~~~~~~~~~~~~~~~~~~
 
 Pull requests are useful to have another set of eyes to review changes  before merging them with the master branch.
 
-*Online Only*
+**GitHub Website User Interface:**
 
 1. From your branch, create a new file
 2. Commit file to your branch
@@ -269,9 +274,10 @@ Pull requests are useful to have another set of eyes to review changes  before m
 4. Go to pull requests
 5. Set it on the master branch
 
-**Merge**
+Merging Pull Requests
+~~~~~~~~~~~~~~~~~~~~~
 
-*Online*
+**GitHub Website User Interface:**
 
 1. Go to "Pull requests"
 2. Select down arrow of "Merge pull request" (if no conflicts)
@@ -279,7 +285,7 @@ Pull requests are useful to have another set of eyes to review changes  before m
 4. Leave comment if need be
 5. Close pull request
 
-*Command Line*
+**Merging with Git Command Line:**
 
 .. code-block:: bash
 
@@ -290,9 +296,10 @@ Pull requests are useful to have another set of eyes to review changes  before m
    git checkout master
    git merge new-branch #now repull it all into master
 
-**Revert**
+Revert to Previous Commit
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Command Line*
+**Reverting to Previous Commit with Command Line:**
 
 .. code-block:: bash
 
@@ -304,12 +311,13 @@ Pull requests are useful to have another set of eyes to review changes  before m
    git commit -m "changed things back to <commit tag>"
    git push
 
-**Advanced**
-~~~~~~~~~~~~
+Advanced Git & GitHub Features
+-------------------------------
 
-**Fork**
+Forking a Repository
+~~~~~~~~~~~~~~~~~~~~
 
-*Online*
+**Fork via GitHub Website User Interface:**
 
 1. Go to a new repository
 2. Click fork
@@ -318,7 +326,7 @@ Pull requests are useful to have another set of eyes to review changes  before m
 5. Interact via online or in Desktop.
 6. If want to make suggestions, can create a pull request.
 
-*Command Line*
+*Fork via git Command Line*
 
 .. code-block:: bash
 
@@ -326,23 +334,17 @@ Pull requests are useful to have another set of eyes to review changes  before m
    cd <new-folder>
    git fork
 
-**Etc.**
-~~~~~~~~
-These are *Online only*
+Versioning
+~~~~~~~~~~~
 
-- Versioning
+Versioning is *Online only*
+
+**Versioning:**
+
 	1. Go to "Releases"
 	2. Click "Create a new release"
 	3. Tag version: Version #
 	4. Release title: I usually put the date of the release, but any system can work
-
-- Reactions:
-	1. Create a new pull request
-	2. Looking at the messages, click the smiley face to give a reaction
-
-- Badges
-	1. Go find a `badge <https://naereen.github.io/badges/>`_!
-	2. Copy badge code into README:
 
 
 
@@ -500,5 +502,18 @@ Here is a list of the most important commands in Git:
     * - ``git diff [source branch] [target branch]``
       - Preview changes before merging
 
+----
+
+**Fix or improve this documentation:**
+
+- On Github: |Github Repo Link|
+- Send feedback: `Tutorials@CyVerse.org <Tutorials@CyVerse.org>`_
+
+----
+
 .. |Git_Hub| image:: ../img/git-logo.png
     :width: 150
+
+.. |Github Repo Link| raw:: html
+
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/reproducible_science/GitHub.rst" target="blank">Github Repo Link</a>

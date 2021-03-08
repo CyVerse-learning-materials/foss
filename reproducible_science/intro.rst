@@ -110,7 +110,7 @@ general.
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/cloud_comput/intro.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/reproducible_science/intro.rst" target="blank">Github Repo Link</a>
 
 
 .. |1|  raw:: html
