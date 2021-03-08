@@ -16,6 +16,6 @@ version = 'spring-2021'
 release = 'spring-2021'
 
 epub_title = 'CyVerse Learning Foundations of Open Science Skills 2021'
-epub_author = ' Meghan Balk, Ryan Bartleme, Amanda Cooksey, Tina Lee, Sateesh Peri, Mary Margaret Sprinkle, Tyson L. Swetnam, Reetu Tuteja, Ramona L. Walls, Jason Williams'
+epub_author = 'Ryan Bartelme, Amanda Cooksey, Tina Lee, Sateesh Peri, Mary Margaret Sprinkle, Tyson L. Swetnam, Reetu Tuteja, Jason Williams'
 epub_publisher = 'CyVerse'
 epub_copyright = 'CC BY 4.0'

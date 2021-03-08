@@ -134,4 +134,4 @@ ReadTheDocs has become a popular tool for developing web-based documentation. `C
 
 .. |Github Repo Link|  raw:: html
 
-   <a href="https://github.com/CyVerse-learning-materials/foss-2020/tree/master/reproducible_science/websites.rst" target="blank">Github Repo Link</a>
+   <a href="https://github.com/CyVerse-learning-materials/foss/tree/master/reproducible_science/websites.rst" target="blank">Github Repo Link</a>
