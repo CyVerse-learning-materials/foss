@@ -3,67 +3,56 @@
 
 |CyVerse_logo|_
 
-Welcome to Foundational Open Science Skills!
------------------------
+|Home_Icon|_
+`Learning Center Home <http://learning.cyverse.org/>`_
+
+[WORKSHOP] FAQs
+-------------------
+
+General FAQs
+~~~~~~~~~~~~~
+
+These are some general questions about the workshop:
+
+**Question Title?**
+
+**Answer:**
 
 ----
 
-.. toctree::
-        :hidden:
-	:maxdepth: 4
-        
-        Home Page <self>
-        Before FOSS Starts <pre_foss/index.rst>
-        Schedule <schedule.rst>
-        FAQ <faq.rst>
+**Question Title?**
 
-.. toctree::
-        :hidden:
-	:maxdepth: 4
-        :caption: Workshop Content
-
-        Intro to Open Science <01_intro_open_sci.rst>
-        Project Management <02_project_management.rst>
-        Managing Data <03_managing_data.rst>
-        Documentation and Communication <04_documentation_communication.rst>
-        Version Control <05_version_control.rst>
-        Repetition <06_repetition.rst>
-        Reproducibility <07_reproducibility.rst>
-
-.. toctree::
-        :hidden:
-	:maxdepth: 4
-        :caption: Final Project
-
-        Overview <final_project/overview.rst>
-        Examples <final_project/examples.rst>
+**Answer:**
 
 ----
-[About this workshop]
 
+**Question Title?**
 
-Expected outcomes:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. #### Comment: Give ONE SENTENCE answers to each of the following, think
-   Elevator pitch, not campaign speech. At the end of this workshop, you should
-   be able to...
-
-- [Outcome_1]
-- [Outcome_2]
-- [Outcome_3]
-
+**Answer:**
 
 ----
 
 
-Quick Links
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How do I ...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These are some common tasks you may wish to do with [platform]:
 
 
-- Schedule
-- [Feedback Link]
+**How do I ...**
 
+**Answer**
+
+----
+
+**How do I ...**
+
+**Answer**
+
+----
+
+**How do I ...**
+
+**Answer**
 
 ----
 
@@ -75,14 +64,12 @@ Quick Links
   click |Intercom| on the lower right-hand side of the page
 - Report an issue or submit a change:
   |Github Repo Link|
-- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
+- Send feedback: `Learning@CyVerse.org <Learning@CyVerse.org>`_
 
 ----
 
 |Home_Icon|_
-
-`Learning Center Home <http://learning.cyverse.org/>`__
-
+`Learning Center Home <http://learning.cyverse.org/>`_
 
 .. Comment: Place Images Below This Line
    use :width: to give a desired width for your image

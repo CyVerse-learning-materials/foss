@@ -1,0 +1,136 @@
+.. Comment: Version 2.0, May 2020
+.. Comment: URLS
+
+
+.. |Atmosphere| raw:: html
+
+   <a href="https://atmo.cyverse.org" target="blank">Atmosphere</a>
+
+.. |Atmosphere Manual| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/atmman/Atmosphere+Manual+Table+of+Contents" target="blank">Atmosphere Manual</a>
+
+.. |Atmosphere Guide| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/atmosphere-guide/en/latest/" target="blank">Atmosphere Guide</a>
+
+.. |BisQue| raw:: html
+
+   <a href="https://bisque.cyverse.org/client_service/" target="blank">BisQue</a>
+
+.. |BisQue Manual| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/BIS" target="blank">BisQue Manual</a>
+
+.. |CyVerse User Portal| raw:: html
+
+  <a href="https://user.cyverse.org/" target="_blank">CyVerse User Portal</a>
+
+.. |CyVerse Learning Center| raw:: html
+
+   <a href="http://learning.cyverse.org" target="blank">CyVerse Learning Center</a>
+
+.. |CyVerse Wiki| raw:: html
+
+   <a href="https://wiki.cyverse.org" target="blank">CyVerse Wiki</a>
+
+.. |Data Store| raw:: html
+
+  <a href="http://www.cyverse.org/data-store" target="_blank">Data Store</a>
+
+.. |Data Store Manual| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/DS/Data+Store+Table+of+Contents" target="blank">Data Store Manual</a>
+
+.. |Data Store Guide| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/data_store_guide/en/latest/" target="blank">Data Store Guide</a>
+
+.. |Discovery Environment| raw:: html
+
+   <a href="https://de.cyverse.org/de/" target="blank">Discovery Environment</a>
+
+.. |DE Manual| raw:: html
+
+   <a href="https://wiki.cyverse.org/wiki/display/DEmanual/Table+of+Contents" target="blank">DE Manual</a>
+
+.. |Discovery Environment Guide| raw:: html
+
+   <a href="http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/" target="blank">Discovery Environment Guide</a>
+
+.. |DNA Subway| raw:: html
+
+   <a href="https://dnasubway.cyverse.org/" target="blank">DNA Subway</a>
+
+.. |DNA Subway Manual| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/dnasubway_guide/en/latest/" target="blank">DNA Subway Manual</a>
+
+.. |DNA Subway Guide| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/dnasubway_guide/en/latest/" target="blank">DNA Subway Guide</a>
+
+
+.. |SciApps| raw:: html
+
+   <a href="https://www.sciapps.org/" target="blank">SciApps</a>
+
+.. |SciApps Manual| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/sciapps_guide/en/latest/" target="blank">SciApps Manual</a>
+
+.. |SciApps Guide| raw:: html
+
+   <a href="https://learning.cyverse.org/projects/sciapps_guide/en/latest/" target="blank">SciApps Guide</a>
+
+.. |Terrain DE API Docs| raw:: html
+
+   <a href="https://cyverse-de.github.io/api/" target="blank">Terrain DE API Docs</a>
+
+.. |Tapis TACC API| raw:: html
+
+   <a href="https://www.tacc.utexas.edu/tapis" target="blank">Tapis TACC API</a>
+
+
+
+.. Comment: Deprecated links  - these may appear in our documentation but
+   currently refer to dead URLS with no equivalent redirects.
+
+
+.. |Ask CyVerse| raw:: html
+
+   <a href="http://ask.iplantcollaborative.org/questions" target="blank">Ask CyVerse</a>
+
+.. |Agave Guide| raw:: html
+
+   <a href="http://learning.cyverse.org/en/latest/" target="blank">Agave Guide</a>
+
+.. |Agave API| raw:: html
+
+   <a href="http://developer.agaveapi.co/#introduction" target="blank">Agave API</a>
+
+.. |Agave Live Docs| raw:: html
+
+   <a href="https://agaveapi.co" target="blank">Agave Live Docs</a>
+
+.. |BisQue Guide| raw:: html
+
+   <a href="http://learning.cyverse.org/en/latest/" target="blank">BisQue Guide</a>
+
+
+.. Comment: images
+
+.. |CyVerse_logo| image:: ./img/cyverse_learning.png
+    :width: 500
+
+.. _CyVerse_logo: http://learning.cyverse.org/
+
+.. |Home_Icon| image:: ./img/homeicon.png
+    :width: 25
+    :height: 25
+
+.. _Home_Icon: http://learning.cyverse.org/
+
+.. |Intercom| image:: ./img/intercom.png
+    :width: 25
+    :height: 25

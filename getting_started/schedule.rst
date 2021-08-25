@@ -16,16 +16,17 @@
 
 .. Comment: Last year’s syllabus as a chart (for reference): https://docs.google.com/spreadsheets/d/1n5zCJlT9g_vyWx6z-5vmT300ZH-vC6AP4TYKFeJIMZo/edit#gid=0
 
-**Wednesdays**: 11:00AM – 1:00PM US Pacific Time (2:00PM – 4:00PM US Eastern Time)
+**Tuesdays**: 9:00AM – 11:00AM US Pacific Time (12:00PM – 2:00PM US Eastern Time)
 
 *or*
 
-**Thursdays**: 9:00AM – 11:00AM US Pacific Time (12:00PM – 2:00PM US Eastern Time)
+**Wednesdays**: 11:00AM – 1:00PM US Pacific Time (2:00PM – 4:00PM US Eastern Time)
 
+The weekly schedule is listed below as Week Number: Month Tuesday's Date, Wednesday's Date
 
 ----
 
-Week 1: What is Open Science? Overview and Onboarding 
+Week 1: Feb. 9, 10 - What is Open Science? Overview and Onboarding 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -47,6 +48,8 @@ Understand and align shared expectations. Start orientation to technology we wil
 
 **Homework:**
 
+Due by: Monday February 15 (Tuesday cohort), Tuesday February 16 (Wednesday cohort)
+
 `Take the Skills Self-assessment <https://docs.google.com/forms/d/e/1FAIpQLSenWNmetN7QpO30rW2fPP07tqKzgeBxrCBi2s7Bz-D36N7gxA/viewform?usp=sf_link>`_
 
   - Make a SHORT video introducing yourself. You can use slides or not (your choice). Tell us:
@@ -66,7 +69,7 @@ And if you haven’t yet, finish setting up your accounts on CyVerse, GitHub, an
 
 ----
 
-Week 2: Working with Data: Intro to Data Store, Scale and Challenges of Data
+Week 2: Feb. 16, 17 - Working with Data: Intro to Data Store, Scale and Challenges of Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -93,7 +96,7 @@ Understand how your research and associated data challenges fit into the context
 
 ----
 
-Week 3: Essential Skills: Key Concepts of Linux Command Line, VICE Apps
+Week 3: Feb. 23, 24 - Essential Skills: Key Concepts of Linux Command Line, VICE Apps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -118,7 +121,7 @@ Beginning learners will gain basic understanding of the command line (survival s
 
 ----
 
-Week 4: Planning Your Open Science Lab
+Week 4: Mar. 2, 3 - Planning Your Open Science Lab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -144,7 +147,7 @@ Know some of the basic tools for documenting and sharing your work in an open so
 
 ----
 
-Week 5: Using Git: Issues, Pull Request, and more
+Week 5: Mar. 9, 10 - Using Git: Issues, Pull Request, and more
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -169,7 +172,7 @@ Be able to use authoring tools and Github to develop a simple website that docum
 
 ----
 
-Week 6: Reproducibility Tutorial I
+Week 6: Mar. 23, 24 - Reproducibility Tutorial I
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
@@ -190,7 +193,7 @@ As assigned.
 
 ----
 
-Week 7: Reproducibility Tutorial II: Containers
+Week 7: Mar. 30, 31 - Reproducibility Tutorial II: Containers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
@@ -211,7 +214,7 @@ As assigned.
 
 ----
 
-Week 8: Reproducibility Tutorial III: Workflows
+Week 8: Apr. 6, 7 - Reproducibility Tutorial III: Workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
@@ -234,7 +237,7 @@ Understand how automated workflows can save time and make research more reproduc
 
 ----
 
-Week 9: Putting It All Together I
+Week 9: Apr. 13, 14 - Putting It All Together I
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
@@ -256,7 +259,7 @@ Be able to collaborate as a team to deliver a product that makes use of the skil
 
 ----
 
-Week 10: Putting It All Together II
+Week 10: Apr. 20, 21 - Putting It All Together II
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Activity:**
