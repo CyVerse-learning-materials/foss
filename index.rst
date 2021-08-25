@@ -6,6 +6,21 @@
 Welcome to Foundational Open Science Skills!
 -----------------------
 
+Foundational Open Science Skills (FOSS) is a novel, camp-style training designed to prepare principal investigators and their lab teams, both new and established, to meet the growing expectations of funding agencies, publishers, and research institutions for scientific reproducibility and data accessibility.
+
+-----
+
+Expected outcomes:
+------------------
+
+- Proficiently organize your lab, communications, and research with productivity software
+- Capably scale out your computation from laptop to cloud and HPC systems
+- Skillfully manage the data lifecycle for open science and reproducibility
+- Connect with colleagues across institutional boundaries and research domains
+- Engage with the community of Open Science practitioners
+
+By working through an example project relevant to your interests, you will practice open science skills using CyVerse, GitHub, R or Python, and other resources. At the end of the course, you and your team will present a plan for how to integrate open science into your research, lab, or other areas of your choosing.
+
 ----
 
 .. toctree::
@@ -39,77 +54,6 @@ Welcome to Foundational Open Science Skills!
         Examples <final_project/examples.rst>
 
 ----
-[About this workshop]
-
-
-Expected outcomes:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. #### Comment: Give ONE SENTENCE answers to each of the following, think
-   Elevator pitch, not campaign speech. At the end of this workshop, you should
-   be able to...
-
-- [Outcome_1]
-- [Outcome_2]
-- [Outcome_3]
-
-
-----
-
-
-Quick Links
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-- Schedule
-- [Feedback Link]
-
-
-----
-
-**Fix or improve this documentation**
-
-- Search for an answer:
-  |CyVerse Learning Center|
-- Ask us for help:
-  click |Intercom| on the lower right-hand side of the page
-- Report an issue or submit a change:
-  |Github Repo Link|
-- Send feedback: `learning@CyVerse.org <learning@CyVerse.org>`_
-
-----
-
-|Home_Icon|_
-
-`Learning Center Home <http://learning.cyverse.org/>`__
-
-
-.. Comment: Place Images Below This Line
-   use :width: to give a desired width for your image
-   use :height: to give a desired height for your image
-   replace the image name/location and URL if hyperlinked
-
-
- .. |Clickable hyperlinked image| image:: ./img/IMAGENAME.png
-    :width: 500
-    :height: 100
- .. _CyVerse logo: http://learning.cyverse.org/
-
- .. |Static image| image:: ./img/IMAGENAME.png
-    :width: 25
-    :height: 25
-
-
-
-.. Comment: Place URLS Below This Line
-
-   # Use this example to ensure that links open in new tabs, avoiding
-   # forcing users to leave the document, and making it easy to update links
-   # In a single place in this document
-
-   .. |Substitution| raw:: html # Place this anywhere in the text you want a hyperlink
-
-      <a href="REPLACE_THIS_WITH_URL" target="blank">Replace_with_text</a>
 
 
 .. |Github Repo Link|  raw:: html
