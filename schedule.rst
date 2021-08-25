@@ -8,46 +8,75 @@ Weekly Schedule
 Week 0 (pre-FOSS workshop)
 ---------------------------------
 
-- Unix shell basics
-- git basics
+- Unix shell basics (Sept 8)
+- Git basics (Sept 9)
 
-Week 1
+Week 1 (Sept 15/16)
 ---------------------------------
 
 - Workshop introduction
-- Intro to Open Science
-- Intro to CyVerse
+        - Intro to Open Science
+        - Intro to CyVerse
 
-Week 2
+Week 2 (Sept 22/23)
 ---------------------------------
 
-- Example project pipeline
-- Thinking about project management
+- Project management
+        - Project critique activity
 
-Week 3
+Week 3 (Sept 29/30)
 ---------------------------------
 
-Week 4
+- Data management
+        - FAIR data
+        - Data Management Plans
+        - Intro to Data Store
+
+Week 4 (Oct 6/7)
 ---------------------------------
 
-Week 5
+- Documentation / Communication
+        - Internal + External Documentation
+        - Internal + External Communication
+        - GitHub Pages websites
+
+Week 5 (Oct 13/14)
 ---------------------------------
 
-Week 6
+- Version Control
+        - Version control as a philosophy
+        - GitHub functionality
+        - Version control everything
+
+Week 6 (Oct 20/21)
 ---------------------------------
 
-Week 7
+- Reproducibility I
+        - Software installation
+        - Software management
+
+Week 7 (Oct 27/28)
 ---------------------------------
 
-Week 8
+- Reproducibility II
+        - Cloud computing
+        - CyVerse tools
+
+Week 8 (Nov 3/4)
 ---------------------------------
 
-Week 9
+- Reproducibility III
+        - Brief intro to containers
+- Flex time
+        - Ask questions
+        - More detail on previous topics
+
+Week 9 (Nov 10/11)
 ---------------------------------
 
 - Final project presentation work time
 
-Week 10
+Week 10 (Nov 17/18)
 ---------------------------------
 
 - Final project presentations

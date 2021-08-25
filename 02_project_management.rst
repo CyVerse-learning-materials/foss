@@ -27,8 +27,6 @@ Your project will almost certainly differ from this general workflow in some way
 1. Manage raw data
 ******************************
 
-
-
 - Data collection
 - Data entry
 - Data validation
@@ -61,7 +59,7 @@ Your project will almost certainly differ from this general workflow in some way
 
 - Word doc
 - RMarkdown
-- 
+- LaTeX
 
 Project Critique Activity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
