@@ -12,7 +12,7 @@ from misc.cyverse_sphinx_conf import *  # noqa
 
 project = 'FOSS Fall 2021'
 copyright = '2021, CyVerse'
-author = 'Michael Culshaw-Maurer'
+author = 'CyVerse'
 version = '2.0'
 release = '2.0'
 
