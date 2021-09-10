@@ -1,22 +1,11 @@
-.. include:: cyverse_rst_defined_substitutions.txt
-.. include:: custom_urls.txt
+.. include:: ../cyverse_rst_defined_substitutions.txt
+.. include:: ../custom_urls.txt
 
-|CyVerse_logo|_
-
-Before FOSS Starts
+Example 1
 ------------------------------
 
-Pre-FOSS Survey
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Pre-FOSS Skills Workshop
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Should I attend?
-*******************************
-
-Installing software for FOSS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 2
+------------------------------
 
 
 
