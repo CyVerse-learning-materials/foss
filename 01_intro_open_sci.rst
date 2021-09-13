@@ -33,7 +33,22 @@ To get a feel for how Open Science can be multifaceted and different for each re
 
         What are some limitations to you, your lab/group, or your domain?
 
+Components of Open Science
+===============================
+
+One of the most fundamental, and certainly the most publicized component of Open Science is the accessibility of data. This makes sense- without access to your data, nothing else about your science can be all that open. While we will devote an entire week of this course to data, opening up your data is only one piece of the puzzle.
+
+|open science pieces|
+*Gallagher et al 2020, Nature Eco Evo*
+
+This figure demonstrates the multiple intersecting pieces of Open Science, which go beyond simply making data accessible. While we focus primarily on Open Data, Open Source, and Open Methodology in FOSS, it's worth considering how other parts of the scientific process might be opened up more broadly.
+
+Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as Open Process. In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like p-hacking or HARKing. What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. To learn more about preregistration, you can check out the |Open Science Framework|, a project that provides a preregistration platform and other open science tools.
+
+As mentioned above, it is worthwhile to think about Open Science not as a set of checkboxes, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. While you might not achieve some platonic ideal of openness for a variety of reasons, you can still make great progress in moving your science towards the Open end of the spectrum. In reality, a large scientific project probably consists of multiple spectra; you can move your data towards the open end of the spectrum while your software remains less open, and vice versa. All this is to say that doing open science is not a static set of goals you must achieve, it is a process that grows and changes with your science itself.
+
 One of the biggest challenges of doing science is that you might have to wear many different hats: domain expert, lab manager, statistician, teacher, mentor, grant writer, manuscript author, public speaker... the list goes on. Doing Open Science is no different, but the list of skills may be even greater, since the goal is now to openly communicate each step of the process to a broader audience. This also makes teaching Open Science quite challenging- we will cover topics ranging from "soft skills" like project management and internal communications to more technical skills like software management and containers. We could probably teach this whole workshop on each single topic, but we clearly don't have the time to do that. Instead, we will focus on a higher-level look at the landscape of Open Science and introduce you to a wide variety of skills and concepts with the idea that you can go on to find ways to implement them in your own work.
+
 
 Workshop Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,6 +56,15 @@ Workshop Structure
 Each week we will discuss a new topic, ranging from data management to documentation to software management. Much of the content will intersect and cross over from week to week, and many of the skills and approaches we discuss will interact with each other. As you already know, being a scientist requires you to wear many hats, and trying to do Open Science is no different.
 
 As we mentioned, Open Science is not a set of boxes you need to check off to be "Certified Open", but an intersecting set of philosophies and approaches, all of which occur on some type of spectrum. Our ultimate goal in this workshop is for you to "level up" one or more of those philosophies/approaches/skills. For example, if your project currently has no documentation, you could level up to including a thorough README file laying out your project's structure. If you already have minimal documentation, maybe you level up to a GitHub pages website with some worked examples and guides.
+
+Final Project Structure
+===================================
+
+The FOSS workshop has a final project that involves a combination of solo and group work. You can read more about it at the :doc:`final_project/overview` page, but the final project will involve two primary phases.
+
+The first phase will be taking a skill or concept you've learned, generally pertaining to one week's worth of instruction, and putting it into action for one of your own projects. This could be something like improving documentationfor an existing project or creating a Data Management Plan for a project proposal. 
+
+The next phase of the final project will be working with a group of other FOSS learners who tackled your same topic. Together, you will discuss challenges, tips, and next steps for that topic, and put together a short presentation that will be delivered to the rest of the FOSS attendees durning our final meeting.
 
 Introduction to CyVerse
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,3 +232,6 @@ policy <http://www.cyverse.org/acknowledge-and-cite-cyverse>`__
 .. |sciAPIslogo| image:: img/agave/ScienceAPIs_DkBlue.png
   :width: 100
   :height: 75
+
+.. |open science pieces| image:: img/open_science_components.png
+
