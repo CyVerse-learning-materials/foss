@@ -30,6 +30,7 @@ By working through an example project relevant to your interests, you will pract
         Home Page <self>
         Before FOSS Starts <pre_foss/index.rst>
         Schedule <schedule.rst>
+        Code of Conduct <code_of_conduct.rst>
         FAQ <faq.rst>
 
 .. toctree::

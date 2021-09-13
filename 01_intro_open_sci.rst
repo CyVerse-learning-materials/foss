@@ -235,3 +235,6 @@ policy <http://www.cyverse.org/acknowledge-and-cite-cyverse>`__
 
 .. |open science pieces| image:: img/open_science_components.png
 
+.. |Open Science Framework| raw:: html
+
+   <a href="https://osf.io/" target="blank">Open Science Framework</a>
