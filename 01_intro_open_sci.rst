@@ -5,7 +5,16 @@
 
 Introduction to Open Science
 ------------------------------
-        
+
+   .. admonition:: Learning Objectives
+
+        After this lesson, learners should be able to:
+
+        1. Describe and discuss features of Open Science
+        2. Understand the structure of the FOSS workshop and final project
+        3. Describe the core platforms and capabailities of CyVerse and learn more about them
+
+       
 What is Open Science?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -51,15 +60,9 @@ its use.
 
 **CyVerse Homepage:** `http://www.cyverse.org <http://www.cyverse.org>`_
 
-What is Cyberinfrastructure?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+To do science with computers, you've gotta have hardware. That could be your laptop, a big computer in your lab, or even a supercomputer on your university campus. For a lot of things, you can work pretty directly with the hardware- you run some code on your laptop, you get some results. However, as your computational needs grow, you might have to step things up to a bigger computer or set of computers. All of a sudden, things get a lot more complicated, and a lot more systems are needed to manage these bigger resources. 
 
-Cyberinfrastructure is a combination of
-    - platforms, tools and datasets researchers need to do their work
-    - storage and compute hardware necessary for modern analyses
-    - people who provide training and support
-
-The CyVerse cyberinfrastructure can be thought of in layers. The bottom layer (on which everything else is built) consists of the hardware resources. On top of that are the services necessary to make a functional system. The next layer represents extensible services, or those parts of the system that may be adopted and used by thrid parties. Most users will interact primarily with the top layer which represents the various analysis and distribution platforms. While the bottom layers are the most flexible, the top layers are the most user-friendly.
+CyVerse has taken care of a lot of that hard work, creating a series of services that manage hardware, users, data storage, and more. These services can work with CyVerse's own hardware, or with other hardware at institutions worldwide. Multiple services can be stitched together to create custom applications or scientific pipelines. More advanced users have put services together to create custom projects, which we call Powered by CyVerse. We've also put a bunch of these services together to create a series of user-friendly platforms so you can store your data, run analyses, and share your work. We'll walk through a few of these platforms to show you what they can do.
 
 |layer cake|
 
