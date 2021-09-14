@@ -62,7 +62,7 @@ Final Project Structure
 
 The FOSS workshop has a final project that involves a combination of solo and group work. You can read more about it at the :doc:`final_project/overview` page, but the final project will involve two primary phases.
 
-The first phase will be taking a skill or concept you've learned, generally pertaining to one week's worth of instruction, and putting it into action for one of your own projects. This could be something like improving documentationfor an existing project or creating a Data Management Plan for a project proposal. 
+The first phase will be taking a skill or concept you've learned, generally pertaining to one week's worth of instruction, and putting it into action for one of your own projects. This could be something like improving documentation for an existing project or creating a Data Management Plan for a project proposal. 
 
 The next phase of the final project will be working with a group of other FOSS learners who tackled your same topic. Together, you will discuss challenges, tips, and next steps for that topic, and put together a short presentation that will be delivered to the rest of the FOSS attendees durning our final meeting.
 
