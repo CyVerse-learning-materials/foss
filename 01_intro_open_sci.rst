@@ -272,4 +272,4 @@ policy <http://www.cyverse.org/acknowledge-and-cite-cyverse>`__
 
    <a href="https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf?sequence=1#page=24" target="blank">Fecher and Friesike (2014)</a>
   
-.. |5 schools| image:: img/5SchoolsOfThought.png
+.. |5 schools| image:: img/five_schools.png
