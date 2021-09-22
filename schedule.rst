@@ -5,13 +5,15 @@
 Weekly Schedule
 --------------------
 
+
 Wednesdays 11:00AM – 1:00PM US Pacific Time (2:00PM – 4:00PM US Eastern Time)
- -or-
+ OR
 Thursdays 9:00AM – 11:00AM US Pacific Time (12:00PM – 2:00PM US Eastern Time)
 
 `Zoom Info <https://arizona.zoom.us/j/88184109511?pwd=Tk1aUTdMQkR1NEV4Z24wRHZLbDZlQT09>`_ 
 
 Meeing ID: 88184109511
+
 Password: foss2021
 
 Week 0 (pre-FOSS workshop)
