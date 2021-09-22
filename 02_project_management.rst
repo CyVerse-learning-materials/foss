@@ -117,6 +117,7 @@ Key Concepts for Project Management
 8. Describe structure in README
 9. The best time to organize is at the start, the 2nd best is right now
 10. Reorganize if necessary, but don't overdo it
+11. Using same basic structure can help you navigate new/old projects
 
 |tradeoff|
 
