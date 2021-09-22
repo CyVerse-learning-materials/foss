@@ -6,6 +6,19 @@
 Project Management
 ================================
 
+ .. admonition:: Learning Objectives
+    :class: learning-objectives 
+
+        After this lesson, learners should be able to:
+
+        1. Discuss different levels of project management
+        
+        2. Describe tools and approaches to managing collaborative projects
+
+        3. Describe best practices for computational project organization
+
+        4. Understand the benefits of establishing project management practices from the start of a project
+
 "Project Management" is a bit of a broad, vague term, but we use it here in two different contexts. First, we'll go over broad management of scientific projects, talking about things like how to develop operations manuals, lay out roles and responsibilities, and plan out general project steps and the workflow connecting them. Next, we'll go over management of computational projects and how to organize them. Making sure your data, code, and documents are well-organized is crucial for future topics like version control and reproducibility.
 
 Organizing the Whole Thing
