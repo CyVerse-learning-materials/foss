@@ -142,11 +142,6 @@ Remember, the intention of these platforms are to **improve productivity** & not
 
 	- Teams is used by many R1 research universities as part of their campus wide license agreement for Office 365 Business and Education.
 
-	**Gitter**
-
-	- Native integration with Github or Gitlab
-	- Uses your GitHub username or Twitter handle for all Gitters you're a part of
-
 *Other popular alternatives*
 """"""""""""""""""""""""""
 
@@ -167,23 +162,6 @@ Remember, the intention of these platforms are to **improve productivity** & not
   1. `Create a new Workspace <https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace>`_
 
   2. `Create channels, add apps & tools <https://get.slack.help/hc/en-us/articles/217626298-tips-for-team-creators-and-admins>`_
-
-
-*Create a Gitter*
-~~~~~~~~
-
-   1. `Create a Workspace <https://gitter.im>`_
-
-   2. `Create channels <https://gitter.im/home/learn>`_
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
 
 
 External
@@ -212,8 +190,6 @@ There are many ways scientists use social media and the web to share their data 
 `Python & Slack <https://towardsdatascience.com/python-and-slack-a-natural-match-60b136883d4d>`_
 
 `Slack CLI notifications <https://samapriya.github.io/projects/slack_notifier_cli_addon/>`_
-
-`Gitter Services <https://gitlab.com/gitlab-org/gitter/services>`_
 
 `Meetups <https://www.meetup.com/>`_
 
