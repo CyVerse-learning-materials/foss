@@ -21,9 +21,7 @@ Data Management Intro
 Why should you care about data management?
 ------------------------------------------------------
 
-Data is the raw currency of open science. Most work centers on creating data or
-adding to its value. The goal of this section is to highlight how you can make
-your data more valuable by managing it more effectively and with less effort.
+Most scientific work centers on generating new data or working with existing data, which means researchers spend a lot of time dealing with it. Ensuring that data are effectively organized, shared, and preserved is critical to making your science impactful, efficient, and open.
 
   .. admonition:: How would you answer?
 
@@ -75,7 +73,7 @@ Here are some questions about how you manage and work with data. We will complet
 
            - Variety: How many different data types (raw files? databases?)
 
-          A forth V (Veracity) captures the need to make decisions about
+          A fourth V (Veracity) captures the need to make decisions about
           data processing (i.e., separating low- and high-quality data)
 
      3. What is your strategy for storing and backing up your data?
@@ -592,11 +590,8 @@ References and Resources
 
 ----
 
-Preregistration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _CyVerse logo: http://learning.cyverse.org/
 
-text
+.. |maDMP| image:: img/journal.pcbi.1006750.g002.png
 
-CyVerse Data Store/Commons
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+.. |lifecycle| image:: img/data_life_cycle.png
