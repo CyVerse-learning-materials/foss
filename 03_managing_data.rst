@@ -97,18 +97,6 @@ Data Management Basics
 Let's learn a little more about data so that we can evaluate your self-
 assessment responses.
 
-  .. tip::
-
-    **The Data Life Cycle**
-
-
-     *Data management* is the set of practices that allow researchers to effectively and efficiently handle data throughout the data life cycle. Although typically shown as a circle (below) the actually life cycle of any data item may follow a different path, with branches and internal loops. Being aware of your data's future helps you plan how to best manage them.
-
-     |lifecycle|
-
-     Image from |Strasser et al.|.
-
-
 ----
 
 Data Types
@@ -154,23 +142,18 @@ DMP Tool |Data management general guidance|)
     - Reproducible, but can be very expensive and time-consuming
     - Examples: text and data mining, compiled database, 3D models
 
-
-**Part II: Data-specific questions**
-
-Here are some questions about how you manage and work with data. We will complete some more formal assessments later, but for now let's see where you are.
-
-  .. admonition:: Question
-
-     In small groups, discuss the following questions. You will be provided
-     with a space for documenting our shared answers.
-
-     1. Which of the following data types (above) do you frequently work with?
-
-     2. Do you follow specific recommendations for managing the data you
-        work with? If not, do you know if guidelines exist?
-
-
 ----
+
+  .. tip::
+
+    **The Data Life Cycle**
+
+
+     *Data management* is the set of practices that allow researchers to effectively and efficiently handle data throughout the data life cycle. Although typically shown as a circle (below) the actually life cycle of any data item may follow a different path, with branches and internal loops. Being aware of your data's future helps you plan how to best manage them.
+
+     |lifecycle|
+
+     Image from |Strasser et al.|.
 
 Best practices for the data life cycle
 -----------------------------------------------------------
