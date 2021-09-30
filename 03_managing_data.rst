@@ -56,6 +56,8 @@ Here are some questions about how you manage and work with data. We will complet
      with a space for documenting our shared answers.
 
      1. What are the two or three data types that you most frequently work with?
+             - Think about the sources (observational, experimental, simulated, compiled/derived)
+             - Also consider the formats (tabular, sequence, database, image, etc.)
 
      2. What is the scale of your data?
 
