@@ -66,32 +66,32 @@ Practical Git Techniques
 After learning the basics of using Git, which you can learn with the `Software Carpentry Git Lesson <https://swcarpentry.github.io/git-novice/>`_, there are some next things that can be useful to learn. Here are a couple topics that are worth digging into more:
 
 - Using the Git log
-  - you can access using `git log`
-  - will show you your commit history
-  - useful for figuring out where you need to roll back to
+        - you can access using `git log`
+        - will show you your commit history
+        - useful for figuring out where you need to roll back to
 - Reverting
-  - there are a lot of different ways to "undo" something in Git
-  - some are safer, some are a bit riskier
-  - depends on what stage of the commit process you're in
-  - here are some useful resources:
-    - https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd
-    - http://justinhileman.info/article/git-pretty/git-pretty.png
-    - https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
+        - there are a lot of different ways to "undo" something in Git
+        - some are safer, some are a bit riskier
+        - depends on what stage of the commit process you're in
+        - here are some useful resources:
+                - https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd
+                - http://justinhileman.info/article/git-pretty/git-pretty.png
+                - https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
 - Branching
-  - this is important to learn if you're going to be doing any sort of collaboration
-  - here is a fantastic resource for learning how git branching really works: https://learngitbranching.js.org/
-  - you will probably have to deal with **merge conflicts** at some point
-    - merge conflicts happen when two branches are being merged, but they have *different* changes to the same part of a file
-    - perhaps you are working on a feature branch, and you change line 61 in `file.R`, but someone else made a change to the main branch at line 61 in `file.R`. When you try to merge the feature and main branches, Git won't know which changes to line 61 in `file.R` are correct, and you will need to manually decide.
-    - here are some good resources: https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line and https://nitaym.github.io/ourstheirs/
+        - this is important to learn if you're going to be doing any sort of collaboration
+        - here is a fantastic resource for learning how git branching really works: https://learngitbranching.js.org/
+        - you will probably have to deal with **merge conflicts** at some point
+                - merge conflicts happen when two branches are being merged, but they have *different* changes to the same part of a file
+                - perhaps you are working on a feature branch, and you change line 61 in `file.R`, but someone else made a change to the main branch at line 61 in `file.R`. When you try to merge the feature and main branches, Git won't know which changes to line 61 in `file.R` are correct, and you will need to manually decide.
+                - here are some good resources: https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line and https://nitaym.github.io/ourstheirs/
 - `.gitignore`
-  - you often want Git to completely ignore certain files
-  - generated files (like HTML files from Markdown docs)
-  - IDE-specific files like in `.RStudio` or `.vscode` folders
-  - really big files, like data or images
-    - if you accidentally commit a really big file, GitHub might not let you push that commit
-    - if you have a huge file in Git, your repository size can get way too big
-    - this is a pain to solve, so use the `.gitignore` file ahead of time, but if you need to fix this, here is a great resource: https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/
+        - you often want Git to completely ignore certain files
+        - generated files (like HTML files from Markdown docs)
+        - IDE-specific files like in `.RStudio` or `.vscode` folders
+        - really big files, like data or images
+                - if you accidentally commit a really big file, GitHub might not let you push that commit
+                - if you have a huge file in Git, your repository size can get way too big
+                - this is a pain to solve, so use the `.gitignore` file ahead of time, but if you need to fix this, here is a great resource: https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/
 
 
 Useful GitHub Features
@@ -100,32 +100,32 @@ Useful GitHub Features
 At its core, GitHub is just a place to host your Git repositories. However, it offers a lot of functionality that has less to do with Git, and more to do with our favorite topic, **Project Management**. We will walk through a few of these useful features.
 
 - Issues
-  - issues let you plan out changes and suggestions to a repo
-  - closing/reopening
-  - labels
-  - assigning
-  - templates
-  - numbering/mentioning
-  - GitHub documentation: https://docs.github.com/en/issues
+        - issues let you plan out changes and suggestions to a repo
+        - closing/reopening
+        - labels
+        - assigning
+        - templates
+        - numbering/mentioning
+        - GitHub documentation: https://docs.github.com/en/issues
 - Pull Requests
-  - pull requests are a way to request merging code from one branch to another
-  - typical workflow is for someone to fork a repo, then make a PR from that repo to another
-  - reviews
-  - commenting
-  - merging
-  - closing issues
-  - GitHub documentation: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+        - pull requests are a way to request merging code from one branch to another
+        - typical workflow is for someone to fork a repo, then make a PR from that repo to another
+        - reviews
+        - commenting
+        - merging
+        - closing issues
+        - GitHub documentation: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
 - Organizations
-  - you can use Organizations to organize sets of repositories
-  - roles
-  - teams
-  - GitHub documentation: https://docs.github.com/en/organizations
+        - you can use Organizations to organize sets of repositories
+        - roles
+        - teams
+        - GitHub documentation: https://docs.github.com/en/organizations
 - Other neat things
-  - Permissions/collaborators
-  - GitHub Classroom
-  - Gists
-  - CSV and map rendering
-  - Code editor
+        - Permissions/collaborators
+        - GitHub Classroom
+        - Gists
+        - CSV and map rendering
+        - Code editor
 
 ..
 .. note:: Git is not really for storing or manipulating data, especially large files. But the `CyVerse Discovery Environment <https://de.cyverse.org/de/>`_ is a great place to serve, store, and share data.
