@@ -100,9 +100,28 @@ Useful GitHub Features
 At its core, GitHub is just a place to host your Git repositories. However, it offers a lot of functionality that has less to do with Git, and more to do with our favorite topic, **Project Management**. We will walk through a few of these useful features.
 
 - Issues
+  - issues let you plan out changes and suggestions to a repo
+  - closing/reopening
+  - labels
+  - assigning
+  - templates
+  - numbering/mentioning
+  - GitHub documentation: https://docs.github.com/en/issues
 - Pull Requests
+  - pull requests are a way to request merging code from one branch to another
+  - typical workflow is for someone to fork a repo, then make a PR from that repo to another
+  - reviews
+  - commenting
+  - merging
+  - closing issues
+  - GitHub documentation: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
 - Organizations
+  - you can use Organizations to organize sets of repositories
+  - roles
+  - teams
+  - GitHub documentation: https://docs.github.com/en/organizations
 - Other neat things
+  - Permissions/collaborators
   - GitHub Classroom
   - Gists
   - CSV and map rendering
