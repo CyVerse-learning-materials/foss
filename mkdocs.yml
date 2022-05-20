@@ -1,0 +1,125 @@
+docs_dir: docs/
+repo_name: 'CyVerse-learning-materials/foss'
+repo_url: 'https://github.com/CyVerse-learning-materials/foss'
+
+site_name: 'CyVerse Foundational Open Science Skills'
+site_description: 'Workshop teaching researchers core skills for conducting open science.'
+site_author: 'CyVerse Science Team'
+site_url: 'https://learning.cyverse.org/foss'
+
+edit_uri: edit/main/docs
+
+# Copyright
+copyright: 'Copyright &copy; 2022 CyVerse'
+
+# Navigation Page
+
+nav:
+  - 'Home': index.md
+  - 'Before FOSS Starts': installation.md
+  - 'Schedule': schedule.md
+  - 'Code of Conduct': code_of_conduct.md
+  - 'FAQ': faq.md
+  - 'Intro to Open Science': 01_intro_open_sci.md
+  - 'Project Management': 02_project_management.md
+  - 'Managing Data': 03_managing_data.md
+  - 'Documentation and Communication': 04_documentation_communication.md
+  - 'Version Control': 05_version_control.md
+  - 'Repetition': 06_repetition.md
+  - 'Reproducibility': 07_reproducibility.md
+  - 'Final Project':
+    - 'Overview'
+
+# JavaScript for Intercom Widget
+extra_javascript:
+  - javascripts/intercom-learning.js
+
+# Set theme to `readthedocs`
+# must also set Action to use `@nomaterial` branch instead of `@master` for material
+theme:
+  name: material
+# setting features for the navigation tab
+  features:
+    - navigation.instant
+      #- navigation.expand
+    - navigation.tracking
+      #- navigation.sections
+    - navigation.indexes
+    - toc.integrate
+    - toc.follow
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Regular
+  favicon: assets/favicon.png
+  icon:
+    logo: material/rocket
+
+# Options
+extra:
+  social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/
+    - icon: fontawesome/brands/github
+      link: https://github.com/cyverse-learning-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/cyverseorg
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/cyverse.org
+    - icon: fontawesome/brands/docker
+      link: https://harbor.cyverse.org/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/CyverseOrgProject
+  analytics:
+    provider: google
+    property: UA-72224033-6
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
