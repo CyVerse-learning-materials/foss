@@ -1,15 +1,10 @@
 # Introduction to Open Science
 
-> ::: admonition
-> Learning Objectives
->
-> After this lesson, learners should be able to:
->
-> 1.  Describe and discuss features of Open Science
-> 2.  Understand the structure of the FOSS workshop and final project
-> 3.  Describe the core platforms and capabailities of CyVerse and learn
->     more about them
-> :::
+!!! Note "Learning Objectives"
+        After this lesson, learners should be able to:
+        1.  Describe and discuss features of Open Science
+        2.  Understand the structure of the FOSS workshop and final project
+        3.  Describe the core platforms and capabailities of CyVerse and learn more about them
 
 ## What is Open Science?
 
@@ -28,16 +23,10 @@ To get a feel for how Open Science can be multifaceted and different for
 each researcher, we will do a short breakout group session to discuss
 what Open Science means to you.
 
-> ::: {.admonition .admonition-question}
-> Discussion Question
->
-> What does Open Science mean to you?
->
-> What characteristics might a paper/project/lab require to qualify as
-> \"Open\"?
->
-> What are some limitations to you, your lab/group, or your domain?
-> :::
+!!! Note "Discussion Question"
+        - What does Open Science mean to you?
+        - What characteristics might a paper/project/lab require to qualify as "Open"?
+        - What are some limitations to you, your lab/group, or your domain?
 
 ### Components of Open Science
 
@@ -84,18 +73,20 @@ itself.
 
 One of the biggest challenges of doing science is that you might have to
 wear many different hats: domain expert, lab manager, statistician,
-teacher, mentor, grant writer, manuscript author, public speaker\... the
+teacher, mentor, grant writer, manuscript author, public speaker... the
 list goes on. Doing Open Science is no different, but the list of skills
 may be even greater, since the goal is now to openly communicate each
 step of the process to a broader audience. This also makes teaching Open
-Science quite challenging- we will cover topics ranging from \"soft
-skills\" like project management and internal communications to more
+Science quite challenging- we will cover topics ranging from "soft
+skills" like project management and internal communications to more
 technical skills like software management and containers. We could
 probably teach this whole workshop on each single topic, but we clearly
 don't have the time to do that. Instead, we will focus on a
 higher-level look at the landscape of Open Science and introduce you to
 a wide variety of skills and concepts with the idea that you can go on
 to find ways to implement them in your own work.
+
+---
 
 ## WHY do Open Science?
 
@@ -135,17 +126,12 @@ motivations.
 Let's break out into groups again to discuss some of our motivations
 for doing Open Science.
 
-> ::: {.admonition .admonition-question}
-> Discussion Question
->
-> What motivates you to do Open Science?
->
-> Do you feel that you fall into a particular \"school\"? If so, which
-> one, and why?
->
-> Are there any motivating factors for doing Open Science that don't
-> fit into this framework?
-> :::
+!!! Note "Discussion Question"
+        - What motivates you to do Open Science?
+        - Do you feel that you fall into a particular "school"? If so, which one, and why?
+        - Are there any motivating factors for doing Open Science that don't fit into this framework?
+
+---
 
 ## Workshop Structure
 
@@ -157,9 +143,9 @@ scientist requires you to wear many hats, and trying to do Open Science
 is no different.
 
 As we mentioned, Open Science is not a set of boxes you need to check
-off to be \"Certified Open\", but an intersecting set of philosophies
+off to be "Certified Open", but an intersecting set of philosophies
 and approaches, all of which occur on some type of spectrum. Our
-ultimate goal in this workshop is for you to \"level up\" one or more of
+ultimate goal in this workshop is for you to "level up" one or more of
 those philosophies/approaches/skills. For example, if your project
 currently has no documentation, you could level up to including a
 thorough README file laying out your project's structure. If you
@@ -185,10 +171,12 @@ discuss challenges, tips, and next steps for that topic, and put
 together a short presentation that will be delivered to the rest of the
 FOSS attendees durning our final meeting.
 
+---
+
 ## Introduction to CyVerse
 
 There are many approaches to doing Open Science, and no single platform
-or tool is the \"right\" way. However, there can be some benefits to
+or tool is the "right" way. However, there can be some benefits to
 using a set of tools designed to work together; for example, Google
 Docs, Gmail, and Google Calendar tend to play nicely together.
 
@@ -231,29 +219,18 @@ these platforms to show you what they can do.
 
 #### [Data Store](https://de.cyverse.org/de/)
 
-![datastorelogo](img/data_store/datastore-icon.png){width="88px"
-height="100px"}
+![datastorelogo](img/data_store/datastore-icon.png){width="88px" height="100px"}
 
 **Securely store data for active analyses or sharing with your
 collaborators.**
 
--   
-
-    Upload, download and share your data
-
-    :   -   DE simple upload/download. Convenient but not good for large
-            files.
-        -   Cyberduck is a third-party software with graphic interface
-            for transferring data. Available for Mac and Windows.
-        -   iCommands is more powerful/flexible, good for large
-            transfers but requires some command line knowledge
-
+-   Upload, download and share your data:
+    -   DE simple upload/download. Convenient but not good for large files.
+    -   Cyberduck is a third-party software with graphic interface for transferring data. Available for Mac and Windows.
+    -   iCommands is more powerful/flexible, good for large transfers but requires some command line knowledge
 -   Data limit of 100 GB (can request increase up to 10 TB)
-
 -   Share your data with collaborators
-
--   [Data Store
-    guide](https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/)
+-   [Data Store guide](https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/)
 
 #### [Discovery Environment](https://de.cyverse.org/de/)
 
@@ -262,37 +239,23 @@ collaborators.**
 **Use hundreds of bioinformatics apps and manage data in a simple web
 interface.**
 
-> -   Provides graphic interface for bioinformatics tools for scientists
->     with no command line experience
->
-> -   
->
->     User extensible. Users can add their own tools and make their own apps.
->
->     :   -   Share them with collaborators
->         -   Publish them
->
-> -   VICE (Visual and Interactive Computing Environment) for
->     interactive use of Jupyter notebooks, RStudio and RShiny.
->
-> -   Integrated with the Data Store for ease of use
->
-> -   Share your data and analyses together with your collaborators
->
-> -   [DE
->     guide](http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/)
->
-> -   [VICE
->     documentation](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html)
+-   Provides graphic interface for bioinformatics tools for scientists with no command line experience
+-   User extensible. Users can add their own tools and make their own apps.
+    -   Share them with collaborators
+    -   Publish them
+-   VICE (Visual and Interactive Computing Environment) for
+     interactive use of Jupyter notebooks, RStudio and RShiny.
+-   Integrated with the Data Store for ease of use
+-   Share your data and analyses together with your collaborators
+-   [DE guide](http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/)
+-   [VICE documentation](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html)
 
-#### [Atmosphere](https://atmo.cyverse.org/application/images)
-
-![atmologo](img/atmosphere/atmosphere-icon.png){width="100px"
-height="75px"}
-
-**Create a custom cloud-based scientific analysis platform or use a
-ready-made one for your area of scientific interest.**
-
+> #### [Atmosphere](https://atmo.cyverse.org/application/images)
+> ![atmologo](img/atmosphere/atmosphere-icon.png){width="100px" height="75px"}
+> 
+> **Create a custom cloud-based scientific analysis platform or use a
+> ready-made one for your area of scientific interest.**
+>
 > -   Cloud computing for life sciences
 > -   100s of pre-built virtual machine images
 > -   Fully customize your software setup
@@ -307,11 +270,9 @@ ready-made one for your area of scientific interest.**
 **The Data Commons provides services to manage, organize, preserve,
 publish, discover, and reuse data.**
 
-> -   Access discoverable and reusable data with metadata features and
->     functions
-> -   Browse Community Released Data and data curated by CyVerse
-> -   Easily publish data to the NCBI or directly to the CyVerse Data
->     Commons
+-   Access discoverable and reusable data with metadata features andfunctions
+-   Browse Community Released Data and data curated by CyVerse
+-   Easily publish data to the NCBI or directly to the CyVerse Data Commons
 
 #### Taking It Further
 
@@ -320,13 +281,11 @@ pipelines, etc. on top of CyVerse resources. This usually involves
 interfacing with lower-level components of CyVerse, which you saw on the
 tiered chart earlier.
 
-[The CyVerse Learning Center](https://learning.cyverse.org/en/latest/#)
-\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^\^
-
+#### [The CyVerse Learning Center](https://learning.cyverse.org/)
 ![LClogo](img/Learningcenter_DkBlue.png){width="100px" height="100px"}
 
-**The CyVerse Learning center contains documentations and tutorials on
-using CyVerse tools.**
+The CyVerse Learning center contains documentations and tutorials on
+using CyVerse tools.
 
 #### Intercom
 
@@ -342,16 +301,4 @@ CyVerse is funded entirely by the National Science Foundation under
 Award Numbers DBI-0735191, DBI-1265383 and DBI-1743442.
 
 Please cite CyVerse appropriately when you make use of our resources,
-[CyVerse citation
-policy](http://www.cyverse.org/acknowledge-and-cite-cyverse)
-
-> \<a
-> href=\"<https://github.com/CyVerse-learning-materials/foss-2020/tree/master/CyVerse/intro_to_cyverse.rst>\"
-> target=\"blank\"\>Github Repo Link\</a\>
-
-> \<a href=\"<https://osf.io/>\" target=\"blank\"\>Open Science
-> Framework\</a\>
-
-> \<a
-> href=\"<https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf?sequence=1#page=24>\"
-> target=\"blank\"\>Fecher and Friesike (2014)\</a\>
+[CyVerse citation policy](http://www.cyverse.org/acknowledge-and-cite-cyverse)
