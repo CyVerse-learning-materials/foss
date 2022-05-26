@@ -1,22 +1,18 @@
 # Project Management
 
-> ::: {.admonition .learning-objectives}
-> Learning Objectives
->
-> After this lesson, learners should be able to:
->
-> 1.  Discuss different levels of project management
-> 2.  Describe tools and approaches to managing collaborative projects
-> 3.  Describe best practices for computational project organization
-> 4.  Understand the benefits of establishing project management
->     practices from the start of a project
-> :::
+!!! Info "Learning Objectives"
+        After this lesson, learners should be able to:
 
-\"Project Management\" is a bit of a broad, vague term, but we use it
-here in two different contexts. First, we\'ll go over broad management
+        1.  Discuss different levels of project management
+        2.  Describe tools and approaches to managing collaborative projects
+        3.  Describe best practices for computational project organization
+        4.  Understand the benefits of establishing project management practices from the start of a project
+
+"Project Management" is a bit of a broad, vague term, but we use it
+here in two different contexts. First, we'll go over broad management
 of scientific projects, talking about things like how to develop
 operations manuals, lay out roles and responsibilities, and plan out
-general project steps and the workflow connecting them. Next, we\'ll go
+general project steps and the workflow connecting them. Next, we'll go
 over management of computational projects and how to organize them.
 Making sure your data, code, and documents are well-organized is crucial
 for future topics like version control and reproducibility.
@@ -25,34 +21,24 @@ for future topics like version control and reproducibility.
 
 This type of overall project management may be required for some grants,
 and while it may be tempting to put in the minimal effort on one of the
-many pieces of paperwork you\'re required to complete, this type of
-overall project planning can be very useful. Here we\'ll discuss some of
+many pieces of paperwork you're required to complete, this type of
+overall project planning can be very useful. Here we'll discuss some of
 the benefits of this type of project management:
 
--   
+- clarifies roles and responsibilities
+    -   it can be easy for certain tasks to slip through the cracks
+    -   ensures that nobody gets saddled with too much work
+    -   reduces chances of disputes among collaborators
 
-    clarifies roles and responsibilities
+- defines project steps and their order
+    -   the larger a project, the more convoluted this can get
+    -   even small projects can quickly get out of hand
 
-    :   -   it can be easy for certain tasks to slip through the cracks
-        -   ensures that nobody gets saddled with too much work
-        -   reduces chances of disputes among collaborators
+- looks good to funders and collaborators
 
--   
-
-    defines project steps and their order
-
-    :   -   the larger a project, the more convoluted this can get
-        -   even small projects can quickly get out of hand
-
--   looks good to funders and collaborators
-
--   
-
-    gives you somewhere to record changes to the project
-
-    :   -   if someone leaves the project or roles change, it is worth
-            documenting these changes
-        -   can also be part of the \"Open Process\" we talked about
+- gives you somewhere to record changes to the project
+    -   if someone leaves the project or roles change, it is worth documenting these changes
+    -   can also be part of the "Open Process" we talked about
 
 Ryan will give a brief talk on how the used a to establish a clear
 structure for the project.
@@ -60,26 +46,19 @@ structure for the project.
 Now we will do a breakout discussion section to talk about overall
 project management.
 
-> ::: {.admonition .admonition-question}
-> Discussion Question
->
-> What are some project management strategies that you have found to
-> work well?
->
-> What is an example of a poorly managed project you were involved in?
-> What contributed to this feeling?
->
-> Why do you think effective project management is important to Open
-> Science?
->
-> What are some limitations to you, your lab/group, or your domain?
-> :::
+!!! Question "Discussion Question"
+        - What are some project management strategies that you have found to work well?
+        - What is an example of a poorly managed project you were involved in? What contributed to this feeling?
+        - Why do you think effective project management is important to Open Science?
+        - What are some limitations to you, your lab/group, or your domain?
+
+---
 
 ## Computational Project Management
 
 When we talk about project management in this section, we mean the ways
 you organize data, code, images, documents, and documentation within a
-project. If you\'ve ever had to navigate someone else\'s computer or
+project. If you've ever had to navigate someone else's computer or
 repository, you probably know that a poorly organized project can
 greatly reduce its openness. On the other hand, a well-organized project
 can:
@@ -89,14 +68,14 @@ can:
 -   ease the growing pains of a rapidly scaling project
 -   make life much easier for your future self
 
-It can be easy to overlook sound project management, opting for a \"just
-get it done ASAP\" approach to your work, but in our experience, this
+It can be easy to overlook sound project management, opting for a "just
+get it done ASAP" approach to your work, but in our experience, this
 almost always costs you more time in the end. The best time to introduce
 good project management is at the start of a project, and the second
 best time is right now. An hour spent reorganizing a project today may
 save you days of headaches later on.
 
-There is no single \"right way\" to organize and manage a project, and
+There is no single "right way" to organize and manage a project, and
 your specific needs may vary, but we will introduce a basic framework
 that can get you headed in the right direction. It will also help us
 introduce more advanced topics later on, as many of the skills and
@@ -153,37 +132,21 @@ how you manage the relationships and organization of various files.
 
 ### Key Concepts for Project Management
 
-1.  
-
-    Projects should be self-contained
-
-    :   -   this is probably the most important concept
-        -   strictly necessary for version control
-        -   use relative paths
-
-2.  Use structure to organize files
-
-3.  Don\'t underestimate complexity
-
-4.  Keep raw data raw
-
-5.  Treat generated output as disposable
-
-6.  
-
-    Avoid manual (point-and-click) steps as much as possible
-
-    :   -   if necessary, record in detail
-        -   should also be recorded in prior and subsequent steps
-
+1. Projects should be self-contained
+    -   this is probably the most important concept
+    -   strictly necessary for version control
+    -   use relative paths
+2. Use structure to organize files
+3. Don't underestimate complexity
+4. Keep raw data raw
+5. Treat generated output as disposable
+6. Avoid manual (point-and-click) steps as much as possible
+    -   if necessary, record in detail
+    -   should also be recorded in prior and subsequent steps
 7.  Avoid spaces in names
-
 8.  Describe structure in README
-
 9.  The best time to organize is at the start, the 2nd best is right now
-
-10. Reorganize if necessary, but don\'t overdo it
-
+10. Reorganize if necessary, but don't overdo it
 11. Using same basic structure can help you navigate new/old projects
 
 ![tradeoff](img/organizing_searching_tradeoff.png)
@@ -208,50 +171,52 @@ takes one argument, the name of the new project (with no spaces), and
 creates that project with a premade directory structure for you to put
 files into.
 
-    #!/usr/bin/env bash
+```
+#!/usr/bin/env bash
 
-    # Run this script with the name of the new project as 
-    # an argument, like so: `bash make_project.sh my_project`
-    # It will generate a project with the following structure:
+# Run this script with the name of the new project as 
+# an argument, like so: `bash make_project.sh my_project`
+# It will generate a project with the following structure:
 
-    #.
-    #|-- README.md
-    #|-- data
-    #|   |-- cleaned
-    #|   `-- raw
-    #|-- images
-    #|-- reports
-    #`-- scripts
+#.
+#|-- README.md
+#|-- data
+#|   |-- cleaned
+#|   `-- raw
+#|-- images
+#|-- reports
+#`-- scripts
 
-    mkdir "$1"
+mkdir "$1"
 
-    cd "$1" || exit
+cd "$1" || exit
 
-    echo "# $1" >> README.md
+echo "# $1" >> README.md
 
-    mkdir data
+mkdir data
 
-    mkdir data/raw
+mkdir data/raw
 
-    mkdir data/cleaned
+mkdir data/cleaned
 
-    mkdir scripts
+mkdir scripts
 
-    mkdir images
+mkdir images
 
-    mkdir reports
+mkdir reports
+```
 
-This approach to automating repetitive tasks is something we\'ll dig
+This approach to automating repetitive tasks is something we'll dig
 into even deeper in later lessons.
 
 ### Other Resources
 
 There are many other resources on more specific elements of project
-management. We\'ll link to some of them here.
+management. We'll link to some of them here.
 
--   Using [R Projects]{.title-ref} with RStudio:
-    <https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects>
--   Using the R package \`here\`: <https://github.com/jennybc/here_here>
+-   Using R Projects with RStudio:
+    https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects
+-   Using the R package `here`: <https://github.com/jennybc/here_here>
     and <https://here.r-lib.org/>
 -   An even more compartmentalized approach to project management:
     <https://hrdag.org/2016/06/14/the-task-is-a-quantum-of-workflow/>

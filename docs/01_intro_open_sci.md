@@ -1,6 +1,6 @@
 # Introduction to Open Science
 
-!!! Note "Learning Objectives"
+!!! Info "Learning Objectives"
         After this lesson, learners should be able to:
         1.  Describe and discuss features of Open Science
         2.  Understand the structure of the FOSS workshop and final project
@@ -23,7 +23,7 @@ To get a feel for how Open Science can be multifaceted and different for
 each researcher, we will do a short breakout group session to discuss
 what Open Science means to you.
 
-!!! Note "Discussion Question"
+!!! Question "Discussion Question"
         - What does Open Science mean to you?
         - What characteristics might a paper/project/lab require to qualify as "Open"?
         - What are some limitations to you, your lab/group, or your domain?
@@ -126,7 +126,7 @@ motivations.
 Let's break out into groups again to discuss some of our motivations
 for doing Open Science.
 
-!!! Note "Discussion Question"
+!!! Question "Discussion Question"
         - What motivates you to do Open Science?
         - Do you feel that you fall into a particular "school"? If so, which one, and why?
         - Are there any motivating factors for doing Open Science that don't fit into this framework?
