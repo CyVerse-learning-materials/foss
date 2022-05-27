@@ -2,16 +2,11 @@
 
 ## Data Management Intro
 
-::: admonition
-Learning Objectives
-
--   Recognize data as the foundation of open science and be able to
-    describe the \"life cycle of data\"
--   Use self-assessments to evaluate your current data management
-    practices
--   Cite tools and resources to improve your data management practices
--   Know the biggest challenge to effective data management
-:::
+!!! Info "Learning Objectives"
+        - Recognize data as the foundation of open science and be able to describe the "life cycle of data"
+        - Use self-assessments to evaluate your current data management practices
+        - Cite tools and resources to improve your data management practices
+        - Know the biggest challenge to effective data management
 
 ### Why should you care about data management?
 
@@ -20,89 +15,48 @@ existing data, which means researchers spend a lot of time dealing with
 it. Ensuring that data are effectively organized, shared, and preserved
 is critical to making your science impactful, efficient, and open.
 
-> ::: admonition
-> How would you answer?
->
-> If you give your data to a colleague who has not been involved with
-> your project, would they be able to make sense of it? Would they be
-> able to use it properly?
->
-> If you come back to your own data in five years, will you be able to
-> make sense of it? Will you be able to use it properly?
->
-> When you are ready to publish a paper, is it easy to find all the
-> correct versions of all the data you used and present them in a
-> comprehensible manner?
-> :::
+!!! Question "How would you answer?"
+        - If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?
+        - If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?
+        - When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
 
 Data management skills produce self-describing datasets that:
 
-> -   Make life much easier for you and your collaborators
-> -   Benefit the scientific research community by allowing others to
->     reuse your data
-> -   Are required by most funders and many journals
->     -   Recent from NSF
->     -   NSF
+-   Make life much easier for you and your collaborators
+-   Benefit the scientific research community by allowing others to reuse your data
+-   Are required by most funders and many journals
+-   Recent from NSF
+-   NSF
 
-------------------------------------------------------------------------
+---
 
 ### Data Self-assessment
 
 **Part I: Basic questions**
 
 Here are some questions about how you manage and work with data. We will
-complete some more formal assessments later, but for now let\'s see
+complete some more formal assessments later, but for now let's see
 where you are.
 
-> ::: admonition
-> Question
->
-> In small groups, discuss the following questions. You will be provided
-> with a space for documenting our shared answers.
->
-> 1.  
->
->     What are the two or three data types that you most frequently work with?
->
->     :   -   Think about the sources (observational, experimental,
->             simulated, compiled/derived)
->         -   Also consider the formats (tabular, sequence, database,
->             image, etc.)
->
-> 2.  What is the scale of your data?
->
->     ::: tip
->     ::: title
->     Tip
->     :::
->
->     We often talk about the scale of data using the :
->
->     > -   Volume: Size of the data (MBs, GBs, TBs); can also include
->     >     how many files (e.g dozens of big files, or millions of
->     >     small ones)
->     > -   Velocity: How quickly are these data produced and analyzed?
->     >     A lot coming in a single batch infrequently, or, a constant
->     >     small amount of data that must be rapidly analyzed?
->     > -   Variety: How many different data types (raw files?
->     >     databases?)
->
->     A fourth V (Veracity) captures the need to make decisions about
->     data processing (i.e., separating low- and high-quality data)
->     :::
->
-> 3.  What is your strategy for storing and backing up your data?
->
-> 4.  What is your strategy for verifying the integrity of your data?
->     (i.e. verifying that your data has not be altered)
->
-> 5.  What is your strategy for searching your data?
->
-> 6.  What is your strategy for sharing (and getting credit for) your
->     data? (i.e. How will do you share with your community/clients? How
->     is that sharing documented? How do you evaluate the impact of data
->     shared? )
-> :::
+!!! Question "Activity"
+        In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
+        1. What are the two or three data types that you most frequently work with?
+            -   Think about the sources (observational, experimental, simulated, compiled/derived)
+            -   Also consider the formats (tabular, sequence, database, image, etc.)
+        2.  What is the scale of your data?
+
+        ??? Tip
+            We often talk about the scale of data using the :
+            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+             -   Variety: How many different data types (raw files? databases?)
+             A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
+             
+        3.  What is your strategy for storing and backing up your data?
+        4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
+        5.  What is your strategy for searching your data?
+        6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
+
 
 ------------------------------------------------------------------------
 
