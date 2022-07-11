@@ -16,45 +16,46 @@ worthwhile tool for many researchers).
 
 ## **Definitions**
 
-*Git* - tool for version control.
+!!! Info "Git-related Definitions"
+        *Git* - tool for version control.
 
-*GitHub* - hosted server that is also interactive.
+        *GitHub* - hosted server that is also interactive.
 
-*repo* - short for repository
+        *repo* - short for repository
 
-*local* - on your personal computer.
+        *local* - on your personal computer.
 
-*remote* - somewhere other than your computer. GitHub can host remote
-repositories.
+        *remote* - somewhere other than your computer. GitHub can host remote
+        repositories.
 
-*clone* - copy of a repository that lives locally on your computer.
-Pushing changes will affect the repository online.
+        *clone* - copy of a repository that lives locally on your computer.
+        Pushing changes will affect the repository online.
 
-*fetch* - getting latest changes to the repository on your local
-computer.
+        *fetch* - getting latest changes to the repository on your local
+        computer.
 
-*branch* - a history of changes to a repository. You can have parallel
-branches with separate histories, allowing you to keep a "main"
-version and development versions.
+        *branch* - a history of changes to a repository. You can have parallel
+        branches with separate histories, allowing you to keep a "main"
+        version and development versions.
 
-*fork* - copy of someone else's repository stored locally on your
-account. From forks, you can make pull requests to the main branch.
+        *fork* - copy of someone else's repository stored locally on your
+        account. From forks, you can make pull requests to the main branch.
 
-*upstream* - primary or main branch of original repository.
+        *upstream* - primary or main branch of original repository.
 
-*downstream* - branch or fork of repository.
+        *downstream* - branch or fork of repository.
 
-*commit* - finalize a change.
+        *commit* - finalize a change.
 
-*push* - add changes back to the remote repository.
+        *push* - add changes back to the remote repository.
 
-*merge* - takes changes from a branch or fork and applies them to the
-main.
+        *merge* - takes changes from a branch or fork and applies them to the
+        main.
 
-*pull request* - proposed changes to/within a repository.
+        *pull request* - proposed changes to/within a repository.
 
-*issue* - suggestions or tasks needed for the repository. Allows you to
-track decisions, bugs with the repository, etc.
+        *issue* - suggestions or tasks needed for the repository. Allows you to
+        track decisions, bugs with the repository, etc.
 
 ## Git vs. GitHub
 
