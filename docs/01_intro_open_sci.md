@@ -2,6 +2,7 @@
 
 !!! Info "Learning Objectives"
         After this lesson, learners should be able to:
+        
         1.  Describe and discuss features of Open Science
         2.  Understand the structure of the FOSS workshop and final project
         3.  Describe the core platforms and capabailities of CyVerse and learn more about them
@@ -36,8 +37,8 @@ access to your data, nothing else about your science can be all that
 open. While we will devote an entire week of this course to data,
 opening up your data is only one piece of the puzzle.
 
-![Open Science pieces](img/open_science_components.png) *Gallagher et al
-2020, Nature Eco Evo*
+![Open Science pieces](img/open_science_components.png) 
+*Gallagher et al 2020, Nature Eco Evo*
 
 This figure demonstrates the multiple intersecting pieces of Open
 Science, which go beyond simply making data accessible. While we focus
@@ -88,7 +89,7 @@ to find ways to implement them in your own work.
 
 ---
 
-## WHY do Open Science?
+## **WHY** do Open Science?
 
 There are many reasons to do Open Science, and presumably one or more of
 them brought you to this workshop. Whether you feel an ethical
@@ -115,7 +116,8 @@ Science, which represent 5 underlying motivations:
     and focused on developing alternative measurements of scientific
     impact
 
-![5 schools](img/five_schools.png) *Fecher and Friesike 2014*
+![5 schools](img/five_schools.png) 
+*Fecher and Friesike 2014*
 
 While many researchers may be motivated by one or more of these aspects,
 we will not necessarily focus on any of them in particular. If anything,
@@ -301,4 +303,4 @@ CyVerse is funded entirely by the National Science Foundation under
 Award Numbers DBI-0735191, DBI-1265383 and DBI-1743442.
 
 Please cite CyVerse appropriately when you make use of our resources,
-[CyVerse citation policy](http://www.cyverse.org/acknowledge-and-cite-cyverse)
+[CyVerse citation policy](http://www.cyverse.org/acknowledge-and-cite-cyverse).

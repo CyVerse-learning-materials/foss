@@ -389,7 +389,7 @@ on (among other things)
 While a lot is up to you, the first step is to evaluate how FAIR you
 think your data are:
 
-!!! Example "Exercise"
+!!! Question "Exercise"
         Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resources/working-with-data/fair-data/fair-self-assessment-tool/).
 
 ------------------------------------------------------------------------
@@ -423,7 +423,7 @@ the future."
 
 **Why bother with a DMP?**
 
-!!! Example "How would you answer?"
+!!! Question "How would you answer?"
         Do you have a data management plan? If so, how do you use it?
 
 *"Those who fail to plan, plan to fail"*
@@ -500,7 +500,7 @@ Extra challenges for collaborative projects.
 
 ### Tools for DMPs
 
-!!! Example "Exercise"
+!!! Question "Exercise"
         Thinking about a dataset you work with, complete the [Data Stewardship Wizzard](https://ds-wizard.org/).
 
 ------------------------------------------------------------------------

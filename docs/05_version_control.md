@@ -5,12 +5,12 @@ files, or a whole project.
 
 Some version control tools:
 
--   Microsoft Office\'s *Track Changes* functionality
--   Apple\'s *Time Machine*
--   Google Docs\' *Version History*
+-   Microsoft Office's *Track Changes* functionality
+-   Apple's *Time Machine*
+-   Google Docs' *Version History*
 -   Git
 
-Version control is as much a philosophy as a set of tools; you don\'t
+Version control is as much a philosophy as a set of tools; you don't
 need to master Git to utilize version control (though it is certainly a
 worthwhile tool for many researchers).
 
@@ -34,10 +34,10 @@ Pushing changes will affect the repository online.
 computer.
 
 *branch* - a history of changes to a repository. You can have parallel
-branches with separate histories, allowing you to keep a \"main\"
+branches with separate histories, allowing you to keep a "main"
 version and development versions.
 
-*fork* - copy of someone else\'s repository stored locally on your
+*fork* - copy of someone else's repository stored locally on your
 account. From forks, you can make pull requests to the main branch.
 
 *upstream* - primary or main branch of original repository.
@@ -60,12 +60,12 @@ track decisions, bugs with the repository, etc.
 
 **Git** is a command-line program for version control of repositories.
 It keeps track of changes you make to files in your repository and
-stores those changes in a [.git]{.title-ref} folder in that repository.
+stores those changes in a *.git* folder in that repository.
 These changes happen whenever you make a **commit**. Git stores the
-history of these commits in a \"tree\", so you can go back to any
+history of these commits in a "tree", so you can go back to any
 previous commit. By keeping track of the **differences** between
 commits, Git can be much more efficient than storing an entire copy of
-each version in a document\'s history.
+each version in a document's history.
 
 You could utilize Git completely on its own, on your local computer, and
 get a lot of benefits. You will have a history of the changes you made
@@ -85,89 +85,43 @@ a way to collaborate with others, and a lot of other features.
 ## Practical Git Techniques
 
 After learning the basics of using Git, which you can learn with the
-[Software Carpentry Git
-Lesson](https://swcarpentry.github.io/git-novice/), there are some next
+[Software Carpentry Git Lesson](https://swcarpentry.github.io/git-novice/), there are some next
 things that can be useful to learn. Here are a couple topics that are
 worth digging into more:
 
--   
+- Using the Git log
+    -   you can access using [git log]{.title-ref}
+    -   will show you your commit history
+    -   useful for figuring out where you need to roll back to
 
-    Using the Git log
+- Reverting
+    -   there are a lot of different ways to "undo" something in Git
+    -   some are safer, some are a bit riskier
+    -   depends on what stage of the commit process you're in
+    - **here are some useful resources**:
+        - https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd
+        - http://justinhileman.info/article/git-pretty/git-pretty.png
+        - https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
 
-    :   -   you can access using [git log]{.title-ref}
-        -   will show you your commit history
-        -   useful for figuring out where you need to roll back to
+- Branching
+    - this is important to learn if you\'re going to be doing any sort of collaboration
+    - here is a fantastic resource for learning how git branching really works: https://learngitbranching.js.org/
+    - **you will probably have to deal with *merge conflicts* at some point**
+        -   merge conflicts happen when two branches are being merged, but they have *different* changes to the same part of a file
+        -   perhaps you are working on a feature branch, and you change line 61 in *file.R*, but someone else made a change to the main branch at line 61 in *file.R*. When you try to merge the feature and main branches, Git won't know which changes to line 61 in *file.R* are correct, and you will need to manually decide.
+        -   here are some good resources:
+            - https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+            - https://nitaym.github.io/ourstheirs/
 
--   
-
-    Reverting
-
-    :   -   there are a lot of different ways to \"undo\" something in
-            Git
-
-        -   some are safer, some are a bit riskier
-
-        -   depends on what stage of the commit process you\'re in
-
-        -   
-
-            here are some useful resources:
-
-            :   -   <https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd>
-                -   <http://justinhileman.info/article/git-pretty/git-pretty.png>
-                -   <https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/>
-
--   
-
-    Branching
-
-    :   -   this is important to learn if you\'re going to be doing any
-            sort of collaboration
-
-        -   here is a fantastic resource for learning how git branching
-            really works: <https://learngitbranching.js.org/>
-
-        -   
-
-            you will probably have to deal with **merge conflicts** at some point
-
-            :   -   merge conflicts happen when two branches are being
-                    merged, but they have *different* changes to the
-                    same part of a file
-                -   perhaps you are working on a feature branch, and you
-                    change line 61 in [file.R]{.title-ref}, but someone
-                    else made a change to the main branch at line 61 in
-                    [file.R]{.title-ref}. When you try to merge the
-                    feature and main branches, Git won\'t know which
-                    changes to line 61 in [file.R]{.title-ref} are
-                    correct, and you will need to manually decide.
-                -   here are some good resources:
-                    <https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line>
-                    and <https://nitaym.github.io/ourstheirs/>
-
--   
-
-    [.gitignore]{.title-ref}
-
-    :   -   you often want Git to completely ignore certain files
-
-        -   generated files (like HTML files from Markdown docs)
-
-        -   IDE-specific files like in [.RStudio]{.title-ref} or
-            [.vscode]{.title-ref} folders
-
-        -   
-
-            really big files, like data or images
-
-            :   -   if you accidentally commit a really big file, GitHub
-                    might not let you push that commit
-                -   if you have a huge file in Git, your repository size
-                    can get way too big
-                -   this is a pain to solve, so use the
-                    [.gitignore]{.title-ref} file ahead of time, but if
-                    you need to fix this, here is a great resource:
-                    <https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/>
+- *.gitignore*
+    -   you often want Git to completely ignore certain files
+    -   generated files (like HTML files from Markdown docs)
+    -   IDE-specific files like in *.RStudio* or *.vscode* folders
+    -  **really big files, like data or images**
+        -   if you accidentally commit a really big file, GitHub might not let you push that commit
+        -   if you have a huge file in Git, your repository size can get way too big
+        -   this is a pain to solve, so use the *.gitignore* file ahead of time, but if you need to fix this, here is a great resource: 
+        - https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/
 
 ## Useful GitHub Features
 
@@ -176,60 +130,40 @@ However, it offers a lot of functionality that has less to do with Git,
 and more to do with our favorite topic, **Project Management**. We will
 walk through a few of these useful features.
 
--   
+- Issues
+    -   issues let you plan out changes and suggestions to a repo
+    -   closing/reopening
+    -   labels
+    -   assigning
+    -   templates
+    -   numbering/mentioning
+    -   GitHub documentation: https://docs.github.com/en/issues
 
-    Issues
+- Pull Requests
+    -   pull requests are a way to request merging code from one branch to another
+    -   typical workflow is for someone to fork a repo, then make a PR from that repo to another
+    -   reviews
+    -   commenting
+    -   merging
+    -   closing issues
+    -   GitHub documentation: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
 
-    :   -   issues let you plan out changes and suggestions to a repo
-        -   closing/reopening
-        -   labels
-        -   assigning
-        -   templates
-        -   numbering/mentioning
-        -   GitHub documentation: <https://docs.github.com/en/issues>
+- Organizations
+    -   you can use Organizations to organize sets of repositories
+    -   roles
+    -   teams
+    -   GitHub documentation:
+        https://docs.github.com/en/organizations
 
--   
+- Other neat things
+    -   Permissions/collaborators
+    -   GitHub Classroom
+    -   Gists
+    -   CSV and map rendering
+    -   Code editor
 
-    Pull Requests
-
-    :   -   pull requests are a way to request merging code from one
-            branch to another
-        -   typical workflow is for someone to fork a repo, then make a
-            PR from that repo to another
-        -   reviews
-        -   commenting
-        -   merging
-        -   closing issues
-        -   GitHub documentation:
-            <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>
-
--   
-
-    Organizations
-
-    :   -   you can use Organizations to organize sets of repositories
-        -   roles
-        -   teams
-        -   GitHub documentation:
-            <https://docs.github.com/en/organizations>
-
--   
-
-    Other neat things
-
-    :   -   Permissions/collaborators
-        -   GitHub Classroom
-        -   Gists
-        -   CSV and map rendering
-        -   Code editor
-
-::: note
-::: title
-Note
-:::
-
-Git is not really for storing or manipulating data, especially large
-files. But the [CyVerse Discovery
-Environment](https://de.cyverse.org/de/) is a great place to serve,
-store, and share data.
-:::
+!!! Note
+        Git is not really for storing or manipulating data, especially large
+        files. But the [CyVerse Discovery
+        Environment](https://de.cyverse.org/de/) is a great place to serve,
+        store, and share data.
