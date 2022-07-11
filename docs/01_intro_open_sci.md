@@ -38,6 +38,7 @@ open. While we will devote an entire week of this course to data,
 opening up your data is only one piece of the puzzle.
 
 ![Open Science pieces](img/open_science_components.png) 
+
 *Gallagher et al 2020, Nature Eco Evo*
 
 This figure demonstrates the multiple intersecting pieces of Open
@@ -117,6 +118,7 @@ Science, which represent 5 underlying motivations:
     impact
 
 ![5 schools](img/five_schools.png) 
+
 *Fecher and Friesike 2014*
 
 While many researchers may be motivated by one or more of these aspects,
