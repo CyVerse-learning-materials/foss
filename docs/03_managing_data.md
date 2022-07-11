@@ -409,27 +409,24 @@ think your data are:
 
 "A data management plan or DMP is a formal document that outlines how
 data are to be handled both during a research project, and after the
-project is completed.[1] The goal of a data management plan is to
+project is completed. [1] The goal of a data management plan is to
 consider the many aspects of data management, metadata generation, data
 preservation, and analysis before the project begins; this may lead to
 data being well-managed in the present, and prepared for preservation in
 the future."
 
-(Source: <https://en.wikipedia.org/wiki/Data_management_plan>)
+(Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
-[Example DMP](../slides/DMPFuTRES_v2.docx)
+[Example DMP](https://github.com/CyVerse-learning-materials/foss/raw/mkdocs/slides/DMPFuTRES_v2.docx)
 
 ------------------------------------------------------------------------
 
 **Why bother with a DMP?**
 
-> ::: admonition
-> How would you answer?
->
-> Do you have a data management plan? If so, how do you use it?
-> :::
->
-> *\"Those who fail to plan, plan to fail\"*
+!!! Example "How would you answer?"
+        Do you have a data management plan? If so, how do you use it?
+
+*"Those who fail to plan, plan to fail"*
 
 Returning to the assertion that data (and its value) is at the
 foundation of your science, working without a data management plan
@@ -444,54 +441,47 @@ funders realize this.
 
 **Stick:**
 
-> -   [You have to make
->     one](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp)
-> -   Reviewers definitely look at them, but they may not be enforced.
+-   [You have to make one](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp)
+-   Reviewers definitely look at them, but they may not be enforced.
 
 **Carrot:**
 
-> -   Make your life easier
-> -   Planning for you project makes it run more smoothly
-> -   Avoid surprise costs
+-   Make your life easier
+-   Planning for you project makes it run more smoothly
+-   Avoid surprise costs
 
 ### Elements of a good DMP
 
-> -   Information about data & data format(s)
->
->     > -   data types
->     > -   data sources
->     > -   analysis methods
->     > -   formats
->     > -   QA/QC
->     > -   version control
->     > -   **data life cycle**
->
-> -   Metadata content and format(s)
->
->     > -   format
->     > -   standards
->
-> -   Policies for access, sharing, and re-use
->
->     > -   funder obligations
->     > -   ethical and privacy issues (data justice)
->     > -   intellectual property, copyright, citation
->     > -   timeline for releases
->
-> -   Long-term storage, data management, and preservation
->
->     > -   which data to preserve
->     > -   which archive/repository
->
-> -   Budget
->     ([PAPPG](https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_2.jsp#IIC2gvib))
->
->     > -   each of the above elements cost time/money
->     > -   Personnel time for data preparation, management,
->     >     documentation, and preservation (including time)
->     > -   Hardware and/or software for data management, back up,
->     >     security, documentation, and preservation (including time)
->     > -   Publication/archiving costs (including time)
+-   Information about data & data format(s)
+    -   data types
+    -   data sources
+    -   analysis methods
+    -   formats
+    -   QA/QC
+    -   version control
+    -   **data life cycle**
+
+-   Metadata content and format(s)
+    -   format
+    -   standards
+
+-   Policies for access, sharing, and re-use
+    -   funder obligations
+    -   ethical and privacy issues (data justice)
+    -   intellectual property, copyright, citation
+    -   timeline for releases
+
+-   Long-term storage, data management, and preservation
+    -   which data to preserve
+    -   which archive/repository
+
+-   Budget([PAPPG](https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_2.jsp#IIC2gvib))
+    -   each of the above elements cost time/money
+    -   Personnel time for data preparation, management,
+        documentation, and preservation (including time)
+    -   Hardware and/or software for data management, back up,
+        security, documentation, and preservation (including time)
+    -   Publication/archiving costs (including time)
 
 Not only what, but *who* (roles).
 
@@ -499,40 +489,32 @@ Extra challenges for collaborative projects.
 
 ### Machine actionable DMPs
 
-> -   DMPs describe research methods that will evolve over the course of
->     a project
-> -   to be a useful tool for researchers and others, the content must
->     be updated to capture the methods that are employed and the data
->     that are produced
+-   DMPs describe research methods that will evolve over the course of a project
+-   to be a useful tool for researchers and others, the content must
+    be updated to capture the methods that are employed and the data
+    that are produced
 
 ![maDMP](img/journal.pcbi.1006750.g002.png)
 
-> (Source: <https://doi.org/10.1371/journal.pcbi.1006750.g002>)
+(Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
 
 ### Tools for DMPs
 
-::: admonition
-Exercise
-
-Thinking about a dataset you work with, complete the .
-:::
+!!! Example "Exercise"
+        Thinking about a dataset you work with, complete the [Data Stewardship Wizzard](https://ds-wizard.org/).
 
 ------------------------------------------------------------------------
 
 ### References and Resources
 
-> -   [NSF Guidelines on DMPs](https://www.nsf.gov/bio/biodmp.jsp)
-> -   <https://dmptool.org/general_guidance>
-> -   <https://dmptool.org/public_templates>
-> -   Professional and scholarly societies, e.g., theEcological Society
->     of America
->     <http://www.esa.org/esa/science/data-sharing/resources-and-tools/>
-> -   DataOne - <https://www.dataone.org/best-practices>
-> -   Data Carpentry - <http://datacarpentry.org/>
-> -   The US Geological Survey
->     <http://www.usgs.gov/datamanagement/index.php>
-> -   Repository registry (and search) service:
->     <http://www.re3data.org/>
-> -   Your university library
+-   [NSF Guidelines on DMPs](https://www.nsf.gov/bio/biodmp.jsp)
+-   https://dmptool.org/general_guidance
+-   https://dmptool.org/public_templates
+-   Professional and scholarly societies, e.g., theEcological Society of America http://www.esa.org/esa/science/data-sharing/resources-and-tools/
+-   DataOne - https://www.dataone.org/best-practices
+-   Data Carpentry - http://datacarpentry.org/
+-   The US Geological Survey http://www.usgs.gov/datamanagement/index.php
+-   Repository registry (and search) service: http://www.re3data.org/
+-   Your university library
 
 ------------------------------------------------------------------------
