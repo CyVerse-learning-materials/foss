@@ -1,6 +1,6 @@
 # Repetition
 
-## What do we mean by repitition?
+## What do we mean by repetition?
 
 ## Writing scripts
 

@@ -90,7 +90,7 @@ to find ways to implement them in your own work.
 
 ---
 
-## **WHY** do Open Science?
+## *WHY* do Open Science?
 
 There are many reasons to do Open Science, and presumably one or more of
 them brought you to this workshop. Whether you feel an ethical
@@ -119,7 +119,7 @@ Science, which represent 5 underlying motivations:
 
 ![5 schools](img/five_schools.png) 
 
-*Fecher and Friesike 2014*
+*Fecher and Friesike, 2014*
 
 While many researchers may be motivated by one or more of these aspects,
 we will not necessarily focus on any of them in particular. If anything,
@@ -223,7 +223,7 @@ these platforms to show you what they can do.
 
 #### [Data Store](https://de.cyverse.org/de/)
 
-![datastorelogo](img/data_store/datastore-icon.png){width="88px" height="100px"}
+![datastorelogo](img/data_store/datastore_plchldr.png){width="100px" height="100px"}
 
 **Securely store data for active analyses or sharing with your
 collaborators.**
