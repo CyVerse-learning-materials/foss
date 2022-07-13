@@ -1,4 +1,4 @@
-# **Pre-FOSS Setup**
+# Pre-FOSS Setup
 
 Welcome to FOSS Online, we're happy you're here! To get you ready to
 hit the ground running, please set up the prerequisite accounts and
@@ -23,6 +23,8 @@ We use Slack for communication, you should have received an invitation via email
 ### Docker
 
 We will be using Docker to demonstrate the basics of working with containers. You can install Docker for multiple operating systems here: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
+
+---
 
 ## Accounts
 
