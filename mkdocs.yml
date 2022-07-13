@@ -16,19 +16,22 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 
 nav:
   - 'Home': index.md
-  - 'Before FOSS Starts': installation.md
-  - 'Schedule': schedule.md
-  - 'Code of Conduct': code_of_conduct.md
-  - 'FAQ': faq.md
-  - 'Intro to Open Science': 01_intro_open_sci.md
-  - 'Project Management': 02_project_management.md
-  - 'Managing Data': 03_managing_data.md
-  - 'Documentation and Communication': 04_documentation_communication.md
-  - 'Version Control': 05_version_control.md
-  - 'Repetition': 06_repetition.md
-  - 'Reproducibility': 07_reproducibility.md
-  - 'Final Project':
-    - 'Overview'
+  - Workshop Information: 
+    - 'Before FOSS Starts': installation.md
+    - 'Schedule': schedule.md
+    - 'Code of Conduct': code_of_conduct.md
+    - 'FAQ': faq.md
+  - FOSS Material:
+    - 'Intro to Open Science': 01_intro_open_sci.md
+    - 'Project Management': 02_project_management.md
+    - 'Managing Data': 03_managing_data.md
+    - 'Documentation and Communication': 04_documentation_communication.md
+    - 'Version Control': 05_version_control.md
+    - 'Repetition': 06_repetition.md
+    - 'Reproducibility': 07_reproducibility.md
+  - Final Project:
+      - 'Overview': final_project/overview.md
+      - 'Examples': final_project/examples.md
 
 # JavaScript for Intercom Widget
 extra_javascript:
@@ -45,7 +48,6 @@ theme:
     - navigation.tracking
       #- navigation.sections
     - navigation.indexes
-    - toc.integrate
     - toc.follow
   # Default values, taken from mkdocs_theme.yml
   language: en
