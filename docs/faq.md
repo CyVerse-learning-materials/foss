@@ -7,13 +7,13 @@ These are some general questions about the workshop:
 **How do I find the course Zoom link?**
 
 **Answer:** The workshop Zoom link is pinned to the top of the
-#2021fallteam Slack channel in the FOSS Slack. If you aren\'t on the
+#2022fallteam Slack channel in the FOSS Slack. If you aren't on the
 Slack, please refer to the instructions sent to you in the FOSS welcome
 email.
 
 ------------------------------------------------------------------------
 
-**I can\'t get software X installed or Y account created. What do I
+**I can't get software X installed or Y account created. What do I
 do?**
 
 **Answer:** Please send a message to one of the instructors on Slack.
@@ -24,29 +24,26 @@ do?**
 
 **A**
 
--   **action:** automate a workflow in the context of CI/CD, see [GitHub
-    Actions](https://github.com/features/actions)
--   **agile:** [development
-    methodology](https://en.wikipedia.org/wiki/Agile_software_development)
+-   **action:** automate a workflow in the context of CI/CD, see [GitHub Actions](https://github.com/features/actions)
+-   **agile:** [development methodology](https://en.wikipedia.org/wiki/Agile_software_development)
     for organizing a team to complete tasks organized over short periods
-    called \'sprints\'
+    called 'sprints'
 -   **allocation:** portion of a resource assigned to a particular
     recipient, typical unit is a core or node hour
 -   **Anaconda:** open source data science platform.
     [Anaconda.com](https://www.anaconda.com/)
--   **application:** also called an \'app\', a software designed to help
+-   **application:** also called an 'app', a software designed to help
     the user to perform specific task
 -   **awesome:** a curated set of lists that provide insight into
-    [awesome software projects on
-    GitHub](https://github.com/topics/awesome-list)
+    [awesome software projects on GitHub](https://github.com/topics/awesome-list)
 -   **AVU:** Attribute-Value-Unit a components for [iRODS
     metadata](https://docs.irods.org/4.1.9/icommands/metadata/).
 
 **B**
 
--   **beta:** $\beta$, a software version which is not yet ready for
+-   **beta:** a software version which is not yet ready for
     publication but is being tested
--   **bash:** Bash is the GNU Project\'s shell, the [Bourne-Again
+-   **bash:** Bash is the GNU Project's shell, the [Bourne-Again
     Shell](https://www.gnu.org/software/bash/)
 -   **biocontainer:** a community-driven project that provides the
     infrastructure and basic guidelines to create, manage and distribute
@@ -57,8 +54,7 @@ do?**
 
 **C**
 
--   **CLI:** the UNIX shell [command line
-    interface](https://en.wikipedia.org/wiki/Command-line_interface),
+-   **CLI:** the UNIX shell [command line interface](https://en.wikipedia.org/wiki/Command-line_interface),
     most typically BASH
 -   **command:** a set of instructions sent to the computer, typically
     in a typed interface
@@ -70,16 +66,16 @@ do?**
 -   **Continuous Integration:** (CI) is testing automation to check that
     the application is not broken whenever new commits are integrated
     into the main branch
--   **Continuous Delivery:** (CD) is an extension of \'continuous
-    integration\' to make sure that you can release new changes in a
+-   **Continuous Delivery:** (CD) is an extension of 'continuous
+    integration' to make sure that you can release new changes in a
     sustainable way
--   **Continuous Deployment:** a step further than \'continuous
-    delivery\', every change that passes all stages of your production
+-   **Continuous Deployment:** a step further than 'continuous
+    delivery', every change that passes all stages of your production
     pipeline is released
 -   **Continuous Development:** a process for iterative software
     development and is an umbrella over several other processes
-    including \'continuous integration\', \'continuous testing\',
-    \'continuous delivery\' and \'continuous deployment\'
+    including 'continuous integration', 'continuous testing',
+    'continuous delivery' and 'continuous deployment'
 -   **Continuous Testing:** a process of testing and automating software
     development.
 -   **CRAN:** The [Comprehensive R Archive
@@ -101,7 +97,7 @@ do?**
 -   **Discovery Environment (DE):** a data science workbench for running
     executable, interactive, and high throughput applications in
     [CyVerse DE](https://de.cyverse.org)
--   **distribution:** abbreviated as \'distro\', an operating system
+-   **distribution:** abbreviated as 'distro', an operating system
     made from a software collection based upon the Linux kernel
 -   **Docker:** [Docker](https://www.docker.com/) is an open source
     software platform to create, deploy and manage virtualized
@@ -126,10 +122,8 @@ do?**
 
 **F**
 
--   **FOSS:** (1) [Free and Open Source
-    Software](https://en.wikipedia.org/wiki/Free_and_open-source_software), (2)
-    [Foundational Open Science Skills](https://cyverse.org/foss) - this
-    class!
+-   **FOSS:** (1) [Free and Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software), (2)
+    [Foundational Open Science Skills](https://cyverse.org/foss) - this class!
 -   **function:** a named section of a program that performs a specific
     task
 
@@ -138,7 +132,7 @@ do?**
 -   **git:** a version control system software
 -   **gitter:** a Github based messaging service that uses markdown
     [gitter.im](https://gitter.im)
--   **GitHub:** a website for hosting `git` repositories \-- owned by
+-   **GitHub:** a website for hosting `git` repositories - owned by
     Microsoft [GitHub](https://github.com)
 -   **GitLab:** a website for hosting `git` repositories
     [GitLab](https://gitlab.com)
@@ -150,16 +144,14 @@ do?**
 **H**
 
 -   **hack:** a quick job that produces what is needed, but not well
--   **HPC:** high performance computer, for large syncronous computation
--   **HTC:** high throughput computer, for many parallel tasks
+-   **HPC:** High Performance Computer, for large syncronous computation
+-   **HTC:** High Throughput Computer, for many parallel tasks
 
 **I**
 
--   **IaaS:** [Infrastructure as a
-    Service](https://en.wikipedia.org/wiki/Infrastructure_as_a_service).
+-   **IaaS:** [Infrastructure as a Service](https://en.wikipedia.org/wiki/Infrastructure_as_a_service).
     online services that provide APIs
--   **iCommands:** [command line
-    application](https://docs.irods.org/master/icommands/user/) for
+-   **iCommands:** [command line application](https://docs.irods.org/master/icommands/user/) for
     accessing iRODS Data Store
 -   **IDE:** integrated development environment, typically a graphical
     interface for working with code language or packages
@@ -201,11 +193,11 @@ do?**
 -   **multi-thread:** a process which runs on more than one CPU or GPU
     core at the same time
 -   **master node:** responsible for deciding what runs on all of the
-    cluster\'s nodes. Can include scheduling workloads, like
-    containerized applications, and managing the workloads\' lifecycle,
+    cluster's nodes. Can include scheduling workloads, like
+    containerized applications, and managing the workloads' lifecycle,
     scaling, and upgrades. The master also manages network and storage
     resources for those workloads
--   **Mac OS X:** Apple\'s popular desktop OS
+-   **Mac OS X:** Apple's popular desktop OS
 
 **N**
 
@@ -231,14 +223,13 @@ do?**
 
 **P**
 
--   **PaaS:** [Platform as a
-    Service](https://en.wikipedia.org/wiki/Platform_as_a_service) run
+-   **PaaS:** [Platform as Service](https://en.wikipedia.org/wiki/Platform_as_a_service) run
     and manage applications in cloud without complexity of developing it
     yourself
 -   **package:** an app designed for a particular langauge
 -   **package manager:** a collection of software tools that automates
     the process of installing, upgrading, configuring, and removing
-    computer programs for a computer\'s operating system in a consistent
+    computer programs for a computer's operating system in a consistent
     manner
 -   **Production:** environment where users access the final code after
     all of the updates and testing
@@ -251,8 +242,7 @@ do?**
 
 **R**
 
--   **R:** data science programming language [R
-    Project](https://cran.r-project.org/)
+-   **R:** data science programming language [R Project](https://cran.r-project.org/)
 -   **recipe file:** a file with installation scripts used for building
     software such as containers, e.g. Dockerfile
 -   **registry:** a storage and content delivery system, such as that
@@ -269,8 +259,7 @@ do?**
 
 **S**
 
--   **SaaS:** [Software as a
-    Service](https://en.wikipedia.org/wiki/Software_as_a_service) web
+-   **SaaS:** [Software as a Service](https://en.wikipedia.org/wiki/Software_as_a_service) web
     based platform for using software
 -   **schema:** a metadata standard for labeling, tagging or coding for
     recording & cataloging information or structuring descriptive
@@ -330,12 +319,12 @@ do?**
 -   **webGL:** JavaScript API for rendering interactive 2D and 3D
     graphics within any compatible web browser without the use of
     plug-ins
--   **Windows:** Microsoft\'s most popular desktop OS
+-   **Windows:** Microsoft's most popular desktop OS
 -   **workspace:** (vs. repo)
 -   **worker node:** A cluster typically has one or more nodes, which
     are the worker machines that run your containerized applications and
     other workloads. Each node is managed from the master, which
-    receives updates on each node\'s self-reported status.
+    receives updates on each node's self-reported status.
 
 **X**
 
@@ -344,7 +333,7 @@ do?**
 
 **Y**
 
--   **YAML:** YAML Ain\'t Markup Language, data interchange format that
+-   **YAML:** YAML Ain't Markup Language, data interchange format that
     uses human-readable text
 
 **Z**
@@ -366,6 +355,3 @@ do?**
 
 ------------------------------------------------------------------------
 
-> \<a
-> href=\"<https://github.com/CyVerse-learning-materials/foss/tree/master/getting_started/glossary.rst>\"
-> target=\"blank\"\>Github Repo Link\</a\>
