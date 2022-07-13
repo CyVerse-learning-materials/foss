@@ -21,83 +21,56 @@ Info](https://arizona.zoom.us/j/88184109511?pwd=Tk1aUTdMQkR1NEV4Z24wRHZLbDZlQT09
 
 ## Week 1 (Sept 15/16)
 
--   
-
-    Workshop introduction
-
-    :   -   Intro to Open Science
-        -   Intro to CyVerse
+-   Workshop introduction
+    -   Intro to Open Science
+    -   Intro to CyVerse
 
 ## Week 2 (Sept 22/23)
 
--   
-
-    Project management
-
-    :   -   Project critique activity
+- Project management
+    -   Project critique activity
 
 ## Week 3 (Sept 29/30)
 
--   
-
-    Data management
-
-    :   -   FAIR data
-        -   Data Management Plans
-        -   Intro to Data Store
+- Data management
+    -   FAIR data
+    -   Data Management Plans
+    -   Intro to Data Store
 
 ## Week 4 (Oct 6/7)
 
--   
-
-    Documentation / Communication
-
-    :   -   Internal + External Documentation
-        -   Internal + External Communication
-        -   GitHub Pages websites
+- Documentation / Communication
+    -   Internal + External Documentation
+    -   Internal + External Communication
+    -   GitHub Pages websites
 
 ## Week 5 (Oct 13/14)
 
--   
-
-    Version Control
-
-    :   -   Version control as a philosophy
-        -   GitHub functionality
-        -   Version control everything
+- Version Control
+    -   Version control as a philosophy
+    -   GitHub functionality
+    -   Version control everything
 
 ## Week 6 (Oct 20/21)
 
--   
-
-    Reproducibility I
-
-    :   -   Software installation
-        -   Software management
+- Reproducibility I
+    -   Software installation
+    -   Software management
 
 ## Week 7 (Oct 27/28)
 
--   
-
-    Reproducibility II
-
-    :   -   Cloud computing
-        -   CyVerse tools
+- Reproducibility II
+    -   Cloud computing
+    -   CyVerse tools
 
 ## Week 8 (Nov 3/4)
 
--   
+- Reproducibility III
+    -   Brief intro to containers
 
-    Reproducibility III
-
-    :   -   Brief intro to containers
-
--   
-
-    Flex time
-
-    :   -   Ask questions
-        -   More detail on previous topics
+- Flex time
+    -   Ask questions
+    -   More detail on previous topics
 
 ## Week 9 (Nov 10/11)
 
@@ -106,7 +79,3 @@ Info](https://arizona.zoom.us/j/88184109511?pwd=Tk1aUTdMQkR1NEV4Z24wRHZLbDZlQT09
 ## Week 10 (Nov 17/18)
 
 -   Final project presentations
-
-> \<a
-> href=\"FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX_FIX\"
-> target=\"blank\"\>Github Repo Link\</a\>
