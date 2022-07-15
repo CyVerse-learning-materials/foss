@@ -1,26 +1,4 @@
-# FOSS FAQs
-
-## General FAQs
-
-These are some general questions about the workshop:
-
-**How do I find the course Zoom link?**
-
-**Answer:** The workshop Zoom link is pinned to the top of the
-#2022fallteam Slack channel in the FOSS Slack. If you aren't on the
-Slack, please refer to the instructions sent to you in the FOSS welcome
-email.
-
-------------------------------------------------------------------------
-
-**I can't get software X installed or Y account created. What do I
-do?**
-
-**Answer:** Please send a message to one of the instructors on Slack.
-
-------------------------------------------------------------------------
-
-**Glossary & Acronyms** 
+# Glossary & Acronyms 
 
 **A**
 

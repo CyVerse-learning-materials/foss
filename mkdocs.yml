@@ -20,7 +20,7 @@ nav:
     - 'Before FOSS Starts': installation.md
     - 'Schedule': schedule.md
     - 'Code of Conduct': code_of_conduct.md
-    - 'FAQ': faq.md
+    - 'Glossary & Acronyms': glossary.md
   - FOSS Material:
     - 'Intro to Open Science': 01_intro_open_sci.md
     - 'Project Management': 02_project_management.md

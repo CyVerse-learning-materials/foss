@@ -37,7 +37,7 @@ access to your data, nothing else about your science can be all that
 open. While we will devote an entire week of this course to data,
 opening up your data is only one piece of the puzzle.
 
-![Open Science pieces](img/open_science_components.png) 
+![Open Science pieces](assets/open_science_components.png) 
 
 *Gallagher et al 2020, Nature Eco Evo*
 
@@ -117,7 +117,7 @@ Science, which represent 5 underlying motivations:
     and focused on developing alternative measurements of scientific
     impact
 
-![5 schools](img/five_schools.png) 
+![5 schools](assets/five_schools.png) 
 
 *Fecher and Friesike, 2014*
 
@@ -219,11 +219,11 @@ to create a series of user-friendly platforms so you can store your
 data, run analyses, and share your work. We'll walk through a few of
 these platforms to show you what they can do.
 
-![layer cake](img/layercake.png){width="750px" height="600px"}
+![layer cake](assets/layercake.png){width="750px" height="600px"}
 
 #### [Data Store](https://de.cyverse.org/de/)
 
-![datastorelogo](img/data_store/datastore_plchldr.png){width="100px" height="100px"}
+![datastorelogo](assets/data_store/datastore_plchldr.png){width="100px" height="100px"}
 
 **Securely store data for active analyses or sharing with your
 collaborators.**
@@ -238,7 +238,7 @@ collaborators.**
 
 #### [Discovery Environment](https://de.cyverse.org/de/)
 
-![DElogo](img/de/de-icon.png){width="100px" height="88px"}
+![DElogo](assets/logos/deIcon.png){width="100px" height="48px"}
 
 **Use hundreds of bioinformatics apps and manage data in a simple web
 interface.**
@@ -255,7 +255,7 @@ interface.**
 -   [VICE documentation](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html)
 
 > #### [Atmosphere](https://atmo.cyverse.org/application/images)
-> ![atmologo](img/atmosphere/atmosphere-icon.png){width="100px" height="75px"}
+> ![atmologo](assets/atmosphere/atmosphere-icon.png){width="100px" height="75px"}
 > 
 > **Create a custom cloud-based scientific analysis platform or use a
 > ready-made one for your area of scientific interest.**
@@ -269,7 +269,7 @@ interface.**
 
 #### [Data Commons](http://datacommons.cyverse.org/)
 
-![DClogo](img/DataCommons_DrkBlue.png){width="100px" height="100px"}
+![DClogo](assets/DataCommons_DrkBlue.png){width="100px" height="100px"}
 
 **The Data Commons provides services to manage, organize, preserve,
 publish, discover, and reuse data.**
@@ -286,14 +286,14 @@ interfacing with lower-level components of CyVerse, which you saw on the
 tiered chart earlier.
 
 #### [The CyVerse Learning Center](https://learning.cyverse.org/)
-![LClogo](img/Learningcenter_DkBlue.png){width="100px" height="100px"}
+![LClogo](assets/Learningcenter_DkBlue.png){width="100px" height="100px"}
 
 The CyVerse Learning center contains documentations and tutorials on
 using CyVerse tools.
 
 #### Intercom
 
-![intercomlogo](img/intercomlogo.png){width="100px" height="100px"}
+![intercomlogo](assets/intercomlogo.png){width="100px" height="100px"}
 
 Intercom is our live-chat user support app. You will find the Intercom
 'smiley' logo in the bottom right corner of the Discovery Environment,

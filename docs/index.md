@@ -1,3 +1,6 @@
+[![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank}
+
+
 # Welcome to Foundational Open Science Skills!
 
 Foundational Open Science Skills (FOSS) is a novel, camp-style training
