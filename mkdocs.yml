@@ -2,7 +2,7 @@ docs_dir: docs/
 repo_name: 'CyVerse-learning-materials/foss'
 repo_url: 'https://github.com/CyVerse-learning-materials/foss'
 
-site_name: 'CyVerse Foundational Open Science Skills'
+site_name: 'CyVerse Foundational Open Science Skills 2022'
 site_description: 'Workshop teaching researchers core skills for conducting open science.'
 site_author: 'CyVerse Science Team'
 site_url: 'https://learning.cyverse.org/foss'
@@ -46,7 +46,7 @@ theme:
     - navigation.instant
       #- navigation.expand
     - navigation.tracking
-      #- navigation.sections
+    - navigation.sections
     - navigation.indexes
     - toc.follow
   # Default values, taken from mkdocs_theme.yml
