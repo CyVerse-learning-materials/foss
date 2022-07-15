@@ -1,16 +1,15 @@
 [![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank}
 
 
-# Welcome to Foundational Open Science Skills 2022!
+# Welcome to Foundational Open Science Skills (FOSS) 2022!
 
-Foundational Open Science Skills (FOSS) is a novel, camp-style training
+**Foundational Open Science Skills (FOSS)** is a novel, camp-style training
 designed to prepare principal investigators and their lab teams, both
 new and established, to meet the growing expectations of funding
 agencies, publishers, and research institutions for scientific
 reproducibility and data accessibility.
 
-------------------------------------------------------------------------
-
+---
 ## Expected outcomes
 
 -   Proficiently organize your lab, communications, and research with
