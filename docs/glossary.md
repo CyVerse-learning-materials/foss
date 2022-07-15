@@ -324,12 +324,3 @@
 -   **zsh:** [Z-Shell](https://www.zsh.org/), now the default shell on
     new Mac OS X
 
-------------------------------------------------------------------------
-
-**Fix or improve this documentation:**
-
--   On Github:
--   Send feedback: [Tutorials@CyVerse.org](Tutorials@CyVerse.org)
-
-------------------------------------------------------------------------
-

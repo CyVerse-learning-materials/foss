@@ -14,7 +14,7 @@ Version control is as much a philosophy as a set of tools; you don't
 need to master Git to utilize version control (though it is certainly a
 worthwhile tool for many researchers).
 
-## **Definitions**
+## Definitions
 
 !!! Info "Git-related Definitions"
         *Git* - tool for version control.
@@ -57,6 +57,8 @@ worthwhile tool for many researchers).
         *issue* - suggestions or tasks needed for the repository. Allows you to
         track decisions, bugs with the repository, etc.
 
+---
+
 ## Git vs. GitHub
 
 **Git** is a command-line program for version control of repositories.
@@ -82,6 +84,8 @@ focus on GitHub.
 GitHub is a site that can remotely host your Git repositories. By
 putting your repository onto GitHub, you get a backup of the repository,
 a way to collaborate with others, and a lot of other features.
+
+---
 
 ## Practical Git Techniques
 
@@ -123,6 +127,8 @@ worth digging into more:
         -   if you have a huge file in Git, your repository size can get way too big
         -   this is a pain to solve, so use the *.gitignore* file ahead of time, but if you need to fix this, here is a great resource: 
         - https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/
+
+--- 
 
 ## Useful GitHub Features
 

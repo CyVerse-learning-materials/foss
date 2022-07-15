@@ -28,7 +28,7 @@ for documenting your workflow.
 
 *Some things to remember*
 
-### *Open Science Framework*
+### Open Science Framework
 
 -   Provides tools via [osf.io](https://osf.io/) for free
 -   Can be directly linked to your ORCID
@@ -60,7 +60,7 @@ for documenting your workflow.
 -   You can publish a Bookdown website using [Github
     Pages](https://github.blog/2016-08-17-simpler-github-pages-publishing/)
 
-### **Websites to Host Methods & Protocols**
+### Websites to Host Methods & Protocols
 
 [Protocols.io](https://www.protocols.io/) - collaborative platform and
 preprint server for: science methods, computational workflows, clinical
@@ -71,7 +71,7 @@ manuals.
 who share resources and methods for preparing students to tackle real,
 complex, biological problems.
 
-### **Build your own Website**
+### Build your own Website
 
 [*GitHub Pages*](https://pages.github.com/)
 
@@ -176,7 +176,7 @@ their data science ideas:
 
 ---
 
-## *Self-Paced Material*
+## Self-Paced Material
 
 - [15 Data Science Communities to Join](https://towardsdatascience.com/15-data-science-slack-communities-to-join-8fac301bd6ce)
 - [Python & Slack](https://towardsdatascience.com/python-and-slack-a-natural-match-60b136883d4d)
