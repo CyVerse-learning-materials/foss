@@ -58,14 +58,12 @@ where you are.
         6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
 
 
-------------------------------------------------------------------------
+---
 
-### Data Management Basics
+## Data Management Basics
 
 Let's learn a little more about data so that we can evaluate your
 self-assessment responses.
-
-------------------------------------------------------------------------
 
 ### Data Types
 
@@ -108,7 +106,7 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
 -   Reproducible, but can be very expensive and time-consuming
 -   Examples: text and data mining, compiled database, 3D models
 
-------------------------------------------------------------------------
+---
 
 !!! Tip
         **The Data Life Cycle**
@@ -120,7 +118,7 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
         branches and internal loops. Being aware of your data's future
         helps you plan how to best manage them.
 
-        ![lifecycle](img/data_life_cycle.png)
+        ![lifecycle](assets/data_life_cycle.png)
 
         Image from [Strasser *et al*](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
 
@@ -265,7 +263,7 @@ In general, data must be preserved in an appropriate long-term archive
     data. Tools like [Open Science Framework](https://osf.io/) (OSF) allow you to make this public.
 -   Record all software, parameters, inputs, etc.
 
-------------------------------------------------------------------------
+---
 
 ### References and Resources
 
@@ -273,7 +271,7 @@ In general, data must be preserved in an appropriate long-term archive
 
 [Center for Open Science](https://cos.io/)
 
-------------------------------------------------------------------------
+---
 
 ## FAIR Data
 
@@ -392,13 +390,13 @@ think your data are:
 !!! Question "Exercise"
         Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resources/working-with-data/fair-data/fair-self-assessment-tool/).
 
-------------------------------------------------------------------------
+---
 
 ### References and Resources
 
 <https://www.nature.com/articles/sdata201618>
 
-------------------------------------------------------------------------
+---
 
 ## Data Management Plans
 
@@ -419,7 +417,7 @@ the future."
 
 [Example DMP](https://github.com/CyVerse-learning-materials/foss/raw/mkdocs/slides/DMPFuTRES_v2.docx)
 
-------------------------------------------------------------------------
+---
 
 **Why bother with a DMP?**
 
@@ -494,7 +492,7 @@ Extra challenges for collaborative projects.
     be updated to capture the methods that are employed and the data
     that are produced
 
-![maDMP](img/journal.pcbi.1006750.g002.png)
+![maDMP](assets/journal.pcbi.1006750.g002.png)
 
 (Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
 
@@ -503,7 +501,7 @@ Extra challenges for collaborative projects.
 !!! Question "Exercise"
         Thinking about a dataset you work with, complete the [Data Stewardship Wizzard](https://ds-wizard.org/).
 
-------------------------------------------------------------------------
+---
 
 ### References and Resources
 
@@ -517,4 +515,4 @@ Extra challenges for collaborative projects.
 -   Repository registry (and search) service: http://www.re3data.org/
 -   Your university library
 
-------------------------------------------------------------------------
+----

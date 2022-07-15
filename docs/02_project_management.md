@@ -149,7 +149,7 @@ how you manage the relationships and organization of various files.
 10. Reorganize if necessary, but don't overdo it
 11. Using same basic structure can help you navigate new/old projects
 
-![tradeoff](img/organizing_searching_tradeoff.png)
+![tradeoff](assets/organizing_searching_tradeoff.png)
 
 ### Project Critique Activity
 

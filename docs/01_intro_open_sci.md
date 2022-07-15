@@ -189,8 +189,6 @@ from data storage to cloud-based analysis and collaboration, as well as
 support and training to get you up to speed. We will take a brief look
 at how CyVerse works and some of its main tools.
 
-### **About CyVerse**
-
 **CyVerse Vision:** Transforming science through data-driven discovery.
 
 **CyVerse Mission:** Design, deploy, and expand a national
@@ -221,7 +219,7 @@ these platforms to show you what they can do.
 
 ![layer cake](assets/layercake.png){width="750px" height="600px"}
 
-#### [Data Store](https://de.cyverse.org/de/)
+### [Data Store](https://de.cyverse.org/de/)
 
 ![datastorelogo](assets/data_store/datastore_plchldr.png){width="100px" height="100px"}
 
@@ -236,7 +234,7 @@ collaborators.**
 -   Share your data with collaborators
 -   [Data Store guide](https://cyverse-data-store-guide.readthedocs-hosted.com/en/latest/)
 
-#### [Discovery Environment](https://de.cyverse.org/de/)
+### [Discovery Environment](https://de.cyverse.org/de/)
 
 ![DElogo](assets/logos/deIcon.png){width="100px" height="48px"}
 
@@ -247,14 +245,14 @@ interface.**
 -   User extensible. Users can add their own tools and make their own apps.
     -   Share them with collaborators
     -   Publish them
--   VICE (Visual and Interactive Computing Environment) for
+-   VICE ![vice](../assets/logos/deviceIcon.svg) (Visual and Interactive Computing Environment) for
      interactive use of Jupyter notebooks, RStudio and RShiny.
 -   Integrated with the Data Store for ease of use
 -   Share your data and analyses together with your collaborators
 -   [DE guide](http://learning.cyverse.org/projects/cyverse-discovery-environment-guide/)
--   [VICE documentation](https://cyverse-visual-interactive-computing-environment.readthedocs-hosted.com/en/latest/index.html)
+-   [VICE documentation](https://learning.cyverse.org/de/using_apps/#advanced-features-in-the-discovery-environment)
 
-> #### [Atmosphere](https://atmo.cyverse.org/application/images)
+> ### [Atmosphere](https://atmo.cyverse.org/application/images)
 > ![atmologo](assets/atmosphere/atmosphere-icon.png){width="100px" height="75px"}
 > 
 > **Create a custom cloud-based scientific analysis platform or use a
@@ -267,7 +265,7 @@ interface.**
 > -   [Atmosphere
 >     guide](https://cyverse-atmosphere-guide.readthedocs-hosted.com/en/latest/)
 
-#### [Data Commons](http://datacommons.cyverse.org/)
+### [Data Commons](http://datacommons.cyverse.org/)
 
 ![DClogo](assets/DataCommons_DrkBlue.png){width="100px" height="100px"}
 
@@ -285,13 +283,13 @@ pipelines, etc. on top of CyVerse resources. This usually involves
 interfacing with lower-level components of CyVerse, which you saw on the
 tiered chart earlier.
 
-#### [The CyVerse Learning Center](https://learning.cyverse.org/)
+### [The CyVerse Learning Center](https://learning.cyverse.org/)
 ![LClogo](assets/Learningcenter_DkBlue.png){width="100px" height="100px"}
 
 The CyVerse Learning center contains documentations and tutorials on
 using CyVerse tools.
 
-#### Intercom
+### Intercom
 
 ![intercomlogo](assets/intercomlogo.png){width="100px" height="100px"}
 
