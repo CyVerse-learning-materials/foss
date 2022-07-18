@@ -8,11 +8,15 @@ OR
 Thursdays 9:00AM -- 11:00AM US Pacific Time (12:00PM -- 2:00PM US
 Eastern Time)
 
-[Zoom
-Info](https://arizona.zoom.us/j/88184109511?pwd=Tk1aUTdMQkR1NEV4Z24wRHZLbDZlQT09)
+[Zoom Info](https://arizona.zoom.us/j/88184109511?pwd=Tk1aUTdMQkR1NEV4Z24wRHZLbDZlQT09)
 
 -   Meeing ID: 88184109511
 -   Password: foss2021
+
+| Week | Date | Content |
+|---|---|---|
+| ## Week 0 | Sept 8-9 | - Unix shell basics (Sept 8) <br> - Git basics (Sept 9) |
+| Week 0 | Sept 8-9 | - Unix shell basics (Sept 8) <br> - Git basics (Sept 9) |
 
 ## Week 0 (pre-FOSS workshop)
 
