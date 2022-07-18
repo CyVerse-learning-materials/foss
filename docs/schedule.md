@@ -20,10 +20,10 @@ Eastern Time)
 |---|---|---|
 | **Week 0** | Sept 8-9 | pre-FOSS workshop: <br> - Unix shell basics <br> - Git basics |
 | **Week 1** | Sept 15-16 | Workshop introduction: <br> - [Intro to Open Science](01_intro_open_sci.md) <br> - [Intro to CyVerse](01_intro_open_sci.md#introduction-to-cyverse) |
-| **Week 2** | Sept 22-23 | Project management: <br> - Project critique activity |
-| **Week 3** | Sept 29-30 | Data management: <br> - FAIR data <br> - Data Management Plans <br> - Intro to Data Store |
-| **Week 4** | Oct 6-7 | Documentation / Communication: <br> - Internal + External Documentation <br> - Internal + External Communication <br> - GitHub Pages websites |
-| **Week 5** | Oct 13-14 | Version Control <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | 
+| **Week 2** | Sept 22-23 | [Project management](02_project_management.md): <br> - Project critique activity |
+| **Week 3** | Sept 29-30 | [Data management](03_managing_data.md): <br> - [FAIR data](03_managing_data.md#fair-data) <br> - [Data Management Plans](03_managing_data.md#data-management-plans) <br> - Intro to Data Store |
+| **Week 4** | Oct 6-7 | [Documentation / Communication](04_documentation_communication.md): <br> - Internal + External Documentation <br> - Internal + External Communication <br> - [GitHub Pages websites](documentation/githubpages.md) |
+| **Week 5** | Oct 13-14 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | 
 | **Week 6** | Oct 20-21 | Reproducibility I: <br> - Software installation <br> - Software management |
 | **Week 7** | Oct 27-28 | Reproducibility II: <br> - Cloud computing <br> - CyVerse tools |
 | **Week 8** | Nov 3-4 | Reproducibility III: <br>  - Brief intro to containers <br> Flex time: <br> - Ask questions <br> - More detail on previous topics |
