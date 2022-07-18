@@ -19,7 +19,7 @@ Eastern Time)
 | Week | Date | Content |
 |---|---|---|
 | **Week 0** | Sept 8-9 | pre-FOSS workshop: <br> - Unix shell basics <br> - Git basics |
-| **Week 1** | Sept 15-16 | Workshop introduction: <br> - [Intro to Open Science](01_intro_open_sci.md) <br> - [Intro to CyVerse](01_intro_open_sci.md/#introduction-to-cyverse) |
+| **Week 1** | Sept 15-16 | Workshop introduction: <br> - [Intro to Open Science](01_intro_open_sci.md) <br> - [Intro to CyVerse](01_intro_open_sci.md#introduction-to-cyverse) |
 | **Week 2** | Sept 22-23 | Project management: <br> - Project critique activity |
 | **Week 3** | Sept 29-30 | Data management: <br> - FAIR data <br> - Data Management Plans <br> - Intro to Data Store |
 | **Week 4** | Oct 6-7 | Documentation / Communication: <br> - Internal + External Documentation <br> - Internal + External Communication <br> - GitHub Pages websites |
