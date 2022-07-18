@@ -7,8 +7,6 @@ definitely give pause to researchers and ordinary citizens who hope
 that the science used to recommend a course of medical treatment or design
 self-driving cars is sound.
 
-## What is Reproducibility?
-
 Before we go further, it's actually important to ask what is reproducibility?
 
 !!! Question
@@ -16,8 +14,7 @@ Before we go further, it's actually important to ask what is reproducibility?
         How do you define reproducible science?
         
     ??? success "Answer"
-        In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following
-        useful definitions:
+        In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following useful definitions:
 
         - **Repeatability** (Same team, same experimental setup): The measurement
             can be obtained with stated precision by the same team using the same
@@ -48,21 +45,23 @@ Before we go further, it's actually important to ask what is reproducibility?
         - **Inferential reproducibility**: draw the same conclusions from either an
             independent replication of a study or a reanalysis of the original study.
 
-    !!! question "Discussion Question"
-            How do these definitions apply to your research/teaching?
+## Defining Reproducibility
 
-            Work with your fellow learners to develop a shortlist of ways reproducibility
-            relates to your work. Try to identify challenges and even successes you'd
-            like to share.
+!!! question "Discussion Question"
+        How do these definitions apply to your research/teaching?
+
+        Work with your fellow learners to develop a shortlist of ways reproducibility
+        relates to your work. Try to identify challenges and even successes you'd
+        like to share.
 
 Often, when we say "reproducibility" we mean all or at least several of the
 concepts the proceeding discussion encompasses. Really, reproducibility can be
 thought of as set values such as some laboratories express in a code of conduct,
-(see for example [Ross-Ibarra Lab code of conduct](http://www.rilab.org/expectations.html) or [Bahlai Lab Policies](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md)).
+see for example [Ross-Ibarra Lab code of conduct](http://www.rilab.org/expectations.html) or [Bahlai Lab Policies](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md).
 Reproducibility comes from our obligations and desires to work ethically,
 honestly, and with confidence that the data and knowledge we produce is done
 has integrity. Reproducibility is also a "spectrum of practices", not a
-single step. (See figure below from [Peng 2011](ttps://science.sciencemag.org/content/334/6060/1226)).
+single step. (See figure below from [Peng, 2011](ttps://science.sciencemag.org/content/334/6060/1226)).
 
 ![spectrum](assets/reproducibility-spectrum.png)
 
