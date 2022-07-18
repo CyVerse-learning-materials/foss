@@ -24,7 +24,7 @@ Eastern Time)
 | **Week 3** | Sept 29-30 | [Data management](03_managing_data.md): <br> - [FAIR data](03_managing_data.md#fair-data) <br> - [Data Management Plans](03_managing_data.md#data-management-plans) <br> - Intro to Data Store |
 | **Week 4** | Oct 6-7 | [Documentation / Communication](04_documentation_communication.md): <br> - Internal + External Documentation <br> - Internal + External Communication <br> - [GitHub Pages websites](documentation/githubpages.md) |
 | **Week 5** | Oct 13-14 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | 
-| **Week 6** | Oct 20-21 | Reproducibility I: <br> - Software installation <br> - Software management |
+| **Week 6** | Oct 20-21 | [Reproducibility I](07_reproducibility.md): <br> - Software installation <br> - Software management |
 | **Week 7** | Oct 27-28 | Reproducibility II: <br> - Cloud computing <br> - CyVerse tools |
 | **Week 8** | Nov 3-4 | Reproducibility III: <br>  - Brief intro to containers <br> Flex time: <br> - Ask questions <br> - More detail on previous topics |
 | **Week 9** |  Nov 10-11 | Final project presentation work time |
