@@ -15,45 +15,45 @@ Before we go further, it's actually important to ask what is reproducibility?
 
         How do you define reproducible science?
         
-??? success "Answer"
-    In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following
-    useful definitions:
+    ??? success "Answer"
+        In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following
+        useful definitions:
 
-    - **Repeatability** (Same team, same experimental setup): The measurement
-        can be obtained with stated precision by the same team using the same
-        measurement procedure, the same measuring system, under the same operating
-        conditions, in the same location on multiple trials. For computational
-        experiments, this means that a researcher can reliably repeat her own
-        computation.
-    - **Replicability** (Different team, same experimental setup): The
-        measurement can be obtained with stated precision by a different team
-        using the same measurement procedure, the same measuring system, under the
-        same operating conditions, in the same or a different location on multiple
-        trials. For computational experiments, this means that an independent group
-        can obtain the same result using the author's own artifacts.
-    - **Reproducibility** (Different team, different experimental setup): The
-        measurement can be obtained with stated precision by a different team,
-        a different measuring system, in a different location on multiple trials.
-        For computational experiments, this means that an independent group can
-        obtain the same result using artifacts which they develop completely
-        independently.
+        - **Repeatability** (Same team, same experimental setup): The measurement
+            can be obtained with stated precision by the same team using the same
+            measurement procedure, the same measuring system, under the same operating
+            conditions, in the same location on multiple trials. For computational
+            experiments, this means that a researcher can reliably repeat her own
+            computation.
+        - **Replicability** (Different team, same experimental setup): The
+            measurement can be obtained with stated precision by a different team
+            using the same measurement procedure, the same measuring system, under the
+            same operating conditions, in the same or a different location on multiple
+            trials. For computational experiments, this means that an independent group
+            can obtain the same result using the author's own artifacts.
+        - **Reproducibility** (Different team, different experimental setup): The
+            measurement can be obtained with stated precision by a different team,
+            a different measuring system, in a different location on multiple trials.
+            For computational experiments, this means that an independent group can
+            obtain the same result using artifacts which they develop completely
+            independently.
 
-    The paper goes on to further simplify:
+        The paper goes on to further simplify:
 
-    - **Methods reproducibility**: provide sufficient detail about procedures
-        and data so that the same procedures could be exactly repeated.
-    - **Results reproducibility**: obtain the same results from an independent
-        study with procedures as closely matched to the original study as
-        possible.
-    - **Inferential reproducibility**: draw the same conclusions from either an
-        independent replication of a study or a reanalysis of the original study.
+        - **Methods reproducibility**: provide sufficient detail about procedures
+            and data so that the same procedures could be exactly repeated.
+        - **Results reproducibility**: obtain the same results from an independent
+            study with procedures as closely matched to the original study as
+            possible.
+        - **Inferential reproducibility**: draw the same conclusions from either an
+            independent replication of a study or a reanalysis of the original study.
 
-!!! question "Discussion Question"
-        How do these definitions apply to your research/teaching?
+    !!! question "Discussion Question"
+            How do these definitions apply to your research/teaching?
 
-        Work with your fellow learners to develop a shortlist of ways reproducibility
-        relates to your work. Try to identify challenges and even successes you'd
-        like to share.
+            Work with your fellow learners to develop a shortlist of ways reproducibility
+            relates to your work. Try to identify challenges and even successes you'd
+            like to share.
 
 Often, when we say "reproducibility" we mean all or at least several of the
 concepts the proceeding discussion encompasses. Really, reproducibility can be
