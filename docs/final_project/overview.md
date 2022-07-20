@@ -1,6 +1,6 @@
-# Final Project Overview
+# Capstone Project Overview
 
-The final project for FOSS is designed to give you the opportunity to
+The capstone project for FOSS is designed to give you the opportunity to
 apply some of the skills and ideas from the rest of the course to one of
 your own projects, get support and feedback from your peers, and share
 your experiences with the rest of the attendees.
@@ -15,9 +15,7 @@ your experiences with the rest of the attendees.
 
 ## Description
 
-For the FOSS final project, you will choose one skill or concept from
-FOSS and apply it to one of your own projects. The level we're looking
-for is a topic that spans half of a meeting to a full meeting. For
+For the project, you will choose one skill or concept from FOSS and apply it to one of your own projects. The level we're looking for is a topic that spans half of a meeting to a full meeting. For
 instance, you could write a Data Management Plan for an upcoming project
 proposal, or you could reorganize an existing project and put all the
 code onto GitHub. You should try to identify what level your project

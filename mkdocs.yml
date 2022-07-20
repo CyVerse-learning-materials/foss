@@ -29,7 +29,7 @@ nav:
     - 'Version Control': 05_version_control.md
     - 'Repetition': 06_repetition.md
     - 'Reproducibility': 07_reproducibility.md
-  - Final Project:
+  - Capstone Project:
       - 'Overview': final_project/overview.md
       - 'Examples': final_project/examples.md
 
