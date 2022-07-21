@@ -32,7 +32,7 @@ nav:
     - 'Reproducibility': 07_reproducibility.md
   - Capstone Project:
       - 'Overview': final_project/overview.md
-      - 'Examples': final_project/overview.md#Examples
+      - 'Examples': final_project/examples.md
 
 # JavaScript for Intercom Widget
 extra_javascript:

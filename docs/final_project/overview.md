@@ -58,10 +58,4 @@ future.
 
 ## Examples
 
-Here are examples of Capstone Project from FOSS 2021. The videos have timestams for each project - if you have difficulties viewing the videos and/or timestamps, we invite you to watch them directly on [YouTube](https://www.youtube.com/playlist?list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p).
-
-### Example 1
-![Capstone Example 1](https://www.youtube.com/watch?v=MHfTIhwUw7E&list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p&ab_channel=CyVerse.org)
-
-### Example 2
-![Capstone Example 2](https://www.youtube.com/watch?v=VyiisTKfnn0&list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p&index=3&ab_channel=CyVerse.org)
+Please visit [the example page](examples.md) for past year capstone projects.
