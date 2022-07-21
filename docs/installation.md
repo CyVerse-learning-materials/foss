@@ -19,6 +19,9 @@ You will need to have the following software installed on your computer
 !!! Info "Link to HackMD"
         A link to the HackMD for FOSS 2022 will be posted at the time of the workshop.
 
+!!! Warning "Windows users, please read"
+        We *highly* encourage the use of Unix-based systems such as Linux/Ubuntu and macOS, as many scientific tools require a Unix Operating System (OS). There are a number of software that allow Windows users to execute Unix commands, however we recommend the use of [Windows Subsistem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install).
+
 ---
 
 ## Accounts
