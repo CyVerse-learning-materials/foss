@@ -5,6 +5,8 @@ apply some of the skills and ideas from the rest of the course to one of
 your own projects, get support and feedback from your peers, and share
 your experiences with the rest of the attendees.
 
+---
+
 ## Objectives
 
 -   "Level up" the openness of an existing or planned project
@@ -12,6 +14,8 @@ your experiences with the rest of the attendees.
 -   Discuss your applied skills/concepts with groupmates
 -   Determine possible next steps to "level up" your project
 -   Share your experiences with the rest of the attendees
+
+---
 
 ## Description
 
@@ -41,9 +45,23 @@ guide](), and should focus on the challenges and tips you may have for
 other FOSS attendees who want to utilize your skill or concept in the
 future.
 
+---
+
 ## Timeline
 
 -   Week 8: finalize topic choice and enter into [spreadsheet]()
 -   Between Week 8 and Week 9 meetings: work on your project
 -   Week 9: group discussions and presentation prep
 -   Week 10: group presentations
+
+---
+
+## Examples
+
+Here are examples of Capstone Project from FOSS 2021. The videos have timestams for each project - if you have difficulties viewing the videos and/or timestamps, we invite you to watch them directly on [YouTube](https://www.youtube.com/playlist?list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p).
+
+### Example 1
+![Capstone Example 1](https://www.youtube.com/watch?v=MHfTIhwUw7E&list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p&ab_channel=CyVerse.org)
+
+### Example 2
+![Capstone Example 2](https://www.youtube.com/watch?v=VyiisTKfnn0&list=PL38WPXpo-ZW1HItYgBNKryamsGm2mSv8p&index=3&ab_channel=CyVerse.org)

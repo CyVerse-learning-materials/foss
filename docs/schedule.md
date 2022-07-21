@@ -7,8 +7,8 @@ Eastern Time)
         In case a number of attendees will not be able to attend on Thursdays, Fridays will be offered instead*
         (9:00AM - 11:00AM US Pacific Time (12:00PM - 2:00PM US Eastern Time)).
 
-        **Subject to agreement between attendees.*
-        
+        *Subject to agreement between attendees.
+
 ## Zoom Info
 
 - Zoom room: TBA
@@ -28,5 +28,5 @@ Eastern Time)
 | **Week 6** | Oct 20 (or 21) | [Reproducibility I](07_reproducibility.md): <br> - Software installation <br> - Software management |
 | **Week 7** | Oct 27 (or 28) | Reproducibility II: <br> - Cloud computing <br> - CyVerse tools |
 | **Week 8** | Nov 3 (or 4) | Reproducibility III: <br>  - Brief intro to containers <br> Flex time: <br> - Ask questions <br> - More detail on previous topics |
-| **Week 9** |  Nov 10 (or 11) | Final project presentation work time |
-| **Week 10** | Nov 17 (or 18) | Final project presentations |
+| **Week 9** |  Nov 10 (or 11) | [Final project](final_project/overview.md) presentation work time |
+| **Week 10** | Nov 17 (or 18) | [Final project](final_project/overview.md) presentations |
