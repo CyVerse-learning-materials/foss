@@ -58,4 +58,4 @@ future.
 
 ## Examples
 
-Please visit [the example page](examples.md) for past year capstone projects.
+Links to previous' year capstone projects will be posted in the FOSS HackMD. Stay tuned!
