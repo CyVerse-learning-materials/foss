@@ -22,7 +22,7 @@ nav:
     - 'Code of Conduct': code_of_conduct.md
     - 'Glossary & Acronyms': glossary.md
   - FOSS Material:
-    - 'The shell and Git': 00_basics.md
+    - 'The Shell and Git': 00_basics.md
     - 'Intro to Open Science': 01_intro_open_sci.md
     - 'Project Management': 02_project_management.md
     - 'Managing Data': 03_managing_data.md

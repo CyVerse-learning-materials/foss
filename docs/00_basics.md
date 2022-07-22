@@ -20,6 +20,28 @@ Whilst the GUI allows for *better accessbility* to a computer, the CLI allows fo
 
 The **Shell** sends commands to the computer through the **CLI** accessible through a **Terminal** window
 
+### Introductory Shell Commands
+
+#### Navigation
+
+| Command | Explanation |
+|---|---|
+|`pwd`| print working directory |
+|`ls`| list content of folder |
+|`cd`| change directory |
+
+
+#### Working with Files and Directories
+
+| Command | Explanation |
+|---|---|
+|`mkdir`| make a directory |
+|`touch`| creat empty file |
+|`nano` or `vim`| text editors |
+|`mv`| move command |
+|`cp`| copy command | 
+|`rm`| remove command |
+
 ---
 
 ## Git and Github
