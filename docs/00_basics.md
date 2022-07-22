@@ -20,6 +20,28 @@ Whilst the GUI allows for *better accessbility* to a computer, the CLI allows fo
 
 The **Shell** sends commands to the computer through the **CLI** accessible through a **Terminal** window
 
+### Things-to-Know About Commands
+
+- Shell commands are used to **navigate**, **visualize**, **modify** (files/folders) and **automate** (processes), and can only be executed through the shell's terminal window.
+- For every command, typing `man` (manual) before the command, will open the manual for said command.
+```
+man ls
+```
+    - Doing the above command will result in opening the *manual* for the `ls` command. You can exist the man page by pressing `q`.
+- Each command has **flags**, or options, which are summoned with a `-`, such as `<command> -<flag>`.
+```
+ls -a -l -h
+```
+    - Doing the above command calls for the `-a` (all), `-l` (long), `-h` (human readable) flags. This causes `ls` to output a list of *all* files (inculding hidden files/folders) with human readable file size (e.g., it will list 3MB instead of 3000000), permissions, creator, and date of creation.
+    - If you do not know what flags are available, you can refer to the `man` command (or for many tools, use the `-h` (help) flag).
+- `.` refers to *current* directory; `..` refers to *above* directory; `/` is the directory separator; `~` indicates the home directory
+```
+ls .            # lists files and folders in the current directory
+ls ..           # lists files and folders in the above directory
+ls ~            # lists files and folders in the home directory
+ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
+```
+
 ### Introductory Shell Commands
 
 #### Navigation
@@ -29,7 +51,6 @@ The **Shell** sends commands to the computer through the **CLI** accessible thro
 |`pwd`| print working directory |
 |`ls`| list content of folder |
 |`cd`| change directory |
-
 
 #### Working with Files and Directories
 
