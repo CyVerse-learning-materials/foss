@@ -48,12 +48,12 @@ ls ~/Documents  # lists files and folders in Documents (a folder present in the 
         Here below are quick explanations of a few elementary commands that will help you orient and navigate your files and folders through the Shell. If you would like to follow along the explanations for each command, feel free to download and unzip the [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) file from the [Shell's Carpentry module](https://swcarpentry.github.io/shell-novice/setup.html).
 
         ??? question "Don't have access to a GUI?"
-                Following along on a machine with no access to a GUI? Execute the following commands:
-                ```
-                sudo apt install unzip
-                wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
-                unzip shell-lesson-data.zip
-                ``` 
+            Following along on a machine with no access to a GUI? Execute the following commands:
+            ```
+            sudo apt install unzip
+            wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+            unzip shell-lesson-data.zip
+            ``` 
 
 #### Navigation
 
