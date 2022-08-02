@@ -25,34 +25,34 @@ The **Shell** sends commands to the computer through the **CLI** accessible thro
 - Shell commands are used to **navigate**, **visualize**, **modify** (files/folders) and **automate** (processes), and can only be executed through the shell's terminal window.
 - For every command, typing `man` (manual) before the command, will open the manual for said command.
 ```
-man ls
+$ man ls
 ```
     - Doing the above command will result in opening the *manual* for the `ls` command. You can exist the man page by pressing `q`.
 - Each command has **flags**, or options, which are summoned with a `-`, such as `<command> -<flag>`.
 ```
-ls -a -l -h
+$ ls -a -l -h
 ```
     - Doing the above command calls for the `-a` (all), `-l` (long), `-h` (human readable) flags. This causes `ls` to output a list of *all* files (inculding hidden files/folders) with human readable file size (e.g., it will list 3MB instead of 3000000), permissions, creator, and date of creation.
     - If you do not know what flags are available, you can refer to the `man` command (or for many tools, use the `-h` (help) flag).
-- `.` refers to *current* directory; `..` refers to *above* directory; `/` is the directory separator; `~` indicates the home directory
+- `.` refers to *current* directory; `..` refers to *above* directory; `/` is the directory separator; `~` indicates the home directory.
 ```
-ls .            # lists files and folders in the current directory
-ls ..           # lists files and folders in the above directory
-ls ~            # lists files and folders in the home directory
-ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
+$ ls .            # lists files and folders in the current directory
+$ ls ..           # lists files and folders in the above directory
+$ ls ~            # lists files and folders in the home directory
+$ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
 ```
 
 ### Introductory Shell Commands
 
 !!! info "A short tutorial introducing the Shell"
         Here below are quick explanations of a few elementary commands that will help you orient and navigate your files and folders through the Shell. If you would like to follow along the explanations for each command, feel free to download and unzip the [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) file from the [Shell's Carpentry module](https://swcarpentry.github.io/shell-novice/setup.html).
-
+        
         ??? question "Don't have access to a GUI?"
             Following along on a machine with no access to a GUI? Execute the following commands:
             ```
-            sudo apt install unzip
-            wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
-            unzip shell-lesson-data.zip
+            $ sudo apt install unzip
+            $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+            $ unzip shell-lesson-data.zip
             ``` 
 
 #### Navigation
@@ -63,9 +63,55 @@ ls ~/Documents  # lists files and folders in Documents (a folder present in the 
 |`ls`| list content of folder |
 |`cd`| change directory |
 
+By typing `pwd`, the current working directory is printed.
+
 ```
-pwd
+$ pwd
+
+/mnt/d/
 ```
+
+We can then use `ls` to see the contents of the current directory. By using the `-F` flag (`ls -F`) we can also see the type of file.
+
+```
+$ ls -F 
+
+shell-lesson-data/   shell-lesson-data.zip*
+```
+
+We can then move inside the folder of our choice doing `cd`. Doing `ls` following the opening of the folder of choice, will show the contents of the folder you just moved in. Feel free to explore the contents of the folders by using `cd` and `ls`.
+
+```
+$ cd shell-lesson-data
+$ ls -F
+
+exercise-data/  north-pacific-gyre/
+
+$ ls -F exercise-data/
+
+animal-counts/  creatures/  numbers.txt*  proteins/  writing/
+```
+
+!!! Tip "Use the Tab key to autocomplete"
+        You do not need to type the entire name of a folder or file. By using the tab key, the Shell will autocomplete the name of the files or folders. For example, typing the following
+
+        ```
+        $ ls -F exer
+        ```
+
+        and pressing the tab key, will result in autocompletion.
+
+        ```
+        $ ls -F exercise-data/
+        ```
+
+        You can then press tab twice, to print a list of the contents of the folder.
+
+        ```
+        $ ls -F exercise-data/
+        
+        animal-counts/ creatures/     numbers.txt    proteins/      writing/ 
+        ```
 
 #### Working with Files and Directories
 
@@ -77,6 +123,37 @@ pwd
 |`mv`| move command |
 |`cp`| copy command | 
 |`rm`| remove command |
+
+
+Return to `shell-lesson-data`, and crate a directory with `mkdir <name of folder>`.
+
+```
+$ mkdir my_folder
+$ ls -F
+exercise-data/  my_folder/  north-pacific-gyre/
+```
+
+Notice the new `my_folder` directory.
+
+!!! Warning "Naming your files"
+        It is strongly suggested that you avoid using spaces when naming your files. When using the Shell to communicate with your machine, a space can cause errors when loading or transferring files. Instead, use dashes (`-`), underscores (`_`), periods (`.`) and CamelCase when naming your files.
+        
+        Acceptable naming:
+        ```
+        $mkdir my_personal_folder
+        $mkdir my_personal-folder
+        $mkdir MyPersonal.Folder
+        ```
+        ??? Question
+            What do you think will happen if you attempt creating a folder by typing spaces?
+            
+            ??? Success "Solution"
+                You will obtain as many folders as typed words!
+                ```
+                $ mkdir my folder
+                $ ls -F
+                exercise-data/  folder/  my/  north-pacific-gyre/
+                ```
 
 ---
 
