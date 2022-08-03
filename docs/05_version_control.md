@@ -95,7 +95,7 @@ things that can be useful to learn. Here are a couple topics that are
 worth digging into more:
 
 - Using the Git log
-    -   you can access using [git log]{.title-ref}
+    -   you can access using **git log**
     -   will show you your commit history
     -   useful for figuring out where you need to roll back to
 

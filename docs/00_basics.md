@@ -44,6 +44,8 @@ $ ls ~/Documents  # lists files and folders in Documents (a folder present in th
 
 ### Introductory Shell Commands
 
+The following are introductory commands necessary when interacting with a computer through the Shell. These will help you orient, create and delete files. Most of this material is explained in more details in the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). Visit the Carpentries' website for a more in-depth tutorial.
+
 !!! info "A short tutorial introducing the Shell"
         Here below are quick explanations of a few elementary commands that will help you orient and navigate your files and folders through the Shell. If you would like to follow along the explanations for each command, feel free to download and unzip the [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) file from the [Shell's Carpentry module](https://swcarpentry.github.io/shell-novice/setup.html).
         
@@ -224,6 +226,28 @@ my_file
         exercise-data/  my_folder/  north-pacific-gyre/
         ```
 
+#### Introductory Remarks
+
+The commands listed here above are to help you better understand directories and files. There is a lot more that one can accomplish when communicating with you computer through the Shell. In case you want to know more, here are some useful links you can visit:
+
+- [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
+- [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
+- [Scripts](https://swcarpentry.github.io/shell-novice/06-script/index.html)
+- [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
+
 ---
 
 ## Git and Github
+
+The concept of version control will be touched on in more depth later on in FOSS, however it is important to know the basics of Git and GitHub. 
+
+- **Git**: 
+        - First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.
+        - Changes and versions are saved locally.
+        - Accessible through the Shell.
+
+- **GitHub**:
+        - First launched in 2008, its main focus is hosting and sharing code.
+        - Changes and versions are saved online (requires an account).
+        - Mainly administered through the web (it also has a desktop app).
+        - Code can be **cloned** to your computer, changes can be **pulled** and **pushed**.
