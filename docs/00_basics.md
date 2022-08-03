@@ -67,15 +67,13 @@ By typing `pwd`, the current working directory is printed.
 
 ```
 $ pwd
-
 /mnt/d/
 ```
 
-We can then use `ls` to see the contents of the current directory. By using the `-F` flag (`ls -F`) we can also see the type of file.
+We can then use `ls` to see the contents of the current directory. By using the `-F` flag (`ls -F`) we can also see the type of file. **Note:** an asterisk (`*`) at the end of the object will denote a file, whilst a slash (`/`) will denote a folder.
 
 ```
 $ ls -F 
-
 shell-lesson-data/   shell-lesson-data.zip*
 ```
 
@@ -109,7 +107,6 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
 
         ```
         $ ls -F exercise-data/
-        
         animal-counts/ creatures/     numbers.txt    proteins/      writing/ 
         ```
 
@@ -135,14 +132,14 @@ exercise-data/  my_folder/  north-pacific-gyre/
 
 Notice the new `my_folder` directory.
 
-!!! Warning "Naming your files"
+!!! danger "Naming your files"
         It is strongly suggested that you avoid using spaces when naming your files. When using the Shell to communicate with your machine, a space can cause errors when loading or transferring files. Instead, use dashes (`-`), underscores (`_`), periods (`.`) and CamelCase when naming your files.
         
         Acceptable naming:
         ```
-        $mkdir my_personal_folder
-        $mkdir my_personal-folder
-        $mkdir MyPersonal.Folder
+        $ mkdir my_personal_folder
+        $ mkdir my_personal-folder
+        $ mkdir MyPersonal.Folder
         ```
         ??? Question
             What do you think will happen if you attempt creating a folder by typing spaces?
@@ -154,6 +151,78 @@ Notice the new `my_folder` directory.
                 $ ls -F
                 exercise-data/  folder/  my/  north-pacific-gyre/
                 ```
+                Notice the two folders `my` and `folder`.
+
+Create an empty file with `touch <name of file>`.
+
+```
+$ touch new_file
+```
+
+`touch` will create an **empty** file, it is up to you to populate using whichever text editor you prefer. Refer to the carpentries material to know more about nano and its functionalities ([link](https://swcarpentry.github.io/shell-novice/03-create/index.html#create-a-text-file)).
+
+!!! tip
+        You can also use your text editor to look at the contents of your files!
+
+Use `mv <name of file or folder you want to move> <name of destination folder>` to move your newly created file to the directory you created previously (you can then use `ls` to check if you successully moved the file).
+
+```
+$ ls -F
+exercise-data/  new_file*  my_folder/  north-pacific-gyre/
+
+$ mv new_file my_folder/
+$ ls -F
+exercise-data/  my_folder/  north-pacific-gyre/
+
+$ ls -F my_folder/
+new_file*
+```
+`mv` can also be used to **rename** a file or folder with  `mv <name of file or folder you want to change> <new name>`.
+
+```
+$ cd my_folder/
+$ mv new_file my_file
+$ ls -F
+my_file*
+```
+
+`cp` is the command to copy a file with the syntax `cp <name of file you want to copy> <name of copy file>`
+
+```
+$ cp my_file copy_my_file
+$ ls -F 
+copy_my_file*  my_file*
+```
+
+!!! note "Copying folders"
+        To copy folders and the content of these folders, you will have to use the `-r` flag (recursive) for `cp` in the following manner `cp -r <name of folder you want to copy> <name of copy folder>` (following example is from the `shell-lesson-data/` directory).
+        ```
+        $ cp -r my_folder/ copy_my_folder
+        $ ls -F
+        copy_my_folder/  exercise-data/  my_folder/  north-pacific-gyre/
+        
+        $ ls -F my_folder/
+        copy_my_file*  my_file*
+
+        $ ls -F copy_my_folder/
+        copy_my_file*  my_file*
+        ```
+
+To remove an unwanted file, use `rm <name of file to remove>`.
+
+```
+$ rm copy_my_file
+$ ls -F 
+my_file
+```
+
+!!! note "Removing folders"
+        Save as the "Copying Folders" note, you have to use the `-r` flag to remove a folder `rm -r <name of folder you want to remove>` (following example is from the `shell-lesson-data/` directory).
+        ```
+        $ rm -r copy_my_folder/
+        $ ls -F
+        exercise-data/  my_folder/  north-pacific-gyre/
+        ```
 
 ---
 
