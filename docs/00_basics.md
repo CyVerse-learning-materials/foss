@@ -239,7 +239,7 @@ The commands listed here above are to help you better understand directories and
 
 ## Git and Github
 
-The concept of version control will be touched on in more depth later on in FOSS, however it is important to know the basics of Git and GitHub. 
+The concept of **version control** will be touched on in more depth [later](05_version_control.md) on in FOSS, however it is important to know the basics of Git and GitHub. 
 
 - **Git**: 
         - First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.
@@ -251,3 +251,13 @@ The concept of version control will be touched on in more depth later on in FOSS
         - Changes and versions are saved online (requires an account).
         - Mainly administered through the web (it also has a desktop app).
         - Code can be **cloned** to your computer, changes can be **pulled** and **pushed**.
+
+### The O in FOSS
+
+FOSS stands for Foundational **Open** Science Skills: how many times have you worked on your code just to hit a bottleneck and found a solution on Stack Overflow? How many times have you found links that bring you to a GitHub repository with the exact snippet of code you needed?
+
+The beauty of the **O** is that it makes Science and its code available for all through the internet, sharing ideas and solutions for all.
+
+!!! Warning "Licences"
+        Beware of what code you use and replicate, as a complete GitHub repository comes with a **licence**. Different licences allow the code to be accessed and shared in different methods, therefore always exercise care when looking at other people's code.
+
