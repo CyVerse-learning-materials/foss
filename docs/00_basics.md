@@ -250,14 +250,37 @@ The concept of **version control** will be touched on in more depth [later](05_v
         - First launched in 2008, its main focus is hosting and sharing code.
         - Changes and versions are saved online (requires an account).
         - Mainly administered through the web (it also has a desktop app).
-        - Code can be **cloned** to your computer, changes can be **pulled** and **pushed**.
+        - Code can be **cloned** to your computer, changes can be **pulled**, **committed** and **pushed**.
 
-### The O in FOSS
+!!! Info "The **O** in FOSS"
+        FOSS stands for Foundational **Open** Science Skills: how many times have you worked on your code just to hit a bottleneck and found a solution on Stack Overflow? How many times have you found links that bring you to a GitHub repository with the exact snippet of code you needed?
 
-FOSS stands for Foundational **Open** Science Skills: how many times have you worked on your code just to hit a bottleneck and found a solution on Stack Overflow? How many times have you found links that bring you to a GitHub repository with the exact snippet of code you needed?
+        The beauty of the **O** is that it makes Science and its code available for all through the internet, sharing ideas and solutions for all.
 
-The beauty of the **O** is that it makes Science and its code available for all through the internet, sharing ideas and solutions for all.
+        !!! Warning "Licences"
+                Beware of what code you use and replicate, as a complete GitHub repository comes with a **licence**. Different licences allow the code to be accessed and shared in different methods, therefore always exercise care when looking at other people's code.
 
-!!! Warning "Licences"
-        Beware of what code you use and replicate, as a complete GitHub repository comes with a **licence**. Different licences allow the code to be accessed and shared in different methods, therefore always exercise care when looking at other people's code.
+### Introducing GitHub
 
+Since we are talking about making science accessible, we invite you to use GitHub to save and share your code. Please start by creating a GitHub account at https://github.com/.
+
+#### Repositories
+
+Repositories are where you code is stored. A suggestion is to have one repository for a one project.
+
+You can create repositories by clicking on the **Repositories** tab, and then clicking **New**.
+
+Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
+
+!!! Info "So, why a README?"
+        There are two main reasons why you would like a README file:
+        
+        1. It adds structure to your repository *automatically* - otherwise you would need to create said structure by yourself (not recommended for beginners).
+        2. It is the "default" file that GitHub reads upon opening the repository. It can be treated as the go-to file that explains what the repository is for, what each file does, how to cite your reasearch, amongst other things.
+
+!!! Info "Adding a Licence"
+        As discussed previously, the addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on!
+
+#### Adding and Modifying Code
+
+#### Branching
