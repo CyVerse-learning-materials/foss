@@ -242,15 +242,15 @@ The commands listed here above are to help you better understand directories and
 The concept of **version control** will be touched on in more depth [later](05_version_control.md) on in FOSS, however it is important to know the basics of Git and GitHub. 
 
 - **Git**: 
-        - First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.
-        - Changes and versions are saved locally.
-        - Accessible through the Shell.
+    - First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.
+	- Changes and versions are saved locally.
+	- Accessible through the Shell.
 
 - **GitHub**:
-        - First launched in 2008, its main focus is hosting and sharing code.
-        - Changes and versions are saved online (requires an account).
-        - Mainly administered through the web (it also has a desktop app).
-        - Code can be **cloned** to your computer, changes can be **pulled**, **committed** and **pushed**.
+	- First launched in 2008, its main focus is hosting and sharing code.
+	- Changes and versions are saved online (requires an account).
+	- Mainly administered through the web (it also has a desktop app).
+	- Code can be **cloned** to your computer, changes can be **pulled**, **committed** and **pushed**.
 
 !!! Info "The **O** in FOSS"
         FOSS stands for Foundational **Open** Science Skills: how many times have you worked on your code just to hit a bottleneck and found a solution on Stack Overflow? How many times have you found links that bring you to a GitHub repository with the exact snippet of code you needed?
@@ -266,11 +266,15 @@ Since we are talking about making science accessible, we invite you to use GitHu
 
 #### Repositories
 
-Repositories are where you code is stored. A suggestion is to have one repository for a one project.
+Repositories are where you code is stored. A suggestion is to have *one* repository for *one* project.
 
 You can create repositories by clicking on the **Repositories** tab, and then clicking **New**.
 
+![git_1](assets/git_1.png)
+
 Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
+
+![git_2](assets/git_2.png)
 
 !!! Info "So, why a README?"
         There are two main reasons why you would like a README file:
@@ -281,6 +285,14 @@ Here, you can choose the name of your own repository, choose to make it private 
 !!! Info "Adding a Licence"
         As discussed previously, the addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on!
 
+Ultimately, your new repository should look like the following screenshot. Notice the **LICENCE** document and the **README.md**
+
+![git_3](assets/git_3.png)
+
+!!! Info "The Markdown Extension (.md)"
+		Markdown is a lightweight markup language for creating formatted text using a plain-text editor well widespread throughout text files on the web. It uses symbols (*~-#`) for syntaxing text, and it is what GitHub (and this website!) use to format text. You can read more on Markdown on the [Markdown Guide](https://www.markdownguide.org/).
+
 #### Adding and Modifying Code
+
 
 #### Branching
