@@ -296,7 +296,7 @@ Ultimately, your new repository should look like the following screenshot. Notic
 
 GitHub allows you to add and modify code in two ways: through the online portal (the webpage you're seeing) and on your computer. 
 
-- On the GitHub web page:
+- Adding code through the GitHub web page:
 	- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
 	- The editing page will open: choose a name and an extension on the top of the page.
 	- On the editing page you can modify code as you see necessary (writing, pasting)
@@ -310,11 +310,23 @@ GitHub allows you to add and modify code in two ways: through the online portal 
 !!! info "Committing changes"
 		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
 
-		You can see from the picture below the lines that have been removed (in red), and the lines that have been added (in green).
+		- You can see from the picture below the lines that have been removed (in red), and the lines that have been added (in green).
 		![git_07](assets/git_7.png)
 
-		Additionally, you can also see the full list of commits made to the file or repository.
+		- Additionally, you can also see the full list of commits made to the file or repository.
 		![git_08](assets/git_8.png)
 
+- Adding code locally:
+	- To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
+	```
+	$ sudo apt-get install -y git-all
+	```
+	- You can then clone the repository by clicking on the **Code** button, and copying the link shown
+	- ![git_04](assets/git_4.png)
+	- On your machine, open a terminal window and type the following command:
+	```
+	$ git clone <repository address> # Replace <repository address> with the link you copied
+	```
+	- Your code is now available to you on your machine, and you can add and modify files as needed.
 
 #### Branching
