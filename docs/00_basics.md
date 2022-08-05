@@ -299,11 +299,16 @@ GitHub allows you to add and modify code in two ways: through the online portal 
 - On the GitHub web page:
 	- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
 	- The editing page will open: choose a name and an extension on the top of the page.
-	- On the editing page you can modify code as you see necessary (writing, pasting) 
+	- On the editing page you can modify code as you see necessary (writing, pasting)
+	- ![git_05](assets/git_5.png)
 		- you can also see your changes (if formatted) with the preview function (with the **Preview** button).
-		- ![git_05](assets/git_5.png)
 	- To "Save" your changes, you will need to **commit** your changes:
 		- navigate at the bottom of the page, specify your commit with a name and add a description if necessary.
-		- ![git_06](assets/git_6.png)
+	- ![git_06](assets/git_6.png)
+	- You will be able to see your newly created file on your repository home after committing your changes.
+
+!!! info "Committing changes"
+		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :clock: icon under the **Code** button.
+
 
 #### Branching
