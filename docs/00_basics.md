@@ -296,16 +296,19 @@ Ultimately, your new repository should look like the following screenshot. Notic
 
 GitHub allows you to add and modify code in two ways: through the online portal (the webpage you're seeing) and on your computer. 
 
-- Adding code through the GitHub web page:
-	- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
-	- The editing page will open: choose a name and an extension on the top of the page.
-	- On the editing page you can modify code as you see necessary (writing, pasting)
-	- ![git_05](assets/git_5.png)
-		- you can also see your changes (if formatted) with the preview function (with the **Preview** button).
-	- To "Save" your changes, you will need to **commit** your changes:
-		- navigate at the bottom of the page, specify your commit with a name and add a description if necessary.
-	- ![git_06](assets/git_6.png)
-	- You will be able to see your newly created file on your repository home after committing your changes.
+##### Adding Code through the GitHub web page
+
+Adding code to your repository through the web page is suggested if what you want to add is simple (Like a README file!).
+
+- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
+- The editing page will open: choose a name and an extension on the top of the page.
+- On the editing page you can modify code as you see necessary (writing, pasting)
+- ![git_05](assets/git_5.png)
+	- you can also see your changes (if formatted) with the preview function (with the **Preview** button).
+- To "Save" your changes, you will need to **commit** your changes:
+	- navigate at the bottom of the page, specify your commit with a name and add a description if necessary.
+- ![git_06](assets/git_6.png)
+- You will be able to see your newly created file on your repository home after committing your changes.
 
 !!! info "Committing changes"
 		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
@@ -316,17 +319,73 @@ GitHub allows you to add and modify code in two ways: through the online portal 
 		- Additionally, you can also see the full list of commits made to the file or repository.
 		![git_08](assets/git_8.png)
 
-- Adding code locally:
-	- To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
-	```
-	$ sudo apt-get install -y git-all
-	```
-	- You can then clone the repository by clicking on the **Code** button, and copying the link shown
-	- ![git_04](assets/git_4.png)
-	- On your machine, open a terminal window and type the following command:
-	```
-	$ git clone <repository address> # Replace <repository address> with the link you copied
-	```
-	- Your code is now available to you on your machine, and you can add and modify files as needed.
+##### Adding Code locally
+
+Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
+
+- To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
+```
+$ sudo apt-get install -y git-all
+```
+- You can then clone the repository by clicking on the **Code** button, and copying the link shown
+- ![git_04](assets/git_4.png)
+- On your machine, open a terminal window and type the following command:
+```
+$ git clone <repository address>     # Replace <repository address> with the link you copied such as below
+
+$ git clone https://github.com/CosiMichele/foss22_git_tutorial.git
+Cloning into 'foss22_git_tutorial'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (13/13), 14.47 KiB | 90.00 KiB/s, done.
+```
+- Your code is now available to you on your machine, and you can add and modify files as needed.
+
+You have modified your code locally, however you still have to push it to the repository. Prior to doing so there are a couple of steps you should do:
+
+- `git status`: it checkes on the status of the repository (files that have been modified, deleted, added - from either local or in the online repository)
+- `git pull`: it checks and "pulls" changes from the online repository to your local repository. It ensures that you are always updated on the repository files *and* it can save a lot of time in case there are clashing commits from different users.
+
+To do so:
+
+- **Add** all fiels you have modified and want to commit:
+```
+$ git add .    # Recall that "." (period) stands for all files in a folder 
+```
+- **Commit** the changes. When committing changes, you have to add a message (in quotation marks) with the `-m` flag. This message is a concise and descriptive few words about what you did:
+```
+$ git commit -m "locally added and modified files"
+[main 05f0ef6] locally added and modified files
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 file_from_local.md
+```
+- push your changes with **push**:
+```
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 585 bytes | 32.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/CosiMichele/foss22_git_tutorial.git
+   b649de3..05f0ef6  main -> main
+```
+
+!!! Warning "First time Pushing a commit?"
+		GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
+
+		- When asked for the user name:
+			- Add the username that you use to login into GitHub
+		- When it asks you for the password:
+			- **DO NOT PUT YOUR PASSWORD**, you will require a **token** instead
+			- Generate the token by 
+				- On GitHub, click on your avatar (top right, and navigate to **Settings**)
+				- Scroll down to the bottom of the left hand menu, select **Developer settings**, and then **Personal access tokens**
+				- Now click on **Generate new token** (Enter password if requested)
+				- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
+				- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
 
 #### Branching
