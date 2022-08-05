@@ -388,4 +388,8 @@ To https://github.com/CosiMichele/foss22_git_tutorial.git
 				- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
 				- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
 
+You can now see the changes you made locally on the GitHub repository page.
+
+![git_09](assets/git_9.png)
+
 #### Branching
