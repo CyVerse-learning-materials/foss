@@ -310,5 +310,11 @@ GitHub allows you to add and modify code in two ways: through the online portal 
 !!! info "Committing changes"
 		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
 
+		You can see from the picture below the lines that have been removed (in red), and the lines that have been added (in green).
+		![git_07](assets/git_7.png)
+
+		Additionally, you can also see the full list of commits made to the file or repository.
+		![git_08](assets/git_8.png)
+
 
 #### Branching
