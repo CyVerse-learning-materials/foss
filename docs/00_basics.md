@@ -308,7 +308,7 @@ GitHub allows you to add and modify code in two ways: through the online portal 
 	- You will be able to see your newly created file on your repository home after committing your changes.
 
 !!! info "Committing changes"
-		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :clock: icon under the **Code** button.
+		**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
 
 
 #### Branching
