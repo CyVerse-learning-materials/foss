@@ -296,7 +296,7 @@ Ultimately, your new repository should look like the following screenshot. Notic
 
 GitHub allows you to add and modify code in two ways: through the online portal (the webpage you're seeing) and on your computer. 
 
-##### Adding Code through the GitHub web page
+##### **Adding Code through the GitHub web page**
 
 Adding code to your repository through the web page is suggested if what you want to add is simple (Like a README file!).
 
@@ -319,7 +319,7 @@ Adding code to your repository through the web page is suggested if what you wan
 		- Additionally, you can also see the full list of commits made to the file or repository.
 		![git_08](assets/git_8.png)
 
-##### Adding Code locally
+##### **Adding Code locally**
 
 Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
 
@@ -393,3 +393,25 @@ You can now see the changes you made locally on the GitHub repository page.
 ![git_09](assets/git_9.png)
 
 #### Branching
+
+Branching allows you to develop your code whilst in a contained environment separate from your **main** environment. You can view the list and number of branches on the top of your repository.
+
+![git_10](assets/git_10.png)
+
+To create a new branch select the :octicons-git-branch-16: icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
+
+![git_11](assets/git_11.png)
+
+Select **New Branch** on the top right. Give the new branch a name of your choice, select the source of code (in this case the only source of code can be the main branch) and select **Create branch**.
+
+![git_12](assets/git_12.png)
+
+You can now see the updated list of all your branches.
+
+![git_13](assets/git_13.png)
+
+You can now use this new branch to create changes you are not yet ready to put in your main branch.
+
+#### Pull Requests
+
+#### Tracking Issues
