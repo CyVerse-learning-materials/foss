@@ -398,6 +398,9 @@ Branching allows you to develop your code whilst in a contained environment sepa
 
 ![git_10](assets/git_10.png)
 
+!!! Info "Why working on branches?"
+		Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using **pull requests**.
+
 To create a new branch select the :octicons-git-branch-16: icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
 
 ![git_11](assets/git_11.png)
