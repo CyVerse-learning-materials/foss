@@ -418,6 +418,13 @@ You can now use this new branch to create changes you are not yet ready to put i
 !!! warning "Want to delete a branch?"
 		You can delete a branch from the branch web page by clicking on the :octicons-trash-16: trash can icon. **Beware!** All the changes you've made on that branch will be deleted!
 
+!!! info "Working on your machine?"
+		Once you create a branch online, you can change to the desired branch on your machine with `git switch <branch>`. Don't forget to push your changes first!
+		
+		!!! tip "Pull and Tab"
+				- Don't forget to perform a `git pull`!
+				- Don't know your branches? Tab! When typing `git switch`, press tab to see the options of all the branches you've created.
+
 #### Pull Requests
 
 Pull requests (PR) are proposed changes you can make on a repository. In this specific case, pull requests can be used to merge changes from a branch to another. Pull requests can also come from **forks** of your repository that another user or collaborator has made. 
@@ -442,3 +449,16 @@ Your main repository should now have the files created in your other branch and 
 ![git_17](assets/git_17.png)
 
 #### Tracking Issues
+
+Another great feature that comes with GitHub, is the Issue tracker. Issues are requests, questions, bug reports that you and your collaborators may have. You can create a new issue in the issue tab
+
+![git_18](assets/git_18.png)
+
+In case you want to open a new issue, click on the **New issue** button. You can type the issue at hand in the new page and click **Submit new issue** (it supports markdown!). Your Issues page should be updated with a list of all open issues.
+
+![git_19](assets/git_19.png)
+![git_20](assets/git_20.png)
+
+You can continue the conversation with a comment or Close the issue with a comment (and you can reopen later on as well if necessary!).
+
+![git_21](assets/git_21.png)
