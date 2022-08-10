@@ -399,9 +399,9 @@ Branching allows you to develop your code whilst in a contained environment sepa
 ![git_10](assets/git_10.png)
 
 !!! Info "Why working on branches?"
-		Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using **pull requests**.
+		Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using [**pull requests**](00_basics.md#pull-requests).
 
-To create a new branch select the :octicons-git-branch-16: icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
+To create a new branch select the :octicons-git-branch-16: branch icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
 
 ![git_11](assets/git_11.png)
 
@@ -415,6 +415,30 @@ You can now see the updated list of all your branches.
 
 You can now use this new branch to create changes you are not yet ready to put in your main branch.
 
+!!! warning "Want to delete a branch?"
+		You can delete a branch from the branch web page by clicking on the :octicons-trash-16: trash can icon. **Beware!** All the changes you've made on that branch will be deleted!
+
 #### Pull Requests
+
+Pull requests (PR) are proposed changes you can make on a repository. In this specific case, pull requests can be used to merge changes from a branch to another. Pull requests can also come from **forks** of your repository that another user or collaborator has made. 
+
+Assuming you have made changes in your branch (added a file, for example), a pop up will notify you that a branch has pushed some changes. In case you want to merge the branch and the main repository, you can review and merge by clicking the **Compare & pull request** button. However, you may want to wait until more changes are made.
+
+![git_14](assets/git_14.png)
+
+Once you are ready to merge the changes onto your main branch, click on the :octicons-git-branch-16: branch icon, and select **New pull request** from the branch you have just made changes. This will open a new page which will list all the changes made showing all files that have been modified, added, or deleted. When you're done reviewing your changes, click **Create pull request**.
+
+![git_15](assets/git_15.png)
+
+!!! info "Pay attention to the information on the PR page!"
+		The PR page will not only show you what changes you've made, but also where the changes are coming from (which branch), as well as reviewers, assigneers, labels and other information necessary when working on a big project. It will also show whether the changes are **Able** to be merged (:material-check:) or not (:octicons-x-16:)! 
+
+Upon createing the pull request, a new page will open which will test whether the changes can be merged automatically. Changes that are not able to be merged usually clash with other changes other collaborators have made - this will require your revision prior to merging the PR! After revision, select **Merge pull request** and **Confirm merge**.
+
+![git_16](assets/git_16.png)
+
+Your main repository should now have the files created in your other branch and merged through the PR!
+
+![git_17](assets/git_17.png)
 
 #### Tracking Issues
