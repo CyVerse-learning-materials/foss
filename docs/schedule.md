@@ -19,7 +19,7 @@ Eastern Time)
 
 | Week | Date | Content | Instructor |
 |---|---|---|---|
-| **Week 0** | Sept 8 (or 9) | pre-FOSS workshop: <br> - [Unix shell basics](00_basics.md#the-unix-shell) <br> - [Git basics](00_basics.md#git-and-github) | Michele Cosi
+| **Week 0** | Sept 8 (or 9) | pre-FOSS workshop: <br> - [Unix shell basics](00_basics.md#the-unix-shell) <br> - [Git basics](00_basics.md#git-and-github) | Michele Cosi |
 | **Week 1** | Sept 15 (or 16) | Workshop introduction: <br> - [Intro to Open Science](01_intro_open_sci.md) <br> - [Intro to CyVerse](01_intro_open_sci.md#introduction-to-cyverse) | Tyson Swetnam |
 | **Week 2** | Sept 22 (or 23) | [Project management](02_project_management.md): <br> - Project critique activity | Tyson Swetnam |
 | **Week 3** | Sept 29 (or 30) | [Data management](03_managing_data.md): <br> - [FAIR data](03_managing_data.md#fair-data) <br> - [Data Management Plans](03_managing_data.md#data-management-plans) <br> - Intro to Data Store | Jason Williams/Michele Cosi |
