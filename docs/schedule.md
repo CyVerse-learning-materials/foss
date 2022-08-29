@@ -1,13 +1,7 @@
 # Weekly Schedule
 
-Thursdays 11:00AM - 1:00PM US Pacific Time (2:00PM - 4:00PM US
+Thursdays 3:30AM - 5:00PM US Pacific Time (5:30PM - 7:00PM US
 Eastern Time)
-
-!!! info "Can't attend Thursday? What about Friday instead!"
-        In case a number of attendees will not be able to attend on Thursdays, Fridays will be offered instead*
-        (9:00AM - 11:00AM US Pacific Time (12:00PM - 2:00PM US Eastern Time)).
-
-        *Subject to agreement between attendees.
 
 ## Zoom Info
 
