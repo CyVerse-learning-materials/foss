@@ -1,6 +1,6 @@
 # Weekly Schedule
 
-Thursdays 3:30PM - 5:00PM US Pacific Time (5:30PM - 7:00PM US
+Thursdays 3:30PM - 5:00PM US Arizona Mountain Standard Time (6:30PM - 8:00PM US
 Eastern Time)
 
 ## Zoom Info
