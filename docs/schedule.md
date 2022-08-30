@@ -1,6 +1,6 @@
 # Weekly Schedule
 
-- Morning session: Thursdays 11:00PM - 1:00PM US Arizona Mountain Standard Time (2:00PM - 4:00PM US
+- Morning session: Thursdays 11:00AM - 1:00PM US Arizona Mountain Standard Time (2:00PM - 4:00PM US
 Eastern Time)
 - Afternoon session: Thursdays 3:30PM - 5:00PM US Arizona Mountain Standard Time (6:30PM - 8:00PM US
 Eastern Time)
