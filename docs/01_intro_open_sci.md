@@ -48,15 +48,13 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
     
-!!! Tip ":dark_sunglasses: Awesome Lists of Open Science"
+??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
 
     Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
     
     (There is even a [Searchable Index](https://awesome-indexed.mathew-davies.co.uk/){target=_blank} of Awesome Lists)
 
     We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/) which may be valuable to you.
-
-### Open Science Flow Mermaid Diagram
 
 ``` mermaid
 flowchart LR
@@ -65,36 +63,35 @@ id1([open science]) --> id3([open publishing]) & id4([open data]) & id5([open to
 
 id3([open publishing]) --> id41([open access]) & id42([open reviews])
 
-id5([open tools]) --> id8([open repositories]) & id10([open services]) & id11([open workflows])
+id5([open tools]) --> id8([open repositories]) & id10([open services]) & id101([open workflows])
 
-id8([open repositories]) --> id12([version control]) & id13([container registries])
+id8([open repositories]) --> id12([version control systems]) & id13([container registries])
 
-id12([version control]) --> id101([compute])
+id12([version control]) --> id101([open workflows])
 
-id13([container registries]) --> id101([compute])
+id13([container registries]) --> id101([open workflows])
 
-id14([public data registry]) --> id101([compute])
+id14([public data registry]) --> id101([open workflows])
 
-id10([open services]) --> id101([compute]) 
+id10([open services]) --> id101([open workflows]) 
 
-id11([open workflows]) --> id101([compute]) 
+id4([open data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
 
-id4([open data]) --> id14([public data registry])
+id101([open workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
 
-id101([compute]) <--> id15([on-prem]) & id16([commercial cloud]) & id17([public cloud])
-
-id15([On-Prem]) <--> id20([open resources])
-
-id16([Commercial Cloud]) <--> id20([open resources]) 
-
-id17([Public Clouds]) <--> id20([open resources]) 
 ```
 
-Figure: Hypothetical relationships of digital Open Science 
+Figure: Hypothetical relationships of digital Open Science as a Mermaid Diagram 
 
 ## Breakout Discussion
 
 As you already know, being a scientist requires you to wear many hats, and trying to do Open Science is no different.
+
+<figure markdown>
+  <a href="https://doi.org/10.7554/eLife.81075" target="blank" rel="venn">![venn](https://iiif.elifesciences.org/lax/81075%2Felife-81075-fig2-v1.tif/full/,1500/0/default.jpg){ width="700" } </a>
+    <figcaption> [Bernery et al. (2022)](https://doi.org/10.7554/eLife.81075){target=_blank} Figure 2: The positive aspects of doing a PhD. </figcaption>
+</figure>
+
 
 As we mentioned, Open Science is not a set of boxes you need to check off to be "Certified Open", but an intersecting set of philosophies and approaches, all of which occur on some type of spectrum. 
 
@@ -104,37 +101,81 @@ To get a feel for how Open Science can be multifaceted and different for each re
 
     ??? Example "Which of the :material-pillar: pillars of Open Science is nearest to your own heart?"
 
+        **:material-pillar: Open Access Publications**
+
+        **:material-pillar: Open Data**
+
+        **:material-pillar: Open Educational Resources**
+
+        **:material-pillar: Open Methodology**
+      
+        **:material-pillar: Open Peer Review**
+
+        **:material-pillar: Open Source Software**
+
     ??? Example "Are any of the :material-pillar: pillars more important than the others?"
 
-    ??? Example "Are there any :material-pillar" pillars not identified that you think should be considered?"
-
-??? Question "What characteristics might a paper/project/lab require to qualify as *Open Science*"
-
-??? Question "What are some limitations to you, your lab/group, or your domain?"
+    ??? Example "Are there any :material-pillar: pillars not identified that you think should be considered?"
 
 
 ### Components of Open Science
 
-One of the most fundamental, and certainly the most publicized component of Open Science is the accessibility of data. This makes sense- without
-access to your data, nothing else about your science can be all that open. While we will devote an entire week of this course to data, opening up your data is only one piece of the puzzle.
+One of the most fundamental, and certainly the most publicized component of Open Science is the accessibility of data. 
 
-![Open Science pieces](assets/open_science_components.png) 
+This makes sense- without access to your data, nothing else about your science can be all that open. 
 
-*Gallagher et al 2020, Nature Eco Evo*
+While we will devote an entire week of this course to data, opening up your data is only one piece of the puzzle.
 
-This figure demonstrates the multiple intersecting pieces of Open Science, which go beyond simply making data accessible. While we focus primarily on Open Data, Open Source, and Open Methodology in FOSS, it's worth considering how other parts of the scientific process might be opened up more broadly.
+<figure markdown>
+  <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
+    <figcaption> [Gallagher et al (2020)](https://doi.org/10.7554/eLife.81075){target=_blank} Box 2: six core principles of Open Science. </figcaption>
+</figure>
 
-Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as Open Process. In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like p-hacking or HARKing. What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. To learn more about preregistration, you can check out the , a project that provides a preregistration platform and other Open Science tools.
+This figure demonstrates the multiple intersecting pieces of Open Science, which go beyond simply making data accessible. 
 
-As mentioned above, it is worthwhile to think about Open Science not as a set of checkboxes, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. While you might not achieve some platonic ideal of openness for a variety of reasons, you can still make great progress in moving your science towards the Open end of the spectrum. In reality, a large scientific project probably consists of multiple spectra; you can move your data towards the open end of the spectrum while your software remains less open, and vice versa. All this is to say that doing Open Science is not a static set of goals you must achieve, it is a process that grows and changes with your science itself.
+While we focus primarily on Open Data, Open Source, and Open Methodology in FOSS, it's worth considering how other parts of the scientific process might be opened up more broadly.
 
-One of the biggest challenges of doing science is that you might have to wear many different hats: domain expert, lab manager, statistician, teacher, mentor, grant writer, manuscript author, public speaker... the list goes on. Doing Open Science is no different, but the list of skills may be even greater, since the goal is now to openly communicate each step of the process to a broader audience. This also makes teaching Open Science quite challenging- we will cover topics ranging from "soft skills" like project management and internal communications to more technical skills like software management and containers. We could probably teach this whole workshop on each single topic, but we clearly don't have the time to do that. Instead, we will focus on a higher-level look at the landscape of Open Science and introduce you to a wide variety of skills and concepts with the idea that you can go on to find ways to implement them in your own work.
+Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as Open Process. 
+
+In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
+
+This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like p-hacking or HARKing. 
+
+What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
+
+To learn more about preregistration, you can check out the , a project that provides a preregistration platform and other Open Science tools.
+
+As mentioned above, it is worthwhile to think about Open Science not as a set of checkboxes, but rather a holistic approach to doing science. 
+
+In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
+
+While you might not achieve some platonic ideal of openness for a variety of reasons, you can still make great progress in moving your science towards the Open end of the spectrum. 
+
+In reality, a large scientific project probably consists of multiple spectra; you can move your data towards the open end of the spectrum while your software remains less open, and vice versa. 
+
+All this is to say that doing Open Science is not a static set of goals you must achieve, it is a process that grows and changes with your science itself.
+
+One of the biggest challenges of doing science is that you might have to wear many different hats: domain expert, lab manager, statistician, teacher, mentor, grant writer, manuscript author, public speaker... the list goes on. 
+
+Doing Open Science is no different, but the list of skills may be even greater, since the goal is now to openly communicate each step of the process to a broader audience. 
+
+This also makes teaching Open Science quite challenging- we will cover topics ranging from "soft skills" like project management and internal communications to more technical skills like software management and containers. 
+
+We could probably teach this whole workshop on each single topic, but we clearly don't have the time to do that. 
+
+Instead, we will focus on a higher-level look at the landscape of Open Science and introduce you to a wide variety of skills and concepts with the idea that you can go on to find ways to implement them in your own work.
+
+??? Question "What characteristics might a paper, project, lab group require to qualify as doing *Open Science*"
+
+??? Question "What are some limitations to you, your lab group, or your domain?"
 
 ---
 
 ## *WHY* do Open Science?
 
-There are many reasons to do Open Science, and presumably one or more of them brought you to this workshop. Whether you feel an ethical obligation, want to improve the quality of your work, or want to look better to funding agencies, many of the same approaches to Open Science apply.
+There are many reasons to do Open Science, and presumably one or more of them brought you to this workshop. 
+
+Whether you feel an ethical obligation, want to improve the quality of your work, or want to look better to funding agencies, many of the same approaches to Open Science apply.
 
 A paper from posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
 
@@ -148,9 +189,11 @@ A paper from posits that there are 5 main schools of thought in Open Science, wh
 
 5.  **Measurement school**: primarily concerned with the existing focus on journal publications as a means of measuring scholarly output, and focused on developing alternative measurements of scientific impact
 
-![5 schools](assets/five_schools.png) 
 
-*Fecher and Friesike, 2014*
+<figure markdown>
+  <a href="https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf" target="blank" rel="fecher_friesike">![fecher_friesike](assets/five_schools.png){ width="700" } </a>
+    <figcaption> In [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} Open Science: One Term, Five Schools of Thought </figcaption>
+</figure>
 
 While many researchers may be motivated by one or more of these aspects, we will not necessarily focus on any of them in particular. If anything, FOSS may be slightly more in the Infrastructure school, because we aim to give you the tools to do Open Science based on your own underlying motivations.
 
