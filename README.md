@@ -12,6 +12,6 @@ To build the docs locally:
 ```
 pip install -r requirements.txt
 
-mkdocs serve
+python -m mkdocs serve
 ```
 
