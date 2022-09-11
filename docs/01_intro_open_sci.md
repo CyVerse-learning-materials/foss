@@ -42,11 +42,9 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
         **:material-pillar: Open Source Software**
 
-
         ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
-
     
 ??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
 
@@ -54,18 +52,23 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
     
     (There is even a [Searchable Index](https://awesome-indexed.mathew-davies.co.uk/){target=_blank} of Awesome Lists)
 
-    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/) which may be valuable to you.
+    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
+
+[![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+
+Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
+
 
 ``` mermaid
 flowchart LR
 
 id1([open science]) --> id3([open publishing]) & id4([open data]) & id5([open tools])
 
-id3([open publishing]) --> id41([open access]) & id42([open reviews])
+id3([open publishing]) -->  id41([open access]) & id42([open reviews]) & id43([open methods]) & id44([educational resources]) 
 
-id5([open tools]) --> id8([open repositories]) & id10([open services]) & id101([open workflows])
+id5([open source software]) --> id8([open repositories]) & id10([open services]) & id101([open workflows]) & id12([version control systems])
 
-id8([open repositories]) --> id12([version control systems]) & id13([container registries])
+id8([open repositories]) -->  id13([container registries])
 
 id12([version control]) --> id101([open workflows])
 
@@ -75,6 +78,12 @@ id14([public data registry]) --> id101([open workflows])
 
 id10([open services]) --> id101([open workflows]) 
 
+id44([educational resources]) --> id21([university libraries])
+
+id21([university libraries]) --> id101([open workflows])
+
+id22([federal data archives]) --> id101([open workflows]) 
+
 id4([open data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
 
 id101([open workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
@@ -82,6 +91,218 @@ id101([open workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id1
 ```
 
 Figure: Hypothetical relationships of digital Open Science as a Mermaid Diagram 
+
+### **:material-pillar: Open Access Publications**
+
+[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=300}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
+
+??? Quote "Definitions"
+
+    "Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- [OpenAccess.nl](https://www.openaccess.nl/en/what-is-open-access){target=_blank}
+
+??? Example "Pre-print Services"
+
+    [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation in life science communication. This is a comprehensive list of pre-print servers.
+
+    [ESSOar](https://www.essoar.org/){target=_blank} - Earth and Space Science Open Archive hosted by the American Geophysical Union.
+
+    [Peer Community In (PCI)](https://peercommunityin.org/) a free recommendation process of scientific preprints based on peer reviews
+
+    [OSF.io Preprints](https://osf.io/preprints/){target=_blank} are partnered with numerous projects under the "-rXivs"
+
+    ??? Tip "The rXivs"
+
+        [AfricArXiv](https://osf.io/preprints/africarxiv/){target=_blank}
+
+        [AgrirXiv](https://cabidigitallibrary.org/journal/agrirxiv){target=_blank}
+
+        [Arabixiv](https://arabixiv.org/discover){target=_blank}
+
+        [arXiv](https://arxiv.org/){target=_blank} - is a free distribution service and an open-access archive for 2,086,431 scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.
+
+        [BioHackrXiv](https://biohackrxiv.org/){target=_blank}
+
+        [BioRxiv](https://www.biorxiv.org/){target=_blank} -  is an open access preprint repository for the biological sciences.
+
+        [BodorXiv](https://bodoarxiv.wordpress.com/){target=_blank}
+
+        [EarthArXiv](https://eartharxiv.org/){target=_blank} - is an open access preprint repository for the Earth sciences.
+
+        [EcsArXiv](https://ecsarxiv.org/){target=_blank} - a free preprint service for electrochemistry and solid state science and technology
+
+        [EdArXiv](https://edarxiv.org/){target=_blank} - for the education research community
+
+        [EngrXiv](https://engrxiv.org/){target=_blank} for the engineering community
+
+        [EvoEcoRxiv](https://www.ecoevorxiv.com/){target=_blank} - is an open acccess preprint repository for Evolutionary and Ecological sciences.
+
+        [MediArXiv](https://mediarxiv.com/){target=_blank} for Media, Film, & Communication Studies
+
+        [MedRxiv](https://www.medrxiv.org/){target=_blank} - is an open access preprint repository for Medical sciences.
+
+        [PaleorXiv](https://paleorxiv.org/){target=_blank} - is an open access preprint repository for Paleo Sciences
+
+        [PsyrXiv](https://psyarxiv.com/){target=_blank} - is an open access preprint repository for Psychological sciences.
+
+        [SocArXiv](https://socopen.org/){target=_blank} - is an open access preprint repository for Social sciences.
+
+        [SportrXiv](https://sportrxiv.org/){target=_blank} - is an open access preprint for Sports sciences.
+
+        [ThesisCommons](https://thesiscommons.org/) - open Theses
+
+??? Example "Financial Support for Open Access Publishing Fees"
+
+    There are mechanisms for helping to pay for the additional costs of publishing research as open access:
+
+    [SciDevNet](https://www.scidev.net/global/){target=_blank}
+
+    [Health InterNetwork Access to Research Initiative (HINARI)](http://www.emro.who.int/information-resources/hinari/){target=_blank}
+
+    [Max Planck Digital Library](https://group.springernature.com/gb/group/media/press-releases/landmark-agreement-between-springer-nature-and-mpdl/18498782){target=_blank} - German authors can have OA fees in Springer Nature research journals paid for.
+
+    [Bibsam Consortium](https://www.springernature.com/gp/open-research/institutional-agreements/oaforsweden){target=_blank} - Swedish authors can have OA fees in Springer Nature research journals paid for.
+
+??? Example "Open Access Publishing"
+
+    Major publishers have provided access points for publishing your work 
+
+    [AAAS](https://www.science.org/content/page/open-access-aaas){target=_blank}
+
+    [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank}
+
+    [American Geophysical Union](https://www.agu.org/Publish-with-AGU/Publish/Open-Access){target=_blank}
+
+    [Commonwealth Scientific and Industrial Research Organisation (CSIRO)](https://acsopenscience.org/australia-csiro/){target=_blank}
+
+    [Open Research Europe](https://open-research-europe.ec.europa.eu/){target=_blank}
+
+### **:material-pillar: Open Data**
+
+??? Tip "DIKW Pyramid"
+    
+    Data are the basis of our understanding the natural world. The Data-Information-Knowledge-Wisdom (DIKW) pyramid describes for us how data are refined into information and knowledge.
+
+    [![dikw](https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg)](https://en.wikipedia.org/wiki/DIKW_pyramid){target=_blank}
+
+Open Data are a critical aspect of open science. There are three key attributes of Open Data:
+
+* Availability and accessibility
+* Reusability
+* Inclusivity
+
+??? Quote "Definitions"
+
+    “Open data and content can be freely used, modified, and shared by anyone for any purpose” - [The Open Definition](https://opendefinition.org/){target=_blank}
+
+    "Open data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike." - [Open Data Handbook](https://opendatahandbook.org/guide/en/what-is-open-data/){target=_blank}
+
+    [Wikipedia definition](https://en.wikipedia.org/wiki/Open_data){target=_blank}
+
+??? Tip "FAIR & CARE Principles"
+
+    :material-magnify: :material-access-point: :fontawesome-solid-gears: :material-recycle: :octicons-people-24: :fontawesome-solid-building-columns: :fontawesome-solid-hands-holding-circle: :material-scale-balance:
+
+    The FAIR acronym and principles were defined in a March 2016 paper in the journal Scientific Data by a consortium of scientists and organizations
+
+    [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
+
+    [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
+
+    [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. 
+
+    [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
+    
+    [US Indigenous Data Sovereignty Network](https://usindigenousdata.org/){target=_blank}
+
+??? Tip "LOD Cloud"
+    
+    [The Linked Open Data Cloud](https://lod-cloud.net/){target=_blank} shows how data can be linked to one another. 
+
+    [![linked open data](https://lod-cloud.net/clouds/lod-cloud.svg)](https://lod-cloud.net/clouds/lod-cloud.svg){target=_blank}
+
+### **:material-pillar: Open Educational Resources**
+
+??? Example "Digital Literacy Organizations"
+
+    [The Carpentries](https://carpentries.org/){target=_blank} - teaches foundational coding and data science skills to researchers worldwide.  
+
+    [EdX](https://www.edx.org/){target=_blank} - 
+
+    [EveryoneOn](https://www.everyoneon.org/ ){target=_blank} - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings. 
+
+    [ConnectHomeUSA](https://connecthomeusa.org/){target=_blank} - is a movement to bridge the digital divide for HUD-assisted housing residents in the United States under the leadership of national nonprofit EveryoneOn.
+
+
+    [Global Digital Literacy Council](https://www.gdlcouncil.org/){target=_blank} -  has dedicated more than 15 years of hard work to the creation and maintenance of worldwide standards in digital literacy. 
+
+    [National Digital Equity Center](https://digitalequitycenter.org/about-us/){target=_blank} a 501c3 non-profit, is a nationally recognized organization with a mission to close the digital divide across the United States.
+
+    [National Digital Inclusion Allaince](https://www.digitalinclusion.org/){target=_blank} - advances digital equity by supporting community programs and equipping policymakers to act.
+
+    [Net Literacy](https://www.netliteracy.org/){target=_blank}
+
+    [Open Educational Resources Commons](https://www.oercommons.org/){target=_blank}
+
+    [Project Pythia](https://projectpythia.org/){target=_blank} is the education working group for Pangeo and is an educational resource for the entire geoscience community. 
+
+    [Research Bazaar](https://resbaz.github.io/resbaz2021/){target=_blank} - is a worldwide festival promoting the digital literacy emerging at the centre of modern research.
+
+    [TechBoomers](https://techboomers.com/){target=_blank} - is an education and discovery website that provides free tutorials of popular websites and Internet-based services in a manner that is accessible to older adults and other digital technology newcomers.
+
+??? Example "Education Materials"
+
+    [Teach Together](https://teachtogether.tech/en/index.html#){target=_blank} by Greg Wilson
+
+    [DigitalLearn](https://www.digitallearn.org/){target=_blank}
+
+### **:material-pillar: Open Methodology**
+
+The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science) present one of the foremost platforms for sharing open methods for digital research.
+
+
+??? Example "Protocols and Bench Techniques"
+
+    [BioProtocol](https://bio-protocol.org/Default.aspx){target=_blank}
+
+    [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
+
+    [Gold Biotechnology Protocol list](https://www.goldbio.com/search?q=&type=documentation&documentation_type=protocol){target=_blank}
+
+    [JoVE](https://www.jove.com/){target=_blank} - Journal of Visualized Experiments
+
+    [Nature Protocols](https://www.nature.com/nprot/){target=_blank}
+
+    [OpenWetWare](https://openwetware.org/wiki/Main_Page){target=_blank}
+
+    [Protocol Exchange](https://protocolexchange.researchsquare.com/){target=_blank}
+
+    [Protocols Online](http://www.protocol-online.org/prot/){target=_blank}
+
+    [:material-microscope: Protocols](https://www.protocols.io/){target=_blank}
+
+    [SciGene](http://scigine.com/blog/){target=_blank}
+
+    [Springer Nature Experiments](https://experiments.springernature.com/){target=_blank}
+      
+### **:material-pillar: Open Peer Review**
+
+[What is Open Peer Review?](https://f1000research.com/articles/6-588/v2#ref-59)
+
+??? Tips "Open Peer Review"
+
+    [F1000Research](https://f1000research.com/){target=_blank} the first open research publishing platform. Offering open peer review rapid publication
+
+    [PREreview](https://prereview.org/){target=_blank} provides a space for open peer reviews, targeted toward early career researchers.
+
+    [ASAPbio](https://asapbio.org/){target=_blank} Accelerating Science and Publication in Biology, an open peer review source for biologists and life scientists.
+
+    [PubPeer](https://pubpeer.com/){target=_blank} platform for post-publication of peer reviews.
+
+    [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
+
+
+### **:material-pillar: Open Source Software**
+
 
 ## Breakout Discussion
 
@@ -116,7 +337,6 @@ To get a feel for how Open Science can be multifaceted and different for each re
     ??? Example "Are any of the :material-pillar: pillars more important than the others?"
 
     ??? Example "Are there any :material-pillar: pillars not identified that you think should be considered?"
-
 
 ### Components of Open Science
 
@@ -205,6 +425,70 @@ Let's break out into groups again to discuss some of our motivations for doing O
 
 ??? Question "Are there any motivating factors for doing Open Science that don't fit into this framework?"
 
+## Recommended Open Science Communities
+
+[![The Turing Way](https://the-turing-way.netlify.app/_static/logo.jpg){width=150}](https://the-turing-way.netlify.app/welcome.html)
+[![NASA Transform to Open Science](https://raw.githubusercontent.com/nasa/Transform-to-Open-Science/main/assets/logos/Tops_logo%404x.png){width=150}](https://github.com/nasa/Transform-to-Open-Science)
+[![Foster Open Science](https://www.fosteropenscience.eu/images/logos/FOSTER-hires.png){width=300}](https://www.fosteropenscience.eu/)
+[![The Carpentries](https://carpentries.org/assets/img/TheCarpentries.svg)](https://carpentries.org/)
+[![COS](https://www.cos.io/hubfs/Cos_2020/Images/cos_logo.png){width=200}](https://www.cos.io/)
+
+[:material-school: Open Scholarship Grassroots Community Networks](https://docs.google.com/spreadsheets/d/1LNF5_bOkRV-RLIF4HYmu-gOemIa4IdfXEer89fM-Vy8/edit#gid=847887324){target=_blank}
+
+??? Info ":fontawesome-solid-earth-europe: International Open Science Networks"
+
+    [Center for Scientific Collaboration and Community Engagement (CSCCE)](https://www.cscce.org/){target=_blank}
+
+    [Center for Open Science (COS)](https://www.cos.io/){target=_blank}
+
+    [Eclipse Science Working Group](https://science.eclipse.org/){target=_blank}
+
+    [eLife](https://elifesciences.org/){target=_blank}
+
+    [NumFocus](https://numfocus.org/){target=_blank}
+
+    [Open Access Working Group](https://sparcopen.org/people/open-access-working-group/){target=_blank}
+
+    [Open Research Funders Group](https://www.orfg.org/)
+
+    [Open Science Foundation](https://osf.io/){target=_blank}
+
+    [Open Science Network](https://www.opensciencenetwork.org/){target=_blank}
+
+    [pyOpenSci](https://www.pyopensci.org/){target=_blank}
+
+    [R OpenSci](https://ropensci.org/){target=_blank}
+
+    [Research Data Alliance (RDA)](https://www.rd-alliance.org/){target=_blank}
+
+    [The Turing Way](https://the-turing-way.netlify.app/welcome){target=_blank}
+
+    [UNESCO Global Open Science Partnership](https://en.unesco.org/science-sustainable-future/open-science/partnership){target=_blank}
+
+    [World Wide Web Consortium (W3C)](https://www.w3.org/){target=_blank}
+
+??? Info ":fontawesome-solid-earth-americas: US-based Open Science Networks"
+
+    [CI Compass](https://ci-compass.org/){target=_blank} - provides expertise and active support to cyberinfrastructure practitioners at USA NSF Major Facilities in order to accelerate the data lifecycle and ensure the integrity and effectiveness of the cyberinfrastructure upon which research and discovery depend.
+
+    [Earth Science Information Partners (ESIP) Federation](https://www.esipfed.org/){target=_blank} -  is a 501(c)(3) nonprofit supported by NASA, NOAA, USGS and 130+ member organizations.
+
+    [Internet2](https://internet2.edu/){target=_blank} - is a community providing cloud solutions, research support, and services tailored for Research and Education. 
+
+    [Minority Serving Cyberinfrastructure Consortium (MS-CC)](https://www.ms-cc.org/){target=_blank} envisions a transformational partnership to promote advanced cyberinfrastructure (CI) capabilities on the campuses of Historically Black Colleges and Universities (HBCUs), Hispanic-Serving Institutions (HSIs), Tribal Colleges and Universities (TCUs), and other Minority Serving Institutions (MSIs). 
+
+    [NASA Transform to Open Science (TOPS)](https://github.com/nasa/Transform-to-Open-Science){target=_blank} - coordinates efforts designed to rapidly transform agencies, organizations, and communities for Earth Science
+
+    [OpenScapes](https://www.openscapes.org/){target=_blank} - is an approach for doing better science for future us
+
+    [The Quilt](https://www.thequilt.net/){target=_blank} - non-profit regional research and education networks collaborate to develop, deploy and operate advanced cyberinfrastructure that enables innovation in research and education.
+
+??? Info ":fontawesome-solid-earth-oceania: Oceania Open Science Networks"
+
+    [New Zealand Open Research Network](https://nzorn.netlify.app/) - New Zealand Open Research Network (NZORN) is a collection of researchers and research-associated workers in New Zealand.
+
+    [Australia & New Zealand Open Research Network](https://www.anzopenresearch.org/) - ANZORN is a network of local networks distributed without Australia and New Zealand.
 
 ---
 
+## Self Assessment
