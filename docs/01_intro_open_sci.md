@@ -20,13 +20,13 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
 ??? Quote "Definitions"
 
-    **"Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [(Wikipedia definition)](https://en.wikipedia.org/wiki/Open_science){target=_blank}**
+    "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
 
     - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
     
-    - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
-    
-    - Open and Collaborative Science Network's [Open Science Manifesto](https://ocsdnet.org/manifesto/open-science-manifesto/){target=_blank}
+    "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
+
+    Open and Collaborative Science Network's [Open Science Manifesto](https://ocsdnet.org/manifesto/open-science-manifesto/){target=_blank}
 
     ??? Example "Six Pillars :material-pillar: of Open Science"
 
@@ -45,14 +45,6 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
         ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
-    
-??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
-
-    Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
-    
-    (There is even a [Searchable Index](https://awesome-indexed.mathew-davies.co.uk/){target=_blank} of Awesome Lists)
-
-    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
 [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
@@ -62,35 +54,41 @@ Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blan
 ``` mermaid
 flowchart LR
 
-id1([open science]) --> id3([open publishing]) & id4([open data]) & id5([open tools])
+id1([open science]) --> id3([publishing]) & id4([data]) & id5([open source software])
 
-id3([open publishing]) -->  id41([open access]) & id42([open reviews]) & id43([open methods]) & id44([educational resources]) 
+id3([publishing]) -->  id41([access]) & id42([reviews]) & id43([methods]) & id44([educational resources]) 
 
-id5([open source software]) --> id8([open repositories]) & id10([open services]) & id101([open workflows]) & id12([version control systems])
+id5([open source software]) --> id13([container registries]) & id10([services]) & id101([workflows]) & id12([version control systems])
 
-id8([open repositories]) -->  id13([container registries])
+id12([version control systems]) --> id101([workflows])
 
-id12([version control]) --> id101([open workflows])
+id13([container registries]) --> id101([workflows])
 
-id13([container registries]) --> id101([open workflows])
+id14([public data registry]) --> id101([workflows])
 
-id14([public data registry]) --> id101([open workflows])
-
-id10([open services]) --> id101([open workflows]) 
+id10([services]) --> id101([workflows]) 
 
 id44([educational resources]) --> id21([university libraries])
 
-id21([university libraries]) --> id101([open workflows])
+id21([university libraries]) --> id101([workflows])
 
-id22([federal data archives]) --> id101([open workflows]) 
+id22([federal data archives]) --> id101([workflows]) 
 
-id4([open data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
+id4([data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
 
-id101([open workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
+id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
 
 ```
 
-Figure: Hypothetical relationships of digital Open Science as a Mermaid Diagram 
+Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
+
+!!! Tip ":dark_sunglasses: Awesome Lists of Open Science"
+
+    Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
+    
+    (There is even a [Searchable Index](https://awesome-indexed.mathew-davies.co.uk/){target=_blank} of Awesome Lists)
+
+    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
 ### **:material-pillar: Open Access Publications**
 
@@ -178,12 +176,6 @@ Figure: Hypothetical relationships of digital Open Science as a Mermaid Diagram
 
 ### **:material-pillar: Open Data**
 
-??? Tip "DIKW Pyramid"
-    
-    Data are the basis of our understanding the natural world. The Data-Information-Knowledge-Wisdom (DIKW) pyramid describes for us how data are refined into information and knowledge.
-
-    [![dikw](https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg)](https://en.wikipedia.org/wiki/DIKW_pyramid){target=_blank}
-
 Open Data are a critical aspect of open science. There are three key attributes of Open Data:
 
 * Availability and accessibility
@@ -196,75 +188,92 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
     "Open data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike." - [Open Data Handbook](https://opendatahandbook.org/guide/en/what-is-open-data/){target=_blank}
 
-    [Wikipedia definition](https://en.wikipedia.org/wiki/Open_data){target=_blank}
+    [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_data){target=_blank}
+
+??? Tip "DIKW Pyramid"
+    
+    Data are the basis of our understanding the natural world. The Data-Information-Knowledge-Wisdom (DIKW) pyramid describes for us how data are refined into information and knowledge.
+
+    [![dikw](https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg)](https://en.wikipedia.org/wiki/DIKW_pyramid){target=_blank}
 
 ??? Tip "FAIR & CARE Principles"
-
-    :material-magnify: :material-access-point: :fontawesome-solid-gears: :material-recycle: :octicons-people-24: :fontawesome-solid-building-columns: :fontawesome-solid-hands-holding-circle: :material-scale-balance:
-
-    The FAIR acronym and principles were defined in a March 2016 paper in the journal Scientific Data by a consortium of scientists and organizations
 
     [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
 
     [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
 
-    [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. 
-
-    [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
+    [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
     
-    [US Indigenous Data Sovereignty Network](https://usindigenousdata.org/){target=_blank}
+    [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
 
 ??? Tip "LOD Cloud"
     
-    [The Linked Open Data Cloud](https://lod-cloud.net/){target=_blank} shows how data can be linked to one another. 
+    [The Linked Open Data Cloud](https://lod-cloud.net/){target=_blank} shows how data are [linked to one another](https://www.w3.org/standards/semanticweb/data){target=_blank} forming the basis of the [semantic web :material-wikipedia:](https://en.wikipedia.org/wiki/Semantic_Web){target=_blank}.
 
     [![linked open data](https://lod-cloud.net/clouds/lod-cloud.svg)](https://lod-cloud.net/clouds/lod-cloud.svg){target=_blank}
 
 ### **:material-pillar: Open Educational Resources**
 
+[![open educational resources](https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg){width=240}](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources)
+
+??? Quote "Definitions"
+
+    "Open Educational Resources (OER) are learning, teaching and research materials in any format and medium that reside in the public domain or are under copyright that have been released under an open license, that permit no-cost access, re-use, re-purpose, adaptation and redistribution by others." - [UNESCO](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources){target=_blank}
+
+    [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_educational_resources){target=_blank}
+
 ??? Example "Digital Literacy Organizations"
 
-    [The Carpentries](https://carpentries.org/){target=_blank} - teaches foundational coding and data science skills to researchers worldwide.  
+    [The Carpentries](https://carpentries.org/){target=_blank} - teaches foundational coding and data science skills to researchers worldwide  
 
-    [EdX](https://www.edx.org/){target=_blank} - 
+    [EdX](https://www.edx.org/){target=_blank} - Massively Online Online Courses (not all open) hosted through University of California Berkeley
 
-    [EveryoneOn](https://www.everyoneon.org/ ){target=_blank} - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings. 
+    [EveryoneOn](https://www.everyoneon.org/ ){target=_blank} - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings 
 
-    [ConnectHomeUSA](https://connecthomeusa.org/){target=_blank} - is a movement to bridge the digital divide for HUD-assisted housing residents in the United States under the leadership of national nonprofit EveryoneOn.
+    [ConnectHomeUSA](https://connecthomeusa.org/){target=_blank} - is a movement to bridge the digital divide for HUD-assisted housing residents in the United States under the leadership of national nonprofit EveryoneOn
 
+    [Global Digital Literacy Council](https://www.gdlcouncil.org/){target=_blank} -  has dedicated more than 15 years of hard work to the creation and maintenance of worldwide standards in digital literacy
 
-    [Global Digital Literacy Council](https://www.gdlcouncil.org/){target=_blank} -  has dedicated more than 15 years of hard work to the creation and maintenance of worldwide standards in digital literacy. 
+    [IndigiData](https://indigidata.nativebio.org/){target=_blank} - training and engaging tribal undergraduate and graduate students in informatics
 
-    [National Digital Equity Center](https://digitalequitycenter.org/about-us/){target=_blank} a 501c3 non-profit, is a nationally recognized organization with a mission to close the digital divide across the United States.
+    [National Digital Equity Center](https://digitalequitycenter.org/about-us/){target=_blank} a 501c3 non-profit, is a nationally recognized organization with a mission to close the digital divide across the United States
 
-    [National Digital Inclusion Allaince](https://www.digitalinclusion.org/){target=_blank} - advances digital equity by supporting community programs and equipping policymakers to act.
+    [National Digital Inclusion Allaince](https://www.digitalinclusion.org/){target=_blank} - advances digital equity by supporting community programs and equipping policymakers to act
 
     [Net Literacy](https://www.netliteracy.org/){target=_blank}
 
     [Open Educational Resources Commons](https://www.oercommons.org/){target=_blank}
 
-    [Project Pythia](https://projectpythia.org/){target=_blank} is the education working group for Pangeo and is an educational resource for the entire geoscience community. 
+    [Project Pythia](https://projectpythia.org/){target=_blank} is the education working group for Pangeo and is an educational resource for the entire geoscience community
 
-    [Research Bazaar](https://resbaz.github.io/resbaz2021/){target=_blank} - is a worldwide festival promoting the digital literacy emerging at the centre of modern research.
+    [Research Bazaar](https://resbaz.github.io/resbaz2021/){target=_blank} - is a worldwide festival promoting the digital literacy emerging at the centre of modern research
 
-    [TechBoomers](https://techboomers.com/){target=_blank} - is an education and discovery website that provides free tutorials of popular websites and Internet-based services in a manner that is accessible to older adults and other digital technology newcomers.
+    [TechBoomers](https://techboomers.com/){target=_blank} - is an education and discovery website that provides free tutorials of popular websites and Internet-based services in a manner that is accessible to older adults and other digital technology newcomers
 
-??? Example "Education Materials"
+??? Example "Educational Materials"
 
     [Teach Together](https://teachtogether.tech/en/index.html#){target=_blank} by Greg Wilson
 
     [DigitalLearn](https://www.digitallearn.org/){target=_blank}
 
+
 ### **:material-pillar: Open Methodology**
+
+[![plos open methods](https://plos.org/wp-content/uploads/2021/08/Methods-infographic-option-c-2-edit.png)](https://plos.org/open-science/open-methods/){target=_blank}
 
 The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science) present one of the foremost platforms for sharing open methods for digital research.
 
+??? Quote "Definitions"
+
+    "An open methodology is simply one which has been described in sufficient detail to allow other researchers to repeat the work and apply it elsewhere." - [Watson (2015)](https://doi.org/10.1186/s13059-015-0669-2){target=_blank}
+
+    "Open Methodology refers to opening up methods that are used by researchers to achieve scientific results and making them publicly available." - [Open Science Network Austria](https://www.oana.at/en/about-open-science){target=_blank}
 
 ??? Example "Protocols and Bench Techniques"
 
     [BioProtocol](https://bio-protocol.org/Default.aspx){target=_blank}
 
-    [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/)
+    [Current Protocols](https://currentprotocols.onlinelibrary.wiley.com/){target=_blank}
 
     [Gold Biotechnology Protocol list](https://www.goldbio.com/search?q=&type=documentation&documentation_type=protocol){target=_blank}
 
@@ -286,9 +295,17 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
       
 ### **:material-pillar: Open Peer Review**
 
-[What is Open Peer Review?](https://f1000research.com/articles/6-588/v2#ref-59)
+[![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
 
-??? Tips "Open Peer Review"
+[Pros and Cons of Open Peer Review](https://doi.org/10.1038/6295){target=_blank}
+
+??? Quote "Definitions"
+
+    Ross-Hellauer et al. (2017) ask [What is Open Peer Review?](https://doi.org/10.12688%2Ff1000research.11369.2){target=_blank} and state that there is no single agreed upon definition
+
+    [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review){target=_blank}
+
+??? Tips "Open Peer Review Resources"
 
     [F1000Research](https://f1000research.com/){target=_blank} the first open research publishing platform. Offering open peer review rapid publication
 
@@ -301,8 +318,20 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
     [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
 
 
+
 ### **:material-pillar: Open Source Software**
 
+[![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
+
+??? Quote "Definitions"
+
+    "Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source software is developed in a decentralized and collaborative way, relying on peer review and community production." - [:material-redhat: Red Hat](https://www.redhat.com/en/topics/open-source/what-is-open-source){target=_blank}
+
+    [:material-open-source-initiative: Open Source Initiative definition](https://opensource.org/osd){target=_blank}
+
+    [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open-source_software){target=_blank}
+
+[Awesome list](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
 ## Breakout Discussion
 
@@ -424,6 +453,36 @@ Let's break out into groups again to discuss some of our motivations for doing O
 ??? Question "Do you feel that you fall into a particular "school"? If so, which one, and why?"
 
 ??? Question "Are there any motivating factors for doing Open Science that don't fit into this framework?"
+
+## Ethos of Open Science
+
+Doing Open Science requires us to understand the ethics of why working with data which do not belong to us is privileged.
+
+We must also anticipate how these could be re-used [in ways contrary to the interests of humanity](https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx){target=_blank}. 
+
+Ensure the use of [Institutional Review Boards (IRB)](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/institutional-review-boards-irbs-and-protection-human-subjects-clinical-trials){target=_blank} or your local ethical committee. 
+ 
+Areas to consider: 
+
+[![ethics assessment](https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2019/05/Self-Assessment-Map-2.0-1024x888.png)](https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/){target=_blank} 
+
+Source: [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/){target=_blank} 
+
+* Geolocation (survey, land ownership, parcel data), see [UK Statistics Authority Ethical Considerations](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/){target=_blank} 
+* Personal identification information  [US Personal Identifiable Information (PII)](https://www.dol.gov/general/ppii){target=_blank}, [General Data Protection Regulation (GDPR)](https://gdpr.eu/what-is-gdpr){target=_blank}
+* Health information [US HIPAA](https://www.hhs.gov/hipaa/index.html){target=_blank} , EU GDPR
+* Protected and Endangered Species ([US Endangered Species Act](https://www.epa.gov/laws-regulations/summary-endangered-species-act){target=_blank})
+* Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank}   
+* Artificial intelligence/machine learning [Assessment List Trustworthy AI (ALTAI)](https://futurium.ec.europa.eu/en/european-ai-alliance/pages/welcome-altai-portal){target=_blank} from the European AI Alliance
+
+[:material-wikipedia: "Nothing about us, without us"](https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us){target=_blank}
+
+- [Funnel et al. (2019)](http://dx.doi.org/10.1017/S0714980819000291){target=_blank}
+
+For more information (training):
+
+Ethics and Data Access (General Information with BioMedical and Life Sciences Data) includes [a legal and ethical checklist lesson for researchers](https://ilias.fraunhofer.de/goto.php?target=fold_15177&client_id=fraunhofer){target=_blank} around "FAIR Plus".
+
 
 ## Recommended Open Science Communities
 
