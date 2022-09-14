@@ -569,13 +569,13 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
     ??? Failure
 
-        No!!!
+        False
 
         In order for research to be open, the data need to be freely available from a digital repository, like [Data Dryad](https://datadryad.org){target=_blank}, [Zenodo.org](https://zenodo.org){target=_blank}, or [CyVerse](https://cyverse.org/data-commons){target=_blank}.
 
         Data that are 'available upon request' do not meet the FAIR data principles. 
 
-??? Question "Online Universities and Data Science Boot Camps like UArizona Online, Coursera, Udemy, etc. promote digital literacy and are Open Educational Resources?"
+??? Question "True or False: Online Universities and Data Science Boot Camps like UArizona Online, Coursera, Udemy, etc. promote digital literacy and are Open Educational Resources?"
 
     ??? Failure
 
@@ -599,7 +599,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
     ??? Failure
 
-        False.
+        No
 
         Just because you've given your name to the author(s) of the manuscript, this does not make your review open.
 
@@ -609,7 +609,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
     ??? Failure
 
-        No.
+        No
 
         Just because an author states they have given their software a permissive software license, does not make the software open source. 
 
