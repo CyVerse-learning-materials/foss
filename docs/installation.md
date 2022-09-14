@@ -15,7 +15,15 @@ We will be using several services that require you to create a user account.
 | [:material-language-markdown: HackMD](https://hackmd.io/){target=_blank} | We will use HackMD in order to facilitate daily discussions, questions and general notes. Link your HackMD using your GitHub account|
 
 !!! Info "Link to :material-language-markdown: HackMD"
-        The link to the HackMD will be posted during the synchronous meetings
+        https://hackmd.io/@cyverse-foss/r1AIPa1Zi/edit 
+
+??? Tip "Dual Monitors vs Side-by-Side"
+
+        We strongly recommend you have dual monitors set-up while attending virtual FOSS Zoom lessons.
+
+        We will be doing a lot of screen-sharing, and this will make your own interactive sessions less visible, or you will have to make them less than full screen.
+
+        If you only have one monitor, make sure to exit full screen mode on Zoom and your browser, so you can view everything side-by-side
 
 ## Required Software
 
