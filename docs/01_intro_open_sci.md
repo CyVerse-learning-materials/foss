@@ -426,7 +426,7 @@ There are many reasons to do Open Science, and presumably one or more of them br
 
 Whether you feel an ethical obligation, want to improve the quality of your work, or want to look better to funding agencies, many of the same approaches to Open Science apply.
 
-A paper from posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
+A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
 
 1.  **Democratic school**: primarily concerned with making scholarly work freely available to everyone
 
