@@ -551,3 +551,68 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 ---
 
 ## Self Assessment
+
+??? Question "True or False: All research papers published in the top journals, like Science and Nature, are always Open Access?"
+
+    ??? Failure
+
+        False
+
+        Major Research journals like [Science](https://www.science.org/content/page/open-access-aaas){target=_blank} and [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank} have an "Open Access" option when a manuscript is accepted, but they charge an extra fee to the authors to make those papers Open Access.
+
+        These [high page costs](https://www.science.org/content/article/9500-nature-journals-will-now-make-your-paper-free-read){target=_blank} are exclusionary to the majority of global scientists who cannot afford to front these costs out of pocket.
+
+        This will soon change, at least in the United States. The [Executive Branch of the federal government recently mandated](https://www.nature.com/articles/d41586-022-02351-1){target=_blank} that future federally funded research be made Open Access after 2026.
+
+
+??? Question "True or False: an article states all of the research data used in the experiments "are available upon request from the corresponding author(s)," meaning the data are "Open""
+
+    ??? Failure
+
+        No!!!
+
+        In order for research to be open, the data need to be freely available from a digital repository, like [Data Dryad](https://datadryad.org){target=_blank}, [Zenodo.org](https://zenodo.org){target=_blank}, or [CyVerse](https://cyverse.org/data-commons){target=_blank}.
+
+        Data that are 'available upon request' do not meet the FAIR data principles. 
+
+??? Question "Online Universities and Data Science Boot Camps like UArizona Online, Coursera, Udemy, etc. promote digital literacy and are Open Educational Resources?"
+
+    ??? Failure
+
+        False
+
+        These examples are for-profit programs which teach data science and computer programming online. Some may be official through public or private universities and offer credits toward a degree or a certificate. Some of these programs are [known to be predatory](https://www.highereddive.com/news/court-fines-ashford-university-and-zovio-224m-for-misleading-students/620058/){target=_blank}.
+
+        The organizations we have [listed above](#material-pillar-open-educational-resources) are Open Educational Resources - they are free and available to anyone who wants to work with them asynchronously, virtually, or in person.
+
+??? Question "Using a version control system to host the analysis code and computational notebooks, and including these in your Methods section or Supplementary Materials, is an example of an Open Methodology?"
+
+    ??? Success
+
+        Yes!
+
+        Using a VCS like GitHub or GitLab is a great step towards making your research more reproducible. 
+
+        Ways to improve your open methology can include documentation of your physical bench work, and even video recordings and step-by-step guides for every part of your project.
+
+??? Question "You are asked to review a paper for an important journal in your field. The editor asks if you're willing to release your identity to the authors, thereby "signing" your review. Is this an example of "Open Peer Review"?"
+
+    ??? Failure
+
+        False.
+
+        Just because you've given your name to the author(s) of the manuscript, this does not make your review open.
+
+        If the journal later publishes your review alongside the final manuscript, than you will have participated in an Open Review. 
+
+??? Question "You read a paper where the author(s) wrote their own code and licensed as "Open Source" software for a specific set of scientific tasks which you want to replicate. When you visit their personal website, you find the GitHub repository does not exist (because its now private). You contact the authors asking for access, but they refuse to share it 'due to competing researchers who are seeking to steal their intellectual property". Is the software open source?"
+
+    ??? Failure
+
+        No.
+
+        Just because an author states they have given their software a permissive software license, does not make the software open source. 
+
+        Always make certain there is a [LICENSE](https://choosealicense.com/licenses/){target=_blank} associated with any software you find on the internet. 
+
+        In order for the software to be open, it must follow the [Open Source Initiative definition](https://opensource.org/osd){target=_blank}
