@@ -16,6 +16,7 @@ copyright: 'Copyright &copy; 2022 CyVerse'
 
 nav:
   - 'Home': index.md
+  - 'Code of Conduct': conduct.md
   - Workshop Information: 
     - 'Before FOSS Starts': installation.md
     - 'Schedule': schedule.md

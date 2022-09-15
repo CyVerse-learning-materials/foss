@@ -16,7 +16,7 @@
 
 If you ask a dozen researchers this question, you will probably get just as many answers.
 
-This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather an holistic approach to doing science.
+This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science.
 
 ??? Quote "Definitions"
 
@@ -100,7 +100,7 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
 ??? Example "Pre-print Services"
 
-    [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation in life science communication. This is a comprehensive list of pre-print servers.
+    [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
 
     [ESSOar](https://www.essoar.org/){target=_blank} - Earth and Space Science Open Archive hosted by the American Geophysical Union.
 
@@ -371,9 +371,9 @@ To get a feel for how Open Science can be multifaceted and different for each re
 
 One of the most fundamental, and certainly the most publicized component of Open Science is the accessibility of data. 
 
-This makes sense- without access to your data, nothing else about your science can be all that open. 
+This makes sense - without access to your data, nothing else about your science can be all that open. 
 
-While we will devote an entire week of this course to data, opening up your data is only one piece of the puzzle.
+While we will devote an entire 10 weeks of this course to data, opening up your data is only one piece of the puzzle.
 
 <figure markdown>
   <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
@@ -388,11 +388,11 @@ Another component which sort of covers all of the pictured components, or at lea
 
 In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
 
-This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like p-hacking or HARKing. 
+This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging) or [HARKing](https://en.wikipedia.org/wiki/HARKing). 
 
 What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
 
-To learn more about preregistration, you can check out the , a project that provides a preregistration platform and other Open Science tools.
+To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/), a project that provides a preregistration platform and other Open Science tools.
 
 As mentioned above, it is worthwhile to think about Open Science not as a set of checkboxes, but rather a holistic approach to doing science. 
 
