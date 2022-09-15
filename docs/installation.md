@@ -15,6 +15,7 @@ We will be using several services that require you to create a user account.
 | [:material-language-markdown: HackMD](https://hackmd.io/){target=_blank} | We will use HackMD in order to facilitate daily discussions, questions and general notes. Link your HackMD using your GitHub account|
 
 !!! Info "Link to :material-language-markdown: HackMD"
+
         https://hackmd.io/@cyverse-foss/r1AIPa1Zi/edit 
 
 ??? Tip "Dual Monitors vs Side-by-Side"
