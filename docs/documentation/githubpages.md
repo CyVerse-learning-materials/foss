@@ -1,4 +1,4 @@
-# GitHub Pages - a quick start
+# GitHub Pages - quick start
 
 This is a quick introduction to [GitHub Pages](https://pages.github.com/), a simple way to use [GitHub](https://github.com/) to set up a small website written in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This page won't do everything, but you can throw
 up a basic website, use [themes](https://pages.github.com/themes/), and extend it.

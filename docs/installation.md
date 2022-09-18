@@ -31,7 +31,7 @@ We will be using several services that require you to create a user account.
 You will need to have the following software installed on your personal computer:
 
 | Software | Notes |
-| --- | --- |
+| -------- | ----- |
 | Web Browser | [:material-google-chrome: Chrome](https://www.google.com/chrome/dr/download/){target=_blank} or [:material-firefox: Firefox](https://www.mozilla.org/en-US/firefox/new/){target=_blank}. |
 | Text Editor | [:material-microsoft-visual-studio-code: VS Code](https://code.visualstudio.com/download){target=_blank} or [SublimeText](https://www.sublimetext.com/){target=_blank} |
 
