@@ -388,7 +388,7 @@ While a lot is up to you, the first step is to evaluate how FAIR you
 think your data are:
 
 !!! Question "Exercise"
-        Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resources/working-with-data/fair-data/fair-self-assessment-tool/).
+        Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
 
 ---
 
@@ -415,7 +415,7 @@ the future."
 
 (Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
-[Example DMP](https://github.com/CyVerse-learning-materials/foss/raw/mkdocs/slides/DMPFuTRES_v2.docx)
+[Example DMP](https://github.com/CyVerse-learning-materials/foss/blob/main/slides/DMPFuTRES_v2.docx)
 
 ---
 
