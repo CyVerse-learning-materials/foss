@@ -267,7 +267,7 @@ In general, data must be preserved in an appropriate long-term archive
 
 ### References and Resources
 
-[DataOne best practices](https://www.dataone.org/best-practices)
+[DataOne best practices](https://dataoneorg.github.io/Education/bestpractices/)
 
 [Center for Open Science](https://cos.io/)
 
@@ -509,9 +509,9 @@ Extra challenges for collaborative projects.
 -   https://dmptool.org/general_guidance
 -   https://dmptool.org/public_templates
 -   Professional and scholarly societies, e.g., theEcological Society of America http://www.esa.org/esa/science/data-sharing/resources-and-tools/
--   DataOne - https://www.dataone.org/best-practices
+-   DataOne - https://dataoneorg.github.io/Education/bestpractices/
 -   Data Carpentry - http://datacarpentry.org/
--   The US Geological Survey http://www.usgs.gov/datamanagement/index.php
+-   The US Geological Survey https://www.usgs.gov/data-management
 -   Repository registry (and search) service: http://www.re3data.org/
 -   Your university library
 
