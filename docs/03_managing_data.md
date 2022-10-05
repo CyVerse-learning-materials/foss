@@ -1,12 +1,13 @@
 # Managing Data
 
-## Data Management Intro
+!!! Success "Learning Objectives"
 
-!!! Info "Learning Objectives"
-        - Recognize data as the foundation of open science and be able to describe the "life cycle of data"
-        - Use self-assessments to evaluate your current data management practices
-        - Cite tools and resources to improve your data management practices
-        - Know the biggest challenge to effective data management
+    After this lesson, you should be able to:
+
+    * Recognize data as the foundation of open science and be able to describe the "life cycle of data"
+    * Use self-assessments to evaluate your current data management practices
+    * Cite tools and resources to improve your data management practices
+    * Know the biggest challenge to effective data management
 
 ### Why should you care about data management?
 
