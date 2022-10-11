@@ -1,10 +1,162 @@
-# Repetition
+# Repeatability and Reproducibility
 
-## What do we mean by repetition?
+The so-called reproducibility crisis (see [1](https://www.nature.com/articles/533452a) , [2](https://www.nature.com/collections/prbfkwmwvz) , [3](https://blogs.scientificamerican.com/observations/to-fix-the-reproducibility-crisis-rethink-how-we-do-experiments/)) is something you have
+probably heard about (and maybe one of the reasons you have come to FOSS).
+Headlines in the media (such as [Most scientists can't replicate studies by their peers](https://www.bbc.com/news/science-environment-39054778))
+definitely give pause to researchers and ordinary citizens who hope
+that the science used to recommend a course of medical treatment or design
+self-driving cars is sound.
 
-## Writing scripts
+Before we go further, it's actually important to ask what is reproducibility?
 
-## Managing Software
+!!! Question
 
-# Automation
+        How do you define reproducible science?
+        
+    ??? success "Answer"
+        In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following useful definitions:
 
+        - **Repeatability** (Same team, same experimental setup): The measurement
+            can be obtained with stated precision by the same team using the same
+            measurement procedure, the same measuring system, under the same operating
+            conditions, in the same location on multiple trials. For computational
+            experiments, this means that a researcher can reliably repeat her own
+            computation.
+        - **Replicability** (Different team, same experimental setup): The
+            measurement can be obtained with stated precision by a different team
+            using the same measurement procedure, the same measuring system, under the
+            same operating conditions, in the same or a different location on multiple
+            trials. For computational experiments, this means that an independent group
+            can obtain the same result using the author's own artifacts.
+        - **Reproducibility** (Different team, different experimental setup): The
+            measurement can be obtained with stated precision by a different team,
+            a different measuring system, in a different location on multiple trials.
+            For computational experiments, this means that an independent group can
+            obtain the same result using artifacts which they develop completely
+            independently.
+
+        The paper goes on to further simplify:
+
+        - **Methods reproducibility**: provide sufficient detail about procedures
+            and data so that the same procedures could be exactly repeated.
+        - **Results reproducibility**: obtain the same results from an independent
+            study with procedures as closely matched to the original study as
+            possible.
+        - **Inferential reproducibility**: draw the same conclusions from either an
+            independent replication of a study or a reanalysis of the original study.
+
+## Defining Reproducibility
+
+!!! question "Discussion Question"
+        How do these definitions apply to your research/teaching?
+
+        Work with your fellow learners to develop a shortlist of ways reproducibility
+        relates to your work. Try to identify challenges and even successes you'd
+        like to share.
+
+Often, when we say "reproducibility" we mean all or at least several of the
+concepts the proceeding discussion encompasses. Really, reproducibility can be
+thought of as set values such as some laboratories express in a code of conduct,
+see for example [Ross-Ibarra Lab code of conduct](http://www.rilab.org/expectations.html) or [Bahlai Lab Policies](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md).
+Reproducibility comes from our obligations and desires to work ethically,
+honestly, and with confidence that the data and knowledge we produce is done
+has integrity. Reproducibility is also a "spectrum of practices", not a
+single step. (See figure below from [Peng, 2011](ttps://science.sciencemag.org/content/334/6060/1226)).
+
+![spectrum](assets/reproducibility-spectrum.png)
+
+Assuming you have taken in the potentially anxiety inducing information above,
+the most important thing to know is that there is a lot of help to make
+reproducibility a foundation of all of your research.
+
+## Repeatability: a first step
+
+A big first step on the road to reproducibility is **repeatability**. In the context of computation, this means that you should be able to reliably generate the same results.
+
+In many ways, this is the biggest hurdle to reproducibility, as it often requires the biggest leap in skills. You can think of repeatability in a few ways.
+
+
+!!! question "Discussion Question"
+	Have you ever had any hurdles to reproducing your work?
+
+	Have you ever run into a problem that prevented you from generating the same results, figures, analyses as before? Have you ever lost time trying to figure out how you (or a collaborator) got a particular result? What were the issues you ran into, and how might you have solved them?
+
+## Software Management
+
+Have you ever tried to run a script, only to realize you had updated a package without knowing, and now the script doesn't work? 
+
+Package managers can be extremely helpful in keeping software versions aligned with projects.
+
+In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
+
+## Automation
+
+In the process of making your work more repeatable, you will often be trying to reduce the amount of work you're doing "by hand". Reducing the human input necessary at each step of a project is a key to reliably reproducing the same results, but it can also help save you a lot of time in the long run.
+
+Have you ever manually edited a figure for a manuscript, only to be asked to change something that negated all your manual edits? Well, in the short run, it may have been quicker to just tinker with the graph by hand, but in the long run, figuring out how to use code to generate the whole thing would have saved you time. 
+
+Automating tasks often comes with an up-front cost, but it is important for the eventual reproducibility of the work, and will often save you time in the short run. 
+
+Automation also tends to make tasks scale more easily (editing 10 rows of data by hand is fine, editing 10,000 is much harder), adapt to new scenarios, and extend to future projects.
+
+!!! question "Discussion Question"
+	What are some tasks you have automated or want to automate?
+
+        Have you ever successfully automated a task? Found a way to make something scale or take less time? What was the task, and how did you do it? Finally, are there any things you wish you could automate? What are some barriers to automating them?
+
+While we often think about writing scripts to clean data, run analyses, and generate figures, there are even more parts of a research project that can be automated. Here are a few examples:
+
+	- data validation
+	- model checking/validation
+	- software installation
+	- report/manuscript generation
+	- citation management
+	- email/GitHub/Slack notifications
+	- workflow itself (using things like make, Snakemake, Nextflow, targets)
+
+Code can be thought of as a set of machine-actionable instructions, or instructions that we write for a computer to follow. What other sets of instructions do you have, either written down or in your head? How can you turn them into something machine-actionable?
+
+## Disposability
+
+A great approach to repeatability/reproducbility is to ask "could I generate my results if I lost X?"
+
+What might happen to your work if:
+
+	- you changed some code and your script broke?
+	- you couldn't find a figure when a journal asked for it?
+	- some software got uninstalled from your computer?
+	- your laptop got stolen?
+	- some software or computing provider stopped being maintained?
+
+## Get off your own machine
+
+More and more work is being done somewhere other than a personal computer. This could be an HPC cluster at a university or a cloud computing provider. "Cloud" just means somebody else is handling the computers, and you get to use them when you need to, typically for a price.
+
+Non-local computing resources have varying levels of complexity, flexibility, cost, and scale. Some services like Binder, Colab, and VICE try to abstract more of the computational details away, letting you focus on your code (ideally). Others, like Gitpod, Codespaces, or GitHub Actions, have more limited uses (in a good way).
+
+## Dependency Hell
+
+Think for a moment about all the branching possibilities for how a computer could be set up:
+
+	- hardware: CPUs, GPUs, RAM
+	- Operating system: many flavors of Linux, MacOS, Windows
+	- Software versions: R, Python, etc.
+	- Package versions: specific R or Python packages, etc.
+
+Simply trying to get the same setup as anyone else is difficult enough, but you can also run into all sorts of dependencies. Let's say you try to update a package to match the version someone else used for a project. However, after updating it, you realize you need to update 3 other packages. After that, you realize you need a newer version of R. You finally manage to get everything set up, but when you go back to a different project the next week, nothing works! All those updates made your code for your other project break. You spend a week fixing your code to work with the newer software, and you're finally done... but now your advisor gives you a dataset 10x the size and says you'll need to run it on the cloud. You throw your laptop out the window and move to the woods to live the life of a hermit.
+
+All jokes aside, dealing with software dependencies can be extremely frustrating, and so can setting stuff up on a remote location. It can be even more frustrating if you're trying to reproduce results but you don't actually know the entire software stack used to generate them.
+
+There is a way to handle all of these frustrations at once:
+
+## Containers
+
+Ok, to be fair, working with containers will also be frustrating. But the beautiful thing about working with containers is that you can handle all of the hard stuff at the start of a project, and you won't have to worry about things changing later on. 
+
+What **are** containers?
+
+Containers are reproducible computing environments that contain an operating system, software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share.
+
+The most popular type of container is a Docker container, 
+
+RStudio has a great analogy 
