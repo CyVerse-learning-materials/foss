@@ -106,13 +106,13 @@ Automation also tends to make tasks scale more easily (editing 10 rows of data b
 
 While we often think about writing scripts to clean data, run analyses, and generate figures, there are even more parts of a research project that can be automated. Here are a few examples:
 
-	- data validation
-	- model checking/validation
-	- software installation
-	- report/manuscript generation
-	- citation management
-	- email/GitHub/Slack notifications
-	- workflow itself (using things like make, Snakemake, Nextflow, targets)
+- data validation
+- model checking/validation
+- software installation
+- report/manuscript generation
+- citation management
+- email/GitHub/Slack notifications
+- workflow itself (using things like make, Snakemake, Nextflow, targets)
 
 Code can be thought of as a set of machine-actionable instructions, or instructions that we write for a computer to follow. What other sets of instructions do you have, either written down or in your head? How can you turn them into something machine-actionable?
 
@@ -122,11 +122,11 @@ A great approach to repeatability/reproducbility is to ask "could I generate my 
 
 What might happen to your work if:
 
-	- you changed some code and your script broke?
-	- you couldn't find a figure when a journal asked for it?
-	- some software got uninstalled from your computer?
-	- your laptop got stolen?
-	- some software or computing provider stopped being maintained?
+- you changed some code and your script broke?
+- you couldn't find a figure when a journal asked for it?
+- some software got uninstalled from your computer?
+- your laptop got stolen?
+- some software or computing provider stopped being maintained?
 
 ## Get off your own machine
 
@@ -138,10 +138,10 @@ Non-local computing resources have varying levels of complexity, flexibility, co
 
 Think for a moment about all the branching possibilities for how a computer could be set up:
 
-	- hardware: CPUs, GPUs, RAM
-	- Operating system: many flavors of Linux, MacOS, Windows
-	- Software versions: R, Python, etc.
-	- Package versions: specific R or Python packages, etc.
+- hardware: CPUs, GPUs, RAM
+- Operating system: many flavors of Linux, MacOS, Windows
+- Software versions: R, Python, etc.
+- Package versions: specific R or Python packages, etc.
 
 Simply trying to get the same setup as anyone else is difficult enough, but you can also run into all sorts of dependencies. Let's say you try to update a package to match the version someone else used for a project. However, after updating it, you realize you need to update 3 other packages. After that, you realize you need a newer version of R. You finally manage to get everything set up, but when you go back to a different project the next week, nothing works! All those updates made your code for your other project break. You spend a week fixing your code to work with the newer software, and you're finally done... but now your advisor gives you a dataset 10x the size and says you'll need to run it on the cloud. You throw your laptop out the window and move to the woods to live the life of a hermit.
 
@@ -159,4 +159,4 @@ Containers are reproducible computing environments that contain an operating sys
 
 The most popular type of container is a Docker container, 
 
-RStudio has a great analogy 
+RStudio has a 
