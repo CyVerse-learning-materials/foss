@@ -160,3 +160,78 @@ Containers are reproducible computing environments that contain an operating sys
 The most popular type of container is a Docker container, 
 
 RStudio has a 
+
+---
+
+## Reproducibility tutorial I: Setting up your project
+
+This section is going to cover a short tutorial spanning this and the next two reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
+
+What you'll be using:
+- [GitHub](https://github.com/)
+- [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+- [Conda](https://docs.conda.io/en/latest/)
+- [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/)
+- [JetStream2](https://jetstream-cloud.org/)
+
+### Connecting to JetStream2
+
+JetStream2 is a service that allows users to create and connect to Virtual Machines (VMs). We have created a number of virtual machines for you to connect to and follow this tutorial, however, you're welcome to use your own machine for this.
+
+!!! Warning 
+        For security reasons, the google sheets with the IP addresses and passwords is shared solemnly through the HackMD.
+
+In order to connect to JetStream2, you will be using the SSH (Secure Shell) protocol, which allows connections over a network. To connect to a machine, open a termial and enter your user number and IP as follows and press enter:
+
+```
+ssh <user>@<IP>
+```
+
+When asked for the password, copy and paste the corresponding password from the google sheets and press enter. **Note**: you will NOT see the password being pasted (but it's there!)
+
+### Install Conda
+
+[Conda](https://docs.conda.io/en/latest/) is a popular tool for installing software. Typically software you want to use requires other software (dependancies) to be installed. Conda can manage all of this for you. Each available Conda package is part of a “recipe” that includes everything you need to run your software. There are different versions of Conda, including some specific for bioinformatics like [Bioconda](https://bioconda.github.io/). We will install Conda and then use it to install some of the tools we need. We will install a lightweight version of Conda called [MiniConda](https://docs.conda.io/en/latest/miniconda.html).
+
+```
+# Download conda and add right permissions
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+
+# install conda silenty (-b) and update (-u)
+./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+
+# Restart bash so that conda is activated
+source ~/.bashrc
+```
+
+You'll be able to tell when conda is active when next `(base)` is present next to the to the shell prompt such as
+
+```
+(base) user@machine
+```
+
+Conda should now be installed and can be used to install other necessary packages!
+
+### Installing packages through conda
+
+Conda makes installing packages simple. Due to it's widespread use, conda has a large number of widely available packages; You can search for these in at https://anaconda.org/.
+
+We are going to to use conda to install snakemake.
+
+```
+# See what snakemake version are available
+conda search -c bioconda snakemake
+
+# Let's choose the 5.8.1.
+conda install -c bioconda -c conda-forge -y snakemake=5.8.1
+
+# verify the installation
+snakemake --version
+```
+
+You can view the installed conda packages by doing 
+
+```
+conda list
+```
