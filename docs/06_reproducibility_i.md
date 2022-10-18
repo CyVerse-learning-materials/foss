@@ -238,7 +238,7 @@ conda list
 
 ### GitHub repository setup and documentation
 
-Create a repository on GitHub to document your work:
+- Create a repository on GitHub to document your work:
     - On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
     - Clone your repository to the VM with `<repository_url>.git` (find the url under the green **Code** button)
     - Add your history to the README file with `history >> README.md` and add meaninigful comments. `.md` is the MarkDown extension that is used for formatting in GitHub (and HackMD!); Read more about [here](https://www.markdownguide.org/basic-syntax/). A well documented document may look similar to:
@@ -283,7 +283,7 @@ Create a repository on GitHub to document your work:
 
 ### Prepping tutorial data
 
-Ordinarily, we might we might create a few folders for our raw data, and we will get to those steps shortly. For now, let’s get the metadata from our SRA experiment. Unfortunately, SRA does not have a way to automatically do this, so we will we go to the SRA Run Selector for the chosen sample data.
+- Ordinarily, we might we might create a few folders for our raw data, and we will get to those steps shortly. For now, let’s get the metadata from our SRA experiment. Unfortunately, SRA does not have a way to automatically do this, so we will we go to the SRA Run Selector for the chosen sample data.
 
     - Go to [SRA Study SRP170758](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP170758&o=acc_s%3Aa) and click on *Metadata* to download *SraRunTable.txt* and save the table (text file) to your computer.
     - We then use [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) to copy *SraRunTable.txt* from your local system to the JetStream2 VM. Alternatively:
