@@ -168,11 +168,11 @@ RStudio has a
 This section is going to cover a short tutorial spanning this and the next two reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
 
 What you'll be using:
-- [GitHub](https://github.com/)
-- [Snakemake](https://snakemake.readthedocs.io/en/stable/)
-- [Conda](https://docs.conda.io/en/latest/)
-- [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/)
-- [JetStream2](https://jetstream-cloud.org/)
+    - [GitHub](https://github.com/) (already installed)
+    - [Docker](https://www.docker.com/) (already installed)
+    - [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+    - [Conda](https://docs.conda.io/en/latest/)
+    - [JetStream2](https://jetstream-cloud.org/)
 
 ### Connecting to JetStream2
 
@@ -235,3 +235,67 @@ You can view the installed conda packages by doing
 ```
 conda list
 ```
+
+### GitHub repository setup and documentation
+
+Create a repository on GitHub to document your work:
+    - On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
+    - Clone your repository to the VM with `<repository_url>.git` (find the url under the green **Code** button)
+    - Add your history to the README file with `history >> README.md` and add meaninigful comments. `.md` is the MarkDown extension that is used for formatting in GitHub (and HackMD!); Read more about [here](https://www.markdownguide.org/basic-syntax/). A well documented document may look similar to:
+
+    ```
+    # reproducibility-tutorial
+
+    ## Computer setup
+
+    ### Download conda and add right permissions
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+    chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+
+    ### install conda silenty (-b) and update (-u)
+    ./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+
+    ### Restart bash so that conda is activated
+    source ~/.bashrc
+
+    ### See what snakemake version are available
+    conda search -c bioconda snakemake
+
+    ### Let's choose the 5.8.1.
+    conda install -c bioconda -c conda-forge -y snakemake=5.8.1
+
+    ### verify the installation
+    snakemake --version
+
+    ### Cloned git repository
+    git clone https://github.com/<user>/<repository>.git
+    ```
+
+    - Add, commit and push your changes
+
+    ```
+    git add .
+    git commit -m "adding initial documentation"
+    git push
+    ```
+    
+    - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!**
+
+### Prepping tutorial data
+
+Ordinarily, we might we might create a few folders for our raw data, and we will get to those steps shortly. For now, let’s get the metadata from our SRA experiment. Unfortunately, SRA does not have a way to automatically do this, so we will we go to the SRA Run Selector for the chosen sample data.
+
+    - Go to [SRA Study SRP170758](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP170758&o=acc_s%3Aa) and click on *Metadata* to download *SraRunTable.txt* and save the table (text file) to your computer.
+    - We then use [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) to copy *SraRunTable.txt* from your local system to the JetStream2 VM. Alternatively:
+    
+    ```
+    # SFTP can get unnecessarily complicated: download through wget instead
+    wget https://raw.githubusercontent.com/CosiMichele/reproducibility-tutorial/main/SraRunTable.txt
+    ```
+
+    - Create an experiment folder and then an sra_filesmetadata folder to keep with the SRA files.
+
+    ```
+    mkdir -p ~/reproducibility-tutorial/experiment/sra_files/metadata
+    mv SraRunTable.txt ~/reproducibility-tutorial/experiment/sra_files/metadata
+    ```
