@@ -40,10 +40,26 @@ During Week 9, you will meet with your group to a) discuss your
 experiences applying your skill or concept, b) give each other help with
 sticking points you may have encountered, and c) put together a short
 (5-10 minute) presentation to be given to the rest of the groups during
-Week 10. The presentation can be based off of [this discussion
-guide](), and should focus on the challenges and tips you may have for
+Week 10. 
+
+### Discussion Guide
+
+Your small group presentation should focus on the challenges and tips you may have for
 other FOSS attendees who want to utilize your skill or concept in the
-future.
+future. Here are some prompts that you should address during your presentation:
+
+- What was the general topic or skill that members of your group worked on?
+- What are some challenges you encountered while working on your projects?
+	- Were you able to overcome these challenges? If so, how?
+	- Where did you look for help?
+	- Do any roadblocks remain? How might you try to overcome them?
+- Are there any new things you learned while working on your project?
+	- Did you end up using any new or different tools?
+- What are some tips you might have for other FOSS attendees who want to work on the same topic/skill in the future?
+	- Are there any pitfalls to avoid?
+- What things do you want to do next?
+	- How might you "level up" in the current topic/skill compared to your project's current state?
+	- Are there any other FOSS skills that you want to tackle next? If so, how might they integrate with the topic/skill you focused on for your project?
 
 ---
 
