@@ -19,28 +19,29 @@ your experiences with the rest of the attendees.
 
 ## Description
 
-For the project, you will choose one skill or concept from FOSS and apply it to one of your own projects. The level we're looking for is a topic that spans half of a meeting to a full meeting. For
-instance, you could write a Data Management Plan for an upcoming project
-proposal, or you could reorganize an existing project and put all the
+For the project, you will choose one (or more) skill(s) or concept(s) from FOSS and apply it to one of your own projects. 
+
+For instance, you could *write a Data Management Plan* for an upcoming project
+proposal, or you could *reorganize* an existing project and put all the
 code onto GitHub. You should try to identify what level your project
 is currently at for a given topic, and attempt to move up a level. This
 means you can try out a skill or idea you've never used before, or go
 to a more advanced level for something you already do.
 
-You can get started on this part of the project **at any time**! The
-earlier you start, the more you'll be able to accomplish. If the topic
-you'd like to cover is only taught later on in the course, and you're
-feeling extra ambitious, you can get a headstart if you want.
-
 You should have your skill/topic chosen by **Week 8**, and you will then
-enter your name / topic into [this spreadsheet](). We'll use this to
-put together small groups.
+enter your name / topic into a spreadsheet (shared during the week 8 session). We'll use this to
+put together small groups. Week 8 will be your time to work on your personal project and ask us questions.
 
-During Week 9, you will meet with your group to a) discuss your
-experiences applying your skill or concept, b) give each other help with
-sticking points you may have encountered, and c) put together a short
-(5-10 minute) presentation to be given to the rest of the groups during
-Week 10. The presentation can be based off of [this discussion
+With the information you shared in the spreadsheets, we will identify potential groups of people working on a similar topic to yours. Groups will be revealed on **Week 9**.
+
+During **Week 9**, you will meet with your group to:
+
+1. discuss your experiences applying your skill or concept, 
+2. give each other help with sticking points you may have encountered
+3. put together a short (5-10 minute) presentation to be given to the rest of the groups during
+**Week 10**. 
+
+The presentation can be based off of [this discussion
 guide](), and should focus on the challenges and tips you may have for
 other FOSS attendees who want to utilize your skill or concept in the
 future.
@@ -49,9 +50,9 @@ future.
 
 ## Timeline
 
--   Week 8: finalize topic choice and enter into [spreadsheet]()
--   Between Week 8 and Week 9 meetings: work on your project
--   Week 9: group discussions and presentation prep
+-   Week 8: finalize topic choice and share it with us
+-   Between Week 8 and Week 9: work on your project individually
+-   Week 9: group discussions with members with a similar topic and presentation prep
 -   Week 10: group presentations
 
 ---
