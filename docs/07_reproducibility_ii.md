@@ -46,4 +46,16 @@
 
         You need to run a web service
         
-                
+---
+
+## Reproducibility tutorial II: Using snakemake and containers for your workflow
+
+This is a continuation of the reproducibility tutorial started on [week 6](06_reproducibility_i.md/#reproducibility-tutorial-i-setting-up-your-project).
+
+We restart today by reconnecting to your VMs (remember, you can do this on your own machine!). The google sheets with IDs and Passwords is shared in the HackMD.
+
+```
+ssh <user>@<IP>
+```
+
+Reactivate your 

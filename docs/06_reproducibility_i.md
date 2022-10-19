@@ -176,7 +176,7 @@ RStudio has a number of [available Docker containers](https://rocker-project.org
 
 ## Reproducibility tutorial I: Setting up your project
 
-This section is going to cover a short tutorial spanning this and the next two reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
+This section is going to cover a short tutorial spanning this and [the next](07_reproducibility_ii.md/#reproducibility-tutorial-ii-using-snakemake-and-containers-for-your-workflow) reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
 
 What you'll be using:
 
@@ -223,7 +223,11 @@ You'll be able to tell when conda is active when next `(base)` is present next t
 (base) user@machine
 ```
 
-Conda should now be installed and can be used to install other necessary packages!
+Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment.
+
+```
+conda create --name myenv
+```
 
 ### Installing packages through conda
 
@@ -247,6 +251,8 @@ You can view the installed conda packages by doing
 ```
 conda list
 ```
+
+You can export your environment 
 
 ### GitHub repository setup and documentation
 
