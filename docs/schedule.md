@@ -22,6 +22,6 @@ Eastern Time)
 | **Week 5** | Oct 13 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | Jason Williams | Michele Cosi |
 | **Week 6** | Oct 20 | [Reproducibility I](06_reproducibility.md): <br> - Software installation <br> - Software management | Michele Cosi | Michele Cosi |
 | **Week 7** | Oct 27 | Reproducibility II: <br> - Brief intro to containers | TBA | TBA |
-| **Week 8** | Nov 3 | Reproducibility III: <br>  - Cloud computing <br> Flex time: <br> - Ask questions <br> - More detail on previous topics | TBA | TBA |
+| **Week 8** | Nov 3 | Flex time: <br> - Ask questions <br> - More detail on previous topics <br> Final project work time | 
 | **Week 9** |  Nov 10 | Review, summary and addressing final project inquiries |
 | **Week 10** | Nov 17 | [Final project](final_project/overview.md) presentations |
