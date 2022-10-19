@@ -155,11 +155,16 @@ Ok, to be fair, working with containers will also be frustrating. But the beauti
 
 What **are** containers?
 
-Containers are reproducible computing environments that contain an operating system, software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share.
+Containers are reproducible computing environments that contain an operating system (OS), software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely solemnly on the host OS (and the container engine). 
 
-The most popular type of container is a Docker container, 
+![VM_vs_containers](https://cloudblogs.microsoft.com/uploads/prod/sites/37/2019/07/Demystifying-containers_image1.png)
+Source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/)
 
-RStudio has a 
+A popular container platform is [Docker](https://www.docker.com/):material-docker:([wikipedia](https://en.wikipedia.org/wiki/Docker_(software)), ["what is a Docker container?"](https://www.docker.com/resources/what-container/)), hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
+
+RStudio has a number of [available Docker containers](https://rocker-project.org/images/versioned/rstudio.html), each for different use cases and maintained by the [Rocker Project](https://rocker-project.org/). 
+
+[Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
 
 ---
 
@@ -168,11 +173,12 @@ RStudio has a
 This section is going to cover a short tutorial spanning this and the next two reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
 
 What you'll be using:
-    - [GitHub](https://github.com/) (already installed)
-    - [Docker](https://www.docker.com/) (already installed)
-    - [Snakemake](https://snakemake.readthedocs.io/en/stable/)
-    - [Conda](https://docs.conda.io/en/latest/)
-    - [JetStream2](https://jetstream-cloud.org/)
+
+- [GitHub](https://github.com/) (already installed)
+- [Docker](https://www.docker.com/) (already installed)
+- [Snakemake](https://snakemake.readthedocs.io/en/stable/)
+- [Conda](https://docs.conda.io/en/latest/)
+- [JetStream2](https://jetstream-cloud.org/)
 
 ### Connecting to JetStream2
 
