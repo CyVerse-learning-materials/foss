@@ -77,9 +77,11 @@ In many ways, this is the biggest hurdle to reproducibility, as it often require
 
 
 !!! question "Discussion Question"
-	Have you ever had any hurdles to reproducing your work?
+	**Have you ever had any hurdles to reproducing your work?**
 
-	Have you ever run into a problem that prevented you from generating the same results, figures, analyses as before? Have you ever lost time trying to figure out how you (or a collaborator) got a particular result? What were the issues you ran into, and how might you have solved them?
+	- Have you ever run into a problem that prevented you from generating the same results, figures, analyses as before?
+	- Have you ever lost time trying to figure out how you (or a collaborator) got a particular result?
+	- What were the issues you ran into, and how might you have solved them?
 
 ## Software Management
 
@@ -100,9 +102,13 @@ Automating tasks often comes with an up-front cost, but it is important for the 
 Automation also tends to make tasks scale more easily (editing 10 rows of data by hand is fine, editing 10,000 is much harder), adapt to new scenarios, and extend to future projects.
 
 !!! question "Discussion Question"
-	What are some tasks you have automated or want to automate?
+	**What are some tasks you have automated or want to automate?**
 
-        Have you ever successfully automated a task? Found a way to make something scale or take less time? What was the task, and how did you do it? Finally, are there any things you wish you could automate? What are some barriers to automating them?
+	- Have you ever successfully automated a task?
+	- Found a way to make something scale or take less time? 
+	- What was the task, and how did you do it? 
+	- Are there any things you wish you could automate?
+	- What are some barriers to automating them?
 
 While we often think about writing scripts to clean data, run analyses, and generate figures, there are even more parts of a research project that can be automated. Here are a few examples:
 
