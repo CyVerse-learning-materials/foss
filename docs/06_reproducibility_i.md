@@ -210,8 +210,9 @@ When asked for the password, copy and paste the corresponding password from the 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
 chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
 
-# install conda silenty (-b) and update (-u)
+# install conda silenty (-b) and update (-u) and initial conda run
 ./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+~/miniconda3/bin/conda init
 
 # Restart bash so that conda is activated
 source ~/.bashrc
@@ -223,10 +224,22 @@ You'll be able to tell when conda is active when next `(base)` is present next t
 (base) user@machine
 ```
 
-Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment.
+Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment (select `y` when prompted).
 
 ```
 conda create --name myenv
+```
+
+Activate your new environment with 
+
+```
+conda activate myenv
+```
+
+You can see the list of environments you can activate by doing
+
+```
+conda env list
 ```
 
 ### Installing packages through conda
@@ -239,9 +252,13 @@ We are going to to use conda to install snakemake.
 # See what snakemake version are available
 conda search -c bioconda snakemake
 
-# Let's choose the 5.8.1.
-conda install -c bioconda -c conda-forge -y snakemake=5.8.1
+# Let's choose the latest, in this case 7.16.0
+conda install -c bioconda -c conda-forge -y snakemake=7.16.0
+```
 
+conda will proceed and install all the dependencies required by snakemake
+
+```
 # verify the installation
 snakemake --version
 ```
@@ -252,7 +269,11 @@ You can view the installed conda packages by doing
 conda list
 ```
 
-You can export your environment 
+In order to make your environment reproducible, conda allows you to export your environment.
+
+```
+conda env export > myenv.yml
+```
 
 ### GitHub repository setup and documentation
 
@@ -270,8 +291,9 @@ You can export your environment
     wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
     chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
 
-    ### install conda silenty (-b) and update (-u)
+    ### install conda silenty (-b), update (-u) and initial start
     ./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+    ~/miniconda3/bin/conda init
 
     ### Restart bash so that conda is activated
     source ~/.bashrc
@@ -279,11 +301,14 @@ You can export your environment
     ### See what snakemake version are available
     conda search -c bioconda snakemake
 
-    ### Let's choose the 5.8.1.
-    conda install -c bioconda -c conda-forge -y snakemake=5.8.1
+    ### Let's choose the 7.16.0
+    conda install -c bioconda -c conda-forge -y snakemake=7.16.0
 
     ### verify the installation
     snakemake --version
+
+    ### Exported conda environment
+    conda env export > myenv.yml
 
     ### Cloned git repository
     git clone https://github.com/<user>/<repository>.git
