@@ -323,22 +323,3 @@ conda env export > myenv.yml
     ```
     
     - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!**
-
-### Prepping tutorial data
-
-- Ordinarily, we might we might create a few folders for our raw data, and we will get to those steps shortly. For now, let’s get the metadata from our SRA experiment. Unfortunately, SRA does not have a way to automatically do this, so we will we go to the SRA Run Selector for the chosen sample data.
-
-    - Go to [SRA Study SRP170758](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP170758&o=acc_s%3Aa) and click on *Metadata* to download *SraRunTable.txt* and save the table (text file) to your computer.
-    - We then use [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) to copy *SraRunTable.txt* from your local system to the JetStream2 VM. Alternatively:
-    
-    ```
-    # SFTP can get unnecessarily complicated: download through wget instead
-    wget https://raw.githubusercontent.com/CosiMichele/reproducibility-tutorial/main/SraRunTable.txt
-    ```
-
-    - Create an experiment folder and then an sra_filesmetadata folder to keep with the SRA files.
-
-    ```
-    mkdir -p ~/reproducibility-tutorial/experiment/sra_files/metadata
-    mv SraRunTable.txt ~/reproducibility-tutorial/experiment/sra_files/metadata
-    ```
