@@ -57,7 +57,7 @@ Before we go further, it's actually important to ask what is reproducibility?
 Often, when we say "reproducibility" we mean all or at least several of the
 concepts the proceeding discussion encompasses. Really, reproducibility can be
 thought of as set values such as some laboratories express in a code of conduct,
-see for example [Ross-Ibarra Lab code of conduct](http://www.rilab.org/expectations.html) or [Bahlai Lab Policies](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md).
+see for example [Ross-Ibarra Lab code of conduct](https://rilab.ucdavis.edu/expectations.html) or [Bahlai Lab Policies](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md).
 Reproducibility comes from our obligations and desires to work ethically,
 honestly, and with confidence that the data and knowledge we produce is done
 has integrity. Reproducibility is also a "spectrum of practices", not a
