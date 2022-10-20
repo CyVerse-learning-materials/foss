@@ -61,7 +61,7 @@ see for example [Ross-Ibarra Lab code of conduct](https://rilab.ucdavis.edu/expe
 Reproducibility comes from our obligations and desires to work ethically,
 honestly, and with confidence that the data and knowledge we produce is done
 has integrity. Reproducibility is also a "spectrum of practices", not a
-single step. (See figure below from [Peng, 2011](ttps://science.sciencemag.org/content/334/6060/1226)).
+single step. (See figure below from [Peng, 2011](https://science.sciencemag.org/content/334/6060/1226)).
 
 ![spectrum](assets/reproducibility-spectrum.png)
 
