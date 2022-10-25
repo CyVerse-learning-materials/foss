@@ -109,10 +109,10 @@ We have to build on this by specifying some shell command that will create this.
 ```
 rule import_from_sra:
     output:
-       "~/learn-snake/sra_files/SRR8245081/SRR8245081.sra"
+       "learn-snake/sra_files/SRR8245081/SRR8245081.sra"
     shell:
   # Use a docker run command and mount a director
-       "docker run -v ~/learn-snake/:/experiment/ "
+       "docker run -v /home/$USER/learn-snake/:/experiment/ "
   # set a working directory - this will be created if needed
        "--workdir /experiment/sra_files "
   # set the docker container
@@ -124,7 +124,7 @@ rule import_from_sra:
   # get our desired accession
        "SRR8245081 "
   # output to our desired directory
-       "--output-directory /experiment/sra_files/"
+       "--output-directory /experiment/sra_files/ || true"
 ```
 
 !!! tip
@@ -150,30 +150,28 @@ QUAST_CONTAINER="quay.io/biocontainers/quast:5.0.2--py27pl526ha92aebf_0"
 
 rule all:
     input:
-        sra=expand("~/reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra",
+        sra=expand("/home/$USER/reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra",
                 accession=ACCESSION),
-        fastq=expand("~/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}.fastq",
+        fastq=expand("/home/$USER/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}.fastq",
                 accession=ACCESSION,
                 reads=READS),
-        fastq_trimmed=expand("~/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}_trimmed.fastq",
+        fastq_trimmed=expand("/home/$USER/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}_trimmed.fastq",
                 accession=ACCESSION,
                 reads=READS),
-        fastp_report=expand("~/reproducibility-tutorial/experiment/fastq_files/{accession}_fastp_report.html",
+        fastp_report=expand("/home/$USER/reproducibility-tutorial/experiment/fastq_files/{accession}_fastp_report.html",
                 accession=ACCESSION),
-        assembly_contigs=expand("~/reproducibility-tutorial/experiment/{accession}_assembly/contigs.fasta",
+        assembly_contigs=expand("/home/$USER/reproducibility-tutorial/experiment/{accession}_assembly/contigs.fasta",
                 accession=ACCESSION),
-        reference_genome=expand("~/reproducibility-tutorial/experiment/reference_genome/{reference_genome_fna}.fna",
+        reference_genome=expand("/home/$USER/reproducibility-tutorial/experiment/reference_genome/{reference_genome_fna}.fna",
                 reference_genome_fna=REFERENCES_BASE),
-        reference_annotation=expand("~/reproducibility-tutorial/experiment/reference_genome/{reference_genome_gff}.gff",
+        reference_annotation=expand("/home/$USER/reproducibility-tutorial/experiment/reference_genome/{reference_genome_gff}.gff",
                 reference_genome_gff=REFERENCES_BASE),
-        quast_assembly_report=expand("~/reproducibility-tutorial/experiment/{accession}_assembly_stats/report.html",
+        quast_assembly_report=expand("/home/$USER/reproducibility-tutorial/experiment/{accession}_assembly_stats/report.html",
                 accession=ACCESSION)
-
-
 
 rule SRA_Import:
     output:
-        "~/reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra"
+        "reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra"
     params:
         container={SRA_TOOLS_CONTAINER},
         command="prefetch",
@@ -182,7 +180,7 @@ rule SRA_Import:
         outputdirectory="/experiment/sra_files"
     shell:
         "docker run --user {params.user} "
-        " -v ~/reproducibility-tutorial/experiment:/experiment "
+        " -v /home/$USER/reproducibility-tutorial/experiment:/experiment "
         "--workdir /experiment "
         "{params.container} {params.command} "
         "-p {params.progress} "
@@ -191,7 +189,7 @@ rule SRA_Import:
 
 rule SRA_to_fastq:
     input:
-        sra=expand("~/reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra",
+        sra=expand("reproducibility-tutorial/experiment/sra_files/{accession}/{accession}.sra",
                 accession=ACCESSION)
     output:
         "~/reproducibility-tutorial/experiment/fastq_files/{accession}.sra_1.fastq",
@@ -205,7 +203,7 @@ rule SRA_to_fastq:
         8
     shell:
         "docker run --user {params.user} "
-        " -v ~/reproducibility-tutorial/experiment:/experiment "
+        " -v /home/$USER/reproducibility-tutorial/experiment:/experiment "
         "--workdir /experiment/sra_files/{ACCESSION}/ "
         "{params.container} {params.command} "
         "{ACCESSION}.sra "
@@ -213,7 +211,7 @@ rule SRA_to_fastq:
 
 rule fastq_qc:
     input:
-        fastq=expand("~/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}.fastq",
+        fastq=expand("reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}.fastq",
             accession=ACCESSION,
             reads=READS)
     output:
@@ -229,7 +227,7 @@ rule fastq_qc:
         8
     shell:
         "docker run --user {params.user} "
-        " -v ~/reproducibility-tutorial/experiment:/experiment "
+        " -v /home/$USER/reproducibility-tutorial/experiment:/experiment "
         "--workdir /experiment/fastq_files/ "
         "{params.container} {params.command} "
         "-V "
@@ -244,7 +242,7 @@ rule fastq_qc:
 
 rule SPAdes_assembly:
     input:
-        fastq_trimmed=expand("~/reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}_trimmed.fastq",
+        fastq_trimmed=expand("reproducibility-tutorial/experiment/fastq_files/{accession}.sra{reads}_trimmed.fastq",
             accession=ACCESSION,
             reads=READS)
     output:
@@ -258,7 +256,7 @@ rule SPAdes_assembly:
         8
     shell:
         "docker run --user {params.user} "
-        " -v ~/reproducibility-tutorial/experiment:/experiment "
+        " -v /home/$USER/reproducibility-tutorial/experiment:/experiment "
         "--workdir /experiment/fastq_files/ "
         "{params.container} {params.command} "
         "-1 /experiment/fastq_files/{ACCESSION}.sra_1_trimmed.fastq "
@@ -270,18 +268,18 @@ rule import_reference_genome:
         reference_genome="~/reproducibility-tutorial/experiment/reference_genome/{REFERENCES_BASE}.fna",
         reference_annotation="~/reproducibility-tutorial/experiment/reference_genome/{REFERENCES_BASE}.gff"
     shell:
-        "mkdir -p ~/reproducibility-tutorial/experiment/reference_genome &&  "
-        "cd ~/reproducibility-tutorial/experiment/reference_genome && "
+        "mkdir -p reproducibility-tutorial/experiment/reference_genome &&  "
+        "cd reproducibility-tutorial/experiment/reference_genome && "
         "wget {REFERENCE_URLS} && "
         "gzip -d {REFERENCES_BASE}*.gz"
 
 rule assembly_stats:
     input:
-        assembly_contigs=expand("~/reproducibility-tutorial/experiment/{accession}_assembly/contigs.fasta",
+        assembly_contigs=expand("reproducibility-tutorial/experiment/{accession}_assembly/contigs.fasta",
             accession=ACCESSION),
-        reference_genome=expand("~/reproducibility-tutorial/experiment/reference_genome/{reference_genome_fna}.fna",
+        reference_genome=expand("reproducibility-tutorial/experiment/reference_genome/{reference_genome_fna}.fna",
             reference_genome_fna=REFERENCES_BASE),
-        reference_annotation=expand("~/reproducibility-tutorial/experiment/reference_genome/{reference_genome_gff}.gff",
+        reference_annotation=expand("reproducibility-tutorial/experiment/reference_genome/{reference_genome_gff}.gff",
             reference_genome_gff=REFERENCES_BASE)
     output:
         "~/reproducibility-tutorial/experiment/{accession}_assembly_stats/report.html"
@@ -296,8 +294,8 @@ rule assembly_stats:
         8
     shell:
         "docker run --user {params.user} "
-        " -v ~/reproducibility-tutorial/experiment:/experiment "
-        "--workdir ~/reproducibility-tutorial/experiment/reference_genome/ "
+        " -v /home/$USER/reproducibility-tutorial/experiment:/experiment "
+        "--workdir reproducibility-tutorial/experiment/reference_genome/ "
         "{params.container} {params.command} "
         "-o {params.outputdirectory} "
         "--features gene:/experiment/reference_genome/{REFERENCES_BASE}.gff "
