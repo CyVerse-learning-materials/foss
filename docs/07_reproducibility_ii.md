@@ -156,7 +156,11 @@ snakemake -s Snakefile -c all
 
         Ultimately, when using snakemake you have to know what you want *before you start*, which is a challenge to new snakemake users.
 
-This is what a full pipeline would look like
+        Read more on [Snakefiles and rules](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#dynamic-files) and [snakemake options](https://snakemake.readthedocs.io/en/stable/executing/cli.html).
+
+### A full snakemake pipeline
+
+This is what a full snakemake pipeline would look like.
 
 !!! Warning
         This pipeline will **break** due to the issues highlighted beforehand. We will re-visit this pipeline once the issues will be adderessed, or use different pipeline management tools such as [nextflow](https://github.com/nextflow-io/nextflow).
