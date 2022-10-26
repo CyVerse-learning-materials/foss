@@ -8,17 +8,15 @@
     * Search for and run a Docker contaienr locally or on a remote system
     * Understand how Version Controlled Software and public data can be used in a container
 
-## A Carpenty introduction to Containers
+!!! Tip "Container Camp: an introdution to Docker containers"
 
-??? Tip "The Carpentries"
+    [Introduction to Docker](https://cyverse-learning-materials.github.io/container-camp/docker/intro/){target=_blank}
 
-    [Containers in Research Workflows](https://carpentries-incubator.github.io/docker-introduction/reproduciblity/index.html)
+??? Tip "Alt: The Carpentries Introductory Container workshop"
 
-## The CyVerse Container Camp
-
-??? Tip "Container Camp: an introdution to Docker containers"
-
-    [Introduction to Docker](https://cyverse-learning-materials.github.io/container-camp/docker/intro/)
+    The Carpentries have an incubator workshop on [Docker Containers](https://carpentries-incubator.github.io/docker-introduction/){target=_blank} 
+    
+    [Containers in Research Workflows](https://carpentries-incubator.github.io/docker-introduction/reproduciblity/index.html){target=_blank}
 
 ## Self Assessment
 
@@ -84,7 +82,7 @@ If you're using your computer, you could use conda to install docker:
 conda install -c conda-forge docker
 ```
 
-However visiting the [official docker installation documentation](https://docs.docker.com/get-docker/) is suggested.
+However visiting the [official docker installation documentation](https://docs.docker.com/get-docker/){target=_blank} is suggested.
 
 For this tutorial, we are going to use specific docker containers. Containers are "in-use" docker images; to make things quicker, we can pull these images and make them available.
 
@@ -145,7 +143,7 @@ snakemake -s Snakefile -c all
 !!! Warning "Known issues"
         Since the conception of this tutorial, an issue with docker writing permissions has arisen when running docker through Snakemake. **Running the above script will end with an error, however the files are written and created as necessary.**
 
-        You can read about [error 13 here](https://stackoverflow.com/questions/13207450/permissionerror-errno-13-in-python), and the [mapping docker volumes issue here](https://stackoverflow.com/questions/64727231/docker-causes-one-of-the-commands-exited-with-non-zero-exit-code-note-that-sna) if interested. 
+        You can read about [error 13 here](https://stackoverflow.com/questions/13207450/permissionerror-errno-13-in-python), and the [mapping docker volumes issue here](https://stackoverflow.com/questions/64727231/docker-causes-one-of-the-commands-exited-with-non-zero-exit-code-note-that-sna){target=_blank} if interested. 
 
 !!! Note "Understanding snakemake"
         As previously commented, snakemake runs through statemets. Each statement is summarized in a set of rules (equivalent to jobs). Each rule is run subsequently after another finishes, with the output of one job being used as the input of the next; Snakemake uses inputs and outputs as "checkpoints" between jobs.
@@ -156,14 +154,14 @@ snakemake -s Snakefile -c all
 
         Ultimately, when using snakemake you have to know what you want *before you start*, which is a challenge to new snakemake users.
 
-        Read more on [Snakefiles and rules](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#dynamic-files) and [snakemake options](https://snakemake.readthedocs.io/en/stable/executing/cli.html).
+        Read more on [Snakefiles and rules](https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#dynamic-files) and [snakemake options](https://snakemake.readthedocs.io/en/stable/executing/cli.html){target=_blank}.
 
 ### A full snakemake pipeline
 
 This is what a full snakemake pipeline would look like.
 
 !!! Warning
-        This pipeline will **break** due to the issues highlighted beforehand. We will re-visit this pipeline once the issues will be adderessed, or use different pipeline management tools such as [nextflow](https://github.com/nextflow-io/nextflow).
+        This pipeline will **break** due to the issues highlighted beforehand. We will re-visit this pipeline once the issues will be adderessed, or use different pipeline management tools such as [nextflow](https://github.com/nextflow-io/nextflow){target=_blank}.
 
 !!! tip
         Change `<USER>` to your username! you can find out your username through the command `whoami` or by looking at the username on the google sheets.
