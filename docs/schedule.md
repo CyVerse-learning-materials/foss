@@ -5,6 +5,9 @@ Eastern Time)
 - Afternoon session: Thursdays 3:30PM - 5:00PM US Arizona Mountain Standard Time (6:30PM - 8:00PM US
 Eastern Time)
 
+!!! Note "Daylight savings"
+    For weeks 9-10, FOSS will be starting at 10:00AM (morning session) and 2:30PM (afternoon session) in an attempt to accomodate attendees that have been affected by  daylight savings.
+    
 ## Zoom Info
 
 - Zoom room: https://arizona.zoom.us/j/86152278453
