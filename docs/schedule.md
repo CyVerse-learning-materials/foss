@@ -6,7 +6,7 @@ Eastern Time)
 Eastern Time)
 
 !!! Note "Daylight savings"
-    For weeks 9-10, FOSS will be starting at 10:00AM AZ (morning session) and 2:30PM AZ (afternoon session) in an attempt to accomodate attendees that have been affected by  daylight savings.
+    For weeks 9-10, FOSS will be starting at 12:00AM AZ (11:00AM PST) for the morning session and 4:30PM AZ (3:30PM PST) for the afternoon session in an attempt to accomodate attendees that have been affected by  daylight savings.
     
 ## Zoom Info
 
