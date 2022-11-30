@@ -1,12 +1,10 @@
 # Weekly Schedule
 
-- Morning session: Thursdays 11:00AM - 1:00PM US Arizona Mountain Standard Time (2:00PM - 4:00PM US
-Eastern Time)
-- Afternoon session: Thursdays 3:30PM - 5:00PM US Arizona Mountain Standard Time (6:30PM - 8:00PM US
-Eastern Time)
+Thursdays 10 am - 12 pm US Pacific Standard Time (11am - 1pm MST/AZ; 12 pm - 2 pm CST; 1 pm - 3 pm EST)
 
-!!! Note "Daylight savings"
-    For weeks 9-10, FOSS will be starting at 12:00AM AZ (11:00AM PST) for the morning session and 4:30PM AZ (3:30PM PST) for the afternoon session in an attempt to accomodate attendees that have been affected by  daylight savings.
+
+!!! Note "Daylight Savings Time change"
+    For residents of Arizona and Hawai'i, Weeks 8, 9 and 10 of FOSS will start 1 hr earlier, at 10 am AZ (10 am Pacific; 7 am Hawaii)
     
 ## Zoom Info
 
