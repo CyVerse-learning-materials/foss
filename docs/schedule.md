@@ -10,8 +10,7 @@ Eastern Time)
     
 ## Zoom Info
 
-- Zoom room: https://arizona.zoom.us/j/86152278453
-- Meeting ID: 861 5227 8453
+- TBA
 
 ## Calendar
 
