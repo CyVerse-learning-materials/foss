@@ -1,4 +1,7 @@
 # foss-2021
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7402437.svg)](https://doi.org/10.5281/zenodo.7402437)
+
 Documentation for CyVerse Learning's Foundations of Spring 2021 Open Science Skills course.
 
 Course will take place February 9-April 21, 2021, online.
