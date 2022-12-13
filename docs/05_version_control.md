@@ -1,5 +1,15 @@
 # Version Control
 
+
+!!! Success "Learning Objectives"
+        
+    After this lesson, you should be able to:
+
+    *  Understand the basics of `git` as a resource for reproducible programming
+    *  Describe tools and approaches to creating your `git` Repositories
+    *  Describe best practices for maintaining GitHub Organizations and Repositories
+    *  Maintain own GitHub user profile and repositories
+
 Version control refers to keeping track of the version of a file, set of
 files, or a whole project.
 
