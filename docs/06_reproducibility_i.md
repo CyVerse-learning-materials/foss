@@ -1,5 +1,14 @@
 # Repeatability and Reproducibility
 
+!!! Success "Learning Objectives"
+        
+    After this lesson, you should be able to:
+
+    *  Describe what reproducibility is
+    *  Discriminate between reproducibility, replicability, and repeatability
+    *  Explain why reproducible research is valuable 
+    *  Set up a software project with an environment
+
 The so-called reproducibility crisis (see [1](https://www.nature.com/articles/533452a) , [2](https://www.nature.com/collections/prbfkwmwvz) , [3](https://blogs.scientificamerican.com/observations/to-fix-the-reproducibility-crisis-rethink-how-we-do-experiments/)) is something you have
 probably heard about (and maybe one of the reasons you have come to FOSS).
 Headlines in the media (such as [Most scientists can't replicate studies by their peers](https://www.bbc.com/news/science-environment-39054778))
