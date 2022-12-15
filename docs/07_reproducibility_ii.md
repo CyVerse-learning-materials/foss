@@ -5,8 +5,8 @@
     After this lesson, you should be able to:
 
     * Explain what containers are used for in reproducible research contexts
-    * Search for and run a Docker contaienr locally or on a remote system
-    * Understand how Version Controlled Software and public data can be used in a container
+    * Search for and run a Docker container locally or on a remote system
+    * Understand how version control and data can be used inside a container
 
 !!! Tip "Container Camp: an introdution to Docker containers"
 
