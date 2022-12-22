@@ -2,7 +2,7 @@
 
 [![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/){target=_blank} 
 
-# Welcome to Foundational Open Science Skills (FOSS) Fall 2022!
+# Welcome to Foundational Open Science Skills (FOSS) Spring 2023!
 
 ## Workshop Structure
 
