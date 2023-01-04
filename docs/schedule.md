@@ -9,7 +9,7 @@ Thursdays 11 am - 1 pm US Mountain Standard Time (11am - 1pm MST/AZ; 12 pm - 2 p
 ## Calendar
 
 | Week | Date | Content |Instructor(s) |
-|---|---|---|---|---|
+|---|---|---|---|
 | **Week 0** | Jan 19 | pre-FOSS workshop: <br> - [Unix shell basics](00_basics.md#the-unix-shell) <br> - [Git basics](00_basics.md#git-and-github) | Michele Cosi |
 | **Week 1** | Jan 26 | Workshop introduction: <br> - [Intro to Open Science](01_intro_open_sci.md) | Tyson Swetnam |
 | **Week 2** | Feb 2 | - [Project management](02_project_management.md) <br> - [Intro to CyVerse](https://learning.cyverse.org/what_is_cyverse/){target=_blank}| Tyson Swetnam | 
