@@ -4,6 +4,8 @@
 
 # Welcome to Foundational Open Science Skills (FOSS) Spring 2023!
 
+![header](assets/foss_title.png)
+
 ## Workshop Structure
 
 Synchronously, we will meet each week virtually for one and a half to two hours for discussion and hands-on activities with our instructors. 
@@ -25,7 +27,6 @@ The Capstone Project involves two phases:
 Phase 1: will be taking a skill or concept you've learned, generally pertaining to one week's worth of instruction, and putting it into action for one of your own projects. This could be something like improving documentation for an existing project or creating a Data Management Plan for a project proposal.
 
 Phase 2: working with a group of other FOSS learners who tackled your same topic. Together, you will discuss challenges, tips, and next steps for that topic, and put together a short presentation that will be delivered to the rest of the FOSS attendees durning our final meeting.
-
 
 ---
 
