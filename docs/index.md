@@ -1,6 +1,4 @@
-[![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank}
-
-[![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/){target=_blank} 
+[![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank} [![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/){target=_blank} 
 
 # Welcome to Foundational Open Science Skills (FOSS) Spring 2023!
 
@@ -8,7 +6,7 @@
 
 ## Workshop Structure
 
-Synchronously, we will meet each week virtually for one and a half to two hours for discussion and hands-on activities with our instructors. 
+Synchronously, we will meet each week virtually for two hours to discuss and have hands-on activities with our instructors. 
 
 Each week we will discuss a new topic, ranging from data management to documentation to software management (see [schedule](./schedule.md)). 
 
