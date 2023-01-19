@@ -4,7 +4,7 @@ Thursdays 11 am - 1 pm US Mountain Standard Time (11am - 1pm MST/AZ; 12 pm - 2 p
     
 ## Zoom Info
 
-- TBA
+- https://arizona.zoom.us/j/87386173667
 
 ## Calendar
 
