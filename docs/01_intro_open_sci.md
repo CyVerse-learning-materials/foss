@@ -46,6 +46,11 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
+<figure markdown>
+  <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
+    <figcaption> [Gallagher et al (2020)](https://doi.org/10.7554/eLife.81075){target=_blank} Box 2: six core principles of Open Science. </figcaption>
+</figure>
+
 [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
 Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
@@ -381,22 +386,6 @@ To get a feel for how Open Science can be multifaceted and different for each re
 
 ### Components of Open Science
 
-One of the most fundamental, and certainly the most publicized component of Open Science is the accessibility of data. 
-
-This makes sense - without access to your data, nothing else about your science can be all that open. 
-
-While we will devote an entire 10 weeks of this course to data, opening up your data is only one piece of the puzzle.
-
-<figure markdown>
-  <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
-    <figcaption> [Gallagher et al (2020)](https://doi.org/10.7554/eLife.81075){target=_blank} Box 2: six core principles of Open Science. </figcaption>
-</figure>
-
-This figure demonstrates the multiple intersecting pieces of Open Science, which go beyond simply making data accessible. 
-
-While we focus primarily on Open Data, Open Source, and Open Methodology in FOSS, it's worth considering how other parts of the scientific process might be opened up more broadly.
-
-Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as **Open Process**. 
 
 In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
 
@@ -422,7 +411,6 @@ Doing Open Science is no different, but the list of skills may be even greater, 
 
 This also makes teaching Open Science quite challenging- we will cover topics ranging from "soft skills" like project management and internal communications to more technical skills like software management and containers. 
 
-We could probably teach this whole workshop on each single topic, but we clearly don't have the time to do that. 
 
 Instead, we will focus on a higher-level look at the landscape of Open Science and introduce you to a wide variety of skills and concepts with the idea that you can go on to find ways to implement them in your own work.
 
