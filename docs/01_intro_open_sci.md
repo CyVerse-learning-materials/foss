@@ -390,7 +390,7 @@ This figure demonstrates the multiple intersecting pieces of Open Science, which
 
 While we focus primarily on Open Data, Open Source, and Open Methodology in FOSS, it's worth considering how other parts of the scientific process might be opened up more broadly.
 
-Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as Open Process. 
+Another component which sort of covers all of the pictured components, or at least links a lot of them together, might be referred to as **Open Process**. 
 
 In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
 
