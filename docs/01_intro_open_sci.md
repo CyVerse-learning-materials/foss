@@ -90,6 +90,8 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
+To help move the scientific community toward open science, NASA has declared [2023 is the year of Open Science!](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank} 
+
 ### **:material-pillar: Open Access Publications**
 
 [![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=300}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
@@ -100,7 +102,7 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
 ??? Tip "New Open Access Mandates in US"
 
-    The White House Office of Science and Technology (OSTP) has recently released a [policy](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/) stating that tax-payer funded research must by open access by 2026.
+    The White House Office of Science and Technology (OSTP) has recently released a [policy](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/){target=_blank} stating that tax-payer funded research must by open access by 2026.
 
 ??? Example "Pre-print Services"
 
