@@ -16,7 +16,8 @@
 
 If you ask a dozen researchers this question, you will probably get just as many answers.
 
-This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science.
+This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
+
 
 ??? Quote "Definitions"
 
@@ -310,6 +311,18 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     [Springer Nature Experiments](https://experiments.springernature.com/){target=_blank}
       
+??? Tip "Concept of Preregistration"
+
+    In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
+
+    This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging) or [HARKing](https://en.wikipedia.org/wiki/HARKing). 
+
+    What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
+
+    To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/), a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
+
+
+
 ### **:material-pillar: Open Peer Review**
 
 [![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
@@ -383,36 +396,6 @@ To get a feel for how Open Science can be multifaceted and different for each re
     ??? Example "Are any of the :material-pillar: pillars more important than the others?"
 
     ??? Example "Are there any :material-pillar: pillars not identified that you think should be considered?"
-
-### Components of Open Science
-
-
-In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
-
-This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging) or [HARKing](https://en.wikipedia.org/wiki/HARKing). 
-
-What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
-
-To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/), a project that provides a preregistration platform and other Open Science tools.
-
-As mentioned above, it is worthwhile to think about Open Science not as a set of checkboxes, but rather a holistic approach to doing science. 
-
-In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
-
-While you might not achieve some platonic ideal of openness for a variety of reasons, you can still make great progress in moving your science towards the Open end of the spectrum. 
-
-In reality, a large scientific project probably consists of multiple spectra; you can move your data towards the open end of the spectrum while your software remains less open, and vice versa. 
-
-All this is to say that doing Open Science is not a static set of goals you must achieve, it is a process that grows and changes with your science itself.
-
-One of the biggest challenges of doing science is that you might have to wear many different hats: domain expert, lab manager, statistician, teacher, mentor, grant writer, manuscript author, public speaker... the list goes on. 
-
-Doing Open Science is no different, but the list of skills may be even greater, since the goal is now to openly communicate each step of the process to a broader audience. 
-
-This also makes teaching Open Science quite challenging- we will cover topics ranging from "soft skills" like project management and internal communications to more technical skills like software management and containers. 
-
-
-Instead, we will focus on a higher-level look at the landscape of Open Science and introduce you to a wide variety of skills and concepts with the idea that you can go on to find ways to implement them in your own work.
 
 ??? Question "What characteristics might a paper, project, lab group require to qualify as doing *Open Science*"
 
