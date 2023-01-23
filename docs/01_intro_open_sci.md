@@ -98,6 +98,10 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     "Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- [OpenAccess.nl](https://www.openaccess.nl/en/what-is-open-access){target=_blank}
 
+??? Tip "New Open Access Mandates in US"
+
+    The White House Office of Science and Technology (OSTP) has recently released a [policy](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/) stating that tax-payer funded research must by open access by 2026.
+
 ??? Example "Pre-print Services"
 
     [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
