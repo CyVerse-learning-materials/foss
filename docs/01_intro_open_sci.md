@@ -108,6 +108,41 @@ To help move the scientific community toward open science, NASA has declared [20
 
     The White House Office of Science and Technology (OSTP) has recently released a [policy](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/){target=_blank} stating that tax-payer funded research must by open access by 2026.
 
+
+
+??? Example "Financial Support for Open Access Publishing Fees"
+
+    There are mechanisms for helping to pay for the additional costs of publishing research as open access:
+
+    [SciDevNet](https://www.scidev.net/global/){target=_blank}
+
+    [Health InterNetwork Access to Research Initiative (HINARI)](http://www.emro.who.int/information-resources/hinari/){target=_blank}
+
+    Some institutions offer support for managing publishing costs (check to see if your institution has such support):
+    
+    [University of Arizona Open Access Investment Fund](https://new.library.arizona.edu/about/awards/oa-fund){target=_blank}
+    
+    [Colorado University at Boulder Open Access Fund](https://www.colorado.edu/libraries/research/open-access/open-access-fund){target=_blank}
+
+    [Max Planck Digital Library](https://group.springernature.com/gb/group/media/press-releases/landmark-agreement-between-springer-nature-and-mpdl/18498782){target=_blank} - German authors can have OA fees in Springer Nature research journals paid for.
+
+    [Bibsam Consortium](https://www.springernature.com/gp/open-research/institutional-agreements/oaforsweden){target=_blank} - Swedish authors can have OA fees in Springer Nature research journals paid for.
+
+??? Example "Open Access Publishing"
+
+    Major publishers have provided access points for publishing your work 
+
+    [AAAS](https://www.science.org/content/page/open-access-aaas){target=_blank}
+
+    [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank}
+
+    [American Geophysical Union](https://www.agu.org/Publish-with-AGU/Publish/Open-Access){target=_blank}
+
+    [Commonwealth Scientific and Industrial Research Organisation (CSIRO)](https://acsopenscience.org/australia-csiro/){target=_blank}
+
+    [Open Research Europe](https://open-research-europe.ec.europa.eu/){target=_blank}
+
+
 ??? Example "Pre-print Services"
 
     [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
@@ -157,39 +192,7 @@ To help move the scientific community toward open science, NASA has declared [20
         [SportrXiv](https://sportrxiv.org/){target=_blank} - is an open access preprint for Sports sciences.
 
         [ThesisCommons](https://thesiscommons.org/) - open Theses
-
-??? Example "Financial Support for Open Access Publishing Fees"
-
-    There are mechanisms for helping to pay for the additional costs of publishing research as open access:
-
-    [SciDevNet](https://www.scidev.net/global/){target=_blank}
-
-    [Health InterNetwork Access to Research Initiative (HINARI)](http://www.emro.who.int/information-resources/hinari/){target=_blank}
-
-    Some institutions offer support for managing publishing costs (check to see if your institution has such support):
-    
-    [University of Arizona Open Access Investment Fund](https://new.library.arizona.edu/about/awards/oa-fund){target=_blank}
-    
-    [Colorado University at Boulder Open Access Fund](https://www.colorado.edu/libraries/research/open-access/open-access-fund){target=_blank}
-
-    [Max Planck Digital Library](https://group.springernature.com/gb/group/media/press-releases/landmark-agreement-between-springer-nature-and-mpdl/18498782){target=_blank} - German authors can have OA fees in Springer Nature research journals paid for.
-
-    [Bibsam Consortium](https://www.springernature.com/gp/open-research/institutional-agreements/oaforsweden){target=_blank} - Swedish authors can have OA fees in Springer Nature research journals paid for.
-
-??? Example "Open Access Publishing"
-
-    Major publishers have provided access points for publishing your work 
-
-    [AAAS](https://www.science.org/content/page/open-access-aaas){target=_blank}
-
-    [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank}
-
-    [American Geophysical Union](https://www.agu.org/Publish-with-AGU/Publish/Open-Access){target=_blank}
-
-    [Commonwealth Scientific and Industrial Research Organisation (CSIRO)](https://acsopenscience.org/australia-csiro/){target=_blank}
-
-    [Open Research Europe](https://open-research-europe.ec.europa.eu/){target=_blank}
-
+        
 ### **:material-pillar: Open Data**
 
 Open Data are a critical aspect of open science. There are three key attributes of Open Data:
