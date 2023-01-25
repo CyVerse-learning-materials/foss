@@ -90,7 +90,7 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
     
-    (There is even a [Searchable Index](https://awesome-indexed.mathew-davies.co.uk/){target=_blank} of Awesome Lists)
+    (There is even a [Searchable Index](https://awesomelists.top/#/){target=_blank} of Awesome Lists)
 
     We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
