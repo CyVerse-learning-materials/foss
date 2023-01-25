@@ -55,10 +55,10 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
         ??? Tip "Gallagher's 6 Open Science Principles"
         
-        <figure markdown>
-         <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-        703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
-           <figcaption> [Gallagher et al (2020)](https://doi.org/10.7554/eLife.81075){target=_blank} Box 2: six core principles of Open Science.                </figcaption>
-        </figure>
+                <figure markdown>
+                 <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-        703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
+                   <figcaption> [Gallagher et al (2020)](https://doi.org/10.1038/s41559-020-1109-6){target=_blank} Box 2: six core principles of Open Science.                </figcaption>
+                </figure>
 
 
 ``` mermaid
