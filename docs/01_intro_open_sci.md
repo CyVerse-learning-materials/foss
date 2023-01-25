@@ -47,14 +47,17 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
+     !!! Tip "Foster Open Science Diagram"
+        
+        [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+
+         Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
+
+
 <figure markdown>
   <a href="https://doi.org/10.1038/s41559-020-1109-6" target="blank" rel="gallagher">![gallagher](https://media.springernature.com/relative-r300-703_m1050/springer-static/image/art%3A10.1038%2Fs41559-020-1109-6/MediaObjects/41559_2020_1109_Figa_HTML.png){ width="700" } </a>
     <figcaption> [Gallagher et al (2020)](https://doi.org/10.7554/eLife.81075){target=_blank} Box 2: six core principles of Open Science. </figcaption>
 </figure>
-
-[![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
-
-Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
 
 
 ``` mermaid
@@ -321,8 +324,6 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/){target=_blank}, a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
-
-
 ### **:material-pillar: Open Peer Review**
 
 [![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
@@ -347,8 +348,6 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
 
-
-
 ### **:material-pillar: Open Source Software**
 
 [![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
@@ -363,7 +362,7 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 [Awesome list](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
-## Breakout Discussion
+## Breakout Discussion 1
 
 As you already know, being a scientist requires you to wear many hats, and trying to do Open Science is no different.
 
@@ -429,6 +428,8 @@ A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-0002
 
 While many researchers may be motivated by one or more of these aspects, we will not necessarily focus on any of them in particular. If anything, FOSS may be slightly more in the Infrastructure school, because we aim to give you the tools to do Open Science based on your own underlying motivations.
 
+## Breakout Discussion 2
+
 Let's break out into groups again to discuss some of our motivations for doing Open Science.
 
 ??? Question "What motivates you to do Open Science?"
@@ -469,8 +470,8 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ## Recommended Open Science Communities
 
-[![The Turing Way](https://the-turing-way.netlify.app/_static/logo.jpg){width=150}](https://the-turing-way.netlify.app/welcome.html)
-[![NASA Transform to Open Science](https://raw.githubusercontent.com/nasa/Transform-to-Open-Science/main/assets/logos/Tops_logo%404x.png){width=150}](https://github.com/nasa/Transform-to-Open-Science)
+[![The Turing Way](https://the-turing-way.netlify.app/_static/logo-detail-with-text.svg){width=150}](https://the-turing-way.netlify.app/welcome.html)
+[![NASA Transform to Open Science](https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png){width=150}](https://github.com/nasa/Transform-to-Open-Science)
 [![Foster Open Science](https://www.fosteropenscience.eu/images/logos/FOSTER-hires.png){width=300}](https://www.fosteropenscience.eu/)
 [![The Carpentries](https://carpentries.org/assets/img/TheCarpentries.svg)](https://carpentries.org/)
 [![COS](https://www.cos.io/hubfs/Cos_2020/Images/cos_logo.png){width=200}](https://www.cos.io/)
