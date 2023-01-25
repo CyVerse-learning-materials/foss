@@ -47,7 +47,7 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
-        !!! Tip "Foster Open Science Diagram"
+        ??? Tip "Foster Open Science Diagram"
         
             [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
