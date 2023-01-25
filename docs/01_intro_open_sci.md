@@ -49,7 +49,7 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
         !!! Tip "Foster Open Science Diagram"
         
-            [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+            [foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)(https://www.fosteropenscience.eu/resources){target=_blank} 
 
              Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
 
