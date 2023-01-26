@@ -338,6 +338,8 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review){target=_blank}
 
+    A manuscript review process that includes some combination of Open Identities, Open Reports, Open Participation, and even Open Interaction
+
 ??? Tips "Open Peer Review Resources"
 
     [F1000Research](https://f1000research.com/){target=_blank} the first open research publishing platform. Offering open peer review rapid publication
