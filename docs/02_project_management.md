@@ -141,7 +141,7 @@ When we talk about project management in this section, we mean the way you organ
 
 ??? Example "Examples of Research Objects"
 
-        [Boettiger 2018](https://github.com/cboettig/noise-phenomena){target=blank}
+    [Boettiger 2018](https://github.com/cboettig/noise-phenomena){target=blank}
         
 <figure markdown>
   <a href="" target="blank" rel="ro">![ro](./assets/ro.svg){ width="800" } </a>
