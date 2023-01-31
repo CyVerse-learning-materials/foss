@@ -170,7 +170,6 @@ It can be easy to overlook sound project management, opting for a "just get it d
     <figcaption> An hour spent reorganizing a project today may save you days of headaches later on.</figcaption>
 </figure>
 
-There is no single "right way" to organize and manage a project, and your specific needs may vary, but we will introduce a basic framework that can get you headed in the right direction. It will also help us introduce more advanced topics later on, as many of the skills and approaches we teach will be far more effective if the basic project organization is sound.
 
 ??? Info "Development Methology"
 
@@ -200,16 +199,7 @@ There is no single "right way" to organize and manage a project, and your specif
     [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
 
 
-
-### Hands on
-
-For the duration of the workshop, we will be working with a basic example project pipeline, going from raw data to a simple report. While this example project is vastly simplified from a real research project, the basic steps are still found in most projects. The skills you learn to improve this example project will translate to larger and more complex research projects.
-
-Your project will almost certainly differ from this general workflow in some way, but many of the basic steps will be similar: you collect some data, manipulate it, analyze it, make some outputs, and produce some reports. 
-
-There may be many additional steps and sub-steps for each of these processes, but the key thing is how they relate to each other and how you manage the relationships and organization of various files.
-
-### Data Organization
+### Research Object Organization
 
 - Example data project organization from [UArizona Libraries](https://data.library.arizona.edu/data-management/best-practices/data-project-organization)
 - [CookieCutter Templates](https://github.com/topics/cookiecutter)
@@ -315,18 +305,8 @@ Example project structure:
 
     [:octicons-git-merge-24: ZenHub](https://www.zenhub.com/){target=_blank}
 
-??? Info "Key Concepts for Research Objects"
 
-
-    ??? Info "Project Critique Activity"
-
-        For this activity, the instructor will walk you through an example of a simple project workflow on their computer. 
-
-        Take notes on anything you notice that might be a hindrance to the openness or reproducibility of the project.
-        
-        We will then start breakout sessions for 5-10 minutes for group discussions on any issues you noticed and how you might improve on them.
-
-??? Info "Create a working directory"
+??? Info "Automate the creation a working directory"
 
     You might find a nice basic structure that works as a good starting place for many of your projects, or smaller components of big projects.
 
