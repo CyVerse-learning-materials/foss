@@ -139,6 +139,10 @@ When you create a new software, library, or package, you are becoming its parent
 
 When we talk about project management in this section, we mean the way you organize data, code, images, documents, and documentation within a project. One way to think about this is in the context of "[research objects](https://en.wikipedia.org/wiki/Research_Object){target=_blank}" which condense into a single end point (think: a URL like a digital object identifier (DOI)) where others can come to reproduce your research. 
 
+??? Example "Examples of Research Objects"
+
+        [Boettiger 2018](https://github.com/cboettig/noise-phenomena){target=blank}
+        
 <figure markdown>
   <a href="" target="blank" rel="ro">![ro](./assets/ro.svg){ width="800" } </a>
     <figcaption> A conceptual workflow for developing research objects with cyberinfrastructure</figcaption>
