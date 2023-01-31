@@ -19,11 +19,11 @@
 
 Here we use the term in two different contexts.
 
-First, we'll go over the project management of scientific labs, groups, and projects, talking about things like governance, how to develop operations manuals, laying out roles and responsibilities, planning steps and the workflows which connect them. 
+1. First, we'll go over the project management of scientific labs, groups, and projects, talking about things like governance, how to develop operations manuals, laying out roles and responsibilities, planning steps and the workflows which connect them. 
 
-Next, we'll go over project management as "[research objects](https://en.wikipedia.org/wiki/Research_Object){target=_blank}": making sure your data, code, and documents are well-organized. These are crucial for future topics like version control and reproducibility.
+2. Next, we'll go over project management as "[research objects](https://en.wikipedia.org/wiki/Research_Object){target=_blank}": making sure your data, code, and documents are well-organized. These are crucial for future topics like version control and reproducibility.
 
-## What is Project Management?
+## 1. Classic Project Management
 
 This type of overall project management may be required for some grants, and while it may be tempting to put in the minimal effort on one of the many pieces of paperwork you're required to complete, this type of overall project planning can be very useful. 
 
@@ -127,7 +127,7 @@ When you create a new software, library, or package, you are becoming its parent
 
 ---
 
-## What are Research Objects?
+## 2. Research Objects
 
 ??? Quote "Definition"
 
