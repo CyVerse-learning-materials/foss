@@ -116,7 +116,7 @@ It can be easy for certain tasks to slip through the cracks. Established roles a
 
 #### Open Source Research Software Maintainer
 
-Becoming an open source software maintainer is not to be taken likely.
+Becoming an open source software maintainer is not to be taken lightly.
 
 <figure markdown>
   <a href="https://m.xkcd.com/2347/" target="blank" rel="xkcd">![xkcd](https://imgs.xkcd.com/comics/dependency.png){ width="400" } </a>
