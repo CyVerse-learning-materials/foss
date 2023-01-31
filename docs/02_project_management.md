@@ -126,7 +126,10 @@ Becoming an open source software maintainer is not to be taken lightly.
 When you create a new software, library, or package, you are becoming its parent and guardian. 
 
 ### Development Methodology
-<figure markdown>
+
+??? Info "Development Methology"
+
+    <figure markdown>
         <a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg){ width="400" } </a>
         <figcaption> the "leaps of faith" required in Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
     </figure>
@@ -199,32 +202,7 @@ It can be easy to overlook sound project management, opting for a "just get it d
 </figure>
 
 
-??? Info "Development Methology"
 
-    <figure markdown>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg){ width="400" } </a>
-        <figcaption> the "leaps of faith" required in Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
-    </figure>
-
-    In software development, there are two common methologies which have similar applications to a research project.
-
-    [:material-wikipedia: Agile](https://en.wikipedia.org/wiki/Agile_software_development)
-    
-    - [Scrum](https://www.atlassian.com/agile/scrum) - is one technique within Agile
-
-    - [Kanban](https://www.atlassian.com/agile/kanban) - is one technique within Agile
-    
-    [:material-wikipedia: Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
-
-    <figure markdown>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png){ width="800" } </a>
-        <figcaption> the effort distribtion of Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
-    </figure>
-
-
-    [LucidChart Blog: Agile vs Waterfall vs Kanban vs Scrum ](https://www.lucidchart.com/blog/agile-vs-waterfall-vs-kanban-vs-scrum) 
-
-    [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
 
 
 ### Research Object Organization
