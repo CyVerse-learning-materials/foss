@@ -369,26 +369,6 @@ management. We'll link to some of them here.
 
 ## Self Assessment
 
-??? Question "What are things that we do with data under the auspices of "Data Management"?"
-
-    ??? Success "Answers"
-
-        -   Data collection
-        -   Data entry
-        -   Data validation
-        -   Data preservation
-        -   Metadata
-
-??? Question "What are common steps to cleaning data?"
-
-    ??? Success "Answers"
-
-        -   Validation
-        -   Exploratory analysis/sleuthing
-        -   Naming
-        -   Structuring
-        -   Consistency
-
 ??? Question "Research Objects must include all components of research: governance document, manuals, documentation, research papers, analysis code, data, software containers"
 
     ??? Failure "Answers"
