@@ -57,20 +57,6 @@ Establishing a project governance document at the onset of a project is a good w
 </figure>
 
 
-### Breakout Discussion
-
-Now we will do a breakout discussion section to talk about overall project management.
-
-??? Question "What are some project management strategies that you have found to work well?"
-
-??? Question "What is an example of a poorly managed project you were involved in? What contributed to this feeling?"
-
-??? Question "Why do you think effective project management is important to Open Science?"
-
-??? Question "What are some limitations to you, your lab/group, or your domain?"
-
----
-
 ### Team Roles and Responsibilities
 
 It can be easy for certain tasks to slip through the cracks. Established roles and responsibilities of teams can help ensure nobody gets saddled with too much work, and reduces chances of disputes among collaborators.
@@ -155,8 +141,19 @@ When you create a new software, library, or package, you are becoming its parent
     [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
 
 
+### Breakout Discussion
+
+Now we will do a breakout discussion section to talk about overall project management.
+
+??? Question "What is an example of a poorly managed project you were involved in? What contributed to this feeling?"
+
+??? Question "Why do you think effective project management is important to Open Science?"
+
+??? Question "What are some limitations to you, your lab/group, or your domain?"
 
 ---
+
+
 
 ## 2. Research Objects
 
@@ -357,6 +354,12 @@ Example project structure:
     ```
 
     This approach to automating repetitive tasks is something we'll dig into even deeper in later lessons.
+
+### Breakout Discussion
+
+Now we will do a breakout discussion section to talk about research objects
+
+
 
 ### Other Resources
 
