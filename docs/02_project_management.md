@@ -373,7 +373,7 @@ management. We'll link to some of them here.
 
 ??? Question "What are established roles and responsibilities of collaborative teams?”
 
-??? “What are some uses of a Project Governance Document?”
+??? Question “What are some uses of a Project Governance Document?”
 
     ??? Info "Answers"
         
