@@ -375,12 +375,15 @@ management. We'll link to some of them here.
 
 ??? Question "What are some uses of a Project Governance Document?"
 
-        ??? Info "Answers"
+    ??? Info "Answers"
         
-                * Sets expectations for behavior and operations
-                * Establishes roles and responsibilities of PI, staff, and senior personnel
-                * Uses Pre-registration techniques about what deliverables are expects, and by when 
-                * Establishes what consequences will be for breaking trust
+        * Sets expectations for behavior and operations
+        
+        * Establishes roles and responsibilities of PI, staff, and senior personnel
+        
+        * Uses Pre-registration techniques about what deliverables are expects, and by when 
+        
+        * Establishes what consequences will be for breaking trust
         
 
 ??? Question "Research Objects must include all components of research: governance document, manuals, documentation, research papers, analysis code, data, software containers"
