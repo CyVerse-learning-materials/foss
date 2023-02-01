@@ -27,6 +27,19 @@ Here we use the term in two different contexts.
 
 This type of overall project management may be required for some grants, and while it may be tempting to put in the minimal effort on one of the many pieces of paperwork you're required to complete, this type of overall project planning can be very useful. 
 
+??? Info "Traditional Organizations"
+
+    Major research (R1) universities are organized around hierarchical frameworks, often described using an Organizational Chart.
+    
+        <figure markdown>
+        <a href="https://www.maine.edu/unified-accreditation/self-study-draft/university-of-maine-organizational-chart/" target="blank" rel="UMaine Org">![UMain Org](https://www.maine.edu/unified-accreditation/wp-content/uploads/sites/158/2022/06/UMaine-org-chart-05-18-22.png){ width="600" } </a>
+        <figcaption> [University of Maine Organization Chart](https://www.maine.edu/unified-accreditation/self-study-draft/university-of-maine-organizational-chart/){target=_blank} </figcaption>
+        </figure>
+        
+    Scientific Research Projects are generally organized around a "[Principal Investigator](https://seedfund.nsf.gov/fastlane/definitions/){target=_blank}" with "Co-Principal Investigators" and "Senior Personnel" in supporting roles. Postdoctoral Researchers and gradaute students are often employed by research projects as part of their continued education and "professional preparation". 
+    
+    Given the nebulous breakdown of authority within lab groups and small research projects, the organization and governance of teams can be difficult to determine from the outside perspective. Indeed, internally team members on projects often do not know who is in charge or who reports to whom.
+
 The Turing Way offer a [lesson on Project Design](https://the-turing-way.netlify.app/project-design/project-design.html){target=_blank} related to effective project planning and management.
 
 ### Project Governance 
