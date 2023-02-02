@@ -187,8 +187,8 @@ When we talk about project management in this section, we mean the way you organ
     [Gillan et al. 2021](https://datacommons.cyverse.org/browse/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021){target=blank}
     
 <figure markdown>
-  <a href="" target="blank" rel="ro">![ro](./assets/ro.svg){ width="800" } </a>
-    <figcaption> A conceptual workflow for developing research objects with cyberinfrastructure</figcaption>
+  <a href="" target="blank" rel="ro">![ro](./assets/RO_crate.png){ width="800" } </a>
+    <figcaption> Research Objects from ResearchObject.org</figcaption>
 </figure>
 
 
