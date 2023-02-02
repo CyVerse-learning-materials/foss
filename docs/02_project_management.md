@@ -183,6 +183,7 @@ When we talk about project management in this section, we mean the way you organ
 ??? Example "Examples of Research Objects"
 
     [Boettiger 2018](https://github.com/cboettig/noise-phenomena){target=blank}
+    
     [Gillan et al. 2021](https://datacommons.cyverse.org/browse/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021){target=blank}
     
 <figure markdown>
