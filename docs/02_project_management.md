@@ -374,7 +374,15 @@ Example project structure:
 
 Now we will do a breakout discussion section to talk about research objects
 
+??? Question "Who here has created a research object or attempted to?"
 
+??? Question "Do you think someone could reproduce your research by accessing your research object?"
+
+??? Question "Where might a research object not work for your research?"
+
+??? Question "What would a research object look like for your research?"
+
+---
 
 ### Other Resources
 
