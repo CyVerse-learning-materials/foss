@@ -198,7 +198,8 @@ When we talk about project management in this section, we mean the way you organ
 
     [ROHub](https://reliance.rohub.org/){target=_blank} - [Garcia-Silva et al. 2019](https://doi.org/10.1016/j.future.2019.03.046){target=_blank}
 
- 
+### Research Object Organization
+
 If you've ever had to navigate someone else's computer or a GitHub repository, you probably know that a poorly organized project can greatly reduce its accessibility. On the other hand, a well-organized project can:
 
 -   make your work more accessible to others
@@ -214,10 +215,7 @@ It can be easy to overlook sound project management, opting for a "just get it d
 </figure>
 
 
-
-
-
-### Research Object Organization
+#### Organization Examples
 
 - Example data project organization from [UArizona Libraries](https://data.library.arizona.edu/data-management/best-practices/data-project-organization)
 - [CookieCutter Templates](https://github.com/topics/cookiecutter)
