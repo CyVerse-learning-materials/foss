@@ -31,10 +31,7 @@ This type of overall project management may be required for some grants, and whi
 
     Major research (R1) universities are organized around hierarchical frameworks, often described using an Organizational Chart.
     
-        <figure markdown>
-        <a href="https://www.maine.edu/unified-accreditation/self-study-draft/university-of-maine-organizational-chart/" target="blank" rel="UMaine Org">![UMain Org](https://www.maine.edu/unified-accreditation/wp-content/uploads/sites/158/2022/06/UMaine-org-chart-05-18-22.png){ width="600" } </a>
-        <figcaption> [University of Maine Organization Chart](https://www.maine.edu/unified-accreditation/self-study-draft/university-of-maine-organizational-chart/){target=_blank} </figcaption>
-        </figure>
+    ![UMain Org](https://www.maine.edu/unified-accreditation/wp-content/uploads/sites/158/2022/06/UMaine-org-chart-05-18-22.png){ width="600" } 
         
     Scientific Research Projects are generally organized around a "[Principal Investigator](https://seedfund.nsf.gov/fastlane/definitions/){target=_blank}" with "Co-Principal Investigators" and "Senior Personnel" in supporting roles. Postdoctoral Researchers and gradaute students are often employed by research projects as part of their continued education and "professional preparation". 
     
