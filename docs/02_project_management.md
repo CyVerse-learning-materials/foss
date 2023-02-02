@@ -273,6 +273,53 @@ Example project structure:
     10. Reorganize if necessary, but don't overdo it
 
     11. Using same basic structure can help you navigate new/old projects
+    
+
+??? Info "Automate the creation a working directory"
+
+    You might find a nice basic structure that works as a good starting place for many of your projects, or smaller components of big projects.
+
+    Instead of having to repeat the process of making that directory structure, which could be tedious and introduce mistakes, you could write some code to do it for you. 
+
+    The following is a `bash` script that takes one argument, the name of the new project (with no spaces), and creates that project with a premade directory structure for you to put files into.
+
+    ``` {bash}
+
+    #!/usr/bin/env bash
+
+    # Run this script with the name of the new project as 
+    # an argument, like so: `bash make_project.sh my_project`
+    # It will generate a project with the following structure:
+
+    #.
+    #|-- README.md
+    #|-- data
+    #|   |-- cleaned
+    #|   `-- raw
+    #|-- images
+    #|-- reports
+    #`-- scripts
+
+    mkdir "$1"
+
+    cd "$1" || exit
+
+    echo "# $1" >> README.md
+
+    mkdir data
+
+    mkdir data/raw
+
+    mkdir data/cleaned
+
+    mkdir scripts
+
+    mkdir images
+
+    mkdir reports
+    ```
+
+    This approach to automating repetitive tasks is something we'll dig into even deeper in later lessons.
 
 ??? Tip "Productivity Software"
 
@@ -321,51 +368,7 @@ Example project structure:
     [Basecamp](https://basecamp.com/){target=_blank}
 
 
-??? Info "Automate the creation a working directory"
 
-    You might find a nice basic structure that works as a good starting place for many of your projects, or smaller components of big projects.
-
-    Instead of having to repeat the process of making that directory structure, which could be tedious and introduce mistakes, you could write some code to do it for you. 
-
-    The following is a `bash` script that takes one argument, the name of the new project (with no spaces), and creates that project with a premade directory structure for you to put files into.
-
-    ``` {bash}
-
-    #!/usr/bin/env bash
-
-    # Run this script with the name of the new project as 
-    # an argument, like so: `bash make_project.sh my_project`
-    # It will generate a project with the following structure:
-
-    #.
-    #|-- README.md
-    #|-- data
-    #|   |-- cleaned
-    #|   `-- raw
-    #|-- images
-    #|-- reports
-    #`-- scripts
-
-    mkdir "$1"
-
-    cd "$1" || exit
-
-    echo "# $1" >> README.md
-
-    mkdir data
-
-    mkdir data/raw
-
-    mkdir data/cleaned
-
-    mkdir scripts
-
-    mkdir images
-
-    mkdir reports
-    ```
-
-    This approach to automating repetitive tasks is something we'll dig into even deeper in later lessons.
 
 ### Breakout Discussion
 
