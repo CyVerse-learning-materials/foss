@@ -320,6 +320,8 @@ Example project structure:
     [Open Project](https://www.openproject.org/){target=_blank}
 
     [:octicons-git-merge-24: ZenHub](https://www.zenhub.com/){target=_blank}
+    
+    [Basecamp](https://basecamp.com/){target=_blank}
 
 
 ??? Info "Automate the creation a working directory"
