@@ -31,9 +31,11 @@ This type of overall project management may be required for some grants, and whi
 
     Major research (R1) universities are organized around hierarchical frameworks, often described using an Organizational Chart.
     
-    ![UMain Org](https://www.maine.edu/unified-accreditation/wp-content/uploads/sites/158/2022/06/UMaine-org-chart-05-18-22.png){ width="600" } 
+    [![UMaine Organization Chart](https://www.maine.edu/unified-accreditation/wp-content/uploads/sites/158/2022/06/UMaine-org-chart-05-18-22.png){ width="600" }](https://www.maine.edu/unified-accreditation/self-study-draft/university-of-maine-organizational-chart/){target=_blank} 
         
     Scientific Research Projects are generally organized around a "[Principal Investigator](https://seedfund.nsf.gov/fastlane/definitions/){target=_blank}" with "Co-Principal Investigators" and "Senior Personnel" in supporting roles. Postdoctoral Researchers and gradaute students are often employed by research projects as part of their continued education and "professional preparation". 
+    
+    [![AIIRA Management Team](https://aiira.iastate.edu/images/aiira-team.png){ width="600" }](https://aiira.iastate.edu/about-us/faculty-team/){target=_blank}
     
     Given the nebulous breakdown of authority within lab groups and small research projects, the organization and governance of teams can be difficult to determine from the outside perspective. Indeed, internally team members on projects often do not know who is in charge or who reports to whom.
 
