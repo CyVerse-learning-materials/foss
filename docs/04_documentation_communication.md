@@ -20,11 +20,9 @@ Strong frameworks for internal communication and documentation can make collabor
 
 ## :material-file-document-multiple: Project Documentation
 
-!!! Success "Documentation, organized"
+The documentation system, by Divio.
 
-    The documentation system, by Divio.
-
-    [![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
+[![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
 
 This website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
 
