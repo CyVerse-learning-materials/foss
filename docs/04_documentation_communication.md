@@ -20,9 +20,11 @@ Strong frameworks for internal communication and documentation can make collabor
 
 ## :material-file-document-multiple: Project Documentation
 
-[![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
+!!! Success "Documentation, organized"
 
-The documentation system, by Divio.
+    The documentation system, by Divio.
+
+    [![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
 
 This website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
 
@@ -45,7 +47,7 @@ for documenting your workflow.
 
     - Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.
 
-*:simple-github: GitHub Pages*
+*:simple-github: GitHub Pages* [*Github pages*](https://pages.github.com/)
 
 -   You can pull templates from other GitHub users for your website,
     e.g. [:simple-jekyll: Jekyll themes](http://themes.jekyllrc.org/){target=_blank}
