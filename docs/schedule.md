@@ -17,7 +17,7 @@ Thursdays 11 am - 1 pm US Mountain Standard Time (11am - 1pm MST/AZ; 12 pm - 2 p
 | **Week 4** | Feb 16 | [Documentation / Communication](04_documentation_communication.md): <br> - Internal + External Documentation <br> - Internal + External Communication <br> - [GitHub Pages websites](documentation/githubpages.md) | Greg Chism, Michele Cosi| 
 | **Week 5** | Feb 23 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | Jason Williams | 
 | **Week 6** | Mar 2 | [Reproducibility I](06_reproducibility_i.md): <br> - Software installation <br> - Software management | Michele Cosi, Carlos Lizarraga | 
-| **Week 7** | Mar 9 | [Reproducibility II](07_reproducibility_ii.md): <br> - Brief intro to containers | Carlos Lizarraga, Tyson Swetnam |
+| **Week 7** | Mar 6 | [Reproducibility II](07_reproducibility_ii.md): <br> - Brief intro to containers | Tyson Swetnam, Michele Cosi |
 | **Week 8** | Mar 16 | Flex time: <br> - Ask questions <br> - More detail on previous topics <br> Final project work time | 
 | **Week 9** |  Mar 23 | Review, summary and addressing final project inquiries |
 | **Week 10** | Mar 30 | [Final project](final_project/overview.md) presentations |

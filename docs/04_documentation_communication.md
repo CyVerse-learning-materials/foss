@@ -20,6 +20,10 @@ Strong frameworks for internal communication and documentation can make collabor
 
 ## :material-file-document-multiple: Project Documentation
 
+[![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
+
+The documentation system, by Divio.
+
 This website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
 
 Other popular website generators for GitHub Pages are [:simple-jekyll: Jekyll Theme](https://jekyllrb.com/){target=_blank} or [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
