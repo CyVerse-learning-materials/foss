@@ -158,25 +158,25 @@ This section is built in order to educate on and simplify the steps necessary th
 ### Repository Explanation
 
 The [academicpages-mkdocs](https://github.com/CosiMichele/academicpages-mkdocs) is a GitHub repository ready to deploy a GitHub Pages website using the [MkDocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/)theme. The repository has everything necessary to run:
-- A `docs` folder:
-    - A folder that contains all the documents necessary to populate the website's pages.
-    - **All of the documents that the user needs to change are in here**.
-- A `mkdocs.yml` file:
-    - A `yml` file which contains critical information on the website structure, including themes, fonts, and extensions.
-- A `requirements.txt` file:
-    - A file with a list of software necessary to build the website, primilily used by GitHub Actions.
-- A `gh-pages` branch:
-    - This branch is built by `mkdocs-material` automatically after the GitHub Action is executed; it is where the website is rendered from.
-- A `site` folder:
-    - Similar to the `gh-pages` branch, this is a folder created by `mkdocs-material` required in the steps to create a website.
+    - A `docs` folder:
+        - A folder that contains all the documents necessary to populate the website's pages.
+        - **All of the documents that the user needs to change are in here**.
+    - A `mkdocs.yml` file:
+        - A `yml` file which contains critical information on the website structure, including themes, fonts, and extensions.
+    - A `requirements.txt` file:
+        - A file with a list of software necessary to build the website, primilily used by GitHub Actions.
+    - A `gh-pages` branch:
+        - This branch is built by `mkdocs-material` automatically after the GitHub Action is executed; it is where the website is rendered from.
+    - A `site` folder:
+        - Similar to the `gh-pages` branch, this is a folder created by `mkdocs-material` required in the steps to create a website.
 
 ### Further Documentation
 
 Here are some guides that you may find useful:
-- [MarkDown cheatsheet](https://www.markdownguide.org/cheat-sheet/): for correct MarkDown synthax.
-- [MkDocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/): a starting guide to MkDocs Material theme ([massive list of supported emojis here](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search)).
-- [MkDocs-material References](https://squidfunk.github.io/mkdocs-material/reference/): more sophisticated documentation for MkDocs Material. 
-- [YouTube link to FOSS 2022](https://www.youtube.com/watch?v=UQZseJjR_OI&t=3750s&ab_channel=CyVerse.org): Michael explains (~1h mark) his Jekyll-based website and gives a tutorial on how to use [academicpages](https://academicpages.github.io/).
+    - [MarkDown cheatsheet](https://www.markdownguide.org/cheat-sheet/): for correct MarkDown synthax.
+    - [MkDocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/): a starting guide to MkDocs Material theme ([massive list of supported emojis here](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search)).
+    - [MkDocs-material References](https://squidfunk.github.io/mkdocs-material/reference/): more sophisticated documentation for MkDocs Material. 
+    - [YouTube link to FOSS 2022](https://www.youtube.com/watch?v=UQZseJjR_OI&t=3750s&ab_channel=CyVerse.org): Michael explains (~1h mark) his Jekyll-based website and gives a tutorial on how to use [academicpages](https://academicpages.github.io/).
 
 ### Other GitHub Pages Website Quickstarts
 
