@@ -183,34 +183,35 @@ RStudio has a number of [available Docker containers](https://rocker-project.org
 
 ---
 
-## Reproducibility tutorial I: Setting up your project
+## Reproducibility tutorial
 
-This section is going to cover a short tutorial spanning this and [the next](07_reproducibility_ii.md/#reproducibility-tutorial-ii-using-snakemake-and-containers-for-your-workflow) reproducibility sessions. In this tutorial you're going to use software and tools discussed today and previously in FOSS.
+This section is going to cover a short tutorial on reproducibility using software, tools and practices discussed today and throughout FOSS.
+
+!!! Note "OS of choice"
+
+        This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621). However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, use the Windows Subsystem for Linux (WSL)
+
+!!! Success "Tutorial Goals"
+
+### Prerequisites
 
 What you'll be using:
 
 - [GitHub](https://github.com/) (already installed)
-- [Docker](https://www.docker.com/) (already installed)
-- [Snakemake](https://snakemake.readthedocs.io/en/stable/)
 - [Conda](https://docs.conda.io/en/latest/)
-- [JetStream2](https://jetstream-cloud.org/)
+- [Mamba](https://mamba.readthedocs.io/en/latest/installation.html) (optional, recommended)
 
-### Connecting to JetStream2
+Installable through Conda/Mamba:
 
-JetStream2 is a service that allows users to create and connect to Virtual Machines (VMs). We have created a number of virtual machines for you to connect to and follow this tutorial, however, you're welcome to use your own machine for this.
+- [Nextflow](https://www.nextflow.io/docs/latest/index.html)
+- [Salmon](https://salmon.readthedocs.io/en/latest/)
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
-!!! Warning 
-        For security reasons, the google sheets with the IP addresses and passwords is shared solemnly through the HackMD.
+Installabe through Pip:
 
-In order to connect to JetStream2, you will be using the SSH (Secure Shell) protocol, which allows connections over a network. To connect to a machine, open a termial and enter your user number and IP as follows and press enter:
+- [MultiQC](https://multiqc.info/docs/)
 
-```
-ssh <user>@<IP>
-```
-
-When asked for the password, copy and paste the corresponding password from the google sheets and press enter. **Note**: you will NOT see the password being pasted (but it's there!)
-
-### Install Conda
+Install Conda
 
 [Conda](https://docs.conda.io/en/latest/) is a popular tool for installing software. Typically software you want to use requires other software (dependancies) to be installed. Conda can manage all of this for you. Each available Conda package is part of a “recipe” that includes everything you need to run your software. There are different versions of Conda, including some specific for bioinformatics like [Bioconda](https://bioconda.github.io/). We will install Conda and then use it to install some of the tools we need. We will install a lightweight version of Conda called [MiniConda](https://docs.conda.io/en/latest/miniconda.html).
 
