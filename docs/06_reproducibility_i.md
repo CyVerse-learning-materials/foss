@@ -193,6 +193,10 @@ This section is going to cover a short tutorial on reproducibility using softwar
 
 !!! Success "Tutorial Goals"
 
+        - Create a small workflow using NextFlow
+        - Understand best practices for reproducing a workflow
+        - Apply FOSS procedures in order to enable easiness of reproducibility
+
 ### Prerequisites
 
 What you'll be using:
@@ -211,46 +215,49 @@ Installabe through Pip:
 
 - [MultiQC](https://multiqc.info/docs/)
 
-Install Conda
+??? Note "What's a Conda and how do I install it?"
+    [Conda](https://docs.conda.io/en/latest/) is a popular tool for installing software. Typically software you want to use requires other software (dependancies) to be installed. Conda can manage all of this for you. Each available Conda package is part of a “recipe” that includes everything you need to run your software. There are different versions of Conda, including some specific for bioinformatics like [Bioconda](https://bioconda.github.io/).
 
-[Conda](https://docs.conda.io/en/latest/) is a popular tool for installing software. Typically software you want to use requires other software (dependancies) to be installed. Conda can manage all of this for you. Each available Conda package is part of a “recipe” that includes everything you need to run your software. There are different versions of Conda, including some specific for bioinformatics like [Bioconda](https://bioconda.github.io/). We will install Conda and then use it to install some of the tools we need. We will install a lightweight version of Conda called [MiniConda](https://docs.conda.io/en/latest/miniconda.html).
+    The CyVerse CLI already comes with Conda installed; Please follow these steps in order to install [MiniConda](https://docs.conda.io/en/latest/miniconda.html) (the lightweight version of Conda) on your system.
 
-```
-# Download conda and add right permissions
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
-chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+    For the appropriate installation package, visit https://docs.conda.io/en/latest/miniconda.html. :warning: Note: **If you are using the WSL, install the Linux version!!**
+                
+    ```
+    # Download conda and add right permissions
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh # Modify this to match the OS you're using.
+    chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
 
-# install conda silenty (-b) and update (-u) and initial conda run
-./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
-~/miniconda3/bin/conda init
+    # install conda silenty (-b) and update (-u) and initial conda run
+    ./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+    ~/miniconda3/bin/conda init
 
-# Restart bash so that conda is activated
-source ~/.bashrc
-```
+    # Restart bash so that conda is activated
+    source ~/.bashrc
+    ```
 
-You'll be able to tell when conda is active when next `(base)` is present next to the to the shell prompt such as
+    You'll be able to tell when conda is active when next `(base)` is present next to the to the shell prompt such as
 
-```
-(base) user@machine
-```
+    ```
+    (base) user@machine
+    ```
 
-Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment (select `y` when prompted).
+    Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment (select `y` when prompted).
 
-```
-conda create --name myenv
-```
+    ```
+    conda create --name myenv
+    ```
 
-Activate your new environment with 
+    Activate your new environment with 
 
-```
-conda activate myenv
-```
+    ```
+    conda activate myenv
+    ```
 
-You can see the list of environments you can activate by doing
+    You can see the list of environments you can activate by doing
 
-```
-conda env list
-```
+    ```
+    conda env list
+    ```
 
 ### Installing packages through conda
 
