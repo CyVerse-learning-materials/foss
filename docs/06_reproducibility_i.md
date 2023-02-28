@@ -215,7 +215,7 @@ Installabe through Pip:
 
 - [MultiQC](https://multiqc.info/docs/)
 
-??? Note "What's a Conda and how do I install it?"
+??? Question "What's a Conda and how do I install it?"
     [Conda](https://docs.conda.io/en/latest/) is a popular tool for installing software. Typically software you want to use requires other software (dependancies) to be installed. Conda can manage all of this for you. Each available Conda package is part of a “recipe” that includes everything you need to run your software. There are different versions of Conda, including some specific for bioinformatics like [Bioconda](https://bioconda.github.io/).
 
     The CyVerse CLI already comes with Conda installed; Please follow these steps in order to install [MiniConda](https://docs.conda.io/en/latest/miniconda.html) (the lightweight version of Conda) on your system.
@@ -263,22 +263,49 @@ Installabe through Pip:
 
 Conda makes installing packages simple. Due to it's widespread use, conda has a large number of widely available packages; You can search for these in at https://anaconda.org/.
 
-We are going to to use conda to install snakemake.
+We are going to to use conda to install Mamba, NextFlow, Salmon and FastQC.
 
 ```
-# See what snakemake version are available
-conda search -c bioconda snakemake
-
-# Let's choose the latest, in this case 7.16.0
-conda install -c bioconda -c conda-forge -y snakemake=7.16.0
+# Activate Conda using 
+conda activate
 ```
 
-conda will proceed and install all the dependencies required by snakemake
+You can either use the anaconda website to search for packager, or use the conda search feature (_but also, Google is your best friend._)
+
+!!! Note "Makes things faster with Mamba"
+
+        Mamba is a reimplemetation of Conda using the C++ language, allowing for much quicker Conda experience. The tutorial is going to use **Mamba** instead of **Conda**, but you can always replace `mamba` with `conda`!
+
+!!! Note "Conda channels"
+
+        Conda operates through **channels**, specififc repositories where packages are stored. Specific packages sometimes may appear in multiple channels, however it is always helpful to specify a channel with the `-c` flag.
+
+Install Nextflow and verify its installation with the following commands: 
 
 ```
+# Install NextFlow
+mamba install -c bioconda nextflow # Press y when prompted with [Y/n]!
+
 # verify the installation
-snakemake --version
+nextflow -version
 ```
+
+Now that you know how to install packages with Conda/Mamba, install Salmon and FastQC.
+
+??? Question "Installing Packages"
+    As an exercise, install Salmon and FastQC
+
+    ??? Success "Need a hand?"
+    ```
+    mamba install -c bioconda salmon
+    mamba install -c bioconda fastqc
+    ```
+
+    Or you can do it with a single line (doable if packages are from the same channel)!
+    ```
+    mamba install -c bioconda salmon fastqc
+    ```
+
 
 You can view the installed conda packages by doing 
 
