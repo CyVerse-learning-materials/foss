@@ -500,7 +500,7 @@ Extra challenges for collaborative projects.
 ### Tools for DMPs
 
 !!! Question "Exercise"
-        Thinking about a dataset you work with, complete the [Data Stewardship Wizzard](https://ds-wizard.org/).
+        Thinking about a dataset you work with, complete the [Data Stewardship Wizard](https://ds-wizard.org/).
 
 ---
 
