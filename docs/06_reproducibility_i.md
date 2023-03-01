@@ -259,7 +259,7 @@ Installabe through Pip:
     conda env list
     ```
 
-### Installing packages through conda
+### Package management with Conda
 
 Conda makes installing packages simple. Due to it's widespread use, conda has a large number of widely available packages; You can search for these in at https://anaconda.org/.
 
@@ -276,7 +276,7 @@ You can either use the anaconda website to search for packager, or use the conda
 
         Mamba is a reimplemetation of Conda using the C++ language, allowing for much quicker Conda experience. The tutorial is going to use **Mamba** instead of **Conda**, but you can always replace `mamba` with `conda`!
 
-!!! Note "Conda channels"
+!!! Info "Conda channels"
 
         Conda operates through **channels**, specififc repositories where packages are stored. Specific packages sometimes may appear in multiple channels, however it is always helpful to specify a channel with the `-c` flag.
 
@@ -293,18 +293,18 @@ nextflow -version
 Now that you know how to install packages with Conda/Mamba, install Salmon and FastQC.
 
 ??? Question "Installing Packages"
-    As an exercise, install Salmon and FastQC
+    As an exercise, install Salmon and FastQC using Conda/Mamba.
 
-    ??? Success "Need a hand?"
-    ```
-    mamba install -c bioconda salmon
-    mamba install -c bioconda fastqc
-    ```
+    ??? Tip "Need a hand?"
+        ```
+        mamba install -c bioconda salmon
+        mamba install -c bioconda fastqc
+        ```
 
-    Or you can do it with a single line (doable if packages are from the same channel)!
-    ```
-    mamba install -c bioconda salmon fastqc
-    ```
+        Or you can do it with a single line (doable if packages are from the *same* channel)!
+        ```
+        mamba install -c bioconda salmon fastqc
+        ```
 
 
 You can view the installed conda packages by doing 
@@ -316,8 +316,30 @@ conda list
 In order to make your environment reproducible, conda allows you to export your environment.
 
 ```
-conda env export > myenv.yml
+conda env export > my_conda_env.yml
 ```
+
+### Package management with Pip
+
+Pip works similarly to Conda, as Pip is the package management supported by the Python Software foundation. If you use Python for your work it is likely you have installed packages using Pip.
+
+We only have to install a single package required for this tutorial, MultiQC. To install MultiQC using Pip, do:
+
+```
+pip install multiqc
+```
+
+Similar to Conda, you can export your pip environment by doing
+
+```
+pip3 freeze > my_pip_env.txt
+```
+
+!!! Note "Why `pip3`?"
+        `pip3 freeze > env_name.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > env_name.txt`.
+
+!!! Success "Conda exports your Pip env as well"
+        Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
 
 ### GitHub repository setup and documentation
 
@@ -367,6 +389,8 @@ conda env export > myenv.yml
     ```
     
     - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!**
+
+---
 
 ## Self Assessment
 
