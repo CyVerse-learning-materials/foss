@@ -29,7 +29,7 @@ Strong frameworks for internal communication and documentation can make collabor
     ??? Success
 
         - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it.
-        - **How-to guides**: Recipies! How-to guides take the reader through the steps required to solve a real-world problem.
+        - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to solve a real-world problem.
         - **References**: Guides! References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
         - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
 
@@ -310,3 +310,29 @@ There are many ways scientists use social media and the web to share their data 
 - [Meetups](https://www.meetup.com/){target=_blank}
 
 ---
+
+## Self Assessment
+
+??? Question "True or False: Tutorials and How-to-Guides are the same"
+
+    !!! Failure "False"
+
+        Tutorials are in general introductory and longer than How-to-Guides and are intended for teaching learners a new concept by describing applications and providing justifications. 
+
+        How-to-Guides are more like cooking recipes which include step-by-step instructions for a specific task.
+
+??? Question "True or False: Teams should communicate over a single messaging platform."
+
+    !!! Failure "False"
+
+        While it may be advisable to push informal communication toward a platform like SLACK or Microsoft Teams, there is no one-platform-fits-all solution for managing a diverse science team.
+
+??? Question "What is the best communication platform for team science?"
+
+    !!! Info "There is no best platform, but there are some best practices"
+
+        In general, communications amongst team members may be best suited for messaging services like SLACK, Teams, or Chat.
+
+        For software development, GitHub Issues are one of the primary means of documenting changes and interactions on the web.
+
+        Formal communication over email is preferred, and is necessary for legal, budgetary, and institutional interactions.

@@ -399,7 +399,36 @@ management. We'll link to some of them here.
 
 ??? Question "Why is Project Management used in research?"
 
+    1. Reduces [wasted] effort 
+    
+    2. Tracks progress or identifies more quickly when there is a lack of progress
+    
+    3. Establishes a formal structure for teams
+
 ??? Question "What are established roles and responsibilities of collaborative teams?"
+
+    !!! Info "Example 1: Traditional University Research Teams"
+
+        i. Principal Investigator, Co-Principal Investigators
+
+        ii. Senior Personnel, Postdoctoral Researchers, Bench Scientists 
+        
+        iii. (Graduate) Students
+
+    !!! Info "Example 2: Research Infrastructure Teams"
+
+        [Research infrastructure job titles and roles (Turing Way)](https://the-turing-way.netlify.app/collaboration/research-infrastructure-roles.html){target=_blank}
+
+        i. Community Managers
+
+        ii. Data Science Educators
+
+        iii. Data Scientists
+
+        iv. Developer Advocates
+
+        iv. Research Software Engineers
+
 
 ??? Question "What are some uses of a Project Governance Document?"
 
@@ -423,4 +452,3 @@ management. We'll link to some of them here.
         Fundamentally, a RO should contain enough information and detail to reproduce a scientific study from its linked or self-contained parts. 
 
         Components like large datasets may not be a part of the RO, but the code or analysis scripts should have the ability to connect to or stream those data.
-

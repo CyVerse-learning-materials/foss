@@ -518,3 +518,29 @@ Extra challenges for collaborative projects.
 
 ----
 
+## Self Assessment
+
+??? Question "What is a Data Management Plan?"
+
+    **Important**: A data management plan (DMP) is now required aspect of publicly funded research.
+
+    DMPs are short, formal, documents outlining what types of data will be used, and what will be done with the data both during and after a research project concludes.
+
+??? Question "True or False: When science project funding ends, the data should end with it"
+
+    !!! Failure "False"
+
+        Data live on after a project ends.
+
+        Ensuring that data have a full lifecycle where they can be (re)hosted and made available after a project ends is critical to open science and reproducible research
+
+    !!! Danger "Maybe"
+
+        Sometimes destroying data is part of the life cycle of data - this may be required if data are sensitive and could be used unethically in the future, beyond the control of the original investigator team. 
+
+??? Question "True or False: FAIR and CARE data principles are the same"
+
+    !!! Failure "False"
+
+        The CARE principles were created in order to help guide and answer when and how applying FAIR data principles to soverign indigenous-controlled data should be done and when it should not. 
+

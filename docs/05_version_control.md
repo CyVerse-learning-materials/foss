@@ -182,5 +182,33 @@ walk through a few of these useful features.
 !!! Note
         Git is not really for storing or manipulating data, especially large
         files. But the [CyVerse Discovery
-        Environment](https://de.cyverse.org/de/) is a great place to serve,
+        Environment](https://de.cyverse.org/de/){target=_blank is a great place to serve,
         store, and share data.
+
+## Self Assessment
+
+??? Question "True or False: Using `Git` requires a GitHub account"
+
+    !!! Failure "False"
+
+        `Git` is open source software.
+
+        GitHub is a privately owned (Microsoft) company
+
+        Other platforms like [GitLab](https://gitlab.com){target=_blank}, [GitBucket](https://gitbucket.github.io/){target=_blank}, and [GNU Savannah](https://savannah.gnu.org/){target=_blank} all offer `Git` as a version control system service.
+
+??? Question "True or False: Using `Git` is easy"
+
+    !!! Failure "False"
+
+        Using `Git` can be frustrating to even the most experienced users
+
+??? Question "When you find a new repository on GitHub that you think can help your research, what are the first things you should do?"
+
+    !!! Success "Look at the README.md"
+
+        Most GitHub repositories have a README.md file which explains what you're looking at.
+
+    !!! Success "Look at the LICENSE"
+
+        Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. 

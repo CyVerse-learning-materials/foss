@@ -367,3 +367,23 @@ conda env export > myenv.yml
     ```
     
     - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!**
+
+## Self Assessment
+
+??? Question "True or False: Docker containers allow for reproducibility across all computing platforms"
+
+    !!! Failure "False"
+
+        While Docker allows you to quickly run software from other people, it may not work across every platform.
+
+        There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. 
+
+        Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
+
+??? Question "When is it advisable to not trust a Docker image?"
+
+    !!! Success "When you cannot view its Dockerfile"
+
+        Featured and Verified Docker images can be trusted, in general.
+
+        User generated images should not be trusted unless you can view their Dockerfile, or build logs to determine what is actually in the container you are attempting to run.
