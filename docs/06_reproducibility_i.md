@@ -412,10 +412,9 @@ git push
 
         In this tutorial (now that we have set up the environment, repository and pushed our first commit) we are going to:
 
-        - Create a small [transcriptome](https://en.wikipedia.org/wiki/Transcriptome) file
-        - Quantify the transcriptome using [Salmon](https://salmon.readthedocs.io/en/latest/)
-        - Generate some Quality Control with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-        - Gather and QC results with [MultiQC](https://multiqc.info/docs/)
+        - Index a [transcriptome](https://en.wikipedia.org/wiki/Transcriptome) file and quantification of DNA reads (using [Salmon](https://salmon.readthedocs.io/en/latest/)).
+        - Perform quality controls (with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)).
+        - Create a [MultiQC](https://multiqc.info/docs/) report.
 
 !!! Warning "I Don't know DNA stuff, can I still do this?"
 
@@ -426,17 +425,37 @@ Nextflow is a workflow manager, similar to [Snakemake](https://snakemake.readthe
 Download the required files using `wget` and `tar` to decompress them
 
 ```
-wget <URL>
-tar -xvf <files>
+wget -O nf_foss_tut.tar.gz https://github.com/CosiMichele/reproducibility_tut/blob/master/nf_foss_tut.tar.gz?raw=true
+tar -xvf nf_foss_tut.tar.gz
 ```
 
-We can now look at the decompressed directory structure by using `tree <dir>` (if you don not have `tree` installed, you can install it with `sudo apt-get tree`).
+We can now look at the decompressed directory structure by using `tree nf_foss_tut` (if you don not have `tree` installed, you can install it with `sudo apt-get tree`).
 
 ```
-<dir>
-```
+nf_foss_tut/
+├── data
+│   └── ggal
+│       ├── gut_1.fq
+│       ├── gut_2.fq
+│       ├── liver_1.fq
+│       ├── liver_2.fq
+│       ├── lung_1.fq
+│       ├── lung_2.fq
+│       └── transcriptome.fa
+├── script1.nf
+├── script2.nf
+├── script3.nf
+├── script4.nf
+├── script5.nf
+└── script6.nf
 
-You will see <xfiles> and <xdirs>.
+2 directories, 13 files
+```
+!!! Info "Files information"
+
+        - Scripts 1 through 6 (`script<number>.nf`) are the NextFlow files
+        - `<file>.fq` are fastq files, containing DNA sequences and quality scores
+        - `transcriptome.fa` is all of the RNA data from the organism (*G.gallus*)
 
 Let's look at one of the NextFlow files (`.nf`)
 
