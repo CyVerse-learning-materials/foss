@@ -224,7 +224,7 @@ Installabe through Pip:
                 
     ```
     # Download conda and add right permissions
-    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh # Modify this to match the OS you're using.
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh     # Modify this to match the OS you're using.
     chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
 
     # install conda silenty (-b) and update (-u) and initial conda run
@@ -268,6 +268,9 @@ We are going to to use conda to install Mamba, NextFlow, Salmon and FastQC.
 ```
 # Activate Conda using 
 conda activate
+
+# Install Mamba
+conda install -c conda-forge mamba
 ```
 
 You can either use the anaconda website to search for packager, or use the conda search feature (_but also, Google is your best friend._)
@@ -284,7 +287,7 @@ Install Nextflow and verify its installation with the following commands:
 
 ```
 # Install NextFlow
-mamba install -c bioconda nextflow # Press y when prompted with [Y/n]!
+mamba install -c bioconda nextflow      # Press y when prompted with [Y/n]!
 
 # verify the installation
 nextflow -version
@@ -336,60 +339,110 @@ pip3 freeze > my_pip_env.txt
 ```
 
 !!! Note "Why `pip3`?"
-        `pip3 freeze > env_name.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > env_name.txt`.
+        `pip3 freeze > my_pip_env.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > my_pip_env.txt`.
 
-!!! Success "Conda exports your Pip env as well"
+!!! Success "Conda exports your Pip environment as well"
         Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
 
 ### GitHub repository setup and documentation
 
-- Create a repository on GitHub to document your work:
-    - On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
-    - Clone your repository to the VM with `<repository_url>.git` (find the url under the green **Code** button)
-    - Add your history to the README file with `history >> README.md` and add meaninigful comments. `.md` is the MarkDown extension that is used for formatting in GitHub (and HackMD!); Read more about [here](https://www.markdownguide.org/basic-syntax/). A well documented document may look similar to:
+Create a repository on GitHub to document your work:
 
-    ```
-    # reproducibility-tutorial
+- On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
+- Clone your repository locally with `git clone <repository_url>.git` (find the url under the green **Code** button)
+- Navigate to your cloned repository with `cd <repository_name>`. You should now be inside your repository.
+- Move your environemnt files into your repository with `mv ../my_conda_env.yml ../my_pip_env.txt .`.
+- Modify your README to reflect the work so far, with meaningful comments (remember that the README is formatted with markdown, a guide to markdown [here](https://www.markdownguide.org/basic-syntax/)). A well documented document may look similar to:
 
-    ## Computer setup
+````
+# reproducibility-tutorial
 
-    ### Download conda and add right permissions
-    wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
-    chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+This repository contains information about the reproduciblility tutorial from [FOSS 2023 Spring](https://foss.cyverse.org/06_reproducibility_i/#reproducibility-tutorial).
 
-    ### install conda silenty (-b), update (-u) and initial start
-    ./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
-    ~/miniconda3/bin/conda init
+## Environment Setup
 
-    ### Restart bash so that conda is activated
-    source ~/.bashrc
+- Download conda and add right permissions
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+```
+- Install conda silenty (-b), update (-u) and initial start
+```
+./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+~/miniconda3/bin/conda init
+```
+-  Restart bash so that conda is activated
+```
+source ~/.bashrc
+```
+- Install Mamba
+```
+conda install -c conda-forge mamba
+```
+- Use environment files in this repo to recreate tutorial env
+```
+mamba install -f <my_conda_env.yml>     # Will also install pip packages
+```
 
-    ### See what snakemake version are available
-    conda search -c bioconda snakemake
+## Obtaining tutorial files
 
-    ### Let's choose the 7.16.0
-    conda install -c bioconda -c conda-forge -y snakemake=7.16.0
+Tutorial files avaiable [here](). Use `wget` to download appropriate files and decompress files with `tar -xvf`.
+```
+wget <URL>
+tar -xvf <files>
+```
 
-    ### verify the installation
-    snakemake --version
+## Workflow tutorial using Nextflow
+Steps of the nextflow tutorial will be added in future commits.
+````
 
-    ### Exported conda environment
-    conda env export > myenv.yml
+- Add, commit and push your changes
 
-    ### Cloned git repository
-    git clone https://github.com/<user>/<repository>.git
-    ```
-
-    - Add, commit and push your changes
-
-    ```
-    git add .
-    git commit -m "adding initial documentation"
-    git push
-    ```
+```
+git add .
+git commit -m "adding initial documentation"
+git push
+```
     
-    - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!**
+- Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!** [FOSS has covered how to create a Token in Week 0: The Shell and Git, necessary in order to modify code locally](https://foss.cyverse.org/00_basics/#adding-code-locally).
 
+### Workflow Tutororial using Nextflow
+
+!!! Info "...what are we doing?"
+
+        In this tutorial (now that we have set up the environment, repository and pushed our first commit) we are going to:
+
+        - Create a small [transcriptome](https://en.wikipedia.org/wiki/Transcriptome) file
+        - Quantify the transcriptome using [Salmon](https://salmon.readthedocs.io/en/latest/)
+        - Generate some Quality Control with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+        - Gather and QC results with [MultiQC](https://multiqc.info/docs/)
+
+!!! Warning "I Don't know DNA stuff, can I still do this?"
+
+        Absolutely yes! This tutorial is supposed to introduce you to the process of reproducibility using GitHub repositories, package managers and workflow managers! You do not need to understand what each file is as this is meant to show how to make your science reproducible. Focus on understanding the process and theory behind the tutorial rather than the files themselves :fontawesome-regular-face-smile-beam:.
+
+Nextflow is a workflow manager, similar to [Snakemake](https://snakemake.readthedocs.io/en/stable/). For this tutorial, we decided to use Nextflow as it is easier to learn, more intuitive and user friendly than Snakemake.
+
+Download the required files using `wget` and `tar` to decompress them
+
+```
+wget <URL>
+tar -xvf <files>
+```
+
+We can now look at the decompressed directory structure by using `tree <dir>` (if you don not have `tree` installed, you can install it with `sudo apt-get tree`).
+
+```
+<dir>
+```
+
+You will see <xfiles> and <xdirs>.
+
+Let's look at one of the NextFlow files (`.nf`)
+
+!!! Info "Understanding the Nextflow synthax"
+
+        Nextflow is powerful workflow manager as it can be deployed on HPCs and Clouds. However, it does require a little effort in order to understand its synthax.
 ---
 
 ## Self Assessment
