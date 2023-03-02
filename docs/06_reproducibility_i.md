@@ -172,7 +172,7 @@ What **are** containers?
 
 Containers are reproducible computing environments that contain an operating system (OS), software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely solemnly on the host OS (and the container engine). 
 
-![VM_vs_containers](https://cloudblogs.microsoft.com/uploads/prod/sites/37/2019/07/Demystifying-containers_image1.png)
+![VM_vs_containers](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png)
 Source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/)
 
 A popular container platform is [Docker](https://www.docker.com/):material-docker:([wikipedia](https://en.wikipedia.org/wiki/Docker_(software)), ["what is a Docker container?"](https://www.docker.com/resources/what-container/)), hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
@@ -640,7 +640,8 @@ As you can notice, the report is an `html` file that can be opened with a browse
 **Document your work.** You should still be in your GitHub folder. Summarize your steps and work on your README file, and push your changes! This will ensure that your work and files are saved and have a valid version that you can come back to in the future if you ever require to.
 
 ??? Question "What if my files are too big?"
-        You can always use a `.gitignore`, a file that within itself has defined what should be saved in GitHub when pushing a commit, and what shouldn't be saved. An alternative is to move your files outside of the respository that you're pushing ("stashing").
+        
+    You can always use a `.gitignore`, a file that within itself has defined what should be saved in GitHub when pushing a commit, and what shouldn't be saved. An alternative is to move your files outside of the respository that you're pushing ("stashing").
 
 ---
 
