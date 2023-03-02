@@ -386,10 +386,10 @@ mamba install -f <my_conda_env.yml>     # Will also install pip packages
 
 ## Obtaining tutorial files
 
-Tutorial files avaiable [here](). Use `wget` to download appropriate files and decompress files with `tar -xvf`.
+Tutorial files avaiable [here](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true). Use `wget` to download appropriate files and decompress files with `tar -xvf`.
 ```
-wget <URL>
-tar -xvf <files>
+wget -O nf_foss_tut.tar.gz https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true
+tar -xvf nf_foss_tut.tar.gz
 ```
 
 ## Workflow tutorial using Nextflow
@@ -406,7 +406,7 @@ git push
     
 - Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!** [FOSS has covered how to create a Token in Week 0: The Shell and Git, necessary in order to modify code locally](https://foss.cyverse.org/00_basics/#adding-code-locally).
 
-### Workflow Tutororial using Nextflow
+### Workflow Tutorial using Nextflow
 
 !!! Info "...what are we doing?"
 
@@ -425,35 +425,34 @@ Nextflow is a workflow manager, similar to [Snakemake](https://snakemake.readthe
 Download the required files using `wget` and `tar` to decompress them
 
 ```
-wget -O nf_foss_tut.tar.gz https://github.com/CosiMichele/reproducibility_tut/blob/master/nf_foss_tut.tar.gz?raw=true
+wget -O nf_foss_tut.tar.gz https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true
 tar -xvf nf_foss_tut.tar.gz
 ```
 
 We can now look at the decompressed directory structure by using `tree nf_foss_tut` (if you don not have `tree` installed, you can install it with `sudo apt-get tree`).
 
 ```
-nf_foss_tut/
-├── data
-│   └── ggal
-│       ├── gut_1.fq
-│       ├── gut_2.fq
-│       ├── liver_1.fq
-│       ├── liver_2.fq
-│       ├── lung_1.fq
-│       ├── lung_2.fq
-│       └── transcriptome.fa
-├── script1.nf
-├── script2.nf
-├── script3.nf
-├── script4.nf
-├── script5.nf
-└── script6.nf
+.
+├── nf_foss_tut
+│   ├── data
+│   │   └── ggal
+│   │       ├── gut_1.fq
+│   │       ├── gut_2.fq
+│   │       ├── liver_1.fq
+│   │       ├── liver_2.fq
+│   │       ├── lung_1.fq
+│   │       ├── lung_2.fq
+│   │       └── transcriptome.fa
+│   ├── example_script.nf
+│   ├── script1.nf
+│   ├── script2.nf
+│   └── script3.nf
 
-2 directories, 13 files
+2 directories, 11 files
 ```
 !!! Info "Files information"
 
-        - Scripts 1 through 6 (`script<number>.nf`) are the NextFlow files
+        - Scripts 1 through 3 (`script<number>.nf`) and `example_script.nf` are the NextFlow files
         - `<file>.fq` are fastq files, containing DNA sequences and quality scores
         - `transcriptome.fa` is all of the RNA data from the organism (*G.gallus*)
 
@@ -461,7 +460,188 @@ Let's look at one of the NextFlow files (`.nf`)
 
 !!! Info "Understanding the Nextflow synthax"
 
-        Nextflow is powerful workflow manager as it can be deployed on HPCs and Clouds. However, it does require a little effort in order to understand its synthax.
+        Nextflow is powerful workflow manager as it can be deployed on HPCs and Clouds. However, it does require a little effort in order to understand its synthax. 
+        
+        The synthax is broken down into:
+        
+        - Defining parameters early
+        - Defining Processes to be executed
+        - Defining Channels (blocks that work asynchronously that encapsulate other processes)
+
+        More complex scripts include [operators](https://www.nextflow.io/docs/latest/operator.html) (channel manipulation) and [executors](https://www.nextflow.io/docs/latest/executor.html) (to run things on the cloud and HPC); Nextflow can also be used to run and orchestrate [containers](https://www.nextflow.io/docs/latest/container.html).
+        
+        As a good example, let's look at `example_script.nf`:
+        ```
+        /*                                                                                      
+         * pipeline input parameters                                                            
+         */                                                                                      
+        params.reads = "$baseDir/data/ggal/gut_{1,2}.fq"                                        #
+        params.transcriptome = "$baseDir/data/ggal/transcriptome.fa"                            # The parameters are set early in the script
+        params.multiqc = "$baseDir/multiqc"                                                     #
+        params.outdir = "results"                                                               #
+
+        println """\                                                                            #
+                R N A S E Q - N F   P I P E L I N E                                             #
+                ===================================                                             #
+                transcriptome: ${params.transcriptome}                                          # Print statement that will show once the script
+                reads        : ${params.reads}                                                  # is executed
+                outdir       : ${params.outdir}                                                 #
+                """                                                                             #
+                .stripIndent()                                                                  #
+
+        /* 
+         * create a transcriptome file object given then transcriptome string parameter
+         */
+        transcriptome_file = file(params.transcriptome)                                         # Convert input file to string
+        
+        /* 
+         * define the `index` process that create a binary index 
+         * given the transcriptome file
+         */
+        process index {                                                                         # First process, named "index"
+        conda "bioconda::salmon"                                                                # Defines what package is necessary
+                                                                                                #
+        input:                                                                                  ## 
+        file transcriptome from transcriptome_file                                              ##
+                                                                                                ## Defines the input and output of the process
+        output:                                                                                 ##
+        file 'index' into index_ch                                                              ##
+                                                                                                #
+        script:                                                                                 #
+        """                                                                                     #
+        salmon index --threads $task.cpus -t $transcriptome -i index                            # Command to execute
+        """                                                                                     #
+        }                                                                                       #
+
+
+        Channel                                                                                 # Channels allows for scripts to work asynchronously, without waiting for received process.
+        .fromFilePairs( params.reads )                                                          # .fromFilePairs method creates a channel emitting the file pairs matching a "glob" pattern provided by the user. 
+        .ifEmpty { error "Cannot find any reads matching: ${params.reads}"  }                   # .ifEmpty emits a value specified if no input is found.
+        .set { read_pairs_ch }                                                                  # .set operator assigns the channel to a variable whose name is specified as a closure parameter.
+                                                                                                #                
+        process quantification {                                                                # Second process, named "quantification"
+        conda "bioconda::salmon"                                                                # Defines what package is necessary
+        input:                                                                                  #
+        file index from index_ch                                                                ##
+        set pair_id, file(reads) from read_pairs_ch                                             ##
+                                                                                                ## Defines the input and output of the process
+        output:                                                                                 ##
+        file(pair_id) into quant_ch                                                             ##
+                                                                                                #
+        script:                                                                                 #
+        """                                                                                                     #
+        salmon quant --threads $task.cpus --libType=U -i index -1 ${reads[0]} -2 ${reads[1]} -o $pair_id        # Command to execute
+        """                                                                                                     #
+        }        
+        ```
+
+        Nextflow has in-depth documentation that can be found [here](https://www.nextflow.io/docs/latest/).
+
+The 3 scripts' tasks are:
+
+- Script 1 creates the transcriptome index file, necessary for downstream processes.
+- Script 2 collects read files by pairs (fastq files come in pairs) and performs quantification.
+- Script 3 performs quality control and summarizes all findings in a single report.
+
+#### Script 1: Indexing transcriptome
+
+Execute script 1
+```
+nextflow run script1.nf
+```
+
+The output will be something similar to
+```
+N E X T F L O W  ~  version 22.10.6
+Launching `script1.nf` [admiring_banach] DSL1 - revision: 66baaf0091
+R N A S E Q - N F   P I P E L I N E    
+===================================
+transcriptome: /home/user/work/folder/nf_foss_tut/data/ggal/transcriptome.fa
+reads        : /home/user/work/folder/nf_foss_tut/data/ggal/*_{1,2}.fq
+outdir       : results
+
+executor >  local (1)
+[f0/0a72bc] process > index [100%] 1 of 1 ✔
+```
+This is Nextflow's way of telling you that the process has been executed and completed. You should now have a new folder called `work`. Execute `tree work` to see what is inside the folder.
+```
+work
+└── f0
+    └── 0a72bc4d10dba1df2899b0449519e9
+        ├── index
+        │   ├── duplicate_clusters.tsv
+        │   ├── hash.bin
+        │   ├── header.json
+        │   ├── indexing.log
+        │   ├── quasi_index.log
+        │   ├── refInfo.json
+        │   ├── rsd.bin
+        │   ├── sa.bin
+        │   ├── txpInfo.bin
+        │   └── versionInfo.json
+        └── transcriptome.fa -> /home/user/work/folder/nf_foss_tut/data/ggal/transcriptome.fa
+
+3 directories, 11 files
+```
+These are new index files from the transcriptome provided.
+
+#### Script 2: collecting pairs and performing quantification
+
+Execute with
+```
+nextflow run script2.nf -resume --reads 'data/ggal/*_{1,2}.fq'
+```
+
+The output should look like
+```
+N E X T F L O W  ~  version 22.10.6
+Launching `script2.nf` [stupefied_swirles] DSL2 - revision: d3b0d0121c
+R N A S E Q - N F   P I P E L I N E    
+===================================
+transcriptome: /home/user/work/folder/nf_foss_tut/data/ggal/transcriptome.fa
+reads        : data/ggal/*_{1,2}.fq
+outdir       : results
+
+executor >  local(3)                                                                                
+[c1/6ece54] process > index [100%] 1 of 1, cached: 1 ✔                          
+[1b/10b8d5] process > quantification (1) [100%] 3 of 3 ✔
+```
+
+#### Script 3: QC and report
+
+Execute with
+```
+nextflow run script3.nf -resume --reads 'data/ggal/*_{1,2}.fq'
+```
+
+The output should look like 
+```
+N E X T F L O W  ~  version 22.10.6
+Launching `script3.nf` [voluminous_goodall] DSL1 - revision: d118356290
+R N A S E Q - N F   P I P E L I N E    
+===================================
+transcriptome: /home/user/work/folder/nf_foss_tut/data/ggal/transcriptome.fa
+reads        : data/ggal/*_{1,2}.fq
+outdir       : results
+
+executor >  local (4)
+[c1/6ece54] process > index                   [100%] 1 of 1, cached: 1 ✔
+[7a/4e9ce4] process > quantification (lung)   [100%] 3 of 3, cached: 3 ✔
+[34/d60dbb] process > fastqc (FASTQC on lung) [100%] 3 of 3 ✔
+[e9/e7c392] process > multiqc                 [100%] 1 of 1 ✔
+
+Done! Open the following report in your browser --> results/multiqc_report.html
+```
+
+As you can notice, the report is an `html` file that can be opened with a browser.
+
+### Document your work
+
+**Document your work.** You should still be in your GitHub folder. Summarize your steps and work on your README file, and push your changes! This will ensure that your work and files are saved and have a valid version that you can come back to in the future if you ever require to.
+
+??? Question "What if my files are too big?"
+        You can always use a `.gitignore`, a file that within itself has defined what should be saved in GitHub when pushing a commit, and what shouldn't be saved. An alternative is to move your files outside of the respository that you're pushing ("stashing").
+
 ---
 
 ## Self Assessment
