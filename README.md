@@ -7,7 +7,7 @@
 
 Documentation for CyVerse Learning's Foundations of Spring 2023 Open Science Skills course.
 
-Course will take place Jan 19-Mar 30, 2023, online.
+Course will take place Sept. 7 - Nov. 2, 2023, online.
 
 Contents are organized by subject, rather than day. See the schedule at https://foss.cyverse.org/schedule/
 
