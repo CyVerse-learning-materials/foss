@@ -1,6 +1,6 @@
 # Weekly Schedule
 
-Thursdays 11 am - 1 pm US Pacific Daylight Time (11am - 1pm AZ; 12 pm - 2 pm Mountain Daylight Time; 1 pm - 3 pm Central Daylight Time; 2 pm - 4 pm Eastern Dayligh Time)
+Thursdays 11 am - 1 pm US Pacific Daylight Time (11am - 1pm AZ; 12 pm - 2 pm MDT; 1 pm - 3 pm CDT; 2 pm - 4 pm EDT)
     
 ## Zoom Info
 
