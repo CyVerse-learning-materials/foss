@@ -2,7 +2,7 @@
 
 Thursdays 11 am - 1 pm US Pacific Daylight Time (11am - 1pm AZ; 12 pm - 2 pm MDT; 1 pm - 3 pm CDT; 2 pm - 4 pm EDT)
     
-### This schedule is tentative and subjuct to change 
+### This schedule is tentative and subject to change 
 
 
 ## Calendar
