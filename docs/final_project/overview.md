@@ -19,14 +19,15 @@ your experiences with the rest of the attendees.
 
 ## Description
 
-For the Fall 2023 capstone project, we will introduce hands-on exercises at the end of each FOSS session that will help crystalize the material learned that day. Over the 7 weeks of the course, you will be building and populating a Github repository or 'research object' for you own research projects. For example, for the session where we cover Data Management, we will have an exercise where you write a mini data management plan and post it in your Github Repo. 
+### Option 1
+For the Fall 2023 capstone project, we will introduce hands-on exercises at the end of each FOSS session that will help crystalize the material learned that day. Over the 8 weeks of the course, you will be building and populating a Github repository or 'research object' for you own research projects. For example, for the session where we cover Data Management, we will have an exercise where you write a mini data management plan and post it in your Github Repo. 
 
-### Old Style Capstone Projects
-For the project, you will choose one (or more) skill(s) or concept(s) from FOSS and apply it to one of your own projects. 
+### Option 2 
+For option 2, you can forego the week-to-week exercises. Instead, you will choose one (or more) skill(s) or concept(s) from FOSS and apply it to one of your own projects. 
 
 For instance, you could *write a Data Management Plan* for an upcoming project
 proposal, or you could *reorganize* an existing project and put all the
-code onto GitHub. You should try to identify what level your project
+code onto GitHub. You could *build a resume git.io web page*, or you could try to *containerize software*. You should try to identify what level your project
 is currently at for a given topic, and attempt to move up a level. This
 means you can try out a skill or idea you've never used before, or go
 to a more advanced level for something you already do.
