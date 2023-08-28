@@ -20,13 +20,7 @@ Our ultimate goal in this workshop is for you to "level up" one or more of those
 
 ### Capstone Project 
 
-The FOSS workshop asks that you select project that involves a combination of solo and group work. You can read more about it at the [capstone project](./final_project/overview.md) page.
-
-The Capstone Project involves two phases:
-
-Phase 1: will be taking a skill or concept you've learned, generally pertaining to one week's worth of instruction, and putting it into action for one of your own projects. This could be something like improving documentation for an existing project or creating a Data Management Plan for a project proposal.
-
-Phase 2: working with a group of other FOSS learners who tackled your same topic. Together, you will discuss challenges, tips, and next steps for that topic, and put together a short presentation that will be delivered to the rest of the FOSS attendees durning our final meeting.
+Throughout the duration of the course, students will be working on a project of their choosing that uses the tools and concepts presented in FOSS. The idea is that doing something tangible related to your own science or work will help you 'level up' your open science skills. This could be solo work or a group project depending on your interests. The culmination of the project will be a short presentation to the class on the last day of the course. You can read more about it at the [capstone project](./final_project/overview.md) page.
 
 ---
 
