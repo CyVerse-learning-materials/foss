@@ -32,20 +32,17 @@ is currently at for a given topic, and attempt to move up a level. This
 means you can try out a skill or idea you've never used before, or go
 to a more advanced level for something you already do.
 
-You should have your skill/topic chosen by **Week 8**, and you will then
-enter your name / topic into a spreadsheet (shared during the week 8 session). We'll use this to
-put together small groups. Week 8 will be your time to work on your personal project and ask us questions.
+You should have your skill/topic chosen by **Week 6**, and you will then
+enter your name / topic into a spreadsheet (shared during the week 6 session). We'll use this to help students find others working on similar projects.
 
-With the information you shared in the spreadsheets, we will identify potential groups of people working on a similar topic to yours. Groups will be revealed on **Week 9**.
+* You can do a project completely solo
+* You can work solo, but join a 'support group' to:
+  	1. discuss your experiences applying your skill or concept
+  	2. give each other help with sticking point you may encounter
+* You can work directly with a FOSS colleague on a joint project
 
-During **Week 9**, you will meet with your group to:
-
-1. discuss your experiences applying your skill or concept, 
-2. give each other help with sticking points you may have encountered
-3. put together a short (5-10 minute) presentation to be given to the rest of the groups during
-**Week 10**. 
-
-### Discussion Guide
+### Final Presentations
+Each student or group will deliver a short (5-10 minute) presentation to the rest of the class on week 8
 
 Your small group presentation should focus on the challenges and tips you may have for
 other FOSS attendees who want to utilize your skill or concept in the
@@ -63,15 +60,6 @@ future. Here are some prompts that you should address during your presentation:
 - What things do you want to do next?
 	- How might you "level up" in the current topic/skill compared to your project's current state?
 	- Are there any other FOSS skills that you want to tackle next? If so, how might they integrate with the topic/skill you focused on for your project?
-
----
-
-## Timeline
-
--   Week 8: finalize topic choice and share it with us
--   Between Week 8 and Week 9: work on your project individually
--   Week 9: group discussions with members with a similar topic and presentation prep
--   Week 10: group presentations
 
 ---
 
