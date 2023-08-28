@@ -17,4 +17,4 @@ Thursdays 11 am - 1 pm US Pacific Daylight Time (11am - 1pm AZ; 12 pm - 2 pm MDT
 | **Week 5** | Oct 12 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | Michele Cosi, Jeff Gillan | 
 | **Week 6** | Oct 19 | [Reproducibility I](06_reproducibility_i.md): <br> - Software installation <br> - Software management | Carlos Lizarraga, Jeff Gillan, Michele Cosi | 
 | **Week 7** | Oct 26 | [Reproducibility II](07_reproducibility_ii.md): <br> - Brief intro to containers | Jeffrey Gillan, Carlos Lizarraga |
-| **Week 8** | Nov 2 | Containers Continued <br> Capstone Presentations | 
+| **Week 8** | Nov 2 | Capstone Presentations | 
