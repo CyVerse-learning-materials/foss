@@ -22,6 +22,8 @@ your experiences with the rest of the attendees.
 ### Option 1
 For the Fall 2023 capstone project, we will introduce hands-on exercises at the end of each FOSS session that will help crystalize the material learned that day. Over the 8 weeks of the course, you will be building and populating a Github repository or 'research object' for you own research projects. For example, for the session where we cover Data Management, we will have an exercise where you write a mini data management plan and post it in your Github Repo. 
 
+Option 1 will be using the following website as reference: [FOSS Reference Hub](https://cyverse-learning-materials.github.io/foss-reference-hub/).
+
 ### Option 2 
 For option 2, you can forego the week-to-week exercises. Instead, you will choose one (or more) skill(s) or concept(s) from FOSS and apply it to one of your own projects. 
 
