@@ -15,7 +15,7 @@ We will be using several services that require you to create a user account.
 
 !!! Info "Link to :material-language-markdown: HackMD"
 
-        https://hackmd.io/@cyverse-foss/r1AIPa1Zi/edit 
+        https://hackmd.io/lJD96GCzQnWpxIX2UvwTNA?both 
 
 ??? Tip "Dual Monitors vs Side-by-Side"
 
