@@ -452,9 +452,210 @@ Your main repository should now have the files created in your other branch and 
 
 ## Introduction to Promp Engineering
 
-!!! Note "This section is taken from the "[GPT101](https://ua-data7.github.io/introllms/)" CyVerse Workshop"
+!!! info "This section is taken from the "[GPT101](https://ua-data7.github.io/introllms/)" CyVerse Workshop"
 
 A great set of tools that can help you with your own research, if used in the correct way, are the new Large Language Models (LLMs) available publicly. These include [:simple-openai: ChatGPT](https://chat.openai.com/), [:simple-googlebard: Bard](https://bard.google.com/?hl=en) and [:simple-microsoftbing: Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291) (integrated with :material-microsoft-edge: Microsoft Edge).
 
-!!! Note "LLMs in 100 words or less"
-        Large Language Models refer to advanced computer programs designed to understand and generate human-like text. They're trained on vast amounts of text data and can perform various language-related tasks, such as answering questions, translating languages, and generating creative content. LLMs like GPT-3 can be used in applications like chatbots, content generation, and more, making them powerful tools for natural language understanding and communication between computers and humans.
+### LLMs in 150 words (or less)
+
+**How they're made**: LLMs work by training on vast amounts of text from the internet. They learn patterns, grammar, and context from this data. When you give them a prompt, they generate text based on what they've learned. Imagine a super-smart autocomplete for text, but it can also create entire paragraphs or articles.
+
+**How they work**: LLMs don't understand like humans do. They predict what comes next in a sentence using math and probabilities. They don't have thoughts or feelings. They mimic human language but can make mistakes or write nonsense if not guided well.
+
+**How you can use them**: They're incredibly versatile. You can use them for answering questions, writing essays, coding help, and more. ***But you must be cautious because they can generate biased or false information if not used responsibly***. 
+
+In a nutshell, LLMs are like super-powered text generators trained on the internet's vast knowledge.
+
+### :simple-openai: Prompt Writing
+
+GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". 
+
+Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
+
+#### Priming
+
+GPTs do better when provided with "prompt primers".
+
+Zero-shot unconditioned prompts are likely to return the least specific responses. 
+
+Responses are more likely to be useful when multiple specific output types are defined.
+
+| Types of Priming | Example |
+|------------------|---------|
+| Zero (Shot) | "Write five examples of assessments for watershed health." |
+| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
+| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+
+#### Prompt Structure
+
+| Role | Task | Format |
+|------|------|--------|
+| Act as [\[ROLE\]](#role) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
+
+Your prompt should specify the role in which ChatGPT responds, what its task is, and the format of how its outputs should be returned. 
+
+A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
+
+This lesson only covers ChatGPT, but the same prompt techniques can be used in other LLMs.
+
+#### Role
+
+Set the role for ChatGPT to play during your session. 
+
+"I want you to act as ..." will establish what type of conversation you are planning to have. 
+
+| Types of Roles |
+|---|
+| Project Manager  | 
+| Copywriter / Editor  | 
+| Paper Reviewer | 
+| Teacher / Mentor / Advisor |
+| Student / Learner / Participant |
+| Software Engineer  |
+| DevOps Engineer  |
+| Linux Terminal  |
+| Python Interpreter |
+| Web Browser |
+
+Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/), a web browser, a search engine, or language interpreter.
+
+??? Abstract "Data Scientist"
+
+    Let's try an example prompt with role-playing to help write code in the R programming language.
+
+    ```markdown
+    I want you to act as a data scientist with complete knowledge of the R language, 
+    the TidyVerse, and RStudio. 
+    
+    Write the code required to create a new R project environment,
+    Download and load the Palmer Penguins dataset, and plot regressions of body mass, 
+    bill length, and width for the species of Penguins in the dataset. 
+
+    Your response output should be in R and RMarkDown format 
+    with text and code delineated with ``` blocks.
+
+    At the beginning of new file make sure to install any 
+    RStudio system dependencies and R libraries that Palmer Penguins requires.
+    ```
+
+    Example can use `GPT-3.5-Turbo` or `GPT-4`
+
+??? Abstract "Talk to Dead Scientists"
+
+    Try to ask a question with and without Internet access enabled:
+
+    ```markdown
+    I want you to respond as though you are the mathematician Benoit Mandelbrot
+
+    Explain the relationship of lacunarity and fractal dimension for a self-affine series
+
+    Show your results using mathematical equations in LaTeX or MathJax style format
+    ```
+    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
+
+#### Tasks
+
+Prompts which return informative responses to questions like "What is ..." or "How does ..."
+
+Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
+
+| Types of Task | 
+|---|
+| Scientific Article | 
+| Essay |
+| Blog Post |
+| Outline |
+| Email | 
+| Cover Letter |
+| Recipe |
+| Tutorial |
+| Lesson Plan | 
+| Jupyter Notebook |
+| Configuration |
+| Code |
+| Software Script |
+
+Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
+
+There are extension tools for ChatGPT which allows you to prompt with references.
+
+#### Format
+
+By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
+
+| Formats to output |
+|---|
+| MarkDown Text (\& emojis) |
+| List |
+| Table |
+| HTML |
+| CSS |
+| Regular Expression |
+| CSV / TXT |
+| JSON |
+| Rich Text |
+| Gantt Chart |
+| Word Cloud |
+| Graphs |
+| Spreadsheets |
+
+You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
+
+ChatGPT can provide instructional details about how to do specific tasks. 
+
+??? Abstract "Documentation Writer"
+
+    ```markdown
+    I want you to act as a DIY expert. You will help me develop the skills necessary 
+    to complete simple lab documentation, create tutorials and guides for beginners and experts, 
+    and explain complex concepts in layman's terms using visual techniques, and develop helpful resources.
+
+    I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
+    ```
+
+### Further Documentation & Questions
+
+For a more in depth quick start, go to the [GPT 101](https://ua-data7.github.io/introllms/) workshop. 
+
+Documentation of interest:
+
+- Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt)
+- Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](https://doi.org/10.48550/arXiv.2303.08774)
+- Read the [:fontawesome-regular-file-pdf: Bard Documentation](https://ai.google/static/documents/google-about-bard.pdf)
+
+??? Tip "How long can or should a prompt be?"
+
+    The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665). A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
+
+    Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens. BARD currently has a limit of 20,000 tokens in a prompt. 
+    
+    This means that a 2,048 token prompt would be equivalent to about 1,536 words (3-6 pages), and a 32,768 token prompt would be 24,576 words (50-100 pages). 
+    
+    However, this is only an approximation and may vary depending on the specific text and model. 
+
+    What this also means is that current GPT are not capable of reading many PDFs at one time, for example, to do a literature review, or to write a sequel to a novel or book series. 
+
+??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
+
+    There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
+
+    [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc)
+
+    Check out lists around:
+
+    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts)
+   
+    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
+
+
+??? Tip "Access the Internet"
+
+    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
+
+    There are third-party extensions, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend OpenAI ChatGPT's reach to the internet.
+
+    We presently recommend using [:material-microsoft-bing: Bing Chat](bing.md) with Edge Browser instead of ChatGPT 3.5 for prompting which works with the internet.
+
+    [:simple-google: Bard](bard.md) also has access to the web and limited integration with Google Workspace.

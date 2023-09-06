@@ -182,7 +182,7 @@ walk through a few of these useful features.
 !!! Note
         Git is not really for storing or manipulating data, especially large
         files. But the [CyVerse Discovery
-        Environment](https://de.cyverse.org/de/){target=_blank is a great place to serve,
+        Environment](https://de.cyverse.org/de/){target=_blank} is a great place to serve,
         store, and share data.
 
 ## Self Assessment
