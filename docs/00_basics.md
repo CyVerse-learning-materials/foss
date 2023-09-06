@@ -333,8 +333,8 @@ $ sudo apt-get install -y git-all
 ```
 $ git clone <repository address>     # Replace <repository address> with the link you copied such as below
 
-$ git clone https://github.com/CosiMichele/foss22_git_tutorial.git
-Cloning into 'foss22_git_tutorial'...
+$ git clone https://github.com/CosiMichele/3_git_tutorial.git
+Cloning into 'foss23_git_tutorial'...
 remote: Enumerating objects: 13, done.
 remote: Counting objects: 100% (13/13), done.
 remote: Compressing objects: 100% (12/12), done.
@@ -448,17 +448,13 @@ Your main repository should now have the files created in your other branch and 
 
 ![git_17](assets/git_17.png)
 
-#### Tracking Issues
+---
 
-Another great feature that comes with GitHub, is the Issue tracker. Issues are requests, questions, bug reports that you and your collaborators may have. You can create a new issue in the issue tab
+## Introduction to Promp Engineering
 
-![git_18](assets/git_18.png)
+!!! Note "This section is taken from the "[GPT101](https://ua-data7.github.io/introllms/)" CyVerse Workshop"
 
-In case you want to open a new issue, click on the **New issue** button. You can type the issue at hand in the new page and click **Submit new issue** (it supports markdown!). Your Issues page should be updated with a list of all open issues.
+A great set of tools that can help you with your own research, if used in the correct way, are the new Large Language Models (LLMs) available publicly. These include [:simple-openai: ChatGPT](https://chat.openai.com/), [:simple-googlebard: Bard](https://bard.google.com/?hl=en) and [:simple-microsoftbing: Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291) (integrated with :material-microsoft-edge: Microsoft Edge).
 
-![git_19](assets/git_19.png)
-![git_20](assets/git_20.png)
-
-You can continue the conversation with a comment or Close the issue with a comment (and you can reopen later on as well if necessary!).
-
-![git_21](assets/git_21.png)
+!!! Note "LLMs in 100 words or less"
+        Large Language Models refer to advanced computer programs designed to understand and generate human-like text. They're trained on vast amounts of text data and can perform various language-related tasks, such as answering questions, translating languages, and generating creative content. LLMs like GPT-3 can be used in applications like chatbots, content generation, and more, making them powerful tools for natural language understanding and communication between computers and humans.
