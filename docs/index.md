@@ -1,8 +1,11 @@
-[![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank} 
+<figure markdown>
+  [![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank}
+</figure>
 
-[![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/){target=_blank} 
+<p style="text-align: center; font-weight: bold; font-size: 36px;">
+Welcome to Foundational Open Science Skills (FOSS) Fall 2023!
+</p>
 
-# Welcome to Foundational Open Science Skills (FOSS) Fall 2023!
 
 ![header](assets/foss_title.png)
 
@@ -27,7 +30,7 @@ Throughout the duration of the course, students will be working on a project of 
 ## Expected Outcomes
 
 -   Proficiently organize your lab, external and internal communications, and teach and conduct research with open source software
--   Ability to scale out computations from laptop to the cloud and High Performance Computing / High Throughput Computing systems
+-   Ability to scale out computations from laptop to the cloud and High Performance Computing/High Throughput Computing systems
 -   Skillfully manage your research data through the data lifecycle 
 -   Join a larger community of Open Science practitioners
 -   Be an Advocate for Open Science in your professional circles and communities
@@ -38,12 +41,16 @@ By working through an example project relevant to your interests, you will pract
 
 **Funding and Citations:**
 
-CyVerse is funded entirely by the National Science Foundation [![NSF](https://www.nsf.gov/policies/images/NSF_Official_logo_High_Res_1200ppi.png){width="25"}](https://nsf.gov) under Award Numbers:
+CyVerse is funded by the Arizona Board of Regents and the US National Science Foundation [![NSF](https://www.nsf.gov/policies/images/NSF_Official_logo_High_Res_1200ppi.png){width="25"}](https://nsf.gov) under Award Numbers: 
 
-[![NSF-0735191](https://img.shields.io/badge/NSF-0735191-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=0735191)  [![NSF-1265383](https://img.shields.io/badge/NSF-1265383-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1265383)  [![NSF-1743442](https://img.shields.io/badge/NSF-1743442-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743442)
+[![NSF-0735191](https://img.shields.io/badge/NSF-0735191-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=0735191)  [![NSF-1265383](https://img.shields.io/badge/NSF-1265383-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1265383) [![NSF-1743442](https://img.shields.io/badge/NSF-1743442-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743442)
+
+The CyVerse Zenodo Community has published, citable versions of CyVerse materials: 
 
 [![DOI](https://img.shields.io/badge/Zenodo-CyVerse%20Community-blue)](https://zenodo.org/communities/cyverse)
 
-The CyVerse Zenodo Community has published, citable versions of CyVerse materials.
-
 Please cite CyVerse appropriately when you make use of our resources; see [CyVerse citation policy](https://cyverse.org/policies/cite-cyverse).
+
+<figure markdown>
+  [![license](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/){target=_blank} 
+</figure>

@@ -32,11 +32,6 @@ nav:
   - Capstone Project:
       - 'Overview': final_project/overview.md
 
-# JavaScript for Intercom Widget
-extra_javascript:
-  - javascripts/intercom-learning.js
-
-# Set theme to `readthedocs`
 # must also set Action to use `@nomaterial` branch instead of `@master` for material
 theme:
   name: material
@@ -51,15 +46,9 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: agic 
+      scheme: default 
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
