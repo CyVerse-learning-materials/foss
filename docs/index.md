@@ -2,10 +2,7 @@
   [![!CyVerse Learning Center](assets/logos/cyverse_logo_2022.png "CyVerse Learning Center"){ width="400" }](https://learning.cyverse.org){target=_blank}
 </figure>
 
-<p style="text-align: center; font-weight: bold; font-size: 36px;">
-Welcome to Foundational Open Science Skills (FOSS) Fall 2023!
-</p>
-
+# Welcome to Foundational Open Science Skills (FOSS) Fall 2023!
 
 ![header](assets/foss_title.png)
 
