@@ -450,7 +450,7 @@ Your main repository should now have the files created in your other branch and 
 
 ---
 
-## Introduction to Promp Engineering
+## Introduction to Prompt Engineering
 
 !!! info "This section is taken from the "[GPT101](https://ua-data7.github.io/introllms/)" CyVerse Workshop"
 
