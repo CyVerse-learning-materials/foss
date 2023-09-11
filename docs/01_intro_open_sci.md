@@ -12,6 +12,17 @@
         * Identify who the practitioners of Open Science are
         * Understand the underlying Ethos of Open Science
 
+## 2023 is the Year of Open Science!
+
+The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}.
+
+
+<figure markdown>
+  <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
+    <figcaption>2023 is the year of Open Science</figcaption>
+</figure>
+
+
 ## What is Open Science?
 
 If you ask a dozen researchers this question, you will probably get just as many answers.
@@ -86,7 +97,9 @@ id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([pu
 
 Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
 
-!!! Tip ":dark_sunglasses: Awesome Lists of Open Science"
+<br>
+
+??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
 
     Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
     
@@ -94,7 +107,8 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
-To help move the scientific community toward open science, NASA has declared [2023 is the year of Open Science!](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank} 
+<br>
+<br>
 
 ### **:material-pillar: Open Access Publications**
 
@@ -196,7 +210,9 @@ To help move the scientific community toward open science, NASA has declared [20
         [SportrXiv](https://sportrxiv.org/){target=_blank} - is an open access preprint for Sports sciences.
 
         [ThesisCommons](https://thesiscommons.org/) - open Theses
-        
+
+<br>
+<br>     
 ### **:material-pillar: Open Data**
 
 Open Data are a critical aspect of open science. There are three key attributes of Open Data:
@@ -229,11 +245,14 @@ Open Data are a critical aspect of open science. There are three key attributes 
     
     [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
 
-??? Tip "LOD Cloud"
+??? Tip "Linked Open Data Cloud"
     
     [The Linked Open Data Cloud](https://lod-cloud.net/){target=_blank} shows how data are [linked to one another](https://www.w3.org/standards/semanticweb/data){target=_blank} forming the basis of the [semantic web :material-wikipedia:](https://en.wikipedia.org/wiki/Semantic_Web){target=_blank}.
 
     [![linked open data](https://lod-cloud.net/clouds/lod-cloud.svg)](https://lod-cloud.net/clouds/lod-cloud.svg){target=_blank}
+
+<br>
+<br>
 
 ### **:material-pillar: Open Educational Resources**
 
@@ -279,6 +298,8 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
     [DigitalLearn](https://www.digitallearn.org/){target=_blank}
 
+<br>
+<br>
 
 ### **:material-pillar: Open Methodology**
 
