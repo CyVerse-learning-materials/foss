@@ -213,6 +213,7 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
 <br>
 <br>     
+
 ### **:material-pillar: Open Data**
 
 Open Data are a critical aspect of open science. There are three key attributes of Open Data:
@@ -458,6 +459,9 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/){target=_blank}, a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
+<br>
+<br>  
+
 ### **:material-pillar: Open Peer Review**
 
 [![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
@@ -483,6 +487,9 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
     [PubPeer](https://pubpeer.com/){target=_blank} platform for post-publication of peer reviews.
 
     [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
+
+<br>
+<br>  
 
 ### **:material-pillar: Open Source Software**
 
