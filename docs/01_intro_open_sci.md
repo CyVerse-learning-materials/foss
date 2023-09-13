@@ -237,14 +237,6 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
 ??? Tip "FAIR & CARE Principles"
 
-    [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
-
-    [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
-
-    [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
-    
-    [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
-
      **FAIR Principles**
 
     In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were
