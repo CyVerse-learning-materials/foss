@@ -608,6 +608,8 @@ Source: [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/the-au
 
 For more information (training):
 
+[January in Tucson](https://igp.arizona.edu/jit){target=_blank} - intensive education session brings together distinguished faculty in the field of Indigenous governance and Indigenous rights, and gives them the opportunity to teach and hold discussions with Indigenous leaders, practitioners, and community members, and anyone interested in Indigenous affairs.
+
 Ethics and Data Access (General Information with BioMedical and Life Sciences Data) includes [a legal and ethical checklist lesson for researchers](https://ilias.fraunhofer.de/goto.php?target=fold_15177&client_id=fraunhofer){target=_blank} around "FAIR Plus".
 
 
