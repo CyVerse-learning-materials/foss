@@ -42,25 +42,25 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
 ??? Example "Six Pillars :material-pillar: of Open Science"
 
-**:material-pillar: Open Access Publications**
+    **:material-pillar: Open Access Publications**
 
-        **:material-pillar: Open Data**
+    **:material-pillar: Open Data**
 
-        **:material-pillar: Open Educational Resources**
+    **:material-pillar: Open Educational Resources**
 
-        **:material-pillar: Open Methodology**
+    **:material-pillar: Open Methodology**
       
-        **:material-pillar: Open Peer Review**
+    **:material-pillar: Open Peer Review**
 
-        **:material-pillar: Open Source Software**
+    **:material-pillar: Open Source Software**
 
-        ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
+    ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
 
             The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
-        ??? Tip "Foster Open Science Diagram"
+??? Tip "Foster Open Science Diagram"
         
-            [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
              Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
 
