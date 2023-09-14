@@ -40,9 +40,9 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
     Open and Collaborative Science Network's [Open Science Manifesto](https://ocsdnet.org/manifesto/open-science-manifesto/){target=_blank}
 
-    ??? Example "Six Pillars :material-pillar: of Open Science"
+??? Example "Six Pillars :material-pillar: of Open Science"
 
-        **:material-pillar: Open Access Publications**
+**:material-pillar: Open Access Publications**
 
         **:material-pillar: Open Data**
 
