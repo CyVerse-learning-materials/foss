@@ -41,19 +41,18 @@ where you are.
 
 !!! Question "Activity"
         In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
+        
         1. What are the two or three data types that you most frequently work with?
             -   Think about the sources (observational, experimental, simulated, compiled/derived)
             -   Also consider the formats (tabular, sequence, database, image, etc.)
         2.  What is the scale of your data?
-
-        ??? Tip
-            We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
-            
-            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
-            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
-             -   Variety: How many different data types (raw files? databases?)
-             A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
-             
+            ??? Tip
+                We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
+                
+                -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+                -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+                -   Variety: How many different data types (raw files? databases?)
+                A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
         3.  What is your strategy for storing and backing up your data?
         4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
         5.  What is your strategy for searching your data?
@@ -325,8 +324,6 @@ published in Scientific Data. Read it.
 
         FAIR does not demand that data be open: See one definition of open:
         http://opendefinition.org/
-
-
 
 !!! Tip
         **Why Principles?**
