@@ -48,6 +48,7 @@ where you are.
 
         ??? Tip
             We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
+            
             -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
             -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
              -   Variety: How many different data types (raw files? databases?)
@@ -528,7 +529,7 @@ Extra challenges for collaborative projects.
 
 ??? Question "True or False: When science project funding ends, the data should end with it"
 
-    !!! Failure "False"
+    !!! Success "False"
 
         Data live on after a project ends.
 
@@ -540,7 +541,7 @@ Extra challenges for collaborative projects.
 
 ??? Question "True or False: FAIR and CARE data principles are the same"
 
-    !!! Failure "False"
+    !!! Success "False"
 
         The CARE principles were created in order to help guide and answer when and how applying FAIR data principles to soverign indigenous-controlled data should be done and when it should not. 
 

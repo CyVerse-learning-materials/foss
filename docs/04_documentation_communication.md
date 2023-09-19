@@ -315,7 +315,7 @@ There are many ways scientists use social media and the web to share their data 
 
 ??? Question "True or False: Tutorials and How-to-Guides are the same"
 
-    !!! Failure "False"
+    !!! Success "False"
 
         Tutorials are in general introductory and longer than How-to-Guides and are intended for teaching learners a new concept by describing applications and providing justifications. 
 
@@ -323,7 +323,7 @@ There are many ways scientists use social media and the web to share their data 
 
 ??? Question "True or False: Teams should communicate over a single messaging platform."
 
-    !!! Failure "False"
+    !!! Success "False"
 
         While it may be advisable to push informal communication toward a platform like SLACK or Microsoft Teams, there is no one-platform-fits-all solution for managing a diverse science team.
 

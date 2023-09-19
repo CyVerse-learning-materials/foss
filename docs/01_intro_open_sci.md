@@ -683,7 +683,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "True or False: All research papers published in the top journals, like Science and Nature, are always Open Access?"
 
-    ??? Failure
+    ??? Success "Answer"
 
         False
 
@@ -696,7 +696,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "True or False: an article states all of the research data used in the experiments "are available upon request from the corresponding author(s)," meaning the data are "Open""
 
-    ??? Failure
+    ??? Success "Answer"
 
         False
 
@@ -706,7 +706,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "True or False: Online Universities and Data Science Boot Camps like UArizona Online, Coursera, Udemy, etc. promote digital literacy and are Open Educational Resources?"
 
-    ??? Failure
+    ??? Success "Answer"
 
         False
 
@@ -716,7 +716,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "Using a version control system to host the analysis code and computational notebooks, and including these in your Methods section or Supplementary Materials, is an example of an Open Methodology?"
 
-    ??? Success
+    ??? Success "Answer"
 
         Yes!
 
@@ -726,7 +726,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "You are asked to review a paper for an important journal in your field. The editor asks if you're willing to release your identity to the authors, thereby "signing" your review. Is this an example of "Open Peer Review"?"
 
-    ??? Failure
+    ??? Success "Answer"
 
         No
 
@@ -736,7 +736,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
 ??? Question "You read a paper where the author(s) wrote their own code and licensed as "Open Source" software for a specific set of scientific tasks which you want to replicate. When you visit their personal website, you find the GitHub repository does not exist (because its now private). You contact the authors asking for access, but they refuse to share it 'due to competing researchers who are seeking to steal their intellectual property". Is the software open source?"
 
-    ??? Failure
+    ??? Success "Answer"
 
         No
 

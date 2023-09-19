@@ -432,7 +432,7 @@ management. We'll link to some of them here.
 
 ??? Question "What are some uses of a Project Governance Document?"
 
-    ??? Info "Answers"
+    ??? Success "Answers"
         
         * Sets expectations for behavior and operations
         
@@ -445,7 +445,7 @@ management. We'll link to some of them here.
 
 ??? Question "Research Objects must include all components of research: governance document, manuals, documentation, research papers, analysis code, data, software containers"
 
-    ??? Failure "Answers"
+    ??? Success "Answers"
 
         While a Research Object (RO) *may* include the entire kitchen sink from a research project, it does NOT always contain all of these things.
 
