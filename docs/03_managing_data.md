@@ -21,7 +21,7 @@ is critical to making your science impactful, efficient, and open.
         - If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?
         - When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
 
-Data management skills produce self-describing datasets that:
+Well-managed Data Sets:
 
 -   Make life much easier for you and your collaborators
 -   Benefit the scientific research community by allowing others to reuse your data
@@ -35,9 +35,7 @@ Data management skills produce self-describing datasets that:
 
 **Part I: Basic questions**
 
-Here are some questions about how you manage and work with data. We will
-complete some more formal assessments later, but for now let's see
-where you are.
+Here are some questions about how you manage and work with data. 
 
 !!! Question "Activity"
         In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
@@ -126,33 +124,25 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
 
 ### Best practices for the data life cycle
 
-**The most important thing to remember about data management is that you
-are not alone.** There are data management experts within your
-discipline, many of them not farther away than your university library
-system. In addition, there are many organizations (including many cited
-below) which work to solve.
-
-!!! Warning
-        **The biggest challenge to effective data management**
-
-        The biggest challenge to data management making it an afterthought.
-
-        Unfortunately, poor data management doesn't have a high upfront cost.
-        You can do substantial work before realizing you are in trouble. Like
-        a swimmer in rip current, by the time you realize you are in trouble,
-        you may already be close to drowning.
-
-        The solution? Make data management the first thing you consider when
-        starting a research project. It also needs to be a policy you
-        institute right away for your research group.
-
-Here are some excellent steps to consider. The summary below is adapted
-from the excellent [DataONE best practices primer](https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
+The summary below is adapted from the excellent [DataONE best practices primer](https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
 
 **Plan**
 
 -   Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime
 -   A good plan considers each of the stages below
+
+??? Warning
+
+    The biggest challenge to data management making it an afterthought.
+
+    Unfortunately, poor data management doesn't have a high upfront cost.
+    You can do substantial work before realizing you are in trouble. Like
+    a swimmer in rip current, by the time you realize you are in trouble,
+    you may already be close to drowning.
+
+    The solution? Make data management the first thing you consider when
+    starting a research project. It also needs to be a policy you
+    institute right away for your research group.
 
 **Collect**
 
@@ -499,6 +489,49 @@ Extra challenges for collaborative projects.
 
 !!! Question "Exercise"
         Thinking about a dataset you work with, complete the [Data Stewardship Wizard](https://ds-wizard.org/).
+
+---
+
+## Licenses
+
+By default, when you make creative work, that work is under exclusive copyright. This means that you have the right to decide how your work is used, and that others must ask your permission to use your work.
+
+If you want your work to be Open and used by others, you need to specify how others can use your work. This is done by *licensing* your work.
+
+[MIT License](https://choosealicense.com/licenses/mit/{target=_blank})
+
+[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/){target=_blank}
+
+
+FOSS material has been licensed using the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target=_blank}.
+<br>
+<br>
+
+Licensing your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
+
+* Apache License 2.0
+* GNU General Public License v3.0
+* MIT License
+* BSD 2-Clause "Simplified" License
+* BSD 3-Clause "New" or "Revised" License
+* Boost Software License 1.0
+* Creative Commons Zero v1.0 Universal
+* Eclipse Public License 2.0
+* GNU Affero General Public License v3.0
+* GNU General Public License v2.0
+* GNU Lesser General Public License v2.1
+* Mozilla Public License 2.0
+* The Unlicense
+
+<br>
+<br>
+
+Open Source Licensing Resources
+
+https://choosealicense.com/
+
+https://opensource.guide/legal/
+
 
 ---
 
