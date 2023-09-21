@@ -54,6 +54,7 @@ Here are some questions about how you manage and work with data.
         1\. What are the two or three data types that you most frequently work with?
             -   Think about the sources (observational, experimental, simulated, compiled/derived)
             -   Also consider the formats (tabular, sequence, database, image, etc.)
+        
         2\.  What is the scale of your data?
 
         ??? Tip
@@ -65,8 +66,11 @@ Here are some questions about how you manage and work with data.
             A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
 
         3\.  What is your strategy for storing and backing up your data?
+        
         4\.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
+       
         5\.  What is your strategy for searching your data?
+        
         6\.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
 
 
