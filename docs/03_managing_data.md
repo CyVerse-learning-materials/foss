@@ -407,7 +407,11 @@ think your data are:
 
 ### Today's Guest Speaker
 
-#### Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville
+<figure markdown>
+  ![Image title](/assets/wade_bishop.jpg){ width="300" }
+  <figcaption>Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville </figcaption>
+</figure>
+
 
 Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-027){target=_blank} on DMPs
 
