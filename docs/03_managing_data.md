@@ -405,6 +405,13 @@ think your data are:
         -   Describe the important elements of a data management plan
         -   Use a self-assessment to design a data management plan
 
+### Today's Guest Speaker
+
+#### Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville
+
+Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-027){target=_blank} on DMPs
+
+
 "A data management plan or DMP is a formal document that outlines how
 data are to be handled both during a research project, and after the
 project is completed. [1] The goal of a data management plan is to
