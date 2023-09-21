@@ -16,7 +16,7 @@ is critical to making your science impactful, efficient, and open.
 
 ??? Warning
 
-    The biggest challenge to data management making it an afterthought.
+    The biggest challenge to data management is **making it an afterthought**.
 
     Unfortunately, poor data management doesn't have a high upfront cost.
     You can do substantial work before realizing you are in trouble. Like
