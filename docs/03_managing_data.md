@@ -405,16 +405,7 @@ think your data are:
         -   Describe the important elements of a data management plan
         -   Use a self-assessment to design a data management plan
 
-### Today's Guest Speaker
-
-<figure markdown>
-  ![Image title](/assets/wade_bishop.jpg){ width="300" }
-  <figcaption>Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville </figcaption>
-</figure>
-
-
-Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-027){target=_blank} on DMPs
-
+### What is a DMP?
 
 "A data management plan or DMP is a formal document that outlines how
 data are to be handled both during a research project, and after the
@@ -427,6 +418,17 @@ the future."
 (Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
 [Example DMP](https://github.com/CyVerse-learning-materials/foss/blob/main/slides/DMPFuTRES_v2.docx)
+
+
+### Today's Guest Speaker
+
+<figure markdown>
+  ![Image title](/assets/wade_bishop.jpg){ width="200" }
+  <figcaption>Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville </figcaption>
+</figure>
+
+Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-027){target=_blank} on DMPs
+
 
 ---
 
