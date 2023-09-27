@@ -125,47 +125,42 @@ When you create a new software, library, or package, you are becoming its parent
 
 ### Development Methodology
 
-??? Info "Development Methology"
+Info "Development Methology"
 
-    <figure markdown>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg){ width="400" } </a>
-        <figcaption> the "leaps of faith" required in Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
-    </figure>
+<figure markdown>
+<a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg){ width="400" } </a>
+<figcaption> the "leaps of faith" required in Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
+</figure>
 
-    In software development, there are two common methologies which have similar applications to a research project.
+In software development, there are two common methologies which have similar applications to a research project:
 
-    [:material-wikipedia: Agile](https://en.wikipedia.org/wiki/Agile_software_development)
-    
-    - [Scrum](https://www.atlassian.com/agile/scrum) - is one technique within Agile
+- [:material-wikipedia: Agile](https://en.wikipedia.org/wiki/Agile_software_development)
+        - [Scrum](https://www.atlassian.com/agile/scrum) - is one technique within Agile
+        - [Kanban](https://www.atlassian.com/agile/kanban) - is one technique within Agile
+- [:material-wikipedia: Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
-    - [Kanban](https://www.atlassian.com/agile/kanban) - is one technique within Agile
-    
-    [:material-wikipedia: Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
+<figure markdown>
+<a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png){ width="800" } </a>
+<figcaption> the effort distribtion of Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
+</figure>
 
-    <figure markdown>
-        <a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/4/49/Waterfall_vs_agile-1.png){ width="800" } </a>
-        <figcaption> the effort distribtion of Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
-    </figure>
-
-
-    [LucidChart Blog: Agile vs Waterfall vs Kanban vs Scrum ](https://www.lucidchart.com/blog/agile-vs-waterfall-vs-kanban-vs-scrum) 
-
-    [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
+!!! info "Comparisons between methodologies"
+        - [LucidChart Blog: Agile vs Waterfall vs Kanban vs Scrum ](https://www.lucidchart.com/blog/agile-vs-waterfall-vs-kanban-vs-scrum) 
+        
+        - [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
 
 
 ### Breakout Discussion
 
 Now we will do a breakout discussion section to talk about overall project management.
 
-??? Question "What is an example of a poorly managed project you were involved in? What contributed to this feeling?"
+!!! Question "What is an example of a poorly managed project you were involved in? What contributed to this feeling?"
 
-??? Question "Why do you think effective project management is important to Open Science?"
+!!! Question "Why do you think effective project management is important to Open Science?"
 
-??? Question "What are some limitations to you, your lab/group, or your domain?"
+!!! Question "What are some limitations to you, your lab/group, or your domain?"
 
 ---
-
-
 
 ## 2. Research Objects
 
@@ -376,13 +371,13 @@ Example project structure:
 
 Now we will do a breakout discussion section to talk about research objects
 
-??? Question "Who here has created a research object or attempted to?"
+!!! Question "Who here has created a research object or attempted to?"
 
-??? Question "Do you think someone could reproduce your research by accessing your research object?"
+!!! Question "Do you think someone could reproduce your research by accessing your research object?"
 
-??? Question "Where might a research object not work for your research?"
+!!! Question "Where might a research object not work for your research?"
 
-??? Question "What would a research object look like for your research?"
+!!! Question "What would a research object look like for your research?"
 
 ---
 
