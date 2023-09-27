@@ -125,8 +125,6 @@ When you create a new software, library, or package, you are becoming its parent
 
 ### Development Methodology
 
-Info "Development Methology"
-
 <figure markdown>
 <a href="https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg" target="blank" rel="agile">![agile](https://upload.wikimedia.org/wikipedia/commons/d/da/Waterfallvsagile.jpg){ width="400" } </a>
 <figcaption> the "leaps of faith" required in Agile vs Waterfall. Image Credit: Wikimedia Commons CC BY 4.0 </figcaption>
@@ -135,8 +133,8 @@ Info "Development Methology"
 In software development, there are two common methologies which have similar applications to a research project:
 
 - [:material-wikipedia: Agile](https://en.wikipedia.org/wiki/Agile_software_development)
-        - [Scrum](https://www.atlassian.com/agile/scrum) - is one technique within Agile
-        - [Kanban](https://www.atlassian.com/agile/kanban) - is one technique within Agile
+  - [Scrum](https://www.atlassian.com/agile/scrum)
+  - [Kanban](https://www.atlassian.com/agile/kanban)
 - [:material-wikipedia: Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
 <figure markdown>
