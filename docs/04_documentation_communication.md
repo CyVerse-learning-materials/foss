@@ -26,14 +26,12 @@ Strong frameworks for internal communication and documentation can make collabor
 
 ??? Question "Can you explain the documentation type for each quadrant?"
 
-    ??? Success
+    - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it.
+    - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to solve a real-world problem.
+    - **References**: Guides! References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
+    - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
 
-        - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it.
-        - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to solve a real-world problem.
-        - **References**: Guides! References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
-        - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
-
-You can read more in depth on this chart by visiting https://documentation.divio.com/introduction/.
+You can read more in depth on this chart by visiting https://documentation.divio.com 
 
 ### Public Repositories for Documentation
 
