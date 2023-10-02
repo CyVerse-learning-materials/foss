@@ -313,6 +313,178 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
 
 ### Directions B: Creating your own
 
+0. Create a GitHub account and [generate a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). [FOSS has covered how to create a Token in Week 0: The Shell and Git](https://foss.cyverse.org/00_basics/#adding-code-locally). 
+1. Create your own repository
+    - Add a README and a license and keep the repository public
+2. Create a `docs` folder
+    - Within the folder, create an `index.md` file
+3. Create an `requirements.txt` file and populate it with the following requirement list:
+    ```
+    bump2version
+    coverage
+    flake8
+    grip
+    ipykernel
+    livereload
+    nbconvert>=7
+    pip
+    sphinx
+    tox
+    twine
+    watchdog
+    wheel
+    mkdocs-git-revision-date-plugin 
+    mkdocs-jupyter 
+    mkdocs-material 
+    mkdocs-pdf-export-plugin
+    mkdocstrings 
+    mkdocstrings-crystal
+    mkdocstrings-python-legacy
+    #pygments>=2.10,<2.12
+    #pymdown-extensions<9.4
+
+    # Requirements for core
+    jinja2>=3.0.2
+    markdown>=3.2
+    mkdocs>=1.4.0
+    mkdocs-material-extensions>=1.0.3
+    pygments>=2.12
+    pymdown-extensions>=9.4
+
+    # Requirements for plugins
+    requests>=2.26
+    ```
+4. Create an `mkdocs.yml` file and  populate it with the following:
+    ```
+    site_name: Name of your website
+    site_description: Tell people what this website is about
+    site_author: Who you are
+    site_url: The website URL
+
+    # Repository
+    repo_name: The repository name
+    repo_url: The repository URL
+    edit_uri: edit/main/docs/
+    # Copyright
+    copyright: 'Copyright &copy; 2023 - 2024'
+
+
+    # Configuration
+    theme:
+        name: material
+    highlightjs: true
+    font:
+        text: Roboto
+        code: Regular
+    palette:
+        scheme: default
+
+    # Features  
+    features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+
+    # 404 page
+    static_templates:
+        - 404.html
+
+    # Search feature
+    include_search_page: false
+    search_index_only: true
+
+    # Palette and theme (uses personalized colours)
+    language: en
+    palette:
+        primary: custom
+        accent: custom
+    icon:
+        logo: material/cogs
+        favicon: material/cogs
+
+    # Page tree
+    nav:
+    - Home: index.md
+
+    # Extra Plugins
+    plugins:
+        - search
+        - mkdocstrings
+        - git-revision-date
+        - mkdocs-jupyter:
+            include_source: True
+            ignore_h1_titles: True
+
+    # Extensions (leave as is)
+    markdown_extensions:
+    - admonition
+    - abbr
+    - attr_list
+    - def_list
+    - footnotes
+    - meta
+    - md_in_html
+    - toc:
+        permalink: true
+        title: On this page
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink:
+        repo_url_shorthand: true
+        user: squidfunk
+        repo: mkdocs-material
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    ```
+5. Create a `.github/workflows` folder and add a `ghpages.yml` with the following:
+    ```
+    name: Publish docs via GitHub
+    on:
+    push:
+        branches:
+        - main
+
+    jobs:
+    build:
+        name: Deploy docs
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-python@v4
+            with:
+            python-version: 3.9
+        - name: run requirements file
+            run:  pip install -r requirements.txt 
+        - name: Deploy docs
+            run: mkdocs gh-deploy --force
+            env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    ```
+
 ### Further Documentation
 
 Here are some guides that you may find useful:
