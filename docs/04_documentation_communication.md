@@ -182,8 +182,8 @@ Remember, the intention of these platforms are to **improve productivity** & not
 
 -   Slack has [plenty of apps](https://slack.com/apps){target=_blank} for coordinating
     multiple services, i.e. Calendars, Github, GoogleDrive, Box, etc.
--   Slack is limiting unless you're willing to pay for the professional
-    support.
+-   Free Slack is limiting (e.g., 90 day history; limited connections across workspaces).
+-   Paid Slack is $7.25 per user per month. (10 users for 1 year = $870)
 
 **:material-microsoft-teams: Microsoft Teams**
 
