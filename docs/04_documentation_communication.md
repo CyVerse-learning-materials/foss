@@ -163,7 +163,7 @@ Remember, the intention of these platforms are to **improve productivity** & not
 
 ### External (Public)
 
-Although we didn't cover it explicitly in the announcement for the workshop, communicating with the public and other members of your science community is one of the most important parts of your science!
+Communicating with the public and other members of your science community (in addition to traditional peer-review publications and conferences) is one of the most important parts of your science!
 
 There are many ways scientists use social media and the web to share their data science ideas:
 
