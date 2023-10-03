@@ -122,52 +122,6 @@ for documenting your workflow.
 
 ---
 
-### GitHub Pages Website Quickstarts
-
-[:simple-github: *GitHub Pages*](https://pages.github.com/){target=_blank}
-
-1.  Create a GitHub account
-2.  Clone the repo `https://github.com/username/username.github.io`
-3.  Create an `index.html`
-4.  Push it back to GitHub
-
-[:simple-readthedocs: *ReadTheDocs.org*](https://readthedocs.org/){target=_blank}
-
-1.  [Install](https://docs.readthedocs.io/en/stable/install.html){target=_blank}
-2.  [Use Github](https://github.com/rtfd/readthedocs.org){target=_blank}
-3.  [Create a ReadTheDocs account](https://readthedocs.org/accounts/signup/){target=_blank}
-
-[:simple-markdown: *Material MkDocs*](https://squidfunk.github.io/mkdocs-material/getting-started/){target=_blank}
-
-1. [Install Material](https://squidfunk.github.io/mkdocs-material/getting-started/#installation) 
-    a. use a [`reqirements.txt`](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/requirements.txt) 
-    b. or `pip install mkdocs-material`
-2. Clone a repository with an existing template or create a new repo with `mkdocs new .` 
-3. Run `python -m mkdocs serve` to build and serve locally
-4. Open your browser to preview the build at https://localhost:8000`
-
-[:material-book-arrow-down: *Bookdown*](https://bookdown.org/){target=_blank}
-
-1.  [Install R and RStudio](https://www.rstudio.com/products/rstudio/download/){target=_blank}
-2.  Install Bookdown package with `install.packages("bookdown", dependencies=TRUE)`
-3.  Open the Bookdown demo and get started
-
-[:simple-r: *Quarto*](https://quarto.org/docs/publishing/github-pages.html){target=_blank}
-
-1. Build locally
-2. Push to GitHub
-3. (alt) Use GitHub Actions
-
-[:simple-jupyter: *JupyterBook*](https://jupyterbook.org/en/stable/intro.html)
-
-1. [Create your first book](https://jupyterbook.org/en/stable/start/your-first-book.html)
-
-[:simple-git: *GitBook*](https://docs.gitbook.com/){target=_blank}
-
-1. [Follow Template builder](https://app.gitbook.com/join)
-
----
-
 ## :material-antenna: Communication
 
 ### Internal Project 
@@ -361,173 +315,191 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
     - Add a README and a license and keep the repository public
 2. Create a `docs` folder
     - Within the folder, create an `index.md` file
-3. Create an `requirements.txt` file and populate it with the following requirement list:
-        
-    ```
-    bump2version
-    coverage
-    flake8
-    grip
-    ipykernel
-    livereload
-    nbconvert>=7
-    pip
-    sphinx
-    tox
-    twine
-    watchdog
-    wheel
-    mkdocs-git-revision-date-plugin 
-    mkdocs-jupyter 
-    mkdocs-material 
-    mkdocs-pdf-export-plugin
-    mkdocstrings 
-    mkdocstrings-crystal
-    mkdocstrings-python-legacy
-    #pygments>=2.10,<2.12
-    #pymdown-extensions<9.4
+3. Navigate to *Settings* > *Actions* > *General*:
+    - Under *Action Permissions* select *Allow all actions and reusalbe workflows*
+    - Under *Workflow permissions* select *Read and write permissions* and *Allow GitHub Actions to create and approve pull requests*
+4. Create an `requirements.txt` file and populate it with the following requirement list:
 
-    # Requirements for core
-    jinja2>=3.0.2
-    markdown>=3.2
-    mkdocs>=1.4.0
-    mkdocs-material-extensions>=1.0.3
-    pygments>=2.12
-    pymdown-extensions>=9.4
+    ??? abstract "Expand for code!"    
+        ```
+        bump2version
+        coverage
+        flake8
+        grip
+        ipykernel
+        livereload
+        nbconvert>=7
+        pip
+        sphinx
+        tox
+        twine
+        watchdog
+        wheel
+        mkdocs-git-revision-date-plugin 
+        mkdocs-jupyter 
+        mkdocs-material 
+        mkdocs-pdf-export-plugin
+        mkdocstrings 
+        mkdocstrings-crystal
+        mkdocstrings-python-legacy
+        #pygments>=2.10,<2.12
+        #pymdown-extensions<9.4
 
-    # Requirements for plugins
-    requests>=2.26
-    ```
+        # Requirements for core
+        jinja2>=3.0.2
+        markdown>=3.2
+        mkdocs>=1.4.0
+        mkdocs-material-extensions>=1.0.3
+        pygments>=2.12
+        pymdown-extensions>=9.4
+
+        # Requirements for plugins
+        requests>=2.26
+        ```
+
 4. Create an `mkdocs.yml` file and  populate it with the following:
-    ```
-    site_name: Name of your website
-    site_description: Tell people what this website is about
-    site_author: Who you are
-    site_url: The website URL
+    
+    ??? abstract "Expand for code!"  
+        ```
+        site_name: Name of your website
+        site_description: Tell people what this website is about
+        site_author: Who you are
+        site_url: The website URL
 
-    # Repository
-    repo_name: The repository name
-    repo_url: The repository URL
-    edit_uri: edit/main/docs/
-    # Copyright
-    copyright: 'Copyright &copy; 2023 - 2024'
+        # Repository
+        repo_name: The repository name
+        repo_url: The repository URL
+        edit_uri: edit/main/docs/
+        # Copyright
+        copyright: 'Copyright &copy; 2023 - 2024'
 
 
-    # Configuration
-    theme:
-        name: material
-    highlightjs: true
-    font:
-        text: Roboto
-        code: Regular
-    palette:
-        scheme: default
+        # Configuration
+        theme:
+            name: material
+        highlightjs: true
+        font:
+            text: Roboto
+            code: Regular
+        palette:
+            scheme: default
 
-    # Features  
-    features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.indexes
-    - navigation.top
-    - toc.follow
+        # Features  
+        features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - toc.follow
 
-    # 404 page
-    static_templates:
-        - 404.html
+        # 404 page
+        static_templates:
+            - 404.html
 
-    # Search feature
-    include_search_page: false
-    search_index_only: true
+        # Search feature
+        include_search_page: false
+        search_index_only: true
 
-    # Palette and theme (uses personalized colours)
-    language: en
-    palette:
-        primary: custom
-        accent: custom
-    icon:
-        logo: material/cogs
-        favicon: material/cogs
+        # Palette and theme (uses personalized colours)
+        language: en
+        palette:
+            primary: custom
+            accent: custom
+        icon:
+            logo: material/cogs
+            favicon: material/cogs
 
-    # Page tree
-    nav:
-    - Home: index.md
+        # Page tree
+        nav:
+        - Home: index.md
 
-    # Extra Plugins
-    plugins:
-        - search
-        - mkdocstrings
-        - git-revision-date
-        - mkdocs-jupyter:
-            include_source: True
-            ignore_h1_titles: True
+        # Extra Plugins
+        plugins:
+            - search
+            - mkdocstrings
+            - git-revision-date
+            - mkdocs-jupyter:
+                include_source: True
+                ignore_h1_titles: True
 
-    # Extensions (leave as is)
-    markdown_extensions:
-    - admonition
-    - abbr
-    - attr_list
-    - def_list
-    - footnotes
-    - meta
-    - md_in_html
-    - toc:
-        permalink: true
-        title: On this page
-    - pymdownx.arithmatex:
-        generic: true
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.highlight
-    - pymdownx.inlinehilite
-    - pymdownx.keys
-    - pymdownx.magiclink:
-        repo_url_shorthand: true
-        user: squidfunk
-        repo: mkdocs-material
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences:
-        custom_fences:
-            - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
-    - pymdownx.tabbed
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
-    ```
+        # Extensions (leave as is)
+        markdown_extensions:
+        - admonition
+        - abbr
+        - attr_list
+        - def_list
+        - footnotes
+        - meta
+        - md_in_html
+        - toc:
+            permalink: true
+            title: On this page
+        - pymdownx.arithmatex:
+            generic: true
+        - pymdownx.betterem:
+            smart_enable: all
+        - pymdownx.caret
+        - pymdownx.critic
+        - pymdownx.details
+        - pymdownx.emoji:
+            emoji_index: !!python/name:materialx.emoji.twemoji
+            emoji_generator: !!python/name:materialx.emoji.to_svg
+        - pymdownx.highlight
+        - pymdownx.inlinehilite
+        - pymdownx.keys
+        - pymdownx.magiclink:
+            repo_url_shorthand: true
+            user: squidfunk
+            repo: mkdocs-material
+        - pymdownx.mark
+        - pymdownx.smartsymbols
+        - pymdownx.superfences:
+            custom_fences:
+                - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+        - pymdownx.tabbed
+        - pymdownx.tasklist:
+            custom_checkbox: true
+        - pymdownx.tilde
+        ```
+
 5. Create a `.github/workflows` folder and add a `ghpages.yml` with the following:
-    ```
-    name: Publish docs via GitHub
-    on:
-    push:
-        branches:
-        - main
 
-    jobs:
-    build:
-        name: Deploy docs
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-            with:
-            python-version: 3.9
-        - name: run requirements file
-            run:  pip install -r requirements.txt 
-        - name: Deploy docs
-            run: mkdocs gh-deploy --force
-            env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    ```
+    ??? abstract "Expand for code!"      
+        ```
+        name: Publish docs via GitHub
+        on:
+        push:
+            branches:
+            - main
+
+        jobs:
+        build:
+            name: Deploy docs
+            runs-on: ubuntu-latest
+            steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v4
+                with:
+                python-version: 3.9
+            - name: run requirements file
+                run:  pip install -r requirements.txt 
+            - name: Deploy docs
+                run: mkdocs gh-deploy --force
+                env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ```
+6. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
+    - You should be able to access your website at `https://<github-username>.github.io/`. If you cannot find your website, go to the repository's settings page and navigate to *Pages*: your website address will be there.
+7. Edit documents as necessary.
+    - Don't forget to **add**, **commit** and **push** changes!
+    - Changes will only be visible on the website after a successful push.
+    - After each push, next to the commit identifier GitHub will show either a yellow circle (:yellow_circle:, meaning building), green check (:material-check:, meaning success), or red cross (:x:, meaning failure).
+
+---
 
 ### Further Documentation
 
@@ -546,6 +518,42 @@ Here are some guides that you may find useful:
 - [Python & Slack](https://towardsdatascience.com/python-and-slack-a-natural-match-60b136883d4d){target=_blank}
 - [Slack CLI notifications](https://samapriya.github.io/projects/slack_notifier_cli_addon/){target=_blank}
 - [Meetups](https://www.meetup.com/){target=_blank}
+
+### GitHub Pages Website Quickstarts
+
+- [:simple-github: *GitHub Pages*](https://pages.github.com/)
+    1.  Create a GitHub account
+    2.  Clone the repo `https://github.com/username/username.github.io`
+    3.  Create an `index.html`
+    4.  Push it back to GitHub
+
+- [:simple-readthedocs: *ReadTheDocs.org*](https://readthedocs.org/)
+    1.  [Install](https://docs.readthedocs.io/en/stable/install.html)
+    2.  [Use Github](https://github.com/rtfd/readthedocs.org)
+    3.  [Create a ReadTheDocs account](https://readthedocs.org/accounts/signup/)
+
+- [:simple-markdown: *Material MkDocs*](https://squidfunk.github.io/mkdocs-material/getting-started/)
+    1. [Install Material](https://squidfunk.github.io/mkdocs-material/getting-started/#installation) 
+        1. use a [`reqirements.txt`](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/requirements.txt) 
+        2. or `pip install mkdocs-material`
+    2. Clone a repository with an existing template or create a new repo with `mkdocs new .` 
+    3. Run `python -m mkdocs serve` to build and serve locally
+    4. Open your browser to preview the build at https://localhost:8000`
+
+- [:material-book-arrow-down: *Bookdown*](https://bookdown.org/)
+    1.  [Install R and RStudio](https://www.rstudio.com/products/rstudio/download/)
+    2.  Install Bookdown package with `install.packages("bookdown", dependencies=TRUE)`
+    3.  Open the Bookdown demo and get started
+
+- [:simple-r: *Quarto*](https://quarto.org/)
+    - [Follow these instructions](https://quarto.org/docs/publishing/github-pages.html)
+
+- [:simple-jupyter: *JupyterBook*](https://jupyterbook.org/en/stable/intro.html)
+    - [Create your first book](https://jupyterbook.org/en/stable/start/your-first-book.html)
+
+- [:simple-git: *GitBook*](https://docs.gitbook.com/)
+    - [Follow Template builder](https://app.gitbook.com/join)
+
 
 ---
 
