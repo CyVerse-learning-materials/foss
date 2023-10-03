@@ -145,8 +145,8 @@ Remember, the intention of these platforms are to **improve productivity** & not
     campus wide license agreement for Office 365 Business and Education
 -   For example, anyone with a `arizona.edu` email address can use Teams for free
 -   Limitations:
-        - Not sure you can create your own Teams
-        - Limited to messaging with people in your university Team
+        -   Not sure you can create your own Teams
+        -   Limited to messaging with people in your university Team
 
 *Other popular alternatives*
 
