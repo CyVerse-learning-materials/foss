@@ -308,21 +308,22 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
             1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
             2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
 
-
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [academicpages-mkdocs](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/main) repository
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [FOSS Reference Hub website tutorial repository branch](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/foss-tut)
     - Forking or importing will allow you to have your own copy of a specific repository; Cloning a repository **without** forking/importing it first, will lead to changes not being applied to your own copy of the repo, but to the original repository. You should clone your forked or imported repository, not the original!
 2. Navigate to *Settings* > *Actions* > *General*:
     - Under *Action Permissions* select *Allow all actions and reusalbe workflows*
     - Under *Workflow permissions* select *Read and write permissions* and *Allow GitHub Actions to create and approve pull requests*
 3. Edit the `mkdocs.yml` and push your changes
-    - The first changes you should be making are in the first 10 lines in the `mkdocs.yml` file in order to reflect your necessities:
-        -   Line 1: `site_name:` - change to any title you want
-        -   Line 2: `site_description:` - give a short description of the website
-        -   Line 3: `site_author: ` - who you are
-        -   Line 4: `site_url:` - change it to the URL reflected in *Settings*, which will most likely be `https://<github-username.github.io>/`
-        -   Line 7: `repo_name: ` - give the name of your repository (e.g., `academicpages-mkdocs` in this case)
-        -   Line 8: `repo_url:` - give the git repository URL 
-    - This will trigger the GitHub action workflow, which is setup to apply changes to the website every time a commit is pushed. One of the first thing that `mkdocs-material` will do, is to create the `gh-pages` branch (in case you do not have it already).
+    - The first changes you should be making are in the first few lines in the `mkdocs.yml` file in order to reflect your necessities:
+        -   Line 1: `site_name:` change to any title you want for your website 
+        -   Line 2: `site_description:` give a short description of the website
+        -   Line 3: `site_author: ` who you are
+        -   Line 4: `site_url:` change it to the URL reflected in *Settings*, which will most likely be `https://<github-username.github.io>/`
+        -   Line 7: `repo_name: ` give the name of your repository (e.g., `academicpages-mkdocs` in this case)
+        -   Line 8: `repo_url:` give the git repository URL 
+        -   Line 11: `copyright:` change `your name` to the maintainer of the website (likely to be you)
+    !!! warning "Workflow expectations"
+        The previos changes *should* trigger the GitHub action workflow, which is setup to apply changes to the website every time a commit is pushed. One of the first thing that `mkdocs-material` will do, is to create the `gh-pages` branch (in case you do not have it already). **The workflow will fail because the `ghpages.yml` in the `.github/workflows` directory is disabled (["commented out"](https://en.wiktionary.org/wiki/comment_out))**. To enable it, remove the `#` at the beginnig on each line and commit your changes. Upon changes, the workflow should go ahead and create the `gh-pages` branch.
 4. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
     - You should be able to access your website at `https://<github-username>.github.io/`. If you cannot find your website, go to the repository's settings page and navigate to *Pages*: your website address will be there.
 5. Edit documents as necessary.
