@@ -142,7 +142,11 @@ Remember, the intention of these platforms are to **improve productivity** & not
 **:material-microsoft-teams: Microsoft Teams**
 
 -   Teams is used by many R1 research universities as part of their
-    campus wide license agreement for Office 365 Business and Education.
+    campus wide license agreement for Office 365 Business and Education
+-   For example, anyone with a `arizona.edu` email address can use Teams for free
+-   Limitations:
+        - Not sure you can create your own Teams
+        - Limited to messaging with people in your university Team
 
 *Other popular alternatives*
 
