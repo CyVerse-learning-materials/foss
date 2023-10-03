@@ -286,8 +286,29 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
 
 ### Directions A: forking an existing repo
 
-0. Create a GitHub account and [generate a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). [FOSS has covered how to create a Token in Week 0: The Shell and Git](https://foss.cyverse.org/00_basics/#adding-code-locally). 
-    - You will need this token in order to modify your code locally
+!!! warning "Prerequisites"
+    You will require the following in case you want to add code locally.
+    
+    ??? Info "1. Create a GitHub account"
+        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+    ??? Info "2. Generate a Token"
+        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
+        
+        1. On your coumputer:
+            1. Clone your repository (`git clone <repository>`)
+            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
+            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
+        2. On GitHub:
+            1. Navigate to your GitHub Settings (You can access your account Settings from the dropdown menu where your account icon is, on the top right of the screen)
+            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
+            3. Click *Personal access tokens* > *Tokens (classic)*
+            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
+            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
+        3. Back on your computer:
+            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
+            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
+
+
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [academicpages-mkdocs](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/main) repository
     - Forking or importing will allow you to have your own copy of a specific repository; Cloning a repository **without** forking/importing it first, will lead to changes not being applied to your own copy of the repo, but to the original repository. You should clone your forked or imported repository, not the original!
 2. Navigate to *Settings* > *Actions* > *General*:
@@ -313,12 +334,34 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
 
 ### Directions B: Creating your own
 
-0. Create a GitHub account and [generate a token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). [FOSS has covered how to create a Token in Week 0: The Shell and Git](https://foss.cyverse.org/00_basics/#adding-code-locally). 
+!!! warning "Prerequisites"
+    You will require the following in case you want to add code locally. However, you can do all of these changes directly on GitHub. If you do want to carry out changes locally, you'll need the a GitHub account and a Token.
+
+    ??? Info "1. Create a GitHub account"
+        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+    ??? Info "2. Generate a Token"
+        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
+        
+        1. On your coumputer:
+            1. Clone your repository (`git clone <repository>`)
+            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
+            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
+        2. On GitHub:
+            1. Navigate to your GitHub Settings (You can access your account Settings from the dropdown menu where your account icon is, on the top right of the screen)
+            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
+            3. Click *Personal access tokens* > *Tokens (classic)*
+            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
+            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
+        3. Back on your computer:
+            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
+            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
+
 1. Create your own repository
     - Add a README and a license and keep the repository public
 2. Create a `docs` folder
     - Within the folder, create an `index.md` file
 3. Create an `requirements.txt` file and populate it with the following requirement list:
+        
     ```
     bump2version
     coverage
