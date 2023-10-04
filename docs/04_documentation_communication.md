@@ -196,9 +196,9 @@ There are many ways scientists use social media and the web to share their data 
     about research you're interested in. By building up a significant
     following, more people will know you, know about your work, and
     you'll have a higher likelihood of meeting other new collaborators.
-2.  Blogging Platforms such as [Medium](https://medium.com/){target=_blank are a great place to self publish your writing on just about any topic.
+2.  Blogging Platforms such as [Medium](https://medium.com/){target=_blank} are a great place to self publish your writing on just about any topic.
     It's free to sign up and start blogging, but does have a fee for accessing premium content. Some of my favorite blogs include [Toward Data Science](https://towardsdatascience.com/){target=_blank}
-    and [Chris Holmes](https://medium.com/@cholmes){target=_blank}
+    and [Chris Holmes](https://medium.com/@cholmes){target=_blank}.
 3.  Community groups - There are lists (and lists of lists) of
     [nationals research organizations](https://www.google.com/search?q=list+of+professional+science+organizations){target=_blank},
     in which a researcher can become involved. These older organziations
@@ -210,7 +210,9 @@ There are many ways scientists use social media and the web to share their data 
     groups, like [The Carpentries](https://carpentries.org/){target=_blank} and
     [Research Bazaar](https://resbazblog.wordpress.com/about/){target=_blank} are
     focused on data science training and digital literacy.
-
+4.  Podcasts - Creating and distributing audio content to masses is easier than ever before. There are many podcast hosting platforms including [Spotify](https://podcasters.spotify.com/){target=_blank}, [Podbean](https://www.podbean.com/){target=_blank}, [Acast](https://www.acast.com/){target=_blank}, and [Libsyn](https://libsyn.com/){target=_blank}. From there is it simple to make your podcast availble in the [Google Podcast](https://rss.com/blog/how-to-submit-podcast-to-google-podcasts/){target=_blank} app or [Apple Podcast](https://transistor.fm/upload-podcast-itunes-apple/){target=_blank} app. 
+5.  Webinars - With platforms such as [Zoom](https://zoom.us/){target=_blank}, [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software){target=_blank}, and [Google Meet](https://meet.google.com/){target=_blank}, it is so easy nowadays to host a webinar touting your science. The only hard part is promoting and getting people to tune it. 
+6.  Youtube
 !!! Warning "Important"
         **Remember: Personal and Professional Accounts are Not Isolated**
 
