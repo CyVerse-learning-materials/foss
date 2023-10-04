@@ -196,11 +196,9 @@ There are many ways scientists use social media and the web to share their data 
     about research you're interested in. By building up a significant
     following, more people will know you, know about your work, and
     you'll have a higher likelihood of meeting other new collaborators.
-2.  [:fontawesome-solid-blog: Blogs](https://blogging.org/blog/top-science-blogs/){target=_blank} - there are
-    numerous platforms for blogging about research, the older platforms
-    tend to dominate this space. Other platforms like 
-    [:simple-medium:Medium](https://medium.com/topic/data-science){target=_blank} offer a place for
-    reseachers to create personalized reading spaces and self publish.
+2.  Blogging Platforms such as [Medium](https://medium.com/){target=_blank are a great place to self publish your writing on just about any topic.
+    It's free to sign up and start blogging, but does have a fee for accessing premium content. Some of my favorite blogs include [Toward Data Science](https://towardsdatascience.com/){target=_blank}
+    and [Chris Holmes](https://medium.com/@cholmes){target=_blank}
 3.  Community groups - There are lists (and lists of lists) of
     [nationals research organizations](https://www.google.com/search?q=list+of+professional+science+organizations){target=_blank},
     in which a researcher can become involved. These older organziations
