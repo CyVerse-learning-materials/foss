@@ -20,18 +20,41 @@ Strong frameworks for internal communication and documentation can make collabor
 
 ## :material-file-document-multiple: Project Documentation
 
-**The documentation system**, by Divio, categorizes the different types of documentation into 4 quadrants:
+Documentation is not only the practice of recording, preserving, and organizing information, data, or details in a structured and systematic manner. Documentation is essentially the ability to communicate with your future self, or your collaborators, or the world specific ideas and information. Effective documentation must take into consideration the following points:
 
-[![quadrants](https://documentation.divio.com/_images/overview.png)](https://documentation.divio.com/)
+- **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
+- **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
+- **:fontawesome-solid-bullseye: Accuracy**: Information should be up-to-date and correct to prevent errors and misunderstandings.
+- **:simple-instructure: Organization**: A logical structure and clear organization make it easy to navigate and find information.
+- **:fontawesome-solid-exclamation: Relevance**: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.
 
-??? Question "Can you explain the documentation type for each quadrant?"
+!!! info "We've already covered many best practices regarding project and data management, topics which are very much intertwined with documentation. Here are some things to keep in mind when addressing documentation:"
+    - **Metadata**: Implement standardized metadata formats for research outputs to enhance findability.
+    - **Data Repositories**: Deposit research data and materials in trusted data repositories that adhere to FAIR principles, making them easily accessible and reusable.
+    - **Persistent Identifiers**: Assign persistent identifiers (e.g., DOIs, ORCIDs) to datasets, publications, and researchers, ensuring their long-term accessibility and recognition.
+    - **Templates**: Create and utilize documentation templates for research datasets, methods, and software to ensure uniform and comprehensive information capture. *It saves time!!*
+
+Not all documentation is the same. **The documentation system**, by Divio, categorizes the different types of documentation into 4 quadrants:
+
+<figure markdown>
+  <a href="https://documentation.divio.com/" target="blank" rel="xkcd">![xkcd](https://documentation.divio.com/_images/overview.png) </a>
+    <figcaption> Read more in depth on the documentation system here: https://documentation.divio.com </figcaption>
+</figure>
+
+??? Question "Explanining the quadrants"
 
     - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it.
     - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to solve a real-world problem.
     - **References**: Guides! References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
     - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
 
-You can read more in depth on this chart by visiting https://documentation.divio.com 
+!!! tip "Furthermore, one of the main issues with documentation usually becomes keeping documents up-to-date. Here are some tips one can keep in mind to address the issue:"
+
+    - **Data Lifecycle Planning**: Develop a clear data management and documentation plan at the outset of the research project to ensure consistency and continuity.
+    - **Version Control**: Use version control systems like Git for code and documentation to track changes, facilitate collaboration, and maintain a history of updates.
+    - **Workflows and Automation**: Explore automation tools for documentation, such as generating metadata from data headers or embedding documentation within code using tools like [GitHub pages](https://pages.github.com/), [Sphinx](https://www.sphinx-doc.org/en/master/) and [LaTeX](https://www.latex-project.org/).
+    - **Collaborative Documentation Platforms**: Employ collaborative platforms like [Overleaf](https://www.overleaf.com/) or [Google Docs](https://www.google.com/docs/about/) to enable multiple researchers to contribute to and update documentation.
+    - **Documentation Reviews**: Schedule regular documentation reviews within research teams to identify gaps or outdated information and address them promptly.
 
 ### Public Repositories for Documentation
 
@@ -175,7 +198,7 @@ There are many ways scientists use social media and the web to share their data 
     you'll have a higher likelihood of meeting other new collaborators.
 2.  [:fontawesome-solid-blog: Blogs](https://blogging.org/blog/top-science-blogs/){target=_blank} - there are
     numerous platforms for blogging about research, the older platforms
-    tend to dominate this space. Other platforms like,
+    tend to dominate this space. Other platforms like 
     [:simple-medium:Medium](https://medium.com/topic/data-science){target=_blank} offer a place for
     reseachers to create personalized reading spaces and self publish.
 3.  Community groups - There are lists (and lists of lists) of
@@ -191,7 +214,7 @@ There are many ways scientists use social media and the web to share their data 
     focused on data science training and digital literacy.
 
 !!! Warning "Important"
-        **Remember** Personal and Professional Accounts are Not Isolated
+        **Remember: Personal and Professional Accounts are Not Isolated**
 
         You decide what you post on the internet. Your scientist identity may be
         a part of your personal identity on social media, it might be separate.
@@ -200,6 +223,23 @@ There are many ways scientists use social media and the web to share their data 
         organization you work for and may be used in decisions about hiring or
         dismissal.
 
+### Addressing Effective Communication
+
+Whether internal or external, communication is important because it serves as the foundation for the exchange of information, ideas, and knowledge, enabling collaboration, understanding, and the advancement of individuals, organizations, and societies. It is therefore fundamental to be able to efficiently communicate, whether it is to promote a piece of scientific advancement, or reaching out to ask for help.
+
+The act of balancing transparency, openness, ethicality and respectful to personal data and intellectual property in communication has always been a challenge. A few methods to address these issues are the following:
+    
+- **:simple-creativecommons: Utilize licensing options:** Researchers can use open licensing mechanisms such as Creative Commons licenses to specify the terms under which their work can be shared, modified, and reused, balancing openness with protection.
+- **:fontawesome-solid-eye-low-vision: Data anonymization:** To address privacy and ethical concerns, researchers can anonymize sensitive data before sharing it, allowing for openness without compromising privacy.
+- **:fontawesome-regular-handshake: Collaborative agreements:** Collaborative research agreements and partnerships can define expectations regarding data sharing, authorship, and intellectual property, ensuring transparency while safeguarding interests.
+- **:material-account-voice: Transparent communication:** Researchers can openly communicate their intentions and progress regarding sharing and publication, fostering trust and collaboration within the research community.
+
+Scientists might also want to keep in mind the following when addressing communication:
+
+- **:material-email-off: Cultural shift**: Resistance to open communication within traditional academic cultures can hinder progress. Taking initiative and demonstrating the advantages of scientific communication outside of the traditional methods (mail, journals) can really help with showing eagerness and devotion to an idea or project
+- **:octicons-accessibility-inset-16: Accessibility and inclusivity**: Ensuring that open communication is accessible to all, regardless of language, disability, or geographical location, is vital. Efforts to provide translations, accessible formats, and international collaboration can promote inclusivity.
+- **:fontawesome-solid-users-viewfinder: Quality control**: Maintaining peer review and quality control in open access publications is essential. Initiatives like open peer review and establishing reputable open access journals can address this challenge.
+- **:material-lock-off: Advocacy and policy**: Advocacy for open science policies at institutional and governmental levels can help overcome systemic barriers. Engaging with policymakers and advocating for open science initiatives is crucial.
 ---
 
 ## Hands-on: Building a GitHub Pages Website using MkDocs
@@ -361,7 +401,7 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
         requests>=2.26
         ```
 
-4. Create an `mkdocs.yml` file and  populate it with the following:
+5. Create an `mkdocs.yml` file and  populate it with the following:
     
     ??? abstract "Expand for code!"  
         ```
@@ -470,7 +510,7 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
         - pymdownx.tilde
         ```
 
-5. Create a `.github/workflows` folder and add a `ghpages.yml` with the following:
+6. Create a `.github/workflows` folder and add a `ghpages.yml` with the following:
 
     ??? abstract "Expand for code!"      
         ```
@@ -496,9 +536,10 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
                 env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ```
-6. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
+
+7. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
     - You should be able to access your website at `https://<github-username>.github.io/`. If you cannot find your website, go to the repository's settings page and navigate to *Pages*: your website address will be there.
-7. Edit documents as necessary.
+8. Edit documents as necessary.
     - Don't forget to **add**, **commit** and **push** changes!
     - Changes will only be visible on the website after a successful push.
     - After each push, next to the commit identifier GitHub will show either a yellow circle (:yellow_circle:, meaning building), green check (:material-check:, meaning success), or red cross (:x:, meaning failure).
