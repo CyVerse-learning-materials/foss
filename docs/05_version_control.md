@@ -25,8 +25,10 @@ need to master Git to utilize version control (though it is certainly a
 worthwhile tool for many researchers).
 
 
-![vc_intro](https://swcarpentry.github.io/git-novice/fig/phd101212s.png)
-
+<figure markdown>
+  <a href="https://swcarpentry.github.io/git-novice/01-basics.html" target="blank" rel="git_def">![git_def](https://swcarpentry.github.io/git-novice/fig/phd101212s.png) </a>
+    <figcaption> We have all been here, taken by the [Software Carpentry Version Control lesson](https://swcarpentry.github.io/git-novice/01-basics.html). </figcaption>
+</figure>
 
 ## Definitions
 
@@ -48,7 +50,7 @@ worthwhile tool for many researchers).
 
         Actions:
         
-        !!! note "These are also commands when paird with `git`!"
+        !!! warning "These are also commands when paird with `git`!"
             Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
 
         - **clone**: copy of a repository that lives locally on your computer.
@@ -75,7 +77,7 @@ worthwhile tool for many researchers).
 
 <figure markdown>
   <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://n7b3p4s2.stackpathcdn.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
-    <figcaption> Graph summarizing the GitHub workflow cycle </figcaption>
+    <figcaption> Visualizing the commands through a workflow example <br> (graphic's correction: ~~marged~~ merged) </figcaption>
 </figure>
 
 ---
@@ -150,39 +152,39 @@ After learning the basics of using Git, which you can learn with the
 things that can be useful to learn. Here are a couple topics that are
 worth digging into more:
 
-- Using the Git log
-    -   you can access using **git log**
-    -   will show you your commit history
-    -   useful for figuring out where you need to roll back to
+- **:octicons-log-24: Using the Git log**
+    -   You can access using **git log**
+    -   Will show you your commit history
+    -   Useful for figuring out where you need to roll back to
 
-- Reverting
-    -   there are a lot of different ways to "undo" something in Git
-    -   some are safer, some are a bit riskier
-    -   depends on what stage of the commit process you're in
-    - **here are some useful resources**:
-        - https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd
-        - http://justinhileman.info/article/git-pretty/git-pretty.png
-        - https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/
+- **:material-keyboard-tab-reverse: Reverting**
+    -   There are a lot of different ways to "undo" something in Git
+    -   Some are safer, some are a bit riskier
+    -   Depends on what stage of the commit process you're in
+    - **Here are some useful resources**:
+        - [*10 Common Git Problems and How to Fix Them*](https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
+        - [*"So you have a mess on your hands..."*](http://justinhileman.info/article/git-pretty/git-pretty.png)
+        - [*How to undo almost anything*](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/)
 
-- Branching
-    - this is important to learn if you\'re going to be doing any sort of collaboration
-    - here is a fantastic resource for learning how git branching really works: https://learngitbranching.js.org/
+- **:octicons-git-branch-24: Branching**
+    - This is important to learn if you're going to be doing any sort of collaboration
+    - Here is a fantastic resource for learning how git branching really works: https://learngitbranching.js.org/
     - **you will probably have to deal with *merge conflicts* at some point**
-        -   merge conflicts happen when two branches are being merged, but they have *different* changes to the same part of a file
-        -   perhaps you are working on a feature branch, and you change line 61 in *file.R*, but someone else made a change to the main branch at line 61 in *file.R*. When you try to merge the feature and main branches, Git won't know which changes to line 61 in *file.R* are correct, and you will need to manually decide.
-        -   here are some good resources:
-            - https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
-            - https://nitaym.github.io/ourstheirs/
+        -   Merge conflicts happen when two branches are being merged, but they have *different* changes to the same part of a file
+        -   Perhaps you are working on a feature branch, and you change line 61 in *file.R*, but someone else made a change to the main branch at line 61 in *file.R*. When you try to merge the feature and main branches, Git won't know which changes to line 61 in *file.R* are correct, and you will need to manually decide.
+        -   Here are some good resources:
+            - [Resolving merge conflics](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/)resolving-a-merge-conflict-using-the-command-line
+            - [git - ours & theirs, a CLI resource to help with conflicts](https://nitaym.github.io/ourstheirs/)
 
-- *.gitignore*
-    -   you often want Git to completely ignore certain files
-    -   generated files (like HTML files from Markdown docs)
+- **:simple-gitignoredotio: .gitignore**
+    -   You often want Git to completely ignore certain files
+    -   Generated files (like HTML files from Markdown docs)
     -   IDE-specific files like in *.RStudio* or *.vscode* folders
     -  **really big files, like data or images**
-        -   if you accidentally commit a really big file, GitHub might not let you push that commit
-        -   if you have a huge file in Git, your repository size can get way too big
-        -   this is a pain to solve, so use the *.gitignore* file ahead of time, but if you need to fix this, here is a great resource: 
-        - https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/
+        -   If you accidentally commit a really big file, GitHub might not let you push that commit
+        -   If you have a huge file in Git, your repository size can get way too big
+        -   This is a pain to solve, so use the *.gitignore* file ahead of time, but if you need to fix this, here is a great resource: 
+        - [Removing Large Files From git Using BFG and a Local Repository](https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/)
 
 --- 
 
