@@ -15,61 +15,72 @@ files, or a whole project.
 
 Some version control tools:
 
--   Microsoft Office's *Track Changes* functionality
--   Apple's *Time Machine*
--   Google Docs' *Version History*
--   Git
+-   :material-microsoft-office: Microsoft Office's [*Track Changes*](https://support.microsoft.com/en-au/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a) functionality
+-   :simple-apple: Apple's [*Time Machine*](https://support.apple.com/en-us/HT201250)
+-   :simple-googledocs: Google Docs' [*Version History*](https://support.google.com/docs/answer/190843?hl=en&co=GENIE.Platform%3DDesktop)
+-   :simple-git: [Git](https://git-scm.com/)
 
 Version control is as much a philosophy as a set of tools; you don't
 need to master Git to utilize version control (though it is certainly a
 worthwhile tool for many researchers).
 
+
+![vc_intro](https://swcarpentry.github.io/git-novice/fig/phd101212s.png)
+
+
 ## Definitions
 
 !!! Info "Git-related Definitions"
-        *Git* - tool for version control.
+        
+        Platforms:
+        
+        - **Git**: tool for version control.
+        - **GitHub**: hosted server that is also interactive.
 
-        *GitHub* - hosted server that is also interactive.
-
-        *repo* - short for repository
-
-        *local* - on your personal computer.
-
-        *remote* - somewhere other than your computer. GitHub can host remote
+        Locations and directions:
+ 
+        - **repo**: short for repository
+        - **local**: on your personal computer.
+        - **remote**: somewhere other than your computer. GitHub can host remote
         repositories.
+        - **upstream**: primary or main branch of original repository.
+        - **downstream**: branch or fork of repository.
 
-        *clone* - copy of a repository that lives locally on your computer.
+        Actions:
+        
+        !!! note "These are also commands when paird with `git`!"
+            Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
+
+        - **clone**: copy of a repository that lives locally on your computer.
         Pushing changes will affect the repository online.
-
-        *fetch* - getting latest changes to the repository on your local
+        - **pull**: getting latest changes to the repository on your local
         computer.
-
-        *branch* - a history of changes to a repository. You can have parallel
+            - the **fetch** command does the same, however one needs to also **merge** the changes, whilst with pull, the merge action is automatic.
+        - **branch**: a history of changes to a repository. You can have parallel
         branches with separate histories, allowing you to keep a "main"
         version and development versions.
-
-        *fork* - copy of someone else's repository stored locally on your
+        - **fork**: copy of someone else's repository stored locally on your
         account. From forks, you can make pull requests to the main branch.
-
-        *upstream* - primary or main branch of original repository.
-
-        *downstream* - branch or fork of repository.
-
-        *commit* - finalize a change.
-
-        *push* - add changes back to the remote repository.
-
-        *merge* - takes changes from a branch or fork and applies them to the
+        - **commit**: finalize a change.
+        - **push**: add changes back to the remote repository.
+        - **merge**: takes changes from a branch or fork and applies them to the
         main.
 
-        *pull request* - proposed changes to/within a repository.
+        Funtional: 
+        
+        - **pull request**: proposed changes to/within a repository.
 
-        *issue* - suggestions or tasks needed for the repository. Allows you to
+        - **issue**: suggestions or tasks needed for the repository. Allows you to
         track decisions, bugs with the repository, etc.
+
+<figure markdown>
+  <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://n7b3p4s2.stackpathcdn.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
+    <figcaption> Graph summarizing the GitHub workflow cycle </figcaption>
+</figure>
 
 ---
 
-## Git vs. GitHub
+## :simple-git: Git vs. :simple-github: GitHub
 
 **Git** is a command-line program for version control of repositories.
 It keeps track of changes you make to files in your repository and
@@ -95,9 +106,33 @@ GitHub is a site that can remotely host your Git repositories. By
 putting your repository onto GitHub, you get a backup of the repository,
 a way to collaborate with others, and a lot of other features.
 
+<figure markdown>
+  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg) </a>
+    <figcaption> Git vs GitHub, simplified </figcaption>
+</figure>
+
 ---
 
 ## Practical Git Techniques
+
+<figure markdown>
+  <a href="https://resources.pcb.cadence.com/blog/what-is-a-version-control-system" target="blank" rel="vc_path">![vc_path](https://content.cdntwrk.com/files/aHViPTg1NDMzJmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzYzOTkwY2I4OWU5YTUuanBnJnZlcnNpb249MDAwMCZzaWc9OWJjZTA5NDIxNzY4MWFhZjYyNmEwNWNhYmI1YTUzMWQ%253D) </a>
+    <figcaption> The version control path sofware takes before release </figcaption>
+</figure>
+
+!!! info "The basic Git life cycle"
+
+    When using Git for your version control, the usual life cycle is the following:
+
+    | Action| Explanation |
+    |---|---|
+    | 1. `git clone <repository>` | Clones the target repository to your machine |
+    | 2. `git status` | Checks whether there are changes in the remote, original repository |
+    | 3. `git pull`| Pulls any change to your local repository |
+    | 4. `git add <changes>` | Adds to a future commit any change |
+    | 5. `git commit -m "<message>"` | Creates the commit and adds a descriptive message |
+    | 6. `git push` | Pushes the changes commited from local to the remote repository |
+
 
 After learning the basics of using Git, which you can learn with the
 [Software Carpentry Git Lesson](https://swcarpentry.github.io/git-novice/), there are some next
