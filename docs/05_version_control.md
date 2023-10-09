@@ -34,46 +34,46 @@ worthwhile tool for many researchers).
 
 !!! Info "Git-related Definitions"
         
-        Platforms:
-        
-        - **Git**: tool for version control.
-        - **GitHub**: hosted server that is also interactive.
+    Platforms:
+    
+    - **Git**: tool for version control.
+    - **GitHub**: hosted server that is also interactive.
 
-        Locations and directions:
- 
-        - **repo**: short for repository
-        - **local**: on your personal computer.
-        - **remote**: somewhere other than your computer. GitHub can host remote
-        repositories.
-        - **upstream**: primary or main branch of original repository.
-        - **downstream**: branch or fork of repository.
+    Locations and directions:
 
-        Actions:
-        
-        !!! warning "These are also commands when paird with `git`!"
-            Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
+    - **repo**: short for repository
+    - **local**: on your personal computer.
+    - **remote**: somewhere other than your computer. GitHub can host remote
+    repositories.
+    - **upstream**: primary or main branch of original repository.
+    - **downstream**: branch or fork of repository.
 
-        - **clone**: copy of a repository that lives locally on your computer.
-        Pushing changes will affect the repository online.
-        - **pull**: getting latest changes to the repository on your local
-        computer.
-            - the **fetch** command does the same, however one needs to also **merge** the changes, whilst with pull, the merge action is automatic.
-        - **branch**: a history of changes to a repository. You can have parallel
-        branches with separate histories, allowing you to keep a "main"
-        version and development versions.
-        - **fork**: copy of someone else's repository stored locally on your
-        account. From forks, you can make pull requests to the main branch.
-        - **commit**: finalize a change.
-        - **push**: add changes back to the remote repository.
-        - **merge**: takes changes from a branch or fork and applies them to the
-        main.
+    Actions:
+    
+    !!! warning "These are also commands when paird with `git`!"
+        Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
 
-        Funtional: 
-        
-        - **pull request**: proposed changes to/within a repository.
+    - **clone**: copy of a repository that lives locally on your computer.
+    Pushing changes will affect the repository online.
+    - **pull**: getting latest changes to the repository on your local
+    computer.
+        - the **fetch** command does the same, however one needs to also **merge** the changes, whilst with pull, the merge action is automatic.
+    - **branch**: a history of changes to a repository. You can have parallel
+    branches with separate histories, allowing you to keep a "main"
+    version and development versions.
+    - **fork**: copy of someone else's repository stored locally on your
+    account. From forks, you can make pull requests to the main branch.
+    - **commit**: finalize a change.
+    - **push**: add changes back to the remote repository.
+    - **merge**: takes changes from a branch or fork and applies them to the
+    main.
 
-        - **issue**: suggestions or tasks needed for the repository. Allows you to
-        track decisions, bugs with the repository, etc.
+    Funtional: 
+    
+    - **pull request**: proposed changes to/within a repository.
+
+    - **issue**: suggestions or tasks needed for the repository. Allows you to
+    track decisions, bugs with the repository, etc.
 
 <figure markdown>
   <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://n7b3p4s2.stackpathcdn.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
