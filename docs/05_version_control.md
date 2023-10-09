@@ -133,6 +133,17 @@ a way to collaborate with others, and a lot of other features.
     | 5. `git commit -m "<message>"` | Creates the commit and adds a descriptive message |
     | 6. `git push` | Pushes the changes commited from local to the remote repository |
 
+    If there are no branches or external pull requests, the *basic* Git life cycle is summarizable like this:
+
+    ```mermaid
+    graph LR
+    A[1. git clone] --> B[2. git status] -->C([differences from origin?]):::colorclass;
+    C-->|yes| D[3. git pull]--> E;
+    C-->|no| E[4. git add];
+    E-->F[5. git commit] -->G[6. git push];
+    G-->B;
+    classDef colorclass fill:#f96
+    ```
 
 After learning the basics of using Git, which you can learn with the
 [Software Carpentry Git Lesson](https://swcarpentry.github.io/git-novice/), there are some next
