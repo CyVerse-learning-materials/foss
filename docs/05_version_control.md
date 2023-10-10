@@ -235,7 +235,34 @@ If you *do* have to work with large files and Git, here are some questions to as
 - How will this data impact the sharability of this repository?
 - Am I using a .gitignore?
 
-GitHub now offers the [**Git Large File Storage (Git-LFS)**](https://git-lfs.com/): the system works by storing references to the file in your repository, but not the file itself -- it creates a *pointer* file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.
+GitHub now offers the [**Git Large File Storage (:simple-gitlfs: Git LFS)**](https://git-lfs.com/): the system works by storing references to the file in your repository, but not the file itself -- it creates a *pointer* file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.
+
+Git LFS data upload limits are based on your GitHub subscription: 
+
+- 2 GB for GitHub free and GitHub Pro
+- 4 GB for GitHub Team
+- 5 GB for GitHub Enterprise Cloud
+
+<figure markdown>
+  <a href="https://git-lfs.com/" target="blank" rel="gitlfs">![gitlfs](https://git-lfs.com/images/tweet-promo.png) </a>
+    <figcaption> A depiction of how the Git LFS pointer-repository relationship works. </figcaption>
+</figure>
+
+## Beyond Git and GitHub
+
+There are other platforms that address Version Control and have similar functionalities to GitHub:
+
+- **[:material-gitlab: GitLab](https://gitlab.com/)**: An alternative to GitHub, GitLab offers both a cloud-hosted platform and a self-hosted option ([GitLab CE/EE](https://about.gitlab.com/install/ce-or-ee/)). It provides a comprehensive DevOps platform with built-in CI/CD, container registry, and more.
+
+- **[:simple-bitbucket: Bitbucket](https://bitbucket.org/product/)**: Atlassian's Bitbucket is a Git repository hosting service that also supports Mercurial repositories. It offers integration with Jira, Confluence, and other Atlassian products.
+
+- **[:simple-sourceforge: SourceForge](https://sourceforge.net/)**: A platform that provides Git and Subversion hosting, as well as tools for project management, issue tracking, and collaboration.
+
+- **[:fontawesome-brands-aws: AWS CodeCommit](https://aws.amazon.com/codecommit/)**: Part of Amazon Web Services (AWS), CodeCommit is a managed Git service that integrates seamlessly with other AWS services.
+
+- **[:simple-azuredevops: Azure DevOps Services (formerly VSTS)](https://azure.microsoft.com/en-us/products/devops))**: Microsoft's Azure DevOps Services offers Git repository hosting along with a wide range of DevOps tools for planning, developing, testing, and deploying software.
+
+- **[:simple-mercurial: Mercurial](https://www.mercurial-scm.org/)**: Like Git, Mercurial is a distributed version control system, but with a different branching and merging model. It's an alternative to Git for version control.
 
 ## Self Assessment
 
