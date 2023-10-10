@@ -32,7 +32,38 @@ worthwhile tool for many researchers).
 
 ---
 
-## Definitions
+## :simple-git: Git vs. :simple-github: GitHub
+
+**Git** is a command-line program for version control of repositories.
+It keeps track of changes you make to files in your repository and
+stores those changes in a *.git* folder in that repository.
+These changes happen whenever you make a **commit**. Git stores the
+history of these commits in a "tree", so you can go back to any
+previous commit. By keeping track of the **differences** between
+commits, Git can be much more efficient than storing an entire copy of
+each version in a document's history.
+
+You could utilize Git completely on its own, on your local computer, and
+get a lot of benefits. You will have a history of the changes you made
+to a project, allowing you to go back to any old version of your work.
+However, where Git really shines is in *collaborative* work. In order to
+effectively collaborate with others on a project, you need two basic
+features: a way to allow people to work in parallel, and a way to host
+repositories somewhere where everyone can access them. The first feature
+is **branching**, which is part of Git, and the hosting part can be
+taken care of by platforms like GitHub, GitLab, or Bitbucket. We will
+focus on GitHub.
+
+GitHub is a site that can remotely host your Git repositories. By
+putting your repository onto GitHub, you get a backup of the repository,
+a way to collaborate with others, and a lot of other features.
+
+<figure markdown>
+  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg) </a>
+    <figcaption> Git vs GitHub, simplified </figcaption>
+</figure>
+
+### Definitions
 
 !!! Info "Git-related Definitions"
         
@@ -80,39 +111,6 @@ worthwhile tool for many researchers).
 <figure markdown>
   <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://n7b3p4s2.stackpathcdn.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
     <figcaption> Visualizing the commands through a workflow example <br> (graphic's correction: ~~marged~~ merged) </figcaption>
-</figure>
-
----
-
-## :simple-git: Git vs. :simple-github: GitHub
-
-**Git** is a command-line program for version control of repositories.
-It keeps track of changes you make to files in your repository and
-stores those changes in a *.git* folder in that repository.
-These changes happen whenever you make a **commit**. Git stores the
-history of these commits in a "tree", so you can go back to any
-previous commit. By keeping track of the **differences** between
-commits, Git can be much more efficient than storing an entire copy of
-each version in a document's history.
-
-You could utilize Git completely on its own, on your local computer, and
-get a lot of benefits. You will have a history of the changes you made
-to a project, allowing you to go back to any old version of your work.
-However, where Git really shines is in *collaborative* work. In order to
-effectively collaborate with others on a project, you need two basic
-features: a way to allow people to work in parallel, and a way to host
-repositories somewhere where everyone can access them. The first feature
-is **branching**, which is part of Git, and the hosting part can be
-taken care of by platforms like GitHub, GitLab, or Bitbucket. We will
-focus on GitHub.
-
-GitHub is a site that can remotely host your Git repositories. By
-putting your repository onto GitHub, you get a backup of the repository,
-a way to collaborate with others, and a lot of other features.
-
-<figure markdown>
-  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg) </a>
-    <figcaption> Git vs GitHub, simplified </figcaption>
 </figure>
 
 ---
