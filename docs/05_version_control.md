@@ -30,16 +30,18 @@ worthwhile tool for many researchers).
     <figcaption> We have all been here, taken by the [Software Carpentry Version Control lesson](https://swcarpentry.github.io/git-novice/01-basics.html). </figcaption>
 </figure>
 
+---
+
 ## Definitions
 
 !!! Info "Git-related Definitions"
         
-    Platforms:
+    **Platforms**:
     
     - **Git**: tool for version control.
     - **GitHub**: hosted server that is also interactive.
 
-    Locations and directions:
+    **Locations and directions**:
 
     - **repo**: short for repository
     - **local**: on your personal computer.
@@ -48,11 +50,8 @@ worthwhile tool for many researchers).
     - **upstream**: primary or main branch of original repository.
     - **downstream**: branch or fork of repository.
 
-    Actions:
+    **Actions**:
     
-    !!! tip "These are also commands when paird with `git`!"
-        Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
-
     - **clone**: copy of a repository that lives locally on your computer.
     Pushing changes will affect the repository online.
     - **pull**: getting latest changes to the repository on your local
@@ -68,7 +67,10 @@ worthwhile tool for many researchers).
     - **merge**: takes changes from a branch or fork and applies them to the
     main.
 
-    Funtional: 
+    !!! tip "These are also commands when paird with `git`!"
+        Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
+
+    **Funtional**: 
     
     - **pull request**: proposed changes to/within a repository.
 
@@ -188,11 +190,37 @@ worth digging into more:
 
 --- 
 
+## Git, GitHub and Data
+
+Git and data don't always go hand in hand. GitHub allows commited files to be uploaded only if the file is of 100MB or less (with a warning being issued for files between 50MB and 100MB). Additionally, [GitHub recommends to keep repositories below the 1GB threshold](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits), as this also allows for quicker cloning and sharing of the repository. If a large file has been uploaded by mistake and you wish to remove it, [you can follow these instrutctions](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#removing-files-from-a-repositorys-history).
+
+If you *do* have to work with large files and Git, here are some questions to ask yourself:
+
+- Is this data shareable?
+- Are there alternative file hosting platforms I can use?
+- How will this data impact the sharability of this repository?
+- Am I using a .gitignore?
+
+GitHub now offers the [**Git Large File Storage (:simple-gitlfs: Git LFS)**](https://git-lfs.com/): the system works by storing references to the file in your repository, but not the file itself -- it creates a *pointer* file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.
+
+Git LFS data upload limits are based on your GitHub subscription: 
+
+- 2 GB for GitHub free and GitHub Pro
+- 4 GB for GitHub Team
+- 5 GB for GitHub Enterprise Cloud
+
+<figure markdown>
+  <a href="https://git-lfs.com/" target="blank" rel="gitlfs">![gitlfs](https://git-lfs.com/images/tweet-promo.png) </a>
+    <figcaption> A depiction of how the Git LFS pointer-repository relationship works. </figcaption>
+</figure>
+
+---
+
 ## Useful GitHub Features
 
 At its core, GitHub is just a place to host your Git repositories.
 However, it offers a lot of functionality that has less to do with Git,
-and more to do with our favorite topic, **Project Management**. We will
+and more to do with [**Project Management**](02_project_management.md). We will
 walk through a few of these useful features.
 
 - [**:octicons-issue-opened-16: Issues**](https://docs.github.com/en/issues)
@@ -224,29 +252,7 @@ walk through a few of these useful features.
     -   CSV and map rendering
     -   Code editor
 
-## Git and Data
-
-Git and data don't always go hand in hand. GitHub allows commited files to be uploaded only if the file is of 100MB or less (with a warning being issued for files between 50MB and 100MB). Additionally, [GitHub recommends to keep repositories below the 1GB threshold](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits), as this also allows for quicker cloning and sharing of the repository. If a large file has been uploaded by mistake and you wish to remove it, [you can follow these instrutctions](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#removing-files-from-a-repositorys-history).
-
-If you *do* have to work with large files and Git, here are some questions to ask yourself:
-
-- Is this data shareable?
-- Are there alternative file hosting platforms I can use?
-- How will this data impact the sharability of this repository?
-- Am I using a .gitignore?
-
-GitHub now offers the [**Git Large File Storage (:simple-gitlfs: Git LFS)**](https://git-lfs.com/): the system works by storing references to the file in your repository, but not the file itself -- it creates a *pointer* file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.
-
-Git LFS data upload limits are based on your GitHub subscription: 
-
-- 2 GB for GitHub free and GitHub Pro
-- 4 GB for GitHub Team
-- 5 GB for GitHub Enterprise Cloud
-
-<figure markdown>
-  <a href="https://git-lfs.com/" target="blank" rel="gitlfs">![gitlfs](https://git-lfs.com/images/tweet-promo.png) </a>
-    <figcaption> A depiction of how the Git LFS pointer-repository relationship works. </figcaption>
-</figure>
+---
 
 ## Beyond Git and GitHub
 
@@ -263,6 +269,8 @@ There are other platforms that address Version Control and have similar function
 - **[:simple-azuredevops: Azure DevOps Services (formerly VSTS)](https://azure.microsoft.com/en-us/products/devops))**: Microsoft's Azure DevOps Services offers Git repository hosting along with a wide range of DevOps tools for planning, developing, testing, and deploying software.
 
 - **[:simple-mercurial: Mercurial](https://www.mercurial-scm.org/)**: Like Git, Mercurial is a distributed version control system, but with a different branching and merging model. It's an alternative to Git for version control.
+
+---
 
 ## Self Assessment
 
