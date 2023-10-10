@@ -50,7 +50,7 @@ worthwhile tool for many researchers).
 
     Actions:
     
-    !!! warning "These are also commands when paird with `git`!"
+    !!! tip "These are also commands when paird with `git`!"
         Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
 
     - **clone**: copy of a repository that lives locally on your computer.
@@ -195,43 +195,47 @@ However, it offers a lot of functionality that has less to do with Git,
 and more to do with our favorite topic, **Project Management**. We will
 walk through a few of these useful features.
 
-- Issues
-    -   issues let you plan out changes and suggestions to a repo
-    -   closing/reopening
-    -   labels
-    -   assigning
-    -   templates
-    -   numbering/mentioning
-    -   GitHub documentation: https://docs.github.com/en/issues
+- [**:octicons-issue-opened-16: Issues**](https://docs.github.com/en/issues)
+    -   Issues let you plan out changes and suggestions to a repo
+    -   Closing/reopening
+    -   Labels
+    -   Assigning
+    -   Templates
+    -   Numbering/mentioning
 
-- Pull Requests
-    -   pull requests are a way to request merging code from one branch to another
+- [**:material-source-pull: Pull Requests**](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+    -   Pull requests are a way to request merging code from one branch to another
     -   typical workflow is for someone to fork a repo, then make a PR from that repo to another
-    -   reviews
-    -   commenting
-    -   merging
-    -   closing issues
-    -   GitHub documentation: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests
+    -   Reviews
+    -   Commenting
+    -   Merging
+    -   Closing issues
 
-- Organizations
-    -   you can use Organizations to organize sets of repositories
-    -   roles
-    -   teams
+- [**:octicons-organization-16: Organizations**](https://docs.github.com/en/organizations)
+    -   You can use Organizations to organize sets of repositories
+    -   Roles
+    -   Teams
     -   GitHub documentation:
-        https://docs.github.com/en/organizations
-
-- Other neat things
+        
+- **Other neat things**
     -   Permissions/collaborators
     -   GitHub Classroom
     -   Gists
     -   CSV and map rendering
     -   Code editor
 
-!!! Note
-        Git is not really for storing or manipulating data, especially large
-        files. But the [CyVerse Discovery
-        Environment](https://de.cyverse.org/de/){target=_blank} is a great place to serve,
-        store, and share data.
+## Git and Data
+
+Git and data don't always go hand in hand. GitHub allows commited files to be uploaded only if the file is of 100MB or less (with a warning being issued for files between 50MB and 100MB). Additionally, [GitHub recommends to keep repositories below the 1GB threshold](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits), as this also allows for quicker cloning and sharing of the repository. If a large file has been uploaded by mistake and you wish to remove it, [you can follow these instrutctions](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#removing-files-from-a-repositorys-history).
+
+If you *do* have to work with large files and Git, here are some questions to ask yourself:
+
+- Is this data shareable?
+- Are there alternative file hosting platforms I can use?
+- How will this data impact the sharability of this repository?
+- Am I using a .gitignore?
+
+GitHub now offers the [**Git Large File Storage (Git-LFS)**](https://git-lfs.com/): the system works by storing references to the file in your repository, but not the file itself -- it creates a *pointer* file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.
 
 ## Self Assessment
 
