@@ -271,11 +271,11 @@ You can either use the anaconda website to search for packager, or use the [cond
 
 !!! Note "Makes things faster with Mamba"
 
-        Mamba is a reimplemetation of Conda using the C++ language, allowing for much quicker Conda experience. The tutorial is going to use **Mamba** instead of **Conda**, but you can always replace `mamba` with `conda`!
+    Mamba is a reimplemetation of Conda using the C++ language, allowing for much quicker Conda experience. The tutorial is going to use **Mamba** instead of **Conda**, but you can always replace `mamba` with `conda`!
 
 !!! Info "Conda channels"
 
-        Conda operates through **channels**, specififc repositories where packages are stored. Specific packages sometimes may appear in multiple channels, however it is always helpful to specify a channel with the `-c` flag.
+    Conda operates through **channels**, specififc repositories where packages are stored. Specific packages sometimes may appear in multiple channels, however it is always helpful to specify a channel with the `-c` flag.
 
 Install Nextflow and verify its installation with the following commands: 
 
@@ -333,10 +333,10 @@ pip3 freeze > my_pip_env.txt
 ```
 
 !!! Note "Why `pip3`?"
-        `pip3 freeze > my_pip_env.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > my_pip_env.txt`.
+    `pip3 freeze > my_pip_env.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > my_pip_env.txt`.
 
 !!! Success "Conda exports your Pip environment as well"
-        Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
+    Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
 
 ### GitHub repository setup and documentation
 
@@ -404,15 +404,15 @@ git push
 
 !!! Info "...what are we doing?"
 
-        In this tutorial (now that we have set up the environment, repository and pushed our first commit) we are going to:
+    In this tutorial (now that we have set up the environment, repository and pushed our first commit) we are going to:
 
-        - Index a [transcriptome](https://en.wikipedia.org/wiki/Transcriptome) file and quantification of DNA reads (using [Salmon](https://salmon.readthedocs.io/en/latest/)).
-        - Perform quality controls (with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)).
-        - Create a [MultiQC](https://multiqc.info/docs/) report.
+     - Index a [transcriptome](https://en.wikipedia.org/wiki/Transcriptome) file and quantification of DNA reads (using [Salmon](https://salmon.readthedocs.io/en/latest/)).
+     - Perform quality controls (with [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)).
+     - Create a [MultiQC](https://multiqc.info/docs/) report.
 
 !!! Warning "I Don't know DNA stuff, can I still do this?"
 
-        Absolutely yes! This tutorial is supposed to introduce you to the process of reproducibility using GitHub repositories, package managers and workflow managers! You do not need to understand what each file is as this is meant to show how to make your science reproducible. Focus on understanding the process and theory behind the tutorial rather than the files themselves :fontawesome-regular-face-smile-beam:.
+    Absolutely yes! This tutorial is supposed to introduce you to the process of reproducibility using GitHub repositories, package managers and workflow managers! You do not need to understand what each file is as this is meant to show how to make your science reproducible. Focus on understanding the process and theory behind the tutorial rather than the files themselves :fontawesome-regular-face-smile-beam:.
 
 Nextflow is a workflow manager, similar to [Snakemake](https://snakemake.readthedocs.io/en/stable/). For this tutorial, we decided to use Nextflow as it is easier to learn, more intuitive and user friendly than Snakemake.
 
@@ -446,29 +446,29 @@ We can now look at the decompressed directory structure by using `tree nf_foss_t
 ```
 !!! Info "Files information"
 
-        - Scripts 1 through 3 (`script<number>.nf`) and `example_script.nf` are the NextFlow files
-        - `<file>.fq` are fastq files, containing DNA sequences and quality scores
-        - `transcriptome.fa` is all of the RNA data from the organism (*G.gallus*)
+    - Scripts 1 through 3 (`script<number>.nf`) and `example_script.nf` are the NextFlow files
+    - `<file>.fq` are fastq files, containing DNA sequences and quality scores
+    - `transcriptome.fa` is all of the RNA data from the organism (*G.gallus*)
 
 Let's look at one of the NextFlow files (`.nf`)
 
 !!! Info "Understanding the Nextflow synthax"
 
-        Nextflow is powerful workflow manager as it can be deployed on HPCs and Clouds. However, it does require a little effort in order to understand its synthax. 
+    Nextflow is powerful workflow manager as it can be deployed on HPCs and Clouds. However, it does require a little effort in order to understand its synthax. 
         
-        The synthax is broken down into:
+    The synthax is broken down into:
         
-        - Defining parameters early
-        - Defining Processes to be executed
-        - Defining Channels (blocks that work asynchronously that encapsulate other processes)
+    - Defining parameters early
+    - Defining Processes to be executed
+    - Defining Channels (blocks that work asynchronously that encapsulate other processes)
 
-        More complex scripts include [operators](https://www.nextflow.io/docs/latest/operator.html) (channel manipulation) and [executors](https://www.nextflow.io/docs/latest/executor.html) (to run things on the cloud and HPC); Nextflow can also be used to run and orchestrate [containers](https://www.nextflow.io/docs/latest/container.html).
+    More complex scripts include [operators](https://www.nextflow.io/docs/latest/operator.html) (channel manipulation) and [executors](https://www.nextflow.io/docs/latest/executor.html) (to run things on the cloud and HPC); Nextflow can also be used to run and orchestrate [containers](https://www.nextflow.io/docs/latest/container.html).
         
-        As a good example, let's look at `example_script.nf`:
-        ```
-        /*                                                                                      
-         * pipeline input parameters                                                            
-         */                                                                                      
+    As a good example, let's look at `example_script.nf`:
+    ```
+    /*                                                                                      
+        * pipeline input parameters                                                            
+        */                                                                                      
         params.reads = "$baseDir/data/ggal/gut_{1,2}.fq"                                        #
         params.transcriptome = "$baseDir/data/ggal/transcriptome.fa"                            # The parameters are set early in the script
         params.multiqc = "$baseDir/multiqc"                                                     #
@@ -527,9 +527,9 @@ Let's look at one of the NextFlow files (`.nf`)
         salmon quant --threads $task.cpus --libType=U -i index -1 ${reads[0]} -2 ${reads[1]} -o $pair_id        # Command to execute
         """                                                                                                     #
         }        
-        ```
+    ```
 
-        Nextflow has in-depth documentation that can be found [here](https://www.nextflow.io/docs/latest/).
+    Nextflow has in-depth documentation that can be found [here](https://www.nextflow.io/docs/latest/).
 
 The 3 scripts' tasks are:
 
