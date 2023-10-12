@@ -187,6 +187,10 @@ This section is going to cover a short tutorial on reproducibility using softwar
 
     This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621). However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, use the Windows Subsystem for Linux (WSL)
 
+    ??? Tip "How to Scroll in Cyverse(Tmux) Cloud Shell"
+        
+        If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
+
 !!! Success "Tutorial Goals"
 
     - Create a small workflow using NextFlow
@@ -423,7 +427,7 @@ wget -O nf_foss_tut.tar.gz https://github.com/CyVerse-learning-materials/foss/bl
 tar -xvf nf_foss_tut.tar.gz
 ```
 
-We can now look at the decompressed directory structure by using `tree nf_foss_tut` (if you don not have `tree` installed, you can install it with `sudo apt-get tree`).
+We can now look at the decompressed directory structure by using `tree nf_foss_tut` (if you don not have `tree` installed, you can install it with `sudo apt-get tree` or `mamba install -c conda-forge tree`).
 
 ```
 .
