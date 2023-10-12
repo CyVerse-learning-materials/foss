@@ -16,7 +16,21 @@ definitely give pause to researchers and ordinary citizens who hope
 that the science used to recommend a course of medical treatment or design
 self-driving cars is sound.
 
-Before we go further, it's actually important to ask what is reproducibility?
+## Software Dependency Hell
+
+Think for a moment about all the branching possibilities for how a computer could be set up:
+
+- hardware: CPUs, GPUs, RAM
+- Operating system: many flavors of Linux, MacOS, Windows
+- Software versions: R, Python, etc.
+- Package versions: specific R or Python packages, etc.
+
+Simply trying to get the same setup as anyone else is difficult enough, but you can also run into all sorts of dependencies. Let's say you try to update a package to match the version someone else used for a project. However, after updating it, you realize you need to update 3 other packages. After that, you realize you need a newer version of R. You finally manage to get everything set up, but when you go back to a different project the next week, nothing works! All those updates made your code for your other project break. You spend a week fixing your code to work with the newer software, and you're finally done... but now your advisor gives you a dataset 10x the size and says you'll need to run it on the cloud. You throw your laptop out the window and move to the woods to live the life of a hermit.
+
+All jokes aside, dealing with software dependencies can be extremely frustrating, and so can setting stuff up on a remote location. It can be even more frustrating if you're trying to reproduce results but you don't actually know the entire software stack used to generate them.
+
+
+## Defining Reproducibility
 
 !!! Question
 
@@ -53,9 +67,6 @@ Before we go further, it's actually important to ask what is reproducibility?
             possible.
         - **Inferential reproducibility**: draw the same conclusions from either an
             independent replication of a study or a reanalysis of the original study.
-
-## Defining Reproducibility
-
 !!! question "Discussion Question"
         How do these definitions apply to your research/teaching?
 
@@ -92,15 +103,9 @@ In many ways, this is the biggest hurdle to reproducibility, as it often require
 	- Have you ever lost time trying to figure out how you (or a collaborator) got a particular result?
 	- What were the issues you ran into, and how might you have solved them?
 
-## Software Management
+## Stratgies for Improving Repeatability
 
-Have you ever tried to run a script, only to realize you had updated a package without knowing, and now the script doesn't work? 
-
-Package managers can be extremely helpful in keeping software versions aligned with projects.
-
-In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
-
-## Automation
+### Automation
 
 In the process of making your work more repeatable, you will often be trying to reduce the amount of work you're doing "by hand". Reducing the human input necessary at each step of a project is a key to reliably reproducing the same results, but it can also help save you a lot of time in the long run.
 
@@ -131,57 +136,48 @@ While we often think about writing scripts to clean data, run analyses, and gene
 
 Code can be thought of as a set of machine-actionable instructions, or instructions that we write for a computer to follow. What other sets of instructions do you have, either written down or in your head? How can you turn them into something machine-actionable?
 
-## Disposability
+### Get off your own machine
 
-A great approach to repeatability/reproducbility is to ask "could I generate my results if I lost X?"
+More and more work is being done somewhere other than a personal computer. This could be an HPC cluster at a university or a cloud computing provider. "Cloud" just means somebody else is handling the computers, and you get to use them when you need to, typically for a price. Some 'cloud' options include: Binder, Colab, and Cyverse VICE and Github Codespace. 
 
-What might happen to your work if:
+The take home message on Cloud is that it is a great way to make your work more reproducible, as you can share a link to your work, and anyone can run it without having to install anything.
 
-- you changed some code and your script broke?
-- you couldn't find a figure when a journal asked for it?
-- some software got uninstalled from your computer?
-- your laptop got stolen?
-- some software or computing provider stopped being maintained?
+### Software Management
 
-## Get off your own machine
+Have you ever tried to run a script, only to realize you had updated a package without knowing, and now the script doesn't work? 
 
-More and more work is being done somewhere other than a personal computer. This could be an HPC cluster at a university or a cloud computing provider. "Cloud" just means somebody else is handling the computers, and you get to use them when you need to, typically for a price.
+**Package managers** that create and manage **custom environments** can be extremely helpful in keeping software versions aligned with projects.
 
-Non-local computing resources have varying levels of complexity, flexibility, cost, and scale. Some services like Binder, Colab, and VICE try to abstract more of the computational details away, letting you focus on your code (ideally). Others, like Gitpod, Codespaces, or GitHub Actions, have more limited uses (in a good way).
-
-## Dependency Hell
-
-Think for a moment about all the branching possibilities for how a computer could be set up:
-
-- hardware: CPUs, GPUs, RAM
-- Operating system: many flavors of Linux, MacOS, Windows
-- Software versions: R, Python, etc.
-- Package versions: specific R or Python packages, etc.
-
-Simply trying to get the same setup as anyone else is difficult enough, but you can also run into all sorts of dependencies. Let's say you try to update a package to match the version someone else used for a project. However, after updating it, you realize you need to update 3 other packages. After that, you realize you need a newer version of R. You finally manage to get everything set up, but when you go back to a different project the next week, nothing works! All those updates made your code for your other project break. You spend a week fixing your code to work with the newer software, and you're finally done... but now your advisor gives you a dataset 10x the size and says you'll need to run it on the cloud. You throw your laptop out the window and move to the woods to live the life of a hermit.
-
-All jokes aside, dealing with software dependencies can be extremely frustrating, and so can setting stuff up on a remote location. It can be even more frustrating if you're trying to reproduce results but you don't actually know the entire software stack used to generate them.
-
-There is a way to handle all of these frustrations at once:
-
-## Containers
-
-Ok, to be fair, working with containers will also be frustrating. But the beautiful thing about working with containers is that you can handle all of the hard stuff at the start of a project, and you won't have to worry about things changing later on. 
-
-What **are** containers?
-
-Containers are reproducible computing environments that contain an operating system (OS), software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely solemnly on the host OS (and the container engine). 
-
-![VM_vs_containers](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png)
-Source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/)
-
-A popular container platform is [Docker](https://www.docker.com/):material-docker:([wikipedia](https://en.wikipedia.org/wiki/Docker_(software)), ["what is a Docker container?"](https://www.docker.com/resources/what-container/)), hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
-
-RStudio has a number of [available Docker containers](https://rocker-project.org/images/versioned/rstudio.html), each for different use cases and maintained by the [Rocker Project](https://rocker-project.org/). 
-
-[Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
+In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
 
 ---
+## Conda
+
+[Conda](https://docs.conda.io/en/latest/){target=_blank} is an open-source package management system and also an environment management system. This means that it helps manage libraries and dependencies within different projects and can isolate different versions of packages and even Python itself into different environments to maintain project consistency and avoid conflicts between package versions.
+
+Here's a breakdown of what Conda offers:
+
+* **Environment Management:**
+
+    Conda allows users to create isolated environments for their projects. Each environment can have its own set of packages, dependencies, and even its own version of Python. This ensures that different projects can have their own specific requirements without interfering with each other.
+
+* **Package Management:**
+
+    Beyond managing environments, Conda is also a package manager. It can install specific versions of software packages and ensure that all dependencies are met. While it's commonly associated with Python, Conda can also manage packages from other languages. You can search for packges at https://anaconda.org/.
+
+* **Cross-Platform:**
+
+    Conda is platform-agnostic. This means you can use it across various operating systems like Windows, macOS, and Linux.
+
+* **Repository Channels:**
+
+    Conda packages are retrieved from repositories known as channels. The default channel has a wide array of commonly used packages. However, users can add third-party channels, such as "conda-forge", to access even more packages or specific versions of packages. You can specify the channel by using the `-c` flag when installing packages.
+
+* **Integration with Anaconda:**
+
+    Conda is the package and environment manager for the Anaconda distribution, which is a distribution of Python and R for scientific computing and data science. However, Conda can be used independently of Anaconda.
+
+
 
 ## Reproducibility tutorial
 
@@ -189,13 +185,13 @@ This section is going to cover a short tutorial on reproducibility using softwar
 
 !!! Note "OS of choice"
 
-        This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621). However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, use the Windows Subsystem for Linux (WSL)
+    This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621). However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, use the Windows Subsystem for Linux (WSL)
 
 !!! Success "Tutorial Goals"
 
-        - Create a small workflow using NextFlow
-        - Understand best practices for reproducing a workflow
-        - Apply FOSS procedures in order to enable easiness of reproducibility
+    - Create a small workflow using NextFlow
+    - Understand best practices for reproducing a workflow
+    - Apply FOSS procedures in order to enable easiness of reproducibility
 
 ### Prerequisites
 
@@ -261,8 +257,6 @@ Installabe through Pip:
 
 ### Package management with Conda
 
-Conda makes installing packages simple. Due to it's widespread use, conda has a large number of widely available packages; You can search for these in at https://anaconda.org/.
-
 We are going to to use conda to install Mamba, NextFlow, Salmon and FastQC.
 
 ```
@@ -273,7 +267,7 @@ conda activate
 conda install -c conda-forge mamba
 ```
 
-You can either use the anaconda website to search for packager, or use the conda search feature (_but also, Google is your best friend._)
+You can either use the anaconda website to search for packager, or use the [conda search feature](https://docs.conda.io/projects/conda/en/latest/commands/search.html) (but also, Google is your best friend.)
 
 !!! Note "Makes things faster with Mamba"
 
