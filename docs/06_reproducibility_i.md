@@ -159,7 +159,7 @@ Here's a breakdown of what Conda offers:
 
 * **Environment Management:**
 
-    Conda allows users to create isolated environments for their projects. Each environment can have its own set of packages, dependencies, and even its own version of Python. This ensures that different projects can have their own specific requirements without interfering with each other.
+    Conda allows users to create isolated environments for their projects. Each environment can have its own set of packages, dependencies, and even its own version of Python. This ensures that different projects can have their own specific requirements without interfering with each other. It allows for consistent and reproducible results across different systems and setups
 
 * **Package Management:**
 
@@ -241,23 +241,35 @@ Installabe through Pip:
     (base) user@machine
     ```
 
-    Conda should now be installed and can be used to install other necessary packages! With this in mind, we are going to create our own environment (select `y` when prompted).
+    Conda should now be installed and can be used to install other necessary packages! 
 
-    ```
-    conda create --name myenv
-    ```
+When you start a Cyverse Cloud shell, it will start you in the directory: 
+```
+/home/user/work 
+```
+Let's change to the Data-Store directory, where we will be working for the rest of the tutorial. This is the Cyverse cloud-storage directory where you can put all your data and files. 
 
-    Activate your new environment with 
+```
+cd home
+cd <username>
+```
+Create our own environment (select `y` when prompted).
 
-    ```
-    conda activate myenv
-    ```
+```
+conda create --name myenv
+```
 
-    You can see the list of environments you can activate by doing
+Activate your new environment with 
 
-    ```
-    conda env list
-    ```
+```
+conda activate myenv
+```
+
+You can see the list of environments you can activate by doing
+
+```
+conda env list
+```
 
 ### Package management with Conda
 
@@ -285,7 +297,7 @@ Install Nextflow and verify its installation with the following commands:
 
 ```
 # Install NextFlow
-mamba install -c bioconda nextflow      # Press y when prompted with [Y/n]!
+mamba install -c bioconda nextflow=22.10.6     # Press y when prompted with [Y/n]!
 
 # verify the installation
 nextflow -version
@@ -402,7 +414,13 @@ git commit -m "adding initial documentation"
 git push
 ```
     
-- Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!** [FOSS has covered how to create a Token in Week 0: The Shell and Git, necessary in order to modify code locally](https://foss.cyverse.org/00_basics/#adding-code-locally).
+- When trying to `commit` git will ask who you are:
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+- When trying to `push`, Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!** [FOSS has covered how to create a Token in Week 0: The Shell and Git, necessary in order to modify code locally](https://foss.cyverse.org/00_basics/#adding-code-locally).
 
 ### Workflow Tutorial using Nextflow
 
@@ -631,7 +649,7 @@ executor >  local (4)
 Done! Open the following report in your browser --> results/multiqc_report.html
 ```
 
-As you can notice, the report is an `html` file that can be opened with a browser.
+As you can notice, the report is an `html` file that can be opened with a browser. Navigate to this file in the Cyverse Data Store and open it. 
 
 ### Document your work
 
@@ -643,22 +661,3 @@ As you can notice, the report is an `html` file that can be opened with a browse
 
 ---
 
-## Self Assessment
-
-??? Question "True or False: Docker containers allow for reproducibility across all computing platforms"
-
-    !!! Success "False"
-
-        While Docker allows you to quickly run software from other people, it may not work across every platform.
-
-        There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. 
-
-        Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
-
-??? Question "When is it advisable to not trust a Docker image?"
-
-    !!! Success "When you cannot view its Dockerfile"
-
-        Featured and Verified Docker images can be trusted, in general.
-
-        User generated images should not be trusted unless you can view their Dockerfile, or build logs to determine what is actually in the container you are attempting to run.

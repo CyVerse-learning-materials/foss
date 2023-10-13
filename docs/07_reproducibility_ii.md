@@ -63,3 +63,22 @@ RStudio has a number of [available Docker containers](https://rocker-project.org
 
         You need to run a web service
         
+
+
+??? Question "True or False: Docker containers allow for reproducibility across all computing platforms"
+
+    !!! Success "False"
+
+        While Docker allows you to quickly run software from other people, it may not work across every platform.
+
+        There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. 
+
+        Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
+
+??? Question "When is it advisable to not trust a Docker image?"
+
+    !!! Success "When you cannot view its Dockerfile"
+
+        Featured and Verified Docker images can be trusted, in general.
+
+        User generated images should not be trusted unless you can view their Dockerfile, or build logs to determine what is actually in the container you are attempting to run.
