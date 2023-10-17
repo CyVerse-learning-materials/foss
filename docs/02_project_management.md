@@ -2,12 +2,12 @@
 
 !!! Success "Learning Objectives"
         
-        After this lesson, you should be able to:
+    After this lesson, you should be able to:
 
-        *  Discuss different levels of project management
-        *  Describe tools and approaches to managing collaborative projects
-        *  Describe best practices for computational project organization
-        *  Understand benefits of establishing project management practices from the start of a project until after it ends
+    *  Discuss different levels of project management
+    *  Describe tools and approaches to managing collaborative projects
+    *  Describe best practices for computational project organization
+    *  Understand benefits of establishing project management practices from the start of a project until after it ends
 
 "**Project Management**" by itself may sound a bit vague and broad. 
 

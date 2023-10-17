@@ -14,6 +14,6 @@ Thursdays 11 am - 1 pm Arizona Time.
 | **Week 3** | Sept 28 | - [Project management](02_project_management.md) <br> - [Intro to CyVerse](https://learning.cyverse.org/what_is_cyverse/){target=_blank}| Michele Cosi, Tyson Swetnam | 
 | **Week 4** | Oct 5 | [Documentation / Communication](04_documentation_communication.md): <br> - Internal + External Documentation <br> - Internal + External Communication <br> - [GitHub Pages websites](documentation/githubpages.md) | Michele Cosi, Jeff Gillan| 
 | **Week 5** | Oct 12 | [Version Control](05_version_control.md) <br> - Version control as a philosophy <br> - GitHub functionality <br> Version control everything | Michele Cosi, <br> Guest Speaker: Jason Williams, CSH | 
-| **Week 6** | Oct 19 | [Reproducibility I](06_reproducibility_i.md): <br> - Software installation <br> - Software management | Carlos Lizarraga, Jeff Gillan, Michele Cosi | 
+| **Week 6** | Oct 19 | [Reproducibility I](06_reproducibility_i.md): <br> - Software installation <br> - Software management | Jeff Gillan, Michele Cosi | 
 | **Week 7** | Oct 26 | [Reproducibility II](07_reproducibility_ii.md): <br> - Brief intro to containers | Jeffrey Gillan, Carlos Lizarraga |
 | **Week 8** | Nov 2 | Capstone Presentations | 

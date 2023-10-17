@@ -75,22 +75,17 @@ Our instructions on starting a new CodeSpace are [here](../cloud/codespaces.md).
 
 ??? Failure "Never used a terminal before?"
     
-    That is  :100:  OK! (This person never used a terminal until after their terminal degree, and now they actually PREFER to work in it for writing code) 
-    
-    Don't be afraid or ashamed, but be ready to learn some new skills -- we promise it will be worth your while and even FUN! 
-    
     Before venturing much further, you should review the [Software Carpentry](https://software-carpentry.org/lessons/){target=_blank} lessons on "The Unix Shell" and "Version Control with Git" -- these are great introductory lessons related to the skills we're teaching here.
 
     You've given up on ever using a terminal? No problem, Docker can be used from graphic interfaces, like [Docker Desktop](https://www.docker.com/products/docker-desktop/){target=_blank}, or platforms like [Portainer](https://www.portainer.io/){target=_blank}. We suggest you read through their documentation on how to use Docker.
 
-### Fundamental Docker Commands :octicons-terminal-16: 
+## Fundamental Docker Commands :octicons-terminal-16: 
 
 Docker commands in the terminal use the prefix `docker`.
 
-!!! Note
-        For every command listed, the correct execution of the commands through the command line is by using `docker` in front of the command: for example `docker help` or `docker search`. Thus, every :material-docker: = `docker`. 
+!!! Note "For every command listed, the correct execution of the commands through the command line is by using `docker` in front of the command: for example `docker help` or `docker search`. Thus, every :material-docker: = `docker`."
 
-#### :material-docker: help
+### :material-docker: help
 
 Like many other command line applications the most helpful flag is the `help` command which can be used with the Management Commands:
 
@@ -99,7 +94,7 @@ $ docker
 $ docker --help
 ```
 
-#### :material-docker: search
+### :material-docker: search
 
 We talk about the concept of [Docker Registries](registry.md) in the next section, but you can search the public list of registeries by using the `docker search` command to find public containers on the Official [Docker Hub Registry](https://hub.docker.com):
 
@@ -107,7 +102,7 @@ We talk about the concept of [Docker Registries](registry.md) in the next sectio
 $ docker search  
 ```
 
-#### :material-docker: pull
+### :material-docker: pull
 
 Go to the [Docker Hub](https://hub.docker.com) and type `hello-world` in the search bar at the top of the page. 
 
@@ -150,29 +145,7 @@ $ ls -l
     $ docker images
     ```
 
-??? Tip "adding yourself to the Docker group on Linux"
-
-	Depending on how and where you've installed Docker, you may see a `permission denied` error after running `$ docker run helo-world` command.
-    
-    If you're on Linux, you may need to prefix your Docker commands with `sudo`. 
-    
-    Alternatively to run docker command without `sudo`, you need to add your user name (who has root privileges) to the docker "group".
-
-	Create the docker group:
-
-    ```
-	$ sudo groupadd docker
-    ```
-
-	Add your user to the docker group::
-    
-    ```
-	$ sudo usermod -aG docker $USER
-    ```
-
-	Log out or close terminal and log back in and your group membership will be initiated
-
-#### :material-docker: run
+### :material-docker: run
 
 The single most common command that you'll use with Docker is `docker run` ([see official help manual](https://docs.docker.com/engine/reference/commandline/run/) for more details).
 
@@ -199,7 +172,7 @@ When you executed the command `docker run alpine:latest`, Docker first looked fo
 
 When you ran `docker run alpine:latest`, you provided a command `ls -l`, so Docker started the command specified and you saw the listing of the Alpine file system (not your host system, this was insice the container!).
 
-#### :material-docker: images
+### :material-docker: images
 
 You can now use the `docker images` command to see a list of all the cached images on your system:
 
@@ -214,7 +187,7 @@ hello-world             latest              690ed74de00f        5 months ago    
 
 	To find out more about a Docker images, run `docker inspect hello-world:latest`
 
-#### :material-docker: ps
+### :material-docker: ps
 
 Now it's time to see the `docker ps` command which shows you all containers that are currently running on your machine. 
 
@@ -245,13 +218,13 @@ What you see above is a list of all containers that you have run.
 
 Notice that the `STATUS` column shows the current condition of the container: running, or as shown in the example, when the container was exited.
 
-#### :material-docker: stop
+### :material-docker: stop
 
 The `stop` command is used for containers that are actively running, either as a foreground process or as a detached background one.
 
 You can find a running container using the `docker ps` command.
 
-#### :material-docker: rm
+### :material-docker: rm
 
 You can remove individual stopped containers by using the `rm` command. Use the `ps` command to see all your stopped contiainers:
 
@@ -270,7 +243,7 @@ Use the first few unique alphanumerics in the CONTAINER ID to remove the stopped
 
 Check to see that the container is gone using `ps -a` a second time (`-a` is shorthand for `--all`; the full command is `docker ps -a` or `docker ps --all`).
 
-#### :material-docker: rmi
+### :material-docker: rmi
 
 The `rmi` command is similar to `rm` but it will remove the cached images. Used in combination with `docker images` or `docker system df` you can clean up a full cache
 
@@ -294,7 +267,7 @@ Deleted: sha256:e07ee1baac5fae6a26f30cabfe54a36d3402f96afda318fe0a96cec4ca393359
 @user ➜ /workspaces (mkdocs ✗) $ 
 ```
 
-#### :material-docker: system
+### :material-docker: system
 
 The `system` command can be used to view information about containers on your cache, you can view your total disk usage, view events or info.
 
@@ -306,7 +279,7 @@ To remove all cached layers, images, and data you can use the `-af` flag for `al
 docker system prune -af
 ```
 
-#### :material-docker: tag
+### :material-docker: tag
 
 By default an image will recieve the tag `latest` when it is not specified during the `docker build` 
 
@@ -324,7 +297,7 @@ docker tag docker.io/username/imagename:oldtag harbor.cyverse.org/project/imagen
 
 The cached image laters will not change their `sha256` and both image tags will still be present after the new tag name is generated. 
 
-#### :material-docker: push
+### :material-docker: push
 
 By default `docker push` will upload your local container image to the [Docker Hub](){target=_blank}
 
@@ -359,23 +332,7 @@ docker push harbor.cyverse.org/project/imagename:newtag
 
 ---
 
-### Commands & Entrypoints
-
-We will cover the differences in `CMD` and `ENTRYPOINT` on Day 2 when we build our own images, but it is important to understand that a container can have a command appended to the `docker run` function.
-
-When a image has no commands or entrypoints specified in its Dockerfile, it will default to running a `/bin/sh` syntax. In those cases, you can add a command when the congtainer is run:
-
-```
-$ docker run alpine echo "Hello world"
-```
-
-the Docker client dutifully ran the ``echo`` command in our ``alpine`` container and then exited. 
-
-If you've noticed, all of that happened pretty quickly.  Imagine booting up a virtual machine, running a command and then killing it. Now you know why they say containers are fast!
-
----
-
-### Interactive Commands with Containers
+## Interactive Commands with Containers
 
 Lets try another command, this time to access the container as a shell:
 
@@ -389,9 +346,7 @@ Is that a bug?
 
 Well, no.
 
-The container will exit after running any scripted commands such as `sh`, unless they are run in an "interactive" terminal (TTY) - so for this example to not exit, you need to add the `-i` for interactive and `-t` for TTY. 
-
-You can run them both in a single flag as ``-it``, which is the more common way of adding the flag:
+The container will exit after running any scripted commands such as `sh`, unless they are run in an "interactive" terminal (TTY) - so for this example to not exit, you need to add the `-i` for interactive and `-t` for TTY. You can run them both in a single flag as `-it`, which is the more common way of adding the flag:
 
 ```
 $ docker run -it alpine:latest sh
@@ -435,21 +390,21 @@ Exit out of the container by giving the `exit` command.
 
 ---
 
-### :material-home: House Keeping and :material-broom: Cleaning Up Exited Containers
+## :material-home: House Keeping and :material-broom: Cleaning Up Exited Containers
 
-#### Managing Docker Images
+### Managing Docker Images
 
 In the previous example, you pulled the `alpine` image from the registry and asked the Docker client to run a container based on that image. To see the list of images that are available locally on your system, run the `docker images` command.
 
 ```
-	$ docker images
-	REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
-	ubuntu                     bionic              47b19964fb50        4 weeks ago         88.1MB
-	alpine                     latest              caf27325b298        4 weeks ago         5.53MB
-	hello-world                latest              fce289e99eb9        2 months ago        1.84kB
+$ docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+ubuntu                     bionic              47b19964fb50        4 weeks ago         88.1MB
+alpine                     latest              caf27325b298        4 weeks ago         5.53MB
+hello-world                latest              fce289e99eb9        2 months ago        1.84kB
 ```
 
-Above is a list of images that I've pulled from the registry and those I've created myself (we'll shortly see how). You will have a different list of images on your machine. The **TAG** refers to a particular snapshot of the image and the **ID** is the corresponding unique identifier for that image.
+Above is a list of images that I've pulled from the registry. You will have a different list of images on your machine. The **TAG** refers to a particular snapshot of the image and the **ID** is the corresponding unique identifier for that image.
 
 For simplicity, you can think of an image akin to a Git repository - images can be committed with changes and have multiple versions. When you do not provide a specific version number, the client defaults to latest.
 
@@ -459,94 +414,91 @@ Docker images are **cached** on your machine in the location where Docker was in
 
 Some Docker images can be large. Especially data science images with many scientific programming libraries and packages pre-installed.
 
-!!! Warning "Checking your system cache"
+Pulling many images from the Docker Registries may fill up your hard disk! To inspect your system and disk use:
 
-        Pulling many images from the Docker Registries may fill up your hard disk!
+```
+$ docker system info
+$ docker system df
+```
 
-        To inspect your system and disk use:
+To find out how many images are on your machine, type:
 
-        ```
-        $ docker system info
-        $ docker system df
-        ```
+```
+$ docker images
+```
 
-        To find out how many images are on your machine, type:
+To remove images that you no longer need, type:
 
-        ```
-        $ docker images
-        ```
+```
+$ docker system prune
+```
 
-        To remove images that you no longer need, type:
+This is where it becomes important to differentiate between *images*, *containers*, and *volumes* (which we'll get to more in a bit).  You can take care of all of the dangling images and containers on your system. 
 
-        ```
-        $ docker system prune
-        ```
+Note, that `prune` will not remove your cached *images* 
 
-        This is where it becomes important to differentiate between *images*, *containers*, and *volumes* (which we'll get to more in a bit). 
+```
+$ docker system prune
+    WARNING! This will remove:
+    - all stopped containers
+    - all networks not used by at least one container
+    - all dangling images
+    - all dangling build cache
 
-        You can take care of all of the dangling images and containers on your system. 
+Are you sure you want to continue? [y/N]
+```
 
-        Note, that `prune` will not remove your cached *images* 
-
-        ```
-        $ docker system prune
-            WARNING! This will remove:
-            - all stopped containers
-            - all networks not used by at least one container
-            - all dangling images
-            - all dangling build cache
-
-        Are you sure you want to continue? [y/N]
-        ```
-
-        If you added the `-af` flag it will remove "all" `-a` dangling images, empty containers, AND ALL CACHED IMAGES with "force" `-f`.
+If you added the `-af` flag it will remove "all" `-a` dangling images, empty containers, AND ALL CACHED IMAGES with "force" `-f`.
 
 ---
 
-### Managing Data in Docker
+## Managing Data in Docker
 
 It is possible to store data within the writable layer of a container, but there are some limitations:
 
-- The data doesn’t persist when that container is no longer running, and it can be difficult to get the data out of the container if another process needs it.
-- A container’s writable layer is tightly coupled to the host machine where the container is running. You can’t easily move the data somewhere else.
-- Its better to put your data into the container **AFTER** it is built - this keeps the container size smaller and easier to move across networks.
+!!! warning ""
+    - **The data doesn’t persist when that container is no longer running**, and it can be difficult to get the data out of the container if another process needs it.
+    - **A container’s writable layer is tightly coupled to the host machine where the container is running**. You can’t easily move the data somewhere else.
+    - **Its better to put your data into the container *AFTER* it is built** - this keeps the container size smaller and easier to move across networks.
 
-Docker offers three different ways to mount data into a container from the Docker host:
+Docker offers three different ways to mount data into a container from the Docker host: **Volumes**, **tmpfs mounts** and **bind mounts**. Here, we will only be exploring *Volumes*.
 
-- **Volumes**
-- **tmpfs mounts**
-- **Bind mounts**
+<figure markdown>
+  <a href="https://docs.docker.com/storage/volumes/" target="blank" rel="vol">![vol](https://docs.docker.com/storage/images/types-of-mounts-volume.png) </a>
+    <figcaption> The various methods for accessing data using containers. tmpfs mounts store data directly in memory, bind mounts and volumes use the host's file system. Volumes are flexible and only attach a specific directory to the container, whilst bind mounts require the user to share the full path to a file in order to allow the container to access it. Taken from the official Docker documentation on [data management with docker](https://docs.docker.com/storage/volumes/). </figcaption>
+</figure>
 
-When in doubt, volumes are almost always the right choice.
+!!! info "Why Volumes?"
 
-#### Volumes
+    Volumes are often a better choice than persisting data in a container’s writable layer, because using a volume does not increase the size of containers using it, and the volume’s contents exist outside the lifecycle of a given container. Some of the advantages of volumes include:
 
-Volumes are often a better choice than persisting data in a container’s writable layer, because using a volume does not increase the size of containers using it, and the volume’s contents exist outside the lifecycle of a given container. While bind mounts (which we will see in the Advanced portion of the Camp) are dependent on the directory structure of the host machine, volumes are completely managed by Docker. Volumes have several advantages over bind mounts:
+    - Volumes are easier to back up or migrate.
+    - You can manage volumes using Docker CLI commands or the Docker API.
+    - Volumes work on both UNIX and Windows containers.
+    - Volumes can be more safely shared among multiple containers.
+    - A new volume’s contents can be pre-populated by a container.
 
-- Volumes are easier to back up or migrate than bind mounts.
-- You can manage volumes using Docker CLI commands or the Docker API.
-- Volumes work on both UNIX and Windows containers.
-- Volumes can be more safely shared among multiple containers.
-- A new volume’s contents can be pre-populated by a container.
-
-??? Tip "When Should I Use the Temporary File System mount?"
-
-	If your container generates non-persistent state data, consider using a `tmpfs` mount to avoid storing the data anywhere permanently, and to increase the container’s performance by avoiding writing into the container’s writable layer. The data is written to the host's memory instead of a volume; When the container stops, the `tmpfs` mount is removed, and files written there will not be kept.
-
-Choose the `-v` flag for mounting volumes
+The `-v` flag is used for mounting volumes:
 
 `-v` or `--volume`: Consists of three fields, separated by colon characters (:). 
 
 The fields must be in the correct order, and the meaning of each field is not immediately obvious.
 
+Required:
+
 - The **first** field is the path on your **local machine** that where the data are.
 - The **second** field is the path where the file or directory are **mounted in the container**.
+
+Optional:
+
 - The third field is optional, and is a comma-separated list of options, such as `ro` (read only).
 
+The synthax looks like the following:
 ```
 -v /home/username/your_data_folder:/container_folder
 ```
 
+This is what a full docker command with a mounted volume looks like:
 ```
 $ docker run -v /home/$USER/read_cleanup:/work alpine:latest ls -l /work
 ```
@@ -557,22 +509,17 @@ So what if we wanted to work interactively inside the container?
 $ docker run -it -v /home/$USER/read_cleanup:/work alpine:latest sh
 ```
 
-```
-$ ls -l 
-$ ls -l work
-```
-
 Once you're in the container, you will see that the `/work` directory is mounted in the working directory.
 
-Any data that you add to that folder outside the container will appear INSIDE the container. And any work you do inside the container saved in that folder will be saved OUTSIDE the container as well.
+Any data that you add to that folder outside the container will appear **INSIDE** the container. And any work you do inside the container saved in that folder will be saved OUTSIDE the container as well.
 
 ---
 
-### Working with Interactive Containers
+## Working with Interactive Containers
 
 Let's go ahead and run some Integrated Development Environment images from "trusted" organizations on the Docker Hub Registry.
 
-#### :material-language-python: Jupyter Lab 
+### :material-language-python: Jupyter Lab 
 	
 In this section, let's find a Docker image which can run a Jupyter Notebook
 
@@ -605,7 +552,7 @@ jupyter/nbviewer                       Jupyter Notebook Viewer                  
 
 ---
 
-### Understanding PORTS
+## Understanding PORTS
 
 When we want to run a container that runs on the open internet, we need to add a [TCP or UDP port number](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers){target=_blank} from which we can access the application in a browser using the machine's IP (Internet Protocol) address or DNS (Domain Name Service) location.
 
@@ -645,7 +592,7 @@ $ docker run --rm -p 8888:8888 jupyter/base-notebook
 
 	When you start an IDE in a terminal, the terminal connection must stay active to keep the container alive.
 
-#### Detaching your container while it is running
+### Detaching your container while it is running
 
 If we want to keep our window in the foreground  we can use the `-d` - the *detached* flag will run the container as a background process, rather than in the foreground. 
 
@@ -660,7 +607,7 @@ To view the running container, use the `docker ps` command.
 
 ---
 
-### Docker Commands
+## Docker Commands
 
 Here is a compiled list of fundamental Docker Commands:
 
