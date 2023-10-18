@@ -10,36 +10,42 @@
 
 ## Containers
 
-Ok, to be fair, working with containers will also be frustrating. But the beautiful thing about working with containers is that you can handle all of the hard stuff at the start of a project, and you won't have to worry about things changing later on. 
+### What *are* containers?
 
-What **are** containers?
+A [container](https://www.docker.com/resources/what-container/){target=_blank} is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-Containers are reproducible computing environments that contain an operating system (OS), software, and even code needed to run analyses. Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely solemnly on the host OS (and the container engine). 
+The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
+
+??? Note "Container Avantages"
+
+    Advantages include efficient resource utilization, scalability, and portability. They sepatare the underlying infrastructure, ensuring consistent behavior across different environments and enable better resource management and security by isolating applications from the host system and other containers.
+
+
+Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely on the host OS and the container engine (i.e, Docker Engine). 
 
 <figure markdown>
   <a href="https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/" target="blank" rel="containerexp">![containerexp](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png) </a>
     <figcaption> Difference between Virtual Machines and Containers. Containers are a lot more portable as these do not require an OS to be bundled with the software. Figure source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/). </figcaption>
 </figure>
 
-A popular container platform is [:material-docker: Docker](https://www.docker.com/) ([wikipedia](https://en.wikipedia.org/wiki/Docker_(software)), ["what is a Docker container?"](https://www.docker.com/resources/what-container/)), hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
+Containers can Cross Operating Systems but may have problems between CPU architectures (e.g., x86 vs ARM vs AMD64).
+
+### Containers for Reproducible Science
+
+### Use Cases for Containers
+
+hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
 
 :simple-rstudio: RStudio has a number of [available Docker containers](https://rocker-project.org/images/versioned/rstudio.html), each for different use cases and maintained by the [Rocker Project](https://rocker-project.org/). [:simple-jupyter: Project Jupyter](https://jupyter.org/) also has a number of [maintained docker images](https://hub.docker.com/u/jupyter) accessible through DockerHub. 
 
-[Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
 
-??? Tip "Confused? Click here"
-    [The official Docker website does a good explanation of what containers are (pictures are always helpful).](https://www.docker.com/resources/what-container/)
-    ??? Info "Need a simpler explanation? Here is Containers in less than 150 words."
+
+
+??? Note "Alternatively: The Carpentries Introductory Container workshop"
+
+    The Carpentries have an incubator workshop on [Docker Containers](https://carpentries-incubator.github.io/docker-introduction/){target=_blank}.
         
-        **Containers are lightweight, isolated environments for running applications and their dependencies**. They package everything an application needs, such as code, libraries, and settings, into a single unit called a container image. This image can be easily replicated and executed on various platforms without compatibility issues, thanks to containerization technology like Docker.
-
-        Advantages include efficient resource utilization, scalability, and portability. They sepatare the underlying infrastructure, ensuring consistent behavior across different environments and enable better resource management and security by isolating applications from the host system and other containers.
-
-    ??? Note "Alternatively: The Carpentries Introductory Container workshop"
-
-        The Carpentries have an incubator workshop on [Docker Containers](https://carpentries-incubator.github.io/docker-introduction/){target=_blank}.
-        
-        Extra: [Containers in Research Workflows](https://carpentries-incubator.github.io/docker-introduction/reproduciblity/index.html){target=_blank} (section 9 from the lesson linked above).
+    Extra: [Containers in Research Workflows](https://carpentries-incubator.github.io/docker-introduction/reproduciblity/index.html){target=_blank} (section 9 from the lesson linked above).
 
 ---
 
