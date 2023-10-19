@@ -103,7 +103,7 @@ In many ways, this is the biggest hurdle to reproducibility, as it often require
 	- Have you ever lost time trying to figure out how you (or a collaborator) got a particular result?
 	- What were the issues you ran into, and how might you have solved them?
 
-## Stratgies for Improving Repeatability
+## Strategies for Improving Repeatability
 
 ### Automation
 
