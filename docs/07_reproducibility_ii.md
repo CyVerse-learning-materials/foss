@@ -8,44 +8,52 @@
     * Search for and run a Docker container locally or on a remote system
     * Understand how version control and data can be used inside a container
 
-## Containers
 
-### What *are* containers?
+## What *are* containers?
 
 A [container](https://www.docker.com/resources/what-container/){target=_blank} is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
-The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
-
-??? Note "Container Avantages"
-
-    Advantages include efficient resource utilization, scalability, and portability. They sepatare the underlying infrastructure, ensuring consistent behavior across different environments and enable better resource management and security by isolating applications from the host system and other containers.
-
-
-Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely on the host OS and the container engine (i.e, Docker Engine). 
+Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely on the host OS and the container engine (e.g., Docker Engine). 
 
 <figure markdown>
   <a href="https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/" target="blank" rel="containerexp">![containerexp](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png) </a>
     <figcaption> Difference between Virtual Machines and Containers. Containers are a lot more portable as these do not require an OS to be bundled with the software. Figure source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/). </figcaption>
 </figure>
 
-Containers can Cross Operating Systems but may have problems between CPU architectures (e.g., x86 vs ARM vs AMD64).
+* The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
 
-### Containers for Reproducible Science
+* [DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
 
-### Use Cases for Containers
-
-hosting user created containers on [DockerHub](https://hub.docker.com/), and providing a cross-OS user-friendly toolset for container creation and deployment.
-
-:simple-rstudio: RStudio has a number of [available Docker containers](https://rocker-project.org/images/versioned/rstudio.html), each for different use cases and maintained by the [Rocker Project](https://rocker-project.org/). [:simple-jupyter: Project Jupyter](https://jupyter.org/) also has a number of [maintained docker images](https://hub.docker.com/u/jupyter) accessible through DockerHub. 
+!!! Warning
+    
+    While Docker allows you to quickly run software from other people, it may not work across every platform. There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
 
 
+## Containers for Reproducible Science
+Software containers, such as those managed by Docker or Singularity, are incredibly useful for reproducible science for several reasons:
+
+#### Environment Consistency: 
+Containers encapsulate the software environment, ensuring that the same versions of software, libraries, and dependencies are used every time, reducing the "it works on my machine" problem.
+
+#### Ease of Sharing:
+
+Containers can be easily shared with other researchers, allowing them to replicate the exact software environment used in a study.
+
+#### Platform Independence:
+
+Containers can run on different operating systems and cloud platforms, allowing for consistency across different hardware and infrastructure.
+
+#### Version Control:
+
+Containers can be versioned, making it easy to keep track of changes in the software environment over time.
+#### Scalability:
+
+Containers can be easily scaled and deployed on cloud infrastructure, allowing for reproducible science at scale.
+#### Isolation:
+
+Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
 
 
-??? Note "Alternatively: The Carpentries Introductory Container workshop"
-
-    The Carpentries have an incubator workshop on [Docker Containers](https://carpentries-incubator.github.io/docker-introduction/){target=_blank}.
-        
-    Extra: [Containers in Research Workflows](https://carpentries-incubator.github.io/docker-introduction/reproduciblity/index.html){target=_blank} (section 9 from the lesson linked above).
 
 ---
 
@@ -65,7 +73,7 @@ We are going to be using [:material-github: GitHub CodeSpaces](https://github.co
 
 CodeSpaces is a featured product from GitHub and requires a paid subscription or Academic account for access. Your account will temporarily be integrated with the course GitHub Organization for the next steps in the workshop.
 
-Our instructions on starting a new CodeSpace are [here](../cloud/codespaces.md). 
+Our instructions on starting a new CodeSpace are [here](https://cc.cyverse.org/cloud/codespaces/){target=_blank}. 
 
 ??? Info "Installing Docker on your personal computer"
 
@@ -102,7 +110,7 @@ $ docker --help
 
 ### :material-docker: search
 
-We talk about the concept of [Docker Registries](registry.md) in the next section, but you can search the public list of registeries by using the `docker search` command to find public containers on the Official [Docker Hub Registry](https://hub.docker.com):
+We talk about the concept of [Docker Registries](https://cc.cyverse.org/docker/registry/){target=_blank} in the next section, but you can search the public list of registeries by using the `docker search` command to find public containers on the Official [Docker Hub Registry](https://hub.docker.com):
 
 ```
 $ docker search  
@@ -176,7 +184,7 @@ $ docker run alpine:latest ls -l
 
 When you executed the command `docker run alpine:latest`, Docker first looked for the cached image locally, but did not find it, it then ran a `docker pull` behind the scenes to download the `alpine:latest` image and then execute your command.
 
-When you ran `docker run alpine:latest`, you provided a command `ls -l`, so Docker started the command specified and you saw the listing of the Alpine file system (not your host system, this was insice the container!).
+When you ran `docker run alpine:latest`, you provided a command `ls -l`, so Docker started the command specified and you saw the listing of the Alpine file system (not your host system, this was inside the container!).
 
 ### :material-docker: images
 
@@ -681,3 +689,13 @@ Here is a compiled list of fundamental Docker Commands:
         Featured and Verified Docker images can be trusted, in general.
 
         User generated images should not be trusted unless you can view their Dockerfile, or build logs to determine what is actually in the container you are attempting to run.
+
+---
+
+## Additional Resources
+
+Deeper Exploration of Containers and how to create them can be found [here](https://cc.cyverse.org/docker/intro/){target=_blank}
+
+
+The Carpentries have an incubator workshop on [Docker Containers](https://carpentries-incubator.github.io/docker-introduction/){target=_blank}
+        
