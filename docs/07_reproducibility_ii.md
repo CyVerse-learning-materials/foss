@@ -180,7 +180,7 @@ The single most common command that you'll use with Docker is `docker run` ([see
     RUN chmod +x pdal_copc.sh
 
     ENTRYPOINT ["/app/pdal_copc.sh"]
-    '''
+    ```
 
 ??? Tip "What is an *entrypoint*?"
 
