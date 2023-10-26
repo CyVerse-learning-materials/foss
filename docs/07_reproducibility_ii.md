@@ -163,7 +163,24 @@ $ ls -l
 
 The single most common command that you'll use with Docker is `docker run` ([see official help manual](https://docs.docker.com/engine/reference/commandline/run/) for more details).
 
-`docker run` starts a container and executes the default "entrypoint", or any other "command" that follows `run` and any optional flags.
+`docker run` starts a container and executes the default "entrypoint", or any other "command" that follows `run` and any optional flags. These commands are specified within a Dockerfile. 
+
+??? Tip "What is a Dockerfile?"
+    A Dockerfile is a text file that contains a list of commands used by Docker to automatically build an image. These commands can include specifying the base image to use, copying files into the image, setting environment variables, running commands, and defining entry points and default commands to run when a container is started from the image. The Dockerfile is processed by the docker build command, which creates a Docker image that can be used to run containers.
+    
+    ```
+    FROM pdal/pdal:latest
+
+    WORKDIR /app
+
+    COPY pdal_copc.sh /app/pdal_copc.sh
+
+    COPY copc.json /app/copc.json
+
+    RUN chmod +x pdal_copc.sh
+
+    ENTRYPOINT ["/app/pdal_copc.sh"]
+    '''
 
 ??? Tip "What is an *entrypoint*?"
 
@@ -599,7 +616,9 @@ $ docker run --rm -p 8787:8787 -e DISABLE_AUTH=true rocker/rstudio
 ```
 $ docker run --rm -p 8888:8888 jupyter/base-notebook
 ```
-
+```
+docker run --rm -p 8888:8888 jupyter/base-notebook start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
+```
 ??? Note "Preempting stale containers from your cache"
 
 	We've added the `--rm` flag, which means the container will automatically removed from the cache when the container is exited.
