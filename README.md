@@ -1,13 +1,11 @@
-# foss-2023
+# foss-2024
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7402437.svg)](https://doi.org/10.5281/zenodo.7402437)
 
 
-> **Important:** the content is currently being reviewed and adapted for FOSS 2023.
+Documentation for CyVerse Learning's Foundations of Open Science Skills course. 
 
-Documentation for CyVerse Learning's Foundations of Spring 2023 Open Science Skills course.
-
-Course will take place Sept. 7 - Nov. 2, 2023, online.
+Course will take place January 25 - March 14, 2024, online, Every Thursday 11 am - 1 pm Arizona time
 
 Contents are organized by subject, rather than day. See the schedule at https://foss.cyverse.org/schedule/
 
