@@ -297,3 +297,133 @@ There are other platforms that address Version Control and have similar function
     !!! Success "Look at the LICENSE"
 
         Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. 
+
+
+#### Adding Code to Github Locally
+
+Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
+
+- To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
+```
+$ sudo apt-get install -y git-all
+```
+- You can then clone the repository by clicking on the **Code** button, and copying the link shown
+- ![git_04](assets/git_4.png)
+- On your machine, open a terminal window and type the following command:
+```
+$ git clone <repository address>     # Replace <repository address> with the link you copied such as below
+
+$ git clone https://github.com/CosiMichele/3_git_tutorial.git
+Cloning into 'foss23_git_tutorial'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (13/13), 14.47 KiB | 90.00 KiB/s, done.
+```
+- Your code is now available to you on your machine, and you can add and modify files as needed.
+
+You have modified your code locally, however you still have to push it to the repository. Prior to doing so there are a couple of steps you should do:
+
+- `git status`: it checkes on the status of the repository (files that have been modified, deleted, added - from either local or in the online repository)
+- `git pull`: it checks and "pulls" changes from the online repository to your local repository. It ensures that you are always updated on the repository files *and* it can save a lot of time in case there are clashing commits from different users.
+
+To do so:
+
+- **Add** all fiels you have modified and want to commit:
+```
+$ git add .    # Recall that "." (period) stands for all files in a folder 
+```
+- **Commit** the changes. When committing changes, you have to add a message (in quotation marks) with the `-m` flag. This message is a concise and descriptive few words about what you did:
+```
+$ git commit -m "locally added and modified files"
+[main 05f0ef6] locally added and modified files
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 file_from_local.md
+```
+- push your changes with **push**:
+```
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 585 bytes | 32.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/CosiMichele/foss22_git_tutorial.git
+   b649de3..05f0ef6  main -> main
+```
+
+!!! Warning "First time Pushing a commit?"
+		GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
+
+		- When asked for the user name:
+			- Add the username that you use to login into GitHub
+		- When it asks you for the password:
+			- **DO NOT PUT YOUR PASSWORD**, you will require a **token** instead
+			- Generate the token by 
+				- On GitHub, click on your avatar (top right, and navigate to **Settings**)
+				- Scroll down to the bottom of the left hand menu, select **Developer settings**, and then **Personal access tokens**
+				- Now click on **Generate new token** (Enter password if requested)
+				- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
+				- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
+
+You can now see the changes you made locally on the GitHub repository page.
+
+![git_09](assets/git_9.png)
+
+#### Branching
+
+Branching allows you to develop your code whilst in a contained environment separate from your **main** environment. You can view the list and number of branches on the top of your repository.
+
+![git_10](assets/git_10.png)
+
+!!! Info "Why working on branches?"
+		Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using [**pull requests**](00_basics.md#pull-requests).
+
+To create a new branch select the :octicons-git-branch-16: branch icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
+
+![git_11](assets/git_11.png)
+
+Select **New Branch** on the top right. Give the new branch a name of your choice, select the source of code (in this case the only source of code can be the main branch) and select **Create branch**.
+
+![git_12](assets/git_12.png)
+
+You can now see the updated list of all your branches.
+
+![git_13](assets/git_13.png)
+
+You can now use this new branch to create changes you are not yet ready to put in your main branch.
+
+!!! warning "Want to delete a branch?"
+		You can delete a branch from the branch web page by clicking on the :octicons-trash-16: trash can icon. **Beware!** All the changes you've made on that branch will be deleted!
+
+!!! info "Working on your machine?"
+		Once you create a branch online, you can change to the desired branch on your machine with `git switch <branch>`. Don't forget to push your changes first!
+		
+		!!! tip "Pull and Tab"
+				- Don't forget to perform a `git pull`!
+				- Don't know your branches? Tab! When typing `git switch`, press tab to see the options of all the branches you've created.
+
+#### Pull Requests
+
+Pull requests (PR) are proposed changes you can make on a repository. In this specific case, pull requests can be used to merge changes from a branch to another. Pull requests can also come from **forks** of your repository that another user or collaborator has made. 
+
+Assuming you have made changes in your branch (added a file, for example), a pop up will notify you that a branch has pushed some changes. In case you want to merge the branch and the main repository, you can review and merge by clicking the **Compare & pull request** button. However, you may want to wait until more changes are made.
+
+![git_14](assets/git_14.png)
+
+Once you are ready to merge the changes onto your main branch, click on the :octicons-git-branch-16: branch icon, and select **New pull request** from the branch you have just made changes. This will open a new page which will list all the changes made showing all files that have been modified, added, or deleted. When you're done reviewing your changes, click **Create pull request**.
+
+![git_15](assets/git_15.png)
+
+!!! info "Pay attention to the information on the PR page!"
+		The PR page will not only show you what changes you've made, but also where the changes are coming from (which branch), as well as reviewers, assigneers, labels and other information necessary when working on a big project. It will also show whether the changes are **Able** to be merged (:material-check:) or not (:octicons-x-16:)! 
+
+Upon createing the pull request, a new page will open which will test whether the changes can be merged automatically. Changes that are not able to be merged usually clash with other changes other collaborators have made - this will require your revision prior to merging the PR! After revision, select **Merge pull request** and **Confirm merge**.
+
+![git_16](assets/git_16.png)
+
+Your main repository should now have the files created in your other branch and merged through the PR!
+
+![git_17](assets/git_17.png)

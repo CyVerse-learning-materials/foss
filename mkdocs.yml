@@ -22,7 +22,7 @@ nav:
     - 'Code of Conduct': code_of_conduct.md
     - 'Glossary & Acronyms': glossary.md
   - Lessons:
-    - '0. The Shell and Git': 00_basics.md
+    - '0. The Shell, Github, Chatbots': 00_basics.md
     - '1. Open Science': 01_intro_open_sci.md
     - '2. Managing Data': 03_managing_data.md
     - '3. Project Management': 02_project_management.md
