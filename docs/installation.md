@@ -15,15 +15,15 @@ We will be using several services that require you to create a user account.
 
 !!! Info "Link to :material-language-markdown: HackMD"
 
-        https://hackmd.io/y9XyyinFToOJS3XPJ2TtGg?view 
+    https://hackmd.io/y9XyyinFToOJS3XPJ2TtGg?view 
 
 ??? Tip "Dual Monitors vs Side-by-Side"
 
-        We strongly recommend you have dual monitors set-up while attending virtual FOSS Zoom lessons.
+    We strongly recommend you have dual monitors set-up while attending virtual FOSS Zoom lessons.
 
-        We will be doing a lot of screen-sharing, and this will make your own interactive sessions less visible, or you will have to make them less than full screen.
+    We will be doing a lot of screen-sharing, and this will make your own interactive sessions less visible, or you will have to make them less than full screen.
 
-        If you only have one monitor, make sure to exit full screen mode on Zoom and your browser, so you can view everything side-by-side
+    If you only have one monitor, make sure to exit full screen mode on Zoom and your browser, so you can view everything side-by-side
 
 ## Required Software
 
@@ -36,12 +36,12 @@ You will need to have the following software installed on your personal computer
 
 !!! Warning "**Attention** :material-microsoft-windows: Windows users"
 
-        Much of what we are going to be teaching is based on open-source software which operates on cloud and is incompatible with Windows OS.
+    Much of what we are going to be teaching is based on open-source software which operates on cloud and is incompatible with Windows OS.
 
-        Unix-based systems such as Linux [:material-ubuntu: Ubuntu](https://ubuntu.com/){target=_blank} and [:material-apple: MacOS X](https://www.apple.com/macos/){target=_blank}, as many scientific tools require a Unix Operating System (OS). 
-        
-        There are a number of software that allow Windows users to execute Unix commands, however we recommend the use of [:material-microsoft-windows: Windows Subsystem for Linux (WSL) 2.0](https://docs.microsoft.com/en-us/windows/wsl/install){target=_blank}.
+    Unix-based systems such as Linux [:material-ubuntu: Ubuntu](https://ubuntu.com/){target=_blank} and [:material-apple: MacOS X](https://www.apple.com/macos/){target=_blank}, as many scientific tools require a Unix Operating System (OS). 
+    
+    There are a number of software that allow Windows users to execute Unix commands, however we recommend the use of [:material-microsoft-windows: Windows Subsystem for Linux (WSL) 2.0](https://docs.microsoft.com/en-us/windows/wsl/install){target=_blank}.
 
-        [:material-microsoft-visual-studio-code: VS Code](https://code.visualstudio.com/download){target=_blank} is a Microsoft product and integrates seamlessly with Unix systems, we therefore strongly encourage you to install Code on your Windows OS.
+    [:material-microsoft-visual-studio-code: VS Code](https://code.visualstudio.com/download){target=_blank} is a Microsoft product and integrates seamlessly with Unix systems, we therefore strongly encourage you to install Code on your Windows OS.
 
 ---
