@@ -10,12 +10,12 @@ We will be using several services that require you to create a user account.
 | --- | --- |
 | [:material-github: GitHub](https://github.com){target=_blank} |  GitHub will be used to store lecture materials and your own work. We will use [GitHub Education](https://education.github.com/){target=_blank} and its free features for hands-on.
 | [:material-docker: Docker](https://hub.docker.com){target=_blank} | Link your GitHub account to the DockerHub. |
-| [:material-slack: Slack](https://cyverselearning.slack.com/){target=_blank} | We use the Slack `cyverselearning` organization, you should have received an invitation via email. You can use Slack in the browser, but the desktop app is usually less buggy. |
+| [:material-slack: Slack](https://uadatascience.slack.com/){target=_blank} | We use the `UA Data Science`  Slack organization's foss channel, you should have received an invitation via email. You can use Slack in the browser, but the desktop app is usually less buggy. |
 | [:material-language-markdown: HackMD](https://hackmd.io/){target=_blank} | We will use HackMD in order to facilitate daily discussions, questions and general notes. Link your HackMD using your GitHub account|
 
 !!! Info "Link to :material-language-markdown: HackMD"
 
-        https://hackmd.io/lJD96GCzQnWpxIX2UvwTNA?both 
+        https://hackmd.io/y9XyyinFToOJS3XPJ2TtGg?view 
 
 ??? Tip "Dual Monitors vs Side-by-Side"
 
