@@ -2,15 +2,15 @@
 
 !!! Success "Learning Objectives"
 
-        After this lesson, you should be able to:
+    After this lesson, you should be able to:
         
-        * Explain what Open Science is
-        * Explain the components of Open Science
-        * Describe the behaviors of Open Science
-        * Explain why Open Science matters in education, research, and society
-        * Understand the advantages and the challenges to Open Science
-        * Identify who the practitioners of Open Science are
-        * Understand the underlying Ethos of Open Science
+    * Explain what Open Science is
+    * Explain the components of Open Science
+    * Describe the behaviors of Open Science
+    * Explain why Open Science matters in education, research, and society
+    * Understand the advantages and the challenges to Open Science
+    * Identify who the practitioners of Open Science are
+    * Understand the underlying Ethos of Open Science
 
 ## 2023 is the Year of Open Science!
 
