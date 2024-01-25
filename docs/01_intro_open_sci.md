@@ -12,16 +12,15 @@
     * Identify who the practitioners of Open Science are
     * Understand the underlying Ethos of Open Science
 
-## 2023 is the Year of Open Science!
+## 2023 was the Year of Open Science!
 
 The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}.
 
 
 <figure markdown>
   <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
-    <figcaption>2023 is the year of Open Science</figcaption>
+    <figcaption> The year of Open Science</figcaption>
 </figure>
-
 
 ## What is Open Science?
 
@@ -56,15 +55,13 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
     ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
 
-            The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
+        The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
 ??? Tip "Foster Open Science Diagram"
         
     [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
-             Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
-
-
+        Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
 
 ``` mermaid
 flowchart LR
@@ -97,8 +94,6 @@ id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([pu
 
 Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
 
-<br>
-
 ??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
 
     Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
@@ -107,7 +102,6 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
-<br>
 <br>
 
 ### **:material-pillar: Open Access Publications**
@@ -160,7 +154,6 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
     [Bibsam Consortium](https://www.springernature.com/gp/open-research/institutional-agreements/oaforsweden){target=_blank} - Swedish authors can have OA fees in Springer Nature research journals paid for.
 
-
 ??? Example "Pre-print Services"
 
     [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
@@ -211,7 +204,6 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
         [ThesisCommons](https://thesiscommons.org/) - open Theses
 
-<br>
 <br>     
 
 ### **:material-pillar: Open Data**
@@ -278,17 +270,11 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
     !!! Tip "Open vs. Public vs. FAIR"
 
-            FAIR does not demand that data be open: See one definition of open:
-            http://opendefinition.org/
+        FAIR does not demand that data be open: See one definition of open: http://opendefinition.org/
 
     !!! Question "Why Principles?"
 
-            FAIR is a collection of principles. Ultimately, different
-            communities within different scientific disciplines must work to
-            interpret and implement these principles. Because technologies
-            change quickly, focusing on the desired end result allows FAIR to be
-            applied to a variety of situations now and in the foreseeable
-            future.
+        FAIR is a collection of principles. Ultimately, different communities within different scientific disciplines must work to interpret and implement these principles. Because technologies change quickly, focusing on the desired end result allows FAIR to be applied to a variety of situations now and in the foreseeable future.
 
     **CARE Principles**
 
@@ -300,7 +286,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
     -   C2. For improved governance and citizen engagement
     -   C3. For equitable outcomes
 
-    **Authority to Control*
+    *Authority to Control*
 
     -   A1. Recognizing rights and interests
     -   A2. Data for governance
@@ -341,7 +327,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
     While a lot is up to you, the first step is to evaluate how FAIR you
     think your data are:
 
-    ??? Question "Exercise"
+    ??? Question "Self FAIR assessment"
         Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
 
     ??? Note "Resources"
@@ -363,7 +349,6 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
     [![linked open data](https://lod-cloud.net/clouds/lod-cloud.svg)](https://lod-cloud.net/clouds/lod-cloud.svg){target=_blank}
 
-<br>
 <br>
 
 ### **:material-pillar: Open Educational Resources**
@@ -410,7 +395,6 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
     [DigitalLearn](https://www.digitallearn.org/){target=_blank}
 
-<br>
 <br>
 
 ### **:material-pillar: Open Methodology**
@@ -460,7 +444,6 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
     To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/){target=_blank}, a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
 <br>
-<br>  
 
 ### **:material-pillar: Open Peer Review**
 
@@ -489,7 +472,6 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
     [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
 
 <br>
-<br>  
 
 ### **:material-pillar: Open Source Software**
 
@@ -505,6 +487,8 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 [Awesome list](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
+---
+
 ## Breakout Discussion 1
 
 As you already know, being a scientist requires you to wear many hats, and trying to do Open Science is no different.
@@ -513,7 +497,6 @@ As you already know, being a scientist requires you to wear many hats, and tryin
   <a href="https://doi.org/10.7554/eLife.81075" target="blank" rel="venn">![venn](https://iiif.elifesciences.org/lax/81075%2Felife-81075-fig2-v1.tif/full/,1500/0/default.jpg){ width="700" } </a>
     <figcaption> [Bernery et al. (2022)](https://doi.org/10.7554/eLife.81075){target=_blank} Figure 2: The positive aspects of doing a PhD. </figcaption>
 </figure>
-
 
 As we mentioned, Open Science is not a set of boxes you need to check off to be "Certified Open", but an intersecting set of philosophies and approaches, all of which occur on some type of spectrum. 
 
@@ -571,6 +554,8 @@ A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-0002
 
 While many researchers may be motivated by one or more of these aspects, we will not necessarily focus on any of them in particular. If anything, FOSS may be slightly more in the Infrastructure school, because we aim to give you the tools to do Open Science based on your own underlying motivations.
 
+---
+
 ## Breakout Discussion 2
 
 Let's break out into groups again to discuss some of our motivations for doing Open Science.
@@ -580,6 +565,8 @@ Let's break out into groups again to discuss some of our motivations for doing O
 ??? Question "Do you feel that you fall into a particular "school"? If so, which one, and why?"
 
 ??? Question "Are there any motivating factors for doing Open Science that don't fit into this framework?"
+
+---
 
 ## Ethos of Open Science
 
@@ -602,7 +589,7 @@ Source: [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/the-au
 * Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank}   
 * Artificial intelligence/machine learning [Assessment List Trustworthy AI (ALTAI)](https://futurium.ec.europa.eu/en/european-ai-alliance/pages/welcome-altai-portal){target=_blank} from the European AI Alliance
 
-[:material-wikipedia: "Nothing about us, without us"](https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us){target=_blank}
+- [:material-wikipedia: "Nothing about us, without us"](https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us){target=_blank}
 
 - [Funnel et al. (2019)](http://dx.doi.org/10.1017/S0714980819000291){target=_blank}
 
@@ -611,7 +598,6 @@ For more information (training):
 [January in Tucson](https://igp.arizona.edu/jit){target=_blank} - intensive education session brings together distinguished faculty in the field of Indigenous governance and Indigenous rights, and gives them the opportunity to teach and hold discussions with Indigenous leaders, practitioners, and community members, and anyone interested in Indigenous affairs.
 
 Ethics and Data Access (General Information with BioMedical and Life Sciences Data) includes [a legal and ethical checklist lesson for researchers](https://ilias.fraunhofer.de/goto.php?target=fold_15177&client_id=fraunhofer){target=_blank} around "FAIR Plus".
-
 
 ## Recommended Open Science Communities
 
