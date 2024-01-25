@@ -12,7 +12,7 @@
     * Identify who the practitioners of Open Science are
     * Understand the underlying Ethos of Open Science
 
-## 2023: Year of Open Science
+## 2023: the Year of Open Science
 
 The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}. As the year came to a close, the governement aimed to create a spotlight through [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge&tab=overview), recognizing open science stories that addressed current societial challenges (winners to be annouced).
 
