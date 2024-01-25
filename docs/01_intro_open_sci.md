@@ -12,10 +12,9 @@
     * Identify who the practitioners of Open Science are
     * Understand the underlying Ethos of Open Science
 
-## 2023 was the Year of Open Science!
+## 2023: Year of Open Science
 
-The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}.
-
+The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}. As the year came to a close, the governement aimed to create a spotlight through [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge&tab=overview), recognizing open science stories that addressed current societial challenges (winners to be annouced).
 
 <figure markdown>
   <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
@@ -29,7 +28,7 @@ If you ask a dozen researchers this question, you will probably get just as many
 This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
 
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
 
@@ -108,7 +107,7 @@ Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructur
 
 [![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=300}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     "Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- [OpenAccess.nl](https://www.openaccess.nl/en/what-is-open-access){target=_blank}
 
@@ -214,7 +213,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
 * Reusability
 * Inclusivity
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     “Open data and content can be freely used, modified, and shared by anyone for any purpose” - [The Open Definition](https://opendefinition.org/){target=_blank}
 
@@ -355,7 +354,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
 [![open educational resources](https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg){width=240}](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources)
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     "Open Educational Resources (OER) are learning, teaching and research materials in any format and medium that reside in the public domain or are under copyright that have been released under an open license, that permit no-cost access, re-use, re-purpose, adaptation and redistribution by others." - [UNESCO](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources){target=_blank}
 
@@ -403,7 +402,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
 The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} present one of the foremost platforms for sharing open methods for digital research.
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     "An open methodology is simply one which has been described in sufficient detail to allow other researchers to repeat the work and apply it elsewhere." - [Watson (2015)](https://doi.org/10.1186/s13059-015-0669-2){target=_blank}
 
@@ -451,7 +450,7 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 [Pros and Cons of Open Peer Review](https://doi.org/10.1038/6295){target=_blank}
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     Ross-Hellauer et al. (2017) ask [What is Open Peer Review?](https://doi.org/10.12688%2Ff1000research.11369.2){target=_blank} and state that there is no single agreed upon definition
 
@@ -477,7 +476,7 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 [![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
 
-??? Quote "Definitions"
+!!! Quote "Definitions"
 
     "Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source software is developed in a decentralized and collaborative way, relying on peer review and community production." - [:material-redhat: Red Hat](https://www.redhat.com/en/topics/open-source/what-is-open-source){target=_blank}
 
