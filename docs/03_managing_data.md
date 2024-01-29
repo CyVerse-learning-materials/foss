@@ -316,20 +316,20 @@ published in Scientific Data. Read it.
 -   R1.3. (meta)data meet domain-relevant community standard
 
 !!! Tip
-        Open vs. Public vs. FAIR:
+    Open vs. Public vs. FAIR:
 
-        FAIR does not demand that data be open: See one definition of open:
-        http://opendefinition.org/
+    FAIR does not demand that data be open: See one definition of open:
+    http://opendefinition.org/
 
 !!! Tip
-        **Why Principles?**
+    **Why Principles?**
 
-        FAIR is a collection of principles. Ultimately, different
-        communities within different scientific disciplines must work to
-        interpret and implement these principles. Because technologies
-        change quickly, focusing on the desired end result allows FAIR to be
-        applied to a variety of situations now and in the foreseeable
-        future.
+    FAIR is a collection of principles. Ultimately, different
+    communities within different scientific disciplines must work to
+    interpret and implement these principles. Because technologies
+    change quickly, focusing on the desired end result allows FAIR to be
+    applied to a variety of situations now and in the foreseeable
+    future.
 
 ### CARE Principles
 
