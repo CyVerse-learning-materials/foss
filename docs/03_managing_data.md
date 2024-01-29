@@ -125,18 +125,18 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
 ---
 
 !!! Tip
-        **The Data Life Cycle**
+    **The Data Life Cycle**
 
-        *Data management* is the set of practices that allow researchers to
-        effectively and efficiently handle data throughout the data life
-        cycle. Although typically shown as a circle (below) the actually
-        life cycle of any data item may follow a different path, with
-        branches and internal loops. Being aware of your data's future
-        helps you plan how to best manage them.
+    *Data management* is the set of practices that allow researchers to
+    effectively and efficiently handle data throughout the data life
+    cycle. Although typically shown as a circle (below) the actually
+    life cycle of any data item may follow a different path, with
+    branches and internal loops. Being aware of your data's future
+    helps you plan how to best manage them.
 
-        ![lifecycle](assets/data_life_cycle.png)
+    ![lifecycle](assets/data_life_cycle.png)
 
-        Image from [Strasser *et al*](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
+    Image from [Strasser *et al*](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
 
 
 ### Best practices for the data life cycle
@@ -284,9 +284,9 @@ In general, data must be preserved in an appropriate long-term archive
 ## FAIR Data
 
 !!! Info "Learning Objectives"
-        -   Recall the meaning of FAIR
-        -   Understand why FAIR is a collection of principles (rather than rules)
-        -   Use self-assessments to evaluate the FAIRness of your data
+    -   Recall the meaning of FAIR
+    -   Understand why FAIR is a collection of principles (rather than rules)
+    -   Use self-assessments to evaluate the FAIRness of your data
 
 ### FAIR Principles
 
@@ -394,7 +394,7 @@ While a lot is up to you, the first step is to evaluate how FAIR you
 think your data are:
 
 !!! Question "Exercise"
-        Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
+    Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
 
 ---
 
@@ -407,9 +407,9 @@ think your data are:
 ## Data Management Plans
 
 !!! Info "Learning Objectives"
-        -   Describe the purpose of a data management plan
-        -   Describe the important elements of a data management plan
-        -   Use a self-assessment to design a data management plan
+    -   Describe the purpose of a data management plan
+    -   Describe the important elements of a data management plan
+    -   Use a self-assessment to design a data management plan
 
 ### What is a DMP?
 
@@ -441,7 +441,7 @@ Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-
 **Why bother with a DMP?**
 
 !!! Question "How would you answer?"
-        Do you have a data management plan? If so, how do you use it?
+    Do you have a data management plan? If so, how do you use it?
 
 *"Those who fail to plan, plan to fail"*
 
@@ -518,7 +518,7 @@ Extra challenges for collaborative projects.
 ### Tools for DMPs
 
 !!! Question "Exercise"
-        Thinking about a dataset you work with, complete the [Data Stewardship Wizard](https://ds-wizard.org/).
+    Thinking about a dataset you work with, complete the [Data Stewardship Wizard](https://ds-wizard.org/).
 
 ---
 
