@@ -9,7 +9,7 @@
     * Cite tools and resources to improve your data management practices
     * Know the biggest challenge to effective data management
 
-### Why should you care about data management?
+## Why should you care about data management?
 
 Ensuring that data are effectively organized, shared, and preserved
 is critical to making your science impactful, efficient, and open.
@@ -27,7 +27,7 @@ is critical to making your science impactful, efficient, and open.
     starting a research project. It also needs to be a policy you
     institute right away for your research group.
 
-!!! Question "How would you answer?"
+??? Question "How would you answer?"
     - If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?
     - If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?
     - When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
@@ -37,51 +37,15 @@ Well-managed Data Sets:
 -   Make life much easier for you and your collaborators
 -   Benefit the scientific research community by allowing others to reuse your data
 -   Are required by most funders and many journals
--   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp) from NSF
--   NSF [proposal preparation guidelines](https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_11.jsp#XID4)
+-   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp){target=_blank} from NSF
+-   NSF [proposal preparation guidelines](https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2D2i-ii){target=_blank}
 
 ---
 
-### Data Self-assessment
+<br/>
+<br/>
 
-**Part I: Basic questions**
-
-Here are some questions about how you manage and work with data. 
-
-!!! Question "Activity"
-    In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
-        
-    1\. What are the two or three data types that you most frequently work with?
-            -   Think about the sources (observational, experimental, simulated, compiled/derived)
-            -   Also consider the formats (tabular, sequence, database, image, etc.)
-        
-    2\.  What is the scale of your data?
-
-    ??? Tip
-        We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
-            
-        -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
-        -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
-        -   Variety: How many different data types (raw files? databases?)
-        A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
-
-    3\.  What is your strategy for storing and backing up your data?
-        
-    4\.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
-       
-    5\.  What is your strategy for searching your data?
-        
-    6\.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
-
-
----
-
-## Data Management Basics
-
-Let's learn a little more about data so that we can evaluate your
-self-assessment responses.
-
-### Data Types
+## Data Types
 
 Different types of data require different management practices. What are
 some data types and sources you might use in your work? (Adapted from
@@ -122,7 +86,46 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
 -   Reproducible, but can be very expensive and time-consuming
 -   Examples: text and data mining, compiled database, 3D models
 
+<br/>
+<br/>
+
+## Data Self-assessment
+
+
+!!! Question "Activity"
+    In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
+        
+    1\. What are the two or three data types that you most frequently work with?
+            -   Think about the sources (observational, experimental, simulated, compiled/derived)
+            -   Also consider the formats (tabular, sequence, database, image, etc.)
+        
+    2\.  What is the scale of your data?
+
+    ??? Tip
+        We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
+            
+        -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+        -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+        -   Variety: How many different data types (raw files? databases?)
+        A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
+
+    3\.  What is your strategy for storing and backing up your data?
+        
+    4\.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
+       
+    5\.  What is your strategy for searching your data?
+        
+    6\.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
+
+
 ---
+
+<br/>
+<br/>
+
+
+
+## The Data Life Cycle 
 
 !!! Tip
     **The Data Life Cycle**
@@ -139,11 +142,11 @@ DMP Tool [Data management general guidance](https://dmptool.org/general_guidance
     Image from [Strasser *et al*](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
 
 
-### Best practices for the data life cycle
+
 
 The summary below is adapted from the excellent [DataONE best practices primer](https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
 
-**Plan**
+### Plan
 
 -   Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime
 -   A good plan considers each of the stages below
@@ -161,13 +164,13 @@ The summary below is adapted from the excellent [DataONE best practices primer](
     starting a research project. It also needs to be a policy you
     institute right away for your research group.
 
-**Collect**
+### Collect
 
 -   Have a plan for data organization in place before collecting data
 -   Collect and store observation metadata at the same time you collect the metadata
 -   Take advantage of machine generated metadata
 
-**Assure**
+### Assure
 
 -   Record any conditions during collection that might affect the quality of the data
 -   Distinguish estimated values from measured values
@@ -175,19 +178,14 @@ The summary below is adapted from the excellent [DataONE best practices primer](
 -   Perform statistical and graphical summaries (e.g., max/min, average, range) to check for questionable or impossible values.
 -   Mark data quality, outliers, missing values, etc.
 
-**Describe:**
+### Describe
 
--   Comprehensive data documentation (i.e. metadata) is the key to
+-   Comprehensive data documentation (i.e. **metadata**) is the key to
     future understanding of data. Without a thorough description of
     the context of the data, the context in which they were collected,
     the measurements that were made, and the quality of the data, it
     is unlikely that the data can be easily discovered, understood, or
     effectively used.
-
--   Organize your data for publication. Before you can describe your
-    data, you must decide how to organize them. This should be planned
-    before hand, so that data organization is a minimal task at the
-    time of publication.
 
 -   Thoroughly describe the dataset (e.g., name of dataset, list of
     files, date(s) created or modified, related datasets) including
@@ -202,12 +200,6 @@ The summary below is adapted from the excellent [DataONE best practices primer](
     -   Quality assurance activities
     -   Precision, accuracy, and uncertainty
 
-Metadata standards and ontologies are invaluable for supporting data
-reuse. Metadata standards tell you:
-
--   Which metadata attributes to include
--   How to format your metadata
--   What values are allowable for different attributes
 
 Some metadata standards you may want to consider:
 
@@ -216,19 +208,14 @@ Some metadata standards you may want to consider:
 -   [MIxS](https://press3.mcs.anl.gov/gensc/mixs/) Minimum Information for any (x) sequence
 -   [OGC standards](https://www.opengeospatial.org/docs/is) for geospatial data
 
-Ontologies provide standardization for metadata values:
+**Ontologies** provide standardization for metadata values:
 
 -   Example: [Environment Ontology](http://environmentontology.org/) terms for the MIxS standards
 -   Example: [Plant Ontology](http://planteome.org/) for plant tissue types or development stages
 -   [FAIRSharing.org](https://fairsharing.org/) lists standards and ontologies for life sciences.
 
-The CyVerse Data Commons supports good data description through:
 
--   Metadata templates
--   Bulk metadata upload
--   Automatic collection of analysis parameters, inputs, and outputs in the DE.
-
-**Preserve**
+### Preserve
 
 In general, data must be preserved in an appropriate long-term archive
 (i.e. data center). Here are some examples:
@@ -245,7 +232,7 @@ In general, data must be preserved in an appropriate long-term archive
     -   Repositories are unlikely to enforce reuse restrictions, even
         if you apply them.
 
-**Discover**
+### Discover
 
 -   Good metadata allows you to discover your own data!
 -   Databases, repositories, and search indices provide ways to
@@ -254,7 +241,7 @@ In general, data must be preserved in an appropriate long-term archive
     - [DataOne](https://www.dataone.org/)
     - [FAIRSharing.org](https://fairsharing.org/)
 
-**Integrate**
+### Integrate
 
 -   Data integration is a lot of work
 -   Standards and ontologies are key to future data integration
@@ -263,7 +250,7 @@ In general, data must be preserved in an appropriate long-term archive
 -   Properly cite the data you reuse!
 -   Use DOIs ([Digital Object Identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier)) wherever possible
 
-**Analyze**
+### Analyze
 
 -   Follow open science principles for reproducible analyses (CyVerse,
     RStudio, notebooks, IDEs)
@@ -280,6 +267,8 @@ In general, data must be preserved in an appropriate long-term archive
 [Center for Open Science](https://cos.io/)
 
 ---
+<br/>
+<br/>
 
 ## FAIR Data
 
@@ -370,11 +359,6 @@ The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Gove
 -   E2. For justice
 -   E3. For future use
 
-### FAIR - TLC
-
-**Traceable, Licensed, and Connected**
-
--   The need for metrics: https://zenodo.org/record/203295#.XkrzTxNKjzI
 
 ### How to get to FAIR?
 
@@ -404,6 +388,9 @@ think your data are:
 
 ---
 
+<br/>
+<br/>
+
 ## Data Management Plans
 
 !!! Info "Learning Objectives"
@@ -419,11 +406,9 @@ project is completed. [1] The goal of a data management plan is to
 consider the many aspects of data management, metadata generation, data
 preservation, and analysis before the project begins; this may lead to
 data being well-managed in the present, and prepared for preservation in
-the future."
+the future."(Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
-(Source: https://en.wikipedia.org/wiki/Data_management_plan)
-
-[Example DMP](https://github.com/CyVerse-learning-materials/foss/blob/main/slides/DMPFuTRES_v2.docx)
+[Example DMPs](https://dmptool.org/public_plans){target=_blank}
 
 
 ### Today's Guest Speaker
@@ -500,27 +485,18 @@ funders realize this.
         security, documentation, and preservation (including time)
     -   Publication/archiving costs (including time)
 
-Not only what, but *who* (roles).
 
-Extra challenges for collaborative projects.
 
-### Machine actionable DMPs
+!!! Tip "DMP Tools"
+    Make your life a little easier by creating DMPs with online tools 
 
--   DMPs describe research methods that will evolve over the course of a project
--   to be a useful tool for researchers and others, the content must
-    be updated to capture the methods that are employed and the data
-    that are produced
+    [Data Stewardship Wizard](https://ds-wizard.org/){target=_blank}
 
-![maDMP](assets/journal.pcbi.1006750.g002.png)
-
-(Source: https://doi.org/10.1371/journal.pcbi.1006750.g002)
-
-### Tools for DMPs
-
-!!! Question "Exercise"
-    Thinking about a dataset you work with, complete the [Data Stewardship Wizard](https://ds-wizard.org/).
+    [DMPTool](https://dmptool.org/){target=_blank}
 
 ---
+<br/>
+<br/>
 
 ## Licenses
 
