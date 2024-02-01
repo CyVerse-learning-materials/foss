@@ -504,7 +504,7 @@ By default, when you make creative work, that work is under exclusive copyright.
 
 If you want your work to be Open and used by others, you need to specify how others can use your work. This is done by *licensing* your work.
 
-[MIT License](https://choosealicense.com/licenses/mit/{target=_blank})
+[MIT License](https://choosealicense.com/licenses/mit/){target=_blank}
 
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/){target=_blank}
 
