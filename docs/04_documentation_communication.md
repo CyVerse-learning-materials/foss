@@ -200,14 +200,14 @@ There are many ways scientists use social media and the web to share their data 
 6.  Youtube - The king of video sharing platforms is a great place to post content promoting your science (and yourself!). For example, [Cyverse](https://www.youtube.com/@CyverseOrgProject){target=_blank} posts lots of content on cyberinfrastructure and data processing pipelines. Some of my favorite podcasts hosted on Youtube include [StarTalk](https://www.youtube.com/@StarTalk){target=_blank} and [Lex Fridman](https://www.youtube.com/@lexfridman){target=_blank}.
 
 !!! Warning "Important"
-        **Remember: Personal and Professional Accounts are Not Isolated**
+    **Remember: Personal and Professional Accounts are Not Isolated**
 
-        You decide what you post on the internet. Your scientist identity may be
-        a part of your personal identity on social media, it might be separate.
-        A future employer or current employer can see your old posts. What you
-        post in your personal accounts can be considered a reflection of the
-        organization you work for and may be used in decisions about hiring or
-        dismissal.
+    You decide what you post on the internet. Your scientist identity may be
+    a part of your personal identity on social media, it might be separate.
+    A future employer or current employer can see your old posts. What you
+    post in your personal accounts can be considered a reflection of the
+    organization you work for and may be used in decisions about hiring or
+    dismissal.
 
 ### Addressing Effective Communication
 
