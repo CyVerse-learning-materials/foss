@@ -143,9 +143,9 @@ In software development, there are two common methologies which have similar app
 </figure>
 
 !!! info "Comparisons between methodologies"
-        - [LucidChart Blog: Agile vs Waterfall vs Kanban vs Scrum ](https://www.lucidchart.com/blog/agile-vs-waterfall-vs-kanban-vs-scrum) 
-        
-        - [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
+    - [LucidChart Blog: Agile vs Waterfall vs Kanban vs Scrum ](https://www.lucidchart.com/blog/agile-vs-waterfall-vs-kanban-vs-scrum) 
+    
+    - [Ontology of Value: Agile vs Waterfall vs Kanban vs Scrum](https://ontologyofvalue.com/project-management-key-concepts-agile-kanban-scrum-waterfall/)
 
 
 ### Breakout Discussion
