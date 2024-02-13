@@ -7,20 +7,12 @@
     *  Identify and explain different types of project documentation (both internal and external)
     *  Describe tools and approaches to creating your own documentation
     *  Describe best practices for maintaining documentation
-    *  Identify and explain different communication strategies for working in a team (virtual and in person)
     *  Create your own GitHub Pages website (!)
 
-Peer-reviewed manuscripts or conference preceedings / presentations /posters are one of the primary ways of communicating science, but they are far from the only avenues of communcation available to us as researchers and educators.
-
-As our methods become more complicated and customized, open science means giving people a better understanding of our approaches and tools than may be required in most journals. 
-
-Communicating amongst a team of researchers that may span institutions, time zones, or continents also requires more modern approaches. 
-
-Strong frameworks for internal communication and documentation can make collaboration easier, improve the quality of your science, and reduce the hassle of collaborative work.
 
 ## :material-file-document-multiple: Project Documentation
 
-Documentation is not only the practice of recording, preserving, and organizing information, data, or details in a structured and systematic manner. Documentation is essentially the ability to communicate with your future self, or your collaborators, or the world specific ideas and information. Effective documentation must take into consideration the following points:
+Documentation is the practice of recording, preserving, and organizing information, data, or details in a structured and systematic manner. Documentation is also essential to communicate with your future self, your collaborators, or the world on specific ideas and information. Effective documentation must take into consideration the following points:
 
 - **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
 - **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
@@ -28,11 +20,6 @@ Documentation is not only the practice of recording, preserving, and organizing 
 - **:simple-instructure: Organization**: A logical structure and clear organization make it easy to navigate and find information.
 - **:fontawesome-solid-exclamation: Relevance**: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.
 
-!!! info "We've already covered many best practices regarding project and data management, topics which are very much intertwined with documentation. Here are some things to keep in mind when addressing documentation:"
-    - **Metadata**: Implement standardized metadata formats for research outputs to enhance findability.
-    - **Data Repositories**: Deposit research data and materials in trusted data repositories that adhere to FAIR principles, making them easily accessible and reusable.
-    - **Persistent Identifiers**: Assign persistent identifiers (e.g., DOIs, ORCIDs) to datasets, publications, and researchers, ensuring their long-term accessibility and recognition.
-    - **Templates**: Create and utilize documentation templates for research datasets, methods, and software to ensure uniform and comprehensive information capture. *It saves time!!*
 
 Not all documentation is the same. **The documentation system**, by Divio, categorizes the different types of documentation into 4 quadrants:
 
@@ -43,26 +30,27 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
 
 ??? Question "Explanining the quadrants"
 
-    - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. They are what your project needs in order to show a beginner that they can achieve something with it.
-    - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to solve a real-world problem.
-    - **References**: Guides! References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
+    - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand to understand how the basics of a tool work. They are what your project needs in order to show a beginner that they can achieve something with it. The techical teaching we do in FOSS are mostly tutorials. For example, we do simple tutorials to teach the mechanics of version control. 
+    - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to acheive a specific outcome or answer a specific question. An example how-to-guide could be a guide on how to install a specific software on a specific operating system.
+    - **References**: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
     - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
 
-!!! tip "Furthermore, one of the main issues with documentation usually becomes keeping documents up-to-date. Here are some tips one can keep in mind to address the issue:"
 
-    - **Data Lifecycle Planning**: Develop a clear data management and documentation plan at the outset of the research project to ensure consistency and continuity.
-    - **Version Control**: Use version control systems like Git for code and documentation to track changes, facilitate collaboration, and maintain a history of updates.
-    - **Workflows and Automation**: Explore automation tools for documentation, such as generating metadata from data headers or embedding documentation within code using tools like [GitHub pages](https://pages.github.com/), [Sphinx](https://www.sphinx-doc.org/en/master/) and [LaTeX](https://www.latex-project.org/).
-    - **Collaborative Documentation Platforms**: Employ collaborative platforms like [Overleaf](https://www.overleaf.com/) or [Google Docs](https://www.google.com/docs/about/) to enable multiple researchers to contribute to and update documentation.
-    - **Documentation Reviews**: Schedule regular documentation reviews within research teams to identify gaps or outdated information and address them promptly.
 
 ### Public Repositories for Documentation
 
-This website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
+On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
+
+Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
+
+The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
+
+[:simple-markdown: Material MkDocs](https://squidfunk.github.io/mkdocs-material/){target=_blank} is a Material Design theme for MkDocs, a static site generator geared towards (technical) project documentation.
 
 Other popular website generators for GitHub Pages are [:simple-jekyll: Jekyll Theme](https://jekyllrb.com/){target=_blank} or [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
 
-[:simple-readthedocs: ReadTheDocs.org](https://readthedocs.org/){target=_blank} has become a popular tool for developing web-based documentation. Think of RTD as "Continuous Documentation".
+[:simple-readthedocs: ReadTheDocs.org](https://readthedocs.org/){target=_blank} has become a popular tool for developing web-based documentation. Think of RTD as "Continuous Documentation". Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
+
 
 [:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
 
@@ -209,23 +197,6 @@ There are many ways scientists use social media and the web to share their data 
     organization you work for and may be used in decisions about hiring or
     dismissal.
 
-### Addressing Effective Communication
-
-Whether internal or external, communication is important because it serves as the foundation for the exchange of information, ideas, and knowledge, enabling collaboration, understanding, and the advancement of individuals, organizations, and societies. It is therefore fundamental to be able to efficiently communicate, whether it is to promote a piece of scientific advancement, or reaching out to ask for help.
-
-The act of balancing transparency, openness, ethicality and respectful to personal data and intellectual property in communication has always been a challenge. A few methods to address these issues are the following:
-    
-- **:simple-creativecommons: Utilize licensing options:** Researchers can use open licensing mechanisms such as Creative Commons licenses to specify the terms under which their work can be shared, modified, and reused, balancing openness with protection.
-- **:fontawesome-solid-eye-low-vision: Data anonymization:** To address privacy and ethical concerns, researchers can anonymize sensitive data before sharing it, allowing for openness without compromising privacy.
-- **:fontawesome-regular-handshake: Collaborative agreements:** Collaborative research agreements and partnerships can define expectations regarding data sharing, authorship, and intellectual property, ensuring transparency while safeguarding interests.
-- **:material-account-voice: Transparent communication:** Researchers can openly communicate their intentions and progress regarding sharing and publication, fostering trust and collaboration within the research community.
-
-Scientists might also want to keep in mind the following when addressing communication:
-
-- **:material-email-off: Cultural shift**: Resistance to open communication within traditional academic cultures can hinder progress. Taking initiative and demonstrating the advantages of scientific communication outside of the traditional methods (mail, journals) can really help with showing eagerness and devotion to an idea or project
-- **:octicons-accessibility-inset-16: Accessibility and inclusivity**: Ensuring that open communication is accessible to all, regardless of language, disability, or geographical location, is vital. Efforts to provide translations, accessible formats, and international collaboration can promote inclusivity.
-- **:fontawesome-solid-users-viewfinder: Quality control**: Maintaining peer review and quality control in open access publications is essential. Initiatives like open peer review and establishing reputable open access journals can address this challenge.
-- **:material-lock-off: Advocacy and policy**: Advocacy for open science policies at institutional and governmental levels can help overcome systemic barriers. Engaging with policymakers and advocating for open science initiatives is crucial.
 ---
 
 ## Hands-on: Building a GitHub Pages Website using MkDocs
