@@ -39,33 +39,13 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
 
 ### Public Repositories for Documentation
 
-On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
-
-Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
-
-The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs. 
-
-[:simple-markdown: Material MkDocs](https://squidfunk.github.io/mkdocs-material/){target=_blank} is a Material Design theme for MkDocs, a static site generator geared towards (technical) project documentation.
-
-Other popular website generators for GitHub Pages are [:simple-jekyll: Jekyll Theme](https://jekyllrb.com/){target=_blank} or [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
-
-[:simple-readthedocs: ReadTheDocs.org](https://readthedocs.org/){target=_blank} has become a popular tool for developing web-based documentation. Think of RTD as "Continuous Documentation". Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
 
 
-[:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
 
-[:simple-r: Quarto](https://quarto.org/){target=_blank} is an open-source scientific and technical publishing system built on Pandoc
+*:simple-github: GitHub*
 
-[:simple-confluence: Confluence Wikis (CyVerse)](https://wiki.cyverse.org){target=_blank} are another tool
-for documenting your workflow.
-
-!!! Quote "Things to remember about Documentation"
-
-    - Documentation should be written in such a way that people who did not write the documentation can read and then use or read and then teach others in the applications of the material.
-
-    - Documentation is best treated as a living document, but version control is necessary to maintain it
-
-    - Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.
+-   On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
+-   Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
 
 *:simple-github: GitHub Pages*
 
@@ -73,6 +53,14 @@ for documenting your workflow.
     e.g. [:simple-jekyll: Jekyll themes](http://themes.jekyllrc.org/){target=_blank}
 -   GitHub pages are free, fast, and easy to build, but limited in use
     of subdomain or URLs.
+-   The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs.
+-   Other popular website generator for GitHub Pages is [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
+
+*:simple-markdown: Material MkDocs*
+
+-    [Material Design](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs, a static site generator geared towards (technical) project documentation.
+-   publish via GitHub Actions
+- Uses open source Material or ReadTheDocs Themes
 
 *:simple-readthedocs: ReadTheDocs*
 
@@ -83,21 +71,21 @@ for documenting your workflow.
     [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html){target=_blank}
 -   You can work on a website template in a GitHub repository, and
     pushes are updated in near real time using ReadTheDocs.com.
+-   Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
 
-*:simple-markdown: Material MkDocs*
-
-- publish via GitHub Actions
-- Uses open source Material or ReadTheDocs Themes
 
 *:material-book-arrow-down: Bookdown*
 
+-   [:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
 -   Bookdown websites can be hosted by [RStudio
     Connect](https://www.rstudio.com/products/connect/){target=_blank}
 -   You can publish a Bookdown website using [Github
     Pages](https://github.blog/2016-08-17-simpler-github-pages-publishing/){target=_blank}
 
+
 *:simple-r: Quarto*
 
+-   [:simple-r: Quarto](https://quarto.org/){target=_blank} is an open-source scientific and technical publishing system built on Pandoc
 -   [Build a website](https://quarto.org/docs/websites/) using Quarto's template builder
 -   [Build with Github Pages](https://quarto.org/docs/publishing/github-pages.html)
 
@@ -111,6 +99,18 @@ for documenting your workflow.
 - [GitBook](https://docs.gitbook.com/){target=_blank} websites use MarkDown syntax
 - Free for open source projects, paid plans are available
 
+*:simple-confluence: Confluence Wikis*
+
+-   [:simple-confluence: Confluence Wikis](https://www.atlassian.com/software/confluence/use-cases/wiki){target=_blank} are another tool for documenting your work. You can see an example from [Cyverse](https://wiki.cyverse.org){target=_blank}.
+
+!!! Quote "Things to remember about Documentation"
+
+    - Documentation should be written in such a way that people who did not write the documentation can read and then use or read and then teach others in the applications of the material.
+
+    - Documentation is best treated as a living document, but version control is necessary to maintain it
+
+    - Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.
+    
 ### Websites to Host Methods & Protocols
 
 [Open Science Framework](https://osf.io/){target=_blank} for free. OSF can be directly linked to your ORCID.
