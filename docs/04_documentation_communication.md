@@ -295,8 +295,8 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
         
         Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
         
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [FOSS Reference Hub website tutorial repository branch](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/foss-tut)
-    - Forking or importing will allow you to have your own copy of a specific repository; Cloning a repository **without** forking/importing it first, will lead to changes not being applied to your own copy of the repo, but to the original repository. You should clone your forked or imported repository, not the original!
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [FOSS Reference Hub website tutorial repository branch](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/week-4-pre)
+    - Forking or importing will allow you to have your own copy of a specific repository; Cloning a repository **without** forking/importing it first, will lead to the changes being applied to the original repository and not your own copy. You should clone your forked or imported repository, not the original!
 2. Navigate to *Settings* > *Actions* > *General*:
     - Under *Action Permissions* select *Allow all actions and reusalbe workflows*
     - Under *Workflow permissions* select *Read and write permissions* and *Allow GitHub Actions to create and approve pull requests*
