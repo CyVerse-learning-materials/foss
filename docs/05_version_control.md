@@ -299,7 +299,7 @@ There are other platforms that address Version Control and have similar function
         Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. 
 
 
-#### Adding Code to Github Locally
+## Adding Code to Github Locally
 
 Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
 
@@ -372,7 +372,7 @@ You can now see the changes you made locally on the GitHub repository page.
 
 ![git_09](assets/git_9.png)
 
-#### Branching
+## Branching
 
 Branching allows you to develop your code whilst in a contained environment separate from your **main** environment. You can view the list and number of branches on the top of your repository.
 
@@ -405,7 +405,7 @@ You can now use this new branch to create changes you are not yet ready to put i
 		- Don't forget to perform a `git pull`!
 		- Don't know your branches? Tab! When typing `git switch`, press tab to see the options of all the branches you've created.
 
-#### Pull Requests
+## Pull Requests
 
 Pull requests (PR) are proposed changes you can make on a repository. In this specific case, pull requests can be used to merge changes from a branch to another. Pull requests can also come from **forks** of your repository that another user or collaborator has made. 
 
