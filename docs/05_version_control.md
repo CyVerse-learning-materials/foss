@@ -109,7 +109,7 @@ a way to collaborate with others, and a lot of other features.
     track decisions, bugs with the repository, etc.
 
 <figure markdown>
-  <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://n7b3p4s2.stackpathcdn.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
+  <a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def">![git_def](https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png) </a>
     <figcaption> Visualizing the commands through a workflow example <br> (graphic's correction: ~~marged~~ merged) </figcaption>
 </figure>
 
