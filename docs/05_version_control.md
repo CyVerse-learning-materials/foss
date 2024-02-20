@@ -355,18 +355,18 @@ To https://github.com/CosiMichele/foss22_git_tutorial.git
 ```
 
 !!! Warning "First time Pushing a commit?"
-		GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
+	GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
 
-		- When asked for the user name:
-			- Add the username that you use to login into GitHub
-		- When it asks you for the password:
-			- **DO NOT PUT YOUR PASSWORD**, you will require a **token** instead
-			- Generate the token by 
-				- On GitHub, click on your avatar (top right, and navigate to **Settings**)
-				- Scroll down to the bottom of the left hand menu, select **Developer settings**, and then **Personal access tokens**
-				- Now click on **Generate new token** (Enter password if requested)
-				- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
-				- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
+	- When asked for the user name:
+	- Add the username that you use to login into GitHub
+	- When it asks you for the password:
+	- **DO NOT PUT YOUR PASSWORD**, you will require a **token** instead
+	- Generate the token by: 
+		- On GitHub, click on your avatar (top right, and navigate to **Settings**)
+		- Scroll down to the bottom of the left hand menu, select **Developer settings**, and then **Personal access tokens**
+		- Now click on **Generate new token** (Enter password if requested)
+		- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
+		- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
 
 You can now see the changes you made locally on the GitHub repository page.
 
@@ -379,7 +379,7 @@ Branching allows you to develop your code whilst in a contained environment sepa
 ![git_10](assets/git_10.png)
 
 !!! Info "Why working on branches?"
-		Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using [**pull requests**](00_basics.md#pull-requests).
+	Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using [**pull requests**](00_basics.md#pull-requests).
 
 To create a new branch select the :octicons-git-branch-16: branch icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.
 
@@ -396,14 +396,14 @@ You can now see the updated list of all your branches.
 You can now use this new branch to create changes you are not yet ready to put in your main branch.
 
 !!! warning "Want to delete a branch?"
-		You can delete a branch from the branch web page by clicking on the :octicons-trash-16: trash can icon. **Beware!** All the changes you've made on that branch will be deleted!
+	You can delete a branch from the branch web page by clicking on the :octicons-trash-16: trash can icon. **Beware!** All the changes you've made on that branch will be deleted!
 
 !!! info "Working on your machine?"
-		Once you create a branch online, you can change to the desired branch on your machine with `git switch <branch>`. Don't forget to push your changes first!
+	Once you create a branch online, you can change to the desired branch on your machine with `git switch <branch>`. Don't forget to push your changes first!
 		
-		!!! tip "Pull and Tab"
-				- Don't forget to perform a `git pull`!
-				- Don't know your branches? Tab! When typing `git switch`, press tab to see the options of all the branches you've created.
+	!!! tip "Pull and Tab"
+		- Don't forget to perform a `git pull`!
+		- Don't know your branches? Tab! When typing `git switch`, press tab to see the options of all the branches you've created.
 
 #### Pull Requests
 
@@ -418,7 +418,7 @@ Once you are ready to merge the changes onto your main branch, click on the :oct
 ![git_15](assets/git_15.png)
 
 !!! info "Pay attention to the information on the PR page!"
-		The PR page will not only show you what changes you've made, but also where the changes are coming from (which branch), as well as reviewers, assigneers, labels and other information necessary when working on a big project. It will also show whether the changes are **Able** to be merged (:material-check:) or not (:octicons-x-16:)! 
+	The PR page will not only show you what changes you've made, but also where the changes are coming from (which branch), as well as reviewers, assigneers, labels and other information necessary when working on a big project. It will also show whether the changes are **Able** to be merged (:material-check:) or not (:octicons-x-16:)! 
 
 Upon createing the pull request, a new page will open which will test whether the changes can be merged automatically. Changes that are not able to be merged usually clash with other changes other collaborators have made - this will require your revision prior to merging the PR! After revision, select **Merge pull request** and **Confirm merge**.
 
