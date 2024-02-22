@@ -303,6 +303,29 @@ There are other platforms that address Version Control and have similar function
 
 !!! warning "Prerequisites"
     You will require the following in case you want to add code locally.
+
+    ??? Info "Installing Git"
+
+    You can follow the official guidelines here: https://github.com/git-guides/install-git. Here we recommend how to install Git on your local machine.
+
+        ??? Info "Windows"
+
+            !!! warning "These instructions are for Windows users **NOT** using [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). If you do have WSL2, follow the **Unix** instructions."
+
+            1. Navigate to the [latest Git for Windows installer](https://gitforwindows.org/) and download the latest version.
+            2. Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.
+            3. Search and open **Git Bash**. From here, you should be able to run Git commands.
+
+        ??? Info "MacOS"
+
+            1. Install [Homebrew](https://brew.sh/) (a package manager for MacOS): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
+            2. Install Git: `brew install git`
+
+        ??? Info "Unix"
+            The following command will install git and all related packages on your Unix machine.
+            ```
+            $ sudo apt-get install -y git-all
+            ```
     
     ??? Info "Create a GitHub account"
         Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
@@ -357,10 +380,7 @@ There are other platforms that address Version Control and have similar function
 
 Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
 
-- To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
-```
-$ sudo apt-get install -y git-all
-```
+- To add or modify code locally, you need to **clone** the repository on your computer.
 - You can then clone the repository by clicking on the **Code** button, and copying the link shown
 - ![git_04](assets/git_4.png)
 - On your machine, open a terminal window and type the following command:
