@@ -304,7 +304,10 @@ There are other platforms that address Version Control and have similar function
 !!! warning "Prerequisites"
     You will require the following in case you want to add code locally.
 
-    ??? Info "Installing Git"
+    ??? Info "Create a GitHub account"
+        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+
+    **Installing Git**
 
     You can follow the official guidelines here: https://github.com/git-guides/install-git. Here we recommend how to install Git on your local machine.
 
@@ -326,9 +329,6 @@ There are other platforms that address Version Control and have similar function
         ```
         $ sudo apt-get install -y git-all
         ```
-
-    ??? Info "Create a GitHub account"
-        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
 
     Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on [Version Control](05_version_control.md).
 
