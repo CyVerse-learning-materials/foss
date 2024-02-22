@@ -428,7 +428,7 @@ To https://github.com/CosiMichele/foss22_git_tutorial.git
    b649de3..05f0ef6  main -> main
 ```
 
-!!! Warning "First time Pushing a commit?"
+??? Warning "First time Pushing a commit and using Tokens?"
 	GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
 
 	- When asked for the user name:
