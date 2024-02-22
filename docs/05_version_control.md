@@ -301,6 +301,60 @@ There are other platforms that address Version Control and have similar function
 
 ## Adding Code to Github Locally
 
+!!! warning "Prerequisites"
+    You will require the following in case you want to add code locally.
+    
+    ??? Info "Create a GitHub account"
+        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+
+    Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on [Version Control](05_version_control.md).
+
+    ??? Info "Choice A: Generate a Personal Access Token"
+        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
+        
+        1. On your coumputer:
+            1. Clone your repository (`git clone <repository>`)
+            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
+            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
+        2. On GitHub:
+            1. Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)
+            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
+            3. Click *Personal access tokens* > *Tokens (classic)*
+            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
+            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
+        3. Back on your computer:
+            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
+            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
+        
+    ??? Info "Choice B: Connecting via SSH"
+        The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). 
+        
+        As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
+
+        1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+        ```
+        Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
+        Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
+        The key fingerprint is:
+        SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o <your github email>
+        The key's randomart image is:
+        +--[ED25519 256]--+
+        |^B== o.          |
+        |%*=.*.+          |
+        |+=.E =.+         |
+        | .=.+.o..        |
+        |....  . S        |
+        |.+ o             |
+        |+ =              |
+        |.o.o             |
+        |oo+.             |
+        +----[SHA256]-----+
+        ``` 
+        2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
+        3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
+        
+        Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
+
 Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
 
 - To add or modify code locally, you need to **clone** the repository on your computer. This requries that you have `git` installed on your machine; If you do not have `git` installed, use the following commands:
