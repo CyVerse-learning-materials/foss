@@ -148,6 +148,8 @@ Here's a breakdown of what Conda offers:
 
     Conda is the package and environment manager for the Anaconda distribution, which is a distribution of Python and R for scientific computing and data science. However, Conda can be used independently of Anaconda.
 
+---
+
 ## Reproducibility tutorial
 
 This section is going to cover a short tutorial on reproducibility using software, tools and practices discussed today and throughout FOSS.
@@ -162,7 +164,7 @@ This section is going to cover a short tutorial on reproducibility using softwar
 
 !!! Success "Tutorial Goals"
 
-    - Create a small workflow using NextFlow
+    - Run a small workflow using NextFlow
     - Understand best practices for reproducing a workflow
     - Apply FOSS procedures in order to enable easiness of reproducibility
 
@@ -322,74 +324,6 @@ pip3 freeze > my_pip_env.txt
 
 !!! Success "Conda exports your Pip environment as well"
     Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
-
-### GitHub repository setup and documentation
-
-Create a repository on GitHub to document your work:
-
-- On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
-- Clone your repository locally with `git clone <repository_url>.git` (find the url under the green **Code** button)
-- Navigate to your cloned repository with `cd <repository_name>`. You should now be inside your repository.
-- Move your environemnt files into your repository with `mv ../my_conda_env.yml ../my_pip_env.txt .`.
-- Modify your README to reflect the work so far, with meaningful comments (remember that the README is formatted with markdown, a guide to markdown [here](https://www.markdownguide.org/basic-syntax/)). A well documented document may look similar to:
-
-````
-# reproducibility-tutorial
-
-This repository contains information about the reproduciblility tutorial from [FOSS 2023 Spring](https://foss.cyverse.org/06_reproducibility_i/#reproducibility-tutorial).
-
-## Environment Setup
-
-- Download conda and add right permissions
-```
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
-chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
-```
-- Install conda silenty (-b), update (-u) and initial start
-```
-./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
-~/miniconda3/bin/conda init
-```
--  Restart bash so that conda is activated
-```
-source ~/.bashrc
-```
-- Install Mamba
-```
-conda install -c conda-forge mamba
-```
-- Use environment files in this repo to recreate tutorial env
-```
-mamba install -f <my_conda_env.yml>     # Will also install pip packages
-```
-
-## Obtaining tutorial files
-
-Tutorial files avaiable [here](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true). Use `wget` to download appropriate files and decompress files with `tar -xvf`.
-```
-wget -O nf_foss_tut.tar.gz https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true
-tar -xvf nf_foss_tut.tar.gz
-```
-
-## Workflow tutorial using Nextflow
-Steps of the nextflow tutorial will be added in future commits.
-````
-
-- Add, commit and push your changes
-
-```
-git add .
-git commit -m "adding initial documentation"
-git push
-```
-    
-- When trying to `commit` git will ask who you are:
-```
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-```
-
-- When trying to `push`, Github will ask for you username and password; When asked about the password, input a GitHub token. To create a token go to **Account > Settings > Developer settings > Personal access tokens > Generate new token**, add a note, select all the necessary permissions and select Generate token; **Copy the token and use it as password!** [FOSS has covered how to create a Token in Week 0: The Shell and Git, necessary in order to modify code locally](https://foss.cyverse.org/00_basics/#adding-code-locally).
 
 ### Workflow Tutorial using Nextflow
 
@@ -620,13 +554,152 @@ Done! Open the following report in your browser --> results/multiqc_report.html
 
 As you can notice, the report is an `html` file that can be opened with a browser. Navigate to this file in the Cyverse Data Store and open it. 
 
-### Document your work
+---
+
+### Essential Exercise: Documenting your Work
 
 **Document your work.** You should still be in your GitHub folder. Summarize your steps and work on your README file, and push your changes! This will ensure that your work and files are saved and have a valid version that you can come back to in the future if you ever require to.
+
+!!! warning "Prerequisites"
+    You will require the following in case you want to add code locally.
+
+    ??? Info "Create a GitHub account"
+        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+
+    **Installing Git**
+
+    You can follow the official guidelines here: https://github.com/git-guides/install-git. Here we recommend how to install Git on your local machine.
+
+    ??? Info "Windows"
+
+        !!! warning "These instructions are for Windows users **NOT** using [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). If you do have WSL2, follow the **Unix** instructions."
+
+        1. Navigate to the [latest Git for Windows installer](https://gitforwindows.org/) and download the latest version.
+        2. Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.
+        3. Search and open **Git Bash**. From here, you should be able to run Git commands.
+
+    ??? Info "MacOS"
+
+        1. Install [Homebrew](https://brew.sh/) (a package manager for MacOS): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
+        2. Install Git: `brew install git`
+
+    ??? Info "Unix"
+        The following command will install git and all related packages on your Unix machine.
+        ```
+        $ sudo apt-get install -y git-all
+        ```
+
+    Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on [Version Control](05_version_control.md).
+
+    ??? Info "Choice A: Generate a Personal Access Token"
+        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
+        
+        1. On your coumputer:
+            1. Clone your repository (`git clone <repository>`)
+            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
+            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
+        2. On GitHub:
+            1. Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)
+            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
+            3. Click *Personal access tokens* > *Tokens (classic)*
+            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
+            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
+        3. Back on your computer:
+            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
+            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
+        
+    ??? Info "Choice B: Connecting via SSH"
+        The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). 
+        
+        As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
+
+        1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+        ```
+        Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
+        Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
+        The key fingerprint is:
+        SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o <your github email>
+        The key's randomart image is:
+        +--[ED25519 256]--+
+        |^B== o.          |
+        |%*=.*.+          |
+        |+=.E =.+         |
+        | .=.+.o..        |
+        |....  . S        |
+        |.+ o             |
+        |+ =              |
+        |.o.o             |
+        |oo+.             |
+        +----[SHA256]-----+
+        ``` 
+        2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
+        3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
+        
+        Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
 
 ??? Question "What if my files are too big?"
         
     You can always use a `.gitignore`, a file that within itself has defined what should be saved in GitHub when pushing a commit, and what shouldn't be saved. An alternative is to move your files outside of the respository that you're pushing ("stashing").
+
+#### GitHub repository setup and documentation
+
+Create a repository on GitHub to document your work:
+
+- On [GitHub](https://github.com/), navigate to your account page and create a new repository (add a README to create structure!)
+- Clone your repository locally with `git clone <repository_url>.git` (find the url under the green **Code** button)
+- Navigate to your cloned repository with `cd <repository_name>`. You should now be inside your repository.
+- Move your environemnt files into your repository with `mv ../my_conda_env.yml ../my_pip_env.txt .`.
+- Modify your README to reflect the work so far, with meaningful comments (remember that the README is formatted with markdown, a guide to markdown [here](https://www.markdownguide.org/basic-syntax/)). A well documented document may look similar to:
+
+````
+# reproducibility-tutorial
+
+This repository contains information about the reproduciblility tutorial from [FOSS 2023 Spring](https://foss.cyverse.org/06_reproducibility_i/#reproducibility-tutorial).
+
+## Environment Setup
+
+- Download conda and add right permissions
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+chmod +x Miniconda3-py39_4.12.0-Linux-x86_64.sh
+```
+- Install conda silenty (-b), update (-u) and initial start
+```
+./Miniconda3-py39_4.12.0-Linux-x86_64.sh -b -u
+~/miniconda3/bin/conda init
+```
+-  Restart bash so that conda is activated
+```
+source ~/.bashrc
+```
+- Install Mamba
+```
+conda install -c conda-forge mamba
+```
+- Use environment files in this repo to recreate tutorial env
+```
+mamba install -f <my_conda_env.yml>     # Will also install pip packages
+```
+
+## Obtaining tutorial files
+
+Tutorial files avaiable [here](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true). Use `wget` to download appropriate files and decompress files with `tar -xvf`.
+```
+wget -O nf_foss_tut.tar.gz https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/tutorials/nf_foss_tut.tar.gz?raw=true
+tar -xvf nf_foss_tut.tar.gz
+```
+
+## Workflow tutorial using Nextflow
+Steps of the nextflow tutorial will be added in future commits.
+````
+
+- Add, commit and push your changes
+
+```
+git add .
+git commit -m "documenting the tutorial"
+git push
+```
 
 ---
 
