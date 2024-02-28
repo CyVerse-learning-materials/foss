@@ -117,12 +117,13 @@ The take home message on Cloud is that it is a great way to make your work more 
 
 Have you ever tried to run a script, only to realize you had updated a package without knowing, and now the script doesn't work? 
 
-**Package managers** that create and manage **custom environments** can be extremely helpful in keeping software versions aligned with projects.
+**Package managers** that create and manage **custom environments** can be extremely helpful in keeping software versions aligned with projects. Good examples of package managers are Conda and Pip.
 
 In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
 
 ---
-## Conda
+
+## :simple-anaconda: Conda: a GREAT package manager
 
 [Conda](https://docs.conda.io/en/latest/){target=_blank} is an open-source package management system and also an environment management system. This means that it helps manage libraries and dependencies within different projects and can isolate different versions of packages and even Python itself into different environments to maintain project consistency and avoid conflicts between package versions.
 
@@ -148,9 +149,22 @@ Here's a breakdown of what Conda offers:
 
     Conda is the package and environment manager for the Anaconda distribution, which is a distribution of Python and R for scientific computing and data science. However, Conda can be used independently of Anaconda.
 
+Conda comes in two different flavours: [Anaconda](https://anaconda.org/) and [Miniconda](https://docs.anaconda.com/free/miniconda/). Whilst both have the same Conda engine, Miniconda is smaller is size and contains only necessary packages (~500MB), whilst Anaconda comes with everything Miniconda has and more software modules (~2.5GB).
+
+<figure markdown>
+  <a href="https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937" target="blank" rel="conda">![conda](https://miro.medium.com/v2/resize:fit:720/format:webp/0*ElVyaAsDHkIpNgxk.png) </a>
+    <figcaption> Conda, Miniconda, and Anaconda. <br> [Taken from *Getting Started with Conda, Medium*](https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937). </figcaption>
+</figure>
+
+??? tip "Tip: slow Conda? Try Mamba."
+
+    Conda is known to take time processing some software installation. A solution is to use [Mamba](https://github.com/mamba-org/mamba), a reimplementation of Conda in C++ for quicker queries and installations. Mamba is then invoked by using `mamba` instead of `conda` (whilst keeping options and the rest of the command synthax the same). 
+
+    The quickest way to install mamba is with `conda install -c conda-forge mamba`, or follow the official installation documentation [here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). 
+
 ---
 
-## Reproducibility tutorial
+## Reproducibility Tutorial
 
 This section is going to cover a short tutorial on reproducibility using software, tools and practices discussed today and throughout FOSS.
 
