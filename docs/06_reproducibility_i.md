@@ -123,7 +123,7 @@ In Python, it is common to use `pip` and a `requirements.txt` file, and in R, th
 
 ---
 
-## :simple-anaconda: Conda: a GREAT package manager
+## :simple-anaconda: Conda: a GREAT Environment and Package Manager
 
 [Conda](https://docs.conda.io/en/latest/){target=_blank} is an open-source package management system and also an environment management system. This means that it helps manage libraries and dependencies within different projects and can isolate different versions of packages and even Python itself into different environments to maintain project consistency and avoid conflicts between package versions.
 
@@ -161,6 +161,142 @@ Conda comes in two different flavours: [Anaconda](https://anaconda.org/) and [Mi
     Conda is known to take time processing some software installation. A solution is to use [Mamba](https://github.com/mamba-org/mamba), a reimplementation of Conda in C++ for quicker queries and installations. Mamba is then invoked by using `mamba` instead of `conda` (whilst keeping options and the rest of the command synthax the same). 
 
     The quickest way to install mamba is with `conda install -c conda-forge mamba`, or follow the official installation documentation [here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). 
+
+---
+
+## Automation: Workflow Management with Nextflow and Snakemake
+
+Workflow management is key to automation: it helps with bridging the gap between software, creating useful pipelines that help extracting information from data. Two examples of workflow management system popular (but not restricted to!) within the field of Bioinformatics are [Nextflow](https://www.nextflow.io/docs/latest/index.html) and [Snakemake](https://snakemake.readthedocs.io/en/stable/). 
+
+Both workflow managers are powerful tools that tackle reproducibility and scalability, however the two have some key differences:
+
+| Feature | Snakemake | Nextflow |
+|---|---|---|
+| Language style | Python-based DSL* |Groovy-based DSL* |
+| Execution Model | Rule-based | Dataflow-driven |
+| Parallelization and Resource Management |Implicit parallelization, limited resource management | Explicit parallelization, more flexible resource management |
+| Integration | seamless with Python | seamless with Java** |
+
+\* = Domain Specific Langauge <br>
+** = No, it does not mean you need to learn Java
+
+Although there are differences between the two workflow managers, there are a number of features which both share:
+
+- Available on all OS
+- Well integrated with Conda
+- Support the use of Containers
+- Deployable on HPC systems
+- Integrated error reporting
+- Well established communities***
+
+*** = It should be noted that Nextflow has a [community driven repository, nf-core](https://nf-co.re/), where people can upload their Nextflow pipelines for others to use. Power to the people!
+
+Both are incredibly powerful when it comes to creating pipelines, ultimately the choice on which to use depends on **you** (and the goal of your project). 
+
+Here are a couple of script examples for each workflow manager. Although different, the examples try to 
+
+1. Download a genome
+2. Align reads using BWA ([Burrows-Wheeler Aligner](https://bio-bwa.sourceforge.net/) tool)
+3. Gather aignment statistics using [Samtools](https://www.htslib.org/) (Sequence Alignment/Map)
+
+**Snakemake:**
+
+```
+# Snakefile
+
+# Define rule for downloading reference genome
+rule download_reference_genome:
+    output:
+        "reference_genome.fa"
+    shell:
+        "wget http://example.com/reference_genome.fa"
+
+# Define rule for aligning reads to the reference genome using BWA
+rule align_reads:
+    input:
+        "reference_genome.fa",
+        fastq="data/{sample}.fastq"
+    output:
+        "aligned/{sample}.bam"
+    shell:
+        "bwa mem {input.reference_genome} {input.fastq} | samtools view -b - > {output}"
+
+# Define rule to aggregate alignment statistics
+rule aggregate_stats:
+    input:
+        expand("aligned/{sample}.bam", sample=config['samples'])
+    output:
+        "alignment_stats.txt"
+    shell:
+        "samtools flagstat {input} > {output}"
+
+# Define samples
+configfile: "config.yaml"
+```
+
+Notice how in the Snakefile above, there are a set number of rules that define input, output and commands.
+
+**Nextflow:**
+
+```
+// main.nf
+
+params.samples = ['sample1', 'sample2', 'sample3']
+
+// Define process to download reference genome
+process download_reference_genome {
+    output:
+    file('reference_genome.fa')
+
+    script:
+    """
+    wget http://example.com/reference_genome.fa -O reference_genome.fa
+    """
+}
+
+// Define process to align reads using BWA
+process align_reads {
+    input:
+    file(reference_genome), file(fastq) from fastqs
+
+    output:
+    file("aligned/${sample}.bam")
+
+    script:
+    """
+    bwa mem ${reference_genome} ${fastq} | samtools view -b - > aligned/${sample}.bam
+    """
+}
+
+// Define process to aggregate alignment statistics
+process aggregate_stats {
+    input:
+    set file(aligned_bam) from aligned_bams
+
+    output:
+    file("alignment_stats.txt")
+
+    script:
+    """
+    samtools flagstat ${aligned_bam} > alignment_stats.txt
+    """
+}
+
+// Define workflow execution
+workflow {
+    // Define input data
+    Channel.fromPath("data/*.fastq").set { fastqs }
+
+    // Execute processes in parallel
+    download_reference_genome()
+    align_reads(fastqs)
+    aggregate_stats()
+}
+```
+
+The Nextflow file "forces" you to know what you are expecting prior to execution by first defining what you want processes you need before defining the workflow script. 
+
+Although not shown here, Nextflow uses "Channels" to help with workflow execution. A channel can have one or more defined processes, but it can "wait": these processes wait until the input is ready before executing, thus creating the possibilty of an asynchronous processing pipeline (and parallel processing!). This is also what makes Nextflow able to manage resources better than Snakemake (the processes in "inactive" channels do not use resources until they are needed). 
 
 ---
 
