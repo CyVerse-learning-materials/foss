@@ -174,12 +174,11 @@ What about if you run a container that you haven't downloaded?
 
 
 ```
-$ docker run alpine:latest ls -l
+$ docker run alpine:latest
 ```
 
 When you executed the command `docker run alpine:latest`, Docker first looked for the cached image locally, but did not find it, it then ran a `docker pull` behind the scenes to download the `alpine:latest` image and then execute your command.
 
-When you ran `docker run alpine:latest`, you provided a command `ls -l`, so Docker started the command specified and you saw the listing of the Alpine file system (not your host system, this was inside the container!).
 
 ### :material-docker: images
 
