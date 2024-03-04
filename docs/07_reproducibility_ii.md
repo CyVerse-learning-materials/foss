@@ -306,7 +306,130 @@ docker tag docker.io/username/imagename:oldtag harbor.cyverse.org/project/imagen
 
 The cached image laters will not change their `sha256` and both image tags will still be present after the new tag name is generated. 
 
+---
 
+## Example of Running a Container
+
+This is a tutorial to demonstrate how to run PDAL using Docker. [PDAL](https://pdal.io/en/2.6.0/) is a stand-alone software package that can analyze and manipulate point cloud data files such as .las and .laz. In this tutorial, we will convert a LiDAR .laz file into a [Cloud-optimized Point Cloud format (.copc.laz)](https://www.gillanscience.com/cloud-native-geospatial/copc/). 
+
+#### 1. Clone this repository to your local machine
+
+`git clone https://github.com/jeffgillan/pdal_copc.git`
+
+#### 2. Change directories into the newly cloned repository
+
+`cd pdal_copc`
+
+#### 3. Run the Container
+
+`docker run -v $(pwd):/data jeffgillan/pdal_copc:1.0`
+
+You are mounting a local volume (-v) directory to the container (`/data`). This local directory should have all of the point clouds files you want to convert. `$(pwd)` is telling it that the point clouds are in the current working directory. 
+
+```jeffgillan/pdal_copc:1.0``` is the name of the container image you want to run. 
+
+```jeffgillan``` = the Dockerhub account name
+
+```pdal_copc``` = the name of the image
+
+```1.0``` = the tag name    
+
+
+Your if everything worked correctly, you should have a new file `tree.copc.laz` in your present working directory.
+
+---
+
+## Working with Interactive Containers
+
+Let's go ahead and run some Integrated Development Environment images from "trusted" organizations on the Docker Hub Registry.
+
+### :material-language-python: Jupyter Lab 
+	
+In this section, let's find a Docker image which can run a Jupyter Notebook
+
+Search for official images on Docker Hub which contain the string 'jupyter'
+
+```
+$ docker search jupyter
+```
+
+It should return something like:
+
+```
+NAME                                   DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+jupyter/datascience-notebook           Jupyter Notebook Data Science Stack from htt…   912                  
+jupyter/all-spark-notebook             Jupyter Notebook Python, Scala, R, Spark, Me…   374                  
+jupyter/scipy-notebook                 Jupyter Notebook Scientific Python Stack fro…   337                  
+jupyterhub/jupyterhub                  JupyterHub: multi-user Jupyter notebook serv…   307                  [OK]
+jupyter/tensorflow-notebook            Jupyter Notebook Scientific Python Stack w/ …   298                  
+jupyter/pyspark-notebook               Jupyter Notebook Python, Spark, Mesos Stack …   224                  
+jupyter/base-notebook                  Small base image for Jupyter Notebook stacks…   168                  
+jupyter/minimal-notebook               Minimal Jupyter Notebook Stack from https://…   150                  
+jupyter/r-notebook                     Jupyter Notebook R Stack from https://github…   44                   
+jupyterhub/singleuser                  single-user docker images for use with Jupyt…   43                   [OK]
+jupyter/nbviewer                       Jupyter Notebook Viewer                         27                   [OK]
+```
+
+??? Warning "Untrusted community images"
+
+    An important thing to note: None of these Jupyter or RStudio images are 'official' Docker images, meaning they could be trojans for spyware, malware, or other nasty warez.
+
+---
+
+### Understanding PORTS
+
+When we want to run a container that runs on the open internet, we need to add a [TCP or UDP port number](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers){target=_blank} from which we can access the application in a browser using the machine's IP (Internet Protocol) address or DNS (Domain Name Service) location.
+
+To do this, we need to access the container over a separate port address on the machine we're working on.
+
+Docker uses the flag `--port` or `-p` for short followed by two sets of port numbers. 
+
+??? Note "Exposing Ports"
+
+    Docker can in fact expose all ports to a container using the capital `-P` flag
+
+    For security purposes, it is generally NEVER a good idea to expose all ports.
+
+Typically these numbers can be the same, but in some cases your machine may already be running another program (or container) on that open port.
+
+The port has two sides `left:right` separated by a colon. The left side port number is the INTERNAL port that the container software thinks its using. The right side number is the EXTERNAL port that you can access on your computer (or virtual machine).
+
+Here are some examples to run basic RStudio and Jupyter Lab:
+
+```
+$ docker run --rm -p 8787:8787 -e PASSWORD=cc2022 rocker/rstudio
+```
+
+**note: on CodeSpaces, the reverse proxy for the DNS requires you to turn off authentication**
+
+```
+$ docker run --rm -p 8787:8787 -e DISABLE_AUTH=true rocker/rstudio
+```
+
+```
+$ docker run --rm -p 8888:8888 jupyter/base-notebook
+```
+```
+docker run --rm -p 8888:8888 jupyter/base-notebook start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
+```
+??? Note "Preempting stale containers from your cache"
+
+	We've added the `--rm` flag, which means the container will automatically removed from the cache when the container is exited.
+
+	When you start an IDE in a terminal, the terminal connection must stay active to keep the container alive.
+
+### Detaching your container while it is running
+
+If we want to keep our window in the foreground  we can use the `-d` - the *detached* flag will run the container as a background process, rather than in the foreground. 
+
+When you run a container with this flag, it will start, run, telling you the container ID:
+
+```
+$ docker run --rm -d -p 8888:8888 jupyter/base-notebook
+```
+Note, that your terminal is still active and you can use it to launch more containers. 
+
+To view the running container, use the `docker ps` command.
 
 ---
 
@@ -442,7 +565,7 @@ It is possible to store data within the writable layer of a container, but there
 Docker offers three different ways to mount data into a container from the Docker host: **Volumes**, **tmpfs mounts** and **bind mounts**. Here, we will only be exploring *Volumes*.
 
 <figure markdown>
-  <a href="https://docs.docker.com/storage/volumes/" target="blank" rel="vol">![vol](https://docs.docker.com/storage/images/types-of-mounts-volume.png) </a>
+  <a href="https://docs.docker.com/storage/volumes/" target="blank" rel="vol">![vol](https://docs.docker.com/storage/images/types-of-mounts-volume.webp?w=450&h=300) </a>
     <figcaption> The various methods for accessing data using containers. tmpfs mounts store data directly in memory, bind mounts and volumes use the host's file system. Volumes are flexible and only attach a specific directory to the container, whilst bind mounts require the user to share the full path to a file in order to allow the container to access it. Taken from the official Docker documentation on [data management with docker](https://docs.docker.com/storage/volumes/). </figcaption>
 </figure>
 
@@ -493,97 +616,7 @@ Any data that you add to that folder outside the container will appear **INSIDE*
 
 ---
 
-## Working with Interactive Containers
 
-Let's go ahead and run some Integrated Development Environment images from "trusted" organizations on the Docker Hub Registry.
-
-### :material-language-python: Jupyter Lab 
-	
-In this section, let's find a Docker image which can run a Jupyter Notebook
-
-Search for official images on Docker Hub which contain the string 'jupyter'
-
-```
-$ docker search jupyter
-```
-
-It should return something like:
-
-```
-NAME                                   DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-jupyter/datascience-notebook           Jupyter Notebook Data Science Stack from htt…   912                  
-jupyter/all-spark-notebook             Jupyter Notebook Python, Scala, R, Spark, Me…   374                  
-jupyter/scipy-notebook                 Jupyter Notebook Scientific Python Stack fro…   337                  
-jupyterhub/jupyterhub                  JupyterHub: multi-user Jupyter notebook serv…   307                  [OK]
-jupyter/tensorflow-notebook            Jupyter Notebook Scientific Python Stack w/ …   298                  
-jupyter/pyspark-notebook               Jupyter Notebook Python, Spark, Mesos Stack …   224                  
-jupyter/base-notebook                  Small base image for Jupyter Notebook stacks…   168                  
-jupyter/minimal-notebook               Minimal Jupyter Notebook Stack from https://…   150                  
-jupyter/r-notebook                     Jupyter Notebook R Stack from https://github…   44                   
-jupyterhub/singleuser                  single-user docker images for use with Jupyt…   43                   [OK]
-jupyter/nbviewer                       Jupyter Notebook Viewer                         27                   [OK]
-```
-
-??? Warning "Untrusted community images"
-
-    An important thing to note: None of these Jupyter or RStudio images are 'official' Docker images, meaning they could be trojans for spyware, malware, or other nasty warez.
-
----
-
-## Understanding PORTS
-
-When we want to run a container that runs on the open internet, we need to add a [TCP or UDP port number](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers){target=_blank} from which we can access the application in a browser using the machine's IP (Internet Protocol) address or DNS (Domain Name Service) location.
-
-To do this, we need to access the container over a separate port address on the machine we're working on.
-
-Docker uses the flag `--port` or `-p` for short followed by two sets of port numbers. 
-
-??? Note "Exposing Ports"
-
-    Docker can in fact expose all ports to a container using the capital `-P` flag
-
-    For security purposes, it is generally NEVER a good idea to expose all ports.
-
-Typically these numbers can be the same, but in some cases your machine may already be running another program (or container) on that open port.
-
-The port has two sides `left:right` separated by a colon. The left side port number is the INTERNAL port that the container software thinks its using. The right side number is the EXTERNAL port that you can access on your computer (or virtual machine).
-
-Here are some examples to run basic RStudio and Jupyter Lab:
-
-```
-$ docker run --rm -p 8787:8787 -e PASSWORD=cc2022 rocker/rstudio
-```
-
-**note: on CodeSpaces, the reverse proxy for the DNS requires you to turn off authentication**
-
-```
-$ docker run --rm -p 8787:8787 -e DISABLE_AUTH=true rocker/rstudio
-```
-
-```
-$ docker run --rm -p 8888:8888 jupyter/base-notebook
-```
-```
-docker run --rm -p 8888:8888 jupyter/base-notebook start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
-```
-??? Note "Preempting stale containers from your cache"
-
-	We've added the `--rm` flag, which means the container will automatically removed from the cache when the container is exited.
-
-	When you start an IDE in a terminal, the terminal connection must stay active to keep the container alive.
-
-### Detaching your container while it is running
-
-If we want to keep our window in the foreground  we can use the `-d` - the *detached* flag will run the container as a background process, rather than in the foreground. 
-
-When you run a container with this flag, it will start, run, telling you the container ID:
-
-```
-$ docker run --rm -d -p 8888:8888 jupyter/base-notebook
-```
-Note, that your terminal is still active and you can use it to launch more containers. 
-
-To view the running container, use the `docker ps` command.
 
 ---
 
