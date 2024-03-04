@@ -30,6 +30,7 @@ nav:
     - '5. Version Control': 05_version_control.md
     - '6. Reproducibility I: Repeatability': 06_reproducibility_i.md
     - '7. Reproducibility II: Containers': 07_reproducibility_ii.md
+    - '8. Reproducibility III: Containers II': 08_reproducibility_III.md
   - Capstone Project:
       - 'Overview': final_project/overview.md
 
