@@ -20,3 +20,37 @@
 ??? Tip "What is an *entrypoint*?"
 
     An entrypoint is the initial command(s) executed upon starting the Docker container. It is listed in the `Dockerfile` as `ENTRYPOINT` and can take 2 forms: as commands followed by parameters (`ENTRYPOINT command param1 param2`)  or as an executable (`ENTRYPOINT [“executable”, “param1”, “param2”]`)
+
+
+### :material-docker: push
+
+By default `docker push` will upload your local container image to the [Docker Hub](){target=_blank}
+
+We will cover `push` in more detail at the end of Day 2, but the essential functionality is the same as pull.
+
+Also, make sure that your container has the appropriate [tag](./intro.md#tag)
+
+First, make sure to log into the Docker Hub, this will allow you to download private limages, to upload private/public images:
+
+```
+docker login
+```
+
+Alternately, you can [link GitHub / GitLab accounts](https://hub.docker.com/settings/linked-accounts){target=_blank} to the Docker Hub.
+
+To push the image to the Docker Hub:
+
+```
+docker push username/imagename:tag 
+```
+
+or
+
+```
+docker push docker.io/username/imagename:tag
+```
+or, to a private registry, here we push to CyVerse private `harbor.cyverse.org` registry which uses "project" sub folders:
+
+```
+docker push harbor.cyverse.org/project/imagename:newtag 
+```
