@@ -39,15 +39,6 @@ Containers are similar to virtual machines (VMs), but are smaller and easier to 
     <figcaption> Difference between Virtual Machines and Containers. Containers are a lot more portable as these do not require an OS to be bundled with the software. Figure source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/). </figcaption>
 </figure>
 
-* The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
-
-* [DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
-
-!!! Warning
-    
-    While Docker allows you to quickly run software from other people, it may not work across every platform. There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
-
-
 ## Containers for Reproducible Science
 Software containers, such as those managed by Docker or Singularity, are incredibly useful for reproducible science for several reasons:
 
@@ -73,6 +64,19 @@ Containers can be easily scaled and deployed on cloud infrastructure, allowing f
 #### Isolation:
 
 Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
+
+<br/>
+<br/>
+
+* The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
+
+* [DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
+
+!!! Warning
+    
+    While Docker allows you to quickly run software from other people, it may not work across every platform. There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
+
+
 
 
 
