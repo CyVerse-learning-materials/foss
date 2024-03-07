@@ -8,10 +8,26 @@
     * Search for and run a Docker container locally or on a remote system
     * Understand how version control and data can be used inside a container
 
+## Reproducible Computer Code
+
+Sharing your scientific analysis code with your colleagues is an act of collaboration that will help push your field forward. There are, however, technical challenges that may prevent your colleagues from effectively running the code on their own computer. These include:
+
+- hardware: CPUs, GPUs, RAM
+- Operating System: Linux, MacOS, Windows
+- Software version: R, Python, etc
+- Library versions and dependencies
+
+How do we make it easier to share analyis code and avoid the challenges of computer and environment setups?
 
 ## What *are* containers?
 
-A [container](https://www.docker.com/resources/what-container/){target=_blank} is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
+A [container](https://www.docker.com/resources/what-container/) is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Each of these elements are specifically versioned and do not change. The user does not need to *install* the software in the traditional sense.
+
+A useful analogy is to think of software containers as shipping containers. It allows us move cargo (software) around the world in standard way. The shipping container can be offloading and executed anywhere, as long the destination has a shipping port (i.e., Docker) 
+
+<img src="[https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/shipping.jpg]" width=500>
+
+<br/>
 
 Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely on the host OS and the container engine (e.g., Docker Engine). 
 
@@ -46,9 +62,11 @@ Containers can run on different operating systems and cloud platforms, allowing 
 #### Version Control:
 
 Containers can be versioned, making it easy to keep track of changes in the software environment over time.
+
 #### Scalability:
 
 Containers can be easily scaled and deployed on cloud infrastructure, allowing for reproducible science at scale.
+
 #### Isolation:
 
 Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
