@@ -25,7 +25,7 @@ A [container](https://www.docker.com/resources/what-container/) is a standard un
 
 A useful analogy is to think of software containers as shipping containers. It allows us move cargo (software) around the world in standard way. The shipping container can be offloading and executed anywhere, as long the destination has a shipping port (i.e., Docker) 
 
-<img src="[https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/shipping.jpg]" width=500>
+<img src="https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/docs/assets/shipping.jpg" width=500>
 
 <br/>
 
