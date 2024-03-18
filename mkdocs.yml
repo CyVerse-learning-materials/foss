@@ -31,10 +31,12 @@ nav:
     - '6. Reproducibility I: Repeatability': 06_reproducibility_i.md
     - '7. Reproducibility II: Containers': 07_reproducibility_ii.md
   - FOSS+:
-    - '1. Reproducibility III: Containers II': 08_reproducibility_III.md
-    - '2. Reproducibility IV: Singularity': 09_reproducibility_IV.md
-    - '3. The HPC': 10_hpc.md
-    - '4. SQL Databases with DuckDB': 11_sql_duckdb.md
+    - Home: plus_index.md
+    - Lessons:
+      - '1. Reproducibility III: Containers II': 08_reproducibility_III.md
+      - '2. Reproducibility IV: Singularity': 09_reproducibility_IV.md
+      - '3. The HPC': 10_hpc.md
+      - '4. SQL Databases with DuckDB': 11_sql_duckdb.md
   - Capstone Project:
       - 'Overview': final_project/overview.md
 
