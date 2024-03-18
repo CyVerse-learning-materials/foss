@@ -21,7 +21,7 @@ The workshop structure and schedule will be the same as FOSS: Thursdays 11am - 1
 
 ## Expected Outcomes
 
-!!! success
+!!! success ""
 
     - Be able to build your own Container from a public containerized image.
     - Be able to  deploy personalized images onto the HPC.
