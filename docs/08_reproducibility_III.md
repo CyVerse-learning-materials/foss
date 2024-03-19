@@ -9,6 +9,30 @@
 
 In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and execute Docker containers. In this lesson, we continue to explore containerization, covering how we can create our own container and the various commands necessary in order to create them.
 
+## Images vs Containers
+
+As mentioned before, there are differences between what an Image is and what Containers are. Here's a table that addresses some of these differences:
+
+|| Image | Container |
+|:---:|---|---|
+| **What** | A snapshot of an application <br> containing code, libraries, dependencides <br> and files needed for the application to run | A runtime instance of the Docker image |
+| **When** | Created through a Dockerfile | Runtime executed after Image is created |
+| **Why** | Reproducibility and consistency! | Reproducibility and consistency! |
+| **Where** | Stored in an online registry (e.g., [Docker Hub](https://hub.docker.com/)) | Executed on your machine |
+
+Once an Image is created, one can run as many Containers of it as required. Here's a Dockerfile-to-container diagram:
+
+``` mermaid
+graph LR
+    A[Dockerfile] --> |Local build| B{Image}:::colorclass;
+    B --> |storage| C[Online Registry];
+    C ---> |Image pull to local <br> and Execution| D[Container];
+    B ----> |Local Execution| E[Container];
+    B ----> |Local Execution| F[Container];
+    B ----> |Local Execution| G[Container]
+    classDef colorclass fill:#f96
+```
+
 ## Dockerfiles and Instructions
 
 `docker run` starts a container and executes the default "entrypoint", or any other "command" that follows `run` and any optional flags. These commands are specified within a Dockerfile. 
@@ -21,59 +45,24 @@ In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and
     These commands can include specifying the base image to use, copying files into the image, setting environment variables, running commands, and defining entry points and default commands to run when a container is started from the image. The Dockerfile is processed by the docker build command, which creates a Docker image that can be used to run containers.
     
     ```
-    FROM pdal/pdal:latest
-
-    WORKDIR /app
-
-    COPY pdal_copc.sh /app/pdal_copc.sh
-
-    COPY copc.json /app/copc.json
-
-    RUN chmod +x pdal_copc.sh
-
-    ENTRYPOINT ["/app/pdal_copc.sh"]
+    FROM pdal/pdal:latest                   # Tells the Dockerfile which image to pull from
+                                            # 
+    WORKDIR /app                            # Sets the initial working directory
+                                            #
+    COPY pdal_copc.sh /app/pdal_copc.sh     # Copies a certain file from your directory to the container
+                                            #
+    COPY copc.json /app/copc.json           # Copies a certain file from your directory to the container
+                                            #
+    RUN chmod +x pdal_copc.sh               # Runs a specific command (in this case, adds specific permissions)
+                                            #
+    ENTRYPOINT ["/app/pdal_copc.sh"]        # Sets the first command activating the container
     ```
 
 ??? Tip "What is an *entrypoint*?"
 
     An entrypoint is the initial command(s) executed upon starting the Docker container. It is listed in the `Dockerfile` as `ENTRYPOINT` and can take 2 forms: as commands followed by parameters (`ENTRYPOINT command param1 param2`)  or as an executable (`ENTRYPOINT [“executable”, “param1”, “param2”]`)
 
-
-### :material-docker: push
-
-By default `docker push` will upload your local container image to the [Docker Hub](){target=_blank}
-
-We will cover `push` in more detail at the end of Day 2, but the essential functionality is the same as pull.
-
-Also, make sure that your container has the appropriate [tag](./intro.md#tag)
-
-First, make sure to log into the Docker Hub, this will allow you to download private limages, to upload private/public images:
-
-```
-docker login
-```
-
-Alternately, you can [link GitHub / GitLab accounts](https://hub.docker.com/settings/linked-accounts){target=_blank} to the Docker Hub.
-
-To push the image to the Docker Hub:
-
-```
-docker push username/imagename:tag 
-```
-
-or
-
-```
-docker push docker.io/username/imagename:tag
-```
-or, to a private registry, here we push to CyVerse private `harbor.cyverse.org` registry which uses "project" sub folders:
-
-```
-docker push harbor.cyverse.org/project/imagename:newtag 
-```
-
-
-# Building Docker Images
+## Building Docker Images
 
 Now that we are relatively comfortable with running Docker, we can look at some advanced Docker topics, such as:
 
@@ -81,7 +70,7 @@ Now that we are relatively comfortable with running Docker, we can look at some 
 - Modify an existing Dockerfile and create a new image
 - Push an image to a Registry
 
-## Requirements
+### Requirements
 
 Clone our example repository with pre-written Dockerfiles From your CodeSpace, we are going to copy a second GitHub repository onto our VM. If you are working locally, make sure that you change directories away from any other Git repository that you may have been working in.
 
@@ -207,7 +196,7 @@ Here we've installed `fortune` `cowsay` and `lolcat` as new programs into our ba
 
 !!! Warning "Best practices for building new layers"
 
-        Ever time you use the `RUN` command it is a good idea to use the `apt-get update` or `apt update` command to make sure your layer is up-to-date. This can become a problem though if you have a very large container with a large number of `RUN` layers. 
+    Ever time you use the `RUN` command it is a good idea to use the `apt-get update` or `apt update` command to make sure your layer is up-to-date. This can become a problem though if you have a very large container with a large number of `RUN` layers. 
 
 ### ENV
 
@@ -298,9 +287,42 @@ EXPOSE 8888
 The above command will expose port 8888.
 
 !!! Note
-        Running multiple containers using the same port is not trivial and would require the usage of a web server such as [NGINX](https://www.nginx.com/). However, you can have multiple containers interact with each other using [Docker Compose](compose.md).
+    Running multiple containers using the same port is not trivial and would require the usage of a web server such as [NGINX](https://www.nginx.com/). However, you can have multiple containers interact with each other using [Docker Compose](compose.md).
 
 ---
+
+### Pushing to a Registry with :material-docker: docker push
+
+By default `docker push` will upload your local container image to the [Docker Hub](){target=_blank}
+
+We will cover `push` in more detail at the end of Day 2, but the essential functionality is the same as pull.
+
+Also, make sure that your container has the appropriate [tag](./intro.md#tag)
+
+First, make sure to log into the Docker Hub, this will allow you to download private limages, to upload private/public images:
+
+```
+docker login
+```
+
+Alternately, you can [link GitHub / GitLab accounts](https://hub.docker.com/settings/linked-accounts){target=_blank} to the Docker Hub.
+
+To push the image to the Docker Hub:
+
+```
+docker push username/imagename:tag 
+```
+
+or
+
+```
+docker push docker.io/username/imagename:tag
+```
+or, to a private registry, here we push to CyVerse private `harbor.cyverse.org` registry which uses "project" sub folders:
+
+```
+docker push harbor.cyverse.org/project/imagename:newtag 
+```
 
 ## Summary of Instructions
 
