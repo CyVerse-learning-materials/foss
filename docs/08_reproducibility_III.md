@@ -293,11 +293,9 @@ The above command will expose port 8888.
 
 ### Pushing to a Registry with :material-docker: docker push
 
-By default `docker push` will upload your local container image to the [Docker Hub](){target=_blank}
+By default `docker push` will upload your local container image to the [Docker Hub](https://hub.docker.com/){target=_blank}.
 
-We will cover `push` in more detail at the end of Day 2, but the essential functionality is the same as pull.
-
-Also, make sure that your container has the appropriate [tag](./intro.md#tag)
+Also, make sure that your container has the appropriate [tag](07_reproducibility_ii.md#tag).
 
 First, make sure to log into the Docker Hub, this will allow you to download private limages, to upload private/public images:
 
@@ -313,11 +311,6 @@ To push the image to the Docker Hub:
 docker push username/imagename:tag 
 ```
 
-or
-
-```
-docker push docker.io/username/imagename:tag
-```
 or, to a private registry, here we push to CyVerse private `harbor.cyverse.org` registry which uses "project" sub folders:
 
 ```
@@ -338,3 +331,72 @@ docker push harbor.cyverse.org/project/imagename:newtag
 | `ENTRYPOINT` | Configures and run a container as an executable |
 | `USER` | Used to set User specific information |
 | `EXPOSE` |  exposes a specific port |
+
+---
+
+## Managing Data in Docker
+
+It is possible to store data within the writable layer of a container, but there are some limitations:
+
+- The data doesn’t persist when that container is no longer running, and it can be difficult to get the data out of the container if another process needs it.
+- A container’s writable layer is tightly coupled to the host machine where the container is running. You can’t easily move the data somewhere else.
+- Its better to put your data into the container **AFTER** it is built - this keeps the container size smaller and easier to move across networks.
+
+Docker offers three different ways to mount data into a container from the Docker host:
+
+- **Volumes**
+- **tmpfs mounts**
+- **Bind mounts**
+
+![vol_mount](assets/volume_mount.png/)
+
+When in doubt, volumes are almost always the right choice.
+
+### Volumes
+
+Volumes are often a better choice than persisting data in a container’s writable layer, because using a volume does not increase the size of containers using it, and the volume’s contents exist outside the lifecycle of a given container. While bind mounts (which we will see in the Advanced portion of the Camp) are dependent on the directory structure of the host machine, volumes are completely managed by Docker. Volumes have several advantages over bind mounts:
+
+- Volumes are easier to back up or migrate than bind mounts.
+- You can manage volumes using Docker CLI commands or the Docker API.
+- Volumes work on both UNIX and Windows containers.
+- Volumes can be more safely shared among multiple containers.
+- A new volume’s contents can be pre-populated by a container.
+
+??? Tip "When Should I Use the Temporary File System mount?"
+
+	If your container generates non-persistent state data, consider using a `tmpfs` mount to avoid storing the data anywhere permanently, and to increase the container’s performance by avoiding writing into the container’s writable layer. The data is written to the host's memory instead of a volume; When the container stops, the `tmpfs` mount is removed, and files written there will not be kept.
+
+Choose the `-v` flag for mounting volumes
+
+`-v` or `--volume`: Consists of three fields, separated by colon characters (:). 
+
+The fields must be in the correct order, and the meaning of each field is not immediately obvious.
+
+- The **first** field is the path on your **local machine** that where the data are.
+- The **second** field is the path where the file or directory are **mounted in the container**.
+- The third field is optional, and is a comma-separated list of options, such as `ro` (read only).
+
+```
+-v /home/username/your_data_folder:/container_folder
+```
+
+```
+$ docker run -v /home/$USER/read_cleanup:/work alpine:latest ls -l /work
+```
+
+So what if we wanted to work interactively inside the container?
+
+```
+$ docker run -it -v /home/$USER/read_cleanup:/work alpine:latest sh
+```
+
+```
+$ ls -l 
+$ ls -l work
+```
+
+Once you're in the container, you will see that the `/work` directory is mounted in the working directory.
+
+Any data that you add to that folder outside the container will appear INSIDE the container. And any work you do inside the container saved in that folder will be saved OUTSIDE the container as well.
+
+---
