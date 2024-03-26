@@ -16,21 +16,92 @@ Through FOSS and FOSS+ we have learned about container technology and how it can
 
 Similar to Docker, Singularity/Apptainer is a powerful tool that enables researchers to package entire environments, including software dependencies and libraries, into a single executable file.
 
-**Unlike other containerization platforms, Singularity/Apptainer is designed with HPC in mind, allowing seamless integration with cluster computing environments.**
+**Unlike other containerization platforms, Singularity/Apptainer is designed with [HPC](https://en.wikipedia.org/wiki/High-performance_computing) in mind, allowing seamless integration with cluster computing environments.**
 
 The biggest difference between Docker and Singularity/Apptainer, is that with the latter *you do **not** require sudo priviledges*. Exciting!
 
 In this workshop, we are going to learn how we can use Singularity/Apptainer on the UA HPC, covering orientation of the HPC, and executing Singularity/Apptainer control commands.
 
-## HPC: The Basics
+---
+
+## A 10,000ft View of the HPC
+
+[Next week](10_hpc.md) (Apr 04th) [Chris Reidy](https://datascience.arizona.edu/person/chris-reidy) from [UITS](https://it.arizona.edu/) is going to talk in more details regarding the hardware specifications of the UA HPC systems. 
+
+Here, we are going to concentrate on *HOW* to operate the HPC system as a general user.
+
+!!! warning "Who is this lesson for?"
+    This workshop is  primarely aimed to UA students, grad students, faculty and staff as being part of the University of Arizona grants you access to the UA HPC. 
+    
+    If you are not part of UA... *you're still very welcome to take part of this lesson!* You may not be able to execute the commands but you can still walk out of this with a good understanding of your institution's own HPC and Singularity/Apptainer. Everyone's welcome!
 
 Resources:
+
 
   - https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990696/User+Guide
   - https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990091/HPC+High+Performance+Storage
 
 ### Logging onto the HPC
+
+If you have a UA account, to connect to the HPC you need to use `ssh` ([Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)). Open a terminal, and type:
+
+```
+ssh <UA username>@hpc.arizona.edu
+```
+
+Type your UA password and if successful you'll be greeted with a two-factor login. Select which choice, and complete the authentification. Once you are past the authentification steps, you will enter the [Bastion server](https://en.wikipedia.org/wiki/Bastion_host). This step has 2 purposes: 
+
+1. Protect from attacks.
+2. Select what HPC system you want to use.
+
+!!! warning "Note: the Bastion server is NOT YET the HPC! Here you cannot submit jobs or run analyes. Type `shell` in order to select what system you want to use."
+
+The whole process (from logging to selecting the system) looks like the following:
+
+```
+ssh cosi@hpc.arizona.edu
+(cosi@hpc.arizona.edu) Password: 
+(cosi@hpc.arizona.edu) Duo two-factor login for cosi
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-8418
+ 2. SMS passcodes to XXX-XXX-8418
+
+Passcode or option (1-2): 1
+Success. Logging you in...
+Last login: Tue Mar 26 14:52:39 2024 from dhcp-10-132-212-1.uawifi.arizona.edu
+This is a bastion host used to access the rest of the RT/HPC environment.
+
+Type "shell" to access the job submission hosts for all environments
+-----------------------------------------
+
+[cosi@gatekeeper ~]$ shell
+Last login: Wed Mar 20 10:30:25 2024 from gatekeeper.hpc.arizona.edu
+***
+The default cluster for job submission is Puma
+***
+Shortcut commands change the target cluster
+-----------------------------------------
+Puma:
+$ puma
+(puma) $
+Ocelote:
+$ ocelote
+(ocelote) $
+ElGato:
+$ elgato
+(elgato) $
+-----------------------------------------
+
+[cosi@wentletrap ~]$ ocelote
+(ocelote) [cosi@wentletrap ~]$
+```
+
 ### Choosing the System
+
+In the example above, we chose the Ocelote system. Notice how there are 2 other choices: Puma and El Gato.
+
 ### Checking Available Resources
 ## Launching an Interactive Node
 
@@ -39,6 +110,16 @@ Resources:
   - https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989825/Interactive+Jobs
 
 ### SLURM and Commands
+
+<figure style="display: flex; justify-content: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1200px-Slurm_logo.svg.png" alt="SLURM" style="width: 300px; margin-right: 20px;">
+    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg/revision/latest?cb=20060626052801" alt="Slurm futurama" style="height: auto; max-width: 300px;">
+</figure>
+<figcaption style="text-align: center;">
+    SLURM not <a href="https://futurama.fandom.com/wiki/Slurm style="text-decoration: none; color: blue;">Slurm</a>.
+</figcaption>
+
+All of the UA HPC systems run on a workload manager and job scheduler named [SLURM](https://slurm.schedmd.com/documentation.html) (Simple Linux Utility for Resource Management). It's designed to manage and schedule computing resources such as CPUs, GPUs, memory, and storage across a cluster of interconnected nodes.
 
 Resouces:
 
