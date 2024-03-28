@@ -278,17 +278,31 @@ Following are a list of useful flags (options) for setting up the interactive no
 |-n |	1 |	Number of CPUs requested per node	| interactive -n 8 |
 | -m | 4GB |	Memory per CPU | interactive -m 5GB |
 | -a |	none |	Account (group) to charge |	interactive -a datalab |
-|--partition=<partition> |	windfall	| Partition to determine CPU time charges and is set to windfall when no account is specified, and is set to standard when an account is provided. | interactive --partition=windfall |
+|--partition=<x> |	windfall	| Partition to determine CPU time charges and is set to windfall when no account is specified, and is set to standard when an account is provided. | interactive --partition=windfall |
 | -t |	01:00:00 |	Time allocated to session. | interactive -t 08:00:00 |
 | -N	| 1 |	Number of nodes. | There is no reason to exceed 1 node unless the number of CPUs requested is greater than the number of CPUs per node on a given cluster.	| (in el gato, where number of CPU per node is 16 max ) interactive -n 32 -N 2 |
 
 An example for an interactive node is:
 
 ```
-interactive -n 8 -m 16 -a datalab --partition=standard -t 02:00:00 
+interactive -n 8 -m 16GB -a datalab -t 02:00:00 
 ```
 
-The above example will request an interactive node with 8 cores, 16GB RAM, "charging" the datalab, running for 2 hours and with the standard queue time. Try it!  
+The above example will request an interactive node with 8 cores, 16GB RAM, "charging" the datalab, running for 2 hours. Try it!  
+
+!!! Note "Modules"
+    There are 100s of tools installed on the HPC, few of which are available on the login screen. These tools are available only during a batch job submission or within interactive jobs.
+
+    To see what tools are already running, or which are available, you will need to use the `module` command.
+
+    !!! tip "Helpful `module` commands"
+        |Command|Purpose|
+        |-|-|
+        |`module list`| Lists loaded modules|
+        |`module avail`| Lists available modules|
+        |`module spider`| Lists ALL modules|
+        |`module load`| Loads a module|
+        |`module help`| Help command!|
 
 ---
 
