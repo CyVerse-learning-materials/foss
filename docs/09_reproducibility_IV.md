@@ -271,6 +271,25 @@ An **interactive node**, unlike batch jobs which are run asynchronously, allows 
     
     Disclaimer: you may require to wait longer as your job is going to fall in the `windfall` queue.
 
+Following are a list of useful flags (options) for setting up the interactive node.
+
+|Flag|Default value| Description| Example|
+|-|-|-|-|
+|-n |	1 |	Number of CPUs requested per node	| interactive -n 8 |
+| -m | 4GB |	Memory per CPU | interactive -m 5GB |
+| -a |	none |	Account (group) to charge |	interactive -a datalab |
+|--partition=<partition> |	windfall	| Partition to determine CPU time charges and is set to windfall when no account is specified, and is set to standard when an account is provided. | interactive --partition=windfall |
+| -t |	01:00:00 |	Time allocated to session. | interactive -t 08:00:00 |
+| -N	| 1 |	Number of nodes. | There is no reason to exceed 1 node unless the number of CPUs requested is greater than the number of CPUs per node on a given cluster.	| (in el gato, where number of CPU per node is 16 max ) interactive -n 32 -N 2 |
+
+An example for an interactive node is:
+
+```
+interactive -n 8 -m 16 -a datalab --partition=standard -t 02:00:00 
+```
+
+The above example will request an interactive node with 8 cores, 16GB RAM, "charging" the datalab, running for 2 hours and with the standard queue time. Try it!  
+
 ---
 
 ## Singularity/Apptainer
