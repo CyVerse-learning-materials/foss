@@ -193,7 +193,7 @@ Likely, this will output 100s of lines, therefore if you want to check on your o
 
 <figure style="display: flex; justify-content: center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1200px-Slurm_logo.svg.png" alt="SLURM" style="width: 300px; margin-right: 20px;">
-    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="height: auto;">
+    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="max-width: 300px;">
 </figure>
 <figcaption style="text-align: center;">
     SLURM not <a href="https://futurama.fandom.com/wiki/Slurm" style="text-decoration: none; color: blue;">Slurm</a>.
@@ -261,6 +261,8 @@ As we are not going to be using batch submissions, we are not going to be going 
 
 #### Launching an Interactive Node
 
+An **interactive node**, unlike batch jobs, allows immediate access to 
+
 Resources:
 
   - https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989825/Interactive+Jobs
@@ -298,8 +300,6 @@ The technology behind Singularity/Apptainer is similar to the one of Docker, but
     :octicons-container-24:  Can run and modify any existing Docker image
 
       - These key differences allow Singularity to be installed on most HPC centers. Because you can run virtually all Docker containers in Singularity, you can effectively run Docker on an HPC. 
-
-
 
 ### Executable Commands
  
