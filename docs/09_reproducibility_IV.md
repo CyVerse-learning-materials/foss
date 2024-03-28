@@ -275,12 +275,12 @@ Following are a list of useful flags (options) for setting up the interactive no
 
 |Flag|Default value| Description| Example|
 |-|-|-|-|
-|-n |	1 |	Number of CPUs requested per node	| interactive -n 8 |
-| -m | 4GB |	Memory per CPU | interactive -m 5GB |
-| -a |	none |	Account (group) to charge |	interactive -a datalab |
-|--partition=<x> |	windfall	| Partition to determine CPU time charges and is set to windfall when no account is specified, and is set to standard when an account is provided. | interactive --partition=windfall |
-| -t |	01:00:00 |	Time allocated to session. | interactive -t 08:00:00 |
-| -N	| 1 |	Number of nodes. | There is no reason to exceed 1 node unless the number of CPUs requested is greater than the number of CPUs per node on a given cluster.	| (in el gato, where number of CPU per node is 16 max ) interactive -n 32 -N 2 |
+| `-n` |	1 |	Number of CPUs requested per node	| interactive -n 8 |
+| `-m` | 4GB |	Memory per CPU | interactive -m 5GB |
+| `-a` |	none |	Account (group) to charge |	interactive -a datalab |
+| `--partition=` |	windfall	| Partition to determine CPU time charges and is set to windfall when no account is specified, and is **set to standard when an account is provided.** | interactive --partition=windfall |
+| `-t` |	01:00:00 |	Time allocated to session. | interactive -t 08:00:00 |
+| `-N`	| 1 |	Number of nodes. | There is no reason to exceed 1 node unless the number of CPUs requested is greater than the number of CPUs per node on a given cluster.	| (in el gato, where number of CPU per node is 16 max ) interactive -n 32 -N 2 |
 
 An example for an interactive node is:
 
@@ -338,7 +338,7 @@ The technology behind Singularity/Apptainer is similar to the one of Docker, but
 
       - These key differences allow Singularity to be installed on most HPC centers. Because you can run virtually all Docker containers in Singularity, you can effectively run Docker on an HPC. 
 
-### Executable Commands
+### General Executable Commands
  
 Resources:
 
@@ -347,19 +347,18 @@ Resources:
   - https://cc.cyverse.org/singularity/advanced/
 
 
-Singularity’s [command line interface](https://sylabs.io/guides/3.9/user-guide/cli.html){target=_blank} allows you to build and interact with containers transparently. You can run programs inside a container as if they were running on your host system. You can easily redirect IO, use pipes, pass arguments, and access files, sockets, and ports on the host system from within a container.
+Apptainer’s [command line interface](https://apptainer.org/docs/user/main/cli.html){target=_blank} allows you to build and interact with containers transparently. You can run programs inside a container as if they were running on your host system. You can easily redirect IO, use pipes, pass arguments, and access files, sockets, and ports on the host system from within a container.
 
 #### :octicons-container-24: help
 
-The `help` command gives an overview of Singularity options and
-subcommands as follows:
+The `help` command gives an overview of Apptainer options and subcommands as follows:
 
 ```
- $ singularity help pull
+ $ apptainer help pull
 Pull an image from a URI
 
 Usage:
-  singularity pull [pull options...] [output file] <URI>
+  apptainer pull [pull options...] [output file] <URI>
 
 Description:
   The 'pull' command allows you to download or build a container from a given
@@ -370,7 +369,7 @@ Description:
 
   docker: Pull a Docker/OCI image from Docker Hub, or another OCI registry.
       docker://user/image:tag
-    
+
   shub: Pull an image from Singularity Hub
       shub://user/image:tag
 
@@ -378,67 +377,77 @@ Description:
       oras://registry/namespace/image:tag
 
   http, https: Pull an image using the http(s?) protocol
-      https://library.sylabs.io/v1/imagefile/library/default/alpine:latest
+      https://example.com/alpine.sif
 
 Options:
-      --arch string      architecture to pull from library (default "amd64")
-      --dir string       download images to the specific directory
-      --disable-cache    dont use cached images/blobs and dont create them
-      --docker-login     login to a Docker Repository interactively
-  -F, --force            overwrite an image file if it exists
-  -h, --help             help for pull
-      --library string   download images from the provided library
-      --no-cleanup       do NOT clean up bundle after failed build, can be
-                         helpful for debugging
-      --no-https         use http instead of https for docker:// oras://
-                         and library://<hostname>/... URIs
+      --arch string           architecture to pull from library (default
+                              "amd64")
+      --arch-variant string   architecture variant to pull from library
+      --dir string            download images to the specific directory
+      --disable-cache         do not use or create cached images/blobs
+      --docker-host string    specify a custom Docker daemon host
+      --docker-login          login to a Docker Repository interactively
+  -F, --force                 overwrite an image file if it exists
+  -h, --help                  help for pull
+      --library string        download images from the provided library
+      --no-cleanup            do NOT clean up bundle after failed build,
+                              can be helpful for debugging
+      --no-https              use http instead of https for docker://
+                              oras:// and library://<hostname>/... URIs
 
 
 Examples:
-  From Sylabs cloud library
-  $ singularity pull alpine.sif library://alpine:latest
+  From a library
+  $ apptainer pull alpine.sif library://alpine:latest
 
   From Docker
-  $ singularity pull tensorflow.sif docker://tensorflow/tensorflow:latest
+  $ apptainer pull tensorflow.sif docker://tensorflow/tensorflow:latest
+  $ apptainer pull --arch arm --arch-variant 6 alpine.sif docker://alpine:latest
 
   From Shub
-  $ singularity pull singularity-images.sif shub://vsoch/singularity-images
+  $ apptainer pull apptainer-images.sif shub://vsoch/apptainer-images
 
   From supporting OCI registry (e.g. Azure Container Registry)
-  $ singularity pull image.sif oras://<username>.azurecr.io/namespace/image:tag
+  $ apptainer pull image.sif oras://<username>.azurecr.io/namespace/image:tag
 
 
-For additional help or support, please visit https://www.sylabs.io/docs/
+For additional help or support, please visit https://apptainer.org/help/
 ```
 
 
 #### :octicons-container-24: search
 
-Just like with Docker, you can `search` the Singularity container registries for images.
+Just like with Docker, you can `search` the Apptainer container [registries](https://apptainer.org/docs/user/1.0/library_api.html) for images.
 
 ```
-singularity search tensorflow
+$ apptainer search tensorflow
 ```
 
 #### :octicons-container-24: pull
 
-The easiest way to use a Singularity is to `pull` an existing container
-from one of the Registries.
-!@
-```
-singularity pull library://lolcow
-```
+The easiest way to use a Apptainer is to `pull` an existing container from one of the Registries.
 
 ```
-singularity pull docker://<yourusername>/cowsay
+$ apptainer pull library://lolcow
 ```
 
-### Downloading pre-built images
+Not only you can pull fromt the Apptainer registries/libraries, but you can pull from Docker.
 
-You can use the `pull` command to download pre-built images from a
-number of Container Registries, here we'll be focusing on the
-[Singularity-Hub](https://www.singularity-hub.org) or
-[DockerHub](https://hub.docker.com/).
+```
+$ apptainer pull docker://alpine
+```
+
+!!! Note "In my humble opinion..."
+
+    This is whre Apptainer shines: you can pull from Docker and run Docker built images on the HPC! These are automatically converted to Apptainer images (`.sif`) and executable on the HPC!
+
+!!! tip "... so where are the Apptainer `.sif` images stored?"
+
+    Right where in the directory you are pulling them to. Check with `cd`!
+
+### Obtaining Images
+
+As metioned earlier, you can use the `pull` command to download pre-built images from a number of Container Registries, here we'll be focusing on the [DockerHub](https://hub.docker.com/).
 
 Container Registries:
 
@@ -450,7 +459,6 @@ Container Registries:
 -   `arch://` - Arch Linux
 -   `busybox://` - BusyBox
 -   `zypper://` - zypper based systems such as Suse and OpenSuse
-
 -   `shub://` - (archived) images hosted on Singularity Hub, no longer maintained
 
 #### Pulling an image from Singularity Hub
@@ -459,131 +467,80 @@ Similar to previous example, in this example I am pulling a base Ubuntu
 container from Singularity-Hub:
 
 ```
-$ singularity pull shub://singularityhub/ubuntu
-WARNING: Authentication token file not found : Only pulls of public images will succeed
-88.58 MiB / 88.58 MiB [===============================================================================================] 100.00% 31.86 MiB/s 2s
+$ apptainer pull shub://singularityhub/ubuntu
+INFO:    Downloading shub image
+88.6MiB / 88.6MiB [=============================================================================] 100 % 39.1 MiB/s 0s
 ```
 
-You can rename the container using the --name flag:
+!!! tip "Re/naming"
+    You can give the  the container using the `--name` flag: such as `apptainer pull --name my-own-ubuntu-pulled-image.sif shub://singularityhub/ubuntu`
 
-```
-$ singularity pull --name ubuntu_test.simg shub://singularityhub/ubuntu
-WARNING: Authentication token file not found : Only pulls of public images will succeed
-88.58 MiB / 88.58 MiB [===============================================================================================] 100.00% 35.12 MiB/s 2s
-```
-
-The above command will save the alpine image from the Container Library
-as `alpine.sif`
 
 #### Pulling an image from Docker Hub
 
-This example pulls an `ubuntu:16.04` image from DockerHub and saves it
-to the working directory.
+This example pulls an `ubuntu:22.04` image from DockerHub and saves it to the working directory.
 
 ```
-$ singularity pull docker://ubuntu:20.04
+$ apptainer pull docker://ubuntu:22.04
 INFO:    Converting OCI blobs to SIF format
 INFO:    Starting build...
 Getting image source signatures
-Copying blob 8f6b7df711c8 done
-Copying blob 0703c52b8763 done
-Copying blob 07304348ce1b done
-Copying blob 4795dceb8869 done
-Copying config 05ac933964 done
+Copying blob bccd10f490ab done
+Copying config ca2b0f2696 done
 Writing manifest to image destination
 Storing signatures
-2020/03/09 16:14:12  info unpack layer: sha256:8f6b7df711c8a4733138390ff2aba1bfeb755bf4736c39c6e4858076c40fb5eb
-2020/03/09 16:14:13  info unpack layer: sha256:0703c52b8763604318dcbb1730c82ad276a487335ecabde2f43f69a6222e8090
-2020/03/09 16:14:13  info unpack layer: sha256:07304348ce1b6d24f136a3c4ebaa800297b804937a6942ce9e9fe0dac0b0ca74
-2020/03/09 16:14:13  info unpack layer: sha256:4795dceb8869bdfa64f3742e1df492e6f31baf9cfc36f1a042a8f981607e99a2
+2024/03/27 20:14:50  info unpack layer: sha256:bccd10f490ab0f3fba61b193d1b80af91b17ca9bdca9768a16ed05ce16552fcb
 INFO:    Creating SIF file...
-INFO:    Build complete: ubuntu_20.04.sif
 ```
 
-!!! Warning
+### Interacting with Images
 
-    Pulling Docker images reduces reproducibility. If you were to pull a
-    Docker image today and then wait six months and pull again, you are not
-    guaranteed to get the same image. If any of the source layers has
-    changed the image will be altered. If reproducibility is a priority for
-    you, try building your images from the Container Library.
+You can interact with images in several ways such as `run`, `shell` and `exec`.
 
-#### Pulling an image from Sylabs cloud library
-
-Let’s use an easy example of `alpine.sif` image from the [container
-library](https://cloud.sylabs.io/library/)
-
-!!! Tip
-    You can use `singularity search <name>` command to locate groups,
-    collections, and containers of interest on the Container Library
-
-### Interact with images
-
-You can interact with images in several ways such as `shell`, `exec` and
-`run`.
-
-For these examples we will use a `cowsay_latest.sif` image that can be
-pulled from the Docker Hub.
+For these examples we will use a `cowsay_latest.sif` image that can be pulled from the Docker Hub.
 
 ```
-$ singularity pull docker://tswetnam/cowsay
-INFO:    Downloading library image
- 67.00 MiB / 67.00 MiB [=====================================================================================================] 100.00% 5.45 MiB/s 12s
-WARNING: unable to verify container: cowsay_latest.sif
-WARNING: Skipping container verification
+$ apptainer pull docker://tswetnam/cowsay
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob 05e030abce7b done
+Copying blob b4624b3efe06 done
+Copying blob 6cf436f81810 done
+Copying blob 987088a85b96 done
+Copying blob d42beb8ded59 done
+Copying config ee9e20351a done
+Writing manifest to image destination
+Storing signatures
+2024/03/27 20:16:29  info unpack layer: sha256:6cf436f81810f067c6d4ffca6793eae7cb6d38456715b0707d8a5a2d1acccf12
+2024/03/27 20:16:29  warn rootless{dev/full} creating empty file in place of device 1:7
+2024/03/27 20:16:29  warn rootless{dev/null} creating empty file in place of device 1:3
+2024/03/27 20:16:29  warn rootless{dev/ptmx} creating empty file in place of device 5:2
+2024/03/27 20:16:29  warn rootless{dev/random} creating empty file in place of device 1:8
+2024/03/27 20:16:29  warn rootless{dev/tty} creating empty file in place of device 5:0
+2024/03/27 20:16:29  warn rootless{dev/urandom} creating empty file in place of device 1:9
+2024/03/27 20:16:29  warn rootless{dev/zero} creating empty file in place of device 1:5
+2024/03/27 20:16:30  info unpack layer: sha256:987088a85b9606eb474a365eb210db765ff0d011ee099a6e3de5087435c6f966
+2024/03/27 20:16:30  info unpack layer: sha256:b4624b3efe0617e59ed3998407eafdbe1cb6451346a6cabd066b6e253f50efb1
+2024/03/27 20:16:30  info unpack layer: sha256:d42beb8ded595df5627ad4ef31bf528a6fdbfbd11d82f9023152738d6b05a7fa
+2024/03/27 20:16:30  info unpack layer: sha256:05e030abce7b562606031bcc54646a868984685f4c89c7c354f34f1f6e502917
+INFO:    Creating SIF file..
 
-$ sudo singularity run cowsay_latest.sif
- ________________________________________
-/ Expect a letter from a friend who will \
-\ ask a favor of you.                    /
- ----------------------------------------
-    \   ^__^
-     \  (oo)\_______
-        (__)\       )\/\
-        ||----w |
-        ||     ||
+$ ls
+alpine_latest.sif  lolcow_latest.sif  ubuntu_22.04.sif  cowsay_latest.sif
 ```
 
-#### :octicons-container-24: shell
+#### :octicons-container-24: run
 
-The `shell` command allows you to spawn a new shell within your
-container and interact with it as though it were a small virtual
-machine.
+Apptainer containers contain [runscripts](https://www.sylabs.io/guides/3.0/user-guide/definition_files.html#runscript). These are user defined scripts that define the actions a container should perform when someone runs it. The runscript can be triggered with the `run` command, or simply by calling the container as though it were an executable.
 
 ```
-$ singularity shell cowsay_latest.sif
-  Singularity cowsay_latest.sif:~>
-```
-
-The change in prompt indicates that you have entered the container
-(though you should not rely on that to determine whether you are in
-container or not).
-
-Once inside of a Singularity container, you are the same user as you are
-on the host system.
-
-```
-$ Singularity cowsay_latest.sif:~> whoami
-tswetnam
-```
-
-!!! Warning
-    `shell` also works with the library://, docker://, and shub:// URIs.
-    This creates an ephemeral container that disappears when the shell is
-    exited.
-
-
-#### :octicons-container-24: exec
-
-The exec command allows you to execute a custom command within a
-container by specifying the image file. For instance, to execute the
-`cowsay` program within the cowsay\_latest.sif container:
-
-```
-$ singularity exec cowsay_latest.sif cowsay container camp rocks
-______________________
-< container camp rocks >
- ----------------------
+$ apptainer run cowsay_latest.sif
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+ ____________________________________
+/ Q: Do you know what the death rate \
+\ around here is? A: One per person. /
+ ------------------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\
@@ -591,33 +548,45 @@ ______________________
                 ||     ||
 ```
 
-`exec` also works with the library://, docker://, and shub:// URIs. 
+#### :octicons-container-24: shell
+
+The `shell` command allows you to spawn a new shell within your container and interact with it as though it were a small virtual machine.
 
 ```
-singularity exec library://lolcow container camp 2022
+$ apptainer shell cowsay_latest.sif
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+(ocelote) Apptainer>
 ```
 
-This  creates an ephemeral container that executes a command and disappears.
+The change in prompt indicates that you have entered the container (though you should not rely on that to determine whether you are in container or not).
 
-#### :octicons-container-24: run
-
-Singularity containers contain
-[runscripts](https://www.sylabs.io/guides/3.0/user-guide/definition_files.html#runscript).
-These are user defined scripts that define the actions a container
-should perform when someone runs it. The runscript can be triggered with
-the `run` command, or simply by calling the container as though it were
-an executable.
+Once inside of a Apptainer container, you are the same user as you are on the host system.
 
 ```
-singularity run lolcow_latest.sif
+(ocelote) Apptainer> whoami
+cosi
+```
+
+!!! tip "Type `exit` to exit the container."
+
+!!! Warning "The more you know :material-star-shooting:"
+    `shell` also works with the `library://`, `docker://`, and `shub://` URIs.
+    This creates an **ephemeral container**\* that disappears when the shell is
+    exited.
+
+    **Ephemeral container**\*: a short-lived container instance that is created dynamically to perform a specific task or process and then terminated once the task is complete. These containers are typically used for one-off jobs, temporary operations, or short-duration tasks within a larger computing environment.
+
+
+#### :octicons-container-24: exec
+
+The exec command allows you to execute a custom command within a container by specifying the image file. For instance, to execute the `cowsay` program within the `cowsay_latest.sif` container:
+
+```
+$ apptainer exec cowsay_latest.sif cowsay whoaaaa the grass is soooo green inside the HPC!
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
  _________________________________________
-/  You will remember, Watson, how the     \
-| dreadful business of the Abernetty      |
-| family was first brought to my notice   |
-| by the depth which the parsley had sunk |
-| into the butter upon a hot day.         |
-|                                         |
-\ -- Sherlock Holmes                      /
+/ whoaaaa the grass is soooo green inside \
+\ the HPC!                                /
  -----------------------------------------
         \   ^__^
          \  (oo)\_______
@@ -626,28 +595,18 @@ singularity run lolcow_latest.sif
                 ||     ||
 ```
 
+This  also creates an ephemeral container that executes a command and disappears.
+
 #### :octicons-container-24: inspect
 
 The `inspect` command will provide information about labels, metadata, and environmental variables.
 
 ```
-singularity inspect lolcow.sif
+$ apptainer inspect cowsay_latest.sif
+org.label-schema.build-arch: amd64
+org.label-schema.build-date: Wednesday_27_March_2024_20:16:32_MST
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.apptainer.version: 1.2.5-1.el7
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: tswetnam/cowsay
 ```
-
-```
-singularity inspect library://lolcow
-```
-
-#### :octicons-container-24: build
-
-See [Next Section](../singularity/advanced.md) for details of `build`
-
-
-
-## NextFlow on the HPC
-
-Resources:
-
-- https://training.nextflow.io/basic_training/executors/
-- https://lescailab.unipv.it/guides/eos_guide/use_nextflow.html
-- Example: https://nf-co.re/smartseq2/dev/docs/usage
