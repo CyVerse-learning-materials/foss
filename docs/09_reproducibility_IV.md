@@ -193,7 +193,7 @@ Likely, this will output 100s of lines, therefore if you want to check on your o
 
 <figure style="display: flex; justify-content: center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1200px-Slurm_logo.svg.png" alt="SLURM" style="width: 300px; margin-right: 20px;">
-    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="max-width: 300px;">
+    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="width: 300px;">
 </figure>
 <figcaption style="text-align: center;">
     SLURM not <a href="https://futurama.fandom.com/wiki/Slurm" style="text-decoration: none; color: blue;">Slurm</a>.
@@ -261,11 +261,15 @@ As we are not going to be using batch submissions, we are not going to be going 
 
 #### Launching an Interactive Node
 
-An **interactive node**, unlike batch jobs, allows immediate access to 
+An **interactive node**, unlike batch jobs which are run asynchronously, allows immediate access to compute. Similar to batch jobs, interactive nodes are submitted to the queue, but once available, you will receive a prompt for a node with the selected resources. Read more on how to launch interactive jobs in [the official documentation](https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989825/Interactive+Jobs).
 
-Resources:
+!!! tip "The Quick and Dirty"
 
-  - https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989825/Interactive+Jobs
+    Don't need a lot of resources and just want access to the compute?
+
+    Just type `interactive`. 
+    
+    Disclaimer: you may require to wait longer as your job is going to fall in the `windfall` queue.
 
 ---
 
