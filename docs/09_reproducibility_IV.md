@@ -199,10 +199,10 @@ Likely, this will output 100s of lines, therefore if you want to check on your o
 
 <figure style="display: flex; justify-content: center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1200px-Slurm_logo.svg.png" alt="SLURM" style="width: 300px; margin-right: 20px;">
-    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg/revision/latest?cb=20060626052801" alt="Slurm futurama" style="height: auto; max-width: 300px;">
+    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="height: auto; max-width: 300px;">
 </figure>
 <figcaption style="text-align: center;">
-    SLURM not <a href="https://futurama.fandom.com/wiki/Slurm style="text-decoration: none; color: blue;">Slurm</a>.
+    SLURM not <a href="https://futurama.fandom.com/wiki/Slurm" style="text-decoration: none; color: blue;">Slurm</a>.
 </figcaption>
 
 All of the UA HPC systems run on a workload manager and job scheduler named [SLURM](https://slurm.schedmd.com/documentation.html) (Simple Linux Utility for Resource Management). It's designed to manage and schedule computing resources such as CPUs, GPUs, memory, and storage across a cluster of interconnected nodes.
