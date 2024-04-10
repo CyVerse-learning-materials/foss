@@ -8,7 +8,8 @@ ___
 * It allows for the storage, retrieval, modification, and deletion of data in an organized manner.
 * Databases come in various types, including relational and NoSQL. Relational databases organize data into tables, which are interconnected.
 * Each table represents a related data collection and is organized into rows and columns.
-<img src="https://github.com/ua-datalab/DataEngineering/blob/main/images/unnamed.png" alt="Relational DB Image" style="height: 400px; width:500px;"/>
+
+![Relational DB Image](https://raw.githubusercontent.com/ua-datalab/DataEngineering/main/images/unnamed.png)
 
 ___
 
