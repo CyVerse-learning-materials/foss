@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 python -m mkdocs serve
 ```
-
+Open a browser and go to https://localhost:8000
 ## Cite as
 
 Michele Cosi. Jeffrey K. Gillan, Tyson L. Swetnam. (2024, May 2). CyVerse-learning-materials/foss: FOSS 2024 Spring. Zenodo. https://zenodo.org/records/11105956
