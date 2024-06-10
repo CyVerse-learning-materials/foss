@@ -6,15 +6,18 @@
 
 ![header](assets/foss_title.png)
 
+## Workshop Summary
+
+[Cyverse](https://cyverse.org) and the University of Arizona [Data Science Institute](https://datascience.arizona.edu) presents Foundational Open Science Skills (FOSS) as both a curriculum and a roadmap to guide your computational research and level up your teaching, collaboration, proposal writing, and publishing. FOSS online offers hands-on learning resources to build a solid Open Science foundation for your research and educational projects in a supportive atmosphere with peers and project mentors. 
+
+The workshop focuses on introducing you to a host of software tools to help manage your data and make your science open, reproducible, and scaleble. Please see the [Schedule](./schedule.md) for the list of lessons and content covered throughout the workshop. 
+
+
 ## Workshop Structure
 
-Synchronously, we will meet each week virtually for two hours to discuss and have hands-on activities with our instructors. 
+Synchronously, we will meet each week virtually for 1.5 hours to discuss and have hands-on activities with our instructors. The [workshop content](./01_intro_open_sci.md) is always available for you to read through to develop your own project-based ideas for strengthening your Open Science skills. 
 
-Each week we will discuss a new topic, ranging from data management to documentation to software management (see [schedule](./schedule.md)). 
-
-Asynchronously, you will read through the online materials (this website and linked websites) and develop your own project-based idea for strenghtening your Open Science skills.
-
-Much of the content interconnects from week to week and many of the skills and approaches we discuss relate to each other. 
+Much of the content interconnects from week to week and many of the skills and approaches we discuss relate to each other. However, students should be able to derive significant value from attending single sessions. 
 
 Our ultimate goal in this workshop is for you to "level up" one or more of those philosophies/approaches/skills. 
 

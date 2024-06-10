@@ -1,6 +1,6 @@
 # Weekly Schedule
 
-Thursdays 11 am - 1 pm Arizona Time.
+Thursdays 11 am - 12:30 pm Arizona Time.
     
 **This schedule is tentative and subject to change**
 
@@ -16,7 +16,7 @@ Thursdays 11 am - 1 pm Arizona Time.
 | **Week 6** | Oct. 10 | [Reproducibility I](06_reproducibility_i.md): <br> - Software installation <br> - Software management | Michele Cosi & Jeff Gillan | 
 | **Week 7** | Oct. 17 | [Reproducibility II](07_reproducibility_ii.md): <br> - Intro to Containers <br> - Running Containers | Michele Cosi & Jeff Gillan | 
 | **Week 8** | Oct. 24 | [Reproducibility III](08_reproducibility_III.md): <br> - Building Containers | Michele Cosi & Jeff Gillan |
-| **Week 9** | Oct. 31 | Remote Computing: <br> - Cyverse | Michele Cosi & Jeff Gillan |
+| **Week 9** | Oct. 31 | Remote Computing: <br> - [Cyverse](remote_computing_cyverse.md) | Michele Cosi & Jeff Gillan |
 | **Week 10**| Nov. 7  | Remote Computing: <br> - [High Performance Computing (HPC)](09_reproducibility_IV.md) | Michele Cosi & Jeff Gillan|
 | **Week 11**| Nov. 14 | Help Session | Michele Cosi & Jeff Gillan |
 | **Week 12**| Nov. 21 | Capstone Presentations | Each Student will Present!|

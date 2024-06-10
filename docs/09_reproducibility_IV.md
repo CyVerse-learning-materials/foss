@@ -1,4 +1,4 @@
-# Containers and the HPC
+# Remote Computing with High Performance Computer (HPC)
 
 <figure markdown>
   ![sin-2-app](assets/logos/sin-app-slurm.png)
