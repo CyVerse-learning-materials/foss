@@ -5,9 +5,9 @@
 
 Documentation for CyVerse Learning's Foundations of Open Science Skills (FOSS) course. 
 
-Course will take place Sept. 5 - Nov. 21, 2024, online, Every Thursday 11 am - 1 pm Arizona time
+Course will take place Sept. 5 - Nov. 21, 2024, online, Every Thursday 11 am - 12:30 pm Arizona time
 
-Contents are organized by subject, rather than day. See the schedule at https://foss.cyverse.org/schedule/
+See the schedule at https://foss.cyverse.org/schedule/
 
 ## Build
 
