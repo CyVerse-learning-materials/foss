@@ -10,7 +10,7 @@
 
 [Cyverse](https://cyverse.org) and the University of Arizona [Data Science Institute](https://datascience.arizona.edu) presents Foundational Open Science Skills (FOSS) as both a curriculum and a roadmap to guide your computational research and level up your teaching, collaboration, proposal writing, and publishing. FOSS online offers hands-on learning resources to build a solid Open Science foundation for your research and educational projects in a supportive atmosphere with peers and project mentors. 
 
-The workshop focuses on introducing you to a host of software tools to help manage your data and make your science open, reproducible, and scaleble. Please see the [Schedule](./schedule.md) for the list of lessons and content covered throughout the workshop. 
+The workshop focuses on introducing you to a host of software tools to help manage your data and make your science open, reproducible, and scaleable. Please see the [Schedule](./schedule.md) for the list of lessons and content covered throughout the workshop. 
 
 
 ## Workshop Structure
