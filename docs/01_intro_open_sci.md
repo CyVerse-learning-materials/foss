@@ -23,6 +23,24 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
 
 ## What is Open Science?
 
+* A spirit of scientists sharing data, code, methods, and early results to collegues and the rest of the world
+
+    * Scientists making their intellectual property useable so others can build on it. 
+     
+
+* Making scientific knowledge accessible to everyone
+
+* Increase transparency and accountability for research cycle
+
+    * Most science is publically funded, so it is imparative to be efficient with funds and transparent 
+
+* Fix the reproducibility crisis. 
+
+ What is Open Science | The Royal Society https://www.youtube.com/watch?v=8fGRN5fa-Ks
+
+
+
+
 If you ask a dozen researchers this question, you will probably get just as many answers.
 
 This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
@@ -36,7 +54,7 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
     
     "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
 
-    Open and Collaborative Science Network's [Open Science Manifesto](https://ocsdnet.org/manifesto/open-science-manifesto/){target=_blank}
+ 
 
 ??? Example "Six Pillars :material-pillar: of Open Science"
 
@@ -56,50 +74,7 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
 
         The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
-??? Tip "Foster Open Science Diagram"
-        
-    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
-        Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
-
-``` mermaid
-flowchart LR
-
-id1([open science]) --> id3([publishing]) & id4([data]) & id5([open source software])
-
-id3([publishing]) -->  id41([access]) & id42([reviews]) & id43([methods]) & id44([educational resources]) 
-
-id5([open source software]) --> id13([container registries]) & id10([services]) & id101([workflows]) & id12([version control systems])
-
-id12([version control systems]) --> id101([workflows])
-
-id13([container registries]) --> id101([workflows])
-
-id14([public data registry]) --> id101([workflows])
-
-id10([services]) --> id101([workflows]) 
-
-id44([educational resources]) --> id21([university libraries])
-
-id21([university libraries]) --> id101([workflows])
-
-id22([federal data archives]) --> id101([workflows]) 
-
-id4([data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
-
-id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
-
-```
-
-Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
-
-??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
-
-    Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
-    
-    (There is even a [Searchable Index](https://awesomelists.top/#/){target=_blank} of Awesome Lists)
-
-    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
 
 <br>
 
@@ -730,3 +705,48 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
         Always make certain there is a [LICENSE](https://choosealicense.com/licenses/){target=_blank} associated with any software you find on the internet. 
 
         In order for the software to be open, it must follow the [Open Source Initiative definition](https://opensource.org/osd){target=_blank}
+
+??? Tip "Foster Open Science Diagram"
+        
+    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+
+        Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
+
+``` mermaid
+flowchart LR
+
+id1([open science]) --> id3([publishing]) & id4([data]) & id5([open source software])
+
+id3([publishing]) -->  id41([access]) & id42([reviews]) & id43([methods]) & id44([educational resources]) 
+
+id5([open source software]) --> id13([container registries]) & id10([services]) & id101([workflows]) & id12([version control systems])
+
+id12([version control systems]) --> id101([workflows])
+
+id13([container registries]) --> id101([workflows])
+
+id14([public data registry]) --> id101([workflows])
+
+id10([services]) --> id101([workflows]) 
+
+id44([educational resources]) --> id21([university libraries])
+
+id21([university libraries]) --> id101([workflows])
+
+id22([federal data archives]) --> id101([workflows]) 
+
+id4([data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
+
+id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
+
+```
+
+Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
+
+??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
+
+    Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
+    
+    (There is even a [Searchable Index](https://awesomelists.top/#/){target=_blank} of Awesome Lists)
+
+    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
