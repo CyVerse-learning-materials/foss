@@ -29,8 +29,9 @@
 <span style="font-size:1.3em;">A push towards increased transparency and accountability for those receiving grant funding</span>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8fGRN5fa-Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+<iframe width="426" height="240" src="https://www.youtube.com/embed/8fGRN5fa-Ks" title="What is &#39;open science&#39;? | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  What is Open Science | The Royal Society https://www.youtube.com/watch?v=8fGRN5fa-Ks
 
