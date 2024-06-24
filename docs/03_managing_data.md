@@ -360,6 +360,21 @@ The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Gove
 -   E3. For future use
 
 
+!!! tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
+        Lydia was a Data Science Fellow at the University of Arizona, attending FOSS in the Fall of 2022. Since then, Lydia graduated from the University of Arizona's Department of Evironemtal Sciences, and published a paper on the application of the CARE principles to ecology and biodiversity research. Go Lydia!
+
+        Check it out! [Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity](https://www.nature.com/articles/s41559-023-02161-2), *Nature Ecology & Evolution*, 2023. 
+
+
+??? Note "Resources"
+
+        - [The FAIR Guiding Principles for scientific data management and stewardship](<https://www.nature.com/articles/sdata201618>)
+        - [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
+        - [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
+        - [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
+        - [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
+
+
 ### How to get to FAIR?
 
 This is a question that only you can answer, that is because it depends
@@ -539,6 +554,21 @@ https://choosealicense.com/
 https://opensource.guide/legal/
 
 
+Upon completion of a peer-reviewed science paper, the author typically 1. signs over the copyright of the paper to the publisher or 2. signs an exclusive license agreement with the publisher
+
+For example authors that publish in [_Science_](https://www.science.org/content/page/science-journals-editorial-policies#copyright-license-to-publish) retain their copyright but sign a 'license to pubish' agreement with AAAS
+
+Elsevier requires authors to sign over copyright of the article but authors retains some rights of distribution
+
+
+
+[Elesevier summary of copyright policies](https://www.elsevier.com/about/policies-and-standards/copyright#1-author-rights)
+
+[Elesevier article sharing policy](https://www.elsevier.com/about/policies-and-standards/sharing)
+
+[Wiley policy on self-archiving](https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html)
+
+[Springer Nature copyright policies](https://www.springer.com/gp/open-access/publication-policies/copyright-transfer#:~:text=Springer%20Nature%20authors%20retain%20copyright,found%20in%20our%20publishing%20policies.)
 ---
 
 ### References and Resources

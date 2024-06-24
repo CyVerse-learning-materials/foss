@@ -17,6 +17,8 @@
 
 ## What is Open Science?
 
+<br/>
+
 <span style="font-size:1.3em;">_"Open Science is transparent and accessible knowledge that is shared and developed through collaborative networks"_</span>
 
 [-Vincente-Saez & Martinez-Fuentes 2018](https://doi.org/10.1016/j.jbusres.2017.12.043)
@@ -60,6 +62,20 @@
 <br/>
 <br/>
 
+
+
+!!! Quote "Other Definitions"
+
+    "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
+
+    - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
+    
+    "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
+
+<br/>
+<br/>
+<br/>
+
 <figure markdown>
   <a href="" target="blank" rel="open science">![open science](../assets/open_science_word_cloud.png){ width="500" } </a>
     <figcaption> Open Science Word Cloud by [Pownall et al. 2023](http://dx.doi.org/10.31234/osf.io/vypkb)</figcaption>
@@ -71,24 +87,23 @@
 <br/>
 <br/>
 
-<iframe width="426" height="240" src="https://www.youtube.com/embed/8fGRN5fa-Ks" title="What is &#39;open science&#39;? | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="526" height="340" src="https://www.youtube.com/embed/8fGRN5fa-Ks" title="What is &#39;open science&#39;? | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 _What is Open Science | The Royal Society_
 
+
+
 <br/>
 <br/>
 <br/>
+<br/>
 
 
+<figure markdown>
+  <a href="" target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
+    <figcaption> The Research Life Cycle from [Open Science Framework](https://osf.io/)</figcaption>
+</figure>
 
-
-!!! Quote "Other Definitions"
-
-    "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
-
-    - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
-    
-    "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
-
+<br/>
 <br/>
 <br/>
 <br/>
@@ -111,40 +126,59 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
 <br/>
 <br/>
 
-??? Example "Six Pillars :material-pillar: of Open Science"
 
-    **:material-pillar: Open Access Publications**
+## **:material-pillar: 6 Pillars of Open Science**
 
-    **:material-pillar: Open Data**
 
-    **:material-pillar: Open Educational Resources**
+**:material-pillar: Open Access Publications**
 
-    **:material-pillar: Open Methodology**
+**:material-pillar: Open Data**
+
+**:material-pillar: Open Educational Resources**
+
+**:material-pillar: Open Methodology**
       
-    **:material-pillar: Open Peer Review**
+**:material-pillar: Open Peer Review**
 
-    **:material-pillar: Open Source Software**
+**:material-pillar: Open Source Software**
 
-    ??? Question "Wait, how many pillars :material-pillar: of Open Science Really Are There?"
+??? Question "Wait, how many pillars :material-pillar: of Open Science Are There Really?"
 
-        The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
+    The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
-# **:material-pillar: Open Access Publications**
+## **:material-pillar: Open Access Publications**
 
-[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=250}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
+[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=210}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
 
-!!! Quote "Definitions"
+!!! Quote "Definition"
 
     "Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- [OpenAccess.nl](https://www.openaccess.nl/en/what-is-open-access){target=_blank}
 
-??? Tip "New Open Access Mandates in US"
+<br>
+<br>
+<br>
 
-    The White House Office of Science and Technology (OSTP) has recently released a [policy](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/){target=_blank} stating that tax-payer funded research must by open access by 2026.
+### Types of Publishing Business Models:
 
-??? Example "Open Access Publishing"
+1. Subscription model - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).
+
+2. Open Access model - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. 
+
+    * Open Access publishing in Nature costs $12,290!
+    * Open Access publising in PlosOne costs $2,290
+
+<br>
+<br>
+<br>
+
+!!! Example "Open Access Journal Examples"
 
     Major publishers have provided access points for publishing your work 
 
@@ -164,83 +198,124 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
     
     [Ecosphere](https://esajournals.onlinelibrary.wiley.com/journal/21508925){target=_blank}
 
-??? Example "Financial Support for Open Access Publishing Fees"
+<br>
+<br>
 
-    There are mechanisms for helping to pay for the additional costs of publishing research as open access:
+### Incarnations of your Research Article 
 
-    [SciDevNet](https://www.scidev.net/global/){target=_blank}
+1. Preprint - In academic publishing, a preprint is a version of scholary paper that precedes formal peer-review and publication in a scientific journal. The preprint may be available, often as a non-typeset version available for free online. 
 
-    [Health InterNetwork Access to Research Initiative (HINARI)](http://www.emro.who.int/information-resources/hinari/){target=_blank}
+    ??? Example "Pre-print Services"
 
-    Some institutions offer support for managing publishing costs (check to see if your institution has such support):
-    
-    [University of Arizona Open Access Investment Fund](https://new.library.arizona.edu/about/awards/oa-fund){target=_blank}
-    
-    [Colorado University at Boulder Open Access Fund](https://www.colorado.edu/libraries/research/open-access/open-access-fund){target=_blank}
+        [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
 
-    [Max Planck Digital Library](https://group.springernature.com/gb/group/media/press-releases/landmark-agreement-between-springer-nature-and-mpdl/18498782){target=_blank} - German authors can have OA fees in Springer Nature research journals paid for.
+        [ESSOar](https://www.essoar.org/){target=_blank} - Earth and Space Science Open Archive hosted by the American Geophysical Union.
 
-    [Bibsam Consortium](https://www.springernature.com/gp/open-research/institutional-agreements/oaforsweden){target=_blank} - Swedish authors can have OA fees in Springer Nature research journals paid for.
+        [Peer Community In (PCI)](https://peercommunityin.org/) a free recommendation process of scientific preprints based on peer reviews
 
-??? Example "Pre-print Services"
+        [OSF.io Preprints](https://osf.io/preprints/){target=_blank} are partnered with numerous projects under the "-rXivs"
 
-    [ASAPbio Pre-Print Server List](https://asapbio.org/preprint-servers){target=_blank} - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.
+        ??? Tip "The rXivs"
 
-    [ESSOar](https://www.essoar.org/){target=_blank} - Earth and Space Science Open Archive hosted by the American Geophysical Union.
+            [AfricArXiv](https://osf.io/preprints/africarxiv/){target=_blank}
 
-    [Peer Community In (PCI)](https://peercommunityin.org/) a free recommendation process of scientific preprints based on peer reviews
+            [AgrirXiv](https://cabidigitallibrary.org/journal/agrirxiv){target=_blank}
 
-    [OSF.io Preprints](https://osf.io/preprints/){target=_blank} are partnered with numerous projects under the "-rXivs"
+            [Arabixiv](https://arabixiv.org/discover){target=_blank}
 
-    ??? Tip "The rXivs"
+            [arXiv](https://arxiv.org/){target=_blank} - is a free distribution service and an open-access archive for 2,086,431 scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.
 
-        [AfricArXiv](https://osf.io/preprints/africarxiv/){target=_blank}
+            [BioHackrXiv](https://biohackrxiv.org/){target=_blank}
 
-        [AgrirXiv](https://cabidigitallibrary.org/journal/agrirxiv){target=_blank}
+            [BioRxiv](https://www.biorxiv.org/){target=_blank} -  is an open access preprint repository for the biological sciences.
 
-        [Arabixiv](https://arabixiv.org/discover){target=_blank}
+            [BodorXiv](https://bodoarxiv.wordpress.com/){target=_blank}
 
-        [arXiv](https://arxiv.org/){target=_blank} - is a free distribution service and an open-access archive for 2,086,431 scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.
+            [EarthArXiv](https://eartharxiv.org/){target=_blank} - is an open access preprint repository for the Earth sciences.
 
-        [BioHackrXiv](https://biohackrxiv.org/){target=_blank}
+            [EcsArXiv](https://ecsarxiv.org/){target=_blank} - a free preprint service for electrochemistry and solid state science and technology
 
-        [BioRxiv](https://www.biorxiv.org/){target=_blank} -  is an open access preprint repository for the biological sciences.
+            [EdArXiv](https://edarxiv.org/){target=_blank} - for the education research community
 
-        [BodorXiv](https://bodoarxiv.wordpress.com/){target=_blank}
+            [EngrXiv](https://engrxiv.org/){target=_blank} for the engineering community
 
-        [EarthArXiv](https://eartharxiv.org/){target=_blank} - is an open access preprint repository for the Earth sciences.
+            [EvoEcoRxiv](https://www.ecoevorxiv.com/){target=_blank} - is an open acccess preprint repository for Evolutionary and Ecological sciences.
 
-        [EcsArXiv](https://ecsarxiv.org/){target=_blank} - a free preprint service for electrochemistry and solid state science and technology
+            [MediArXiv](https://mediarxiv.com/){target=_blank} for Media, Film, & Communication Studies
 
-        [EdArXiv](https://edarxiv.org/){target=_blank} - for the education research community
+            [MedRxiv](https://www.medrxiv.org/){target=_blank} - is an open access preprint repository for Medical sciences.
 
-        [EngrXiv](https://engrxiv.org/){target=_blank} for the engineering community
+            [PaleorXiv](https://paleorxiv.org/){target=_blank} - is an open access preprint repository for Paleo Sciences
 
-        [EvoEcoRxiv](https://www.ecoevorxiv.com/){target=_blank} - is an open acccess preprint repository for Evolutionary and Ecological sciences.
+            [PsyrXiv](https://psyarxiv.com/){target=_blank} - is an open access preprint repository for Psychological sciences.
 
-        [MediArXiv](https://mediarxiv.com/){target=_blank} for Media, Film, & Communication Studies
+            [SocArXiv](https://socopen.org/){target=_blank} - is an open access preprint repository for Social sciences.
 
-        [MedRxiv](https://www.medrxiv.org/){target=_blank} - is an open access preprint repository for Medical sciences.
+            [SportrXiv](https://sportrxiv.org/){target=_blank} - is an open access preprint for Sports sciences.
 
-        [PaleorXiv](https://paleorxiv.org/){target=_blank} - is an open access preprint repository for Paleo Sciences
+            [ThesisCommons](https://thesiscommons.org/) - open Theses
 
-        [PsyrXiv](https://psyarxiv.com/){target=_blank} - is an open access preprint repository for Psychological sciences.
 
-        [SocArXiv](https://socopen.org/){target=_blank} - is an open access preprint repository for Social sciences.
 
-        [SportrXiv](https://sportrxiv.org/){target=_blank} - is an open access preprint for Sports sciences.
 
-        [ThesisCommons](https://thesiscommons.org/) - open Theses
+2. Author's accepted manuscript (AAM) - includes changes that came about during peer-review process. It is a non-typeset or formatted article. This often had an embargo period of 12-24 months
 
-<br>     
+3. Published version of record (VOR) - includes stylistic edits, online & print formatting. This is the version that publishers claim ownership of with copyrights or exclusive licensing. 
 
-### **:material-pillar: Open Data**
 
-Open Data are a critical aspect of open science. There are three key attributes of Open Data:
 
-* Availability and accessibility
-* Reusability
-* Inclusivity
+
+<br>
+<br>
+
+
+  
+
+
+### New Open Access Mandates in US
+
+The White House Office of Science and Technology (OSTP) has recently released a policy document known as the [Nelson Memo](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/) stating that tax-payer funded research must by open access by 2026 with no embargo period. 
+
+Authors can comply with the memo by either:
+
+1. Publishing Open Access (this usually requires higher fees)
+
+2. Distributing the Author's Accepted Manuscript (AAM) 
+
+Read [NSF's open access plan](NSF’s Public Access Plan 2.0 is document NSF 23-104) in reponse to the Nelson Memo
+
+Read [USDA's open access plan](https://www.nal.usda.gov/sites/default/files/page-files/USDA_Public_Access_Implementation_Plan_8_10_2023_0.pdf) in reponse to the Nelson Memo
+
+<br>
+<br>
+<br>
+<br>
+
+University of Arizona Libraries information on [Open Access publishing](https://lib.arizona.edu/research/open-access) including agreements with several journals to reduce or waive publishing fees. 
+
+https://www.coalition-s.org/
+
+
+<br>  
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+---
+<br>
+<br>
+
+
+## **:material-pillar: Open Data**
+
+<br>
 
 !!! Quote "Definitions"
 
@@ -300,9 +375,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
         FAIR does not demand that data be open: See one definition of open: http://opendefinition.org/
 
-    !!! Question "Why Principles?"
 
-        FAIR is a collection of principles. Ultimately, different communities within different scientific disciplines must work to interpret and implement these principles. Because technologies change quickly, focusing on the desired end result allows FAIR to be applied to a variety of situations now and in the foreseeable future.
 
     **CARE Principles**
 
@@ -332,54 +405,15 @@ Open Data are a critical aspect of open science. There are three key attributes 
     -   E2. For justice
     -   E3. For future use
 
-    **FAIR - TLC**
-
-    *Traceable, Licensed, and Connected*
-
-    -   The need for metrics: https://zenodo.org/record/203295#.XkrzTxNKjzI
-
-    **How to get to FAIR?**
-
-    This is a question that only you can answer, that is because it depends
-    on (among other things)
-
-    1.  Your scientific discipline: Your datatypes and existing standards
-        for what constitutes acceptable data management will vary.
-    2.  The extent to which your scientific community has implemented
-        FAIR: Some disciplines have significant guidelines on FAIR, while
-        others have not addressed the subject in any concerted way.
-    3.  Your level of technical skills: Some approaches to implementing
-        FAIR may require technical skills you may not yet feel comfortable
-        with.
-
-    While a lot is up to you, the first step is to evaluate how FAIR you
-    think your data are:
-
-    ??? Question "Self FAIR assessment"
-        Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
-
-    ??? Note "Resources"
-
-        - [The FAIR Guiding Principles for scientific data management and stewardship](<https://www.nature.com/articles/sdata201618>)
-        - [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
-        - [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
-        - [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
-        - [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
-
-    !!! tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
-        Lydia was a Data Science Fellow at the University of Arizona, attending FOSS in the Fall of 2022. Since then, Lydia graduated from the University of Arizona's Department of Evironemtal Sciences, and published a paper on the application of the CARE principles to ecology and biodiversity research. Go Lydia!
-
-        Check it out! [Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity](https://www.nature.com/articles/s41559-023-02161-2), *Nature Ecology & Evolution*, 2023.  
-
-??? Tip "Linked Open Data Cloud"
     
-    [The Linked Open Data Cloud](https://lod-cloud.net/){target=_blank} shows how data are [linked to one another](https://www.w3.org/standards/semanticweb/data){target=_blank} forming the basis of the [semantic web :material-wikipedia:](https://en.wikipedia.org/wiki/Semantic_Web){target=_blank}.
+    
 
-    [![linked open data](https://lod-cloud.net/clouds/lod-cloud.svg)](https://lod-cloud.net/clouds/lod-cloud.svg){target=_blank}
+     
+
 
 <br>
 
-### **:material-pillar: Open Educational Resources**
+## **:material-pillar: Open Educational Resources**
 
 [![open educational resources](https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg){width=240}](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources)
 
@@ -425,7 +459,7 @@ Open Data are a critical aspect of open science. There are three key attributes 
 
 <br>
 
-### **:material-pillar: Open Methodology**
+## **:material-pillar: Open Methodology**
 
 [![plos open methods](https://plos.org/wp-content/uploads/2021/08/Methods-infographic-option-c-2-edit.png)](https://plos.org/open-science/open-methods/){target=_blank}
 
@@ -473,7 +507,7 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 <br>
 
-### **:material-pillar: Open Peer Review**
+## **:material-pillar: Open Peer Review**
 
 [![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
 
@@ -501,7 +535,7 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 <br>
 
-### **:material-pillar: Open Source Software**
+## **:material-pillar: Open Source Software**
 
 [![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
 
