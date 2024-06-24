@@ -12,29 +12,25 @@
     * Identify who the practitioners of Open Science are
     * Understand the underlying Ethos of Open Science
 
-## 2023: the Year of Open Science
+# What is Open Science?
 
-The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}. As the year came to a close, the governement aimed to create a spotlight through [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge&tab=overview), recognizing open science stories that addressed current societial challenges (winners to be annouced).
+<span style="font-size:1.3em;">A spirit of scientists sharing data, code, methods, and early results to collegues and society at large</span> 
 
-<figure markdown>
-  <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
-    <figcaption> The year of Open Science</figcaption>
-</figure>
+<br/>
 
-## What is Open Science?
+<span style="font-size:1.3em;">Emphasizes the production of science that is reproducible and can be built upon by others</span>
 
-* A spirit of scientists sharing data, code, methods, and early results to collegues and the rest of the world
+<br/>
 
-    * Scientists making their intellectual property useable so others can build on it. 
-     
+<span style="font-size:1.3em;">A movement toward making scientific knowledge accessible to everyone</span>
 
-* Making scientific knowledge accessible to everyone
+<br/>
 
-* Increase transparency and accountability for research cycle
+<span style="font-size:1.3em;">A push towards increased transparency and accountability for those receiving grant funding</span>
 
-    * Most science is publically funded, so it is imparative to be efficient with funds and transparent 
 
-* Fix the reproducibility crisis. 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8fGRN5fa-Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
  What is Open Science | The Royal Society https://www.youtube.com/watch?v=8fGRN5fa-Ks
 
@@ -53,6 +49,17 @@ This means that Open Science isn't necessarily a set of checkboxes you need to t
     - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
     
     "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
+
+## 2023: the Year of Open Science
+
+The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}. As the year came to a close, the governement aimed to create a spotlight through [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge&tab=overview), recognizing open science stories that addressed current societial challenges (winners to be annouced).
+
+<figure markdown>
+  <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
+    <figcaption> The year of Open Science</figcaption>
+</figure>
+
+
 
  
 
