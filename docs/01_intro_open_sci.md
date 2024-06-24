@@ -12,44 +12,86 @@
     * Identify who the practitioners of Open Science are
     * Understand the underlying Ethos of Open Science
 
-# What is Open Science?
-
-<span style="font-size:1.3em;">A spirit of scientists sharing data, code, methods, and early results to collegues and society at large</span> 
-
+<br/>
 <br/>
 
-<span style="font-size:1.3em;">Emphasizes the production of science that is reproducible and can be built upon by others</span>
+## What is Open Science?
+
+<span style="font-size:1.3em;">_"Open Science is transparent and accessible knowledge that is shared and developed through collaborative networks"_</span>
+
+[-Vincente-Saez & Martinez-Fuentes 2018](https://doi.org/10.1016/j.jbusres.2017.12.043)
 
 <br/>
-
-<span style="font-size:1.3em;">A movement toward making scientific knowledge accessible to everyone</span>
-
+<br/>
+<br/>
+<br/>
 <br/>
 
-<span style="font-size:1.3em;">A push towards increased transparency and accountability for those receiving grant funding</span>
+<span style="font-size:1.3em;">_A spirit of scientists sharing with colleagues and society at large, research materials (data, code, methods, early results) in addition to traditional publications_</span> 
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
+<span style="font-size:1.3em;">_Emphasizes science that is reproducible and can be built upon by others_</span>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<span style="font-size:1.3em;">_A movement toward making scientific knowledge accessible to everyone_</span>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<span style="font-size:1.3em;">_A push towards increased transparency and accountability for those receiving grant funding_</span>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<figure markdown>
+  <a href="" target="blank" rel="open science">![open science](../assets/open_science_word_cloud.png){ width="500" } </a>
+    <figcaption> Open Science Word Cloud by [Pownall et al. 2023](http://dx.doi.org/10.31234/osf.io/vypkb)</figcaption>
+</figure>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <iframe width="426" height="240" src="https://www.youtube.com/embed/8fGRN5fa-Ks" title="What is &#39;open science&#39;? | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+_What is Open Science | The Royal Society_
 
- What is Open Science | The Royal Society https://www.youtube.com/watch?v=8fGRN5fa-Ks
-
-
-
-
-If you ask a dozen researchers this question, you will probably get just as many answers.
-
-This means that Open Science isn't necessarily a set of checkboxes you need to tick, but rather a holistic approach to doing science. In that spirit, it can also be useful to think about Open Science as a spectrum, from less to more open. 
+<br/>
+<br/>
+<br/>
 
 
-!!! Quote "Definitions"
+
+
+!!! Quote "Other Definitions"
 
     "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
 
     - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
     
     "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
+
+<br/>
+<br/>
+<br/>
 
 ## 2023: the Year of Open Science
 
@@ -61,8 +103,13 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
 </figure>
 
 
-
- 
+<br/>
+<br/>
+<br/>
+---
+<br/>
+<br/>
+<br/>
 
 ??? Example "Six Pillars :material-pillar: of Open Science"
 
@@ -83,12 +130,11 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
         The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
 
-
 <br>
 
-### **:material-pillar: Open Access Publications**
+# **:material-pillar: Open Access Publications**
 
-[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=300}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
+[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=250}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
 
 !!! Quote "Definitions"
 
