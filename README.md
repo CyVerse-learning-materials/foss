@@ -14,6 +14,8 @@ See the schedule at https://foss.cyverse.org/schedule/
 To build the docs locally:
 
 ```
+git clone https://github.com/CyVerse-learning-materials/foss.git
+
 pip install -r requirements.txt
 
 python -m mkdocs serve
