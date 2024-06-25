@@ -29,7 +29,9 @@
 <br/>
 <br/>
 
-<span style="font-size:1.3em;">_A spirit of scientists sharing with colleagues and society at large, research materials (data, code, methods, early results) in addition to traditional publications_</span> 
+<span style="font-size:1.3em;">_"Open Science is a collaborative and transparent approach to scientific research that emphasizes the accessibility, sharing, and reproducibility of data, methodologies, and findings to foster innovation and inclusivity"_</span>
+
+-ChatGPT
 
 <br/>
 <br/>
@@ -37,33 +39,19 @@
 <br/>
 <br/>
 
-<span style="font-size:1.3em;">_Emphasizes science that is reproducible and can be built upon by others_</span>
+<span style="font-size:1.3em;">_"A series of reforms that interrogate every step in the research life cycle to make it more efficient, powerful and accountable in our emerging digital society"._</span>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<span style="font-size:1.3em;">_A movement toward making scientific knowledge accessible to everyone_</span>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<span style="font-size:1.3em;">_A push towards increased transparency and accountability for those receiving grant funding_</span>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+-Jeffrey Gillan
 
 
-
+<figure markdown>
+  <a href="" target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
+    <figcaption> The Research Life Cycle from [Open Science Framework](https://osf.io/)</figcaption>
+</figure>
+<br/>
+<br/>
+<br/>
+<br/>
 !!! Quote "Other Definitions"
 
     "Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - [UNESCO Definition](https://www.unesco.org/en/natural-sciences/open-science){target=_blank}
@@ -71,10 +59,32 @@
     - [UNESCO's Recommendation on Open Science](https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en){target=_blank}
     
     "Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." [ :material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_science){target=_blank}
+<br/>
+
+## Foundational Open Science Skills
+
+
+
+<span style="font-size:1.2em;">_1. Building a culture of scientists eager to share research materials - such as data, code, methods, documentation, and early results - with colleagues and society at large, in addition to traditional publications_</span> 
+
+<br/>
+<br/>
+
+<span style="font-size:1.2em;">_2. Mastery of digital tools to create reproducible science that others can build upon_</span>
+
+<br/>
+<br/>
+
+<span style="font-size:1.2em;">_3. Understanding the push towards increased transparency and accountability for those practicing science (ie., compliance)_</span>
 
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+
+
+
 
 <figure markdown>
   <a href="" target="blank" rel="open science">![open science](../assets/open_science_word_cloud.png){ width="500" } </a>
@@ -93,16 +103,6 @@ _What is Open Science | The Royal Society_
 
 
 <br/>
-<br/>
-<br/>
-<br/>
-
-
-<figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
-    <figcaption> The Research Life Cycle from [Open Science Framework](https://osf.io/)</figcaption>
-</figure>
-
 <br/>
 <br/>
 <br/>
@@ -201,7 +201,7 @@ The White House, joined by 10 federal agencies, and a coalition of more than 85 
 <br>
 <br>
 
-### Incarnations of your Research Article 
+### Research Article Versions 
 
 1. Preprint - In academic publishing, a preprint is a version of scholary paper that precedes formal peer-review and publication in a scientific journal. The preprint may be available, often as a non-typeset version available for free online. 
 
@@ -291,18 +291,14 @@ Read [USDA's open access plan](https://www.nal.usda.gov/sites/default/files/page
 <br>
 <br>
 
+### Addional Info
+
 University of Arizona Libraries information on [Open Access publishing](https://lib.arizona.edu/research/open-access) including agreements with several journals to reduce or waive publishing fees. 
 
 https://www.coalition-s.org/
 
 
 <br>  
-
-
-
-
-
-
 
 
 <br>
@@ -325,92 +321,126 @@ https://www.coalition-s.org/
 
     [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_data){target=_blank}
 
-??? Tip "DIKW Pyramid"
+<br>
+<br>
+<br>
+   
+<span style="font-size:1.1em;">Data are the foundation for any scientific endeavor. A lot of thought needs to go into how to best collect, store, analyze, curate, share, and archive data.</span>
+
+
+
+
+<figure markdown>
+  <a href="https://en.wikipedia.org/wiki/DIKW_pyramid" target="blank" rel="open science">![open science](https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg){ width="400" } </a>
+    <figcaption> DIKW Pyramid</figcaption>
+</figure>
+
+<br>
+<br>
+
+
+### FAIR Principles
+
+In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were published in _Scientific Data_. 
+
+_**Findable:**_
+Making data discoverable by the wider academic community and the public
+
+_**Accessible:**_
+Using unique identifiers, metadata and a clear use of language and access protocols
+
+_**Interoperable:**_
+Applying standards to encode and exchange data and metadata
+
+_**Reusable:**_
+Enabling the repurposing of researach outputs to maximize their research potential
+
+
+<br>
+<br>
+
+!!! Tip "Reasons to Make your Data Open"
+
+    * Unnecessary duplication e.g. re-collecting or re-working data, can be avoided. Duplication of research is costly for society, and places unnecessary burden on heavily researched people and populations.  
+
+    * The data underlying publications are maintained and accessible, allowing for validation of results.
+
+    * Data openness leads to more collaboration and advances research and innovation.
+
+    * Your research is more visible and has greater impact. Publications which allow access to the underlying data get more citations. Greater visibility also allows for better validation and scrutiny of findings.
+
+    * Other researchers can cite your data, which will drive up your citation number and increase your influence in your field of research.
+
+    * Storing your data in a public repository also provides you with secure and ongoing storage that may otherwise not be available to you.
+
+            - Borrowed From [Foster Open Science](https://www.fosteropenscience.eu/)
+
+
+<br>
+<br>
+<br>
+<br>
+
+### As Open as Possible, as Closed as Necessary
+
+There are many circumstances where open data could be harmful:
+
+* Data on human health
+
+* Location of endangered species or archaeological sites
+
+* Data that individuals or groups do not want to be public
+
+    ??? Tip "CARE Principles"
+
+        The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event "Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop," 8 November 2018, Gaborone, Botswana.
+
+         *Collective Benefit*
+
+         -   C1. For inclusive development and innovation
+         -   C2. For improved governance and citizen engagement
+         -   C3. For equitable outcomes
+
+         *Authority to Control*
+
+         -   A1. Recognizing rights and interests
+         -   A2. Data for governance
+         -   A3. Governance of data
+
+         *Responsibility*
+
+         -   R1. For positive relationships
+         -   R2. For expanding capability and capacity
+         -   R3. For Indigenous languages and worldviews
+
+         *Ethics*
+
+         -   E1. For minimizing harm and maximizing benefit
+         -   E2. For justice
+         -   E3. For future use
+
+* Data for making [lethal weapons](https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx)
+
+<br>
+<br>
+
+!!! Tip "Open vs. FAIR"
+
+    FAIR does not demand that data be open: See one definition of open: http://opendefinition.org/
     
-    Data are the basis of our understanding the natural world. The Data-Information-Knowledge-Wisdom (DIKW) pyramid describes for us how data are refined into information and knowledge.
-
-    [![dikw](https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg)](https://en.wikipedia.org/wiki/DIKW_pyramid){target=_blank}
-
-??? Tip "FAIR & CARE Principles"
-
-     **FAIR Principles**
-
-    In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were
-    published in Scientific Data. Read it.
-
-    *Findable*
-
-    -   F1. (meta)data are assigned a globally unique and persistent identifier
-    -   F2. data are described with rich metadata (defined by R1 below)
-    -   F3. metadata clearly and explicitly include the identifier of the data it describes
-    -   F4. (meta)data are registered or indexed in a searchable resource
-
-    *Accessible*
-
-    -   A1. (meta)data are retrievable by their identifier using a
-        standardized communications protocol
-    -   A1.1 the protocol is open, free, and universally implementable
-    -   A1.2 the protocol allows for an authentication and authorization
-        procedure, where necessary
-    -   A2. metadata are accessible, even when the data are no longer
-        available
-
-    *Interoperable*
-
-    -   I1. (meta)data use a formal, accessible, shared, and broadly
-        applicable language for knowledge representation.
-    -   I2. (meta)data use vocabularies that follow FAIR principles
-    -   I3. (meta)data include qualified references to other (meta)data
-
-    *Reusable*
-
-    -   R1. meta(data) are richly described with a plurality of accurate
-        and relevant attributes
-    -   R1.1. (meta)data are released with a clear and accessible data
-        usage license
-    -   R1.2. (meta)data are associated with detailed provenance
-    -   R1.3. (meta)data meet domain-relevant community standard
-
-    !!! Tip "Open vs. Public vs. FAIR"
-
-        FAIR does not demand that data be open: See one definition of open: http://opendefinition.org/
+    Open data does not necessarily mean it is FAIR
 
 
 
-    **CARE Principles**
 
-    The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event "Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop," 8 November 2018, Gaborone, Botswana.
+<br>
+<br>
+<br>
+<br>
+---
 
-    *Collective Benefit*
-
-    -   C1. For inclusive development and innovation
-    -   C2. For improved governance and citizen engagement
-    -   C3. For equitable outcomes
-
-    *Authority to Control*
-
-    -   A1. Recognizing rights and interests
-    -   A2. Data for governance
-    -   A3. Governance of data
-
-    *Responsibility*
-
-    -   R1. For positive relationships
-    -   R2. For expanding capability and capacity
-    -   R3. For Indigenous languages and worldviews
-
-    *Ethics*
-
-    -   E1. For minimizing harm and maximizing benefit
-    -   E2. For justice
-    -   E3. For future use
-
-    
-    
-
-     
-
-
+<br>    
+<br>
 <br>
 
 ## **:material-pillar: Open Educational Resources**
@@ -457,6 +487,15 @@ https://www.coalition-s.org/
 
     [DigitalLearn](https://www.digitallearn.org/){target=_blank}
 
+
+<br>
+<br>
+<br>
+<br>
+---
+
+<br>    
+<br>
 <br>
 
 ## **:material-pillar: Open Methodology**
@@ -506,20 +545,38 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
     To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/){target=_blank}, a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
 <br>
+<br>
+<br>
+<br>
+---
+
+<br>    
+<br> 
+<br> 
 
 ## **:material-pillar: Open Peer Review**
 
-[![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
+<br> 
+<br> 
 
-[Pros and Cons of Open Peer Review](https://doi.org/10.1038/6295){target=_blank}
 
 !!! Quote "Definitions"
 
-    Ross-Hellauer et al. (2017) ask [What is Open Peer Review?](https://doi.org/10.12688%2Ff1000research.11369.2){target=_blank} and state that there is no single agreed upon definition
+    Open peer review is an umbrella term for a number of overlapping ways that peer review models can be adapted in line with the aims of Open Science, including making reviewer and author identities open, publishing review reports and enabling greater participation in the peer review process.  
+    
+    [-Ross-Hellauer et al. (2017)](https://doi.org/10.12688%2Ff1000research.11369.2)
 
-    [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review){target=_blank}
+    <br>
 
-    A manuscript review process that includes some combination of Open Identities, Open Reports, Open Participation, and even Open Interaction
+    [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review)
+
+<br>
+<br>
+ 
+
+
+[Cons of Open Peer-Review](https://doi.org/10.1038/6295)
+
 
 ??? Tips "Open Peer Review Resources"
 
@@ -533,6 +590,30 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
 
+[![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
+
+Traditional Closed Peer-Review System
+
+Author submits paper to journal. An associate editor may do an initial read of the paper to see if it's worthy of the journal before sending out to peer-review. In a typical peer-review, the journal editor sends the manuscipt to 2 or 3 reviewers (other researchers in the field). They review the paper and send their recommendations back to the editor. The editor reads all of the reviews and makes a judgement call in terms of rejecting the paper or asking the author to make changes and resubmit. 
+Throughout the process, the reviewers know the identity of the authors, but typically they authors are blind to who the reviewers are. Many journals now offer the reviewers a chance to reveal their identity. Only a handful of people have vetted the science and know what happened during the peer-review. 
+
+There are many different types of 'Open Peer Review' systems
+
+It could include revealing the identities of the author and reviewers to each other or even publically. It could be open peer-review reports that are published online along side the article. It could mean the crowdsourcing of reviews instead of invite only. 
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+---
+
+<br>    
+<br>
 <br>
 
 ## **:material-pillar: Open Source Software**
@@ -549,7 +630,15 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 [Awesome list](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
+<br>
+<br>
+<br>
+<br>
 ---
+
+<br>    
+<br>
+<br>
 
 ## Breakout Discussion 1
 
@@ -560,7 +649,6 @@ As you already know, being a scientist requires you to wear many hats, and tryin
     <figcaption> [Bernery et al. (2022)](https://doi.org/10.7554/eLife.81075){target=_blank} Figure 2: The positive aspects of doing a PhD. </figcaption>
 </figure>
 
-As we mentioned, Open Science is not a set of boxes you need to check off to be "Certified Open", but an intersecting set of philosophies and approaches, all of which occur on some type of spectrum. 
 
 To get a feel for how Open Science can be multifaceted and different for each researcher, we will do a short breakout group session to discuss what Open Science means to you.
 
