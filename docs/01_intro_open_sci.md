@@ -45,7 +45,7 @@
 
 
 <figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
+  <a target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
     <figcaption> The Research Life Cycle from [Open Science Framework](https://osf.io/)</figcaption>
 </figure>
 <br/>
@@ -291,7 +291,7 @@ Read [USDA's open access plan](https://www.nal.usda.gov/sites/default/files/page
 <br>
 <br>
 
-### Addional Info
+### Additional Info
 
 University of Arizona Libraries information on [Open Access publishing](https://lib.arizona.edu/research/open-access) including agreements with several journals to reduce or waive publishing fees. 
 
@@ -457,7 +457,7 @@ There are many circumstances where open data could be harmful:
 
     [The Carpentries](https://carpentries.org/){target=_blank} - teaches foundational coding and data science skills to researchers worldwide  
 
-    [EdX](https://www.edx.org/){target=_blank} - Massively Online Online Courses (not all open) hosted through University of California Berkeley
+    [EdX](https://www.edx.org/){target=_blank} - Massively Open Online Courses (not all open) hosted through University of California Berkeley
 
     [EveryoneOn](https://www.everyoneon.org/ ){target=_blank} - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings 
 
@@ -500,9 +500,8 @@ There are many circumstances where open data could be harmful:
 
 ## **:material-pillar: Open Methodology**
 
-[![plos open methods](https://plos.org/wp-content/uploads/2021/08/Methods-infographic-option-c-2-edit.png)](https://plos.org/open-science/open-methods/){target=_blank}
+<br>
 
-The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} present one of the foremost platforms for sharing open methods for digital research.
 
 !!! Quote "Definitions"
 
@@ -510,7 +509,20 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     "Open Methodology refers to opening up methods that are used by researchers to achieve scientific results and making them publicly available." - [Open Science Network Austria](https://www.oana.at/en/about-open-science){target=_blank}
 
-??? Example "Protocols and Bench Techniques"
+
+<br>
+<br>
+
+### Sharing Research Computer Code
+
+The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} present one of the foremost platforms for sharing open methods for digital research.
+
+<br>
+<br>
+<br>
+<br>
+
+??? Example "Platforms for Publishing Protocols & Bench Techniques"
 
     [BioProtocol](https://bio-protocol.org/Default.aspx){target=_blank}
 
@@ -534,19 +546,30 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
     [Springer Nature Experiments](https://experiments.springernature.com/){target=_blank}
       
-??? Tip "Concept of Preregistration"
 
-    In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
+<br>
+<br>
 
-    This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [HARKing](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
+### Preregistration
 
-    What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
+In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
 
-    To learn more about preregistration, you can check out the [Open Science Foundation](https://osf.io/){target=_blank}, a project that provides a preregistration platform and other Open Science tools. You can also read this [publication](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
+This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [HARKing](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
+
+What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
+
+ You can also read this publication by [Nosek et al. 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
+
+Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
 <br>
 <br>
 <br>
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/cycle_prereg.png){ width="500" } </a>
+    <figcaption> PreRegistration in the Research Life Cycle</figcaption>
+</figure>
 <br>
 ---
 
@@ -572,39 +595,77 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 <br>
 <br>
- 
+<br>
 
 
-[Cons of Open Peer-Review](https://doi.org/10.1038/6295)
+### In a Traditional Closed Peer-review system, a submitted manuscript is:
+
+- Read by an associate editor at the journal who decides whether to reject the paper or send it out for review
+- Reviewed by 2 or 3 researchers in the field who analyze the soundness of the research and provide recommendations for acceptance or rejection
+- Evaluated by the editor, who makes a final decision based on the reviews and communicates to the author whether the paper is accepted, rejected, or requires revision and resubmission.
+- Throughout and after the process, the author remains unaware of the reviewers' identities, while the reviewers know the identity of the authors. 
+- All communications between authors, reviewers and editors remains private 
+
+<br>
+<br>
+
+### Complaints with the Traditional Closed Peer-Review System
+
+* Unreliable and Inconsistent
+
+* Delays and Expense
+
+* Lack of Accountability and Risks of Subversion
+
+* Social and Publication Biases
+
+* Lack of Incentives
+
+    [_Ross-Hallauer 2017_](https://f1000research.com/articles/6-588/v2)
+
+<br>
+<br>
+<br>
+<br>
 
 
-??? Tips "Open Peer Review Resources"
+### Open Peer-Review Ideas
 
-    [F1000Research](https://f1000research.com/){target=_blank} the first open research publishing platform. Offering open peer review rapid publication
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/plos_peer_review.png){ width="400" } </a>
+    <figcaption> Open Peer Review Options at [PLOS](https://plos.org/resource/open-peer-review/)</figcaption>
+</figure>
 
-    [PREreview](https://prereview.org/){target=_blank} provides a space for open peer reviews, targeted toward early career researchers.
-
-    [ASAPbio](https://asapbio.org/){target=_blank} Accelerating Science and Publication in Biology, an open peer review source for biologists and life scientists.
-
-    [PubPeer](https://pubpeer.com/){target=_blank} platform for post-publication of peer reviews.
-
-    [Sciety](https://sciety.org/){target=_blank} platform for evaluating preprints.
-
-[![plos open peer review](https://theplosblog.plos.org/wp-content/uploads/sites/6/2020/05/TPR_chart-final-edited-003-scaled.jpg)](https://theplosblog.plos.org/2019/05/plos-journals-now-open-for-published-peer-review/){target=_blank}
-
-Traditional Closed Peer-Review System
-
-Author submits paper to journal. An associate editor may do an initial read of the paper to see if it's worthy of the journal before sending out to peer-review. In a typical peer-review, the journal editor sends the manuscipt to 2 or 3 reviewers (other researchers in the field). They review the paper and send their recommendations back to the editor. The editor reads all of the reviews and makes a judgement call in terms of rejecting the paper or asking the author to make changes and resubmit. 
-Throughout the process, the reviewers know the identity of the authors, but typically they authors are blind to who the reviewers are. Many journals now offer the reviewers a chance to reveal their identity. Only a handful of people have vetted the science and know what happened during the peer-review. 
-
-There are many different types of 'Open Peer Review' systems
-
-It could include revealing the identities of the author and reviewers to each other or even publically. It could be open peer-review reports that are published online along side the article. It could mean the crowdsourcing of reviews instead of invite only. 
+<br>
+<br>
+<br>
 
 
+[Defenders of the Traditional Peer-Review System](https://doi.org/10.1038/6295)
+
+<br>
+<br>
+<br>
+
+!!! Tips "Example Open Peer-Review Systems"
+
+    [F1000Research](https://f1000research.com/){target=_blank} An open research publishing platform that offers open peer review and rapid publication
+
+<br>
 
 
+!!! Tips "Platforms for Reviewing Preprints"
+    
 
+    [PREreview](https://prereview.org/){target=_blank} 
+
+    [Sciety](https://sciety.org/){target=_blank} 
+
+    [PubPeer](https://pubpeer.com/){target=_blank} 
+
+    [ASAPbio](https://asapbio.org/){target=_blank} 
+
+    
 
 <br>
 <br>
