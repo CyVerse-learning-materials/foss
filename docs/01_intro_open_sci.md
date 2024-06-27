@@ -750,23 +750,23 @@ Research science (and also many companies) rely on open source software to opera
 
 !!! Tips "Open Source Software"
 
-        Linux operating system and shell
+    Linux operating system and shell
 
-        Python 
+    Python 
 
-        R
+    R
 
-        git
+    git
 
-        Conda
+    Conda
 
-        Docker
+    Docker
 
-        Cyverse
+    Cyverse
 
-        Pytorch
+    Pytorch
 
-        [Tyson's Awesome List](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
+    [Tyson's Awesome List](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
 
 <br>

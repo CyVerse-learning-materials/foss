@@ -8,56 +8,85 @@ Command Line Interfaces (CLI) are found throughout all Operating Systems, howeve
 
 ## The Unix Shell
 
-The computer is a tool. It evolved over the years from being an intricated calculator into an interactive machine with thousands of moving parts that keep us all connected through the Internet. It is now the norm to use a mouse, keyboard, and seeing flashing images on our screens through the Graphical User Interface (GUI). GUIs are central to the way we interact with computers, however, to best take advantage of the computer's many systems, one needs to learn of the **Command Line Interface (CLI)**. The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
+When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen through the Graphical User Interface (GUI). GUIs are central to the way we interact with computers because it makes it very easy to use them. However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
 
-Whilst the GUI allows for *better accessbility* to a computer, the CLI allows for *advanced usage* of one's computer. 
 
-### CLI vs Terminal vs Shell
+Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, and **Shell** will be used more or less interchangeably throughout the lesson. 
 
-- [CLI (Command Line Interface)](https://en.wikipedia.org/wiki/Command-line_interface): an interface that receives commands (and gives output) from a user in the form of lines of text.
-- [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator): **the** text based interface window.
-- [Shell](https://en.wikipedia.org/wiki/Shell_(computing)): a computer program and scripting language that presents a CLI which allows you to control your computer using commands.
+[![cli](../assets/cli.gif){width=350}]()
 
-The **Shell** sends commands to the computer through the **CLI** accessible through a **Terminal** window
+<br/>
+<br/>
+<br/>
 
-### Things-to-Know About Commands
 
-- Shell commands are used to **navigate**, **visualize**, **modify** (files/folders) and **automate** (processes), and can only be executed through the shell's terminal window.
-- For every command, typing `man` (manual) before the command, will open the manual for said command.
-```
-$ man ls
-```
-    - Doing the above command will result in opening the *manual* for the `ls` command. You can exist the man page by pressing `q`.
-- Each command has **flags**, or options, which are summoned with a `-`, such as `<command> -<flag>`.
-```
-$ ls -a -l -h
-```
-    - Doing the above command calls for the `-a` (all), `-l` (long), `-h` (human readable) flags. This causes `ls` to output a list of *all* files (inculding hidden files/folders) with human readable file size (e.g., it will list 3MB instead of 3000000), permissions, creator, and date of creation.
+## Introductory Shell Commands
+
+??? info "Help with Commands"
+    For every command, typing `man` (manual) before the command, will open the manual for said command.
+    ```
+    $ man ls
+    ```
+
+    - The above command will result in opening the *manual* for the `ls` command. You can exit the man page by pressing `q`.
+
+
+??? info "Command Flags"
+    Each command has **flags**, or options that you can specify. which are summoned with a `-`, such as `<command> -<flag>`.
+    ```
+    $ ls -a -l -h
+    ```
+
+    - The above command calls for the `-a` (all), `-l` (long), `-h` (human readable) flags. This causes `ls` to output a list of *all* files (inculding hidden files/folders) with human readable file size (e.g., it will list 3MB instead of 3000000), permissions, creator, and date of creation.
+    
     - If you do not know what flags are available, you can refer to the `man` command (or for many tools, use the `-h` (help) flag).
-- `.` refers to *current* directory; `..` refers to *above* directory; `/` is the directory separator; `~` indicates the home directory.
-```
-$ ls .            # lists files and folders in the current directory
-$ ls ..           # lists files and folders in the above directory
-$ ls ~            # lists files and folders in the home directory
-$ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
-```
 
-### Introductory Shell Commands
+??? info "Tips for Directory Navigation"
+    `.` refers to *current* directory
 
-The following are introductory commands necessary when interacting with a computer through the Shell. These will help you orient, create and delete files. Most of this material is explained in more details in the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). Visit the Carpentries' website for a more in-depth tutorial.
+    `..` refers to *above* directory
 
-!!! info "A short tutorial introducing the Shell"
-    Here below are quick explanations of a few elementary commands that will help you orient and navigate your files and folders through the Shell. If you would like to follow along the explanations for each command, feel free to download and unzip the [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) file from the [Shell's Carpentry module](https://swcarpentry.github.io/shell-novice/setup.html).
+    `/` is the directory separator
+
+    `~` indicates the home directory
+
+    For example:
+    ```
+    $ ls .            # lists files and folders in the current directory
+    $ ls ..           # lists files and folders in the above directory
+    $ ls ~            # lists files and folders in the home directory
+    $ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
+    ```
+
+<br/>
+<br/>
+<br/>
+
+The following are introductory commands necessary when interacting with a computer through the Shell. These commands will help you:
+
+* navigate the directory structure
+* see what's inside directories 
+* create, delete, and move files
+
+
+This tutorial material was taken from the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). Much more information on shell commands can be found in the Carpentries' lessons. 
+
+!!! info "Download Some Data from the Carpentries"
+    To follow along with the tutorial, please download and unzip this data. [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) 
         
-    ??? question "Don't have access to a GUI?"
-        Following along on a machine with no access to a GUI? Execute the following commands:
+    ??? Tip "The Command Line Way to Download and Unzip!"
+        Execute the following commands:
         ```
         $ sudo apt install unzip
         $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
         $ unzip shell-lesson-data.zip
         ``` 
 
-#### Navigation
+<br>
+<br>
+<br>
+
+### Navigation
 
 | Command | Explanation |
 |---|---|
@@ -65,12 +94,16 @@ The following are introductory commands necessary when interacting with a comput
 |`ls`| list content of folder |
 |`cd`| change directory |
 
+<br>
+
 By typing `pwd`, the current working directory is printed.
 
 ```
 $ pwd
 /mnt/d/
 ```
+<br>
+<br>
 
 We can then use `ls` to see the contents of the current directory. By using the `-F` flag (`ls -F`) we can also see the type of file. **Note:** an asterisk (`*`) at the end of the object will denote a file, whilst a slash (`/`) will denote a folder.
 
@@ -78,6 +111,8 @@ We can then use `ls` to see the contents of the current directory. By using the 
 $ ls -F 
 shell-lesson-data/   shell-lesson-data.zip*
 ```
+<br>
+<br>
 
 We can then move inside the folder of our choice doing `cd`. Doing `ls` following the opening of the folder of choice, will show the contents of the folder you just moved in. Feel free to explore the contents of the folders by using `cd` and `ls`.
 
@@ -230,144 +265,20 @@ my_file
 
 The commands listed here above are to help you better understand directories and files. There is a lot more that one can accomplish when communicating with you computer through the Shell. In case you want to know more, here are some useful links you can visit:
 
-- [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter/index.html)
-- [Loops](https://swcarpentry.github.io/shell-novice/05-loop/index.html)
-- [Scripts](https://swcarpentry.github.io/shell-novice/06-script/index.html)
-- [Finding Things](https://swcarpentry.github.io/shell-novice/07-find/index.html)
+- [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html)
+- [Loops](https://swcarpentry.github.io/shell-novice/05-loop.html)
+- [Scripts](https://swcarpentry.github.io/shell-novice/06-script.html)
+- [Finding Things](https://swcarpentry.github.io/shell-novice/07-find.html)
 
+<br/>
+<br/>
+<br/>
 ---
-
-## Github and Git
-
-FOSS stands for Foundational **Open** Science Skills: how many times have you worked on your code just to hit a bottleneck and found a solution on Stack Overflow? How many times have you found links that bring you to a GitHub repository with the exact snippet of code you needed?
-
-The beauty of **Open** is that it makes Science and its code available for all through the internet, sharing ideas and solutions for all. Tools like Git and Github allow for the sharing of code, and the ability to collaborate on projects.
-
-The following section will cover the very basics of Github so you can get up and running and using these tools. The concept of **version control** and the mechanics of using Git will be touched on in more depth [later](05_version_control.md) on in FOSS
-
-- **Git**: 
-    - First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.
-	- Changes and versions are saved locally.
-	- Accessible through the Shell.
-
-- **GitHub**:
-	- First launched in 2008, its main focus is hosting and sharing code.
-    - Uses Git version control software. 
-	- Changes and versions are saved online (requires an account).
-	- Mainly administered through the web (it also has a [desktop app](https://desktop.github.com/){target=_blank}).
-    - Acquired by Microsoft in 2018.
-
-<figure markdown>
-  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg) </a>
-    <figcaption> Git vs GitHub, simplified </figcaption>
-</figure>
-
-## Introducing GitHub
-
-Since we are talking about making science accessible, we invite you to use GitHub to save and share your code. Please start by creating a GitHub account at https://github.com/.
+<br/>
 <br/>
 <br/>
 
-#### User Profile
 
-Just like in any other social media platform, you can create a profile for yourself. This is where you can add a picture, a description of yourself, and a link to your website. You can also add your location, your organization, and your pronouns. You can have a list of your most important repositories and show off your daily contributions. You are able to customize your profile to your liking. Check out [this profile](https://github.com/Gchism94) for fancy example. 
-
-![github_shot1](assets/github_shot1.png)
-
-<br/>
-
-#### Search
-
-At the top of most pages, is a search bar. Use this to find repositories, users, and organizations. You can also use it to search for specific code within a repository.
-![github_shot1](assets/github_shot2.png)
-
-<br/>
-
-#### Starring Repositories
-
-You can star repositories that you like. This is a way to bookmark repositories that you want to come back to later. You can also use this to show your appreciation for a repository. You can see all of your starred repositories by clicking on your profile picture and then clicking on **Your stars**.
-
-![github_shot1](assets/github_shot3.png)
-
-<br/>
-
-#### Create Your Own Repository
-
-Repositories are where your code is stored. A suggestion is to have *one* repository for *one* project.
-
-You can create repositories by clicking on the **Repositories** tab, and then clicking **New**.
-
-![git_1](assets/git_1.png)
-
-Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
-<br/>
-<br/>
-
-![git_2](assets/git_2.png)
-
-<br/>
-
-
-!!! Info "So, why a README?"
-    There are two main reasons why you would like a README file:
-        
-    1. It adds structure to your repository *automatically* - otherwise you would need to create said structure by yourself (not recommended for beginners).
-    2. It is the "default" file that GitHub reads upon opening the repository. It can be treated as the go-to file that explains what the repository is for, what each file does, how to cite your reasearch, amongst other things.
-
-
-!!! Info "Adding a Licence"
-    The addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on! We will cover licences in more depth [later](03_managing_data.md#licences) in the course.
-
-<br/>
-
-
-Ultimately, your new repository should look like the following screenshot. Notice the **LICENCE** document and the **README.md**
-
-![git_3](assets/git_3.png)
-
-!!! Info "Editing the README.md"
-	The Github repository file has a .md extension which stands for Markdown. Markdown is a lightweight markup language for creating formatted text using a plain-text editor common throughout text files on the web. It uses symbols (*~-#`) for syntaxing text, and it is what GitHub (and this website!) use to format text. Markdown is easier to use than HTML. You can read more on Markdown on the [Markdown Guide](https://www.markdownguide.org/).
-
-<br/>
-<br/>
-
-### Adding and Modifying Code in Github
-
-GitHub allows you to add and modify code in two ways: 1. through the online portal (the webpage you're seeing), and 2. On your local computer. Throughout the following section, we will show you how to do it through the online portal. We will save the local computer for later for [Lesson 5](05_version_control.md) later in the course. 
-
-
-Adding code to your repository through the web page is suggested if what you want to add is simple (Like a README file!).
-
-- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
-- The editing page will open: choose a name and an extension on the top of the page.
-- On the editing page you can modify code as you see necessary (writing, pasting)
-
-![git_05](assets/git_5.png)
-
-- You can also see your changes (if formatted) with the preview function (with the **Preview** button).
-- To "Save" your changes, you will need to **commit** your changes:
-	- navigate at the bottom of the page, specify your commit with a name and add a description if necessary.
- ![git_06](assets/git_6.png)
-- You will be able to see your newly created file on your repository home after committing your changes.
-
-!!! info "Committing changes"
-	**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
-
-	- You can see from the picture below the lines that have been removed (in red), and the lines that have been added (in green).
-	![git_07](assets/git_7.png)
-
-	- Additionally, you can also see the full list of commits made to the file or repository.
-	![git_08](assets/git_8.png)
-<br/>
-
-#### Hosting Web Pages in Github
-
-GitHub allows you to host web pages through the use of **GitHub Pages**. This is a free service that allows you to host a website directly from your GitHub repository. You can use this to host your personal website, or to host a website for your project.
-
-For example, the [FOSS website](https://foss.cyverse.org/) is hosted through GitHub Pages. The repository for the website can be found [here](https://github.com/CyVerse-learning-materials/foss)
-
-
----
 
 ## Introduction to Prompt Engineering
 
