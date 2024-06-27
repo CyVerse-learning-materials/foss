@@ -9,8 +9,7 @@
     * Describe the behaviors of Open Science
     * Explain why Open Science matters in education, research, and society
     * Understand the advantages and the challenges to Open Science
-    * Identify who the practitioners of Open Science are
-    * Understand the underlying Ethos of Open Science
+
 
 <br/>
 <br/>
@@ -108,13 +107,27 @@ _What is Open Science | The Royal Society_
 <br/>
 <br/>
 
+!!! Tip "Open Science Taxonomy"
+        
+    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
+
+        Graphic by Foster Open Science https://www.fosteropenscience.eu/
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## 2023: the Year of Open Science
 
-The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the [Year of Open Science](https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/){target=_blank}. As the year came to a close, the governement aimed to create a spotlight through [The White House Office of Science & Technology Policy Open Science Recognition Challenge](https://www.challenge.gov/?challenge=ostp-year-of-open-science-recognition-challenge&tab=overview), recognizing open science stories that addressed current societial challenges (winners to be annouced).
+The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the Year of Open Science as a way to bring awareness to the benefits of Open Science and to steer the scientitic community towards its adoption. 
+
+NASA leads a prominent program called [Transform to Open Science](https://github.com/nasa/Transform-to-Open-Science) which includes an [online class on Open Science](https://nasa.github.io/Transform-to-Open-Science/take-os101/). 
 
 <figure markdown>
-  <a href="https://nasa.github.io/Transform-to-Open-Science/year-of-open-science/" target="blank" rel="open science">![open science](../assets/year_of_open_science.jpg){ width="500" } </a>
-    <figcaption> The year of Open Science</figcaption>
+  <a href="https://github.com/nasa/Transform-to-Open-Science" target="blank" rel="open science">![open science](https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png){ width="200" } </a>
+    <figcaption> NASA Transform to Open Science (TOPS) </figcaption>
 </figure>
 
 
@@ -355,13 +368,14 @@ Applying standards to encode and exchange data and metadata
 _**Reusable:**_
 Enabling the repurposing of researach outputs to maximize their research potential
 
-
+<br>
+<br>
 <br>
 <br>
 
 !!! Tip "Reasons to Make your Data Open"
 
-    * Unnecessary duplication e.g. re-collecting or re-working data, can be avoided. Duplication of research is costly for society, and places unnecessary burden on heavily researched people and populations.  
+    * Unnecessary duplication. Duplication of research is costly for society, and places unnecessary burden on heavily researched people and populations.  
 
     * The data underlying publications are maintained and accessible, allowing for validation of results.
 
@@ -373,7 +387,8 @@ Enabling the repurposing of researach outputs to maximize their research potenti
 
     * Storing your data in a public repository also provides you with secure and ongoing storage that may otherwise not be available to you.
 
-            - Borrowed From [Foster Open Science](https://www.fosteropenscience.eu/)
+
+    -[Foster Open Science](https://www.fosteropenscience.eu/)
 
 
 <br>
@@ -430,8 +445,16 @@ There are many circumstances where open data could be harmful:
     
     Open data does not necessarily mean it is FAIR
 
+<br>
+<br>
 
+#### Additional Info
 
+* The Ethics of Geolocated Data from [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/){target=_blank} 
+
+* Health information [US HIPAA](https://www.hhs.gov/hipaa/index.html){target=_blank}
+
+* Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank} 
 
 <br>
 <br>
@@ -515,13 +538,24 @@ There are many circumstances where open data could be harmful:
 
 ### Sharing Research Computer Code
 
-The use of version control systems like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} present one of the foremost platforms for sharing open methods for digital research.
+Scientists around the globe are creating computer code for scientific analysis. These are valuable contributions that need to be shared!
+
+Platforms like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} are ideal for collaboratively developing code and sharing with the open internet. In FOSS, we will show you how to use Github for sharing code, [documentation](04_documentation_communication.md), [hosting websites](04_documentation_communication.md), and [software version control](05_version_control.md). 
+
+
+
+
+[![The Turing Way](../assets/git-logo.png){width=350}](https://github.com)
+[![NASA Transform to Open Science](../assets/gitlab_logo.png){width=150}](https://gitlab.com)
+
+
 
 <br>
 <br>
 <br>
 <br>
 
+### Publishing Your Methods or Protocols 
 ??? Example "Platforms for Publishing Protocols & Bench Techniques"
 
     [BioProtocol](https://bio-protocol.org/Default.aspx){target=_blank}
@@ -549,16 +583,32 @@ The use of version control systems like [GitHub](https://github.com/search?q=ope
 
 <br>
 <br>
+<br>
+<br>
 
-### Preregistration
+### PreRegistration
 
-In response to the Reproducibility Crisis, many researchers, particularly in fields like psychology, have begun to advocate for **preregistration** of studies. 
+Preregistration is detailing your research and analysis plan and submitting it to an online registry **before** you engage in the research. 
 
-This involves writing out and publishing your entire research plan, from data collection to analysis and publication, for the sake of avoiding practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [HARKing](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
 
-What preregistration also does is make the process of your work more open, including many of the small decisions and tweaks you make to a project that probably wouldn't make it into a manuscript. 
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/cycle_prereg.png){ width="500" } </a>
+    <figcaption> PreRegistration in the Research Life Cycle</figcaption>
+</figure>
 
- You can also read this publication by [Nosek et al. 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
+#### Why Do This?
+
+Preregistration makes your process more open and records the difference between your initial research plan what you end up actually doing.
+
+Preregistration separates _hypothesis-generating_  (exploratory) from _hypothesis-testing_ (confirmatory) research. Both are important. But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results. 
+
+ It also helps us avoid practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [Hypothesizing After the Results are Known(HARKing)](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
+
+<br>
+
+#### Additional Info
+
+ Read this publication by [Nosek et al. 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
 Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
@@ -566,10 +616,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 <br>
 <br>
 
-<figure markdown>
-  <a target="blank" rel="open science">![open science](../assets/cycle_prereg.png){ width="500" } </a>
-    <figcaption> PreRegistration in the Research Life Cycle</figcaption>
-</figure>
+
 <br>
 ---
 
@@ -598,14 +645,17 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 <br>
 
 
-### In a Traditional Closed Peer-review system, a submitted manuscript is:
+### Traditional Closed Peer-Review System
 
-- Read by an associate editor at the journal who decides whether to reject the paper or send it out for review
-- Reviewed by 2 or 3 researchers in the field who analyze the soundness of the research and provide recommendations for acceptance or rejection
-- Evaluated by the editor, who makes a final decision based on the reviews and communicates to the author whether the paper is accepted, rejected, or requires revision and resubmission.
+<figure markdown>
+  <a target="blank" rel="open science">![close peer-review](../assets/peer_review.png){ width="400" } </a>
+    <figcaption> </figcaption>
+</figure>
+
 - Throughout and after the process, the author remains unaware of the reviewers' identities, while the reviewers know the identity of the authors. 
 - All communications between authors, reviewers and editors remains private 
 
+<br>
 <br>
 <br>
 
@@ -632,7 +682,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 ### Open Peer-Review Ideas
 
 <figure markdown>
-  <a target="blank" rel="open science">![open science](../assets/plos_peer_review.png){ width="400" } </a>
+  <a target="blank" rel="open science">![open science](../assets/plos_peer_review.png){ width="500" } </a>
     <figcaption> Open Peer Review Options at [PLOS](https://plos.org/resource/open-peer-review/)</figcaption>
 </figure>
 
@@ -649,7 +699,9 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
 !!! Tips "Example Open Peer-Review Systems"
 
-    [F1000Research](https://f1000research.com/){target=_blank} An open research publishing platform that offers open peer review and rapid publication
+    [F1000Research](https://f1000research.com/about){target=_blank} An open research publishing platform that offers open peer review and rapid publication
+
+    The article from [Ross-Hellauer et al. (2017)](https://doi.org/10.12688%2Ff1000research.11369.2) has open peer-reviews.
 
 <br>
 
@@ -685,11 +737,47 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
     "Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source software is developed in a decentralized and collaborative way, relying on peer review and community production." - [:material-redhat: Red Hat](https://www.redhat.com/en/topics/open-source/what-is-open-source){target=_blank}
 
-    [:material-open-source-initiative: Open Source Initiative definition](https://opensource.org/osd){target=_blank}
 
     [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open-source_software){target=_blank}
 
-[Awesome list](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
+<br>
+<br>
+
+Research science (and also many companies) rely on open source software to operate
+
+<br>
+<br>
+
+!!! Tips "Open Source Software"
+
+        Linux operating system and shell
+
+        Python 
+
+        R
+
+        git
+
+        Conda
+
+        Docker
+
+        Cyverse
+
+        Pytorch
+
+        [Tyson's Awesome List](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
+
+
+<br>
+<br>
+
+When you create a new software, library, or package, you become its parent and guardian.
+
+<figure markdown>
+  <a href="https://m.xkcd.com/2347/" target="blank" rel="xkcd">![xkcd](https://imgs.xkcd.com/comics/dependency.png){ width="400" } </a>
+    <figcaption> Image Credit: [XKCD Dependency](https://m.xkcd.com/2347/){target=_blank} </figcaption>
+</figure>
 
 <br>
 <br>
@@ -701,49 +789,8 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 <br>
 <br>
 
-## Breakout Discussion 1
-
-As you already know, being a scientist requires you to wear many hats, and trying to do Open Science is no different.
-
-<figure markdown>
-  <a href="https://doi.org/10.7554/eLife.81075" target="blank" rel="venn">![venn](https://iiif.elifesciences.org/lax/81075%2Felife-81075-fig2-v1.tif/full/,1500/0/default.jpg){ width="700" } </a>
-    <figcaption> [Bernery et al. (2022)](https://doi.org/10.7554/eLife.81075){target=_blank} Figure 2: The positive aspects of doing a PhD. </figcaption>
-</figure>
-
-
-To get a feel for how Open Science can be multifaceted and different for each researcher, we will do a short breakout group session to discuss what Open Science means to you.
-
-??? Question "What does Open Science mean to you?"
-
-    ??? Example "Which of the :material-pillar: pillars of Open Science is nearest to your own heart?"
-
-        **:material-pillar: Open Access Publications**
-
-        **:material-pillar: Open Data**
-
-        **:material-pillar: Open Educational Resources**
-
-        **:material-pillar: Open Methodology**
-      
-        **:material-pillar: Open Peer Review**
-
-        **:material-pillar: Open Source Software**
-
-    ??? Example "Are any of the :material-pillar: pillars more important than the others?"
-
-    ??? Example "Are there any :material-pillar: pillars not identified that you think should be considered?"
-
-??? Question "What characteristics might a paper, project, lab group require to qualify as doing *Open Science*"
-
-??? Question "What are some limitations to you, your lab group, or your domain?"
-
----
-
 ## *WHY* do Open Science?
 
-There are many reasons to do Open Science, and presumably one or more of them brought you to this workshop. 
-
-Whether you feel an ethical obligation, want to improve the quality of your work, or want to look better to funding agencies, many of the same approaches to Open Science apply.
 
 A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
 
@@ -757,19 +804,52 @@ A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-0002
 
 5.  **Measurement school**: primarily concerned with the existing focus on journal publications as a means of measuring scholarly output, and focused on developing alternative measurements of scientific impact
 
+6. **Compliance school**: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
+
 
 <figure markdown>
   <a href="https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf" target="blank" rel="fecher_friesike">![fecher_friesike](assets/five_schools.png){ width="700" } </a>
     <figcaption> In [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} Open Science: One Term, Five Schools of Thought </figcaption>
 </figure>
 
-While many researchers may be motivated by one or more of these aspects, we will not necessarily focus on any of them in particular. If anything, FOSS may be slightly more in the Infrastructure school, because we aim to give you the tools to do Open Science based on your own underlying motivations.
 
+
+<br>
+<br>
+<br>
+<br>
 ---
 
-## Breakout Discussion 2
+<br>    
+<br>
+<br>
 
-Let's break out into groups again to discuss some of our motivations for doing Open Science.
+
+## Discussion Questions
+
+
+
+??? Question "Which of the :material-pillar: pillars of Open Science is nearest to your own heart?"
+
+    **:material-pillar: Open Access Publications**
+
+    **:material-pillar: Open Data**
+
+    **:material-pillar: Open Educational Resources**
+
+    **:material-pillar: Open Methodology**
+      
+    **:material-pillar: Open Peer Review**
+
+    **:material-pillar: Open Source Software**
+
+??? Question "Are any of the :material-pillar: pillars more important than the others?"
+
+??? Question "Are there any :material-pillar: pillars not identified that you think should be considered?"
+
+??? Question "What characteristics might a paper, project, lab group require to qualify as doing *Open Science*"
+
+??? Question "What are some barriers to you, your lab group, or your domain doing Open Science?"
 
 ??? Question "What motivates you to do Open Science?"
 
@@ -777,38 +857,16 @@ Let's break out into groups again to discuss some of our motivations for doing O
 
 ??? Question "Are there any motivating factors for doing Open Science that don't fit into this framework?"
 
+
+<br>
+<br>
+<br>
 ---
 
-## Ethos of Open Science
+<br>    
+<br>
 
-Doing Open Science requires us to understand the ethics of why working with data which do not belong to us is privileged.
 
-We must also anticipate how these could be re-used [in ways contrary to the interests of humanity](https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx){target=_blank}. 
-
-Ensure the use of [Institutional Review Boards (IRB)](https://www.fda.gov/about-fda/center-drug-evaluation-and-research-cder/institutional-review-boards-irbs-and-protection-human-subjects-clinical-trials){target=_blank} or your local ethical committee. 
- 
-Areas to consider: 
-
-[![ethics assessment](https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2019/05/Self-Assessment-Map-2.0-1024x888.png)](https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/){target=_blank} 
-
-Source: [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/){target=_blank} 
-
-* Geolocation (survey, land ownership, parcel data), see [UK Statistics Authority Ethical Considerations](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/){target=_blank} 
-* Personal identification information  [US Personal Identifiable Information (PII)](https://www.dol.gov/general/ppii){target=_blank}, [General Data Protection Regulation (GDPR)](https://gdpr.eu/what-is-gdpr){target=_blank}
-* Health information [US HIPAA](https://www.hhs.gov/hipaa/index.html){target=_blank} , EU GDPR
-* Protected and Endangered Species ([US Endangered Species Act](https://www.epa.gov/laws-regulations/summary-endangered-species-act){target=_blank})
-* Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank}   
-* Artificial intelligence/machine learning [Assessment List Trustworthy AI (ALTAI)](https://futurium.ec.europa.eu/en/european-ai-alliance/pages/welcome-altai-portal){target=_blank} from the European AI Alliance
-
-- [:material-wikipedia: "Nothing about us, without us"](https://en.wikipedia.org/wiki/Nothing_About_Us_Without_Us){target=_blank}
-
-- [Funnel et al. (2019)](http://dx.doi.org/10.1017/S0714980819000291){target=_blank}
-
-For more information (training):
-
-[January in Tucson](https://igp.arizona.edu/jit){target=_blank} - intensive education session brings together distinguished faculty in the field of Indigenous governance and Indigenous rights, and gives them the opportunity to teach and hold discussions with Indigenous leaders, practitioners, and community members, and anyone interested in Indigenous affairs.
-
-Ethics and Data Access (General Information with BioMedical and Life Sciences Data) includes [a legal and ethical checklist lesson for researchers](https://ilias.fraunhofer.de/goto.php?target=fold_15177&client_id=fraunhofer){target=_blank} around "FAIR Plus".
 
 ## Recommended Open Science Communities
 
@@ -873,8 +931,13 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
     [New Zealand Open Research Network](https://nzorn.netlify.app/) - New Zealand Open Research Network (NZORN) is a collection of researchers and research-associated workers in New Zealand.
 
     [Australia & New Zealand Open Research Network](https://www.anzopenresearch.org/) - ANZORN is a network of local networks distributed without Australia and New Zealand.
-
+<br>
+<br>
+<br>
 ---
+<br>
+<br>
+<br>
 
 ## Self Assessment
 
@@ -901,15 +964,7 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
         Data that are 'available upon request' do not meet the FAIR data principles. 
 
-??? Question "True or False: Online Universities and Data Science Boot Camps like UArizona Online, Coursera, Udemy, etc. promote digital literacy and are Open Educational Resources?"
 
-    ??? Success "Answer"
-
-        False
-
-        These examples are for-profit programs which teach data science and computer programming online. Some may be official through public or private universities and offer credits toward a degree or a certificate. Some of these programs are [known to be predatory](https://www.highereddive.com/news/court-fines-ashford-university-and-zovio-224m-for-misleading-students/620058/){target=_blank}.
-
-        The organizations we have [listed above](#material-pillar-open-educational-resources) are Open Educational Resources - they are free and available to anyone who wants to work with them asynchronously, virtually, or in person.
 
 ??? Question "Using a version control system to host the analysis code and computational notebooks, and including these in your Methods section or Supplementary Materials, is an example of an Open Methodology?"
 
@@ -925,11 +980,10 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
     ??? Success "Answer"
 
-        No
+        Maybe
 
-        Just because you've given your name to the author(s) of the manuscript, this does not make your review open.
+        There are many opinions on what 'open-review' should consist of. A reviewer signing their review and releasing their identity to the authors is a step toward a more open process. However, it is far less open than publishing the peer-review reports online next to the final published paper. 
 
-        If the journal later publishes your review alongside the final manuscript, than you will have participated in an Open Review. 
 
 ??? Question "You read a paper where the author(s) wrote their own code and licensed as "Open Source" software for a specific set of scientific tasks which you want to replicate. When you visit their personal website, you find the GitHub repository does not exist (because its now private). You contact the authors asking for access, but they refuse to share it 'due to competing researchers who are seeking to steal their intellectual property". Is the software open source?"
 
@@ -943,47 +997,4 @@ Ethics and Data Access (General Information with BioMedical and Life Sciences Da
 
         In order for the software to be open, it must follow the [Open Source Initiative definition](https://opensource.org/osd){target=_blank}
 
-??? Tip "Foster Open Science Diagram"
-        
-    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
 
-        Graphic by [Foster Open Science](https://www.fosteropenscience.eu/){target=_blank}
-
-``` mermaid
-flowchart LR
-
-id1([open science]) --> id3([publishing]) & id4([data]) & id5([open source software])
-
-id3([publishing]) -->  id41([access]) & id42([reviews]) & id43([methods]) & id44([educational resources]) 
-
-id5([open source software]) --> id13([container registries]) & id10([services]) & id101([workflows]) & id12([version control systems])
-
-id12([version control systems]) --> id101([workflows])
-
-id13([container registries]) --> id101([workflows])
-
-id14([public data registry]) --> id101([workflows])
-
-id10([services]) --> id101([workflows]) 
-
-id44([educational resources]) --> id21([university libraries])
-
-id21([university libraries]) --> id101([workflows])
-
-id22([federal data archives]) --> id101([workflows]) 
-
-id4([data]) --> id21([university libraries]) & id22([federal data archives]) & id14([public data registries]) 
-
-id101([workflows]) --> id15([on-premises]) & id16([commercial cloud]) & id17([public cloud])
-
-```
-
-Mermaid Diagram: Conceptual relationships of Open Science and cyberinfrastructure
-
-??? Tip ":dark_sunglasses: Awesome Lists of Open Science"
-
-    Awesome lists were started on GitHub by [Sindre Sorhus](https://sindresorhus.com/){target=_blank} and typically have a badge associated with them [![[Awesome]([https://github.com/sindresorhus/awesome])](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome){target=_blank} 
-    
-    (There is even a [Searchable Index](https://awesomelists.top/#/){target=_blank} of Awesome Lists)
-
-    We have created our own [Awesome Open Science List here](https://tyson-swetnam.github.io/awesome-open-science/){target=_blank} which may be valuable to you.
