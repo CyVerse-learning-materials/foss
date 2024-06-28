@@ -1,4 +1,4 @@
-# The Unix Shell, Git, Github and LLMs: an Introduction
+# How to Talk to Computers
 
 ### Requirements
 
@@ -8,7 +8,10 @@ Command Line Interfaces (CLI) are found throughout all Operating Systems, howeve
 
 ## The Unix Shell
 
-When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen through the Graphical User Interface (GUI). GUIs are central to the way we interact with computers because it makes it very easy to use them. However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
+When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen through the Graphical User Interface (GUI). GUIs are central to the way we interact with computers because it makes it very easy to use them. 
+
+
+However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
 
 
 Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, and **Shell** will be used more or less interchangeably throughout the lesson. 
@@ -62,14 +65,10 @@ Though there are technical differences between them, the terms **Command Line In
 <br/>
 <br/>
 
-The following are introductory commands necessary when interacting with a computer through the Shell. These commands will help you:
-
-* navigate the directory structure
-* see what's inside directories 
-* create, delete, and move files
 
 
-This tutorial material was taken from the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). Much more information on shell commands can be found in the Carpentries' lessons. 
+
+The following tutorial material was taken from the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). 
 
 !!! info "Download Some Data from the Carpentries"
     To follow along with the tutorial, please download and unzip this data. [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) 
@@ -126,6 +125,9 @@ $ ls -F exercise-data/
 
 animal-counts/  creatures/  numbers.txt*  proteins/  writing/
 ```
+<br>
+<br>
+
 
 !!! Tip "Use the Tab key to autocomplete"
     You do not need to type the entire name of a folder or file. By using the tab key, the Shell will autocomplete the name of the files or folders. For example, typing the following
@@ -146,6 +148,8 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
     $ ls -F exercise-data/
     animal-counts/ creatures/     numbers.txt    proteins/      writing/ 
     ```
+<br>
+<br>
 
 #### Working with Files and Directories
 
@@ -158,6 +162,8 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
 |`cp`| copy command | 
 |`rm`| remove command |
 
+<br>
+<br>
 
 Return to `shell-lesson-data`, and crate a directory with `mkdir <name of folder>`.
 
@@ -166,6 +172,8 @@ $ mkdir my_folder
 $ ls -F
 exercise-data/  my_folder/  north-pacific-gyre/
 ```
+<br>
+<br>
 
 Notice the new `my_folder` directory.
 
@@ -189,6 +197,9 @@ Notice the new `my_folder` directory.
             exercise-data/  folder/  my/  north-pacific-gyre/
             ```
             Notice the two folders `my` and `folder`.
+
+<br>
+<br>
 
 Create an empty file with `touch <name of file>`.
 

@@ -467,39 +467,9 @@ funders realize this.
 -   Planning for you project makes it run more smoothly
 -   Avoid surprise costs
 
-### Elements of a good DMP
 
--   Information about data & data format(s)
-    -   data types
-    -   data sources
-    -   analysis methods
-    -   formats
-    -   QA/QC
-    -   version control
-    -   **data life cycle**
-
--   Metadata content and format(s)
-    -   format
-    -   standards
-
--   Policies for access, sharing, and re-use
-    -   funder obligations
-    -   ethical and privacy issues (data justice)
-    -   intellectual property, copyright, citation
-    -   timeline for releases
-
--   Long-term storage, data management, and preservation
-    -   which data to preserve
-    -   which archive/repository
-
--   Budget([PAPPG](https://www.nsf.gov/pubs/policydocs/pappg19_1/pappg_2.jsp#IIC2gvib))
-    -   each of the above elements cost time/money
-    -   Personnel time for data preparation, management,
-        documentation, and preservation (including time)
-    -   Hardware and/or software for data management, back up,
-        security, documentation, and preservation (including time)
-    -   Publication/archiving costs (including time)
-
+<br/>
+<br/>
 
 
 !!! Tip "DMP Tools"
@@ -509,6 +479,8 @@ funders realize this.
 
     [DMPTool](https://dmptool.org/){target=_blank}
 
+<br/>
+<br/>
 ---
 <br/>
 <br/>
@@ -519,56 +491,50 @@ By default, when you make creative work, that work is under exclusive copyright.
 
 If you want your work to be Open and used by others, you need to specify how others can use your work. This is done by *licensing* your work.
 
-[MIT License](https://choosealicense.com/licenses/mit/){target=_blank}
-
-[GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/){target=_blank}
-
-
-FOSS material has been licensed using the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target=_blank}.
 <br>
 <br>
 
-Licensing your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
+!!! Tip "License Examples"
+    
+    [MIT License](https://choosealicense.com/licenses/mit/){target=_blank}
 
-* Apache License 2.0
-* GNU General Public License v3.0
-* MIT License
-* BSD 2-Clause "Simplified" License
-* BSD 3-Clause "New" or "Revised" License
-* Boost Software License 1.0
-* Creative Commons Zero v1.0 Universal
-* Eclipse Public License 2.0
-* GNU Affero General Public License v3.0
-* GNU General Public License v2.0
-* GNU Lesser General Public License v2.1
-* Mozilla Public License 2.0
-* The Unlicense
+    [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/){target=_blank}
+
+    FOSS material has been licensed using the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target=_blank}.
 
 <br>
 <br>
 
-Open Source Licensing Resources
 
-https://choosealicense.com/
-
-https://opensource.guide/legal/
-
-
-Upon completion of a peer-reviewed science paper, the author typically 1. signs over the copyright of the paper to the publisher or 2. signs an exclusive license agreement with the publisher
-
-For example authors that publish in [_Science_](https://www.science.org/content/page/science-journals-editorial-policies#copyright-license-to-publish) retain their copyright but sign a 'license to pubish' agreement with AAAS
-
-Elsevier requires authors to sign over copyright of the article but authors retains some rights of distribution
+#### License Options from UArizona Library
+<figure markdown>
+  <a href="https://data.library.arizona.edu/supported-platforms/redata" target="blank" rel="open science">![open science](../assets/license_matrix.png){ width="600" } </a>
+    <figcaption> License options for University of [Arizona Research Data Repository (ReDATA)](https://data.library.arizona.edu/supported-platforms/redata)  </figcaption>
+</figure>
 
 
 
-[Elesevier summary of copyright policies](https://www.elsevier.com/about/policies-and-standards/copyright#1-author-rights)
 
-[Elesevier article sharing policy](https://www.elsevier.com/about/policies-and-standards/sharing)
+<br>
 
-[Wiley policy on self-archiving](https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html)
 
-[Springer Nature copyright policies](https://www.springer.com/gp/open-access/publication-policies/copyright-transfer#:~:text=Springer%20Nature%20authors%20retain%20copyright,found%20in%20our%20publishing%20policies.)
+
+
+
+
+#### Additional Info
+
+General guidance on how to choose a license https://choosealicense.com/
+
+More good guidance on how to choose a license https://opensource.guide/legal/
+
+
+Licensing options for your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
+
+
+
+
+
 ---
 
 ### References and Resources

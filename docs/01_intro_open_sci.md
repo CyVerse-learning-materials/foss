@@ -102,16 +102,6 @@ _What is Open Science | The Royal Society_
 
 
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-!!! Tip "Open Science Taxonomy"
-        
-    [![foster](https://www.fosteropenscience.eu/themes/fosterstrap/images/taxonomies/os_taxonomy.png)](https://www.fosteropenscience.eu/resources){target=_blank} 
-
-        Graphic by Foster Open Science https://www.fosteropenscience.eu/
 
 <br/>
 <br/>
@@ -177,25 +167,11 @@ NASA leads a prominent program called [Transform to Open Science](https://github
 <br>
 <br>
 <br>
-
-### Types of Publishing Business Models:
-
-1. Subscription model - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).
-
-2. Open Access model - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. 
-
-    * Open Access publishing in Nature costs $12,290!
-    * Open Access publising in PlosOne costs $2,290
-
-<br>
-<br>
-<br>
-
 !!! Example "Open Access Journal Examples"
 
     Major publishers have provided access points for publishing your work 
 
-    [AAAS](https://www.science.org/content/page/open-access-aaas){target=_blank}
+    [AAAS Science](https://www.science.org/content/page/open-access-aaas){target=_blank}
 
     [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank}
 
@@ -213,6 +189,22 @@ NASA leads a prominent program called [Transform to Open Science](https://github
 
 <br>
 <br>
+
+
+### Types of Publishing Business Models:
+
+1. Subscription model - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).
+
+2. Open Access model - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. 
+
+    * Open Access publishing in Nature costs $12,290!
+    * Open Access publising in PlosOne costs $2,290
+
+<br>
+<br>
+<br>
+
+
 
 ### Research Article Versions 
 
@@ -282,8 +274,25 @@ NASA leads a prominent program called [Transform to Open Science](https://github
 <br>
 
 
-  
+??? Tip "Copyrights and Science Publishing"
 
+    Upon completion of a peer-reviewed science paper, the author typically 1. signs over the copyright of the paper to the publisher or 2. signs an exclusive license agreement with the publisher
+
+    For example authors that publish in [_Science_](https://www.science.org/content/page/science-journals-editorial-policies#copyright-license-to-publish) retain their copyright but sign a 'license to pubish' agreement with AAAS
+
+    Elsevier requires authors to sign over copyright of the article but authors retains some rights of distribution
+
+    [Elesevier summary of copyright policies](https://www.elsevier.com/about/policies-and-standards/copyright#1-author-rights)
+
+    [Elesevier article sharing policy](https://www.elsevier.com/about/policies-and-standards/sharing)
+
+    [Wiley policy on self-archiving](https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html)
+
+    [Springer Nature copyright policies](https://www.springer.com/gp/open-access/publication-policies/copyright-transfer#:~:text=Springer%20Nature%20authors%20retain%20copyright,found%20in%20our%20publishing%20policies.)
+
+
+<br>
+<br>
 
 ### New Open Access Mandates in US
 
