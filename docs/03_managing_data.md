@@ -303,12 +303,14 @@ published in Scientific Data. Read it.
 -   R1.3. (meta)data meet domain-relevant community standard
 
 !!! Tip
+
     Open vs. Public vs. FAIR:
 
     FAIR does not demand that data be open: See one definition of open:
     http://opendefinition.org/
 
 !!! Tip
+
     **Why Principles?**
 
     FAIR is a collection of principles. Ultimately, different
@@ -347,12 +349,12 @@ The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Gove
 -   E3. For future use
 
 
-!!! tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
+!!! Tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
 
-        Lydia was a Data Science Fellow at the University of Arizona, attending FOSS in the Fall of 2022. Since then, Lydia graduated from the University of Arizona's Department of Evironemtal Sciences, and published a paper on the application of the CARE principles to ecology and biodiversity research. Go Lydia!
-
-        Check it out! [Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity](https://www.nature.com/articles/s41559-023-02161-2), *Nature Ecology & Evolution*, 2023. 
-
+    Dr. Lydia Jennings was a Data Science Fellow at the University of Arizona, who attended FOSS in  Fall of 2022.      
+    Lydia graduated from the University of Arizona's Department of Evironemtal Sciences, and has published a paper on the application of the CARE principles to ecology and biodiversity research.
+    Go Lydia!
+    [Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity](https://www.nature.com/articles/s41559-023-02161-2), *Nature Ecology & Evolution*, 2023. 
 
 ??? Note "Resources"
 
