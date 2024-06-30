@@ -14,7 +14,7 @@
 Ensuring that data are effectively organized, shared, and preserved
 is critical to making your science impactful, efficient, and open.
 
-??? Warning
+??? Danger
 
     The biggest challenge to data management is **making it an afterthought**.
 
@@ -150,19 +150,6 @@ The summary below is adapted from the excellent [DataONE best practices primer](
 
 -   Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime
 -   A good plan considers each of the stages below
-
-??? Warning
-
-    The biggest challenge to data management making it an afterthought.
-
-    Unfortunately, poor data management doesn't have a high upfront cost.
-    You can do substantial work before realizing you are in trouble. Like
-    a swimmer in rip current, by the time you realize you are in trouble,
-    you may already be close to drowning.
-
-    The solution? Make data management the first thing you consider when
-    starting a research project. It also needs to be a policy you
-    institute right away for your research group.
 
 ### Collect
 
