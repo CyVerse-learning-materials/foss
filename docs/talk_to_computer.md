@@ -1,20 +1,40 @@
 # How to Talk to Computers
 
-### Requirements
+## The Command Line Interface
 
-Command Line Interfaces (CLI) are found throughout all Operating Systems, however we recommend the use of the Unix CLI. If you have a Unix based machine such as Linux/Ubuntu (or other Linux distributions), macOS, you are ready for the next step. If you use a Windows machine, please install the [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install) as seen in the [Before FOSS Starts](installation.md#Software) section.
+When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen or simply tap on the screens of our smart phones or tablets. Both of these methods make use of the Graphical User Interface (GUI) and have become central to the way we interact with computers. GUIs make computers so easy to use! 
+
+However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. CLIs are found throughout all operating systems (Windows, MacOS, Linux) though they migh have different commands and syntax. 
+
+For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in MacOS and all Linux operating systems. 
+
+<br/>
+<br/>
+
+!!! Warning "**Attention** :material-microsoft-windows: Windows users"
+
+    Much of what we are going to be teaching is based on open-source software which operates on cloud and is incompatible with Windows OS.
+
+    Unix-based systems such as Linux [:material-ubuntu: Ubuntu](https://ubuntu.com/){target=_blank} and [:material-apple: MacOS X](https://www.apple.com/macos/){target=_blank}, as many scientific tools require a Unix Operating System (OS). 
+    
+    There are a number of software that allow Windows users to execute Unix commands, however we recommend the use of [:material-microsoft-windows: Windows Subsystem for Linux (WSL) 2.0](https://docs.microsoft.com/en-us/windows/wsl/install){target=_blank}.
+
+<br/>
+<br/>
 
 ---
+<br/>
+<br/>
 
 ## The Unix Shell
 
-When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen through the Graphical User Interface (GUI). GUIs are central to the way we interact with computers because it makes it very easy to use them. 
 
 
-However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
+
+The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
 
 
-Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, and **Shell** will be used more or less interchangeably throughout the lesson. 
+Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, **Shell**, and **BASH** will be used more or less interchangeably throughout the lesson. 
 
 [![cli](../assets/cli.gif){width=350}]()
 
@@ -23,7 +43,33 @@ Though there are technical differences between them, the terms **Command Line In
 <br/>
 
 
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="350" } </a>
+    <figcaption> Linux Directory Structure</figcaption>
+</figure>
+
+<br/>
+<br/>
+
 ## Introductory Shell Commands
+
+The following tutorial material was taken from the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). 
+
+!!! info "Download Some Data from the Carpentries"
+    To follow along with the tutorial, please download and unzip this data. [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) 
+        
+    ??? Tip "The Command Line Way to Download and Unzip!"
+        Execute the following commands:
+        ```
+        $ sudo apt install unzip
+        $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+        $ unzip shell-lesson-data.zip
+        ``` 
+
+
+<br/>
+<br/>
+<br/>
 
 ??? info "Help with Commands"
     For every command, typing `man` (manual) before the command, will open the manual for said command.
@@ -61,25 +107,9 @@ Though there are technical differences between them, the terms **Command Line In
     $ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
     ```
 
-<br/>
-<br/>
-<br/>
 
 
 
-
-The following tutorial material was taken from the [Carpentries' Shell Module](https://swcarpentry.github.io/shell-novice/). 
-
-!!! info "Download Some Data from the Carpentries"
-    To follow along with the tutorial, please download and unzip this data. [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip) 
-        
-    ??? Tip "The Command Line Way to Download and Unzip!"
-        Execute the following commands:
-        ```
-        $ sudo apt install unzip
-        $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
-        $ unzip shell-lesson-data.zip
-        ``` 
 
 <br>
 <br>
@@ -186,31 +216,38 @@ Notice the new `my_folder` directory.
     $ mkdir my_personal-folder
     $ mkdir MyPersonal.Folder
     ```
-    ??? Question
-        What do you think will happen if you attempt creating a folder by typing spaces?
-            
-        ??? Success "Solution"
-            You will obtain as many folders as typed words!
-            ```
-            $ mkdir my folder
-            $ ls -F
-            exercise-data/  folder/  my/  north-pacific-gyre/
-            ```
-            Notice the two folders `my` and `folder`.
+    <br>
+
+    ??? Question "What will happen if you create a directory with spaces?"
+
+        You will obtain as many folders as typed words!
+        ```
+        $ mkdir my folder
+        $ ls -F
+        exercise-data/  folder/  my/  north-pacific-gyre/
+        ```
+        Notice the two folders `my` and `folder`.
 
 <br>
 <br>
 
-Create an empty file with `touch <name of file>`.
+Create an empty file with `touch <name of file>`
 
 ```
-$ touch new_file
+$ touch new_file.txt
 ```
 
-`touch` will create an **empty** file, it is up to you to populate using whichever text editor you prefer. Refer to the carpentries material to know more about nano and its functionalities ([link](https://swcarpentry.github.io/shell-novice/03-create/index.html#create-a-text-file)).
+`touch` will create an **empty** file
 
-!!! tip
-    You can also use your text editor to look at the contents of your files!
+<br/>
+
+Add text to the new file
+```
+nano new_file.txt 
+```
+
+<br/>
+<br/>
 
 Use `mv <name of file or folder you want to move> <name of destination folder>` to move your newly created file to the directory you created previously (you can then use `ls` to check if you successully moved the file).
 
@@ -218,12 +255,12 @@ Use `mv <name of file or folder you want to move> <name of destination folder>` 
 $ ls -F
 exercise-data/  new_file*  my_folder/  north-pacific-gyre/
 
-$ mv new_file my_folder/
+$ mv new_file.txt my_folder/
 $ ls -F
 exercise-data/  my_folder/  north-pacific-gyre/
 
 $ ls -F my_folder/
-new_file*
+new_file.txt*
 ```
 `mv` can also be used to **rename** a file or folder with  `mv <name of file or folder you want to change> <new name>`.
 
@@ -233,6 +270,10 @@ $ mv new_file my_file
 $ ls -F
 my_file*
 ```
+
+<br/>
+<br/>
+<br/>
 
 `cp` is the command to copy a file with the syntax `cp <name of file you want to copy> <name of copy file>`
 
@@ -256,6 +297,10 @@ copy_my_file*  my_file*
     copy_my_file*  my_file*
     ```
 
+<br/>
+<br/>
+<br/>
+
 To remove an unwanted file, use `rm <name of file to remove>`.
 
 ```
@@ -272,9 +317,13 @@ my_file
     exercise-data/  my_folder/  north-pacific-gyre/
     ```
 
-#### Introductory Remarks
+<br/>
+<br/>
+<br/>
 
-The commands listed here above are to help you better understand directories and files. There is a lot more that one can accomplish when communicating with you computer through the Shell. In case you want to know more, here are some useful links you can visit:
+### Shell Script
+
+Show an example of why the shell is more powerful than GUI
 
 - [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html)
 - [Loops](https://swcarpentry.github.io/shell-novice/05-loop.html)
@@ -291,11 +340,75 @@ The commands listed here above are to help you better understand directories and
 
 
 
-## Introduction to Prompt Engineering
+## LLM Chatbots for Open Science
 
-!!! info "This section is taken from the "[GPT101](https://ua-data7.github.io/introllms/)" CyVerse Workshop"
+Large Language Model (LLM) chatbots have fundamentally changed how we humans are going to interact with computers going forward. They provide a natural language interface to instruct computers to do many tasks including:
 
-A great set of tools that can help you with your own research, if used in the correct way, are the new Large Language Models (LLMs) available publicly. These include [:simple-openai: ChatGPT](https://chat.openai.com/), [:simple-googlebard: Bard](https://bard.google.com/?hl=en) and [:simple-microsoftbing: Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291) (integrated with :material-microsoft-edge: Microsoft Edge).
+* Read, write, and summarize text
+
+* Analyze data
+
+* Explain techical topics
+
+* Search the web and retrieve information
+
+* Generate, optimize, and explain many types of computer code 
+
+* Understand and generate images
+
+
+<br>
+<br>
+
+### Commercial Chatbots
+
+[:simple-openai: ChatGPT](https://openai.com/chatgpt)
+
+[:simple-google: Gemini](https://gemini.google.com/)
+
+[Anthropic: Claude](https://www.anthropic.com/claude)
+
+[:simple-microsoft: Copilot](https://www.microsoft.com/en-us/bing?form=MA13FV)
+
+<br>
+<br>
+
+Current LLMs generally provide recommendation for how _you_ could do things. ie, they provide you code and text recommendations but don't actually execute anything.
+
+But soon, [AI Agents](https://github.com/Significant-Gravitas/AutoGPT) could be everywhere executing on instructions in autonomous and semi-autonomous ways. 
+
+<br>
+<br>
+
+You can use LLMs to: 
+
+Provide a general outline for a data management plan
+
+```
+I am writing a grant proposal to the National Science Foundation. 
+Could you please provide me a basic template for a data management plan (DMP) and 
+please provide url links to resources that can help me with NSF DMP requirements.
+```
+
+
+Write documentation in markdown
+
+Provide a step-by-step recipe of how to create and serve an mkdocs website in Github
+
+Write shell commands and shell scripts
+
+Write git commands
+
+Write download and conda commands
+
+Write docker run commands
+
+Write docker files
+
+
+
+
+
 
 ### LLMs in 150 words (or less)
 
@@ -337,7 +450,7 @@ Your prompt should specify the role in which ChatGPT responds, what its task is,
 
 A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
 
-This lesson only covers ChatGPT, but the same prompt techniques can be used in other LLMs.
+
 
 #### Role
 
@@ -358,123 +471,12 @@ Set the role for ChatGPT to play during your session.
 | Python Interpreter |
 | Web Browser |
 
-Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/), a web browser, a search engine, or language interpreter.
 
-??? Abstract "Data Scientist"
 
-    Let's try an example prompt with role-playing to help write code in the R programming language.
-
-    ```markdown
-    I want you to act as a data scientist with complete knowledge of the R language, 
-    the TidyVerse, and RStudio. 
+!!! Warning
     
-    Write the code required to create a new R project environment,
-    Download and load the Palmer Penguins dataset, and plot regressions of body mass, 
-    bill length, and width for the species of Penguins in the dataset. 
+    VERIFY EVERTHING CHATBOTS TELL YOU!
 
-    Your response output should be in R and RMarkDown format 
-    with text and code delineated with ``` blocks.
-
-    At the beginning of new file make sure to install any 
-    RStudio system dependencies and R libraries that Palmer Penguins requires.
-    ```
-
-    Example can use `GPT-3.5-Turbo` or `GPT-4`
-
-??? Abstract "Talk to Dead Scientists"
-
-    Try to ask a question with and without Internet access enabled:
-
-    ```markdown
-    I want you to respond as though you are the mathematician Benoit Mandelbrot
-
-    Explain the relationship of lacunarity and fractal dimension for a self-affine series
-
-    Show your results using mathematical equations in LaTeX or MathJax style format
-    ```
-    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
-
-#### Tasks
-
-Prompts which return informative responses to questions like "What is ..." or "How does ..."
-
-Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
-
-| Types of Task | 
-|---|
-| Scientific Article | 
-| Essay |
-| Blog Post |
-| Outline |
-| Email | 
-| Cover Letter |
-| Recipe |
-| Tutorial |
-| Lesson Plan | 
-| Jupyter Notebook |
-| Configuration |
-| Code |
-| Software Script |
-
-Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
-
-There are extension tools for ChatGPT which allows you to prompt with references.
-
-#### Format
-
-By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.
-
-| Formats to output |
-|---|
-| MarkDown Text (\& emojis) |
-| List |
-| Table |
-| HTML |
-| CSS |
-| Regular Expression |
-| CSV / TXT |
-| JSON |
-| Rich Text |
-| Gantt Chart |
-| Word Cloud |
-| Graphs |
-| Spreadsheets |
-
-You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
-
-ChatGPT can provide instructional details about how to do specific tasks. 
-
-??? Abstract "Documentation Writer"
-
-    ```markdown
-    I want you to act as a DIY expert. You will help me develop the skills necessary 
-    to complete simple lab documentation, create tutorials and guides for beginners and experts, 
-    and explain complex concepts in layman's terms using visual techniques, and develop helpful resources.
-
-    I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
-    ```
-
-### Further Documentation & Questions
-
-For a more in depth quick start, go to the [GPT 101](https://ua-data7.github.io/introllms/) workshop. 
-
-Documentation of interest:
-
-- Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt)
-- Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](https://doi.org/10.48550/arXiv.2303.08774)
-- Read the [:fontawesome-regular-file-pdf: Bard Documentation](https://ai.google/static/documents/google-about-bard.pdf)
-
-??? Tip "How long can or should a prompt be?"
-
-    The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665). A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
-
-    Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens. BARD currently has a limit of 20,000 tokens in a prompt. 
-    
-    This means that a 2,048 token prompt would be equivalent to about 1,536 words (3-6 pages), and a 32,768 token prompt would be 24,576 words (50-100 pages). 
-    
-    However, this is only an approximation and may vary depending on the specific text and model. 
-
-    What this also means is that current GPT are not capable of reading many PDFs at one time, for example, to do a literature review, or to write a sequel to a novel or book series. 
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
 
@@ -491,12 +493,4 @@ Documentation of interest:
     [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
 
 
-??? Tip "Access the Internet"
 
-    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
-
-    There are third-party extensions, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend OpenAI ChatGPT's reach to the internet.
-
-    We presently recommend using [:material-microsoft-bing: Bing Chat](bing.md) with Edge Browser instead of ChatGPT 3.5 for prompting which works with the internet.
-
-    [:simple-google: Bard](bard.md) also has access to the web and limited integration with Google Workspace.
