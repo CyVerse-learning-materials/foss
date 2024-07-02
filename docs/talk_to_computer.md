@@ -2,9 +2,9 @@
 
 ## The Command Line Interface
 
-When using a computer, it is normal to use a keyboard and mouse to navigate a cursor across the screen or simply tap on the screens of our smart phones or tablets. Both of these methods make use of the Graphical User Interface (GUI) and have become central to the way we interact with computers. GUIs make computers so easy to use! 
+When using a computer, it is typical to use a keyboard and mouse to navigate a cursor across the screen or simply tap on the screens of our smart phones or tablets. Both of these methods make use of the Graphical User Interface (GUI) and have become central to the way we interact with computers. GUIs make computers so easy to use! 
 
-However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. CLIs are found throughout all operating systems (Windows, MacOS, Linux) though they migh have different commands and syntax. 
+However, for a more direct and powerful way to instruct your computer, you should learn to use the **Command Line Interface (CLI)**. CLIs are found throughout all operating systems (Windows, MacOS, Linux) though they might have different commands and syntax. 
 
 For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in MacOS and all Linux operating systems. 
 
@@ -195,17 +195,18 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
 <br>
 <br>
 
-Return to `shell-lesson-data`, and crate a directory with `mkdir <name of folder>`.
+Return to `shell-lesson-data`, and create a directory with `mkdir <name of folder>`.
 
 ```
 $ mkdir my_folder
 $ ls -F
 exercise-data/  my_folder/  north-pacific-gyre/
 ```
-<br>
-<br>
 
 Notice the new `my_folder` directory.
+
+<br>
+<br>
 
 !!! danger "Naming your files"
     It is strongly suggested that you avoid using spaces when naming your files. When using the Shell to communicate with your machine, a space can cause errors when loading or transferring files. Instead, use dashes (`-`), underscores (`_`), periods (`.`) and CamelCase when naming your files.
@@ -358,7 +359,13 @@ Large Language Model (LLM) chatbots have fundamentally changed how we humans are
 
 
 <br>
+
+Current LLMs generally provide recommendation for how _you_ could do things. ie, they provide you code and text recommendations but don't actually execute anything. But these technologies are advancing quickly and new capabilities are developed and released constantly. Soon, [AI Agents](https://github.com/Significant-Gravitas/AutoGPT) could be everywhere executing on instructions in autonomous and semi-autonomous ways.
+
 <br>
+
+
+
 
 ### Commercial Chatbots
 
@@ -372,42 +379,7 @@ Large Language Model (LLM) chatbots have fundamentally changed how we humans are
 
 <br>
 <br>
-
-Current LLMs generally provide recommendation for how _you_ could do things. ie, they provide you code and text recommendations but don't actually execute anything.
-
-But soon, [AI Agents](https://github.com/Significant-Gravitas/AutoGPT) could be everywhere executing on instructions in autonomous and semi-autonomous ways. 
-
 <br>
-<br>
-
-You can use LLMs to: 
-
-Provide a general outline for a data management plan
-
-```
-I am writing a grant proposal to the National Science Foundation. 
-Could you please provide me a basic template for a data management plan (DMP) and 
-please provide url links to resources that can help me with NSF DMP requirements.
-```
-
-
-Write documentation in markdown
-
-Provide a step-by-step recipe of how to create and serve an mkdocs website in Github
-
-Write shell commands and shell scripts
-
-Write git commands
-
-Write download and conda commands
-
-Write docker run commands
-
-Write docker files
-
-
-
-
 
 
 ### LLMs in 150 words (or less)
@@ -420,19 +392,31 @@ Write docker files
 
 In a nutshell, LLMs are like super-powered text generators trained on the internet's vast knowledge.
 
+<br>
+<br>
+
+!!! Warning
+    
+    **VERIFY EVERTHING CHATBOTS TELL YOU!**
+
+<br>
+<br>
+<br>
+
 ### :simple-openai: Prompt Writing
 
-GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". 
+LLM Chatbots are meant to be conversational. In general, you are asking the Chatbot questions (known as **Prompts**) and the Chatbot will respond with answers. 
 
-Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
+It is a bit of an artform to get the Chatbot to provide answers with the specificity and format that you want. An entire field of study has sprung up, called **Prompt Engineering**, which seeks to find the magic words that will elicit the best (and technically correct) responses from the Chatbot. 
 
-#### Priming
+<br>
+<br>
 
-GPTs do better when provided with "prompt primers".
+#### **Prompt Priming** 
 
-Zero-shot unconditioned prompts are likely to return the least specific responses. 
+Provide lots of organized details to help the Chatbot understand the question and what it's task is. This could include adding a backstory or context for why you are asking the question. Be very specific in terms of what you want from the Chatbot and how you want it. 
 
-Responses are more likely to be useful when multiple specific output types are defined.
+Zero-shot unconditioned prompts are likely to return the least specific responses. Responses are more likely to be useful when multiple specific output types are defined.
 
 | Types of Priming | Example |
 |------------------|---------|
@@ -440,21 +424,31 @@ Responses are more likely to be useful when multiple specific output types are d
 | Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
 | Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
 
-#### Prompt Structure
+<br>
+<br>
 
-| Role | Task | Format |
-|------|------|--------|
-| Act as [\[ROLE\]](#role) | Create a [\[TASK\]](#tasks) | ... show as [\[FORMAT\]](#format) |
+#### **Linked Prompts**
 
-Your prompt should specify the role in which ChatGPT responds, what its task is, and the format of how its outputs should be returned. 
+Responses to prompts may not return the exact details or information that you are after the first time. Follow-up by rephrasing your prompts more carefully and continuing with iterative prompting can build upon your priors.
 
-A second step to the initial prompt is to [link or chain](#linked-prompts) your subsequent prompts. 
+"Chain prompting" or "Linked Prompting" brings multiple prompts together.
+
+| Linked Prompting | Examples |
+|------------------|----------|
+| Step 1: Priming | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
+| Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
+| Step 3: Try again with a web search | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
+
+!!! tip "Encouraging the Chatbot to do Better"
+    Chatbot responses can be missing information or just plain wrong. When this occurs, you can point out the mistake and ask the Chatbot to provide a more complete or better answer. Don't settle for poor responses!
+<br>
+<br>
 
 
 
-#### Role
+#### Role Playing
 
-Set the role for ChatGPT to play during your session. 
+Some people find that asking the Chatbot to adopt a persona will lead to better responses. 
 
 "I want you to act as ..." will establish what type of conversation you are planning to have. 
 
@@ -473,9 +467,93 @@ Set the role for ChatGPT to play during your session.
 
 
 
-!!! Warning
-    
-    VERIFY EVERTHING CHATBOTS TELL YOU!
+
+<br>
+<br>
+<br>
+
+### Using Chatbots for FOSS
+
+<br>
+
+#### Provide a general outline for a data management plan
+
+```
+I am writing a grant proposal to the National Science Foundation. 
+Could you please provide me a basic template for a data management plan (DMP) and 
+please provide url links to resources that can help me with NSF DMP requirements.
+```
+<br>
+<br>
+
+#### Write documentation in markdown
+
+```
+```
+<br>
+<br>
+
+#### Provide a step-by-step recipe to create and serve an mkdocs website in Github
+
+```
+I would like to create a personal website using the MKdocs style 
+and host it on Github pages.
+
+Could you please write me a step-by-step guide starting 
+with importing an existing github repository that has the mkdocs material.
+```
+<br>
+<br>
+
+#### Write shell commands and shell scripts
+
+<br>
+<br>
+
+#### Write git commands
+
+<br>
+<br>
+
+#### Write download and conda commands
+
+<br>
+<br>
+
+#### Write docker run commands
+```
+I would like to run a docker container that consists of a jupyter notebook. 
+Can you please suggest a docker run command that launches the jupyter notebook
+and mounts a volume of data in it. 
+```
+
+<br>
+<br>
+
+#### Write docker files
+```
+I would like to create a docker image that consists of R studio and 
+some customized Rcode. Can you tell me the steps to 1. make a dockerfile and 
+build the docker image; and 2. Upload the docker image to docker hub.
+```
+
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
 
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
