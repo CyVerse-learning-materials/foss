@@ -14,37 +14,31 @@
 <br>
 <br>
 <br>
+
+
+## Reproducible Scientific Computing
+
 <br>
 
-## Defining Reproducibility
+!!! Quote "Defining Reproducibility"
 
-!!! Question
-
-    How do you define reproducible science?
-        
-    ??? success "Answer"
-        In [Reproducibility vs. Replicability](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5778115/), Hans Plesser gives the following useful definitions:
-
-        - **Repeatability** (Same team, same experimental setup): The measurement can be obtained with stated precision by the same team using the same measurement procedure, the same measuring system, under the same operatingconditions, in the same location on multiple trials. 
-        For computational experiments, this means that a researcher can reliably repeat her own computation.
-        - **Replicability** (Different team, same experimental setup): The measurement can be obtained with stated precision by a different team using the same measurement procedure, the same measuring system, under the same operating conditions, in the same or a different location on multiple trials. 
-        For computational experiments, this means that an independent group can obtain the same result using the author's own artifacts.
-        - **Reproducibility** (Different team, different experimental setup): The measurement can be obtained with stated precision by a different team, a different measuring system, in a different location on multiple trials. 
-        For computational experiments, this means that an independent group can obtain the same result using artifacts which they develop completely independently.
-
-        The paper goes on to further simplify:
-
-        - **Methods reproducibility**: provide sufficient detail about procedures and data so that the same procedures could be exactly repeated.
-        - **Results reproducibility**: obtain the same results from an independent study with procedures as closely matched to the original study as possible.
-        - **Inferential reproducibility**: draw the same conclusions from either an independent replication of a study or a reanalysis of the original study.
+    "Reproducing the result of a computation means running the same software on the same input data and obtaining the same results." Rougier et al. 2016
 
 
 
-Reproducibility policies at the [Bahlai Lab](https://github.com/BahlaiLab/Policies/blob/master/Project_completion.md).
+<br>
+<br>
+<br>
 
-Reproducibility comes from our obligations and desires to work ethically, honestly, and with confidence that the data and knowledge we produce is done has integrity. Reproducibility is also a "spectrum of practices", not a single step. (See figure below from [Peng, 2011](https://science.sciencemag.org/content/334/6060/1226)).
 
-![spectrum](assets/reproducibility-spectrum.png)
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/reproducibility-spectrum.png){ width="600" } </a>
+    <figcaption> [Peng 2011](https://science.sciencemag.org/content/334/6060/1226)</figcaption>
+</figure>
+
+
+
 
 <br>
 <br>
@@ -59,18 +53,20 @@ Reproducibility comes from our obligations and desires to work ethically, honest
 <br>
 <br>
 
-## Reproducible Scientific Computing
 
 <br>
 
-### What is point-and-click computing?
+### Interactive (ie, point-and-click) Computing
 
-Manually navigating a mouse across a GUI and running commands by selecting from menu options. The commands are generally finite in number and can be accessed through menus. 
+Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
 
+<br>
 
 #### Advantages 
 
 Inuitive and easy to navigate a GUI and click buttons
+
+<br>
 
 #### Limitations
 
@@ -82,26 +78,24 @@ Inuitive and easy to navigate a GUI and click buttons
 <br>
 <br>
 
-### What is Scripted Computing?
+### Scripted Computing
 
-We are removing the GUI, and instead instructing the computer to run a series of custom commands using a scripting/coding language. We are **automating** what used to take hundreds of manual clicks. 
+Removing the GUI, and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
 
-
-
-We can write scripts to clean data, run analyses, and generate figures, install software
+We are **automating** what used to take many manual clicks. 
 
 
-We write computer code to 1. Customize; 2. Automate, and 3. Scale an analysis 
+We can write scripts to install software, clean data, run analyses, and generate figures.
 
-
+<br>
 
 #### Advantages 
 * Much faster to run through commands
 * The script runs identically every time, reducing the human element 
 * Easy for someone else to quickly reproduce the exact analysis and result
-* Enables analysis tasks to scale up (100 clicks to 100,000 clicks)
+* Enables analysis tasks to scale up 
 
-
+<br>
 
 #### Challenges 
 * Requires deeper computer knowledge
@@ -148,11 +142,36 @@ R Base Package
 <br>
 <br>
 
-## Download and install scripting libraries and packages
+## Install Scripting Languages and Packages
 
-System path
+When you download and install software onto your computer, it will typically install it in a set of specific directories that we call the **System Path**.
 
-The System Path wants one version of a software
+### System Path
+
+The 'system path' often referred to simply as **PATH** in the context of computing refers to the set of directories in which the operating system looks for executable files when a command is issued. 
+
+When you go to launch an application by clicking on a desktop icon or with a CLI command, the computer will search for the application within the PATH directories. If it finds the executable, it will launch. 
+
+!!! Tip "Find the PATH on your computer"
+
+    In Linux and Mac Terminal
+
+    `echo $PATH`
+
+    <br>
+
+    In Windows Terminal
+
+    `echo %PATH%`
+
+<br>
+<br>
+
+!!! Warning 
+
+    The PATH prefers one version of software
+
+
 
 
 <br>
@@ -166,16 +185,16 @@ The System Path wants one version of a software
 - **Hardware**: CPUs, GPUs, RAM
 - **Operating system & version**: many flavors of Linux, MacOS, Windows
 - **Software versions:** R, Python, etc.
-- **Package versions:** specific R or Python packages, etc.
+- **Package versions:** specific R or Python packages, which often depend on other packages
 
 <br>
 <br>
 
-The scripts you create were designed to work in _your_ specific computing environment 
+#### The scripts you create:
 
-The scripts may not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
-
-The scripts you create may not work on someone else's computer because their computing environment is different. 
+* Were designed to work in _your_ specific computing environment 
+* May not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
+* May not work on someone else's computer because their computing environment is different
 
 <br>
 <br>
@@ -184,11 +203,14 @@ The scripts you create may not work on someone else's computer because their com
 
 ### Software Dependency Hell
 
-Impossible to get software environment correct enough to run some code.
+Sometimes, it can be _nearly impossible_ to get your computing environment correct enough to run someone else's code.
 
-Updating software in system path to make new code work, now breaks old code.
+This can caused by incorrect software versions of the packages you are using or their dependencies.
 
-You need multiple system paths to contain custom environments for different scripts. 
+Updating software installed in the **system path** - to make new code work - can break old code!
+
+
+
 
 
 <br>
@@ -197,37 +219,49 @@ You need multiple system paths to contain custom environments for different scri
 
 ## Environment Managers 
 
+One solution to software dependency hell is to use an Environment Manager
+
+An environment manager allows you to create **multiple** and **isoloted** system paths. You can create unique environments that have the specific software version to run specific scripts.
+
+<br>
+
 ### :simple-anaconda: Conda - Open Source Environment Manager
 
-[Conda](https://docs.conda.io/en/latest/)
 
 
+[Conda](https://docs.conda.io/en/latest/) is a popular and open source environment manager tool that can be installed on any operating system (Windows, MacOS, Linux).
 
-Conda allows users to create isolated environments for their projects. Each environment can have its own set of packages, dependencies, and even its own version of Python. This ensures that different projects can have their own specific requirements without interfering with each other. It allows for consistent and reproducible results across different systems and setups
+* Users can create environments that have their own set of packages, dependencies, and even their own version of Python.
+* Projects can have their own specific requirements without interfering with each other
+* It allows for consistent and reproducible results across different systems and setups
 
-Creating multiple and separate system evironments
 
-Isolating software stacks
-
-Conda is platform-agnostic. This means you can use it across various operating systems like Windows, macOS, and Linux.
 <br>
 <br>
+
+### Renv - Environment Manager for R
 <br>
 
 ## Package Managers
-Conda - With conda you can install much more than just Python libraries. You can install entire software stacks such as Python + Django + Celery + PostgreSQL + nginx. You can install R, R libraries, Node.js, Java programs, C and C++ programs and libraries, Perl programs, the list is pretty long and limitless.
+
+A software tool to find, download, and install software packages onto your computer. 
+
+### :simple-anaconda: Conda 
+Conda is also a package manager. It downloads and installs software packages from the repository [Conda-Forge](https://conda-forge.org/). While it's commonly associated with Python, Conda can also manage packages from other languages including R, Django, Celery, PostgreSQL, nginx, Node.js, Java programs, C and C++, Perl, and more.
 
 
- Pip is a package management tool for python. You use it to download and install python libraries on your computer. It generally comes installed with and is meant to use with conda. 
- 
- 
+### :simple-python: Pip
+[Pip](https://pypi.org/project/pip/) is the package management tool for python. It downloads and installs python libraries from the python repository [PyPi](https://pypi.org/). It can be used together with Conda environment manager. 
 
-Beyond managing environments, Conda is also a package manager. It can install specific versions of software packages and ensure that all dependencies are met. While it's commonly associated with Python, Conda can also manage packages from other languages. You can search for packges at https://anaconda.org/.
+
+  
+
+
 
 <br>
 <br>
 
-### Scripting the Installation of Software in a Conda Evironment
+### Sharing your Environment with Colleagues
 
 In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
 
@@ -236,7 +270,11 @@ pip install -r requirements.txt
 ```
 
 
-and R
+With `renv`, you need to share the `renv.lock'  which allows other people to duplicate the environment on their computer
+
+`renv::restore()`
+
+
 
 <br>
 <br>
@@ -244,10 +282,11 @@ and R
 
 ### Package/Library Repositories
 
-PyPI - Python Package Index
+[PyPI - Python Package Index](https://pypi.org/)
 
-Conda-Forge 
+[Conda-Forge](https://conda-forge.org/) 
 
+[R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
 
 
 
