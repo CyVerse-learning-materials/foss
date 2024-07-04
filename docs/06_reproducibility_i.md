@@ -24,6 +24,8 @@
 
     "Reproducing the result of a computation means running the same software on the same input data and obtaining the same results." Rougier et al. 2016
 
+    "Getting someone else's code to run on my computer" - Anonymous
+
 
 
 <br>
@@ -63,7 +65,7 @@
     <figcaption></figcaption>
 </figure>
 
-Definition: Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
+**Definition:** Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
 
 <br>
 
@@ -95,7 +97,7 @@ Definition: Manually navigating a mouse across a graphical user interface (GUI) 
 </figure>
 
 
-Definition: Removing the GUI, and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
+**Definition:** Removing the GUI and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
 
 We are **automating** what used to take many manual clicks. 
 
@@ -144,20 +146,21 @@ We can write scripts to install software, clean data, run analyses, and generate
 
 ## Scripting Languages
 
-Python, R, Javascript, Matlab
+The two most common open-source scripting languages (for science) are Python and R.
 
-base libaries and additional packages
+[![python_logo](assets/python_logo.png){width=150}]()
+[![python_logo](assets/r_logo.jpeg){width=150}]()
 
-Python Standard Library
+Both languages consist of base software (Python Standard Library or R Base Package) and MANY additional packages that can be downloaded and installed for increased capabilities. 
 
-R Base Package
+
 
 <br>
 <br>
 <br>
 <br>
 
-## Install Scripting Languages and Packages
+## Software Installation
 
 When you download and install software onto your computer, it will typically install it in a set of specific directories that we call the **System Path**.
 
@@ -202,6 +205,11 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 - **Software versions:** R, Python, etc.
 - **Package versions:** specific R or Python packages, which often depend on other packages
 
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/dependency.png){ width="400" } </a>
+    <figcaption>Python Package Dependency</figcaption>
+</figure>
+
 <br>
 <br>
 
@@ -217,6 +225,8 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 <br>
 
 ### Software Dependency Hell
+
+
 
 Sometimes, it can be _nearly impossible_ to get your computing environment correct enough to run someone else's code.
 
@@ -259,16 +269,32 @@ An environment manager allows you to create **multiple** and **isoloted** system
 
 ## Package Managers
 
-A software tool to find, download, and install software packages onto your computer. 
+A software tool to find, download, and install software packages to PATH or virtual environment 
 
-### :simple-anaconda: Conda 
-Conda is also a package manager. It downloads and installs software packages from the repository [Conda-Forge](https://conda-forge.org/). While it's commonly associated with Python, Conda can also manage packages from other languages including R, Django, Celery, PostgreSQL, nginx, Node.js, Java programs, C and C++, Perl, and more.
+### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
+**Software:** Python, R, Django, Celery, PostgreSQL, nginx, Node.js, Java programs, C and C++, Perl, and command line tools
 
-
-### :simple-python: Pip
-[Pip](https://pypi.org/project/pip/) is the package management tool for python. It downloads and installs python libraries from the python repository [PyPi](https://pypi.org/). It can be used together with Conda environment manager. 
+**Repository:** [Conda-Forge](https://conda-forge.org/). 
 
 
+<br>
+
+### :simple-python: [Pip](https://pypi.org/project/pip/)
+
+**Software:** python 
+
+**Repository:** [PyPi](https://pypi.org/)
+
+**Note:** Pip can be used together with Conda environment manager. 
+
+<br>
+
+### :simple-r: R
+With the R language, a package manager is built directly into the R Base Package. 
+
+`install.packages('ggplot2')`
+
+**Repository:**  [R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
   
 
 
@@ -276,7 +302,7 @@ Conda is also a package manager. It downloads and installs software packages fro
 <br>
 <br>
 
-### Sharing your Environment with Colleagues
+## Sharing your Environment with Colleagues
 
 In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
 
@@ -294,14 +320,6 @@ With `renv`, you need to share the `renv.lock'  which allows other people to dup
 <br>
 <br>
 
-
-### Package/Library Repositories
-
-[PyPI - Python Package Index](https://pypi.org/)
-
-[Conda-Forge](https://conda-forge.org/) 
-
-[R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
 
 
 
