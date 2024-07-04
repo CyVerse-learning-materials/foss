@@ -58,20 +58,29 @@
 
 ### Interactive (ie, point-and-click) Computing
 
-Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/pointer.png){ width="150" } </a>
+    <figcaption></figcaption>
+</figure>
+
+Definition: Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
 
 <br>
+
+
+
+
+
 
 #### Advantages 
 
-Inuitive and easy to navigate a GUI and click buttons
+* Inuitive and easy to navigate a GUI and click buttons
 
-<br>
 
 #### Limitations
 
 * It can be slow to sequence through hundreds of clicks to accomplish an analysis. 
-* Less reproducible - Cumbersome to write a tutorial to others can follow your click sequence
+* Less reproducible - Cumbersome to write and follow a click-by-click tutorial 
 
 <br>
 <br>
@@ -80,7 +89,13 @@ Inuitive and easy to navigate a GUI and click buttons
 
 ### Scripted Computing
 
-Removing the GUI, and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/code.jpg){ width="400" } </a>
+    <figcaption></figcaption>
+</figure>
+
+
+Definition: Removing the GUI, and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
 
 We are **automating** what used to take many manual clicks. 
 
