@@ -4,9 +4,10 @@
         
     After this lesson, you should be able to:
 
-    *  Describe what reproducibility is
-    *  Discriminate between reproducibility, replicability, and repeatability
-    *  Explain why reproducible research is valuable 
+    *  Understand the value of reproducible computing 
+    *  Know the challenges of reproducible computing
+    *  Define a computing environment 
+    *  Share a software environment with a colleague
     *  Set up a software project with an environment
 
 
@@ -42,15 +43,6 @@
 
 
 
-<br>
-<br>
-
-!!! question "Discussion Question"
-	**Have you ever had any hurdles to reproducing your work?**
-
-	- Have you ever run into a problem that prevented you from generating the same results, figures, analyses as before?
-	- Have you ever lost time trying to figure out how you (or a collaborator) got a particular result?
-	- What were the issues you ran into, and how might you have solved them?
 <br>
 <br>
 <br>
@@ -264,7 +256,11 @@ An environment manager allows you to create **multiple** and **isoloted** system
 <br>
 <br>
 
-### Renv - Environment Manager for R
+### :simple-r: Renv
+
+* R package that allows you to create unique
+
+
 <br>
 
 ## Package Managers
