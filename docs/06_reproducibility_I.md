@@ -195,7 +195,7 @@ Nice and Short Video Describing the PATH
 <br>
 
 ## Computing Environment
-
+A computing environment is the combination of hardware, software, and network resources that provide the infrastructure for computing operations and user interactions. 
 
 - **Hardware**: CPUs, GPUs, RAM
 - **Operating system & version**: many flavors of Linux, MacOS, Windows
@@ -243,7 +243,7 @@ Updating software installed in the **system path** - to make new code work - can
 
 One solution to software dependency hell is to use an Environment Manager
 
-An environment manager allows you to create **multiple** and **isoloted** system paths. You can create unique environments that have the specific software version to run specific scripts.
+An environment manager allows you to create software installation directories (similar to PATH) that are **isoloted** your computer's PATH. You can create unique environments and install specific software version to run specific scripts.
 
 <br>
 
