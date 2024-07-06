@@ -177,9 +177,14 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 <br>
 <br>
 
+
+Nice and Short Video Describing the PATH
+<iframe width="553" height="280" src="https://www.youtube.com/embed/43zdpmEu4lE" title="What is the system path? // Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 !!! Warning 
 
-    The PATH prefers one version of software
+    The PATH prefers one version of any given software. 
 
 
 
@@ -244,23 +249,25 @@ An environment manager allows you to create **multiple** and **isoloted** system
 
 ### :simple-anaconda: Conda - Open Source Environment Manager
 
-
-
 [Conda](https://docs.conda.io/en/latest/) is a popular and open source environment manager tool that can be installed on any operating system (Windows, MacOS, Linux).
 
 * Users can create environments that have their own set of packages, dependencies, and even their own version of Python.
 * Projects can have their own specific requirements without interfering with each other
 * It allows for consistent and reproducible results across different systems and setups
 
-
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/envs.png){ width="450" } </a>
+    <figcaption></figcaption>
+</figure>
 <br>
 <br>
 
 ### :simple-r: Renv
 
-* R package that allows you to create unique
+* R package that allows you to create unique environments for an R project
 
-
+<br>
+<br>
 <br>
 
 ## Package Managers
@@ -287,8 +294,9 @@ A software tool to find, download, and install software packages to PATH or virt
 
 ### :simple-r: R
 With the R language, a package manager is built directly into the R Base Package. 
-
-`install.packages('ggplot2')`
+```
+install.packages('ggplot2')
+```
 
 **Repository:**  [R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
   
@@ -300,17 +308,52 @@ With the R language, a package manager is built directly into the R Base Package
 
 ## Sharing your Environment with Colleagues
 
+Regardless if you are using Conda, Pip, or Renv, you are able to create a file that lists all of the software (and their versions) that are used within an environment. 
+
+You can share that file with colleagues through platforms like Github. Users can reproduce your environment by using the environment file to build the environment on a different computer. 
+
+
+### :simple-anaconda: Conda
+
+Export you Conda Environment
+```
+conda env export > my_conda_env.yml
+```
+
+<br>
+
+Share the .yml file through Github 
+
+<br>
+
+Reproduce the Environment on a Different Computer
+```
+conda env create --file environment.yml
+```
+
+<br>
+<br>
+
+### :simple-python: Python
+
 In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
 
 ```
 pip install -r requirements.txt
 ```
+<br>
+<br>
 
+### :simple-r: R
 
 With `renv`, you need to share the `renv.lock'  which allows other people to duplicate the environment on their computer
 
-`renv::restore()`
-
+```
+renv::restore()
+```
+```
+write.csv(installed.packages(), file = "installed_packages.csv")
+```
 
 
 <br>

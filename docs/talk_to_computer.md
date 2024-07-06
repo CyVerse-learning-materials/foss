@@ -40,7 +40,9 @@ Though there are technical differences between them, the terms **Command Line In
 
 <br/>
 <br/>
-<br/>
+
+Quick Video on the Shell
+<iframe width="553" height="380" src="https://www.youtube.com/embed/fhv2dX0axeY" title="What do tutorials mean when they say my shell? // Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 <figure markdown>
