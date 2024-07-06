@@ -33,7 +33,7 @@
 <br>
 <br>
 
-
+As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behaviors. 
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/reproducibility-spectrum.png){ width="600" } </a>
@@ -58,11 +58,6 @@
 </figure>
 
 **Definition:** Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
-
-<br>
-
-
-
 
 
 
@@ -158,7 +153,7 @@ When you download and install software onto your computer, it will typically ins
 
 ### System Path
 
-The 'system path' often referred to simply as **PATH** in the context of computing refers to the set of directories in which the operating system looks for executable files when a command is issued. 
+In the context of computin, the **system path** often referred to simply as **PATH** is the set of directories in which the operating system looks for executable files when a command is issued. 
 
 When you go to launch an application by clicking on a desktop icon or with a CLI command, the computer will search for the application within the PATH directories. If it finds the executable, it will launch. 
 
@@ -243,7 +238,7 @@ Updating software installed in the **system path** - to make new code work - can
 
 One solution to software dependency hell is to use an Environment Manager
 
-An environment manager allows you to create software installation directories (similar to PATH) that are **isoloted** your computer's PATH. You can create unique environments and install specific software version to run specific scripts.
+An environment manager allows you to create software installation directories (similar to PATH) that are **isolated** your computer's PATH. You can create unique environments and install specific software version to run specific scripts.
 
 <br>
 
@@ -308,52 +303,74 @@ install.packages('ggplot2')
 
 ## Sharing your Environment with Colleagues
 
-Regardless if you are using Conda, Pip, or Renv, you are able to create a file that lists all of the software (and their versions) that are used within an environment. 
+Whether you are using Conda, Pip, or Renv, you should be able to share the specifications of your software environment so colleagues can reproduce the environment.
 
-You can share that file with colleagues through platforms like Github. Users can reproduce your environment by using the environment file to build the environment on a different computer. 
+The general sharing workflow:
 
+1. Output an _environment file_ that lists the software and versions of the environment
+
+2. Share the file with colleagues through a platform like Github
+
+3. Colleagues create an empty environment on their computer and populate it with the contents of the _environment file_
+
+<br>
 
 ### :simple-anaconda: Conda
 
-Export you Conda Environment
-```
-conda env export > my_conda_env.yml
-```
+1. Export your Conda Environment
+   ```
+   conda env export > my_conda_env.yml
+   ```
 
-<br>
+2. Share the .yml file through Github 
 
-Share the .yml file through Github 
 
-<br>
-
-Reproduce the Environment on a Different Computer
-```
-conda env create --file environment.yml
-```
-
+3. Reproduce the Environment on a Different Computer
+   ```
+   conda env create --file environment.yml
+   ```
+!!! Success "Conda exports your Pip environment as well"
+    Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
 <br>
 <br>
 
 ### :simple-python: Python
 
-In Python, it is common to use `pip` and a `requirements.txt` file, and in R, the `renv` package can be used to keep package versions stable within individual projects.
+1. Export python libraries present in your environment
+   ```
+   pip3 freeze > requirements.txt 
+   ```
 
-```
-pip install -r requirements.txt
-```
+2. Share the `requirements.txt` on Github
+
+3. Reproduce the Environment on a Different Computer
+   ```
+   pip install -r requirements.txt
+   ```
+
+!!! Note "Why `pip3`?"
+    `pip3 freeze > requirements.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > requirements.txt`.
 <br>
 <br>
 
-### :simple-r: R
+### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
 
-With `renv`, you need to share the `renv.lock'  which allows other people to duplicate the environment on their computer
+1. Create an isolated environment
+   ```
+   renv::init()
+   ```
 
-```
-renv::restore()
-```
-```
-write.csv(installed.packages(), file = "installed_packages.csv")
-```
+2. Export R packages to the renv.lock file
+   ```
+   renv:snapshot()
+   ```
+3. Share the `renv.lock`, `.Rprofile`, `renv/settings.json` and `renv/activate.R` files to Github
+
+4. Reproduce the Environment on a Different Computer
+   ```
+   renv::restore()
+   ```
+
 
 
 <br>
@@ -440,7 +457,6 @@ When you download and install Conda it comes in two different flavors:
 
     Conda should now be installed and can be used to install other necessary packages! 
 
-<br>
 <br>
 
 ??? tip "Tip: slow Conda? Try Mamba."
@@ -554,12 +570,6 @@ Similar to Conda, you can export your pip environment by doing
 ```
 pip3 freeze > my_pip_env.txt
 ```
-
-!!! Note "Why `pip3`?"
-    `pip3 freeze > my_pip_env.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > my_pip_env.txt`.
-
-!!! Success "Conda exports your Pip environment as well"
-    Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
 
 
 <br>
