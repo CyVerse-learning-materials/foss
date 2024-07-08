@@ -153,7 +153,7 @@ When you download and install software onto your computer, it will typically ins
 
 ### System Path
 
-In the context of computin, the **system path** often referred to simply as **PATH** is the set of directories in which the operating system looks for executable files when a command is issued. 
+In the context of computing, the **system path**, often referred to simply as **PATH**, is the set of directories in which the operating system looks for executable files when a command is issued. 
 
 When you go to launch an application by clicking on a desktop icon or with a CLI command, the computer will search for the application within the PATH directories. If it finds the executable, it will launch. 
 
@@ -257,7 +257,7 @@ An environment manager allows you to create software installation directories (s
 <br>
 <br>
 
-### :simple-r: Renv
+### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
 
 * R package that allows you to create unique environments for an R project
 
@@ -315,7 +315,7 @@ The general sharing workflow:
 
 <br>
 
-### :simple-anaconda: Conda
+### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
 
 1. Export your Conda Environment
    ```
@@ -393,18 +393,6 @@ The general sharing workflow:
 ## Reproducibility Tutorial
 
 
-
-!!! Note "OS of choice"
-
-    This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621). However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, use the Windows Subsystem for Linux (WSL)
-
-    ??? Tip "How to Scroll in Cyverse(Tmux) Cloud Shell"
-        
-        If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
-
-
-
-<br>
 <br>
 
 
@@ -470,36 +458,76 @@ When you download and install Conda it comes in two different flavors:
 <br>
 <br>
 <br>
+
+
+### Conda on Cyverse
+
+!!! Note "OS of choice"
+
+    This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621) which is a Linux Command Line. This requires a [Cyverse account](https://user.cyverse.org/signup). 
+    
+    However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, please use the Windows Subsystem for Linux (WSL) so you can follow along. 
+
+    ??? Tip "How to Scroll in Cyverse(Tmux) Cloud Shell"
+        
+        If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
+
 <br>
+<br>
+
 ### Environment Management with Conda
 
-When you start a Cyverse Cloud shell, it will start you in the directory: 
-```
-/home/user/work 
-```
-Let's change to the Data-Store directory, where we will be working for the rest of the tutorial. This is the Cyverse cloud-storage directory where you can put all your data and files. 
+When you start a Cyverse Cloud shell, the prompt will look something like this: 
 
 ```
-cd home
-cd <username>
+(base) jovyan@a12b272e0:/home/user/data-store$
 ```
-Create our own environment (select `y` when prompted).
+<br>
+Miniconda has already been pre-installed, and by default, you are started in a base Conda directory (base)
+
+<br>
+
+
+
+View the list of conda environments
+```
+conda env list
+```
+<br>
+
+View the software installed in the base directory. Notice the version of Python.
+```
+conda list
+```
+<br>
+<br>
+
+Create our own custom environment (type `y` when prompted).
 
 ```
 conda create --name myenv
 ```
+
+<br>
+<br>
 
 Activate your new environment with 
 
 ```
 conda activate myenv
 ```
+<br>
+You will notice that the prompt changed to `(myenv)`
 
-You can see the list of environments you can activate by doing
+<br>
+
+View the software that is installed in your new custom environment. It should be empty!
 
 ```
-conda env list
+conda list
 ```
+
+
 <br>
 <br>
 <br>
@@ -507,49 +535,69 @@ conda env list
 
 ### Package management with Conda
 
-We are going to to use conda to install Mamba, NextFlow, Salmon and FastQC.
+Within your new custom environment (ie, myenv) download and install a specific version of python. This may take a few minutes to complete. 
 
 ```
-# Activate Conda using 
-conda activate
+conda install python=3.9
+```
 
+<br>
+
+View the new software that has been install 
+```
+conda list
 ```
 
 
+<br>
+<br>
+<br>
 
+Install Salmon and FastQC (genomics software) using Conda
+
+```
+conda install -c bioconda salmon fastqc
+```
+
+<br>
 
 !!! Info "Conda channels"
 
     Conda operates through **channels**, specififc repositories where packages are stored. Specific packages sometimes may appear in multiple channels, however it is always helpful to specify a channel with the `-c` flag.
 
+<br>
+<br>
+<br>
 
+### Share and Reproduce a Conda Environment
 
-??? Question "Installing Packages"
-    As an exercise, install Salmon and FastQC using Conda/Mamba.
-
-    ??? Tip "Need a hand?"
-        ```
-        conda install -c bioconda salmon
-        conda install -c bioconda fastqc
-        ```
-
-        Or you can do it with a single line (doable if packages are from the *same* channel)!
-        ```
-        conda install -c bioconda salmon fastqc
-        ```
-
-
-You can view the installed conda packages by doing 
+Export all of the software in your custom environment to a file
 
 ```
-conda list
+conda env export > myenv.yml
+```
+<br>
+Let's view the contents of the .yml file
+```
+nano myenv.yml
+```
+<br>
+
+
+Now we are going to pretend that we are reproducing a conda environment from a .yml file shared by a collegue.
+<br>
+
+Change the `name` of the environement within the .yml file from `myenv` to `myenv2`
+
+
+<br>
+Create a new environment and populate it with the .yml environment file
+
+```
+conda env create --file myenv2.yml
 ```
 
-In order to make your environment reproducible, conda allows you to export your environment.
 
-```
-conda env export > my_conda_env.yml
-```
 <br>
 <br>
 <br>
@@ -568,16 +616,14 @@ pip install multiqc
 Similar to Conda, you can export your pip environment by doing
 
 ```
-pip3 freeze > my_pip_env.txt
+pip3 freeze > requirements.txt
 ```
+<br>
 
-
+!!! Note "Why `pip3`?"
+    `pip3 freeze > requirements.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > requirements.txt`.
 <br>
 <br>
 <br>
 <br>
-
-## Upload code and environment documents to Github
-
-So someone can get your code and environment specifications to reproduce it on their computer
 
