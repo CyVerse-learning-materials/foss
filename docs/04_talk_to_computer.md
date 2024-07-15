@@ -17,7 +17,25 @@ For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in M
 
     Unix-based systems such as Linux [:material-ubuntu: Ubuntu](https://ubuntu.com/){target=_blank} and [:material-apple: MacOS X](https://www.apple.com/macos/){target=_blank}, as many scientific tools require a Unix Operating System (OS). 
     
-    There are a number of software that allow Windows users to execute Unix commands, however we recommend the use of [:material-microsoft-windows: Windows Subsystem for Linux (WSL) 2.0](https://docs.microsoft.com/en-us/windows/wsl/install){target=_blank}.
+    There are a number of software that allow :material-microsoft-windows: Windows users to execute Unix commands, however we recommend the use of [:simple-linux: Windows Subsystem for Linux (WSL) 2.0](https://docs.microsoft.com/en-us/windows/wsl/install){target=_blank}.
+
+    ??? tip "Quickstart installation of Window's WSL"
+
+        !!! warning "A system reboot is necessary"
+
+        1. Open :material-powershell: PowerShell in Administrator mode (open :octicons-search-16: Search and look for PowerShell, right click and select "Run as Administrator")
+        2. type `wsl --install`
+        3. Restart your machine
+        4. Open :octicons-search-16: Search and open :simple-linux: WSL; create a username and password, wait for it to finish setting up (should take a few minutes)
+        5. You're now ready to use :simple-linux: Linux on your Windows Machine!
+
+        ??? question "Where is the WSL Home folder?"
+            
+            The Home folders for Linux and Windows are different. The Windows path to the :simple-linux: WSL home folder is `\\wsl$\Ubuntu\home\<username>`.
+            
+            We suggest creating a bookmark in your Windows machine to allow quicker access to the :simple-linux: Linux partition (for quicker access to files).
+
+            To quickly open the folder, open :simple-linux: WSL and execute `explorer.exe .`. This will open a folder in Windows at the Linux Home folder. 
 
 <br/>
 <br/>
