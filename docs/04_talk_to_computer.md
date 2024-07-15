@@ -8,8 +8,8 @@ However, for a more direct and powerful way to instruct your computer, you shoul
 
 For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in MacOS and all Linux operating systems. 
 
-<br/>
-<br/>
+<br>
+<br>
 
 !!! Warning "**Attention** :material-microsoft-windows: Windows users"
 
@@ -37,39 +37,41 @@ For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in M
 
             To quickly open the folder, open :simple-linux: WSL and execute `explorer.exe .`. This will open a folder in Windows at the Linux Home folder. 
 
-<br/>
-<br/>
+<br>
+<br>
 
 ---
-<br/>
-<br/>
+
+<br>
+<br>
 
 ## The Unix Shell
-
-
-
 
 The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
 
 
 Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, **Shell**, and **BASH** will be used more or less interchangeably throughout the lesson. 
 
-[![cli](../assets/cli.gif){width=350}]()
+<figure markdown>
+  <a target="blank" rel="cli">![cli](../assets/cli.gif){width=500} </a>
+    <figcaption> The Terminal shell.</figcaption>
+</figure>
 
-<br/>
-<br/>
+<br>
+<br>
 
-Quick Video on the Shell
-<iframe width="553" height="380" src="https://www.youtube.com/embed/fhv2dX0axeY" title="What do tutorials mean when they say my shell? // Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<figure markdown="span">
+    <iframe width="526" height="340" src="https://www.youtube.com/embed/fhv2dX0axeY" title="What do tutorials mean when they say my shell? Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <vidcaption> <br>Quick video on the shell.</vidcaption> 
+</figure>
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="350" } </a>
     <figcaption> Linux Directory Structure</figcaption>
 </figure>
 
-<br/>
-<br/>
+<br>
+<br>
 
 ## Introductory Shell Commands
 
@@ -86,10 +88,9 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
         $ unzip shell-lesson-data.zip
         ``` 
 
-
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 ??? info "Help with Commands"
     For every command, typing `man` (manual) before the command, will open the manual for said command.
@@ -126,10 +127,6 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
     $ ls ~            # lists files and folders in the home directory
     $ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
     ```
-
-
-
-
 
 <br>
 <br>
@@ -260,15 +257,15 @@ $ touch new_file.txt
 
 `touch` will create an **empty** file
 
-<br/>
+<br>
 
 Add text to the new file
 ```
 nano new_file.txt 
 ```
 
-<br/>
-<br/>
+<br>
+<br>
 
 Use `mv <name of file or folder you want to move> <name of destination folder>` to move your newly created file to the directory you created previously (you can then use `ls` to check if you successully moved the file).
 
@@ -292,9 +289,9 @@ $ ls -F
 my_file*
 ```
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 `cp` is the command to copy a file with the syntax `cp <name of file you want to copy> <name of copy file>`
 
@@ -318,9 +315,9 @@ copy_my_file*  my_file*
     copy_my_file*  my_file*
     ```
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 To remove an unwanted file, use `rm <name of file to remove>`.
 
@@ -338,9 +335,9 @@ my_file
     exercise-data/  my_folder/  north-pacific-gyre/
     ```
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 ### Shell Script
 
@@ -351,13 +348,15 @@ Show an example of why the shell is more powerful than GUI
 - [Scripts](https://swcarpentry.github.io/shell-novice/06-script.html)
 - [Finding Things](https://swcarpentry.github.io/shell-novice/07-find.html)
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
+
 ---
-<br/>
-<br/>
-<br/>
+
+<br>
+<br>
+<br>
 
 
 
@@ -365,18 +364,12 @@ Show an example of why the shell is more powerful than GUI
 
 Large Language Model (LLM) chatbots have fundamentally changed how we humans are going to interact with computers going forward. They provide a natural language interface to instruct computers to do many tasks including:
 
-* Read, write, and summarize text
-
-* Analyze data
-
-* Explain techical topics
-
-* Search the web and retrieve information
-
-* Generate, optimize, and explain many types of computer code 
-
-* Understand and generate images
-
+- Read, write, and summarize text
+- Analyze data
+- Explain techical topics
+- Search the web and retrieve information
+- Generate, optimize, and explain many types of computer code 
+- Understand and generate images
 
 <br>
 
@@ -384,18 +377,22 @@ Current LLMs generally provide recommendation for how _you_ could do things. ie,
 
 <br>
 
-
-
-
 ### Commercial Chatbots
 
-[:simple-openai: ChatGPT](https://openai.com/chatgpt)
+<figure style="display: flex; justify-content: center;">
+    <a href="https://openai.com/chatgpt"><img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" alt="openai" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://gemini.google.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="gemini" style="width: 240px; margin-right: 15px;"></a>
+    <a href="https://www.anthropic.com/claude"><img src="https://claude.ai/images/claude_app_icon.png" alt="foster" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://www.microsoft.com/en-us/bing?form=MA13FV"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Microsoft_365_Copilot_Icon.svg/2048px-Microsoft_365_Copilot_Icon.svg.png" alt="cos" style="width: 120px;"></a>
+</figure>
 
-[:simple-google: Gemini](https://gemini.google.com/)
+<br>
+<br>
 
-[Anthropic: Claude](https://www.anthropic.com/claude)
-
-[:simple-microsoft: Copilot](https://www.microsoft.com/en-us/bing?form=MA13FV)
+- [:simple-openai: ChatGPT](https://openai.com/chatgpt)
+- [:simple-google: Gemini](https://gemini.google.com/)
+- [:simple-anthropic: Claude](https://www.anthropic.com/claude)
+- [:octicons-copilot-16: Copilot](https://www.microsoft.com/en-us/bing?form=MA13FV)
 
 <br>
 <br>
@@ -415,9 +412,7 @@ In a nutshell, LLMs are like super-powered text generators trained on the intern
 <br>
 <br>
 
-!!! Warning
-    
-    **VERIFY EVERTHING CHATBOTS TELL YOU!**
+!!! Warning ":warning::warning: **VERIFY EVERTHING CHATBOTS TELL YOU!** :warning::warning:"
 
 <br>
 <br>
