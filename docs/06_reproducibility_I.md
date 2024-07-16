@@ -28,7 +28,6 @@
     "Getting someone else's code to run on my computer" - Anonymous
 
 
-
 <br>
 <br>
 <br>
@@ -40,14 +39,9 @@ As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behavi
     <figcaption> [Peng 2011](https://science.sciencemag.org/content/334/6060/1226)</figcaption>
 </figure>
 
-
-
-
 <br>
 <br>
 <br>
-
-
 <br>
 
 ### Interactive (ie, point-and-click) Computing
@@ -57,19 +51,18 @@ As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behavi
     <figcaption></figcaption>
 </figure>
 
-**Definition:** Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options. 
+!!! quote "Definition" 
 
-
+    Manually navigating a mouse across a graphical user interface (GUI) and running commands by selecting from menu options.
 
 #### Advantages 
 
-* Inuitive and easy to navigate a GUI and click buttons
-
+- Inuitive and easy to navigate a GUI and click buttons
 
 #### Limitations
 
-* It can be slow to sequence through hundreds of clicks to accomplish an analysis. 
-* Less reproducible - Cumbersome to write and follow a click-by-click tutorial 
+- It can be slow to sequence through hundreds of clicks to accomplish an analysis. 
+- Less reproducible - Cumbersome to write and follow a click-by-click tutorial 
 
 <br>
 <br>
@@ -84,36 +77,32 @@ As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behavi
 </figure>
 
 
-**Definition:** Removing the GUI and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
+!!! quote "Definition"  
 
-We are **automating** what used to take many manual clicks. 
+    Removing the GUI and instead instructing the computer to run a series of custom commands using a scripting/coding language. 
 
+    We are **automating** what used to take many manual clicks. 
 
-We can write scripts to install software, clean data, run analyses, and generate figures.
+    We can write scripts to install software, clean data, run analyses, and generate figures.
 
 <br>
 
 #### Advantages 
-* Much faster to run through commands
-* The script runs identically every time, reducing the human element 
-* Easy for someone else to quickly reproduce the exact analysis and result
-* Enables analysis tasks to scale up 
+
+- Much faster to run through commands
+- The script runs identically every time, reducing the human element 
+- Easy for someone else to quickly reproduce the exact analysis and result
+- Enables analysis tasks to scale up 
 
 <br>
 
-#### Challenges 
-* Requires deeper computer knowledge
-* More upfront effort to produce the script
+#### Challenges
 
-
-
+- Requires deeper computer knowledge
+- More upfront effort to produce the script
 
 <br>
 <br>
-
-
-
-
 
 !!! question "Discussion Question"
 	**What are some tasks you have automated or want to automate?**
@@ -124,23 +113,21 @@ We can write scripts to install software, clean data, run analyses, and generate
 	- Are there any things you wish you could automate?
 	- What are some barriers to automating them?
 
-
 <br>
 <br>
 <br>
 <br>
-
 
 ## Scripting Languages
 
 The two most common open-source scripting languages (for science) are Python and R.
 
-[![python_logo](assets/python_logo.png){width=150}]()
-[![python_logo](assets/r_logo.jpeg){width=150}]()
+<figure style="display: flex; justify-content: center;">
+    <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/python_logo.png" alt="python" style="width: 150px; margin-right: 15px;"></a>
+    <a href="https://www.r-project.org/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/r_logo.jpeg" alt="r" style="width: 150px; margin-right:"></a>
+</figure>
 
 Both languages consist of base software (Python Standard Library or R Base Package) and MANY additional packages that can be downloaded and installed for increased capabilities. 
-
-
 
 <br>
 <br>
@@ -172,17 +159,15 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 <br>
 <br>
 
+<figure markdown="span">
+    <iframe width="553" height="280" src="https://www.youtube.com/embed/43zdpmEu4lE" title="What is the system path? // Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <vidcaption> <br>Nice and Short Video Describing the PATH.</vidcaption> 
+</figure>
 
-Nice and Short Video Describing the PATH
-<iframe width="553" height="280" src="https://www.youtube.com/embed/43zdpmEu4lE" title="What is the system path? // Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
 
-
-!!! Warning 
-
-    The PATH prefers one version of any given software. 
-
-
-
+!!! Warning "The PATH prefers one version of any given software."
 
 <br>
 <br>
@@ -190,6 +175,7 @@ Nice and Short Video Describing the PATH
 <br>
 
 ## Computing Environment
+
 A computing environment is the combination of hardware, software, and network resources that provide the infrastructure for computing operations and user interactions. 
 
 - **Hardware**: CPUs, GPUs, RAM
@@ -218,17 +204,11 @@ A computing environment is the combination of hardware, software, and network re
 
 ### Software Dependency Hell
 
-
-
 Sometimes, it can be _nearly impossible_ to get your computing environment correct enough to run someone else's code.
 
 This can caused by incorrect software versions of the packages you are using or their dependencies.
 
 Updating software installed in the **system path** - to make new code work - can break old code!
-
-
-
-
 
 <br>
 <br>
@@ -371,18 +351,11 @@ The general sharing workflow:
    renv::restore()
    ```
 
-
-
 <br>
 <br>
-
-
-
 
 ---
 
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -392,32 +365,20 @@ The general sharing workflow:
 
 ## Reproducibility Tutorial
 
-
 <br>
-
 
 ### Installing Conda
 
 When you download and install Conda it comes in two different flavors: 
 
-
-
 [Miniconda](https://docs.anaconda.com/free/miniconda/) - lightweight (500 mb) program that includes _Conda_, the environment and package manager, as well as a recent version of the Standard Python Library. 
 
 [Anaconda](https://anaconda.org/) - a larger (2.5GB) program that includes _Conda_ and many more python libraries pre-installed (in Conda base environment), as well as graphical user interface, acccess to jupyter notebooks, and support for easily integrating the R language.
-
-
 
 <figure markdown>
   <a href="https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937" target="blank" rel="conda">![conda](https://miro.medium.com/v2/resize:fit:720/format:webp/0*ElVyaAsDHkIpNgxk.png) </a>
     <figcaption> Conda, Miniconda, and Anaconda. <br> [Taken from *Getting Started with Conda, Medium*](https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937). </figcaption>
 </figure>
-
-
-
-
-
-
 
 ??? Tip "Installing Conda"
 
@@ -468,9 +429,11 @@ When you download and install Conda it comes in two different flavors:
     
     However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, please use the Windows Subsystem for Linux (WSL) so you can follow along. 
 
-    ??? Tip "How to Scroll in Cyverse(Tmux) Cloud Shell"
+    ??? Tip "How to Scroll in Cyverse (Tmux) Cloud Shell"
         
         If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
+
+        !!! Note "The CLI in CyVerse is controlled with [Tmux](https://en.wikipedia.org/wiki/Tmux), a software that allows to "window" the CLI; Here is a [cheat sheet](https://tmuxcheatsheet.com/) that will teach you more Tmux tricks!"
 
 <br>
 <br>

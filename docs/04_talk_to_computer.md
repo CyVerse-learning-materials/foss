@@ -456,10 +456,9 @@ Responses to prompts may not return the exact details or information that you ar
 
 !!! tip "Encouraging the Chatbot to do Better"
     Chatbot responses can be missing information or just plain wrong. When this occurs, you can point out the mistake and ask the Chatbot to provide a more complete or better answer. Don't settle for poor responses!
+
 <br>
 <br>
-
-
 
 #### Role Playing
 
@@ -479,9 +478,6 @@ Some people find that asking the Chatbot to adopt a persona will lead to better 
 | Linux Terminal  |
 | Python Interpreter |
 | Web Browser |
-
-
-
 
 <br>
 <br>
@@ -536,6 +532,7 @@ with importing an existing github repository that has the mkdocs material.
 <br>
 
 #### Write docker run commands
+
 ```
 I would like to run a docker container that consists of a jupyter notebook. 
 Can you please suggest a docker run command that launches the jupyter notebook
@@ -546,6 +543,7 @@ and mounts a volume of data in it.
 <br>
 
 #### Write docker files
+
 ```
 I would like to create a docker image that consists of R studio and 
 some customized Rcode. Can you tell me the steps to 1. make a dockerfile and 
@@ -555,21 +553,8 @@ build the docker image; and 2. Upload the docker image to docker hub.
 
 <br>
 <br>
-
-
-
-
-
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
 
