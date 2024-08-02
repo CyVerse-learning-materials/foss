@@ -328,8 +328,7 @@ The general sharing workflow:
    pip install -r requirements.txt
    ```
 
-!!! Note "Why `pip3`?"
-    `pip3 freeze > requirements.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > requirements.txt`.
+
 <br>
 <br>
 

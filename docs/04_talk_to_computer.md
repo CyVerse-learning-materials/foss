@@ -54,7 +54,7 @@ Though there are technical differences between them, the terms **Command Line In
 
 <figure markdown>
   <a target="blank" rel="cli">![cli](../assets/cli.gif){width=500} </a>
-    <figcaption> The Terminal shell.</figcaption>
+    <figcaption> The Terminal shell</figcaption>
 </figure>
 
 <br>

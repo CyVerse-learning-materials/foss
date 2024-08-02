@@ -10,18 +10,31 @@
 
 ## Reproducible Computer Code
 
-Sharing your scientific analysis code with your colleagues is an act of collaboration that will help push your field forward. There are, however, technical challenges that may prevent your colleagues from effectively running the code on their own computer. These include:
+Sharing your scientific analysis code with your colleagues is an essential pillar of Open Science that will help push your field forward. 
 
-- hardware: CPUs, GPUs, RAM
-- Operating System: Linux, MacOS, Windows
-- Software version: R, Python, etc
-- Library versions and dependencies
+There are, however, technical challenges that may prevent your colleagues from effectively running your code on their computers. In the previous lesson [Reproducibility I](06_reproducibility_I.md) we described [computing environments](06_reproducibility_I.md/#computing-environment) and how they can make it difficult to run code from one computer to another. 
 
-How do we make it easier to share analyis code and avoid the challenges of computer and environment setups?
+<br>
+
+### Solutions for Sharing Computer Code
+
+1. Create a custom environment and share the recipe so your colleauges can replicate on their computer (as shown in [Reproducibility I](06_reproducibility_I.md))
+
+2. Package up the code _and_ all of the software and send it to your colleague as a **Container** 
+
+<br>
 
 ## What *are* containers?
 
-A [container](https://www.docker.com/resources/what-container/) is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings. Each of these elements are specifically versioned and do not change. The user does not need to *install* the software in the traditional sense.
+A [container](https://www.docker.com/resources/what-container/) is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another 
+
+* Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings
+
+* Each of these elements are specifically versioned and do not change
+
+* The recipient does not need to *install* the software in the traditional sense
+
+<br>
 
 A useful analogy is to think of software containers as shipping containers. It allows us move cargo (software) around the world in standard way. The shipping container can be offloading and executed anywhere, as long the destination has a shipping port (i.e., Docker) 
 
@@ -38,6 +51,8 @@ Containers are similar to virtual machines (VMs), but are smaller and easier to 
   <a href="https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/" target="blank" rel="containerexp">![containerexp](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png) </a>
     <figcaption> Difference between Virtual Machines and Containers. Containers are a lot more portable as these do not require an OS to be bundled with the software. Figure source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/). </figcaption>
 </figure>
+
+<br>
 
 ## Containers for Reproducible Science
 Software containers, such as those managed by Docker or Singularity, are incredibly useful for reproducible science for several reasons:
@@ -76,11 +91,13 @@ Containers isolate the software environment from the host system, reducing the r
     
     While Docker allows you to quickly run software from other people, it may not work across every platform. There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
 
-
+<br>
 
 
 
 ---
+
+<br>
 
 ## Introduction to :material-docker: Docker 
 
@@ -96,7 +113,6 @@ There are no specific skills needed for this tutorial beyond elementary command 
 
 We are going to be using [:material-github: GitHub CodeSpaces](https://github.com/features/codespaces){target=_blank} for the hands on portion of the workshop, which features [:material-microsoft-visual-studio-code: VS Code](https://code.visualstudio.com/){target=_blank} as a fully enabled development environment with Docker already installed. 
 
-CodeSpaces is a featured product from GitHub and requires a paid subscription or Academic account for access. Your account will temporarily be integrated with the course GitHub Organization for the next steps in the workshop.
 
 Our instructions on starting a new CodeSpace are [here](https://cc.cyverse.org/cloud/codespaces/){target=_blank}. 
 
@@ -117,6 +133,9 @@ Our instructions on starting a new CodeSpace are [here](https://cc.cyverse.org/c
     Before venturing much further, you should review the [Software Carpentry](https://software-carpentry.org/lessons/){target=_blank} lessons on "The Unix Shell" and "Version Control with Git" -- these are great introductory lessons related to the skills we're teaching here.
 
     You've given up on ever using a terminal? No problem, Docker can be used from graphic interfaces, like [Docker Desktop](https://www.docker.com/products/docker-desktop/){target=_blank}, or platforms like [Portainer](https://www.portainer.io/){target=_blank}. We suggest you read through their documentation on how to use Docker.
+
+<br>
+<br>
 
 ## Fundamental Docker Commands :octicons-terminal-16: 
 
