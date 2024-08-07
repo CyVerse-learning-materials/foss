@@ -65,10 +65,7 @@ Though there are technical differences between them, the terms **Command Line In
     <vidcaption> <br>Quick video on the shell.</vidcaption> 
 </figure>
 
-<figure markdown>
-  <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="350" } </a>
-    <figcaption> Linux Directory Structure</figcaption>
-</figure>
+
 
 <br>
 <br>
@@ -130,7 +127,15 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
 
 <br>
 <br>
-<br>
+
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="300" } </a>
+    <figcaption> Linux Directory Structure</figcaption>
+</figure>
+
+
+
 
 ### Navigation
 
@@ -146,7 +151,8 @@ By typing `pwd`, the current working directory is printed.
 
 ```
 $ pwd
-/mnt/d/
+
+/home/jgillan
 ```
 <br>
 <br>
@@ -217,6 +223,7 @@ Return to `shell-lesson-data`, and create a directory with `mkdir <name of folde
 ```
 $ mkdir my_folder
 $ ls -F
+
 exercise-data/  my_folder/  north-pacific-gyre/
 ```
 
@@ -337,12 +344,97 @@ my_file
 
 <br>
 <br>
-<br>
+
 
 ### Shell Script
 
-Show an example of why the shell is more powerful than GUI
+Here we are going to show an example command line automation using a shell script. This is what makes the command line powerful!
 
+!!! tip "Shell Script"
+
+    A shell script is a file with the extension '.sh'. It is essentially a text file that lists out multiple shell commands. When the shell script is run, the computer will run all of the commands in sequence in an automated way.  
+
+<br>
+
+Navigate to the `shell-lesson-data` directory
+
+```
+$ cd /home/jgillan/shell-lesson-data
+```
+
+<br>
+
+Create the shell script
+
+```
+$ nano backup.sh
+```
+The text editor Nano will pop up and it will be empty.
+
+<br>
+
+Copy and paste the following commands into `backup.sh`
+
+```
+#use Bash shell to run the following commands
+#!/bin/bash
+
+## Variables
+#the directory you want to back up (e.g., shell-lesson-data)
+SOURCE_DIR="$HOME/Documents/shell-lesson-data"
+
+#location where the backup will be stored
+BACKUP_DIR="$HOME/Backup"
+
+#used to create a unique name for each backup based on the current date and time
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# name of the compressed backup file
+ARCHIVE_NAME="backup_$TIMESTAMP.tar.gz"
+
+
+# Create backup directory if it doesn't exist
+mkdir -p "$BACKUP_DIR"
+
+# Create a compressed archive of the source directory
+tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$SOURCE_DIR" .
+
+# Output the result
+echo "Backup of $SOURCE_DIR completed!"
+echo "Archive created at $BACKUP_DIR/$ARCHIVE_NAME"
+```
+<br>
+
+Exit nano with `ctrl + x`
+
+<br>
+
+Modify permission to make the shell script executable
+```
+$ chmod +x backup.sh
+```
+
+<br>
+
+Run the shell script
+```
+$ ./backup.sh
+```
+
+<br>
+Go back to your home directory and look for the new backup directory
+```
+$ cd ~
+$ cd ls
+```
+
+There should be a new directory called 'Backup' with a compressed file within it. 
+
+<br>
+<br>
+
+
+### More Carpentries Lessons on Linux Command line
 - [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html)
 - [Loops](https://swcarpentry.github.io/shell-novice/05-loop.html)
 - [Scripts](https://swcarpentry.github.io/shell-novice/06-script.html)
@@ -483,7 +575,7 @@ Some people find that asking the Chatbot to adopt a persona will lead to better 
 <br>
 <br>
 
-### Using Chatbots for FOSS
+### Prompting Chatbots for FOSS
 
 <br>
 
@@ -497,12 +589,6 @@ please provide url links to resources that can help me with NSF DMP requirements
 <br>
 <br>
 
-#### Write documentation in markdown
-
-```
-```
-<br>
-<br>
 
 #### Provide a step-by-step recipe to create and serve an mkdocs website in Github
 
@@ -518,16 +604,36 @@ with importing an existing github repository that has the mkdocs material.
 
 #### Write shell commands and shell scripts
 
+```
+I would like to create a linux shell script to automate the backup of my working directory. 
+Could you please suggest a shell script that will copy my working directory 
+in a different directory and compress the file into an archive. 
+Please name the file based on the current time and date. 
+```
+
 <br>
 <br>
 
 #### Write git commands
 
+```
+Could you please provide me a step-by-step workflow for using git with github? 
+I found a repository that I want to build on in Github. 
+I would like to work on the material on my local machine and then save it back up to github. 
+I would like to workflow to be for the linux command line. 
+```
+
 <br>
 <br>
 
 #### Write download and conda commands
-
+```
+I am writing a lot of scripts using python. I have heard that environment managers such as conda may be useful to me. 
+I don't know anything about conda, so can you explain some things?
+1. Give me a high level overview of what environment managers are and what conda is specifically.
+2. Please create a step-by-step guide for downloading conda on my machine, and how to use conda to create custom environments. 
+3. Please explain and give my steps to share my environment with colleagues.
+```
 <br>
 <br>
 
