@@ -704,20 +704,21 @@ When you create a new software, library, or package, you become its parent and g
 ## *WHY* do Open Science?
 
 
-A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
+A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8) posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:
 
 1.  **Democratic school**: primarily concerned with making scholarly work freely available to everyone
 2.  **Pragmatic school**: primarily concerned with improving the quality of scholarly work by fostering collaboration and improving critiques
 3.  **Infrastructure school**: primarily focused on the platforms, tools, and services necessary to conduct efficient research, collaboration, and communication
 4.  **Public school**: primarily concerned with societal impact of scholarly work, focusing on engagement with broader public via citizen science, understandable scientific communication, and less formal communication
 5.  **Measurement school**: primarily concerned with the existing focus on journal publications as a means of measuring scholarly output, and focused on developing alternative measurements of scientific impact
-6. **Compliance school**: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
 
 <figure markdown>
   <a href="https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf" target="blank" rel="fecher_friesike">![fecher_friesike](assets/five_schools.png){ width="700" } </a>
     <figcaption> In [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-00026-8){target=_blank} Open Science: One Term, Five Schools of Thought </figcaption>
 </figure>
 
+We have added another school of thought 
+6. **Compliance school**: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
 <br>
 <br>
 <br>
