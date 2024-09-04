@@ -415,17 +415,6 @@ the future."(Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
 [Example DMPs](https://dmptool.org/public_plans){target=_blank}
 
-
-### Today's Guest Speaker
-
-<figure markdown>
-  ![Image title](/assets/wade_bishop.jpg){ width="200" }
-  <figcaption>Dr. Wade Bishop, Professor in the School of Information Sciences at University of Tennessee, Knoxville </figcaption>
-</figure>
-
-
-Dr. Bishop's [article](https://datascience.codata.org/articles/10.5334/dsj-2023-027){target=_blank} on DMPs
-
 ---
 
 **Why bother with a DMP?**
@@ -502,15 +491,7 @@ If you want your work to be Open and used by others, you need to specify how oth
     <figcaption> License options for University of [Arizona Research Data Repository (ReDATA)](https://data.library.arizona.edu/supported-platforms/redata)  </figcaption>
 </figure>
 
-
-
-
 <br>
-
-
-
-
-
 
 #### Additional Info
 
@@ -518,12 +499,7 @@ General guidance on how to choose a license https://choosealicense.com/
 
 More good guidance on how to choose a license https://opensource.guide/legal/
 
-
 Licensing options for your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
-
-
-
-
 
 ---
 
