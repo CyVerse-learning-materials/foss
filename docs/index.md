@@ -4,7 +4,7 @@
 
 # Welcome to Foundational Open Science Skills (FOSS) Fall 2024!
 
-![header](assets/foss_title.png)
+![header](assets/foss_title_2024F.jpg)
 
 ## Workshop Summary
 
