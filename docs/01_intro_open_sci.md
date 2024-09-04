@@ -718,6 +718,7 @@ A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-0002
 </figure>
 
 We have added another school of thought 
+
 6. **Compliance school**: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
 <br>
 <br>
