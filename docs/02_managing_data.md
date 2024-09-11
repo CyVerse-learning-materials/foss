@@ -9,255 +9,201 @@
     * Cite tools and resources to improve your data management practices
     * Know the biggest challenge to effective data management
 
-## Why should you care about data management?
-
-Ensuring that data are effectively organized, shared, and preserved
-is critical to making your science impactful, efficient, and open.
-
-??? Danger
-
-    The biggest challenge to data management is **making it an afterthought**.
-
-    Unfortunately, poor data management doesn't have a high upfront cost.
-    You can do substantial work before realizing you are in trouble. Like
-    a swimmer in rip current, by the time you realize you are in trouble,
-    you may already be close to drowning.
-
-    The solution? Make data management the first thing you consider when
-    starting a research project. It also needs to be a policy you
-    institute right away for your research group.
-
 ??? Question "How would you answer?"
     - If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?
     - If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?
     - When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?
 
+## Why should you care about data management?
+
+!!! Danger "The biggest challenge to data management is <u> making it an afterthought. </u>"
+
+Poor data management doesn't have an upfront cost. **You can do substantial work before realizing you are in trouble.**
+
+**The solution?** Make data management the first thing you consider when starting a research project.
+
 Well-managed Data Sets:
 
--   Make life much easier for you and your collaborators
+-   Can make life much easier for you and your collaborators
 -   Benefit the scientific research community by allowing others to reuse your data
--   Are required by most funders and many journals
--   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp){target=_blank} from NSF
--   NSF [proposal preparation guidelines](https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2D2i-ii){target=_blank}
+-   Are becoming required by most funders and many journals, which are requesting a submission of a Data Management Plan (DMP) with the initial submission of your proposal.
+
+!!! info "The NSF is stepping in, getting stricter about data"
+    -   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp)from NSF's points out that:
+        - Open science promotes broader access to research data, enhancing public benefits and replicability.
+        - NSF requires (DMPs) in proposals, encouraging use of persistent IDs and machine-readable DMPs.
+    -   NSF [proposal preparation guidelines](https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2D2i-ii) now require at least the following:
+        - Proposals must include a 2-page DMP outlining data types, formats, sharing, and archiving.
+        - The DMP must address privacy, intellectual property, and reuse policies, and collaborative projects should submit one unified DMP.
+        - A DMP stating no detailed plan is needed is allowed with justification, and the DMP will be reviewed as part of the proposal's merit.
 
 ---
 
-<br/>
-<br/>
+## What Classifies as Data?
 
-## Data Types
+Different types of data require different management practices. Here are some examples of what we can call Data (Adapted from DMPTool [Data management general guidance](https://dmptool.org/general_guidance#types-of-data)).
 
-Different types of data require different management practices. What are
-some data types and sources you might use in your work? (Adapted from
-DMP Tool [Data management general guidance](https://dmptool.org/general_guidance#types-of-data))
+**Data Types**:
 
-**Data Types**
+- **Text**: field or laboratory notes, survey responses
+- **Numeric**: tables, counts, measurements
+- **Audiovisual**: images, sound recordings, video
+- **Models, computer code**
+- **Discipline-specific**: FASTA in biology, FITS in astronomy, CIF in chemistry
+- **Instrument-specific**: equipment outputs
 
--   Text: field or laboratory notes, survey responses
--   Numeric: tables, counts, measurements
--   Audiovisual: images, sound recordings, video
--   Models, computer code
--   Discipline-specific: FASTA in biology, FITS in astronomy, CIF in chemistry
--   Instrument-specific: equipment outputs
-
-**Data Sources**
+**Data Sources**:
 
 *Observational*
 
--   Captured in real-time, typically outside the lab
--   Usually irreplaceable and therefore the most important to safeguard
--   Examples: Sensor readings, telemetry, survey results, images
+- Captured in real-time, typically outside the lab
+- Usually irreplaceable and therefore the most important to safeguard
+- Examples: Sensor readings, telemetry, survey results, images
 
 *Experimental*
 
--   Typically generated in the lab or under controlled conditions
--   Often reproducible, but can be expensive or time-consuming
--   Examples: gene sequences, chromatograms, magnetic field readings
+- Typically generated in the lab or under controlled conditions
+- Often reproducible, but can be expensive or time-consuming
+- Examples: gene sequences, chromatograms, magnetic field readings
 
 *Simulation*
 
--   Machine generated from test models
--   Likely to be reproducible if the model and inputs are preserved
--   Examples: climate models, economic models
+- Machine generated from test models
+- Likely to be reproducible if the model and inputs are preserved
+- Examples: climate models, economic models
 
 *Derived / Compiled*
 
--   Generated from existing datasets
--   Reproducible, but can be very expensive and time-consuming
--   Examples: text and data mining, compiled database, 3D models
-
-<br/>
-<br/>
+- Generated from existing datasets
+- Reproducible, but can be very expensive and time-consuming
+- Examples: text and data mining, compiled database, 3D models
 
 ## Data Self-assessment
 
-
 !!! Question "Activity"
-    In small groups, discuss the following questions. You will be provided with a space for documenting our shared answers.
+    In small groups, discuss the following questions.
         
-    1\. What are the two or three data types that you most frequently work with?
+    1. What are the two or three data types that you most frequently work with?
             -   Think about the sources (observational, experimental, simulated, compiled/derived)
-            -   Also consider the formats (tabular, sequence, database, image, etc.)
-        
-    2\.  What is the scale of your data?
+            -   Also consider the formats (tabular, sequence, database, image, etc.)    
+    2.  What is the scale of your data?
 
-    ??? Tip
-        We often talk about the scale of data using the ["Three V's"](https://www.bigdataframework.org/four-vs-of-big-data/):
-            
-        -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
-        -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
-        -   Variety: How many different data types (raw files? databases?)
-        A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
+        ??? Tip "Tip: think of the [Three V's](https://www.bigdataframework.org/four-vs-of-big-data/)"
+            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+            -   Variety: How many different data types (raw files? databases?)
+            A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
 
-    3\.  What is your strategy for storing and backing up your data?
-        
-    4\.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)
-       
-    5\.  What is your strategy for searching your data?
-        
-    6\.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
-
+    3.  What is your strategy for storing and backing up your data?    
+    4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  
+    5.  What is your strategy for searching your data?  
+    6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
 
 ---
-
-<br/>
-<br/>
-
-
 
 ## The Data Life Cycle 
 
-!!! Tip
-    **The Data Life Cycle**
+**Data management** is the set of practices that allow researchers to effectively and efficiently handle data throughout the data life cycle. Although typically shown as a circle (below) the actually life cycle of any data item may follow a different path, with branches and internal loops. Being aware of your data's future helps you plan how to best manage them.
 
-    *Data management* is the set of practices that allow researchers to
-    effectively and efficiently handle data throughout the data life
-    cycle. Although typically shown as a circle (below) the actually
-    life cycle of any data item may follow a different path, with
-    branches and internal loops. Being aware of your data's future
-    helps you plan how to best manage them.
+<figure markdown="span">
+  ![lifecycle](assets/data_life_cycle.png)
+  <figcaption markdown="span"> The Data Life Cycle, from [Strasser *et al*](https://dataoneorg.github.io/Education/bestpractices/). </figcaption>
+</figure>
 
-    ![lifecycle](assets/data_life_cycle.png)
+??? Info "Breaking down the Data Life Cycle Graph"
 
-    Image from [Strasser *et al*](https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
+    **Plan**
 
+    - Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime
+    - A good plan considers each of the stages below
 
+    **Collect**
 
+    - Have a plan for data organization in place before collecting data
+    - Collect and store observation metadata at the same time you collect the metadata
+    - Take advantage of machine generated metadata
 
-The summary below is adapted from the excellent [DataONE best practices primer](https://old.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf).
+    **Assure**
 
-### Plan
+    - Record any conditions during collection that might affect the quality of the data
+    - Distinguish estimated values from measured values
+    - Double check any data entered by hand
+    - Perform statistical and graphical summaries (e.g., max/min, average, range) to check for questionable or impossible values.
+    - Mark data quality, outliers, missing values, etc.
 
--   Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime
--   A good plan considers each of the stages below
+    **Describe**
 
-### Collect
+    - Comprehensive data documentation (i.e. **metadata**) is the key to future understanding of data. Without a thorough description of the context of the data, the context in which they were collected, the measurements that were made, and the quality of the data, it is unlikely that the data can be easily discovered, understood, or effectively used.
+    - Thoroughly describe the dataset (e.g., name of dataset, list of files, date(s) created or modified, related datasets) including the people and organizations involved in data collection (e.g., authors, affiliations, sponsor). Also include:
+        - An [ORCID](https://orcid.org/) (obtain one if you don't have one).
+        - The scientific context (reason for collecting the data, how they were collected, equipment and software used to generate the data, conditions during data collection, spatial and temporal resolution)
+        - The data themselves
+        - How each measurement was produced
+        - Units
+        - Format
+        - Quality assurance activities
+        - Precision, accuracy, and uncertainty
 
--   Have a plan for data organization in place before collecting data
--   Collect and store observation metadata at the same time you collect the metadata
--   Take advantage of machine generated metadata
+    Some metadata standards you may want to consider:
 
-### Assure
+    - [DataCite](https://schema.datacite.org/) for publishing data
+    - [Dublin Core](http://www.dublincore.org/specifications/dublin-core/dcmi-terms/) for sharing data on the web
+    - [MIxS](https://press3.mcs.anl.gov/gensc/mixs/) Minimum Information for any (x) sequence
+    - [OGC standards](https://www.opengeospatial.org/docs/is) for geospatial data
 
--   Record any conditions during collection that might affect the quality of the data
--   Distinguish estimated values from measured values
--   Double check any data entered by hand
--   Perform statistical and graphical summaries (e.g., max/min, average, range) to check for questionable or impossible values.
--   Mark data quality, outliers, missing values, etc.
+    ??? tip "Ontologies provide standardization for metadata values"
 
-### Describe
+        Example of ontologies:
+            
+        - [Environment Ontology](http://environmentontology.org/) terms for the MIxS standards
+        - [Plant Ontology](http://planteome.org/) for plant tissue types or development stages
+        - [FAIRSharing.org](https://fairsharing.org/) lists standards and ontologies for life sciences.
 
--   Comprehensive data documentation (i.e. **metadata**) is the key to
-    future understanding of data. Without a thorough description of
-    the context of the data, the context in which they were collected,
-    the measurements that were made, and the quality of the data, it
-    is unlikely that the data can be easily discovered, understood, or
-    effectively used.
+    **Preserve**
 
--   Thoroughly describe the dataset (e.g., name of dataset, list of
-    files, date(s) created or modified, related datasets) including
-    the people and organizations involved in data collection (e.g.,
-    authors, affiliations, sponsor). Also include:
-    -   An [ORCID](https://orcid.org/) (obtain one if you don't have one).
-    -   The scientific context (reason for collecting the data, how they were collected, equipment and software used to generate the data, conditions during data collection, spatial and temporal resolution)
-    -   The data themselves
-    -   How each measurement was produced
-    -   Units
-    -   Format
-    -   Quality assurance activities
-    -   Precision, accuracy, and uncertainty
+    In general, data must be preserved in an appropriate long-term archive (i.e. data center). Here are some examples:
 
+    - Sequence data should go to a national repository, frequently [NCBI](https://www.ncbi.nlm.nih.gov/)
+    - Identify data with value - it may not be necessary to preserve all data from a project
+    - The CyVerse [Data Commons](http://datacommons.cyverse.org/) provides a place to publish and preserve data that was generated on or can be used in CyVerse, where no other repository exists.
+    - See lists of repositories at [FAIRSharing.org](https://fairsharing.org/)
+    - See lists of repositories at [Data Dryad](https://datadryad.org/stash)
+    - Github repos can get DOIs through [Zenodo](https://guides.github.com/activities/citable-code/)
+    - Be aware of licensing and other intellectual property issues
+        - Repositories will require some kind of license, often the least restrictive (see for example [Creative Commons](https://creativecommons.org/))
+        - Repositories are unlikely to enforce reuse restrictions, even if you apply them.
 
-Some metadata standards you may want to consider:
+    **Discover**
 
--   [DataCite](https://schema.datacite.org/) for publishing data
--   [Dublin Core](http://www.dublincore.org/specifications/dublin-core/dcmi-terms/) for sharing data on the web
--   [MIxS](https://press3.mcs.anl.gov/gensc/mixs/) Minimum Information for any (x) sequence
--   [OGC standards](https://www.opengeospatial.org/docs/is) for geospatial data
+    - Good metadata allows you to discover your own data!
+    - Databases, repositories, and search indices provide ways to discover relevant data for reuse 
+        - [Google dataset search](https://toolbox.google.com/datasetsearch)
+        - [DataOne](https://www.dataone.org/)
+        - [FAIRSharing.org](https://fairsharing.org/)
 
-**Ontologies** provide standardization for metadata values:
+    **Integrate**
 
--   Example: [Environment Ontology](http://environmentontology.org/) terms for the MIxS standards
--   Example: [Plant Ontology](http://planteome.org/) for plant tissue types or development stages
--   [FAIRSharing.org](https://fairsharing.org/) lists standards and ontologies for life sciences.
+    - Data integration is a lot of work
+    - Standards and ontologies are key to future data integration
+    - Know the data before you integrate them
+    - Don't trust that two columns with the same header are the same data
+    - Properly cite the data you reuse!
+    - Use DOIs ([Digital Object Identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier)) wherever possible
 
+    **Analyze**
 
-### Preserve
+    - Follow open science principles for reproducible analyses (CyVerse, RStudio, notebooks, IDEs)
+    - State your hypotheses and analysis workflow before collecting data. Tools like [Open Science Framework](https://osf.io/) (OSF) allow you to make this public.
+    - Record all software, parameters, inputs, etc.
 
-In general, data must be preserved in an appropriate long-term archive
-(i.e. data center). Here are some examples:
+**References and Resources**
 
--   Sequence data should go to a national repository, frequently [NCBI](https://www.ncbi.nlm.nih.gov/)
--   Identify data with value - it may not be necessary to preserve all data from a project
--   The CyVerse [Data Commons](http://datacommons.cyverse.org/) provides a place to publish and preserve data that was generated on or can be used in CyVerse, where no other repository exists.
--   See lists of repositories at [FAIRSharing.org](https://fairsharing.org/)
--   See lists of repositories at [Data Dryad](https://datadryad.org/stash)
--   Github repos can get DOIs through [Zenodo](https://guides.github.com/activities/citable-code/)
--   Be aware of licensing and other intellectual property issues
-    -   Repositories will require some kind of license, often the
-        least restrictive (see for example [Creative Commons](https://creativecommons.org/))
-    -   Repositories are unlikely to enforce reuse restrictions, even
-        if you apply them.
-
-### Discover
-
--   Good metadata allows you to discover your own data!
--   Databases, repositories, and search indices provide ways to
-    discover relevant data for reuse 
-    - [Google dataset search](https://toolbox.google.com/datasetsearch)
-    - [DataOne](https://www.dataone.org/)
-    - [FAIRSharing.org](https://fairsharing.org/)
-
-### Integrate
-
--   Data integration is a lot of work
--   Standards and ontologies are key to future data integration
--   Know the data before you integrate them
--   Don't trust that two columns with the same header are the same data
--   Properly cite the data you reuse!
--   Use DOIs ([Digital Object Identifiers](https://en.wikipedia.org/wiki/Digital_object_identifier)) wherever possible
-
-### Analyze
-
--   Follow open science principles for reproducible analyses (CyVerse,
-    RStudio, notebooks, IDEs)
--   State your hypotheses and analysis workflow before collecting
-    data. Tools like [Open Science Framework](https://osf.io/) (OSF) allow you to make this public.
--   Record all software, parameters, inputs, etc.
+- [DataOne best practices](https://dataoneorg.github.io/Education/bestpractices/)
+- [Center for Open Science](https://cos.io/)
 
 ---
 
-### References and Resources
-
-[DataOne best practices](https://dataoneorg.github.io/Education/bestpractices/)
-
-[Center for Open Science](https://cos.io/)
-
----
-<br/>
-<br/>
-
-## FAIR Data
+## Data Principles
 
 !!! Info "Learning Objectives"
     -   Recall the meaning of FAIR
