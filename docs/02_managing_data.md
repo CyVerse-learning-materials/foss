@@ -196,103 +196,110 @@ Different types of data require different management practices. Here are some ex
     - State your hypotheses and analysis workflow before collecting data. Tools like [Open Science Framework](https://osf.io/) (OSF) allow you to make this public.
     - Record all software, parameters, inputs, etc.
 
-**References and Resources**
+??? Note "References and Resources"
 
-- [DataOne best practices](https://dataoneorg.github.io/Education/bestpractices/)
-- [Center for Open Science](https://cos.io/)
+    - [DataOne best practices](https://dataoneorg.github.io/Education/bestpractices/)
+    - [Center for Open Science](https://cos.io/)
 
 ---
 
 ## Data Principles
 
-!!! Info "Learning Objectives"
-    -   Recall the meaning of FAIR
-    -   Understand why FAIR is a collection of principles (rather than rules)
-    -   Use self-assessments to evaluate the FAIRness of your data
+<figure markdown="span">
+  ![fair](https://www.nlm.nih.gov/oet/ed/cde/tutorial/img/06aCDE.png){width="450"}
+  <figcaption markdown="span"> FAIR data, [NIH](https://www.nlm.nih.gov/oet/ed/cde/tutorial/02-200.html). </figcaption>
+</figure>
+
+<figure markdown="span">
+  ![care](https://swehsc.pharmacy.arizona.edu/sites/default/files/styles/az_small/public/2023-11/CARE%20Principles%20graphic.png?itok=YnCAC_JI){width="350"}
+  <figcaption markdown="span"> CARE data, [University of Arizona](https://swehsc.pharmacy.arizona.edu/news/using-care-principles-preserve-indigenous-data-sovereignty). </figcaption>
+</figure>
+
+!!! Success "Learning Objectives"
+    - Recall the meaning of FAIR
+    - Understand why FAIR is a collection of principles (rather than rules)
+    - Understand CARE
 
 ### FAIR Principles
 
-In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were
-published in Scientific Data. Read it.
+In 2016, the [**FAIR Guiding Principles**](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were published in Scientific Data.
+
+<p style="text-align: center; font-size:1.3em;"> <b><u>Read it.</u></b></p>
+
+!!! Tip "Why Principles?"
+
+    FAIR is a collection of principles. Ultimately, different communities within different scientific disciplines must work to interpret and implement these principles. Because technologies change quickly, focusing on the desired end result allows FAIR to be applied to a variety of situations now and in the foreseeable future.
 
 **Findable**
 
--   F1. (meta)data are assigned a globally unique and persistent identifier
--   F2. data are described with rich metadata (defined by R1 below)
--   F3. metadata clearly and explicitly include the identifier of the data it describes
--   F4. (meta)data are registered or indexed in a searchable resource
+- F1. (meta)data are assigned a globally unique and persistent identifier
+- F2. data are described with rich metadata (defined by R1 below)
+- F3. metadata clearly and explicitly include the identifier of the data it describes
+- F4. (meta)data are registered or indexed in a searchable resource
 
 **Accessible**
 
--   A1. (meta)data are retrievable by their identifier using a
-    standardized communications protocol
--   A1.1 the protocol is open, free, and universally implementable
--   A1.2 the protocol allows for an authentication and authorization
-    procedure, where necessary
--   A2. metadata are accessible, even when the data are no longer
-    available
+- A1. (meta)data are retrievable by their identifier using a standardized communications protocol
+- A1.1 the protocol is open, free, and universally implementable
+- A1.2 the protocol allows for an authentication and authorization procedure, where necessary
+- A2. metadata are accessible, even when the data are no longer available
 
 **Interoperable**
 
--   I1. (meta)data use a formal, accessible, shared, and broadly
-    applicable language for knowledge representation.
--   I2. (meta)data use vocabularies that follow FAIR principles
--   I3. (meta)data include qualified references to other (meta)data
+- I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- I2. (meta)data use vocabularies that follow FAIR principles
+- I3. (meta)data include qualified references to other (meta)data
 
 **Reusable**
 
--   R1. meta(data) are richly described with a plurality of accurate
-    and relevant attributes
--   R1.1. (meta)data are released with a clear and accessible data
-    usage license
--   R1.2. (meta)data are associated with detailed provenance
--   R1.3. (meta)data meet domain-relevant community standard
+- R1. meta(data) are richly described with a plurality of accurate and relevant attributes
+- R1.1. (meta)data are released with a clear and accessible data usage license
+- R1.2. (meta)data are associated with detailed provenance
+- R1.3. (meta)data meet domain-relevant community standard
 
-!!! Tip
+!!! Tip "Open vs. Public vs. FAIR"
 
-    Open vs. Public vs. FAIR:
+    Open: <u>“Open data and content can be freely used, modified, and shared by anyone for any purpose”</u>.
 
-    FAIR does not demand that data be open: See one definition of open:
-    http://opendefinition.org/
-
-!!! Tip
-
-    **Why Principles?**
-
-    FAIR is a collection of principles. Ultimately, different
-    communities within different scientific disciplines must work to
-    interpret and implement these principles. Because technologies
-    change quickly, focusing on the desired end result allows FAIR to be
-    applied to a variety of situations now and in the foreseeable
-    future.
+    FAIR does **NOT** demand that data be open: See one definition of open:
+    http://opendefinition.org/.
 
 ### CARE Principles
+
+<br>
+
+<p style="text-align: center;"> <i>Nihil de nobis, sine nobis.</i></p>
+<p style="text-align: center; font-size:1.3em;"><a href="https://pubmed.ncbi.nlm.nih.gov/31746723/"><b><u>Nothing about us without us.</u></b></a></p>
+
+<br>
+
+!!! question "Who owns the açaí?"
 
 The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event "Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop," 8 November 2018, Gaborone, Botswana.
 
 **Collective Benefit**
 
--   C1. For inclusive development and innovation
--   C2. For improved governance and citizen engagement
--   C3. For equitable outcomes
+- C1. For inclusive development and innovation
+- C2. For improved governance and citizen engagement
+- C3. For equitable outcomes
 
 **Authority to Control**
 
--   A1. Recognizing rights and interests
--   A2. Data for governance
--   A3. Governance of data
+- A1. Recognizing rights and interests
+- A2. Data for governance
+- A3. Governance of data
 
 **Responsibility**
 
--   R1. For positive relationships
--   R2. For expanding capability and capacity
--   R3. For Indigenous languages and worldviews
+- R1. For positive relationships
+- R2. For expanding capability and capacity
+- R3. For Indigenous languages and worldviews
 
 **Ethics**
 
--   E1. For minimizing harm and maximizing benefit
--   E2. For justice
--   E3. For future use
+- E1. For minimizing harm and maximizing benefit
+- E2. For justice
+- E3. For future use
 
 
 !!! Tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
@@ -302,62 +309,41 @@ The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Gove
     Go Lydia!
     [Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity](https://www.nature.com/articles/s41559-023-02161-2), *Nature Ecology & Evolution*, 2023. 
 
-??? Note "Resources"
-
-    - [The FAIR Guiding Principles for scientific data management and stewardship](<https://www.nature.com/articles/sdata201618>)
-    - [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18){target=_blank} established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
-    - [Go-FAIR website](https://www.go-fair.org/fair-principles/){target=_blank}
-    - [Carroll et al. (2020)](http://doi.org/10.5334/dsj-2020-043){target=_blank} established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf){target=_blank}
-    - [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/){target=_blank}
-
-
 ### How to get to FAIR?
 
-This is a question that only you can answer, that is because it depends
-on (among other things)
+This is a question that only you can answer, that is because it depends on (among other things)
 
-1.  Your scientific discipline: Your datatypes and existing standards
-    for what constitutes acceptable data management will vary.
-2.  The extent to which your scientific community has implemented
-    FAIR: Some disciplines have significant guidelines on FAIR, while
-    others have not addressed the subject in any concerted way.
-3.  Your level of technical skills: Some approaches to implementing
-    FAIR may require technical skills you may not yet feel comfortable
-    with.
+1.  Your scientific discipline: Your datatypes and existing standards for what constitutes acceptable data management will vary.
+2.  The extent to which your scientific community has implemented FAIR: Some disciplines have significant guidelines on FAIR, while others have not addressed the subject in any concerted way.
+3.  Your level of technical skills: Some approaches to implementing FAIR may require technical skills you may not yet feel comfortable with.
 
-While a lot is up to you, the first step is to evaluate how FAIR you
-think your data are:
+While a lot is up to you, the first step is to evaluate how FAIR you think your data are:
 
-!!! Question "Exercise"
-    Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/).
+??? Question "Assessing the FAIRness of you data"
+    Thinking about a dataset you work with, complete the ARDC [FAIR assessment](https://ardc.edu.au/resource/fair-data-self-assessment-tool/) in your own time.
 
----
+??? Note "Resources"
 
-### References and Resources
-
-<https://www.nature.com/articles/sdata201618>
+    - [The FAIR Guiding Principles for scientific data management and stewardship](https://www.nature.com/articles/sdata201618)
+    - [Wilkinson et al. (2016)](https://doi.org/10.1038/sdata.2016.18) established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. 
+    - [Go-FAIR website](https://www.go-fair.org/fair-principles/)
+    - [Carroll *et al.* (2020)](http://doi.org/10.5334/dsj-2020-043) established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf)
+    - [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/)
 
 ---
-
-<br/>
-<br/>
 
 ## Data Management Plans
 
-!!! Info "Learning Objectives"
-    -   Describe the purpose of a data management plan
-    -   Describe the important elements of a data management plan
-    -   Use a self-assessment to design a data management plan
+!!! Success "Learning Objectives"
+    - Describe the purpose of a data management plan
+    - Describe the important elements of a data management plan
+    - Use a self-assessment to design a data management plan
 
-### What is a DMP?
-
-"A data management plan or DMP is a formal document that outlines how
-data are to be handled both during a research project, and after the
-project is completed. [1] The goal of a data management plan is to
-consider the many aspects of data management, metadata generation, data
-preservation, and analysis before the project begins; this may lead to
-data being well-managed in the present, and prepared for preservation in
-the future."(Source: https://en.wikipedia.org/wiki/Data_management_plan)
+!!! Quote "What is a DMP?"
+    
+    "A data management plan or DMP is a formal document that outlines how data are to be handled both during a research project, and after the project is completed. The goal of a data management plan is to consider the many aspects of data management, metadata generation, data preservation, and analysis before the project begins; this may lead to data being well-managed in the present, and prepared for preservation in the future."
+    
+    (Source: https://en.wikipedia.org/wiki/Data_management_plan)
 
 [Example DMPs](https://dmptool.org/public_plans){target=_blank}
 
