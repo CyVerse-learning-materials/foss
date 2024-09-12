@@ -301,7 +301,6 @@ The [CARE Principles](https://www.gida-global.org/care) for Indigenous Data Gove
 - E2. For justice
 - E3. For future use
 
-
 !!! Tip "Connecting FOSS and CARE: [Lydia Jennings](https://nativesoilnerd.com/)"
 
     Dr. Lydia Jennings was a Data Science Fellow at the University of Arizona, who attended FOSS in  Fall of 2022.      
@@ -334,67 +333,57 @@ While a lot is up to you, the first step is to evaluate how FAIR you think your 
 
 ## Data Management Plans
 
+<p style="text-align: center; font-size:1.3em;"><i>"Those who fail to plan, plan to fail."</i></p>
+
 !!! Success "Learning Objectives"
     - Describe the purpose of a data management plan
     - Describe the important elements of a data management plan
-    - Use a self-assessment to design a data management plan
 
 !!! Quote "What is a DMP?"
     
     "A data management plan or DMP is a formal document that outlines how data are to be handled both during a research project, and after the project is completed. The goal of a data management plan is to consider the many aspects of data management, metadata generation, data preservation, and analysis before the project begins; this may lead to data being well-managed in the present, and prepared for preservation in the future."
     
-    (Source: https://en.wikipedia.org/wiki/Data_management_plan)
+    Source: [Wikipedia](https://en.wikipedia.org/wiki/Data_management_plan).
 
-[Example DMPs](https://dmptool.org/public_plans){target=_blank}
-
----
+Here are some [Example DMPs](https://dmptool.org/public_plans) made public from the DMPtool website. You can use these as example for creating your own DMP.
 
 **Why bother with a DMP?**
 
-!!! Question "How would you answer?"
+??? Question "How would you answer?"
     Do you have a data management plan? If so, how do you use it?
 
-*"Those who fail to plan, plan to fail"*
+Returning to the assertion that data (and its value) is at the foundation of your science, working without a data management plan should be considered scientific misconduct.
 
-Returning to the assertion that data (and its value) is at the
-foundation of your science, working without a data management plan
-should be considered scientific misconduct.
+Those are strong words. And while we might have an intuition of the boundaries of research ethics - data mismanagement seems more like an annoyance than misconduct. However, if your mismanagement leads to error in your research data, or the inability to make publicly-funded research open to the public, these are serious consequences. Increasingly, funders realize this.
 
-Those are strong words. And while we might have an intuition of the
-boundaries of research ethics - data mismanagement seems more like an
-annoyance than misconduct. However, if your mismanagement leads to error
-in your research data, or the inability to make publicly-funded research
-open to the public, these are serious consequences. Increasingly,
-funders realize this.
+<figure markdown="span">
+  ![carrot&stick](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Europe_Boardman_Robinson.jpg/800px-Europe_Boardman_Robinson.jpg){width="450"}
+  <figcaption markdown="span"> "Europe 1916", by cartoonist Boardman Robinson, depicting the [carrot and stick metaphor](https://en.wikipedia.org/wiki/Carrot_and_stick). </figcaption>
+</figure>
 
 **Stick:**
 
--   [You have to make one](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp)
--   Reviewers definitely look at them, but they may not be enforced.
+- [You have to make one](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp).
+- Reviewers definitely look at them, but they may not be enforced.
 
 **Carrot:**
 
--   Make your life easier
--   Planning for you project makes it run more smoothly
--   Avoid surprise costs
-
-
-<br/>
-<br/>
-
-
-!!! Tip "DMP Tools"
-    Make your life a little easier by creating DMPs with online tools 
-
-    [Data Stewardship Wizard](https://ds-wizard.org/){target=_blank}
-
-    [DMPTool](https://dmptool.org/){target=_blank}
+- Make your life easier.
+- Planning for you project makes it run more smoothly.
+- Avoid surprise costs.
 
 <br/>
 <br/>
+
+
+!!! Tip "DMPTools: making your (data) life a little easier"
+
+    Here are a couple of tools you can utilize in order to create a Data Management Plan:
+
+    - [Data Stewardship Wizard](https://ds-wizard.org/).
+    - [DMPTool](https://dmptool.org/).
+
 ---
-<br/>
-<br/>
 
 ## Licenses
 
@@ -402,50 +391,38 @@ By default, when you make creative work, that work is under exclusive copyright.
 
 If you want your work to be Open and used by others, you need to specify how others can use your work. This is done by *licensing* your work.
 
-<br>
-<br>
-
 !!! Tip "License Examples"
     
-    [MIT License](https://choosealicense.com/licenses/mit/){target=_blank}
+    - [MIT License](https://choosealicense.com/licenses/mit/)
+    - [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+    - FOSS material has been licensed using the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 
-    [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/){target=_blank}
+### License Options from UArizona Library
 
-    FOSS material has been licensed using the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/){target=_blank}.
-
-<br>
-<br>
-
-
-#### License Options from UArizona Library
 <figure markdown>
   <a href="https://data.library.arizona.edu/supported-platforms/redata" target="blank" rel="open science">![open science](../assets/license_matrix.png){ width="600" } </a>
-    <figcaption> License options for University of [Arizona Research Data Repository (ReDATA)](https://data.library.arizona.edu/supported-platforms/redata)  </figcaption>
+    <figcaption> License options for University of [Arizona Research Data Repository (ReDATA)](https://data.library.arizona.edu/supported-platforms/redata).  </figcaption>
 </figure>
 
 <br>
 
-#### Additional Info
+**Additional Info**
 
-General guidance on how to choose a license https://choosealicense.com/
+- General guidance on how to choose a license https://choosealicense.com/
+- More good guidance on how to choose a license https://opensource.guide/legal/
+- Licensing options for your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
 
-More good guidance on how to choose a license https://opensource.guide/legal/
+??? Note "References and Resources"
 
-Licensing options for your [Github Repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license){target=_blank}
-
----
-
-### References and Resources
-
--   [NSF Guidelines on DMPs](https://www.nsf.gov/bio/biodmp.jsp)
--   https://dmptool.org/general_guidance
--   https://dmptool.org/public_templates
--   Professional and scholarly societies, e.g., theEcological Society of America http://www.esa.org/esa/science/data-sharing/resources-and-tools/
--   DataOne - https://dataoneorg.github.io/Education/bestpractices/
--   Data Carpentry - http://datacarpentry.org/
--   The US Geological Survey https://www.usgs.gov/data-management
--   Repository registry (and search) service: http://www.re3data.org/
--   Your university library
+    - [NSF Guidelines on DMPs](https://www.nsf.gov/bio/biodmp.jsp)
+    - https://dmptool.org/general_guidance
+    - https://dmptool.org/public_templates
+    - Professional and scholarly societies, e.g., theEcological Society of America http://www.esa.org/esa/science/data-sharing/resources-and-tools/
+    - DataOne - https://dataoneorg.github.io/Education/bestpractices/
+    - Data Carpentry - http://datacarpentry.org/
+    - The US Geological Survey https://www.usgs.gov/data-management
+    - Repository registry (and search) service: http://www.re3data.org/
+    - Your university library
 
 ----
 
