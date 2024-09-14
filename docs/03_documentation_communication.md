@@ -24,7 +24,7 @@ Documentation is the practice of recording, preserving, and organizing informati
 Not all documentation is the same. **The documentation system**, by Divio, categorizes the different types of documentation into 4 quadrants:
 
 <figure markdown>
-  <a href="https://documentation.divio.com/" target="blank" rel="xkcd">![xkcd](https://documentation.divio.com/_images/overview.png) </a>
+  <a href="https://documentation.divio.com/" target="blank" rel="xkcd">![xkcd](./assets/documentation.webp) </a>
     <figcaption> Read more in depth on the documentation system here: https://documentation.divio.com </figcaption>
 </figure>
 
