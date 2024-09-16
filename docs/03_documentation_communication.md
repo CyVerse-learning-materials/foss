@@ -6,14 +6,30 @@
 
     *  Identify and explain different types of project documentation (both internal and external)
     *  Describe tools and approaches to creating your own documentation
-    *  Describe best practices for maintaining documentation
     *  Create your own GitHub Pages website (!)
 
 
+<br/>
+
 ## :material-file-document-multiple: Project Documentation
 
-Documentation is the practice of recording, preserving, and organizing information, data, or details in a structured and systematic manner. Documentation is also essential to communicate with your future self, your collaborators, or the world on specific ideas and information. Effective documentation must take into consideration the following points:
+<span style="font-size:1.3em;">_A great Open Scientist is someone who documents their work and shares it with the world. This means going well beyond peer-reviewed publications._</span>
 
+
+- Describe how to use or build your computer code or tools
+
+- Share best practices for a method or protocol
+
+- Create and share educational material so others in your field can learn from you
+
+- Share a first-person account of your journey through a project
+
+
+
+<br/>
+<br/>
+
+### Tips for Great Documentation
 - **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
 - **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
 - **:fontawesome-solid-bullseye: Accuracy**: Information should be up-to-date and correct to prevent errors and misunderstandings.
@@ -35,73 +51,81 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
     - **References**: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
     - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
 
-
+<br/>
 
 ### Public Repositories for Documentation
 
 
 
+??? "*:simple-github: GitHub Readme*"
 
-*:simple-github: GitHub*
+    - On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
+    
 
--   On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
--   Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
 
-*:simple-github: GitHub Pages*
 
--   You can pull templates from other GitHub users for your website,
-    e.g. [:simple-jekyll: Jekyll themes](http://themes.jekyllrc.org/){target=_blank}
--   GitHub pages are free, fast, and easy to build, but limited in use
-    of subdomain or URLs.
--   The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs.
--   Other popular website generator for GitHub Pages is [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
+??? "*:simple-github: GitHub Wiki*"
 
-*:simple-markdown: Material MkDocs*
+    -  Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
 
--    [Material Design](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs, a static site generator geared towards (technical) project documentation.
--   publish via GitHub Actions
-- Uses open source Material or ReadTheDocs Themes
 
-*:simple-readthedocs: ReadTheDocs*
+??? "*:simple-github: GitHub Pages*"
 
--   publishing websites via
+    -  [Github Pages](https://pages.github.com/) are hosted directly from your GitHub repository
+    -  GitHub pages are free, fast, and easy to build, but limited in use
+    of subdomain or URLs
+    -  You can pull templates from other GitHub users for your website, e.g. [:simple-jekyll: Jekyll themes](http://themes.jekyllrc.org/){target=_blank}
+    -  The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs.
+    -  Other popular website generator for GitHub Pages is [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
+
+??? "*:simple-markdown: Material MkDocs*"
+
+    -  [Material Design](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs, a static site generator geared towards (technical) project documentation.
+    -  Publish via GitHub Actions
+    -  Uses open source Material or ReadTheDocs Themes
+
+??? "*:simple-readthedocs: ReadTheDocs*"
+
+    -   publishing websites via
     [ReadTheDocs.com](https://readthedocs.com/dashboard/){target=_blank} costs money.
--   You can work in an offline state, where you develop the materials
+    -   You can work in an offline state, where you develop the materials
     and publish them to your localhost using
     [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html){target=_blank}
--   You can work on a website template in a GitHub repository, and
+    -   You can work on a website template in a GitHub repository, and
     pushes are updated in near real time using ReadTheDocs.com.
--   Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
+    -   Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
 
 
-*:material-book-arrow-down: Bookdown*
+??? "*:material-book-arrow-down: Bookdown*"
 
--   [:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
--   Bookdown websites can be hosted by [RStudio
+    -   [:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
+    -   Bookdown websites can be hosted by [RStudio
     Connect](https://www.rstudio.com/products/connect/){target=_blank}
--   You can publish a Bookdown website using [Github
+    -   You can publish a Bookdown website using [Github
     Pages](https://github.blog/2016-08-17-simpler-github-pages-publishing/){target=_blank}
 
 
-*:simple-r: Quarto*
+??? "*:simple-r: Quarto*"
 
--   [:simple-r: Quarto](https://quarto.org/){target=_blank} is an open-source scientific and technical publishing system built on Pandoc
--   [Build a website](https://quarto.org/docs/websites/) using Quarto's template builder
--   [Build with Github Pages](https://quarto.org/docs/publishing/github-pages.html)
+    -   [:simple-r: Quarto](https://quarto.org/){target=_blank} is an open-source scientific and technical publishing system built on Pandoc
+    -   [Build a website](https://quarto.org/docs/websites/) using Quarto's template builder
+    -   [Build with Github Pages](https://quarto.org/docs/publishing/github-pages.html)
 
-*:simple-jupyter: JupyterBook*
+??? "*:simple-jupyter: JupyterBook*"
 
--   [Based on Project Jupyter](https://jupyterbook.org/en/stable/start/overview.html){target=_blank} `ipynb` and MarkDown
--   Uses `conda` package management
+    -   [Based on Project Jupyter](https://jupyterbook.org/en/stable/start/overview.html){target=_blank} `ipynb` and MarkDown
+    -   Uses `conda` package management
 
-*:simple-git: GitBook*
+??? "*:simple-git: GitBook*"
 
-- [GitBook](https://docs.gitbook.com/){target=_blank} websites use MarkDown syntax
-- Free for open source projects, paid plans are available
+    - [GitBook](https://docs.gitbook.com/){target=_blank} websites use MarkDown syntax
+    - Free for open source projects, paid plans are available
 
-*:simple-confluence: Confluence Wikis*
+??? "*:simple-confluence: Confluence Wikis*"
 
--   [:simple-confluence: Confluence Wikis](https://www.atlassian.com/software/confluence/use-cases/wiki){target=_blank} are another tool for documenting your work. You can see an example from [Cyverse](https://wiki.cyverse.org){target=_blank}.
+    -   [:simple-confluence: Confluence Wikis](https://www.atlassian.com/software/confluence/use-cases/wiki){target=_blank} are another tool for documenting your work. You can see an example from [Cyverse](https://wiki.cyverse.org){target=_blank}.
+
+<br/>
 
 !!! Quote "Things to remember about Documentation"
 
@@ -111,66 +135,13 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
 
     - Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.
     
-### Websites to Host Methods & Protocols
-
-[Open Science Framework](https://osf.io/){target=_blank} for free. OSF can be directly linked to your ORCID.
-
--   Integrated project management tools
--   Uses templates to create a project website
--   Can publish preprints from within project management tools
-
-[Protocols.io](https://www.protocols.io/){target=_blank} - collaborative platform and preprint server for: science methods, computational workflows, clinical trials, operational procedures, safety checklists, and instructions / manuals.
-
-[QUBES](https://qubeshub.org/){target=_blank} - community of math and biology educators who share resources and methods for preparing students to tackle real, complex, biological problems.
-
-??? Question "What are the benefits of using a GitHub.io website?"
-
-    [Github Pages](https://pages.github.com/) are hosted directly from your GitHub repository. 
-    
-    Just edit, push, and your changes are live.
-
-    You do not need to run your own web server!!
+<br/>
+<br/>
 
 ---
 
 ## :material-antenna: Communication
 
-### Internal Project 
-
-Choosing which software to use for your internal lab communication can be complicated by the cost of setting up, the cost of maintaining, and simply by the sheer number of platforms that are out there.
-
-For this workshop, we use [:simple-slack: SLACK](https://slack.com/){target=_blank} (Searchable Log of All Conversation & Knowledge). Microsoft's competitor to SLACK is [:material-microsoft-teams: Microsoft Teams](https://teams.microsoft.com/start){target=_blank}.
-
-Remember, the intention of these platforms are to **improve productivity** & not become a distraction.
-
-**:simple-slack: SLACK**
-
--   Slack has [plenty of apps](https://slack.com/apps){target=_blank} for coordinating
-    multiple services, i.e. Calendars, Github, GoogleDrive, Box, etc.
--   Free Slack is limiting (e.g., 90 day history; limited connections across workspaces).
--   Paid Slack is $7.25 per user per month. (10 users for 1 year = $870)
-
-**:material-microsoft-teams: Microsoft Teams**
-
--   Teams is used by many R1 research universities as part of their
-    campus wide license agreement for Office 365 Business and Education
--   For example, anyone with a `arizona.edu` email address can use Teams for free
--   Limitations:
-    -   Not sure you can create your own Teams
-    -   Limited to messaging with people in your university Team
-
-*Other popular alternatives*
-
--   [:fontawesome-brands-bandcamp: BaseCamp](https://basecamp.com/){target=_blank}
--   [:simple-discord: Discord](https://discordapp.com/){target=_blank}
--   [:simple-mastodon: Mastodon](https://joinmastodon.org/){target=_blank}
--   [:simple-mattermost: Mattermost](https://mattermost.com/){target=_blank}
-
-!!! Info "Useful links for creating a SLACK workspace"
-    1.  [Create a new Workspace](https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace){target=_blank}
-    2.  [Create channels, add apps & tools](https://get.slack.help/hc/en-us/articles/217626298-tips-for-team-creators-and-admins){target=_blank}
-
----
 
 ### External (Public)
 
