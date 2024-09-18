@@ -29,15 +29,6 @@
 <br/>
 <br/>
 
-### Tips for Great Documentation
-- **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
-- **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
-- **:fontawesome-solid-bullseye: Accuracy**: Information should be up-to-date and correct to prevent errors and misunderstandings.
-- **:simple-instructure: Organization**: A logical structure and clear organization make it easy to navigate and find information.
-- **:fontawesome-solid-exclamation: Relevance**: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.
-
-
-Not all documentation is the same. **The documentation system**, by Divio, categorizes the different types of documentation into 4 quadrants:
 
 <figure markdown>
   <a href="https://documentation.divio.com/" target="blank" rel="xkcd">![xkcd](./assets/documentation.webp) </a>
@@ -50,6 +41,21 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
     - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to acheive a specific outcome or answer a specific question. An example how-to-guide could be a guide on how to install a specific software on a specific operating system.
     - **References**: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
     - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
+
+<br/>
+<br/>
+
+### Tips for Great Documentation
+- **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
+- **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
+- **:fontawesome-solid-bullseye: Accuracy**: Information should be up-to-date and correct to prevent errors and misunderstandings.
+- **:simple-instructure: Organization**: A logical structure and clear organization make it easy to navigate and find information.
+- **:fontawesome-solid-exclamation: Relevance**: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.
+
+
+
+
+
 
 <br/>
 
@@ -140,10 +146,8 @@ Not all documentation is the same. **The documentation system**, by Divio, categ
 
 ---
 
-## :material-antenna: Communication
+## :material-antenna: Public Communication
 
-
-### External (Public)
 
 Communicating with the public and other members of your science community (in addition to traditional peer-review publications and conferences) is one of the most important parts of your science!
 
@@ -167,6 +171,9 @@ There are many ways scientists use social media and the web to share their data 
     post in your personal accounts can be considered a reflection of the
     organization you work for and may be used in decisions about hiring or
     dismissal.
+
+<br/>
+<br/>
 
 ---
 
