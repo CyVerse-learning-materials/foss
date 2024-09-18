@@ -182,9 +182,19 @@
 
 This section is built in order to educate on and simplify the steps necessary that newcomers need to take in order to build a successful GitHub Pages hosted website. 
 
- This tutorial is inspired by [academicpages](https://academicpages.github.io/), a Jekyll themed template created in order to help scientists and academics build their own websites.
+This tutorial is inspired by [academicpages](https://academicpages.github.io/), a Jekyll themed template created in order to help scientists and academics build their own websites.
 
-The easy way would be to fork/import the [foss-reference-hub website](https://cyverse-learning-materials.github.io/foss-reference-hub/) ([repository](https://github.com/CyVerse-learning-materials/foss-reference-hub)) and modify it to reflect your requirements; this tutorial will cover the necessary files and repository structure you require in order to build a successful personal website.
+This tutorial will cover the necessary files and repository structure you require in order to build a successful personal website. 
+
+The website we will create is going to be hosted on [GitHub Pages](https://pages.github.com/) using the [MkDocs site generator](https://en.wikipedia.org/wiki/MkDocs) and [material for MkDocs theme](https://squidfunk.github.io/mkdocs-material/).
+
+**How does this work?**
+
+- You will build a website on GitHub, which will host it on GitHub pages. This tutorial does not require a local git copy of the repository.
+- MkDocs is a static website generator: using the [Markdown language](https://www.markdownguide.org/basic-syntax/) you can create tables, format paragraphs, add images etc.; Through a [GitHub Action](https://docs.github.com/en/actions), MkDocs will take your Markdown formatted pages and create the necessary HTML for a website.
+- The material for MkDocs theme will "prettify" your website, rendering similar to the FOSS documentation, the [CyVerse Learning center](https://learning.cyverse.org/), or the [U of A HPC documentation](https://hpc.arizona.edu/).
+
+!!! warning "This tutorial will create the basic requirements for the website. It will be up to you to populate it further. <br> <br> You can base your formatting on either the [FOSS materials](https://github.com/CyVerse-learning-materials/foss) or find out more from the [material for MkDocs theme pages](https://squidfunk.github.io/mkdocs-material/)."
 
 !!! info "Repository Explanation"
 
@@ -218,7 +228,18 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
     Upon pushing changes, a `gh-pages` branch will be automatically created by the GitHub Action; it is where the website is rendered from.
 
 
-### Directions A: forking or importing an existing repo
+The workflow for this exercise is the following:
+
+1. Create the repository.
+2. Create the `docs` folder and populate it with `index.md`.
+3. Address the *Settings* such that GitHub Actions have the correct settings.
+4. Create a `requirements.txt` (used by GitHub Actions to build the website).
+5. Create the `mkdocs.yml` (used by MkDocs to create the sttructure).
+6. Create a GitHub workflow file `.github/workflows`
+7. Address the *Settings* to deploy the website from a newly created branch.
+8. Edit pages in your own time.
+
+!!! success "All the code is available on this page or on the HackMD. Ideally, all you need to do is copy and paste it!"
 
 !!! warning "Prerequisites"
     You will require the following in case you want to add code locally.
@@ -250,7 +271,7 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
         
         As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
 
-        1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+        4. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
         ```
         Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
         Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
@@ -269,89 +290,8 @@ The easy way would be to fork/import the [foss-reference-hub website](https://cy
         |oo+.             |
         +----[SHA256]-----+
         ``` 
-        2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
-        3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
-        
-        Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
-        
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) or [import](https://docs.github.com/en/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer) the [FOSS Reference Hub website tutorial repository branch](https://github.com/CyVerse-learning-materials/foss-reference-hub/tree/week-4-pre)
-    - Forking or importing will allow you to have your own copy of a specific repository; Cloning a repository **without** forking/importing it first, will lead to the changes being applied to the original repository and not your own copy. You should clone your forked or imported repository, not the original!
-2. Navigate to *Settings* > *Actions* > *General*:
-    - Under *Action Permissions* select *Allow all actions and reusalbe workflows*
-    - Under *Workflow permissions* select *Read and write permissions* and *Allow GitHub Actions to create and approve pull requests*
-3. Edit the `mkdocs.yml` and push your changes
-    - The first changes you should be making are in the first few lines in the `mkdocs.yml` file in order to reflect your necessities:
-        -   Line 1: `site_name:` change to any title you want for your website 
-        -   Line 2: `site_description:` give a short description of the website
-        -   Line 3: `site_author: ` who you are
-        -   Line 4: `site_url:` change it to the URL reflected in *Settings*, which will most likely be `https://<github-username.github.io>/`
-        -   Line 7: `repo_name: ` give the name of your repository (e.g., `academicpages-mkdocs` in this case)
-        -   Line 8: `repo_url:` give the git repository URL 
-        -   Line 11: `copyright:` change `your name` to the maintainer of the website (likely to be you)
-    !!! warning "Workflow expectations"
-        The previos changes *should* trigger the GitHub action workflow, which is setup to apply changes to the website every time a commit is pushed. One of the first thing that `mkdocs-material` will do, is to create the `gh-pages` branch (in case you do not have it already). **The workflow will fail because the `ghpages.yml` in the `.github/workflows` directory is disabled (["commented out"](https://en.wiktionary.org/wiki/comment_out))**. To enable it, remove the `#` at the beginnig on each line and commit your changes. Upon changes, the workflow should go ahead and create the `gh-pages` branch.
-4. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
-    - You should be able to access your website at `https://<github-username>.github.io/`. If you cannot find your website, go to the repository's settings page and navigate to *Pages*: your website address will be there.
-5. Edit documents as necessary.
-    - Don't forget to **add**, **commit** and **push** changes!
-    - Changes will only be visible on the website after a successful push.
-    - After each push, next to the commit identifier GitHub will show either a yellow circle (:yellow_circle:, meaning building), green check (:material-check:, meaning success), or red cross (:x:, meaning failure).
-    ??? Tip "Failure? Try again!"
-        If you've been given the red cross :x:, GitHub will notify you with what went wrong. By clicking on the :x:, GitHub will open up a new page showing you the broken process.
-
-### Directions B: Creating your own
-
-!!! warning "Prerequisites"
-    You will require the following in case you want to add code locally.
-    
-    ??? Info "Create a GitHub account"
-        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
-
-    Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on [Version Control](05_version_control.md).
-
-    ??? Info "Choice A: Generate a Personal Access Token"
-        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
-        
-        1. On your coumputer:
-            1. Clone your repository (`git clone <repository>`)
-            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
-            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
-        2. On GitHub:
-            1. Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)
-            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
-            3. Click *Personal access tokens* > *Tokens (classic)*
-            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
-            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
-        3. Back on your computer:
-            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
-            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
-        
-    ??? Info "Choice B: Connecting via SSH"
-        The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). 
-        
-        As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
-
-        1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
-        ```
-        Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
-        Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
-        The key fingerprint is:
-        SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o <your github email>
-        The key's randomart image is:
-        +--[ED25519 256]--+
-        |^B== o.          |
-        |%*=.*.+          |
-        |+=.E =.+         |
-        | .=.+.o..        |
-        |....  . S        |
-        |.+ o             |
-        |+ =              |
-        |.o.o             |
-        |oo+.             |
-        +----[SHA256]-----+
-        ``` 
-        2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
-        3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
+        5. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
+        6. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
         
         Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
 
@@ -564,66 +504,42 @@ Here are some guides that you may find useful:
 - [Slack CLI notifications](https://samapriya.github.io/projects/slack_notifier_cli_addon/){target=_blank}
 - [Meetups](https://www.meetup.com/){target=_blank}
 
-### GitHub Pages Website Quickstarts
+??? info "GitHub Pages Website Quickstarts"
 
-- [:simple-github: *GitHub Pages*](https://pages.github.com/)
-    1.  Create a GitHub account
-    2.  Clone the repo `https://github.com/username/username.github.io`
-    3.  Create an `index.html`
-    4.  Push it back to GitHub
+    - [:simple-github: *GitHub Pages*](https://pages.github.com/)
+        1.  Create a GitHub account
+        2.  Clone the repo `https://github.com/username/username.github.io`
+        3.  Create an `index.html`
+        4.  Push it back to GitHub
 
-- [:simple-readthedocs: *ReadTheDocs.org*](https://readthedocs.org/)
-    1.  [Install](https://docs.readthedocs.io/en/stable/install.html)
-    2.  [Use Github](https://github.com/rtfd/readthedocs.org)
-    3.  [Create a ReadTheDocs account](https://readthedocs.org/accounts/signup/)
+    - [:simple-readthedocs: *ReadTheDocs.org*](https://readthedocs.org/)
+        1.  [Install](https://docs.readthedocs.io/en/stable/install.html)
+        2.  [Use Github](https://github.com/rtfd/readthedocs.org)
+        3.  [Create a ReadTheDocs account](https://readthedocs.org/accounts/signup/)
 
-- [:simple-markdown: *Material MkDocs*](https://squidfunk.github.io/mkdocs-material/getting-started/)
-    1. [Install Material](https://squidfunk.github.io/mkdocs-material/getting-started/#installation) 
-        1. use a [`reqirements.txt`](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/requirements.txt) 
-        2. or `pip install mkdocs-material`
-    2. Clone a repository with an existing template or create a new repo with `mkdocs new .` 
-    3. Run `python -m mkdocs serve` to build and serve locally
-    4. Open your browser to preview the build at https://localhost:8000`
+    - [:simple-markdown: *Material MkDocs*](https://squidfunk.github.io/mkdocs-material/getting-started/)
+        1. [Install Material](https://squidfunk.github.io/mkdocs-material/getting-started/#installation) 
+            1. use a [`reqirements.txt`](https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/requirements.txt) 
+            2. or `pip install mkdocs-material`
+        2. Clone a repository with an existing template or create a new repo with `mkdocs new .` 
+        3. Run `python -m mkdocs serve` to build and serve locally
+        4. Open your browser to preview the build at https://localhost:8000`
 
-- [:material-book-arrow-down: *Bookdown*](https://bookdown.org/)
-    1.  [Install R and RStudio](https://www.rstudio.com/products/rstudio/download/)
-    2.  Install Bookdown package with `install.packages("bookdown", dependencies=TRUE)`
-    3.  Open the Bookdown demo and get started
+    - [:material-book-arrow-down: *Bookdown*](https://bookdown.org/)
+        1.  [Install R and RStudio](https://www.rstudio.com/products/rstudio/download/)
+        2.  Install Bookdown package with `install.packages("bookdown", dependencies=TRUE)`
+        3.  Open the Bookdown demo and get started
 
-- [:simple-r: *Quarto*](https://quarto.org/)
-    - [Follow these instructions](https://quarto.org/docs/publishing/github-pages.html)
+    - [:simple-r: *Quarto*](https://quarto.org/)
+        - [Follow these instructions](https://quarto.org/docs/publishing/github-pages.html)
 
-- [:simple-jupyter: *JupyterBook*](https://jupyterbook.org/en/stable/intro.html)
-    - [Create your first book](https://jupyterbook.org/en/stable/start/your-first-book.html)
+    - [:simple-jupyter: *JupyterBook*](https://jupyterbook.org/en/stable/intro.html)
+        - [Create your first book](https://jupyterbook.org/en/stable/start/your-first-book.html)
 
-- [:simple-git: *GitBook*](https://docs.gitbook.com/)
-    - [Follow Template builder](https://app.gitbook.com/join)
+    - [:simple-git: *GitBook*](https://docs.gitbook.com/)
+        - [Follow Template builder](https://app.gitbook.com/join)
 
 
 ---
 
-## Self Assessment
-
-??? Question "True or False: Tutorials and How-to-Guides are the same"
-
-    !!! Success "False"
-
-        Tutorials are in general introductory and longer than How-to-Guides and are intended for teaching learners a new concept by describing applications and providing justifications. 
-
-        How-to-Guides are more like cooking recipes which include step-by-step instructions for a specific task.
-
-??? Question "True or False: Teams should communicate over a single messaging platform."
-
-    !!! Success "False"
-
-        While it may be advisable to push informal communication toward a platform like SLACK or Microsoft Teams, there is no one-platform-fits-all solution for managing a diverse science team.
-
-??? Question "What is the best communication platform for team science?"
-
-    !!! Info "There is no best platform, but there are some best practices"
-
-        In general, communications amongst team members may be best suited for messaging services like SLACK, Teams, or Chat.
-
-        For software development, GitHub Issues are one of the primary means of documenting changes and interactions on the web.
-
-        Formal communication over email is preferred, and is necessary for legal, budgetary, and institutional interactions.
+---
