@@ -348,11 +348,11 @@ The workflow for this exercise is the following:
         site_name: Name of your website
         site_description: Tell people what this website is about
         site_author: Who you are
-        site_url: The website URL
+        site_url: 'https://foss.cyverse.org'
 
         # Repository
         repo_name: The repository name
-        repo_url: The repository URL
+        repo_url: 'https://github.com/CyVerse-learning-materials/foss'
         edit_uri: edit/main/docs/
         # Copyright
         copyright: 'Copyright &copy; 2023 - 2024'
