@@ -227,6 +227,12 @@ The website we will create is going to be hosted on [GitHub Pages](https://pages
     
     Upon pushing changes, a `gh-pages` branch will be automatically created by the GitHub Action; it is where the website is rendered from.
 
+There are 2 ways of doing this exercise: 
+
+- Direction A: Forking or Importing a [pre existing template](https://github.com/CyVerse-learning-materials/FOSS-mkdocs-template)
+- Direction B: Creating the materials by yourself. 
+
+Here below are the steps for Direction B.
 
 The workflow for this exercise is the following:
 
