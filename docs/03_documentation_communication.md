@@ -468,13 +468,13 @@ The workflow for this exercise is the following:
             - uses: actions/checkout@v3
             - uses: actions/setup-python@v4
                 with:
-                    python-version: 3.9
+                python-version: 3.9
             - name: run requirements file
                 run:  pip install -r requirements.txt 
             - name: Deploy docs
                 run: mkdocs gh-deploy --force
                 env:
-                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ```
 
 7. Navigate to *Settings* > *Pages* and make sure that *Source* is *Deploy from a branch* and Branch is *gh-pages*, */(root)*
