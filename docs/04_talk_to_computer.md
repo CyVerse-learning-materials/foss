@@ -87,16 +87,45 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
 
 <br>
 <br>
+
+
+### Navigation
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="300" } </a>
+    <figcaption> Linux Directory Structure</figcaption>
+</figure>
+
+
+
+| Command | Explanation |
+|---|---|
+|`pwd`| print working directory |
+|`ls`| list content of folder |
+|`cd`| change directory |
+
+
+
 <br>
 
-??? info "Help with Commands"
-    For every command, typing `man` (manual) before the command, will open the manual for said command.
-    ```
-    $ man ls
-    ```
+By typing `pwd`, the current working directory is printed.
 
-    - The above command will result in opening the *manual* for the `ls` command. You can exit the man page by pressing `q`.
+```
+$ pwd
 
+/home/jgillan
+```
+<br>
+<br>
+
+We can then use `ls` to see the contents of the current directory. 
+
+```
+$ ls  
+shell-lesson-data/   shell-lesson-data.zip*
+```
+<br>
+<br>
 
 ??? info "Command Flags"
     Each command has **flags**, or options that you can specify. which are summoned with a `-`, such as `<command> -<flag>`.
@@ -107,6 +136,24 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
     - The above command calls for the `-a` (all), `-l` (long), `-h` (human readable) flags. This causes `ls` to output a list of *all* files (inculding hidden files/folders) with human readable file size (e.g., it will list 3MB instead of 3000000), permissions, creator, and date of creation.
     
     - If you do not know what flags are available, you can refer to the `man` command (or for many tools, use the `-h` (help) flag).
+
+<br>
+<br>
+
+We can then move inside the folder of our choice doing `cd`. Doing `ls` following the opening of the folder of choice, will show the contents of the folder you just moved in. Feel free to explore the contents of the folders by using `cd` and `ls`.
+
+```
+$ cd shell-lesson-data
+$ ls 
+
+exercise-data/  north-pacific-gyre/
+
+$ ls exercise-data/
+
+animal-counts/  creatures/  numbers.txt*  proteins/  writing/
+```
+<br>
+<br>
 
 ??? info "Tips for Directory Navigation"
     `.` refers to *current* directory
@@ -128,83 +175,33 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
 <br>
 <br>
 
-
-<figure markdown>
-  <a target="blank" rel="open science">![open science](../assets/linux_structure.png){ width="300" } </a>
-    <figcaption> Linux Directory Structure</figcaption>
-</figure>
-
-
-
-
-### Navigation
-
-| Command | Explanation |
-|---|---|
-|`pwd`| print working directory |
-|`ls`| list content of folder |
-|`cd`| change directory |
-
-<br>
-
-By typing `pwd`, the current working directory is printed.
-
-```
-$ pwd
-
-/home/jgillan
-```
-<br>
-<br>
-
-We can then use `ls` to see the contents of the current directory. By using the `-F` flag (`ls -F`) we can also see the type of file. **Note:** an asterisk (`*`) at the end of the object will denote a file, whilst a slash (`/`) will denote a folder.
-
-```
-$ ls -F 
-shell-lesson-data/   shell-lesson-data.zip*
-```
-<br>
-<br>
-
-We can then move inside the folder of our choice doing `cd`. Doing `ls` following the opening of the folder of choice, will show the contents of the folder you just moved in. Feel free to explore the contents of the folders by using `cd` and `ls`.
-
-```
-$ cd shell-lesson-data
-$ ls -F
-
-exercise-data/  north-pacific-gyre/
-
-$ ls -F exercise-data/
-
-animal-counts/  creatures/  numbers.txt*  proteins/  writing/
-```
-<br>
-<br>
-
-
 !!! Tip "Use the Tab key to autocomplete"
     You do not need to type the entire name of a folder or file. By using the tab key, the Shell will autocomplete the name of the files or folders. For example, typing the following
 
     ```
-    $ ls -F exer
+    $ ls exer
     ```
 
     and pressing the tab key, will result in autocompletion.
 
     ```
-    $ ls -F exercise-data/
+    $ ls exercise-data/
     ```
 
     You can then press tab twice, to print a list of the contents of the folder.
 
     ```
-    $ ls -F exercise-data/
+    $ ls exercise-data/
     animal-counts/ creatures/     numbers.txt    proteins/      writing/ 
     ```
 <br>
+
+
+
 <br>
 
-#### Working with Files and Directories
+
+### Working with Files and Directories
 
 | Command | Explanation |
 |---|---|
@@ -215,6 +212,13 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
 |`cp`| copy command | 
 |`rm`| remove command |
 
+??? info "Help with Commands"
+    For every command, typing `man` (manual) before the command, will open the manual for said command.
+    ```
+    $ man ls
+    ```
+
+    - The above command will result in opening the *manual* for the `ls` command. You can exit the man page by pressing `q`.
 <br>
 <br>
 
@@ -222,7 +226,7 @@ Return to `shell-lesson-data`, and create a directory with `mkdir <name of folde
 
 ```
 $ mkdir my_folder
-$ ls -F
+$ ls
 
 exercise-data/  my_folder/  north-pacific-gyre/
 ```
@@ -277,14 +281,14 @@ nano new_file.txt
 Use `mv <name of file or folder you want to move> <name of destination folder>` to move your newly created file to the directory you created previously (you can then use `ls` to check if you successully moved the file).
 
 ```
-$ ls -F
+$ ls
 exercise-data/  new_file*  my_folder/  north-pacific-gyre/
 
 $ mv new_file.txt my_folder/
-$ ls -F
+$ ls 
 exercise-data/  my_folder/  north-pacific-gyre/
 
-$ ls -F my_folder/
+$ ls my_folder/
 new_file.txt*
 ```
 `mv` can also be used to **rename** a file or folder with  `mv <name of file or folder you want to change> <new name>`.
@@ -292,7 +296,7 @@ new_file.txt*
 ```
 $ cd my_folder/
 $ mv new_file my_file
-$ ls -F
+$ ls
 my_file*
 ```
 
@@ -304,7 +308,7 @@ my_file*
 
 ```
 $ cp my_file copy_my_file
-$ ls -F 
+$ ls
 copy_my_file*  my_file*
 ```
 
@@ -312,13 +316,13 @@ copy_my_file*  my_file*
     To copy folders and the content of these folders, you will have to use the `-r` flag (recursive) for `cp` in the following manner `cp -r <name of folder you want to copy> <name of copy folder>` (following example is from the `shell-lesson-data/` directory).
     ```
     $ cp -r my_folder/ copy_my_folder
-    $ ls -F
+    $ ls 
     copy_my_folder/  exercise-data/  my_folder/  north-pacific-gyre/
         
-    $ ls -F my_folder/
+    $ ls my_folder/
     copy_my_file*  my_file*
 
-    $ ls -F copy_my_folder/
+    $ ls copy_my_folder/
     copy_my_file*  my_file*
     ```
 
@@ -330,7 +334,7 @@ To remove an unwanted file, use `rm <name of file to remove>`.
 
 ```
 $ rm copy_my_file
-$ ls -F 
+$ ls 
 my_file
 ```
 
