@@ -385,7 +385,7 @@ Copy and paste the following commands into `backup.sh`
 
 ## Variables
 #the directory you want to back up (e.g., shell-lesson-data)
-SOURCE_DIR="$HOME/Documents/shell-lesson-data"
+SOURCE_DIR=$(find / -type d -name "shell-lesson-data" 2>/dev/null)
 
 #location where the backup will be stored
 BACKUP_DIR="$HOME/Backup"
