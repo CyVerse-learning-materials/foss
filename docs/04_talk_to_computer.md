@@ -65,27 +65,30 @@ Though there are technical differences between them, the terms **Command Line In
     <vidcaption> <br>Quick video on the shell.</vidcaption> 
 </figure>
 
+<br>
+<br>
+
 ## Accessing a Linux Shell in Github
 
 In addition to sharing code and documentation, Github is also a place to do direct computing. Using Github [Codespaces](https://github.com/features/codespaces) we can access a Linux virtual machine and do computing tasks directly from a Github repository. 
 
 #### Steps to Launch Codespaces
 
-1. From your personal Github account, create a new repository
+**1** From your personal Github account, create a new repository
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/code_space1.png){ width="500" } </a>
     <figcaption></figcaption>
 </figure>
 
-2. Name the respository `foss_shell_lesson` or something similar
+**2** Name the respository `foss_shell_lesson` or something similar
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/code_space2.png){ width="500" } </a>
     <figcaption></figcaption>
 </figure>
 
-3. Within your new repository, click the big green button that says <>Code. Go to the Codespaces tab and click on `Create codespaces on main`
+**3** Within your new repository, click the big green button that says <>Code. Go to the Codespaces tab and click on `Create codespaces on main`
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/code_space3.png){ width="500" } </a>
