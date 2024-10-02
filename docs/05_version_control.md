@@ -129,6 +129,70 @@ a way to collaborate with others, and a lot of other features.
 
 ---
 
+## Introducing GitHub
+
+Since we are talking about making science accessible, we invite you to use GitHub to save and share your code. Please start by creating a GitHub account at https://github.com/.
+
+**User Profile**
+
+Just like in any other social media platform, you can create a profile for yourself. This is where you can add a picture, a description of yourself, and a link to your website. You can also add your location, your organization, and your pronouns. You can have a list of your most important repositories and show off your daily contributions. You are able to customize your profile to your liking. Check out [this profile](https://github.com/Gchism94) for fancy example. 
+
+<figure markdown>
+ ![github_shot1](assets/github_shot1.png)
+</figure>
+
+**Search**
+
+At the top of most pages, is a search bar. Use this to find repositories, users, and organizations. You can also use it to search for specific code within a repository.
+
+<figure markdown>
+ ![github_shot2](assets/github_shot2.png)
+</figure>
+
+**Starring Repositories**
+
+You can star repositories that you like. This is a way to bookmark repositories that you want to come back to later. You can also use this to show your appreciation for a repository. You can see all of your starred repositories by clicking on your profile picture and then clicking on **Your stars**.
+
+<figure markdown>
+ ![github_shot3](assets/github_shot3.png)
+</figure>
+
+**Creating Your Own Repository**
+
+Repositories are where your code is stored. A suggestion is to have *one* repository for *one* project.
+
+You can create repositories by clicking on the **Repositories** tab, and then clicking **New**.
+
+<figure markdown>
+ ![git_1](assets/git_1.png)
+</figure>
+
+Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
+
+<figure markdown>
+ ![git_2](assets/git_2.png)
+</figure>
+
+!!! Info "So, why a README?"
+    There are two main reasons why you would like a README file:
+        
+    1. It adds structure to your repository *automatically* - otherwise you would need to create said structure by yourself (not recommended for beginners).
+    2. It is the "default" file that GitHub reads upon opening the repository. It can be treated as the go-to file that explains what the repository is for, what each file does, how to cite your reasearch, amongst other things.
+
+!!! Info "Adding a Licence"
+    The addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on!
+
+Ultimately, your new repository should look like the following screenshot. Notice the **LICENCE** document and the **README.md**
+
+<figure markdown>
+ ![git_3](assets/git_3.png)
+</figure>
+
+!!! Info "Editing the README.md (and other text files on GitHub)"
+	The Github repository file has a **.md** extension which stands for Markdown. Markdown is a lightweight markup language for creating formatted text using a plain-text editor common throughout text files on the web. It uses symbols (*~-#`) for syntaxing text, and it is what GitHub (and this website!) use to format text. Markdown is easier to use than HTML. You can read more on Markdown on the [Markdown Guide](https://www.markdownguide.org/).
+
+---
+
 ## Practical Git Techniques
 
 <figure markdown>
@@ -278,140 +342,120 @@ There are other platforms that address Version Control and have similar function
 
 - **[:fontawesome-brands-aws: AWS CodeCommit](https://aws.amazon.com/codecommit/)**: Part of Amazon Web Services (AWS), CodeCommit is a managed Git service that integrates seamlessly with other AWS services.
 
-- **[:simple-azuredevops: Azure DevOps Services (formerly VSTS)](https://azure.microsoft.com/en-us/products/devops))**: Microsoft's Azure DevOps Services offers Git repository hosting along with a wide range of DevOps tools for planning, developing, testing, and deploying software.
+- **[:material-microsoft-azure-devops: Azure DevOps Services (formerly VSTS)](https://azure.microsoft.com/en-us/products/devops))**: Microsoft's Azure DevOps Services offers Git repository hosting along with a wide range of DevOps tools for planning, developing, testing, and deploying software.
 
 - **[:simple-mercurial: Mercurial](https://www.mercurial-scm.org/)**: Like Git, Mercurial is a distributed version control system, but with a different branching and merging model. It's an alternative to Git for version control.
 
 ---
 
-## Self Assessment
+## Adding Code to GitHub via Command Line 
 
-??? Question "True or False: Using `Git` requires a GitHub account"
+??? warning "Prerequisite: a GitHub account"
+    Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
 
-    !!! Failure "False"
+Through this exercise, users will learn to make changes using the command line. To remove potential issues with SSH and Tokens, we are going to carry out this exercise using :octicons-codespaces-16: **CodeSpaces**. Refer to the "[Steps to Launch Codespaces](https://foss.cyverse.org/04_talk_to_computer/#accessing-a-linux-shell-in-github)" section in the How to Talk to Computers in order to launch a :octicons-codespaces-16: **CodeSpace**.
 
-        `Git` is open source software.
+??? warning "Adding Code Locally Using Your Machine"
 
-        GitHub is a privately owned (Microsoft) company
+    This exercise can be carried out locally, on your machine. Here are the requisites and steps required to clone the repository and push changes back to GitHub.
 
-        Other platforms like [GitLab](https://gitlab.com){target=_blank}, [GitBucket](https://gitbucket.github.io/){target=_blank}, and [GNU Savannah](https://savannah.gnu.org/){target=_blank} all offer `Git` as a version control system service.
+    !!! warning "Prerequisites"
 
-??? Question "True or False: Using `Git` is easy"
+        ??? info "Installing Git"
 
-    !!! Failure "False"
+            You can follow the official guidelines here: https://github.com/git-guides/install-git. Here we recommend how to install Git on your local machine.
 
-        Using `Git` can be frustrating to even the most experienced users
+            ??? Info "Windows"
 
-??? Question "When you find a new repository on GitHub that you think can help your research, what are the first things you should do?"
+                !!! warning "These instructions are for Windows users **NOT** using [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). If you do have WSL2, follow the **Unix** instructions."
 
-    !!! Success "Look at the README.md"
+                1. Navigate to the [latest Git for Windows installer](https://gitforwindows.org/) and download the latest version.
+                2. Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.
+                3. Search and open **Git Bash**. From here, you should be able to run Git commands.
 
-        Most GitHub repositories have a README.md file which explains what you're looking at.
+            ??? Info "MacOS"
 
-    !!! Success "Look at the LICENSE"
+                1. Install [Homebrew](https://brew.sh/) (a package manager for MacOS): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
+                2. Install Git: `brew install git`
 
-        Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. 
+            ??? Info "Unix"
+                The following command will install git and all related packages on your Unix machine.
+                ```
+                $ sudo apt-get install -y git-all
+                ```
 
+        You then need to choose between generating a **Personal Access Token** or using **SSH keys**. This is useful if you want to work locally and push your changes to GitHub.
 
-## Adding Code to Github Locally
+        ??? Info "Choice A: Generate a Personal Access Token"
+            You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). Following are quick steps you can follow in order to setup your account on your machine using tokens:
+            
+            1. On your coumputer:
+                1. Clone your repository (`git clone <repository>`)
+                2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
+                3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
+            2. On GitHub:
+                1. Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)
+                2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
+                3. Click *Personal access tokens* > *Tokens (classic)*
+                4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
+                5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
+            3. Back on your computer:
+                1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
+                2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
+            
+        ??? Info "Choice B: Connecting via SSH"
+            The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). 
+            
+            As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
 
-!!! warning "Prerequisites"
-    You will require the following in case you want to add code locally.
+            1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -T ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+            ```
+            Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
+            Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
+            The key fingerprint is:
+            SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o <your github email>
+            The key's randomart image is:
+            +--[ED25519 256]--+
+            |^B== o.          |
+            |%*=.*.+          |
+            |+=.E =.+         |
+            | .=.+.o..        |
+            |....  . S        |
+            |.+ o             |
+            |+ =              |
+            |.o.o             |
+            |oo+.             |
+            +----[SHA256]-----+
+            ``` 
+            2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
+            3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
+            
+            Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -T git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
 
-    ??? Info "Create a GitHub account"
-        Navigate to the [GitHub website](https://github.com/) and click *Sign Up*, and follow the on screen instructions.
+        Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
 
-    **Installing Git**
-
-    You can follow the official guidelines here: https://github.com/git-guides/install-git. Here we recommend how to install Git on your local machine.
-
-    ??? Info "Windows"
-
-        !!! warning "These instructions are for Windows users **NOT** using [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install). If you do have WSL2, follow the **Unix** instructions."
-
-        1. Navigate to the [latest Git for Windows installer](https://gitforwindows.org/) and download the latest version.
-        2. Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.
-        3. Search and open **Git Bash**. From here, you should be able to run Git commands.
-
-    ??? Info "MacOS"
-
-        1. Install [Homebrew](https://brew.sh/) (a package manager for MacOS): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
-        2. Install Git: `brew install git`
-
-    ??? Info "Unix"
-        The following command will install git and all related packages on your Unix machine.
+        - To add or modify code locally, you need to **clone** the repository on your computer.
+        - You can then clone the repository by clicking on the **Code** button, and copying the link shown
+            <figure markdown>
+            ![git_4](assets/git_4.png)
+            </figure>
+        - On your machine, open a terminal window and type the following command:
         ```
-        $ sudo apt-get install -y git-all
+        $ git clone <repository address>     # Replace <repository address> with the link you copied such as below
+
+        $ git clone https://github.com/CosiMichele/FOSSF24-tutorial.git
+        Cloning into 'FOSSF24-tutorial_tutorial'...
+        remote: Enumerating objects: 13, done.
+        remote: Counting objects: 100% (13/13), done.
+        remote: Compressing objects: 100% (12/12), done.
+        remote: Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+        Unpacking objects: 100% (13/13), 14.47 KiB | 90.00 KiB/s, done.
         ```
+        - Your code is now available to you on your machine, and you can add and modify files as needed.
 
-    Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on [Version Control](05_version_control.md).
+!!! info "When using CodeSpaces, there is no need to clone your repository (steps for cloning are reported in the admonition above)."
 
-    ??? Info "Choice A: Generate a Personal Access Token"
-        You can follow the official documentation on how to generate Tokens [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). We  discussed how to generate tokens in [Week 0](https://foss.cyverse.org/00_basics/#adding-code-locally). Here's are quick steps you can follow in order to setup your account on your machine using tokens:
-        
-        1. On your coumputer:
-            1. Clone your repository (`git clone <repository>`)
-            2. Make changes where necessary, and **add** (`git add <changed files>`), **commit** (`git commit -m "<message on changes>"`) and **push** your changes (`git push origin`).
-            3. You should be prompted to logging in your GitHub account. Put your email **but not your password**. Instead, open your web browser and follow the steps below:
-        2. On GitHub:
-            1. Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)
-            2. Scroll to the bottom of the left hand side menu to find *Developer settings* and open it.
-            3. Click *Personal access tokens* > *Tokens (classic)*
-            4. Click *Generate new token* > *Generate new token (classic)*. You might need to input your Authentification code if you have enabled 2FA.
-            5. Give it a name, and all the scopes you require (tip: select all scopes and *No Expiration*), then click *Generate Token*. **Copy the new generated Token**
-        3. Back on your computer:
-            1. If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.
-            2. **Paste** your Token here, and you should be logging in. Your changes should then be saved to GitHub.
-        
-    ??? Info "Choice B: Connecting via SSH"
-        The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). 
-        
-        As a setup step, see if your computer is already connected to GitHub by doing `ssh -T git@github.com`. If the response message is `git@github.com: Permission denied (publickey).` it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:
-
-        1. Generate an SSH key with a level of encryption that you prefer: `ssh-keygen -t ed25519 -C <your github email>`. This command generates an SSH key with [ed25519](https://ed25519.cr.yp.to/) encryption (harder to crack!) and adds your email as "comment" (`-C`, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
-        ```
-        Your identification has been saved in /c/Users/<user>/.ssh/id_ed25519
-        Your public key has been saved in /c/Users/<user>/.ssh/id_ed25519.pub
-        The key fingerprint is:
-        SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o <your github email>
-        The key's randomart image is:
-        +--[ED25519 256]--+
-        |^B== o.          |
-        |%*=.*.+          |
-        |+=.E =.+         |
-        | .=.+.o..        |
-        |....  . S        |
-        |.+ o             |
-        |+ =              |
-        |.o.o             |
-        |oo+.             |
-        +----[SHA256]-----+
-        ``` 
-        2. Upon generating the ssh key, copy it. You can reveal it by doing `cat ~/.ssh/id_ed25519.pub`.
-        3. In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select *Settings* and then *SSH and GPG keys*. Here, click on *New SSH Key*, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. 
-        
-        Optional: if you want to check if you successfully linked your computer to GitHub, do `ssh -t git@github.com`. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.
-
-Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.
-
-- To add or modify code locally, you need to **clone** the repository on your computer.
-- You can then clone the repository by clicking on the **Code** button, and copying the link shown
-- ![git_04](assets/git_4.png)
-- On your machine, open a terminal window and type the following command:
-```
-$ git clone <repository address>     # Replace <repository address> with the link you copied such as below
-
-$ git clone https://github.com/CosiMichele/3_git_tutorial.git
-Cloning into 'foss23_git_tutorial'...
-remote: Enumerating objects: 13, done.
-remote: Counting objects: 100% (13/13), done.
-remote: Compressing objects: 100% (12/12), done.
-remote: Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (13/13), 14.47 KiB | 90.00 KiB/s, done.
-```
-- Your code is now available to you on your machine, and you can add and modify files as needed.
-
-You have modified your code locally, however you still have to push it to the repository. Prior to doing so there are a couple of steps you should do:
+You can now modify or add files locally. However you will still have to push changes to the repository. Prior to doing so there are a couple of steps you should do:
 
 - `git status`: it checkes on the status of the repository (files that have been modified, deleted, added - from either local or in the online repository)
 - `git pull`: it checks and "pulls" changes from the online repository to your local repository. It ensures that you are always updated on the repository files *and* it can save a lot of time in case there are clashing commits from different users.
@@ -438,23 +482,9 @@ Delta compression using up to 12 threads
 Compressing objects: 100% (4/4), done.
 Writing objects: 100% (4/4), 585 bytes | 32.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0)
-To https://github.com/CosiMichele/foss22_git_tutorial.git
+To https://github.com/CosiMichele/FOSSF24-tutorial.git
    b649de3..05f0ef6  main -> main
 ```
-
-??? Warning "First time Pushing a commit and using Tokens?"
-	GitHub is not going to blindly allow you to push changes to the repo, but it will be asking for you to log in.
-
-	- When asked for the user name:
-	- Add the username that you use to login into GitHub
-	- When it asks you for the password:
-	- **DO NOT PUT YOUR PASSWORD**, you will require a **token** instead
-	- Generate the token by: 
-		- On GitHub, click on your avatar (top right, and navigate to **Settings**)
-		- Scroll down to the bottom of the left hand menu, select **Developer settings**, and then **Personal access tokens**
-		- Now click on **Generate new token** (Enter password if requested)
-		- Choose the lenght of time for which this token is valid for, a note (for example, a reminder of what computer you're using this token on), and all the functionalities attached to it (as this is your private repository, you can select all the functionalities). Scroll to the bottom of the page and click **Generate token**
-		- Once created, the token is going to appear: **copy the token and paste it in the password field in your terminal instead of your password**.
 
 You can now see the changes you made locally on the GitHub repository page.
 
@@ -518,111 +548,31 @@ Your main repository should now have the files created in your other branch and 
 
 
 ---
----
----
 
+## Self Assessment
 
-## Introducing GitHub
+??? Question "True or False: Using `Git` requires a GitHub account"
 
-Since we are talking about making science accessible, we invite you to use GitHub to save and share your code. Please start by creating a GitHub account at https://github.com/.
-<br/>
-<br/>
+    !!! Failure "False"
 
-#### User Profile
+        `Git` is open source software.
 
-Just like in any other social media platform, you can create a profile for yourself. This is where you can add a picture, a description of yourself, and a link to your website. You can also add your location, your organization, and your pronouns. You can have a list of your most important repositories and show off your daily contributions. You are able to customize your profile to your liking. Check out [this profile](https://github.com/Gchism94) for fancy example. 
+        GitHub is a privately owned (Microsoft) company
 
-![github_shot1](assets/github_shot1.png)
+        Other platforms like [GitLab](https://gitlab.com){target=_blank}, [GitBucket](https://gitbucket.github.io/){target=_blank}, and [GNU Savannah](https://savannah.gnu.org/){target=_blank} all offer `Git` as a version control system service.
 
-<br/>
+??? Question "True or False: Using `Git` is easy"
 
-#### Search
+    !!! Failure "False"
 
-At the top of most pages, is a search bar. Use this to find repositories, users, and organizations. You can also use it to search for specific code within a repository.
-![github_shot1](assets/github_shot2.png)
+        Using `Git` can be frustrating to even the most experienced users
 
-<br/>
+??? Question "When you find a new repository on GitHub that you think can help your research, what are the first things you should do?"
 
-#### Starring Repositories
+    !!! Success "Look at the README.md"
 
-You can star repositories that you like. This is a way to bookmark repositories that you want to come back to later. You can also use this to show your appreciation for a repository. You can see all of your starred repositories by clicking on your profile picture and then clicking on **Your stars**.
+        Most GitHub repositories have a README.md file which explains what you're looking at.
 
-![github_shot1](assets/github_shot3.png)
+    !!! Success "Look at the LICENSE"
 
-<br/>
-
-#### Create Your Own Repository
-
-Repositories are where your code is stored. A suggestion is to have *one* repository for *one* project.
-
-You can create repositories by clicking on the **Repositories** tab, and then clicking **New**.
-
-![git_1](assets/git_1.png)
-
-Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
-<br/>
-<br/>
-
-![git_2](assets/git_2.png)
-
-<br/>
-
-
-!!! Info "So, why a README?"
-    There are two main reasons why you would like a README file:
-        
-    1. It adds structure to your repository *automatically* - otherwise you would need to create said structure by yourself (not recommended for beginners).
-    2. It is the "default" file that GitHub reads upon opening the repository. It can be treated as the go-to file that explains what the repository is for, what each file does, how to cite your reasearch, amongst other things.
-
-
-!!! Info "Adding a Licence"
-    The addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on! We will cover licences in more depth [later](03_managing_data.md#licences) in the course.
-
-<br/>
-
-
-Ultimately, your new repository should look like the following screenshot. Notice the **LICENCE** document and the **README.md**
-
-![git_3](assets/git_3.png)
-
-!!! Info "Editing the README.md"
-	The Github repository file has a .md extension which stands for Markdown. Markdown is a lightweight markup language for creating formatted text using a plain-text editor common throughout text files on the web. It uses symbols (*~-#`) for syntaxing text, and it is what GitHub (and this website!) use to format text. Markdown is easier to use than HTML. You can read more on Markdown on the [Markdown Guide](https://www.markdownguide.org/).
-
-<br/>
-<br/>
-
-### Adding and Modifying Code in Github
-
-GitHub allows you to add and modify code in two ways: 1. through the online portal (the webpage you're seeing), and 2. On your local computer. Throughout the following section, we will show you how to do it through the online portal. We will save the local computer for later for [Lesson 5](05_version_control.md) later in the course. 
-
-
-Adding code to your repository through the web page is suggested if what you want to add is simple (Like a README file!).
-
-- Click the **Add File** button, which will allow you to either create a new file, or upload files from your computer. Select **Create New File**.
-- The editing page will open: choose a name and an extension on the top of the page.
-- On the editing page you can modify code as you see necessary (writing, pasting)
-
-![git_05](assets/git_5.png)
-
-- You can also see your changes (if formatted) with the preview function (with the **Preview** button).
-- To "Save" your changes, you will need to **commit** your changes:
-	- navigate at the bottom of the page, specify your commit with a name and add a description if necessary.
- ![git_06](assets/git_6.png)
-- You will be able to see your newly created file on your repository home after committing your changes.
-
-!!! info "Committing changes"
-	**Committing** is the term used for *saving* changes you've made to your code. Each **commit** can be accessed within the GitHub web interface, which will show you the code prior and after the changes you've made. To see a list of all commits you made, click on the :fontawesome-solid-clock-rotate-left: icon under the **Code** button.
-
-	- You can see from the picture below the lines that have been removed (in red), and the lines that have been added (in green).
-	![git_07](assets/git_7.png)
-
-	- Additionally, you can also see the full list of commits made to the file or repository.
-	![git_08](assets/git_8.png)
-<br/>
-
-#### Hosting Web Pages in Github
-
-GitHub allows you to host web pages through the use of **GitHub Pages**. This is a free service that allows you to host a website directly from your GitHub repository. You can use this to host your personal website, or to host a website for your project.
-
-For example, the [FOSS website](https://foss.cyverse.org/) is hosted through GitHub Pages. The repository for the website can be found [here](https://github.com/CyVerse-learning-materials/foss)
-
+        Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. 
