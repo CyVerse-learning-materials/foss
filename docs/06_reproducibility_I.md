@@ -120,14 +120,15 @@ As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behavi
 
 ## Scripting Languages
 
-The two most common open-source scripting languages (for science) are Python and R.
+The most common open-source scripting languages (for science) are Python, R, and shell (Bash).
 
 <figure style="display: flex; justify-content: center;">
-    <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/python_logo.png" alt="python" style="width: 150px; margin-right: 15px;"></a>
-    <a href="https://www.r-project.org/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/r_logo.jpeg" alt="r" style="width: 150px; margin-right:"></a>
+    <a href="https://www.python.org/"><img src="../assets/python_logo.png" alt="python" style="width: 150px; margin-right: 15px;"></a>
+    <a href="https://www.r-project.org/"><img src="../assets/r_logo.jpeg" alt="r" style="width: 150px; margin-right:"></a>
+    <a href=""><img src="../assets/bash_logo.png" alt="bash" style="width: 150px; margin-right: 15px;"></a>
 </figure>
 
-Both languages consist of base software (Python Standard Library or R Base Package) and MANY additional packages that can be downloaded and installed for increased capabilities. 
+Each language consist of base software (Python Standard Library or R Base Package) and MANY additional packages that can be downloaded and installed for increased capabilities. 
 
 <br>
 <br>
@@ -545,18 +546,22 @@ nano myenv.yml
 ```
 <br>
 
+This `myenv.yml` file can be shared with a colleague so they can reproduce the same environment on their computer.
 
-Now we are going to pretend that we are reproducing a conda environment from a .yml file shared by a collegue.
+To test this theory, let's create a new environment from the .yml.
+
 <br>
 
-Change the `name` of the environement within the .yml file from `myenv` to `myenv2`
-
+First, we need to change the `name` of the environment within the .yml file from `myenv` to `myenv2`. Do this using nano. 
+```
+nano myenv.yml
+``` 
 
 <br>
 Create a new environment and populate it with the .yml environment file
 
 ```
-conda env create --file myenv2.yml
+conda env create --file myenv.yml
 ```
 
 
