@@ -291,8 +291,8 @@ A computing environment is the combination of hardware, software, and network re
     #### The scripts you create:
 
     * Were designed to work in _your_ specific computing environment 
-    * May not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
     * May not work on someone else's computer because their computing environment is different
+    * May not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
 
 <br>
 
@@ -355,7 +355,7 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 
 One solution to software dependency hell is to use an Environment Manager
 
-An environment manager allows you to create software installation directories (similar to PATH) that are **isolated** your computer's PATH. You can create unique environments and install specific software version to run specific scripts.
+An environment manager allows you to create software installation directories (similar to PATH) that are **isolated** from your computer's PATH. You can create unique environments and install specific software version to run specific scripts.
 
 <br>
 
@@ -369,8 +369,15 @@ An environment manager allows you to create software installation directories (s
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](assets/envs.png){ width="450" } </a>
-    <figcaption></figcaption>
+    <figcaption>Conceptual Graphic 1</figcaption>
 </figure>
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/virtual_envs.png){ width="400" } </a>
+    <figcaption>Conceptual Graphic 2</figcaption>
+</figure>
+
+
 
 ### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
 
@@ -497,11 +504,29 @@ A software tool to find, download, and install software packages to PATH or virt
 
 
 
-## Reproducibility Tutorial
+## Reproducibility Tutorial Using Conda
 
-<br>
+
+
+### Set Up
+
+!!! Note "OS of choice"
+
+    To get everyone on the same page, we will do this exercise together using the Linux terminal in Github Codespaces. 
+    
+    However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, please use the Windows Subsystem for Linux (WSL) so you can follow along. 
+
+    ??? Tip "How to Scroll in Cyverse (Tmux) Cloud Shell"
+        
+        If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
+
+        !!! Note "The CLI in CyVerse is controlled with [Tmux](https://en.wikipedia.org/wiki/Tmux), a software that allows to "window" the CLI; Here is a [cheat sheet](https://tmuxcheatsheet.com/) that will teach you more Tmux tricks!"
+
+<br/>
 
 ### Installing Conda
+
+**If you are using Codespaces, Conda is already installed.**
 
 When you download and install Conda it comes in two different flavors: 
 
@@ -513,6 +538,8 @@ When you download and install Conda it comes in two different flavors:
   <a href="https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937" target="blank" rel="conda">![conda](https://miro.medium.com/v2/resize:fit:720/format:webp/0*ElVyaAsDHkIpNgxk.png) </a>
     <figcaption> Conda, Miniconda, and Anaconda. <br> [Taken from *Getting Started with Conda, Medium*](https://medium.com/hydroinformatics/getting-started-with-conda-environment-332182d1e937). </figcaption>
 </figure>
+
+
 
 ??? Tip "Installing Conda"
 
@@ -547,26 +574,6 @@ When you download and install Conda it comes in two different flavors:
     The quickest way to install mamba is with `conda install -c conda-forge mamba`, or follow the official installation documentation [here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-
-
-### Conda on Cyverse
-
-!!! Note "OS of choice"
-
-    This tutorial will be performed using the [CyVerse CLI (Command Line Interface)](https://de.cyverse.org/apps/de/5f2f1824-57b3-11ec-8180-008cfa5ae621) which is a Linux Command Line. This requires a [Cyverse account](https://user.cyverse.org/signup). 
-    
-    However, if you'd like to use your own computer feel free to! If you're on Mac or Linux, open your terminal; If you're on Windows, please use the Windows Subsystem for Linux (WSL) so you can follow along. 
-
-    ??? Tip "How to Scroll in Cyverse (Tmux) Cloud Shell"
-        
-        If you're using the Cyverse Cloud Shell, you can scroll up and down by pressing `Ctrl + b` and then `[` to enter scroll mode. You can then use the arrow keys to scroll up and down. Press `q` to exit scroll mode.
-
-        !!! Note "The CLI in CyVerse is controlled with [Tmux](https://en.wikipedia.org/wiki/Tmux), a software that allows to "window" the CLI; Here is a [cheat sheet](https://tmuxcheatsheet.com/) that will teach you more Tmux tricks!"
-
 <br>
 <br>
 
