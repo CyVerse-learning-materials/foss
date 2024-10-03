@@ -115,12 +115,12 @@ As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behavi
 
 <br>
 <br>
-<br>
-<br>
+
+
 
 ## Scripting Languages
 
-The most common open-source scripting languages (for science) are Python, R, and shell (Bash).
+The most common open-source scripting languages (for science) are Python, R, and shell (Bash). 
 
 <figure style="display: flex; justify-content: center;">
     <a href="https://www.python.org/"><img src="../assets/python_logo.png" alt="python" style="width: 150px; margin-right: 15px;"></a>
@@ -128,14 +128,190 @@ The most common open-source scripting languages (for science) are Python, R, and
     <a href=""><img src="../assets/bash_logo.png" alt="bash" style="width: 150px; margin-right: 15px;"></a>
 </figure>
 
+If you recall from [lesson 4 _How to Talk to Computers_](/04_talk_to_computer/#shell-script), we ran a shell script to back up files. 
+
+??? Tip "Shell Script"
+
+    ```
+    #use Bash shell to run the following commands
+    #!/bin/bash
+
+    ## Variables
+    #the directory you want to back up (e.g., shell-lesson-data)
+    SOURCE_DIR=$(find / -type d -name "shell-lesson-data" 2>/dev/null) # Note: if you are working on your computer, this will look in every folder. Be careful with this line!
+
+    #location where the backup will be stored
+    BACKUP_DIR="$HOME/Backup"
+
+    #used to create a unique name for each backup based on the current date and time
+    TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+    # name of the compressed backup file
+    ARCHIVE_NAME="backup_$TIMESTAMP.tar.gz"
+
+
+    # Create backup directory if it doesn't exist
+    mkdir -p "$BACKUP_DIR"
+
+    # Create a compressed archive of the source directory
+    tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$SOURCE_DIR" .
+
+    # Output the result
+    echo "Backup of $SOURCE_DIR completed!"
+    echo "Archive created at $BACKUP_DIR/$ARCHIVE_NAME"
+    ```
+
+??? Tip "Python"
+
+    ```
+    import os
+    import subprocess
+    import shutil
+    from datetime import datetime
+
+    # Variables
+    # Find the source directory (e.g., shell-lesson-data)
+    def find_source_dir():
+        try:
+            # Run the 'find' command to locate the directory
+            result = subprocess.run(['find', '/', '-type', 'd', '-name', 'shell-lesson-data'], 
+                                    stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+            source_dir = result.stdout.strip()
+            return source_dir
+        except Exception as e:
+            print(f"Error finding directory: {e}")
+            return None
+
+    # Set the backup directory to a folder called Backup in the home directory
+    backup_dir = os.path.join(os.path.expanduser("~"), "Backup")
+
+    # Create a unique timestamp for the backup
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+
+    # Create the archive name with the timestamp
+    archive_name = f"backup_{timestamp}.tar.gz"
+
+    # Ensure backup directory exists
+    os.makedirs(backup_dir, exist_ok=True)
+
+    # Find source directory
+    source_dir = find_source_dir()
+
+    if source_dir:
+        # Create the compressed archive using tar
+        archive_path = os.path.join(backup_dir, archive_name)
+        try:
+            subprocess.run(['tar', '-czf', archive_path, '-C', source_dir, '.'], check=True)
+            print(f"Backup of {source_dir} completed!")
+            print(f"Archive created at {archive_path}")
+        except subprocess.CalledProcessError as e:
+            print(f"Error creating archive: {e}")
+    else:
+        print("Source directory not found!")
+    ```
+
+
+??? Tip "R"
+
+    ```
+    # Load necessary libraries
+    library(lubridate)
+
+    # Variables
+    # Function to find the source directory (e.g., shell-lesson-data)
+    find_source_dir <- function() {
+    result <- system("find / -type d -name 'shell-lesson-data' 2>/dev/null", intern = TRUE)
+    if (length(result) > 0) {
+        return(result[1])  # Return the first match, if any
+    } else {
+        return(NULL)
+    }
+    }
+
+    # Backup directory
+    backup_dir <- file.path(Sys.getenv("HOME"), "Backup")
+
+    # Create a unique timestamp for the backup
+    timestamp <- format(now(), "%Y-%m-%d_%H-%M-%S")
+
+    # Name of the compressed archive
+    archive_name <- paste0("backup_", timestamp, ".tar.gz")
+
+    # Ensure backup directory exists
+    if (!dir.exists(backup_dir)) {
+    dir.create(backup_dir, recursive = TRUE)
+    }
+
+    # Find the source directory
+    source_dir <- find_source_dir()
+
+    if (!is.null(source_dir)) {
+    # Create the compressed archive using tar
+    archive_path <- file.path(backup_dir, archive_name)
+    tar_command <- paste("tar -czf", shQuote(archive_path), "-C", shQuote(source_dir), ".")
+    
+    # Run the tar command
+    system(tar_command)
+    
+    cat("Backup of", source_dir, "completed!\n")
+    cat("Archive created at", archive_path, "\n")
+    } else {
+    cat("Source directory not found!\n")
+    }
+    ```
+
+
+
 Each language consist of base software (Python Standard Library or R Base Package) and MANY additional packages that can be downloaded and installed for increased capabilities. 
 
 <br>
 <br>
 <br>
+
+## Computing Environment
+
+A computing environment is the combination of hardware, software, and network resources that provide the infrastructure for computing operations and user interactions. 
+
+- **Hardware**: CPUs, GPUs, RAM
+- **Operating system & version**: many flavors of Linux, MacOS, Windows
+- **Software versions:** R, Python, etc.
+- **Package versions:** specific R or Python packages, which often depend on other packages
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/dependency.png){ width="400" } </a>
+    <figcaption>Python Package Dependency</figcaption>
+</figure>
+
+<br>
 <br>
 
+
+!!! Warning "**Very Important**" 
+
+    #### The scripts you create:
+
+    * Were designed to work in _your_ specific computing environment 
+    * May not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
+    * May not work on someone else's computer because their computing environment is different
+
+<br>
+
+### Software Dependency Hell
+
+Sometimes, it can be _nearly impossible_ to get your computing environment correct enough to run someone else's code. 
+
+This can be caused by incorrect software versions of the packages you are using or their dependencies.
+
+<span style="font-size:1.3em;">_Don't Dispair! There are solutions to avoid software dependency hell and ensure reproducibility from one computer to another_</span>
+
+
+<br>
+<br>
+
+
 ## Software Installation
+
+
 
 When you download and install software onto your computer, it will typically install it in a set of specific directories that we call the **System Path**.
 
@@ -175,46 +351,6 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 <br>
 <br>
 
-## Computing Environment
-
-A computing environment is the combination of hardware, software, and network resources that provide the infrastructure for computing operations and user interactions. 
-
-- **Hardware**: CPUs, GPUs, RAM
-- **Operating system & version**: many flavors of Linux, MacOS, Windows
-- **Software versions:** R, Python, etc.
-- **Package versions:** specific R or Python packages, which often depend on other packages
-
-<figure markdown>
-  <a target="blank" rel="open science">![open science](assets/dependency.png){ width="400" } </a>
-    <figcaption>Python Package Dependency</figcaption>
-</figure>
-
-<br>
-<br>
-
-#### The scripts you create:
-
-* Were designed to work in _your_ specific computing environment 
-* May not work on your computer in the future, because your computing enviroment will probably change (eg., updated software versions)
-* May not work on someone else's computer because their computing environment is different
-
-<br>
-<br>
-<br>
-<br>
-
-### Software Dependency Hell
-
-Sometimes, it can be _nearly impossible_ to get your computing environment correct enough to run someone else's code.
-
-This can caused by incorrect software versions of the packages you are using or their dependencies.
-
-Updating software installed in the **system path** - to make new code work - can break old code!
-
-<br>
-<br>
-<br>
-
 ## Environment Managers 
 
 One solution to software dependency hell is to use an Environment Manager
@@ -235,8 +371,6 @@ An environment manager allows you to create software installation directories (s
   <a target="blank" rel="open science">![open science](assets/envs.png){ width="450" } </a>
     <figcaption></figcaption>
 </figure>
-<br>
-<br>
 
 ### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
 
@@ -246,41 +380,6 @@ An environment manager allows you to create software installation directories (s
 <br>
 <br>
 
-## Package Managers
-
-A software tool to find, download, and install software packages to PATH or virtual environment 
-
-### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
-**Software:** Python, R, Django, Celery, PostgreSQL, nginx, Node.js, Java programs, C and C++, Perl, and command line tools
-
-**Repository:** [Conda-Forge](https://conda-forge.org/). 
-
-
-<br>
-
-### :simple-python: [Pip](https://pypi.org/project/pip/)
-
-**Software:** python 
-
-**Repository:** [PyPi](https://pypi.org/)
-
-**Note:** Pip can be used together with Conda environment manager. 
-
-<br>
-
-### :simple-r: R
-With the R language, a package manager is built directly into the R Base Package. 
-```
-install.packages('ggplot2')
-```
-
-**Repository:**  [R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
-  
-
-
-
-<br>
-<br>
 
 ## Sharing your Environment with Colleagues
 
@@ -294,74 +393,109 @@ The general sharing workflow:
 
 3. Colleagues create an empty environment on their computer and populate it with the contents of the _environment file_
 
+
+??? Tip ":simple-anaconda: Conda to Share Environment"
+
+    ### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
+
+    1. Export your Conda Environment
+    ```
+    conda env export > my_conda_env.yml
+    ```
+
+    2. Share the .yml file through Github 
+
+
+    3. Reproduce the Environment on a Different Computer
+    ```
+    conda env create --file environment.yml
+    ```
+    !!! Success "Conda exports your Pip environment as well"
+        Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
+
+??? Tip ":simple-python: Pip to Share Environment"
+
+    ### :simple-python: Python
+
+    1. Export python libraries present in your environment
+    ```
+    pip3 freeze > requirements.txt 
+    ```
+
+    2. Share the `requirements.txt` on Github
+
+    3. Reproduce the Environment on a Different Computer
+    ```
+    pip install -r requirements.txt
+    ```
+
+??? Tip ":simple-r: Renv to Share Environment"
+
+    ### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
+
+    1. Create an isolated environment
+    ```
+    renv::init()
+    ```
+
+    2. Export R packages to the renv.lock file
+    ```
+    renv:snapshot()
+    ```
+
+    3. Share the `renv.lock`, `.Rprofile`, `renv/settings.json` and `renv/activate.R` files to Github
+
+    4. Reproduce the Environment on a Different Computer
+    ```
+    renv::restore()
+    ```
+
+<br>
 <br>
 
-### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
-
-1. Export your Conda Environment
-   ```
-   conda env export > my_conda_env.yml
-   ```
-
-2. Share the .yml file through Github 
 
 
-3. Reproduce the Environment on a Different Computer
-   ```
-   conda env create --file environment.yml
-   ```
-!!! Success "Conda exports your Pip environment as well"
-    Exporting your environment using Conda (`conda env export > my_conda_env.yml`) will **ALSO** export your pip environment!
-<br>
-<br>
+## Package Managers
 
-### :simple-python: Python
-
-1. Export python libraries present in your environment
-   ```
-   pip3 freeze > requirements.txt 
-   ```
-
-2. Share the `requirements.txt` on Github
-
-3. Reproduce the Environment on a Different Computer
-   ```
-   pip install -r requirements.txt
-   ```
+A software tool to find, download, and install software packages to PATH or virtual environment 
 
 
-<br>
-<br>
+??? Tip ":simple-anaconda: Conda"
 
-### :simple-r: [Renv](https://rstudio.github.io/renv/articles/renv.html)
+    ### :simple-anaconda: [Conda](https://docs.conda.io/en/latest/)
+    **Software:** Python, R, Django, Celery, PostgreSQL, nginx, Node.js, Java programs, C and C++, Perl, and command line tools
 
-1. Create an isolated environment
-   ```
-   renv::init()
-   ```
+    **Repository:** [Conda-Forge](https://conda-forge.org/). 
 
-2. Export R packages to the renv.lock file
-   ```
-   renv:snapshot()
-   ```
-3. Share the `renv.lock`, `.Rprofile`, `renv/settings.json` and `renv/activate.R` files to Github
 
-4. Reproduce the Environment on a Different Computer
-   ```
-   renv::restore()
-   ```
+??? Tip ":simple-python: Pip"
 
-<br>
-<br>
+    ### :simple-python: [Pip](https://pypi.org/project/pip/)
+
+    **Software:** python 
+
+    **Repository:** [PyPi](https://pypi.org/)
+
+    **Note:** Pip can be used together with Conda environment manager. 
+
+
+??? Tip ":simple-r: R"
+
+    ### :simple-r: R
+    With the R language, a package manager is built directly into the R Base Package. 
+    ```
+    install.packages('ggplot2')
+    ```
+
+    **Repository:**  [R Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/)
 
 ---
 
 <br>
 <br>
-<br>
-<br>
 
----
+
+
 
 ## Reproducibility Tutorial
 
@@ -405,8 +539,6 @@ When you download and install Conda it comes in two different flavors:
     ```
 
     Conda should now be installed and can be used to install other necessary packages! 
-
-<br>
 
 ??? tip "Tip: slow Conda? Try Mamba."
 
