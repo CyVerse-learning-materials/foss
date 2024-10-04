@@ -524,6 +524,31 @@ A software tool to find, download, and install software packages to PATH or virt
 
 <br/>
 
+### Launch Github Codespaces
+
+**1** Go to this [Github repository](https://github.com/cyverse-learning-materials/foss_conda_lesson) and Fork it (i.e., make a copy of it in your Github account).
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/conda_lesson1.png){ width="550" } </a>
+    <figcaption></figcaption>
+</figure>
+
+**2** Click on the green "Code" button and select "Create Codespaces on main"
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/conda_lesson2.png){ width="550" } </a>
+    <figcaption></figcaption>
+</figure>
+
+**3** After a few moments, you will be taken to a new browser window with a Linux terminal.
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/conda_lesson3.png){ width="550" } </a>
+    <figcaption></figcaption>
+</figure>
+
+<br/>
+
 ### Installing Conda
 
 **If you are using Codespaces, Conda is already installed.**
@@ -579,19 +604,29 @@ When you download and install Conda it comes in two different flavors:
 
 ### Environment Management with Conda
 
-When you start a Cyverse Cloud shell, the prompt will look something like this: 
+When you start a Codespaces terminal, the prompt will look something like this: 
 
 ```
-(base) jovyan@a12b272e0:/home/user/data-store$
+@jeffgillan ➜ /workspaces/foss_conda_lesson (main) $
 ```
 <br>
-Miniconda has already been pre-installed, and by default, you are started in a base Conda directory (base)
 
+Type the following command to see the current conda environment. 
+
+```
+conda info
+```
 <br>
 
+Initialize conda by running the following commands. 
 
+```
+conda init
+exec $SHELL
+```
+<br>
 
-View the list of conda environments
+View the list of conda environments. There should only be one environment called `base`.
 ```
 conda env list
 ```
@@ -633,7 +668,6 @@ conda list
 <br>
 <br>
 <br>
-<br>
 
 ### Package management with Conda
 
@@ -645,20 +679,18 @@ conda install python=3.9
 
 <br>
 
-View the new software that has been install 
+View the new software that has been installed. Notice the version of Python is now 3.9. while the base is 3.12
 ```
 conda list
 ```
 
-
-<br>
 <br>
 <br>
 
-Install Salmon and FastQC (genomics software) using Conda
+Install Salmon (genomics software) using Conda
 
 ```
-conda install -c bioconda salmon fastqc
+conda install -c bioconda salmon 
 ```
 
 <br>
@@ -679,33 +711,35 @@ Export all of the software in your custom environment to a file
 conda env export > myenv.yml
 ```
 <br>
-Let's view the contents of the .yml file
+Let's view the contents of the .yml file. It should contain all the software you installed in the environment. This `myenv.yml` file can be shared with a colleague so they can reproduce the same environment on their computer.  
 ```
 nano myenv.yml
 ```
 <br>
 
-This `myenv.yml` file can be shared with a colleague so they can reproduce the same environment on their computer.
 
-To test this theory, let's create a new environment from the .yml.
+Reproduce someone else's environment with `virtual_env.yml` environment file located in the repository.
+
+```
+conda env create --file virtual_env.yml
+```
 
 <br>
 
-First, we need to change the `name` of the environment within the .yml file from `myenv` to `myenv2`. Do this using nano. 
-```
-nano myenv.yml
+Activate the environment to use the software installed in the environment. 
+
 ``` 
-
-<br>
-Create a new environment and populate it with the .yml environment file
-
-```
-conda env create --file myenv.yml
+conda activate virtual_env
 ```
 
+<br>
 
-<br>
-<br>
+Look at the software installed in the environment. Notice it has Python version 3.5.
+
+```
+conda list
+```
+
 <br>
 <br>
 
