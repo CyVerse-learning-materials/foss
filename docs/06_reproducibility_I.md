@@ -31,17 +31,6 @@
 <br>
 <br>
 <br>
-
-As the graphic below suggests, _Reproducibility_ is a spectrum of sharing behaviors. 
-
-<figure markdown>
-  <a target="blank" rel="open science">![open science](../assets/reproducibility-spectrum.png){ width="600" } </a>
-    <figcaption> [Peng 2011](https://science.sciencemag.org/content/334/6060/1226)</figcaption>
-</figure>
-
-<br>
-<br>
-<br>
 <br>
 
 ### Interactive (ie, point-and-click) Computing
@@ -124,11 +113,11 @@ The most common open-source scripting languages (for science) are Python, R, and
 
 <figure style="display: flex; justify-content: center;">
     <a href="https://www.python.org/"><img src="../assets/python_logo.png" alt="python" style="width: 150px; margin-right: 15px;"></a>
-    <a href="https://www.r-project.org/"><img src="../assets/r_logo.jpeg" alt="r" style="width: 150px; margin-right:"></a>
+    <a href="https://www.r-project.org/"><img src="../assets/r_logo.jpeg" alt="r" style="width: 150px; margin-right:"></a>&nbsp;&nbsp;&nbsp;&nbsp
     <a href=""><img src="../assets/bash_logo.png" alt="bash" style="width: 150px; margin-right: 15px;"></a>
 </figure>
 
-If you recall from [lesson 4 _How to Talk to Computers_](/04_talk_to_computer/#shell-script), we ran a shell script to back up files. 
+If you recall from [lesson 4 _How to Talk to Computers_](/04_talk_to_computer/#shell-script), we ran a shell script to back up and compress files. The following admonitions show the original shell script as well as the same instructions in Python and R. Scripting languages are simply different ways to instruct a computer. 
 
 ??? Tip "Shell Script"
 
