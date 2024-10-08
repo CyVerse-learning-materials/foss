@@ -275,7 +275,7 @@ A computing environment is the combination of hardware, software, and network re
 <br>
 
 
-!!! Warning "**Very Important**" 
+!!! Warning "**!!Very Important!!**" 
 
     #### The scripts you create:
 
@@ -320,7 +320,7 @@ When you go to launch an application by clicking on a desktop icon or with a CLI
 
     In Windows Terminal
 
-    `echo %PATH%`
+    `$env:PATH`
 
 <br>
 <br>
@@ -697,7 +697,7 @@ conda install -c bioconda salmon
 Export all of the software in your custom environment to a file
 
 ```
-conda env export > myenv.yml
+conda env export --no-builds > myenv.yml
 ```
 <br>
 Let's view the contents of the .yml file. It should contain all the software you installed in the environment. This `myenv.yml` file can be shared with a colleague so they can reproduce the same environment on their computer.  
@@ -732,27 +732,6 @@ conda list
 <br>
 <br>
 
-### Package management with Pip
 
-Pip works similarly to Conda, as Pip is the package management supported by the Python Software foundation. If you use Python for your work it is likely you have installed packages using Pip.
 
-We only have to install a single package required for this tutorial, MultiQC. To install MultiQC using Pip, do:
-
-```
-pip install multiqc
-```
-
-Similar to Conda, you can export your pip environment by doing
-
-```
-pip3 freeze > requirements.txt
-```
-<br>
-
-!!! Note "Why `pip3`?"
-    `pip3 freeze > requirements.txt` is used to export the pip environment such that it is readable for Python 3. If you want to export an environment for Python 2, you can use `pip freeze > requirements.txt`.
-<br>
-<br>
-<br>
-<br>
 
