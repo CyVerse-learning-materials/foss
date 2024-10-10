@@ -46,7 +46,7 @@
 
 #### Advantages 
 
-- Inuitive and easy to navigate a GUI and click buttons
+- Intuitive and easy to navigate a GUI and click buttons
 
 #### Limitations
 
@@ -707,10 +707,10 @@ nano myenv.yml
 <br>
 
 
-Reproduce someone else's environment with `virtual_env.yml` environment file located in the repository.
+Reproduce someone else's environment with `mandelbrot.yml` environment file located in the repository.
 
 ```
-conda env create --file virtual_env.yml
+conda env create --file mandelbrot.yml
 ```
 
 <br>
@@ -718,19 +718,28 @@ conda env create --file virtual_env.yml
 Activate the environment to use the software installed in the environment. 
 
 ``` 
-conda activate virtual_env
+conda activate mandelbrot
 ```
 
 <br>
 
-Look at the software installed in the environment. Notice it has Python version 3.5.
+Look at the software installed in the environment. 
 
 ```
 conda list
 ```
 
 <br>
+
+Run a python script that generates a Mandelbrot set 
+
+```
+python3 mandelbrot.py
+``` 
+
+
 <br>
+
 
 
 
