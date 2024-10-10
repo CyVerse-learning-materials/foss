@@ -14,7 +14,6 @@
 
 <br>
 <br>
-<br>
 
 
 ## Reproducible Scientific Computing
@@ -27,6 +26,16 @@
 
     "Getting someone else's code to run on my computer" - Anonymous
 
+
+<br>
+<br>
+<br>
+<br>
+
+<figure markdown>
+  <a target="blank" rel="open science">![open science](assets/reproducibility-spectrum.png){ width="600" } </a>
+    <figcaption>Source: Peng, RD Reproducible Research in Computational Science Science (2011): 1226–1227 via [Reproducible Science Curriculum](http://reproducible-science-curriculum.github.io/bosc2015/#/15)</figcaption>
+</figure>
 
 <br>
 <br>
