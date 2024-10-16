@@ -28,11 +28,9 @@ There are, however, technical challenges that may prevent your colleagues from e
 
 A [container](https://www.docker.com/resources/what-container/) is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another 
 
-* Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings
-
-* Each of these elements are specifically versioned and do not change
-
-* The recipient does not need to *install* the software in the traditional sense
+- Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings
+- Each of these elements are specifically versioned and do not change
+- The recipient does not need to *install* the software in the traditional sense
 
 <br>
 
@@ -60,44 +58,32 @@ Software containers, such as those managed by Docker or Singularity, are incredi
 #### Environment Consistency: 
 Containers encapsulate the software environment, ensuring that the same versions of software, libraries, and dependencies are used every time, reducing the "it works on my machine" problem.
 
-#### Ease of Sharing:
-
-Containers can be easily shared with other researchers, allowing them to replicate the exact software environment used in a study.
-
-#### Platform Independence:
-
-Containers can run on different operating systems and cloud platforms, allowing for consistency across different hardware and infrastructure.
-
-#### Version Control:
-
-Containers can be versioned, making it easy to keep track of changes in the software environment over time.
-
-#### Scalability:
-
-Containers can be easily scaled and deployed on cloud infrastructure, allowing for reproducible science at scale.
-
-#### Isolation:
-
-Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
+- **Ease of Sharing**:
+  - Containers can be easily shared with other researchers, allowing them to replicate the exact software environment used in a study.
+- **Platform Independence**:
+  - Containers can run on different operating systems and cloud platforms, allowing for consistency across different hardware and infrastructure.
+- **Version Control**:
+  - Containers can be versioned, making it easy to keep track of changes in the software environment over time.
+- **Scalability**:
+  - Containers can be easily scaled and deployed on cloud infrastructure, allowing for reproducible science at scale.
+- **Isolation**:
+  - Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
 
 <br/>
 <br/>
 
-* The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
+<figure markdown>
+  <a href="https://www.tutorialspoint.com/docker/index.htm" target="blank" rel="containerexp">![containerexp](https://www.tutorialspoint.com/docker/images/docker_hub_1.jpg) </a>
+    <figcaption> The container's life cycle. Figure source: [Tutorialspoint](https://www.tutorialspoint.com/docker/index.htm). </figcaption>
+</figure>
 
-* [DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
+The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
 
-!!! Warning
-    
-    While Docker allows you to quickly run software from other people, it may not work across every platform. There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
+[DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
 
-<br>
-
-
+!!! Warning "While Docker allows you to quickly run software from other people, it may not work across every platform. <br> <br> There are different CPU architectures (`arm`, `amd64`, `x64`, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators."
 
 ---
-
-<br>
 
 ## Introduction to :material-docker: Docker 
 
@@ -133,9 +119,6 @@ Our instructions on starting a new CodeSpace are [here](https://cc.cyverse.org/c
     Before venturing much further, you should review the [Software Carpentry](https://software-carpentry.org/lessons/){target=_blank} lessons on "The Unix Shell" and "Version Control with Git" -- these are great introductory lessons related to the skills we're teaching here.
 
     You've given up on ever using a terminal? No problem, Docker can be used from graphic interfaces, like [Docker Desktop](https://www.docker.com/products/docker-desktop/){target=_blank}, or platforms like [Portainer](https://www.portainer.io/){target=_blank}. We suggest you read through their documentation on how to use Docker.
-
-<br>
-<br>
 
 ## Fundamental Docker Commands :octicons-terminal-16: 
 
@@ -173,7 +156,7 @@ $ docker pull hello-world
 ```
 
 !!! Note
-        If you leave off the `:` and the tag name, it will by default pull the `latest` image
+    If you leave off the `:` and the tag name, it will by default pull the `latest` image
 
 ```
 $ docker pull hello-world
@@ -353,17 +336,21 @@ The cached image laters will not change their `sha256` and both image tags will 
 
 ## Example of Running a Container
 
-This is a tutorial to demonstrate how to run PDAL using Docker. [PDAL](https://pdal.io/en/2.6.0/) is a stand-alone software package that can analyze and manipulate point cloud data files such as .las and .laz. In this tutorial, we will convert a LiDAR .laz file into a [Cloud-optimized Point Cloud format (.copc.laz)](https://www.gillanscience.com/cloud-native-geospatial/copc/). 
+<figure markdown>
+  <a href="https://pdal.io/en/2.4.3/" target="blank" rel="docker">![gitlfs](https://pdal.io/en/2.4.3/_images/pdal_logo.png) </a>
+</figure>
 
-#### 1. Clone this repository to your local machine
+This is a tutorial to demonstrate how to run PDAL using Docker. [PDAL](https://pdal.io/en/2.4.3/) is a stand-alone software package that can analyze and manipulate point cloud data files such as .las and .laz. In this tutorial, we will convert a LiDAR .laz file into a [Cloud-optimized Point Cloud format (.copc.laz)](https://www.gillanscience.com/cloud-native-geospatial/copc/). 
+
+**1. Clone this repository to your local machine**
 
 `git clone https://github.com/jeffgillan/pdal_copc.git`
 
-#### 2. Change directories into the newly cloned repository
+**2. Change directories into the newly cloned repository**
 
 `cd pdal_copc`
 
-#### 3. Run the Container
+**3. Run the Container**
 
 `docker run -v $(pwd):/data jeffgillan/pdal_copc:1.0`
 
@@ -376,7 +363,6 @@ You are mounting a local volume (-v) directory to the container (`/data`). This 
 ```pdal_copc``` = the name of the image
 
 ```1.0``` = the tag name    
-
 
 Your if everything worked correctly, you should have a new file `tree.copc.laz` in your present working directory.
 
@@ -720,7 +706,7 @@ Here is a compiled list of fundamental Docker Commands:
 
         While Docker allows you to quickly run software from other people, it may not work across every platform.
 
-        There are different CPU architectures (`arm`, `amd64`, `x64, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. 
+        There are different CPU architectures (`arm`, `amd64`, `x64`, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. 
 
         Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators.
 
