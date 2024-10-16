@@ -608,7 +608,7 @@ It is possible to store data within the writable layer of a container, but there
 Docker offers three different ways to mount data into a container from the Docker host: **Volumes**, **tmpfs mounts** and **bind mounts**. Here, we will only be exploring *Volumes*.
 
 <figure markdown>
-  <a href="https://docs.docker.com/storage/volumes/" target="blank" rel="vol">![vol](https://docs.docker.com/storage/images/types-of-mounts-volume.webp?w=450&h=300) </a>
+  <a href="https://docs.docker.com/storage/volumes/" target="blank" rel="vol">![vol](https://docs.docker.com/engine/storage/images/types-of-mounts-volume.webp) </a>
     <figcaption> The various methods for accessing data using containers. tmpfs mounts store data directly in memory, bind mounts and volumes use the host's file system. Volumes are flexible and only attach a specific directory to the container, whilst bind mounts require the user to share the full path to a file in order to allow the container to access it. Taken from the official Docker documentation on [data management with docker](https://docs.docker.com/storage/volumes/). </figcaption>
 </figure>
 
