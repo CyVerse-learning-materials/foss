@@ -1,71 +1,66 @@
-docs_dir: docs/
-repo_name: 'CyVerse-learning-materials/foss'
-repo_url: 'https://github.com/CyVerse-learning-materials/foss'
+# Header
+site_name: CyVerse Foundational Open Science Skills 2024
+site_description: Workshop teaching researchers core skills for conducting open science.
+site_author: CyVerse Science Team
+site_url: https://foss.cyverse.org
 
-site_name: 'CyVerse Foundational Open Science Skills 2024'
-site_description: 'Workshop teaching researchers core skills for conducting open science.'
-site_author: 'CyVerse Science Team'
-site_url: 'https://foss.cyverse.org'
-
+# Footer
+repo_name: CyVerse-learning-materials/foss
+repo_url: https://github.com/CyVerse-learning-materials/foss
 edit_uri: edit/mkdocs/docs
-
-# Copyright
 copyright: 'Copyright &copy; 2024 CyVerse'
 
 # Navigation Page
-
 nav:
   - Home: 
-    - 'Home': index.md
-    - 'Before FOSS Starts': installation.md
-    - 'Schedule': schedule.md
-    - 'Code of Conduct': code_of_conduct.md
-    - 'Glossary & Acronyms': glossary.md
+      - 'Home': index.md
+      - 'Before FOSS Starts': installation.md
+      - 'Schedule': schedule.md
+      - 'Code of Conduct': code_of_conduct.md
+      - 'Glossary & Acronyms': glossary.md
   - Lessons:
-    - '1. Open Science': 01_intro_open_sci.md
-    - '2. Data Management': 02_managing_data.md
-    - '3. Documentation & Communication': 03_documentation_communication.md
-    - '4. How to Talk to Computers': 04_talk_to_computer.md
-    - '5. Version Control': 05_version_control.md
-    - '6. Reproducibility I: Software Environments': 06_reproducibility_I.md
-    - '7. Reproducibility II: Run Containers': 07_reproducibility_II.md
-    - '8. Reproducibility III: Build Containers': 08_reproducibility_III.md
-    - '9. Remote Computing: Cyverse': 09_remote_computing_cyverse.md
-    - '10. Remote Computing: HPC': 10_reproducibility_IV.md
-
+      - '1. Open Science': 01_intro_open_sci.md
+      - '2. Data Management': 02_managing_data.md
+      - '3. Documentation & Communication': 03_documentation_communication.md
+      - '4. How to Talk to Computers': 04_talk_to_computer.md
+      - '5. Version Control': 05_version_control.md
+      - '6. Reproducibility I: Software Environments': 06_reproducibility_I.md
+      - '7. Reproducibility II: Run Containers': 07_reproducibility_II.md
+      - '8. Reproducibility III: Build Containers': 08_reproducibility_III.md
+      - '9. Remote Computing: Cyverse': 09_remote_computing_cyverse.md
+      - '10. Remote Computing: HPC': 10_reproducibility_IV.md
   - Capstone Project:
       - 'Overview': final_project/overview.md
 
-# must also set Action to use `@nomaterial` branch instead of `@master` for material
+# Theme settings
 theme:
-  name: material
-# setting features for the navigation tab
-  features:
-    - navigation.instant
-      #- navigation.expand
-    - navigation.tracking
-    - navigation.sections
-    - navigation.indexes
-    - toc.follow
-  # Default values, taken from mkdocs_theme.yml
-  language: en
+  name: 'material'
+
+  # Dark and Light mode support
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      primary: '#002E99'  # Same blue color for light mode
+      accent: 'orange'
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: '#002E99'  # Same blue color for dark mode
+      accent: 'orange'
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
+        name: Switch to light mode
+
+  # Other settings remain the same
+  language: en
   font:
-    text: Roboto
-    code: Regular
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  favicon: assets/favicon.png
+  
   features:
     - navigation.instant
     - navigation.tracking
@@ -73,9 +68,13 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
-  favicon: assets/favicon.png
-  icon:
-    logo: material/rocket
+    - toc.follow
+    - content.code.copy
+    - palette.toggle
+
+  # 404 page
+  static_templates:
+    - 404.html
 
 # Options
 extra:
@@ -92,12 +91,18 @@ extra:
       link: https://harbor.cyverse.org/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/CyverseOrgProject
+
   analytics:
     provider: google
     property: UA-72224033-6
 
+# Custom CSS and JavaScript for chatbot
 extra_css:
   - stylesheets/extra.css
+  - chatbot_widget.css
+
+extra_javascript:
+  - chatbot_widget.js
 
 # Extensions
 markdown_extensions:
@@ -140,10 +145,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Plugins
 plugins:
-    - search
-    - mkdocstrings
-    - git-revision-date
-    - mkdocs-jupyter:
-          include_source: True
-          ignore_h1_titles: True
+  - search
+  - mkdocstrings
+  - git-revision-date
+  - mkdocs-jupyter:
+      include_source: True
+      ignore_h1_titles: True

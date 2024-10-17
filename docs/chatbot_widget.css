@@ -1,0 +1,138 @@
+/* chatbot_widget.css */
+
+/* Common Color - Replace with your exact hex code */
+:root {
+    --primary-blue: #4054b4;  /* Using the updated blue color as you specified */
+}
+
+/* Chat Icon Button */
+#chat-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-blue); /* Matches the website header */
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-icon img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+/* Chat Container */
+#chat-container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 600px;
+    background: #ffffff; /* White background for consistency */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Chat Header */
+#chat-header {
+    background-color: var(--primary-blue); /* Matches the website's primary color */
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#chat-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#chat-close:hover {
+    transform: rotate(90deg);
+}
+
+/* Chat Body */
+#chat-body {
+    height: calc(100% - 60px);
+    overflow: hidden;
+    background: #ffffff; /* White background for readability */
+}
+
+/* Chat Frame */
+#chat-frame {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Submit Button (Send Button) */
+.chat-submit-button {
+    background-color: var(--primary-blue); /* Matches the website's primary color */
+    border: none;
+    color: #ffffff; /* White text for readability */
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.chat-submit-button:hover {
+    background-color: #324499; /* Slightly darker shade for hover effect */
+    transform: scale(1.05);
+}
+
+.chat-submit-button:active {
+    transform: scale(0.95);
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    #chat-container {
+        background: #ffffff; /* Maintain white background for dark mode */
+    }
+
+    #chat-header {
+        background-color: var(--primary-blue); /* Keep consistent blue header */
+        color: #ffffff; /* White text for contrast */
+    }
+
+    #chat-body {
+        background: #ffffff; /* White background for body to maintain contrast */
+    }
+
+    #chat-close {
+        color: #ffffff; /* White color for the close button for visibility */
+    }
+
+    .chat-submit-button {
+        background-color: var(--primary-blue);
+        color: #ffffff;
+    }
+
+    .chat-submit-button:hover {
+        background-color: #324499; /* Slightly darker shade for hover effect in dark mode */
+    }
+}
