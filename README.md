@@ -1,6 +1,26 @@
-# foss-2021
-Documentation for CyVerse Learning's Foundations of Spring 2021 Open Science Skills course.
+# foss-2024
 
-Course will take place February 9-April 21, 2021, online.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11105956.svg)](https://doi.org/10.5281/zenodo.11105956)
 
-Contents are organized by subject, rather than day, with links to each day from the agenda (getting_started/schedule.rst).
+
+Documentation for CyVerse Learning's Foundations of Open Science Skills (FOSS) course. 
+
+Course will take place Sept. 5 - Nov. 21, 2024, online, Every Thursday 11 am - 12:30 pm Arizona time
+
+See the schedule at https://foss.cyverse.org/schedule/
+
+## Build
+
+To build the docs locally:
+
+```
+git clone https://github.com/CyVerse-learning-materials/foss.git
+
+pip install -r requirements.txt
+
+python -m mkdocs serve
+```
+Open a browser and go to https://localhost:8000
+## Cite as
+
+Michele Cosi. Jeffrey K. Gillan, Tyson L. Swetnam. (2024, May 2). CyVerse-learning-materials/foss: FOSS 2024 Spring. Zenodo. https://zenodo.org/records/11105956
