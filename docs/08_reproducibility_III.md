@@ -420,6 +420,49 @@ docker build -t jeffgillan/pointcloud_to_chm:amd64 .
 <br>
 <br>
 
+---
+
+### Building an Executable Image
+
+```
+ _____________________________
+< Avoid reality at all costs. >
+ -----------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Thus far we have worked using interactive containers such as RStudio. Not all containers are interactive, many (if not most of) are executables: containerized software that can take the raw input and output data without requiring further work from the user.
+
+Executable containers are usually called with 
+
+```
+docker run <repository>/<image>:<tag> <potential arguments/options> <input file/folder>
+```
+
+An easy to reproduce example is **Lolcow**, which builds a small executable that outputs a "quote of the day". It does not require any input and will output to the terminal directly.
+
+Here is the minimal recipie required to build Lolcow: 
+
+```
+FROM --platform=linux/amd64 ubuntu:22.04
+
+RUN apt-get update && apt-get install -y fortune cowsay lolcat
+
+ENV PATH=/usr/games:${PATH}
+
+ENV LC_ALL=C
+
+ENTRYPOINT fortune | cowsay | lolcat
+```
+
+Once built, you can execute it with `docker <image ID/name>` for something to brighten your day!
+
+---
+
 ### Pushing to a Registry with :material-docker: docker push
 
 By default `docker push` will upload your local container image to the [Docker Hub](https://hub.docker.com/){target=_blank}.
