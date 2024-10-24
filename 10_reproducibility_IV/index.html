@@ -1,0 +1,2226 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/10_reproducibility_IV/">
+      
+      
+        <link rel="prev" href="../09_remote_computing_cyverse/">
+      
+      
+        <link rel="next" href="../final_project/overview/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>10. Remote Computing: HPC - CyVerse Foundational Open Science Skills 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#remote-computing-with-high-performance-computer-hpc" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10. Remote Computing: HPC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_intro_open_sci/" class="md-tabs__link">
+          
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    CyVerse Foundational Open Science Skills 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Before FOSS Starts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_intro_open_sci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_managing_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_documentation_communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. How to Talk to Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_reproducibility_I/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Reproducibility I: Software Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_reproducibility_II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Reproducibility II: Run Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reproducibility_III/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Remote Computing: Cyverse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-10000ft-view-of-the-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      A 10,000ft View of the HPC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A 10,000ft View of the HPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-onto-the-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging onto the HPC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-available-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Available Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking Available Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allocations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allocations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queues-and-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Queues and Submissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hpc-slurm-and-jobs-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPC, SLURM and Jobs Submissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HPC, SLURM and Jobs Submissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Submissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Submissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#batch-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch jobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-an-interactive-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching an Interactive Node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singularityapptainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singularity/Apptainer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Singularity/Apptainer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-executable-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Executable Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Executable Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#help" class="md-nav__link">
+    <span class="md-ellipsis">
+      help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      pull
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtaining Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtaining Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pulling-an-image-from-singularity-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling an image from Singularity Hub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pulling-an-image-from-docker-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling an image from Docker Hub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting with Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interacting with Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+    <span class="md-ellipsis">
+      run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      shell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exec" class="md-nav__link">
+    <span class="md-ellipsis">
+      exec
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspect" class="md-nav__link">
+    <span class="md-ellipsis">
+      inspect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capstone Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-10000ft-view-of-the-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      A 10,000ft View of the HPC
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A 10,000ft View of the HPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging-onto-the-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging onto the HPC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#choosing-a-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checking-available-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Available Resources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking Available Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#allocations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allocations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queues-and-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Queues and Submissions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hpc-slurm-and-jobs-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPC, SLURM and Jobs Submissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HPC, SLURM and Jobs Submissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job-submissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Job Submissions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Submissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#batch-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch jobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-an-interactive-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching an Interactive Node
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singularityapptainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singularity/Apptainer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Singularity/Apptainer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-executable-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Executable Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Executable Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#help" class="md-nav__link">
+    <span class="md-ellipsis">
+      help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull" class="md-nav__link">
+    <span class="md-ellipsis">
+      pull
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obtaining-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Obtaining Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Obtaining Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pulling-an-image-from-singularity-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling an image from Singularity Hub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pulling-an-image-from-docker-hub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling an image from Docker Hub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting with Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interacting with Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+    <span class="md-ellipsis">
+      run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      shell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exec" class="md-nav__link">
+    <span class="md-ellipsis">
+      exec
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspect" class="md-nav__link">
+    <span class="md-ellipsis">
+      inspect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="remote-computing-with-high-performance-computer-hpc">Remote Computing with High Performance Computer (HPC)<a class="headerlink" href="#remote-computing-with-high-performance-computer-hpc" title="Permanent link">&para;</a></h1>
+<figure>
+<p><img alt="sin-2-app" src="../assets/logos/sin-app-slurm.png" />
+    <figcaption> Singularity &gt; Apptainer and working with the <a href="https://slurm.schedmd.com/documentation.html">SLURM workload manager</a> (HPC scheduler). </figcaption></p>
+</figure>
+<div class="admonition success">
+<p class="admonition-title">Expected Outcomes</p>
+<ul>
+<li>Being able to log onto the HPC and start an interactive node</li>
+<li>Know basic HPC related commands</li>
+<li>Execute containerized code through Singularity/Apptainer</li>
+<li>Being able to search and load specific software</li>
+<li>Execute NextFlow scripts on the HPC</li>
+</ul>
+</div>
+<p>Through FOSS and FOSS+ we have learned about container technology and how it can affect reproducibility by wrapping all the necessary components that allow a specific software to be executed. </p>
+<p>Similar to Docker, Singularity/Apptainer is a powerful tool that enables researchers to package entire environments, including software dependencies and libraries, into a single executable file.</p>
+<p><strong>Unlike other containerization platforms, Singularity/Apptainer is designed with <a href="https://en.wikipedia.org/wiki/High-performance_computing">HPC</a> in mind, allowing seamless integration with cluster computing environments.</strong></p>
+<p>The biggest difference between Docker and Singularity/Apptainer, is that with the latter <em>you do <strong>not</strong> require sudo priviledges</em>. Exciting!</p>
+<p>In this workshop, we are going to learn how we can use Singularity/Apptainer on the UA HPC, covering orientation of the HPC, and executing Singularity/Apptainer control commands.</p>
+<hr />
+<h2 id="a-10000ft-view-of-the-hpc">A 10,000ft View of the HPC<a class="headerlink" href="#a-10000ft-view-of-the-hpc" title="Permanent link">&para;</a></h2>
+<p><a href="10_hpc.md">Next week</a> (Apr 04th) <a href="https://datascience.arizona.edu/person/chris-reidy">Chris Reidy</a> from <a href="https://it.arizona.edu/">UITS</a> is going to talk in more details regarding the hardware specifications of the UA HPC systems. </p>
+<p>Here, we are going to concentrate on <em>HOW</em> to operate the HPC system as a general user.</p>
+<div class="admonition warning">
+<p class="admonition-title">Who is this lesson for?</p>
+<p>This workshop is  primarely aimed to UA students, grad students, faculty and staff as being part of the University of Arizona grants you access to the UA HPC. </p>
+<p>If you are not part of UA... <em>you're still very welcome to take part of this lesson!</em> You may not be able to execute the commands but you can still walk out of this with a good understanding of your institution's own HPC and Singularity/Apptainer. Everyone's welcome!</p>
+</div>
+<h3 id="logging-onto-the-hpc">Logging onto the HPC<a class="headerlink" href="#logging-onto-the-hpc" title="Permanent link">&para;</a></h3>
+<p>If you have a UA account, to connect to the HPC you need to use <code>ssh</code> (<a href="https://en.wikipedia.org/wiki/Secure_Shell">Secure Shell</a>). Open a terminal, and type:</p>
+<div class="highlight"><pre><span></span><code>ssh &lt;UA username&gt;@hpc.arizona.edu
+</code></pre></div>
+<p>Type your UA password and if successful you'll be greeted with a two-factor login. Select which choice, and complete the authentification. Once you are past the authentification steps, you will enter the <a href="https://en.wikipedia.org/wiki/Bastion_host">Bastion server</a>. This step has 2 purposes: </p>
+<ol>
+<li>Protect from attacks.</li>
+<li>Select what HPC system you want to use.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Note: the Bastion server is NOT YET the HPC! Here you cannot submit jobs or run analyes. Type <code>shell</code> in order to select what system you want to use.</p>
+</div>
+<p>The whole process (from logging to selecting the system) looks like the following:</p>
+<div class="highlight"><pre><span></span><code>ssh cosi@hpc.arizona.edu
+(cosi@hpc.arizona.edu) Password: 
+(cosi@hpc.arizona.edu) Duo two-factor login for cosi
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-8418
+ 2. SMS passcodes to XXX-XXX-8418
+
+Passcode or option (1-2): 1
+Success. Logging you in...
+Last login: Tue Mar 26 14:52:39 2024 from dhcp-10-132-212-1.uawifi.arizona.edu
+This is a bastion host used to access the rest of the RT/HPC environment.
+
+Type &quot;shell&quot; to access the job submission hosts for all environments
+-----------------------------------------
+
+[cosi@gatekeeper ~]$ shell
+Last login: Wed Mar 20 10:30:25 2024 from gatekeeper.hpc.arizona.edu
+***
+The default cluster for job submission is Puma
+***
+Shortcut commands change the target cluster
+-----------------------------------------
+Puma:
+$ puma
+(puma) $
+Ocelote:
+$ ocelote
+(ocelote) $
+ElGato:
+$ elgato
+(elgato) $
+-----------------------------------------
+
+[cosi@wentletrap ~]$ ocelote
+(ocelote) [cosi@wentletrap ~]$
+</code></pre></div>
+<p>At this point you are in the Login Node, where you can submit jobs or ask for an interactive node.</p>
+<figure>
+<p><img alt="nodes" src="https://uarizona.atlassian.net/wiki/download/thumbnails/75989999/HPCDiagram_FileTransfers.png?version=1&amp;modificationDate=1696282205000&amp;cacheVersion=1&amp;api=v2&amp;effects=drop-shadow&amp;width=1124&amp;height=686" />
+    <figcaption> A representation of what the HPC structure and its various nodes. <a href="https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989999/HPC+Quick+Start">Source</a>. </figcaption></p>
+</figure>
+<h3 id="choosing-a-system">Choosing a System<a class="headerlink" href="#choosing-a-system" title="Permanent link">&para;</a></h3>
+<p>In the example above, we chose the Ocelote system. Notice how there are 2 other choices: Puma and El Gato. Without going in  too much detail, here are some of the statistics regarding the 3 HPC systems at the UA HPC.</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Year of Aquisition</th>
+<th>Processors</th>
+<th>RAM</th>
+<th>GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Puma</td>
+<td>2020</td>
+<td>2x AMD Zen2 48 CPU (94 cores total)</td>
+<td>512GB</td>
+<td>6x Nvidia V100S</td>
+</tr>
+<tr>
+<td>Ocelote</td>
+<td>2016</td>
+<td>2x Xeon E5-2695v3 14-core (28 cores total)</td>
+<td>192GB</td>
+<td>46x Nvidia P100</td>
+</tr>
+<tr>
+<td>El Gato</td>
+<td>2013</td>
+<td>2x Xeon E5-2650v2 8-core (16 core total)</td>
+<td>64GB</td>
+<td>removed as obsolete</td>
+</tr>
+</tbody>
+</table>
+<p>Find the full systems specs at the <a href="https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990208/Compute+Resources">official UA HPC documentatio resources page</a>.</p>
+<p>El Gato is the oldest system, and potentially not useful for heavy research. Puma is the newest and most requested, whislt Ocelote is the "middle child": not as popular but still able to pack a punch. </p>
+<p>Depending on what your work is, your best bet would be Puma for heavy computation (if you are ok with waiting long queues); However, if your jobs aren't as taxing, then Ocelote could easily be a safe choice.</p>
+<p>For this workshop, we are going to be using Ocelote.</p>
+<h3 id="checking-available-resources">Checking Available Resources<a class="headerlink" href="#checking-available-resources" title="Permanent link">&para;</a></h3>
+<h4 id="allocations">Allocations<a class="headerlink" href="#allocations" title="Permanent link">&para;</a></h4>
+<p>Once past the Bastion server and logged into the Ocelote login node, you are able to submit jobs or request an interactive node. Before you do so, it is wise to check your available resources. These resources are the ones made available to you by your PI or working group.</p>
+<p>In order for you to check your resources, type <code>va</code>.</p>
+<div class="highlight"><pre><span></span><code>(ocelote) [cosi@wentletrap ~]$ va
+Windfall: Unlimited
+
+PI: parent_1743 Total time: 100000:00:00
+    Total used*: 1:00:00
+    Total encumbered: 0:00:00
+    Total remaining: 99999:00:00
+    Group: datalab Time used: 1:00:00 Time encumbered: 0:00:00
+
+
+*Usage includes all subgroups, some of which may not be displayed here
+</code></pre></div>
+<p><code>va</code> allows you to view all of the resources available from all the groups you are part of.</p>
+<h4 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h4>
+<p>There are a number of ways one can approach storage on the HPC:</p>
+<ul>
+<li>Your own folder (in <code>/home/</code>): 50GB limit</li>
+<li>Your group (in <code>/groups/</code>): 500GB limit</li>
+<li>Your PI research (in <code>/xdisk/</code>): 20TB</li>
+</ul>
+<p>Four the purpose of this workshop, we can access the datalab group storage in <code>/groups/cosi</code> (we will try and rename it in the future).</p>
+<h4 id="queues-and-submissions">Queues and Submissions<a class="headerlink" href="#queues-and-submissions" title="Permanent link">&para;</a></h4>
+<p>One can check queue times and sumbissions by executing the SLURM command <code>squeue</code>. This will display the job id, submission type (standard, windfall, high priority), name of submission, user, status (queued, running), time elapsed, number of used nodes, and nodelist.</p>
+<div class="highlight"><pre><span></span><code>(ocelote) [cosi@wentletrap ~]$ squeue
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+2875825_[432-1000]  standard    qchem snanayak PD       0:00      1 (AssocGrpCPUMinutesLimit)
+           2890485  standard R92L_Met krishnag PD       0:00      1 (Dependency)
+           2890484  standard R92L_Met krishnag PD       0:00      1 (Dependency)
+           2890483  standard R92L_Met krishnag PD       0:00      1 (Dependency)
+           2881573  standard R92W_Met krishnag PD       0:00      1 (Dependency)
+           2881572  standard R92W_Met krishnag PD       0:00      1 (Dependency)
+           2802511  standard    eigen krishnag PD       0:00      1 (Dependency)
+           2949224  standard brutefor theronir PD       0:00      1 (None)
+           2898419  standard start_so mmartino PD       0:00      1 (Dependency)
+           2898418  standard make_sor mmartino PD       0:00      1 (Dependency)
+           2898416  standard start_so mmartino PD       0:00      1 (Dependency)
+           2898415  standard make_sor mmartino PD       0:00      1 (Dependency)
+           2898410  standard start_so mmartino PD       0:00      1 (Dependency)
+           2898409  standard make_sor mmartino PD       0:00      1 (Dependency)
+              .         .        .        .     .       .         .   .
+              .         .        .        .     .       .         .   .
+              .         .        .        .     .       .         .   .
+           2884142  windfall li_d_t_6    bubin  R 2-06:58:50      1 i5n14
+           2884107  windfall li_d_t_4    bubin  R 2-07:00:26      1 i6n8
+           2884098  windfall li_d_t_7    bubin  R 2-07:00:50      1 i6n5
+           2880486  windfall   be_10b   teodar  R 4-22:35:44      1 i16n5
+           2880487  windfall    be_9b   teodar  R 4-22:35:44      1 i16n6
+           2880488  windfall    be_7b   teodar  R 4-22:35:44      1 i16n12
+           2880489  windfall    be_2b   teodar  R 4-22:35:44      1 i16n16
+</code></pre></div>
+<p>Likely, this will output 100s of lines, therefore if you want to check on your own job, you could use the CLI and <code>grep</code> to select the running submission (e.g., <code>squeue | grep &lt;username&gt;</code> or <code>squeue --user $NETID</code>).</p>
+<hr />
+<h2 id="hpc-slurm-and-jobs-submissions">HPC, SLURM and Jobs Submissions<a class="headerlink" href="#hpc-slurm-and-jobs-submissions" title="Permanent link">&para;</a></h2>
+<figure style="display: flex; justify-content: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Slurm_logo.svg/1200px-Slurm_logo.svg.png" alt="SLURM" style="width: 300px; margin-right: 20px;">
+    <img src="https://static.wikia.nocookie.net/enfuturama/images/8/80/Slurm-1-.jpg" alt="Slurm futurama" style="width: 300px;">
+</figure>
+<figcaption style="text-align: center;">
+    SLURM not <a href="https://futurama.fandom.com/wiki/Slurm" style="text-decoration: none; color: blue;">Slurm</a>.
+</figcaption>
+
+<p>All of the UA HPC systems run on a workload manager and job scheduler named <a href="https://slurm.schedmd.com/documentation.html">SLURM</a> (Simple Linux Utility for Resource Management). It's designed to manage and schedule computing resources such as CPUs, GPUs, memory, and storage across a cluster of interconnected nodes.</p>
+<p>You can learn more on SLURM and HPC system commands <a href="https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989875/Running+Jobs+with+Slurm">here</a>. </p>
+<h3 id="job-submissions">Job Submissions<a class="headerlink" href="#job-submissions" title="Permanent link">&para;</a></h3>
+<p>There are 2 ways one can submit jobs onto the HPC system. The first is to run a <strong>batch job</strong>, which is the more popular submission type, whilst the other is by requesting an <strong>interactive node</strong>.</p>
+<h4 id="batch-jobs">Batch jobs<a class="headerlink" href="#batch-jobs" title="Permanent link">&para;</a></h4>
+<p>As we are not going to be using batch submissions, we are not going to be going into too much detail. However, here is what you need to know. For more details on running batch jobs, visit the <a href="https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989875/Running+Jobs+with+Slurm">official documentation page on batch jobs</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Writing a Batch Script</p>
+<p>Batch scripts require a number of job <strong>directives</strong>. These are similar to the Dockerfile instructions, but instead of telling Docker how to build the image, these instead tell the SLURM system what to do with the job. The essential directives are the following:</p>
+<table>
+<thead>
+<tr>
+<th>Directive</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>#SBATCH --account=group_name</code></td>
+<td>Specify the account where hours are charged.</td>
+</tr>
+<tr>
+<td><code>#SBATCH --partition=partition_name</code></td>
+<td>Set the job partition. This determines your job's priority and the hours charged.</td>
+</tr>
+<tr>
+<td><code>#SBATCH --time=DD-HH:MM:SS</code></td>
+<td>Set the job's runtime limit in days, hours, minutes, and seconds. A single job cannot exceed 10 days or 240 hours.</td>
+</tr>
+<tr>
+<td><code>#SBATCH --nodes=N</code></td>
+<td>Allocate N nodes to your job.</td>
+</tr>
+<tr>
+<td><code>#SBATCH --cpus-per-task=M</code> <br> and <br> <code>#SBATCH --ntasks=N</code></td>
+<td>ntasks specifies the number of tasks (or processes) the job will run. By default, you will be allocated one CPU/task. This can be increased by including the additional directive --cpus-per-task.</td>
+</tr>
+<tr>
+<td><code>#SBATCH --mem=Ngb</code></td>
+<td>Select N gb of memory per node. If "gb" is not included, this value defaults to MB.</td>
+</tr>
+</tbody>
+</table>
+<p>After setting your directives, you can instruct the HPC to do what you require similar to a bash script.</p>
+<p>Here's an example of a batch job:</p>
+<div class="highlight"><pre><span></span><code>#!/bin/bash
+#SBATCH --job-name=blast_job          # Job name
+#SBATCH --partition=standard          # Sets the job priority to standard
+#SBATCH --nodes=1                     # Number of nodes
+#SBATCH --ntasks=1                    # Number of tasks (processes) per node
+#SBATCH --cpus-per-task=4             # Number of CPU cores per task
+#SBATCH --mem=8G                      # Memory per node (in this case, 8GB)
+#SBATCH --time=02:00:00               # Time limit (HH:MM:SS)
+
+# Load necessary modules
+module load blast/2.12.0              # Load BLAST module (adjust version as needed)
+
+# Change to the directory where the job will run
+cd $SLURM_SUBMIT_DIR
+
+# Define input and output files
+query_file=&quot;query.fasta&quot;              # Input query file (FASTA format)
+database_file=&quot;database.fasta&quot;        # BLAST database file (FASTA format)
+output_file=&quot;blast_results.out&quot;       # Output file for BLAST results
+
+# Run BLAST command
+blastp -query $query_file -db $database_file -out $output_file -evalue 0.001 -num_threads $SLURM_CPUS_PER_TASK
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Submitting a Batch Script</p>
+<ul>
+<li>To submit jobs you need to use <code>sbatch</code>, such as <code>sbatch script.slurm</code></li>
+<li>To cancel your job you do <code>scancel</code>, such as <code>scancel $JOBID</code> or <code>scancel -u $NETID</code></li>
+</ul>
+<p>This will submit your job to the queue. Execution will depend on your submission type (partition).</p>
+</div>
+</div>
+<h4 id="launching-an-interactive-node">Launching an Interactive Node<a class="headerlink" href="#launching-an-interactive-node" title="Permanent link">&para;</a></h4>
+<p>An <strong>interactive node</strong>, unlike batch jobs which are run asynchronously, allows immediate access to compute. Similar to batch jobs, interactive nodes are submitted to the queue, but once available, you will receive a prompt for a node with the selected resources. Read more on how to launch interactive jobs in <a href="https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75989825/Interactive+Jobs">the official documentation</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">The Quick and Dirty</p>
+<p>Don't need a lot of resources and just want access to the compute?</p>
+<p>Just type <code>interactive</code>. </p>
+<p>Disclaimer: you may require to wait longer as your job is going to fall in the <code>windfall</code> queue.</p>
+</div>
+<p>Following are a list of useful flags (options) for setting up the interactive node.</p>
+<table>
+<thead>
+<tr>
+<th>Flag</th>
+<th>Default value</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-n</code></td>
+<td>1</td>
+<td>Number of CPUs requested per node</td>
+<td>interactive -n 8</td>
+</tr>
+<tr>
+<td><code>-m</code></td>
+<td>4GB</td>
+<td>Memory per CPU</td>
+<td>interactive -m 5GB</td>
+</tr>
+<tr>
+<td><code>-a</code></td>
+<td>none</td>
+<td>Account (group) to charge</td>
+<td>interactive -a datalab</td>
+</tr>
+<tr>
+<td><code>--partition=</code></td>
+<td>windfall</td>
+<td>Partition to determine CPU time charges and is set to windfall when no account is specified, and is <strong>set to standard when an account is provided.</strong></td>
+<td>interactive --partition=windfall</td>
+</tr>
+<tr>
+<td><code>-t</code></td>
+<td>01:00:00</td>
+<td>Time allocated to session.</td>
+<td>interactive -t 08:00:00</td>
+</tr>
+<tr>
+<td><code>-N</code></td>
+<td>1</td>
+<td>Number of nodes.</td>
+<td>There is no reason to exceed 1 node unless the number of CPUs requested is greater than the number of CPUs per node on a given cluster.</td>
+</tr>
+</tbody>
+</table>
+<p>An example for an interactive node is:</p>
+<div class="highlight"><pre><span></span><code>interactive -n 8 -m 16GB -a datalab -t 02:00:00 
+</code></pre></div>
+<p>The above example will request an interactive node with 8 cores, 16GB RAM, "charging" the datalab, running for 2 hours. Try it!  </p>
+<div class="admonition note">
+<p class="admonition-title">Modules</p>
+<p>There are 100s of tools installed on the HPC, few of which are available on the login screen. These tools are available only during a batch job submission or within interactive jobs.</p>
+<p>To see what tools are already running, or which are available, you will need to use the <code>module</code> command.</p>
+<div class="admonition tip">
+<p class="admonition-title">Helpful <code>module</code> commands</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>module list</code></td>
+<td>Lists loaded modules</td>
+</tr>
+<tr>
+<td><code>module avail</code></td>
+<td>Lists available modules</td>
+</tr>
+<tr>
+<td><code>module spider</code></td>
+<td>Lists ALL modules</td>
+</tr>
+<tr>
+<td><code>module load</code></td>
+<td>Loads a module</td>
+</tr>
+<tr>
+<td><code>module help</code></td>
+<td>Help command!</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr />
+<h2 id="singularityapptainer">Singularity/Apptainer<a class="headerlink" href="#singularityapptainer" title="Permanent link">&para;</a></h2>
+<p>In 2021, the Sylabs, the developers behind the original Singularity, made a fork of the original project and renamed it <a href="https://github.com/apptainer/singularity">SingularityCE (Community Edition)</a>. This would allow for the SingularityCE to be compliat with FOSS and allowing for the community to contribute to the builds. The Singularity team then joined the <a href="https://en.wikipedia.org/wiki/Linux_Foundation">Linux Foundation</a> and decided to rename their effor to <a href="https://github.com/apptainer/apptainer"><strong>Apptainer</strong></a>. </p>
+<p>The technology behind Singularity/Apptainer is similar to the one of Docker, but, as mentioned before, it was created with the HPC in mind, and therefore bypasses the requirement of sudo.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Until now we have used Singularity/Apptainer to refer to the same software. Onwards, you can decide whether to use Singularity <em>OR</em> Apptainer; in order to keep up with the latest release, we are going to be executing apptainer commands. </p>
+</div>
+<details class="info">
+<summary>Docker vs SingularityCE &amp; Apptainer in the blink of an eye</summary>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span> Apptainer and SingularityCE are 100% compatible with Docker but they do have some distinct differences</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.81 10.25c-.06-.04-.56-.43-1.64-.43-.28 0-.56.03-.84.08-.21-1.4-1.38-2.11-1.43-2.14l-.29-.17-.18.27c-.24.36-.43.77-.51 1.19-.2.8-.08 1.56.33 2.21-.49.28-1.29.35-1.46.35H2.62c-.34 0-.62.28-.62.63 0 1.15.18 2.3.58 3.38.45 1.19 1.13 2.07 2 2.61.98.6 2.59.94 4.42.94.79 0 1.61-.07 2.42-.22 1.12-.2 2.2-.59 3.19-1.16A8.3 8.3 0 0 0 16.78 16c1.05-1.17 1.67-2.5 2.12-3.65h.19c1.14 0 1.85-.46 2.24-.85.26-.24.45-.53.59-.87l.08-.24zm-17.96.99h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H3.85c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.43 0h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H6.28c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.47 0h1.75c.1 0 .17-.07.17-.16V9.5c0-.08-.06-.16-.17-.16H8.75c-.08 0-.15.07-.15.16v1.58c0 .09.06.16.15.16m2.44 0h1.77c.08 0 .15-.07.15-.16V9.5c0-.08-.06-.16-.15-.16h-1.77c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16M6.28 9h1.76c.08 0 .16-.09.16-.18V7.25c0-.09-.07-.16-.16-.16H6.28c-.09 0-.16.06-.16.16v1.57c.01.09.07.18.16.18m2.47 0h1.75c.1 0 .17-.09.17-.18V7.25c0-.09-.06-.16-.17-.16H8.75c-.08 0-.15.06-.15.16v1.57c0 .09.06.18.15.18m2.44 0h1.77c.08 0 .15-.09.15-.18V7.25c0-.09-.07-.16-.15-.16h-1.77c-.08 0-.15.06-.15.16v1.57c0 .09.07.18.15.18m0-2.28h1.77c.08 0 .15-.07.15-.16V5c0-.1-.07-.17-.15-.17h-1.77c-.08 0-.15.06-.15.17v1.56c0 .08.07.16.15.16m2.46 4.52h1.76c.09 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16h-1.76c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16"/></svg></span> Docker</strong></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> Docker containers run as <code>root</code></p>
+<ul>
+<li>This privilege is almost never supported by administrators of High Performance Computing (HPC) centers. Meaning Docker is not, and will likely never be, installed natively on your HPC cluster.</li>
+</ul>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> uses compressed layers to create one image</p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span> SingularityCE &amp; Apptainer</strong>:</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span>  Same user and group identity inside as outside the container</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span>  User only has <code>root</code> privileges if elevated with <code>sudo</code> when the container is run</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span>  Can run and modify any existing Docker image</p>
+<ul>
+<li>These key differences allow Singularity to be installed on most HPC centers. Because you can run virtually all Docker containers in Singularity, you can effectively run Docker on an HPC. </li>
+</ul>
+</details>
+<h3 id="general-executable-commands">General Executable Commands<a class="headerlink" href="#general-executable-commands" title="Permanent link">&para;</a></h3>
+<p>Resources:</p>
+<ul>
+<li><a href="https://cc.cyverse.org/singularity/intro/">https://cc.cyverse.org/singularity/intro/</a></li>
+<li><a href="https://cc.cyverse.org/singularity/hpc/">https://cc.cyverse.org/singularity/hpc/</a></li>
+<li><a href="https://cc.cyverse.org/singularity/advanced/">https://cc.cyverse.org/singularity/advanced/</a></li>
+</ul>
+<p>Apptainer’s <a href="https://apptainer.org/docs/user/main/cli.html" target="_blank">command line interface</a> allows you to build and interact with containers transparently. You can run programs inside a container as if they were running on your host system. You can easily redirect IO, use pipes, pass arguments, and access files, sockets, and ports on the host system from within a container.</p>
+<h4 id="help"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> help<a class="headerlink" href="#help" title="Permanent link">&para;</a></h4>
+<p>The <code>help</code> command gives an overview of Apptainer options and subcommands as follows:</p>
+<div class="highlight"><pre><span></span><code> $ apptainer help pull
+Pull an image from a URI
+
+Usage:
+  apptainer pull [pull options...] [output file] &lt;URI&gt;
+
+Description:
+  The &#39;pull&#39; command allows you to download or build a container from a given
+  URI. Supported URIs include:
+
+  library: Pull an image from the currently configured library
+      library://user/collection/container[:tag]
+
+  docker: Pull a Docker/OCI image from Docker Hub, or another OCI registry.
+      docker://user/image:tag
+
+  shub: Pull an image from Singularity Hub
+      shub://user/image:tag
+
+  oras: Pull a SIF image from an OCI registry that supports ORAS.
+      oras://registry/namespace/image:tag
+
+  http, https: Pull an image using the http(s?) protocol
+      https://example.com/alpine.sif
+
+Options:
+      --arch string           architecture to pull from library (default
+                              &quot;amd64&quot;)
+      --arch-variant string   architecture variant to pull from library
+      --dir string            download images to the specific directory
+      --disable-cache         do not use or create cached images/blobs
+      --docker-host string    specify a custom Docker daemon host
+      --docker-login          login to a Docker Repository interactively
+  -F, --force                 overwrite an image file if it exists
+  -h, --help                  help for pull
+      --library string        download images from the provided library
+      --no-cleanup            do NOT clean up bundle after failed build,
+                              can be helpful for debugging
+      --no-https              use http instead of https for docker://
+                              oras:// and library://&lt;hostname&gt;/... URIs
+
+
+Examples:
+  From a library
+  $ apptainer pull alpine.sif library://alpine:latest
+
+  From Docker
+  $ apptainer pull tensorflow.sif docker://tensorflow/tensorflow:latest
+  $ apptainer pull --arch arm --arch-variant 6 alpine.sif docker://alpine:latest
+
+  From Shub
+  $ apptainer pull apptainer-images.sif shub://vsoch/apptainer-images
+
+  From supporting OCI registry (e.g. Azure Container Registry)
+  $ apptainer pull image.sif oras://&lt;username&gt;.azurecr.io/namespace/image:tag
+
+
+For additional help or support, please visit https://apptainer.org/help/
+</code></pre></div>
+<h4 id="search"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> search<a class="headerlink" href="#search" title="Permanent link">&para;</a></h4>
+<p>Just like with Docker, you can <code>search</code> the Apptainer container <a href="https://apptainer.org/docs/user/1.0/library_api.html">registries</a> for images.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer search tensorflow
+</code></pre></div>
+<h4 id="pull"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> pull<a class="headerlink" href="#pull" title="Permanent link">&para;</a></h4>
+<p>The easiest way to use a Apptainer is to <code>pull</code> an existing container from one of the Registries.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer pull library://lolcow
+</code></pre></div>
+<p>Not only you can pull fromt the Apptainer registries/libraries, but you can pull from Docker.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer pull docker://alpine
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">In my humble opinion...</p>
+<p>This is whre Apptainer shines: you can pull from Docker and run Docker built images on the HPC! These are automatically converted to Apptainer images (<code>.sif</code>) and executable on the HPC!</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">... so where are the Apptainer <code>.sif</code> images stored?</p>
+<p>Right where in the directory you are pulling them to. Check with <code>cd</code>!</p>
+</div>
+<h3 id="obtaining-images">Obtaining Images<a class="headerlink" href="#obtaining-images" title="Permanent link">&para;</a></h3>
+<p>As metioned earlier, you can use the <code>pull</code> command to download pre-built images from a number of Container Registries, here we'll be focusing on the <a href="https://hub.docker.com/">DockerHub</a>.</p>
+<p>Container Registries:</p>
+<ul>
+<li><code>library://</code> - images hosted on Sylabs Cloud</li>
+<li><code>docker://</code> - images hosted on Docker Hub</li>
+<li><code>localimage://</code> - images saved on your machine</li>
+<li><code>yum://</code> - yum based systems such as CentOS and Scientific Linux</li>
+<li><code>debootstrap://</code> - apt based systems such as Debian and Ubuntu</li>
+<li><code>arch://</code> - Arch Linux</li>
+<li><code>busybox://</code> - BusyBox</li>
+<li><code>zypper://</code> - zypper based systems such as Suse and OpenSuse</li>
+<li><code>shub://</code> - (archived) images hosted on Singularity Hub, no longer maintained</li>
+</ul>
+<h4 id="pulling-an-image-from-singularity-hub">Pulling an image from Singularity Hub<a class="headerlink" href="#pulling-an-image-from-singularity-hub" title="Permanent link">&para;</a></h4>
+<p>Similar to previous example, in this example I am pulling a base Ubuntu
+container from Singularity-Hub:</p>
+<div class="highlight"><pre><span></span><code>$ apptainer pull shub://singularityhub/ubuntu
+INFO:    Downloading shub image
+88.6MiB / 88.6MiB [=============================================================================] 100 % 39.1 MiB/s 0s
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Re/naming</p>
+<p>You can give the  the container using the <code>--name</code> flag: such as <code>apptainer pull --name my-own-ubuntu-pulled-image.sif shub://singularityhub/ubuntu</code></p>
+</div>
+<h4 id="pulling-an-image-from-docker-hub">Pulling an image from Docker Hub<a class="headerlink" href="#pulling-an-image-from-docker-hub" title="Permanent link">&para;</a></h4>
+<p>This example pulls an <code>ubuntu:22.04</code> image from DockerHub and saves it to the working directory.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer pull docker://ubuntu:22.04
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob bccd10f490ab done
+Copying config ca2b0f2696 done
+Writing manifest to image destination
+Storing signatures
+2024/03/27 20:14:50  info unpack layer: sha256:bccd10f490ab0f3fba61b193d1b80af91b17ca9bdca9768a16ed05ce16552fcb
+INFO:    Creating SIF file...
+</code></pre></div>
+<h3 id="interacting-with-images">Interacting with Images<a class="headerlink" href="#interacting-with-images" title="Permanent link">&para;</a></h3>
+<p>You can interact with images in several ways such as <code>run</code>, <code>shell</code> and <code>exec</code>.</p>
+<p>For these examples we will use a <code>cowsay_latest.sif</code> image that can be pulled from the Docker Hub.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer pull docker://tswetnam/cowsay
+INFO:    Converting OCI blobs to SIF format
+INFO:    Starting build...
+Getting image source signatures
+Copying blob 05e030abce7b done
+Copying blob b4624b3efe06 done
+Copying blob 6cf436f81810 done
+Copying blob 987088a85b96 done
+Copying blob d42beb8ded59 done
+Copying config ee9e20351a done
+Writing manifest to image destination
+Storing signatures
+2024/03/27 20:16:29  info unpack layer: sha256:6cf436f81810f067c6d4ffca6793eae7cb6d38456715b0707d8a5a2d1acccf12
+2024/03/27 20:16:29  warn rootless{dev/full} creating empty file in place of device 1:7
+2024/03/27 20:16:29  warn rootless{dev/null} creating empty file in place of device 1:3
+2024/03/27 20:16:29  warn rootless{dev/ptmx} creating empty file in place of device 5:2
+2024/03/27 20:16:29  warn rootless{dev/random} creating empty file in place of device 1:8
+2024/03/27 20:16:29  warn rootless{dev/tty} creating empty file in place of device 5:0
+2024/03/27 20:16:29  warn rootless{dev/urandom} creating empty file in place of device 1:9
+2024/03/27 20:16:29  warn rootless{dev/zero} creating empty file in place of device 1:5
+2024/03/27 20:16:30  info unpack layer: sha256:987088a85b9606eb474a365eb210db765ff0d011ee099a6e3de5087435c6f966
+2024/03/27 20:16:30  info unpack layer: sha256:b4624b3efe0617e59ed3998407eafdbe1cb6451346a6cabd066b6e253f50efb1
+2024/03/27 20:16:30  info unpack layer: sha256:d42beb8ded595df5627ad4ef31bf528a6fdbfbd11d82f9023152738d6b05a7fa
+2024/03/27 20:16:30  info unpack layer: sha256:05e030abce7b562606031bcc54646a868984685f4c89c7c354f34f1f6e502917
+INFO:    Creating SIF file..
+
+$ ls
+alpine_latest.sif  lolcow_latest.sif  ubuntu_22.04.sif  cowsay_latest.sif
+</code></pre></div>
+<h4 id="run"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h4>
+<p>Apptainer containers contain <a href="https://www.sylabs.io/guides/3.0/user-guide/definition_files.html#runscript">runscripts</a>. These are user defined scripts that define the actions a container should perform when someone runs it. The runscript can be triggered with the <code>run</code> command, or simply by calling the container as though it were an executable.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer run cowsay_latest.sif
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+ ____________________________________
+/ Q: Do you know what the death rate \
+\ around here is? A: One per person. /
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+</code></pre></div>
+<h4 id="shell"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> shell<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h4>
+<p>The <code>shell</code> command allows you to spawn a new shell within your container and interact with it as though it were a small virtual machine.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer shell cowsay_latest.sif
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+(ocelote) Apptainer&gt;
+</code></pre></div>
+<p>The change in prompt indicates that you have entered the container (though you should not rely on that to determine whether you are in container or not).</p>
+<p>Once inside of a Apptainer container, you are the same user as you are on the host system.</p>
+<div class="highlight"><pre><span></span><code>(ocelote) Apptainer&gt; whoami
+cosi
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Type <code>exit</code> to exit the container.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">The more you know <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m18.09 11.77 1.47 6.33L14 14.74 8.44 18.1l1.46-6.33L5 7.5l6.47-.54L14 1l2.53 5.96L23 7.5zM2 12.43c.19 0 .38-.06.55-.17l3.2-2.11-1.57-1.36-2.73 1.8c-.461.3-.589.91-.29 1.41.2.27.52.43.84.43m-.84 9.12c.2.29.52.45.84.45.19 0 .38-.05.55-.16l4.11-2.71.34-1.37.31-1.45-5.86 3.85c-.461.31-.589.93-.29 1.39m.29-6.17a1 1 0 0 0-.29 1.38c.2.3.52.45.84.45.19 0 .38-.05.55-.16l5.42-3.55.27-1.19-.92-.81z"/></svg></span></p>
+<p><code>shell</code> also works with the <code>library://</code>, <code>docker://</code>, and <code>shub://</code> URIs.
+This creates an <strong>ephemeral container</strong>* that disappears when the shell is
+exited.</p>
+<p><strong>Ephemeral container</strong>*: a short-lived container instance that is created dynamically to perform a specific task or process and then terminated once the task is complete. These containers are typically used for one-off jobs, temporary operations, or short-duration tasks within a larger computing environment.</p>
+</div>
+<h4 id="exec"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> exec<a class="headerlink" href="#exec" title="Permanent link">&para;</a></h4>
+<p>The exec command allows you to execute a custom command within a container by specifying the image file. For instance, to execute the <code>cowsay</code> program within the <code>cowsay_latest.sif</code> container:</p>
+<div class="highlight"><pre><span></span><code>$ apptainer exec cowsay_latest.sif cowsay whoaaaa the grass is soooo green inside the HPC!
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+ _________________________________________
+/ whoaaaa the grass is soooo green inside \
+\ the HPC!                                /
+ -----------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+</code></pre></div>
+<p>This  also creates an ephemeral container that executes a command and disappears.</p>
+<h4 id="inspect"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.152.682a2.25 2.25 0 0 1 2.269 0l.007.004 6.957 4.276a2.28 2.28 0 0 1 1.126 1.964v7.516c0 .81-.432 1.56-1.133 1.968l-.002.001-11.964 7.037-.004.003c-.706.41-1.578.41-2.284 0l-.026-.015-6.503-4.502a2.27 2.27 0 0 1-1.096-1.943V9.438c0-.392.1-.77.284-1.1l.003-.006.014-.026c.197-.342.48-.627.82-.827h.002L13.152.681Zm.757 1.295h-.001L2.648 8.616l6.248 4.247a.78.78 0 0 0 .758-.01h.001l11.633-6.804-6.629-4.074a.75.75 0 0 0-.75.003ZM8.517 14.33a2.3 2.3 0 0 1-.393-.18l-.023-.014-6.102-4.147v7.003c0 .275.145.528.379.664l.025.014 6.114 4.232zM18 9.709l-3.25 1.9v7.548L18 17.245Zm-7.59 4.438-.002.002a2.3 2.3 0 0 1-.391.18v7.612l3.233-1.902v-7.552Zm9.09-5.316v7.532l2.124-1.25a.78.78 0 0 0 .387-.671V7.363Z"/></svg></span> inspect<a class="headerlink" href="#inspect" title="Permanent link">&para;</a></h4>
+<p>The <code>inspect</code> command will provide information about labels, metadata, and environmental variables.</p>
+<div class="highlight"><pre><span></span><code>$ apptainer inspect cowsay_latest.sif
+org.label-schema.build-arch: amd64
+org.label-schema.build-date: Wednesday_27_March_2024_20:16:32_MST
+org.label-schema.schema-version: 1.0
+org.label-schema.usage.apptainer.version: 1.2.5-1.el7
+org.label-schema.usage.singularity.deffile.bootstrap: docker
+org.label-schema.usage.singularity.deffile.from: tswetnam/cowsay
+</code></pre></div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-10-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

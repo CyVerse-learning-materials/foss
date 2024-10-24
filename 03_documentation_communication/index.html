@@ -1,0 +1,1826 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/03_documentation_communication/">
+      
+      
+        <link rel="prev" href="../02_managing_data/">
+      
+      
+        <link rel="next" href="../04_talk_to_computer/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>3. Documentation & Communication - CyVerse Foundational Open Science Skills 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation-communication" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Documentation & Communication
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_intro_open_sci/" class="md-tabs__link">
+          
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    CyVerse Foundational Open Science Skills 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Before FOSS Starts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_intro_open_sci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_managing_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-great-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Great Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-repositories-for-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Repositories for Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hands-on-building-a-github-pages-website-using-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hands-on: Building a GitHub Pages Website using MkDocs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hands-on: Building a GitHub Pages Website using MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#further-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-paced-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Paced Material
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. How to Talk to Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_reproducibility_I/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Reproducibility I: Software Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_reproducibility_II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Reproducibility II: Run Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reproducibility_III/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Remote Computing: Cyverse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_reproducibility_IV/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capstone Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-great-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Great Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-repositories-for-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Repositories for Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hands-on-building-a-github-pages-website-using-mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hands-on: Building a GitHub Pages Website using MkDocs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hands-on: Building a GitHub Pages Website using MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#further-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-paced-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Paced Material
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="documentation-communication"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4v18h16v2H4c-1.1 0-2-.9-2-2V4zm11 3h5.5L15 1.5zM8 0h8l6 6v12c0 1.11-.89 2-2 2H8a2 2 0 0 1-2-2V2c0-1.11.89-2 2-2m9 16v-2H8v2zm3-4v-2H8v2z"/></svg></span> Documentation &amp; <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7.5c.69 0 1.27.23 1.76.7s.74 1.07.74 1.8q0 1.575-1.5 2.28V21h-2v-8.72Q9.5 11.575 9.5 10c0-.73.26-1.33.74-1.8s1.07-.7 1.76-.7m4.69-2.2c1.25 1.25 1.92 2.81 2.01 4.7 0 1.8-.67 3.38-2.01 4.72L15.5 13.5c1-.91 1.5-2.08 1.5-3.5 0-1.33-.5-2.5-1.5-3.5zM6.09 4.08C4.5 5.67 3.7 7.64 3.7 10s.8 4.3 2.39 5.89l-1.17 1.22C3 15.08 2 12.7 2 10s1-5.06 2.92-7.09zm12.99-1.17C21 4.94 22 7.3 22 10c0 2.8-1 5.17-2.92 7.11l-1.17-1.22C19.5 14.3 20.3 12.33 20.3 10s-.8-4.33-2.39-5.92zM7.31 5.3 8.5 6.5C7.5 7.42 7 8.58 7 10c0 1.33.5 2.5 1.5 3.5l-1.19 1.22C5.97 13.38 5.3 11.8 5.3 10s.67-3.36 2.01-4.7"/></svg></span> Communication<a class="headerlink" href="#documentation-communication" title="Permanent link">&para;</a></h1>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<p>After this lesson, you should be able to:</p>
+<ul>
+<li>Identify and explain different types of project documentation (both internal and external)</li>
+<li>Describe tools and approaches to creating your own documentation</li>
+<li>Create your own GitHub Pages website (!)</li>
+</ul>
+</div>
+<p><br/></p>
+<h2 id="project-documentation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4v18h16v2H4c-1.1 0-2-.9-2-2V4zm11 3h5.5L15 1.5zM8 0h8l6 6v12c0 1.11-.89 2-2 2H8a2 2 0 0 1-2-2V2c0-1.11.89-2 2-2m9 16v-2H8v2zm3-4v-2H8v2z"/></svg></span> Project Documentation<a class="headerlink" href="#project-documentation" title="Permanent link">&para;</a></h2>
+<p><span style="font-size:1.3em;"><em>A great Open Scientist is someone who documents their work and shares it with the world. This means going well beyond peer-reviewed publications.</em></span></p>
+<ul>
+<li>
+<p>Describe how to use or build your computer code or tools</p>
+</li>
+<li>
+<p>Share best practices for a method or protocol</p>
+</li>
+<li>
+<p>Create and share educational material so others in your field can learn from you</p>
+</li>
+<li>
+<p>Share a first-person account of your journey through a project</p>
+</li>
+</ul>
+<p><br/>
+<br/></p>
+<figure>
+<p><a href="https://documentation.divio.com/" target="blank" rel="xkcd"><img alt="xkcd" src="../assets/documentation.webp" /> </a>
+    <figcaption> Read more in depth on the documentation system here: <a href="https://documentation.divio.com">https://documentation.divio.com</a> </figcaption></p>
+</figure>
+<details class="question">
+<summary>Explanining the quadrants</summary>
+<ul>
+<li><strong>Tutorials</strong>: Lessons! Tutorials are lessons that take the reader by the hand to understand how the basics of a tool work. They are what your project needs in order to show a beginner that they can achieve something with it. The techical teaching we do in FOSS are mostly tutorials. For example, we do simple tutorials to teach the mechanics of version control. </li>
+<li><strong>How-to-guides</strong>: Recipes! How-to-guides take the reader through the steps required to acheive a specific outcome or answer a specific question. An example how-to-guide could be a guide on how to install a specific software on a specific operating system.</li>
+<li><strong>References</strong>: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.</li>
+<li><strong>Explanation</strong>: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.</li>
+</ul>
+</details>
+<p><br/>
+<br/></p>
+<h3 id="tips-for-great-documentation">Tips for Great Documentation<a class="headerlink" href="#tips-for-great-documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 10c-.24 0-.45.09-.59.25-.14.15-.2.37-.17.61l.5 2.99C2.82 14.5 3.4 15 4 15h3c.64 0 1.36-.56 1.5-1.18l1.06-3.19c.04-.13.01-.32-.06-.44-.11-.12-.28-.19-.5-.19zm4 7H4C2.38 17 .96 15.74.76 14.14l-.5-2.99C.15 10.3.39 9.5.91 8.92S2.19 8 3 8h6c.83 0 1.58.35 2.06.96.11.15.21.31.29.49.43-.09.87-.09 1.29 0 .08-.18.18-.34.3-.49C13.41 8.35 14.16 8 15 8h6c.81 0 1.57.34 2.09.92.51.58.75 1.38.65 2.19l-.51 3.07C23.04 15.74 21.61 17 20 17h-3c-1.56 0-3.08-1.19-3.46-2.7l-.9-2.71c-.38-.28-.91-.28-1.29 0l-.92 2.78C10.07 15.82 8.56 17 7 17m8-7c-.22 0-.39.07-.5.19-.08.12-.1.31-.05.51l1.01 3.05c.18.69.9 1.25 1.54 1.25h3c.59 0 1.18-.5 1.25-1.11l.51-3.07c.03-.2-.03-.42-.17-.57A.77.77 0 0 0 21 10z"/></svg></span> Clarity</strong>: Documentation should be easy to understand with clear language and no ambiguity.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13"/></svg></span> Completeness</strong>: It must cover all essential details, leaving nothing crucial undocumented.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M448 256a192 192 0 1 0-384 0 192 192 0 1 0 384 0M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160m0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288m-32 144a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg></span> Accuracy</strong>: Information should be up-to-date and correct to prevent errors and misunderstandings.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.996 0-5.11 2.878L12 5.76l5.115-2.878ZM6.032 3.36.918 6.237 6.036 9.12l5.115-2.879Zm11.929 0-5.112 2.878 5.115 2.882 5.118-2.879zM12 11.52.918 17.76 12 24l11.082-6.241Z"/></svg></span> Organization</strong>: A logical structure and clear organization make it easy to navigate and find information.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64v256c0 17.7 14.3 32 32 32s32-14.3 32-32zM64 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80"/></svg></span> Relevance</strong>: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.</li>
+</ul>
+<p><br/></p>
+<h3 id="public-repositories-for-documentation">Public Repositories for Documentation<a class="headerlink" href="#public-repositories-for-documentation" title="Permanent link">&para;</a></h3>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Readme</em></summary>
+<ul>
+<li>On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an <a href="https://github.com/jeffgillan/geospatial_pipeline">example</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Wiki</em></summary>
+<ul>
+<li>Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an <a href="https://github.com/ua-datalab/Geospatial_Workshops/wiki">example</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Pages</em></summary>
+<ul>
+<li><a href="https://pages.github.com/">Github Pages</a> are hosted directly from your GitHub repository</li>
+<li>GitHub pages are free, fast, and easy to build, but limited in use
+of subdomain or URLs</li>
+<li>You can pull templates from other GitHub users for your website, e.g. <a href="http://themes.jekyllrc.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.073 24q-.523 0-1.02-.189a2.85 2.85 0 0 1-1.726-3.402l-.015-.006.09-.226L12.399 2.01c.105-.27.057-.91.006-1.267a.5.5 0 0 1 .008-.24l.008-.023.006-.015V.458l.009-.019c.108-.292.45-.439 1.008-.439.673 0 1.602.21 2.551.573.797.307 1.523.689 2.033 1.075.602.45.842.854.707 1.2l-.031.045-.016.015a.8.8 0 0 1-.15.165c-.314.271-.764.735-.84.945l-7.063 18.421-.016-.006a2.87 2.87 0 0 1-2.543 1.561H8.07zm-2.187-3.718-.02.05A2.36 2.36 0 0 0 7.23 23.35q.407.156.837.154c.971 0 1.83-.585 2.188-1.5l.027-.061 6.959-18.09c.146-.39.84-1.02.979-1.14l.016-.016c.012-.015.02-.015.02-.03 0-.06-.061-.27-.557-.645-.479-.36-1.154-.72-1.904-1.005-.868-.328-1.768-.539-2.368-.539-.39 0-.524.082-.545.126v.04c.016.104.147 1.035-.034 1.515l-6.962 18.12zm8.95-11.507s-.964 1.109-1.843 1.509c-.88.398-1.529.293-2.32.756-.789.461-1.188 1.103-1.188 1.103L6.27 20.505c-.348.944.168 2.05 1.125 2.42.96.369 2.04-.12 2.412-1.056zM9.905 18.76c.104-.041.225 0 .266.105.042.104 0 .222-.105.264-.104.043-.225 0-.266-.104a.204.204 0 0 1 .105-.265m-1.014-1.802a.297.297 0 0 1-.397-.155.296.296 0 0 1 .154-.397c.154-.07.335 0 .398.153.074.15.008.314-.155.39zm.286-1.096a.58.58 0 0 1 .287-.758.574.574 0 0 1 .75.285.583.583 0 0 1-.285.757c-.3.126-.629 0-.765-.285zm2.426-2.258a.295.295 0 0 1 .398.15c.07.154 0 .336-.153.399a.297.297 0 0 1-.399-.155.293.293 0 0 1 .154-.397zm-1.293-1.379c.105-.042.226 0 .266.105.043.104 0 .226-.104.266-.104.042-.226 0-.265-.104a.205.205 0 0 1 .103-.267M13.681 1.14c.1-.261.993-.162 1.995.226.999.384 1.729.909 1.63 1.17-.104.264-.997.164-1.996-.221-1.005-.385-1.734-.91-1.632-1.176z"/></svg></span> Jekyll themes</a></li>
+<li>The FOSS website is rendered using <a href="https://pages.github.com/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Pages</a> using <a href="https://www.mkdocs.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> MkDocs</a> and the <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material</a> theme for MkDocs.</li>
+<li>Other popular website generator for GitHub Pages is <a href="https://getbootstrap.com/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663M24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268m-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876"/></svg></span> Bootstrap.js</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> Material MkDocs</em></summary>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material Design</a> theme for MkDocs, a static site generator geared towards (technical) project documentation.</li>
+<li>Publish via GitHub Actions</li>
+<li>Uses open source Material or ReadTheDocs Themes</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.732 0a59 59 0 0 0-4.977.218V24a63 63 0 0 1 3.619-.687q.255-.041.509-.078.323-.05.644-.096l.205-.03zm1.18.003V22.96a61 61 0 0 1 12.333-.213V1.485A61 61 0 0 0 8.912.003m1.707 1.81h.015c3.06.088 6.125.404 9.167.95a.59.59 0 0 1 .476.686.59.59 0 0 1-.569.484.6.6 0 0 1-.116-.009 60.6 60.6 0 0 0-8.992-.931.59.59 0 0 1-.573-.607.59.59 0 0 1 .592-.572zm-4.212.028a.59.59 0 0 1 .578.565.59.59 0 0 1-.564.614 60 60 0 0 0-2.355.144l-.04.002a.59.59 0 0 1-.595-.542.59.59 0 0 1 .54-.635q1.2-.097 2.401-.148zm4.202 2.834h.015a61.6 61.6 0 0 1 9.167.8.59.59 0 0 1 .488.677.59.59 0 0 1-.602.494 1 1 0 0 1-.076-.006 60.4 60.4 0 0 0-8.99-.786.59.59 0 0 1-.584-.596.59.59 0 0 1 .582-.583m-4.211.097a.59.59 0 0 1 .587.555.59.59 0 0 1-.554.622q-1.18.069-2.356.184l-.04.003a.59.59 0 0 1-.603-.533.59.59 0 0 1 .53-.644q1.2-.117 2.4-.187zM10.6 7.535h.015c3.06-.013 6.125.204 9.167.65a.59.59 0 0 1 .498.67.59.59 0 0 1-.593.504 1 1 0 0 1-.076-.006 60 60 0 0 0-8.992-.638.59.59 0 0 1-.592-.588.59.59 0 0 1 .573-.592m1.153 2.846a61 61 0 0 1 8.02.515.59.59 0 0 1 .509.66.59.59 0 0 1-.586.514 1 1 0 0 1-.076-.005 60 60 0 0 0-8.99-.492.59.59 0 0 1-.603-.577.59.59 0 0 1 .578-.603q.573-.012 1.148-.012m1.139 2.832a61 61 0 0 1 6.871.394.59.59 0 0 1 .52.652.59.59 0 0 1-.577.523 1 1 0 0 1-.076-.004 60 60 0 0 0-8.991-.344.59.59 0 0 1-.61-.568.59.59 0 0 1 .567-.611q1.147-.042 2.296-.042"/></svg></span> ReadTheDocs</em></summary>
+<ul>
+<li>publishing websites via
+<a href="https://readthedocs.com/dashboard/" target="_blank">ReadTheDocs.com</a> costs money.</li>
+<li>You can work in an offline state, where you develop the materials
+and publish them to your localhost using
+<a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html" target="_blank">Sphinx</a></li>
+<li>You can work on a website template in a GitHub repository, and
+pushes are updated in near real time using ReadTheDocs.com.</li>
+<li>Here is example documentation of Pytorch using ReadTheDocs: <a href="https://pytorch.org/docs/stable/index.html" target="_blank">PyTorch</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg></span> Bookdown</em></summary>
+<ul>
+<li><a href="https://bookdown.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg></span> Bookdown</a> is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.</li>
+<li>Bookdown websites can be hosted by <a href="https://www.rstudio.com/products/connect/" target="_blank">RStudio
+Connect</a></li>
+<li>You can publish a Bookdown website using <a href="https://github.blog/2016-08-17-simpler-github-pages-publishing/" target="_blank">Github
+Pages</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.746c-6.627 0-12 3.599-12 8.037 0 3.897 4.144 7.144 9.64 7.88V16.26c-2.924-.915-4.925-2.755-4.925-4.877 0-3.035 4.084-5.494 9.12-5.494 5.038 0 8.757 1.683 8.757 5.494 0 1.976-.999 3.379-2.662 4.272.09.066.174.128.258.216.169.149.25.363.372.544 2.128-1.45 3.44-3.437 3.44-5.631 0-4.44-5.373-8.038-12-8.038m-2.111 4.99v13.516l4.093-.002-.002-5.291h1.1c.225 0 .321.066.549.25.272.22.715.982.715.982l2.164 4.063 4.627-.002-2.864-4.826s-.086-.193-.265-.383a2.2 2.2 0 0 0-.582-.416c-.422-.214-1.149-.434-1.149-.434s3.578-.264 3.578-3.826-3.744-3.63-3.744-3.63zm4.127 2.93 2.478.002s1.149-.062 1.149 1.127c0 1.165-1.149 1.17-1.149 1.17h-2.478zm1.754 6.119c-.494.049-1.012.079-1.54.088v1.807a17 17 0 0 0 2.37-.473l-.471-.891s-.108-.183-.248-.394c-.039-.054-.08-.098-.111-.137"/></svg></span> Quarto</em></summary>
+<ul>
+<li><a href="https://quarto.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.746c-6.627 0-12 3.599-12 8.037 0 3.897 4.144 7.144 9.64 7.88V16.26c-2.924-.915-4.925-2.755-4.925-4.877 0-3.035 4.084-5.494 9.12-5.494 5.038 0 8.757 1.683 8.757 5.494 0 1.976-.999 3.379-2.662 4.272.09.066.174.128.258.216.169.149.25.363.372.544 2.128-1.45 3.44-3.437 3.44-5.631 0-4.44-5.373-8.038-12-8.038m-2.111 4.99v13.516l4.093-.002-.002-5.291h1.1c.225 0 .321.066.549.25.272.22.715.982.715.982l2.164 4.063 4.627-.002-2.864-4.826s-.086-.193-.265-.383a2.2 2.2 0 0 0-.582-.416c-.422-.214-1.149-.434-1.149-.434s3.578-.264 3.578-3.826-3.744-3.63-3.744-3.63zm4.127 2.93 2.478.002s1.149-.062 1.149 1.127c0 1.165-1.149 1.17-1.149 1.17h-2.478zm1.754 6.119c-.494.049-1.012.079-1.54.088v1.807a17 17 0 0 0 2.37-.473l-.471-.891s-.108-.183-.248-.394c-.039-.054-.08-.098-.111-.137"/></svg></span> Quarto</a> is an open-source scientific and technical publishing system built on Pandoc</li>
+<li><a href="https://quarto.org/docs/websites/">Build a website</a> using Quarto's template builder</li>
+<li><a href="https://quarto.org/docs/publishing/github-pages.html">Build with Github Pages</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.157 22.201A1.784 1.799 0 0 1 5.374 24a1.784 1.799 0 0 1-1.784-1.799 1.784 1.799 0 0 1 1.784-1.799 1.784 1.799 0 0 1 1.783 1.799M20.582 1.427a1.415 1.427 0 0 1-1.415 1.428 1.415 1.427 0 0 1-1.416-1.428A1.415 1.427 0 0 1 19.167 0a1.415 1.427 0 0 1 1.415 1.427M4.992 3.336A1.047 1.056 0 0 1 3.946 4.39a1.047 1.056 0 0 1-1.047-1.055A1.047 1.056 0 0 1 3.946 2.28a1.047 1.056 0 0 1 1.046 1.056m7.336 1.517c3.769 0 7.06 1.38 8.768 3.424a9.36 9.36 0 0 0-3.393-4.547 9.24 9.24 0 0 0-5.377-1.728A9.24 9.24 0 0 0 6.95 3.73a9.36 9.36 0 0 0-3.394 4.547c1.713-2.04 5.004-3.424 8.772-3.424m.001 13.295c-3.768 0-7.06-1.381-8.768-3.425a9.36 9.36 0 0 0 3.394 4.547A9.24 9.24 0 0 0 12.33 21a9.24 9.24 0 0 0 5.377-1.729 9.36 9.36 0 0 0 3.393-4.547c-1.712 2.044-5.003 3.425-8.772 3.425Z"/></svg></span> JupyterBook</em></summary>
+<ul>
+<li><a href="https://jupyterbook.org/en/stable/start/overview.html" target="_blank">Based on Project Jupyter</a> <code>ipynb</code> and MarkDown</li>
+<li>Uses <code>conda</code> package management</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> GitBook</em></summary>
+<ul>
+<li><a href="https://docs.gitbook.com/" target="_blank">GitBook</a> websites use MarkDown syntax</li>
+<li>Free for open source projects, paid plans are available</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 600 600 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257M23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26 66 66 0 0 1-.734 1.225c-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04"/></svg></span> Confluence Wikis</em></summary>
+<ul>
+<li><a href="https://www.atlassian.com/software/confluence/use-cases/wiki" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 600 600 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257M23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26 66 66 0 0 1-.734 1.225c-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04"/></svg></span> Confluence Wikis</a> are another tool for documenting your work. You can see an example from <a href="https://wiki.cyverse.org" target="_blank">Cyverse</a>.</li>
+</ul>
+</details>
+<p><br/></p>
+<div class="admonition quote">
+<p class="admonition-title">Things to remember about Documentation</p>
+<ul>
+<li>
+<p>Documentation should be written in such a way that people who did not write the documentation can read and then use or read and then teach others in the applications of the material.</p>
+</li>
+<li>
+<p>Documentation is best treated as a living document, but version control is necessary to maintain it</p>
+</li>
+<li>
+<p>Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.</p>
+</li>
+</ul>
+</div>
+<p><br/>
+<br/></p>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Public Communication</p>
+<p>Communicating with the public and other members of your science community (in addition to traditional peer-review publications and conferences) is one of the most important parts of your science!</p>
+<p>There are many ways scientists use social media and the web to share their data science ideas:</p>
+<ol>
+<li><strong><a href="https://www.sciencemag.org/news/2018/08/scientists-do-you-want-succeed-twitter-here-s-how-many-followers-you-need" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23"/></svg></span> "Science Twitter" (now <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg></span>)</a></strong> -
+    is really just regular <a href="https://twitter.com/hashtag/science?lang=en" target="_blank">Twitter</a>, but with a focus on following other scientists and organizations, and tweeting about research you're interested in. By building up a significant following, more people will know you, know about your work, and you'll have a higher likelihood of meeting other new collaborators.    <ul>
+<li>Since the rebranding to <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg></span>, a lot of the scientific communities on Twitter have now moved to <a href="https://sciencemastodon.com/explore"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38q.398-.092.786-.213c.585-.184 1.27-.39 1.774-.753a.06.06 0 0 0 .023-.043v-1.809a.05.05 0 0 0-.02-.041.05.05 0 0 0-.046-.01 20.3 20.3 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.6 5.6 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422q.059-.011.11-.024c2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545m-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102q0-1.965 1.011-3.12c.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164q1.012 1.155 1.012 3.12z"/></svg></span> Mastodon</a>, an <a href="https://github.com/mastodon/mastodon">open-source</a> self-hosted alternative to social media.</li>
+</ul>
+</li>
+<li><strong>Blogging Platforms</strong> such as <a href="https://medium.com/" target="_blank">Medium</a> are a great place to self publish your writing on just about any topic. It's free to sign up and start blogging, but does have a fee for accessing premium content. Some of my favorite blogs include <a href="https://towardsdatascience.com/" target="_blank">Toward Data Science</a> and <a href="https://medium.com/@cholmes" target="_blank">Chris Holmes</a>.</li>
+<li><strong>Community groups</strong> - There are lists (and lists of lists) of <a href="https://www.google.com/search?q=list+of+professional+science+organizations" target="_blank">nationals research organizations</a>, in which a researcher can become involved. These older organziations
+    still rely on official websites, science journal blogs, and email lists to communicate with their members. In the earth sciences there are open groups which focus on communication like the <a href="https://www.esipfed.org/" target="_blank">Earth Science Information Partners (ESIP)</a> with progressive ideas about how data and science can be done. Other groups, like <a href="https://carpentries.org/" target="_blank">The Carpentries</a> and <a href="https://resbazblog.wordpress.com/about/" target="_blank">Research Bazaar</a> are focused on data science training and digital literacy.</li>
+<li><strong>Podcasts</strong> - Creating and distributing audio content to masses is easier than ever before. There are many podcast hosting platforms including <a href="https://podcasters.spotify.com/" target="_blank">Spotify</a>, <a href="https://www.podbean.com/" target="_blank">Podbean</a>, <a href="https://www.acast.com/" target="_blank">Acast</a>, and <a href="https://libsyn.com/" target="_blank">Libsyn</a>. From there is it simple to make your podcast availble in the <a href="https://rss.com/blog/how-to-submit-podcast-to-google-podcasts/" target="_blank">Google Podcast</a> app or <a href="https://transistor.fm/upload-podcast-itunes-apple/" target="_blank">Apple Podcast</a> app. </li>
+<li><strong>Webinars</strong> - With platforms such as <a href="https://zoom.us/" target="_blank">Zoom</a>, <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a>, and <a href="https://meet.google.com/" target="_blank">Google Meet</a>, it is so easy nowadays to host a webinar touting and explaining your science. </li>
+<li><strong>Youtube</strong> - The king of video sharing platforms is a great place to post content promoting your science (and yourself!). For example, <a href="https://www.youtube.com/@CyverseOrgProject" target="_blank">Cyverse</a> posts lots of content on cyberinfrastructure and data processing pipelines. Some of my favorite podcasts hosted on Youtube include <a href="https://www.youtube.com/@StarTalk" target="_blank">StarTalk</a> and <a href="https://www.youtube.com/@lexfridman" target="_blank">Lex Fridman</a>.<ul>
+<li>CyVerse and the Data Science Institute have a number of videos that can help you expand your science. Navigate our <a href="https://www.youtube.com/@UArizonaDataLab/videos">DataLab YouTube channel</a> to learn more on AI, Natural Language Processing (NLP), geospatial science, bioinformatics/genomics and project management; Go to our <a href="https://www.youtube.com/@CyverseOrgProject">CyVerse Channel</a> to see the various projects CyVerse is involved in, or learn tips and tricks on how CyVerse works.</li>
+</ul>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p><strong>Remember: Personal and Professional Accounts are Not Isolated</strong></p>
+<p>You decide what you post on the internet. Your scientist identity may be
+a part of your personal identity on social media, it might be separate.
+A future employer or current employer can see your old posts. What you
+post in your personal accounts can be considered a reflection of the
+organization you work for and may be used in decisions about hiring or
+dismissal.</p>
+</div>
+</div>
+<p><br/>
+<br/></p>
+<hr />
+<h2 id="hands-on-building-a-github-pages-website-using-mkdocs">Hands-on: Building a GitHub Pages Website using MkDocs<a class="headerlink" href="#hands-on-building-a-github-pages-website-using-mkdocs" title="Permanent link">&para;</a></h2>
+<p>This section is built in order to educate on and simplify the steps necessary that newcomers need to take in order to build a successful GitHub Pages hosted website. </p>
+<p>This tutorial is inspired by <a href="https://academicpages.github.io/">academicpages</a>, a Jekyll themed template created in order to help scientists and academics build their own websites.</p>
+<p>This tutorial will cover the necessary files and repository structure you require in order to build a successful personal website. </p>
+<p>The website we will create is going to be hosted on <a href="https://pages.github.com/">GitHub Pages</a> using the <a href="https://en.wikipedia.org/wiki/MkDocs">MkDocs site generator</a> and <a href="https://squidfunk.github.io/mkdocs-material/">material for MkDocs theme</a>.</p>
+<p><strong>How does this work?</strong></p>
+<ul>
+<li>You will build a website on GitHub, which will host it on GitHub pages. This tutorial does not require a local git copy of the repository.</li>
+<li>MkDocs is a static website generator: using the <a href="https://www.markdownguide.org/basic-syntax/">Markdown language</a> you can create tables, format paragraphs, add images etc.; Through a <a href="https://docs.github.com/en/actions">GitHub Action</a>, MkDocs will take your Markdown formatted pages and create the necessary HTML for a website.</li>
+<li>The material for MkDocs theme will "prettify" your website, rendering similar to the FOSS documentation, the <a href="https://learning.cyverse.org/">CyVerse Learning center</a>, or the <a href="https://hpc.arizona.edu/">U of A HPC documentation</a>.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">This tutorial will create the basic requirements for the website. It will be up to you to populate it further. <br> <br> You can base your formatting on either the <a href="https://github.com/CyVerse-learning-materials/foss">FOSS materials</a> or find out more from the <a href="https://squidfunk.github.io/mkdocs-material/">material for MkDocs theme pages</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Repository Explanation</p>
+<p>A GitHub hosted website running the <a href="https://squidfunk.github.io/mkdocs-material/getting-started/">MkDocs-material</a> theme requires the following files in order to function:</p>
+<ul>
+<li>A <code>docs</code> folder:<ul>
+<li>A folder that contains all the documents necessary to populate the website's pages.</li>
+<li><strong>All of the documents that the user needs to change are in here</strong>.</li>
+</ul>
+</li>
+<li>A <code>mkdocs.yml</code> file:<ul>
+<li>A <code>yml</code> file which contains critical information on the website structure, including themes, fonts, and extensions.</li>
+</ul>
+</li>
+<li>A <code>requirements.txt</code> file:<ul>
+<li>A file with a list of software necessary to build the website, primilily used by GitHub Actions.</li>
+</ul>
+</li>
+<li>A <code>.github/workflow</code> folder:<ul>
+<li>Contains the <code>ghpages.yml</code> file that controls the GitHub Action.</li>
+</ul>
+</li>
+</ul>
+<p>The structure of the basic repository is the following:</p>
+<div class="highlight"><pre><span></span><code>.
+├── README.md
+├── mkdocs.yml              &lt;- Governing file for website building
+├── requirements.txt        &lt;- Requirements file for pip installation (required by website)      
+├── docs                           
+│   ├── assets              &lt;- Folder for images and additional graphic assets
+│   └── index.md            &lt;- Main website home page
+└── .github
+    └── workflows
+        └── ghpages.yml     &lt;- GitHub Actions controlling file
+</code></pre></div>
+<p>Upon pushing changes, a <code>gh-pages</code> branch will be automatically created by the GitHub Action; it is where the website is rendered from.</p>
+</div>
+<p>There are 2 ways of doing this exercise: </p>
+<ul>
+<li>Direction A: Forking or Importing a <a href="https://github.com/CyVerse-learning-materials/FOSS-mkdocs-template">pre existing template</a></li>
+<li>Direction B: Creating the materials by yourself. </li>
+</ul>
+<p>Here below are the steps for Direction B.</p>
+<p>The workflow for this exercise is the following:</p>
+<ol>
+<li>Create the repository.</li>
+<li>Create the <code>docs</code> folder and populate it with <code>index.md</code>.</li>
+<li>Address the <em>Settings</em> such that GitHub Actions have the correct settings.</li>
+<li>Create a <code>requirements.txt</code> (used by GitHub Actions to build the website).</li>
+<li>Create the <code>mkdocs.yml</code> (used by MkDocs to create the sttructure).</li>
+<li>Create a GitHub workflow file <code>.github/workflows</code></li>
+<li>Address the <em>Settings</em> to deploy the website from a newly created branch.</li>
+<li>Edit pages in your own time.</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">All the code is available on this page or on the HackMD. Ideally, all you need to do is copy and paste it!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Prerequisites</p>
+<p>You will require the following in case you want to add code locally.</p>
+<details class="info">
+<summary>Create a GitHub account</summary>
+<p>Navigate to the <a href="https://github.com/">GitHub website</a> and click <em>Sign Up</em>, and follow the on screen instructions.</p>
+</details>
+<p>Additionally, you can choose between Generating a Personal Access Token or using SSH keys. This is useful if you want to work locally and push your changes to GitHub. We are going to cover this further in next week's lesson on <a href="../05_version_control/">Version Control</a>.</p>
+<details class="info">
+<summary>Choice A: Generate a Personal Access Token</summary>
+<p>You can follow the official documentation on how to generate Tokens <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">here</a>. We  discussed how to generate tokens in <a href="https://foss.cyverse.org/00_basics/#adding-code-locally">Week 0</a>. Here's are quick steps you can follow in order to setup your account on your machine using tokens:</p>
+<ol>
+<li>On your coumputer:<ol>
+<li>Clone your repository (<code>git clone &lt;repository&gt;</code>)</li>
+<li>Make changes where necessary, and <strong>add</strong> (<code>git add &lt;changed files&gt;</code>), <strong>commit</strong> (<code>git commit -m "&lt;message on changes&gt;"</code>) and <strong>push</strong> your changes (<code>git push origin</code>).</li>
+<li>You should be prompted to logging in your GitHub account. Put your email <strong>but not your password</strong>. Instead, open your web browser and follow the steps below:</li>
+</ol>
+</li>
+<li>On GitHub:<ol>
+<li>Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)</li>
+<li>Scroll to the bottom of the left hand side menu to find <em>Developer settings</em> and open it.</li>
+<li>Click <em>Personal access tokens</em> &gt; <em>Tokens (classic)</em></li>
+<li>Click <em>Generate new token</em> &gt; <em>Generate new token (classic)</em>. You might need to input your Authentification code if you have enabled 2FA.</li>
+<li>Give it a name, and all the scopes you require (tip: select all scopes and <em>No Expiration</em>), then click <em>Generate Token</em>. <strong>Copy the new generated Token</strong></li>
+</ol>
+</li>
+<li>Back on your computer:<ol>
+<li>If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.</li>
+<li><strong>Paste</strong> your Token here, and you should be logging in. Your changes should then be saved to GitHub.</li>
+</ol>
+</li>
+</ol>
+</details>
+<details class="info">
+<summary>Choice B: Connecting via SSH</summary>
+<p>The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). </p>
+<p>As a setup step, see if your computer is already connected to GitHub by doing <code>ssh -T git@github.com</code>. If the response message is <code>git@github.com: Permission denied (publickey).</code> it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:</p>
+<ol>
+<li>Generate an SSH key with a level of encryption that you prefer: <code>ssh-keygen -t ed25519 -C &lt;your github email&gt;</code>. This command generates an SSH key with <a href="https://ed25519.cr.yp.to/">ed25519</a> encryption (harder to crack!) and adds your email as "comment" (<code>-C</code>, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+<div class="highlight"><pre><span></span><code>Your identification has been saved in /c/Users/&lt;user&gt;/.ssh/id_ed25519
+Your public key has been saved in /c/Users/&lt;user&gt;/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o &lt;your github email&gt;
+The key&#39;s randomart image is:
++--[ED25519 256]--+
+|^B== o.          |
+|%*=.*.+          |
+|+=.E =.+         |
+| .=.+.o..        |
+|....  . S        |
+|.+ o             |
+|+ =              |
+|.o.o             |
+|oo+.             |
++----[SHA256]-----+
+</code></pre></div></li>
+<li>Upon generating the ssh key, copy it. You can reveal it by doing <code>cat ~/.ssh/id_ed25519.pub</code>.</li>
+<li>In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select <em>Settings</em> and then <em>SSH and GPG keys</em>. Here, click on <em>New SSH Key</em>, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. </li>
+</ol>
+<p>Optional: if you want to check if you successfully linked your computer to GitHub, do <code>ssh -t git@github.com</code>. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.</p>
+</details>
+</div>
+<ol>
+<li>Create your own repository<ul>
+<li>Add a README and a license and keep the repository public</li>
+</ul>
+</li>
+<li>Create a <code>docs</code> folder<ul>
+<li>Within the folder, create an <code>index.md</code> file</li>
+</ul>
+</li>
+<li>Navigate to <em>Settings</em> &gt; <em>Actions</em> &gt; <em>General</em>:<ul>
+<li>Under <em>Action Permissions</em> select <em>Allow all actions and reusalbe workflows</em></li>
+<li>Under <em>Workflow permissions</em> select <em>Read and write permissions</em> and <em>Allow GitHub Actions to create and approve pull requests</em></li>
+</ul>
+</li>
+<li>
+<p>Create an <code>requirements.txt</code> file and populate it with the following requirement list:</p>
+<details class="abstract">
+<summary>Expand for code!</summary>
+<div class="highlight"><pre><span></span><code>bump2version
+coverage
+flake8
+grip
+ipykernel
+livereload
+nbconvert&gt;=7
+pip
+sphinx
+tox
+twine
+watchdog
+wheel
+mkdocs-git-revision-date-plugin 
+mkdocs-jupyter 
+mkdocs-material 
+mkdocs-pdf-export-plugin
+mkdocstrings 
+mkdocstrings-crystal
+mkdocstrings-python-legacy
+#pygments&gt;=2.10,&lt;2.12
+#pymdown-extensions&lt;9.4
+
+# Requirements for core
+jinja2&gt;=3.0.2
+markdown&gt;=3.2
+mkdocs&gt;=1.4.0
+mkdocs-material-extensions&gt;=1.0.3
+pygments&gt;=2.12
+pymdown-extensions&gt;=9.4
+
+# Requirements for plugins
+requests&gt;=2.26
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Create an <code>mkdocs.yml</code> file and  populate it with the following:</p>
+<details class="abstract">
+<summary>Expand for code!</summary>
+<div class="highlight"><pre><span></span><code>site_name: Name of your website
+site_description: Tell people what this website is about
+site_author: Who you are
+site_url: &#39;https://foss.cyverse.org&#39;
+
+# Repository
+repo_name: The repository name
+repo_url: &#39;https://github.com/CyVerse-learning-materials/foss&#39;
+edit_uri: edit/main/docs/
+# Copyright
+copyright: &#39;Copyright &amp;copy; 2023 - 2024&#39;
+
+
+# Configuration
+theme:
+    name: material
+highlightjs: true
+font:
+    text: Roboto
+    code: Regular
+palette:
+    scheme: default
+
+# Features  
+features:
+- navigation.instant
+- navigation.tracking
+- navigation.tabs
+- navigation.tabs.sticky
+- navigation.indexes
+- navigation.top
+- toc.follow
+
+# 404 page
+static_templates:
+    - 404.html
+
+# Search feature
+include_search_page: false
+search_index_only: true
+
+# Palette and theme (uses personalized colours)
+language: en
+palette:
+    primary: custom
+    accent: custom
+icon:
+    logo: material/cogs
+    favicon: material/cogs
+
+# Page tree
+nav:
+- Home: index.md
+
+# Extra Plugins
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+        include_source: True
+        ignore_h1_titles: True
+
+# Extensions (leave as is)
+markdown_extensions:
+- admonition
+- abbr
+- attr_list
+- def_list
+- footnotes
+- meta
+- md_in_html
+- toc:
+    permalink: true
+    title: On this page
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink:
+    repo_url_shorthand: true
+    user: squidfunk
+    repo: mkdocs-material
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+        - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+- pymdownx.tabbed
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Create a <code>.github/workflows</code> folder and add a <code>ghpages.yml</code> with the following:</p>
+<details class="abstract">
+<summary>Expand for code!</summary>
+<div class="highlight"><pre><span></span><code>name: Publish docs via GitHub
+on:
+push:
+    branches:
+    - main
+
+jobs:
+build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+        with:
+        python-version: 3.9
+    - name: run requirements file
+        run:  pip install -r requirements.txt 
+    - name: Deploy docs
+        run: mkdocs gh-deploy --force
+        env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>Navigate to <em>Settings</em> &gt; <em>Pages</em> and make sure that <em>Source</em> is <em>Deploy from a branch</em> and Branch is <em>gh-pages</em>, <em>/(root)</em></p>
+<ul>
+<li>You should be able to access your website at <code>https://&lt;github-username&gt;.github.io/</code>. If you cannot find your website, go to the repository's settings page and navigate to <em>Pages</em>: your website address will be there.</li>
+</ul>
+</li>
+<li>Edit documents as necessary.<ul>
+<li>Don't forget to <strong>add</strong>, <strong>commit</strong> and <strong>push</strong> changes!</li>
+<li>Changes will only be visible on the website after a successful push.</li>
+<li>After each push, next to the commit identifier GitHub will show either a yellow circle (<img alt="🟡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f7e1.svg" title=":yellow_circle:" />, meaning building), green check (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span>, meaning success), or red cross (<img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/274c.svg" title=":x:" />, meaning failure).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="further-documentation">Further Documentation<a class="headerlink" href="#further-documentation" title="Permanent link">&para;</a></h3>
+<p>Here are some guides that you may find useful:</p>
+<ul>
+<li><a href="https://www.markdownguide.org/cheat-sheet/">MarkDown cheatsheet</a>: for correct MarkDown synthax.</li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/getting-started/">MkDocs-material</a>: a starting guide to MkDocs Material theme (<a href="https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search">massive list of supported emojis here</a>).</li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/reference/">MkDocs-material References</a>: more sophisticated documentation for MkDocs Material. </li>
+<li><a href="https://www.youtube.com/watch?v=UQZseJjR_OI&amp;t=3750s&amp;ab_channel=CyVerse.org">YouTube link to FOSS 2022</a>: Michael explains (~1h mark) his Jekyll-based website and gives a tutorial on how to use <a href="https://academicpages.github.io/">academicpages</a>.</li>
+</ul>
+<hr />
+<h2 id="self-paced-material">Self-Paced Material<a class="headerlink" href="#self-paced-material" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://towardsdatascience.com/15-data-science-slack-communities-to-join-8fac301bd6ce" target="_blank">15 Data Science Communities to Join</a></li>
+<li><a href="https://towardsdatascience.com/python-and-slack-a-natural-match-60b136883d4d" target="_blank">Python &amp; Slack</a></li>
+<li><a href="https://samapriya.github.io/projects/slack_notifier_cli_addon/" target="_blank">Slack CLI notifications</a></li>
+<li><a href="https://www.meetup.com/" target="_blank">Meetups</a></li>
+</ul>
+<details class="info">
+<summary>GitHub Pages Website Quickstarts</summary>
+<ul>
+<li>
+<p><a href="https://pages.github.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> <em>GitHub Pages</em></a></p>
+<ol>
+<li>Create a GitHub account</li>
+<li>Clone the repo <code>https://github.com/username/username.github.io</code></li>
+<li>Create an <code>index.html</code></li>
+<li>Push it back to GitHub</li>
+</ol>
+</li>
+<li>
+<p><a href="https://readthedocs.org/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.732 0a59 59 0 0 0-4.977.218V24a63 63 0 0 1 3.619-.687q.255-.041.509-.078.323-.05.644-.096l.205-.03zm1.18.003V22.96a61 61 0 0 1 12.333-.213V1.485A61 61 0 0 0 8.912.003m1.707 1.81h.015c3.06.088 6.125.404 9.167.95a.59.59 0 0 1 .476.686.59.59 0 0 1-.569.484.6.6 0 0 1-.116-.009 60.6 60.6 0 0 0-8.992-.931.59.59 0 0 1-.573-.607.59.59 0 0 1 .592-.572zm-4.212.028a.59.59 0 0 1 .578.565.59.59 0 0 1-.564.614 60 60 0 0 0-2.355.144l-.04.002a.59.59 0 0 1-.595-.542.59.59 0 0 1 .54-.635q1.2-.097 2.401-.148zm4.202 2.834h.015a61.6 61.6 0 0 1 9.167.8.59.59 0 0 1 .488.677.59.59 0 0 1-.602.494 1 1 0 0 1-.076-.006 60.4 60.4 0 0 0-8.99-.786.59.59 0 0 1-.584-.596.59.59 0 0 1 .582-.583m-4.211.097a.59.59 0 0 1 .587.555.59.59 0 0 1-.554.622q-1.18.069-2.356.184l-.04.003a.59.59 0 0 1-.603-.533.59.59 0 0 1 .53-.644q1.2-.117 2.4-.187zM10.6 7.535h.015c3.06-.013 6.125.204 9.167.65a.59.59 0 0 1 .498.67.59.59 0 0 1-.593.504 1 1 0 0 1-.076-.006 60 60 0 0 0-8.992-.638.59.59 0 0 1-.592-.588.59.59 0 0 1 .573-.592m1.153 2.846a61 61 0 0 1 8.02.515.59.59 0 0 1 .509.66.59.59 0 0 1-.586.514 1 1 0 0 1-.076-.005 60 60 0 0 0-8.99-.492.59.59 0 0 1-.603-.577.59.59 0 0 1 .578-.603q.573-.012 1.148-.012m1.139 2.832a61 61 0 0 1 6.871.394.59.59 0 0 1 .52.652.59.59 0 0 1-.577.523 1 1 0 0 1-.076-.004 60 60 0 0 0-8.991-.344.59.59 0 0 1-.61-.568.59.59 0 0 1 .567-.611q1.147-.042 2.296-.042"/></svg></span> <em>ReadTheDocs.org</em></a></p>
+<ol>
+<li><a href="https://docs.readthedocs.io/en/stable/install.html">Install</a></li>
+<li><a href="https://github.com/rtfd/readthedocs.org">Use Github</a></li>
+<li><a href="https://readthedocs.org/accounts/signup/">Create a ReadTheDocs account</a></li>
+</ol>
+</li>
+<li>
+<p><a href="https://squidfunk.github.io/mkdocs-material/getting-started/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> <em>Material MkDocs</em></a></p>
+<ol>
+<li><a href="https://squidfunk.github.io/mkdocs-material/getting-started/#installation">Install Material</a> <ol>
+<li>use a <a href="https://github.com/CyVerse-learning-materials/foss/blob/mkdocs/requirements.txt"><code>reqirements.txt</code></a> </li>
+<li>or <code>pip install mkdocs-material</code></li>
+</ol>
+</li>
+<li>Clone a repository with an existing template or create a new repo with <code>mkdocs new .</code> </li>
+<li>Run <code>python -m mkdocs serve</code> to build and serve locally</li>
+<li>Open your browser to preview the build at <a href="https://localhost:8000">https://localhost:8000</a>`</li>
+</ol>
+</li>
+<li>
+<p><a href="https://bookdown.org/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg></span> <em>Bookdown</em></a></p>
+<ol>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">Install R and RStudio</a></li>
+<li>Install Bookdown package with <code>install.packages("bookdown", dependencies=TRUE)</code></li>
+<li>Open the Bookdown demo and get started</li>
+</ol>
+</li>
+<li>
+<p><a href="https://quarto.org/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.746c-6.627 0-12 3.599-12 8.037 0 3.897 4.144 7.144 9.64 7.88V16.26c-2.924-.915-4.925-2.755-4.925-4.877 0-3.035 4.084-5.494 9.12-5.494 5.038 0 8.757 1.683 8.757 5.494 0 1.976-.999 3.379-2.662 4.272.09.066.174.128.258.216.169.149.25.363.372.544 2.128-1.45 3.44-3.437 3.44-5.631 0-4.44-5.373-8.038-12-8.038m-2.111 4.99v13.516l4.093-.002-.002-5.291h1.1c.225 0 .321.066.549.25.272.22.715.982.715.982l2.164 4.063 4.627-.002-2.864-4.826s-.086-.193-.265-.383a2.2 2.2 0 0 0-.582-.416c-.422-.214-1.149-.434-1.149-.434s3.578-.264 3.578-3.826-3.744-3.63-3.744-3.63zm4.127 2.93 2.478.002s1.149-.062 1.149 1.127c0 1.165-1.149 1.17-1.149 1.17h-2.478zm1.754 6.119c-.494.049-1.012.079-1.54.088v1.807a17 17 0 0 0 2.37-.473l-.471-.891s-.108-.183-.248-.394c-.039-.054-.08-.098-.111-.137"/></svg></span> <em>Quarto</em></a></p>
+<ul>
+<li><a href="https://quarto.org/docs/publishing/github-pages.html">Follow these instructions</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://jupyterbook.org/en/stable/intro.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.157 22.201A1.784 1.799 0 0 1 5.374 24a1.784 1.799 0 0 1-1.784-1.799 1.784 1.799 0 0 1 1.784-1.799 1.784 1.799 0 0 1 1.783 1.799M20.582 1.427a1.415 1.427 0 0 1-1.415 1.428 1.415 1.427 0 0 1-1.416-1.428A1.415 1.427 0 0 1 19.167 0a1.415 1.427 0 0 1 1.415 1.427M4.992 3.336A1.047 1.056 0 0 1 3.946 4.39a1.047 1.056 0 0 1-1.047-1.055A1.047 1.056 0 0 1 3.946 2.28a1.047 1.056 0 0 1 1.046 1.056m7.336 1.517c3.769 0 7.06 1.38 8.768 3.424a9.36 9.36 0 0 0-3.393-4.547 9.24 9.24 0 0 0-5.377-1.728A9.24 9.24 0 0 0 6.95 3.73a9.36 9.36 0 0 0-3.394 4.547c1.713-2.04 5.004-3.424 8.772-3.424m.001 13.295c-3.768 0-7.06-1.381-8.768-3.425a9.36 9.36 0 0 0 3.394 4.547A9.24 9.24 0 0 0 12.33 21a9.24 9.24 0 0 0 5.377-1.729 9.36 9.36 0 0 0 3.393-4.547c-1.712 2.044-5.003 3.425-8.772 3.425Z"/></svg></span> <em>JupyterBook</em></a></p>
+<ul>
+<li><a href="https://jupyterbook.org/en/stable/start/your-first-book.html">Create your first book</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://docs.gitbook.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> <em>GitBook</em></a></p>
+<ul>
+<li><a href="https://app.gitbook.com/join">Follow Template builder</a></li>
+</ul>
+</li>
+</ul>
+</details>
+<hr />
+<hr />
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-10-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

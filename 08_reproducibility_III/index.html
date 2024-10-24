@@ -1,0 +1,1855 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/08_reproducibility_III/">
+      
+      
+        <link rel="prev" href="../07_reproducibility_II/">
+      
+      
+        <link rel="next" href="../09_remote_computing_cyverse/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>8. Reproducibility III: Build Containers - CyVerse Foundational Open Science Skills 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reproducibility-iii-building-docker-containers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. Reproducibility III: Build Containers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_intro_open_sci/" class="md-tabs__link">
+          
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    CyVerse Foundational Open Science Skills 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Before FOSS Starts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_intro_open_sci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_managing_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_documentation_communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. How to Talk to Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_reproducibility_I/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Reproducibility I: Software Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_reproducibility_II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Reproducibility II: Run Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#images-vs-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images vs Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-an-example-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run an Example Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run an Example Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-launch-codespaces-from-the-r-script-containerized-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Launch Codespaces from the r-script-containerized repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-on-the-codespaces-terminal-run-the-following-command-to-run-the-docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. On the codespaces terminal, run the following command to run the docker container:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-view-rstudio-in-a-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. View Rstudio in a Browser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-run-the-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Run the Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Docker Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Docker Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-a-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing a Dockerfile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing a Dockerfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile Statements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Instructions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-the-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executable-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executable Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-to-a-registry-with-docker-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing to a Registry with docker push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-and-additional-dockerfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises and Additional Dockerfiles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Remote Computing: Cyverse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_reproducibility_IV/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capstone Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#images-vs-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images vs Containers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-an-example-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run an Example Container
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run an Example Container">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-launch-codespaces-from-the-r-script-containerized-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Launch Codespaces from the r-script-containerized repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-on-the-codespaces-terminal-run-the-following-command-to-run-the-docker-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. On the codespaces terminal, run the following command to run the docker container:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-view-rstudio-in-a-browser" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. View Rstudio in a Browser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-run-the-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Run the Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-docker-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Docker Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Docker Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-a-dockerfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing a Dockerfile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing a Dockerfile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dockerfile-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dockerfile Statements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Instructions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-the-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the Image
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executable-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executable Images
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pushing-to-a-registry-with-docker-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing to a Registry with docker push
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercises-and-additional-dockerfiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercises and Additional Dockerfiles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="reproducibility-iii-building-docker-containers">Reproducibility III: Building Docker Containers<a class="headerlink" href="#reproducibility-iii-building-docker-containers" title="Permanent link">&para;</a></h1>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<p>After this lesson, you should be able to:</p>
+<ul>
+<li>Understand the Dockerfile structure and fields </li>
+<li>Build, execute and push your own Docker image</li>
+</ul>
+</div>
+<p>In <a href="./07_reproducibility_ii.md">Reproducibility II</a> we saw how we can access and execute Docker containers. In this lesson, we continue to explore containerization, covering how we can create our own container and the various commands necessary in order to create them.</p>
+<p><br>
+<br></p>
+<h2 id="images-vs-containers">Images vs Containers<a class="headerlink" href="#images-vs-containers" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th>Image</th>
+<th>Container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>What</strong></td>
+<td>A snapshot of an application <br> containing code, libraries, dependencides <br> and files needed for the application to run</td>
+<td>A runtime instance of the Docker image</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>When</strong></td>
+<td>Created through a Dockerfile</td>
+<td>Runtime executed after Image is created</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Why</strong></td>
+<td>Reproducibility and consistency!</td>
+<td>Reproducibility and consistency!</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Where</strong></td>
+<td>Stored in an online registry (e.g., <a href="https://hub.docker.com/">Docker Hub</a>)</td>
+<td>Executed on your machine</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<h2 id="general-workflow">General Workflow<a class="headerlink" href="#general-workflow" title="Permanent link">&para;</a></h2>
+<figure>
+<p><img alt="containerexp" src="../assets/docker_lifecycle.jpg" />
+    <figcaption> The container's life cycle. Figure source: <a href="https://www.tutorialspoint.com/docker/index.htm">Tutorialspoint</a>. </figcaption></p>
+</figure>
+<p><br>
+<br></p>
+<h2 id="run-an-example-container">Run an Example Container<a class="headerlink" href="#run-an-example-container" title="Permanent link">&para;</a></h2>
+<p>The example container is located in the following Github repository <strong><a href="https://github.com/jeffgillan/r-script-containerized">https://github.com/jeffgillan/r-script-containerized</a></strong>. The docker container launches Rstudio where a user can run an R script to convert a point cloud to a canopy height model (CHM).</p>
+<figure>
+<p><img alt="" src="../assets/laz_to_tif.png" width="600" />
+    <figcaption> Rstudio running in a container</figcaption></p>
+</figure>
+<p><br></p>
+<h4 id="1-launch-codespaces-from-the-r-script-containerized-repository">1. Launch Codespaces from the <code>r-script-containerized</code> repository<a class="headerlink" href="#1-launch-codespaces-from-the-r-script-containerized-repository" title="Permanent link">&para;</a></h4>
+<figure>
+<p><img alt="open science" src="../assets/rscript_codespaces.png" width="600" />
+    <figcaption> Launch CodeSpaces from the <code>r-script-containerized</code> repository </figcaption></p>
+</figure>
+<p><br>
+<br></p>
+<h4 id="2-on-the-codespaces-terminal-run-the-following-command-to-run-the-docker-container">2. On the codespaces terminal, run the following command to run the docker container:<a class="headerlink" href="#2-on-the-codespaces-terminal-run-the-following-command-to-run-the-docker-container" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>docker run --rm -ti -e DISABLE_AUTH=true -v $(pwd):/home/rstudio/data -p 8787:8787 jeffgillan/pointcloud_to_chm:amd64
+</code></pre></div>
+<details class="tip">
+<summary>Dissecting the Docker Run Command</summary>
+<p>Within the command we are doing the following:</p>
+<table>
+<thead>
+<tr>
+<th>Flag/Option</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--rm</code></td>
+<td>Automatically remove the container when it exits</td>
+</tr>
+<tr>
+<td><code>-ti</code></td>
+<td>Allocate a pseudo-TTY (terminal) connected to the container’s stdin. It gives you an interactive terminal session in the container, allowing you to run commands in the container just as you would in a regular terminal window.</td>
+</tr>
+<tr>
+<td><code>-e DISABLE_AUTH=true</code></td>
+<td>Disable authentication for the Rstudio server</td>
+</tr>
+<tr>
+<td><code>-v $(pwd):/home/rstudio/data</code></td>
+<td>Mount the current working directory to the <code>/home/rstudio/data directory</code> in the container. This allows us to access the data on our local machine (in this case Codespaces) from within the container. The directory is where you should have pointcloud <code>.laz</code> files.</td>
+</tr>
+<tr>
+<td><code>-p 8787:8787</code></td>
+<td>Expose port 8787 on the container to port 8787 on the host machine. This allows us to access the Rstudio server from our web browser.</td>
+</tr>
+<tr>
+<td><code>jeffgillan/pointcloud_to_chm:amd64</code></td>
+<td>The name and version number of the docker image we want to run. In this case, we are running the <code>pointcloud_to_chm</code> image from the <code>jeffgillan</code> repository in Docker Hub.</td>
+</tr>
+</tbody>
+</table>
+</details>
+<figure>
+<p><img alt="" src="../assets/codespace_docker_run.png" width="600" />
+    <figcaption> <code>docker run</code> command</figcaption></p>
+</figure>
+<p><br>
+<br></p>
+<h4 id="3-view-rstudio-in-a-browser">3. View Rstudio in a Browser<a class="headerlink" href="#3-view-rstudio-in-a-browser" title="Permanent link">&para;</a></h4>
+<p>Open a new browser tab and navigate to <code>localhost:8787</code> to access the Rstudio server running in the container. In Codespaces you can click on <em>Ports</em> and then <em>Open Browser</em> to access the Rstudio server.</p>
+<figure>
+<p><img alt="" src="../assets/rstudio_screenshot.png" width="600" />
+    <figcaption> Rstudio running in a container</figcaption></p>
+</figure>
+<p><br>
+<br></p>
+<h4 id="4-run-the-script">4. Run the Script<a class="headerlink" href="#4-run-the-script" title="Permanent link">&para;</a></h4>
+<p>Open the script <code>pointcloud_to_DTM.R</code></p>
+<p>Highlight all of the code and click <em>Run</em></p>
+<figure>
+<p><img alt="" src="../assets/rstudio_screenshot2.png" width="600" /></p>
+</figure>
+<p><br>
+<br></p>
+<p>Upon completing the code, you should have a 2D plot of the tree</p>
+<figure>
+<p><img alt="" src="../assets/rstudio_screenshot4.png" width="600" /></p>
+</figure>
+<p>You should also have a new file called <code>chm.tif</code> in the mounted <code>data</code> folder. The <code>chm.tif</code> has been written to your local machine!</p>
+<figure>
+<p><img alt="" src="../assets/rstudio_screenshot5.png" width="600" /></p>
+</figure>
+<p><br>
+<br></p>
+<hr />
+<p><br></p>
+<h2 id="building-docker-images">Building Docker Images<a class="headerlink" href="#building-docker-images" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<figure>
+<p><img alt="" src="https://www.simplyrecipes.com/thmb/YcUhCId23s3dGZ-fUIaQhQMEn5c=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Rainbow-Layer-Cake-Lead-3-341176ca14d545229c16ce0e20cc1a64.jpg" width="400" />
+    <figcaption> Docker Images are just like cakes: both are made of layers! </figcaption></p>
+</figure>
+<h3 id="writing-a-dockerfile">Writing a Dockerfile<a class="headerlink" href="#writing-a-dockerfile" title="Permanent link">&para;</a></h3>
+<p>Create a file called <code>Dockerfile</code>, and add content to it as described below, e.g.</p>
+<div class="highlight"><pre><span></span><code>$ touch Dockerfile
+</code></pre></div>
+<p>Or, since we are using Codespaces, you can click the Create File button <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8zm-1 7V3.5L18.5 9zm10 11h-3v3h-2v-3h-3v-2h3v-3h2v3h3z"/></svg></span> and name it <code>Dockerfile</code></p>
+<p><br>
+<br></p>
+<div class="admonition tip">
+<p class="admonition-title">What is a Dockerfile?</p>
+<p>A Dockerfile is a text file that contains a list of commands, known as <strong>instructions</strong> used by Docker to build an image. </p>
+<p><strong>If a <em>Docker Image</em> is a cake, the <em>Dockerfile</em> is the recipe!</strong></p>
+<div class="highlight"><pre><span></span><code># Tells the Dockerfile which image to start from
+FROM rocker/geospatial:4.2.3             
+
+# Sets the initial working directory inside the container                               
+WORKDIR /home/rstudio                   
+
+# Copies the R script file from your localdirectory to the container                                   
+COPY pointcloud_to_DTM.R .              
+
+# Installs an R package                                  
+RUN R -e &quot;install.packages(&#39;RCSF&#39;, dependencies=TRUE, repos=&#39;http://cran.rstudio.com/&#39;)&quot;  
+
+#Declare the port Rstudio will run on                                        
+EXPOSE 8787
+
+# Starts the Rstudio server
+CMD [&quot;/init&quot;]      
+</code></pre></div>
+</div>
+<p><br>
+<br></p>
+<h4 id="dockerfile-statements">Dockerfile Statements<a class="headerlink" href="#dockerfile-statements" title="Permanent link">&para;</a></h4>
+<details class="abstract">
+<summary>ARG</summary>
+<p>The only command that can come before a <code>FROM</code> statement is <code>ARG</code></p>
+<p><code>ARG</code> can be used to set arguments for later in the build, e.g.,</p>
+<div class="highlight"><pre><span></span><code>ARG VERSION=latest
+
+FROM ubuntu:$VERSION
+</code></pre></div>
+</details>
+<details class="abstract">
+<summary>FROM</summary>
+<p>A valid <code>Dockerfile</code> must start with a <code>FROM</code> statement which initializes a new build stage and sets the <strong>base image</strong> for subsequent layers.</p>
+<p>We’ll start by specifying our base image, using the FROM statement</p>
+<div class="highlight"><pre><span></span><code>FROM ubuntu:latest
+</code></pre></div>
+<p>If you are building on an <code>arm64</code> or Windows system you can also give the optional <code>--platform</code> flag, e.g.,</p>
+<div class="highlight"><pre><span></span><code>FROM --platform=linux/amd64 ubuntu:latest
+</code></pre></div>
+<details class="question">
+<summary>When to use a multi-stage build pattern?</summary>
+<p>Docker has the ability to build container images from one image, and run that "builder" image from a second "base" image, in what is called a "builder pattern".</p>
+<p>Build patterns are useful if you're compiling code from (proprietary) source code and only want to feature the binary code as an executed function in the container at run time. </p>
+<p>Build patterns can greatly reduce the size of your container.</p>
+<p>You can use multiple <code>FROM</code> commands as build stages. The <code>AS</code> statement follows the <code>image:tag</code> as a psuedo argument. </p>
+<div class="highlight"><pre><span></span><code># build stage
+FROM golang:latest AS build-env
+WORKDIR /go/src/app
+ADD . /go/src/app
+RUN go mod init
+RUN cd /go/src/app &amp;&amp; go build -o hello
+
+# final stage
+FROM alpine:latest
+WORKDIR /app
+COPY --from=build-env /go/src/app /app/
+ENTRYPOINT ./hello
+</code></pre></div>
+</details>
+</details>
+<details class="abstract">
+<summary>LABEL</summary>
+<p>You can create labels which are then tagged as  JSON metadata to the image</p>
+<div class="highlight"><pre><span></span><code>LABEL author=&quot;your-name&quot; 
+LABEL email=&quot;your@email-address&quot;
+LABEL version=&quot;v1.0&quot;
+LABEL description=&quot;This is your first Dockerfile&quot;
+LABEL date_created=&quot;2022-05-13&quot;
+</code></pre></div>
+<p>You can also add labels to a container when it is run:</p>
+<div class="highlight"><pre><span></span><code>$ docker run --label description=&quot;this label came later&quot; ubuntu:latest
+
+$ docker ps -a
+
+$ docker inspect ###
+</code></pre></div>
+</details>
+<details class="abstract">
+<summary>RUN</summary>
+<p>Different than the <code>docker run</code> command is the <code>RUN</code> build function. <code>RUN</code> is used to create new layers atop the "base image"</p>
+<p>Here, we are going to install some games and programs into our base image:</p>
+<div class="highlight"><pre><span></span><code>RUN apt-get update &amp;&amp; apt-get install -y fortune cowsay lolcat
+</code></pre></div>
+<p>Here we've installed <code>fortune</code> <code>cowsay</code> and <code>lolcat</code> as new programs into our base image.</p>
+<div class="admonition warning">
+<p class="admonition-title">Best practices for building new layers</p>
+<p>Ever time you use the <code>RUN</code> command it is a good idea to use the <code>apt-get update</code> or <code>apt update</code> command to make sure your layer is up-to-date. This can become a problem though if you have a very large container with a large number of <code>RUN</code> layers. </p>
+</div>
+</details>
+<details class="abstract">
+<summary>ENV</summary>
+<p>In our new container, we need to change and update some of the environment flags. We can do this using the <code>ENV</code> command</p>
+<div class="highlight"><pre><span></span><code>ENV PATH=/usr/games:${PATH}
+
+ENV LC_ALL=C
+</code></pre></div>
+<p>Here we are adding the <code>/usr/games</code> directory to the <code>PATH</code> so that when we run the new container it will find our newly installed game commands</p>
+<p>We are also updating the "<a href="https://www.tecmint.com/set-system-locales-in-linux/">locales</a>" to set the language of the container.</p>
+</details>
+<details class="abstract">
+<summary>COPY</summary>
+<p>The <code>COPY</code> command will copy files from the directory where <code>Dockerfile</code> is kept into the new image. You must specify where to copy the files or directories</p>
+<div class="highlight"><pre><span></span><code>COPY . /app
+</code></pre></div>
+<details class="question">
+<summary>When to use <code>COPY</code> vs <code>ADD</code></summary>
+<p><code>COPY</code> is more basic and is good for files</p>
+<p><code>ADD</code> has some extra features like <code>.tar</code> extraction and URL support</p>
+</details>
+</details>
+<details class="abstract">
+<summary>CMD</summary>
+<p>The <code>CMD</code> command is used to run software in your image. In general use the ["command"] syntax:</p>
+<div class="highlight"><pre><span></span><code>CMD [&quot;executable&quot;, &quot;parameter1&quot;, &quot;parameter2&quot;]
+</code></pre></div>
+</details>
+<details class="abstract">
+<summary>ENTRYPOINT</summary>
+<p>ENTRYPOINT works similarly to <code>CMD</code> but is designed to allow you to run your container as an executable.</p>
+<div class="highlight"><pre><span></span><code>ENTRYPOINT fortune | cowsay | lolcat
+</code></pre></div>
+<p>The default <code>ENTRYPOINT</code> of most images is <code>/bin/sh -c</code> which executes a <code>shell</code> command.</p>
+<p><code>ENTRYPOINT</code> supports both the <code>ENTRYPOINT ["command"]</code> syntax and the <code>ENTRYPOINT command</code> syntax</p>
+</details>
+<details class="tip">
+<summary>What is an <em>entrypoint</em>?</summary>
+<p>An entrypoint is the initial command(s) executed upon starting the Docker container. It is listed in the <code>Dockerfile</code> as <code>ENTRYPOINT</code> and can take 2 forms: as commands followed by parameters (<code>ENTRYPOINT command param1 param2</code>)  or as an executable (<code>ENTRYPOINT [“executable”, “param1”, “param2”]</code>)</p>
+<details class="question">
+<summary>What is the difference in the <code>ENTRYPOINT</code> and <code>CMD</code></summary>
+<p>The CMD instruction is used to define what is execute when the container is run.</p>
+<p>The ENTRYPOINT instruction cannot be overridden, instead it is appended to when a new command is given to the <code>docker run container:tag new-cmd</code> statement </p>
+<p>the executable is defined with ENTRYPOINT, while CMD specifies the default parameter</p>
+</details>
+</details>
+<details class="abstract">
+<summary>USER</summary>
+<p>Most containers are run as <code>root</code> meaning that they have super-user privileges within themselves</p>
+<p>Typically, a new user is necessary in a container that is used interactively or may be run on a remote system.</p>
+<p>During the build of the container, you can create a new user with the <code>adduser</code> command and set up a <code>/home/</code> directory for them. This new user would have something like 1000:1000 <code>uid:gid</code> permissions without <code>sudo</code> privileges.</p>
+<p>As a last step, the container is run as the new <code>USER</code>, e.g., </p>
+<div class="highlight"><pre><span></span><code>ARG VERSION=18.04
+
+FROM ubuntu:$VERSION
+
+RUN useradd ubuntu &amp;&amp; \
+    chown -R ubuntu:ubuntu /home/ubuntu
+
+USER ubuntu
+</code></pre></div>
+</details>
+<details class="abstract">
+<summary>EXPOSE</summary>
+<p>You can open <a href="intro.md#understanding-ports">ports</a> using the <code>EXPOSE</code> command.</p>
+<div class="highlight"><pre><span></span><code>EXPOSE 8888
+</code></pre></div>
+<p>The above command will expose port 8888.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Running multiple containers using the same port is not trivial and would require the usage of a web server such as <a href="https://www.nginx.com/">NGINX</a>. However, you can have multiple containers interact with each other using <a href="https://docs.docker.com/compose/">Docker Compose</a>.</p>
+</div>
+</details>
+<p><br></p>
+<h3 id="summary-of-instructions">Summary of Instructions<a class="headerlink" href="#summary-of-instructions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Instruction Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>ARG</code></td>
+<td>Sets environmental variables during image building</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>FROM</code></td>
+<td>Instructs to use a specific Docker image</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>LABEL</code></td>
+<td>Adds metadata to the image</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>RUN</code></td>
+<td>Executes a specific command</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>ENV</code></td>
+<td>Sets environmental variables</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>COPY</code></td>
+<td>Copies a file from a specified location to the image</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>CMD</code></td>
+<td>Sets a command to be executed when running a container</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>ENTRYPOINT</code></td>
+<td>Configures and run a container as an executable</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>USER</code></td>
+<td>Used to set User specific information</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>EXPOSE</code></td>
+<td>exposes a specific port</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br></p>
+<hr />
+<p><br></p>
+<h3 id="building-the-image">Building the Image<a class="headerlink" href="#building-the-image" title="Permanent link">&para;</a></h3>
+<p>Once the Dockerfile has been created, we can build the image using the <code>docker build</code> command. At the codespaces terminal, run the following command:</p>
+<div class="highlight"><pre><span></span><code>docker build -t &lt;dockerhub username&gt;/pointcloud_to_chm:amd64 .
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>docker build -t jeffgillan/pointcloud_to_chm:amd64 .
+</code></pre></div>
+<details>
+<summary>Dissecting the Docker Build Command</summary>
+<ul>
+<li>The <code>-t</code> flag allows us to tag the image with a name and version number.  </li>
+<li>In the command you need to add your own DockerHub username instead of <code>&lt;dockerhub username&gt;</code>, which acts as the address to your own DockerHub Repository; <code>pointcloud_to_chm</code> is the name of the image, and <code>amd64</code> is the version tag.    </li>
+<li>The <code>.</code> at the end of the command tells docker to look in the current directory for the dockerfile.</li>
+</ul>
+</details>
+<p><br>
+<br></p>
+<hr />
+<h3 id="executable-images">Executable Images<a class="headerlink" href="#executable-images" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code> _____________________________
+&lt; Avoid reality at all costs. &gt;
+ -----------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+</code></pre></div>
+<p>Thus far we have worked using interactive containers such as RStudio. Not all containers are interactive, many (if not most of) are executables: containerized software that can take the raw input and output data without requiring further work from the user.</p>
+<p>Executable containers are usually called with </p>
+<div class="highlight"><pre><span></span><code>docker run &lt;repository&gt;/&lt;image&gt;:&lt;tag&gt; &lt;potential arguments/options&gt; &lt;input file/folder&gt;
+</code></pre></div>
+<p>An easy to reproduce example is <strong>Lolcow</strong>, which builds a small executable that outputs a "quote of the day". It does not require any input and will output to the terminal directly.</p>
+<p>You can run a prebuilt Lolcow with </p>
+<div class="highlight"><pre><span></span><code>docker run cosimichele/lolcow:f24
+</code></pre></div>
+<p>Here is the minimal recipie required to build Lolcow: </p>
+<div class="highlight"><pre><span></span><code>FROM --platform=linux/amd64 ubuntu:22.04
+
+RUN apt-get update &amp;&amp; apt-get install -y fortune cowsay lolcat
+
+ENV PATH=/usr/games:${PATH}
+
+ENV LC_ALL=C
+
+ENTRYPOINT fortune | cowsay | lolcat
+</code></pre></div>
+<p>Once built, you can execute it with <code>docker &lt;image ID/name&gt;</code> for something to brighten your day!</p>
+<hr />
+<h3 id="pushing-to-a-registry-with-docker-push">Pushing to a Registry with <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.81 10.25c-.06-.04-.56-.43-1.64-.43-.28 0-.56.03-.84.08-.21-1.4-1.38-2.11-1.43-2.14l-.29-.17-.18.27c-.24.36-.43.77-.51 1.19-.2.8-.08 1.56.33 2.21-.49.28-1.29.35-1.46.35H2.62c-.34 0-.62.28-.62.63 0 1.15.18 2.3.58 3.38.45 1.19 1.13 2.07 2 2.61.98.6 2.59.94 4.42.94.79 0 1.61-.07 2.42-.22 1.12-.2 2.2-.59 3.19-1.16A8.3 8.3 0 0 0 16.78 16c1.05-1.17 1.67-2.5 2.12-3.65h.19c1.14 0 1.85-.46 2.24-.85.26-.24.45-.53.59-.87l.08-.24zm-17.96.99h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H3.85c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.43 0h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H6.28c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.47 0h1.75c.1 0 .17-.07.17-.16V9.5c0-.08-.06-.16-.17-.16H8.75c-.08 0-.15.07-.15.16v1.58c0 .09.06.16.15.16m2.44 0h1.77c.08 0 .15-.07.15-.16V9.5c0-.08-.06-.16-.15-.16h-1.77c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16M6.28 9h1.76c.08 0 .16-.09.16-.18V7.25c0-.09-.07-.16-.16-.16H6.28c-.09 0-.16.06-.16.16v1.57c.01.09.07.18.16.18m2.47 0h1.75c.1 0 .17-.09.17-.18V7.25c0-.09-.06-.16-.17-.16H8.75c-.08 0-.15.06-.15.16v1.57c0 .09.06.18.15.18m2.44 0h1.77c.08 0 .15-.09.15-.18V7.25c0-.09-.07-.16-.15-.16h-1.77c-.08 0-.15.06-.15.16v1.57c0 .09.07.18.15.18m0-2.28h1.77c.08 0 .15-.07.15-.16V5c0-.1-.07-.17-.15-.17h-1.77c-.08 0-.15.06-.15.17v1.56c0 .08.07.16.15.16m2.46 4.52h1.76c.09 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16h-1.76c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16"/></svg></span> docker push<a class="headerlink" href="#pushing-to-a-registry-with-docker-push" title="Permanent link">&para;</a></h3>
+<p>By default <code>docker push</code> will upload your local container image to the <a href="https://hub.docker.com/" target="_blank">Docker Hub</a>.</p>
+<p>Also, make sure that your container has the appropriate <a href="07_reproducibility_ii.md#tag">tag</a>.</p>
+<p>First, make sure to log into the Docker Hub, this will allow you to download private images, to upload private/public images:</p>
+<div class="highlight"><pre><span></span><code>docker login
+</code></pre></div>
+<p>Alternately, you can <a href="https://hub.docker.com/settings/linked-accounts" target="_blank">link GitHub / GitLab accounts</a> to the Docker Hub.</p>
+<p>To push the image to the Docker Hub:</p>
+<div class="highlight"><pre><span></span><code>docker push username/imagename:tag 
+</code></pre></div>
+<p><br>
+<br></p>
+<hr />
+<hr />
+<h3 id="exercises-and-additional-dockerfiles">Exercises and Additional Dockerfiles<a class="headerlink" href="#exercises-and-additional-dockerfiles" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p>We have a number of pre-written Dockerfiles that you can access in our <a href="https://github.com/cyverse-education/intro2docker">Intro 2 Docker Repository</a>.</p>
+<p>It contains:</p>
+<ul>
+<li><strong>Alpine</strong>: a minimal Linux distribution </li>
+<li><strong>Cowsay</strong>: will output wise messages when executed</li>
+<li><strong>Jupyter/minimal-notebook</strong>: Jupyter Notebook accessible from your browser</li>
+<li><strong>rstudio/verse</strong>: RStudio containing the Tidyverse data science packages </li>
+<li><strong>Ubuntu</strong></li>
+</ul>
+<p>Clone our example repository, or work directly on the repository using Codespaces.</p>
+<p>Clone command:</p>
+<div class="highlight"><pre><span></span><code>$ cd /workspaces
+
+$ git clone https://github.com/cyverse-education/intro2docker
+
+$ cd intro2docker/
+</code></pre></div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-10-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1902 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/05_version_control/">
+      
+      
+        <link rel="prev" href="../04_talk_to_computer/">
+      
+      
+        <link rel="next" href="../06_reproducibility_I/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>5. Version Control - CyVerse Foundational Open Science Skills 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#version-control" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5. Version Control
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_intro_open_sci/" class="md-tabs__link">
+          
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    CyVerse Foundational Open Science Skills 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Before FOSS Starts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_intro_open_sci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_managing_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_documentation_communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. How to Talk to Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git vs. GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git vs. GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducing-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducing GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-git-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Git Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#large-data-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Data and GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-github-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful GitHub Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beyond-git-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beyond Git and GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-code-to-github-via-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Code to GitHub via Command Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branching
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Assessment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_reproducibility_I/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Reproducibility I: Software Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_reproducibility_II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Reproducibility II: Run Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reproducibility_III/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Remote Computing: Cyverse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_reproducibility_IV/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capstone Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git vs. GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git vs. GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definitions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducing-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducing GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-git-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Git Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#large-data-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Data and GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-github-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful GitHub Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beyond-git-and-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beyond Git and GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-code-to-github-via-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Code to GitHub via Command Line
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branching
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Requests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Assessment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="version-control">Version Control<a class="headerlink" href="#version-control" title="Permanent link">&para;</a></h1>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<p>After this lesson, you should be able to:</p>
+<ul>
+<li>Understand the basics of <code>git</code> as a resource for reproducible programming</li>
+<li>Describe tools and approaches to creating your <code>git</code> Repositories</li>
+<li>Describe best practices for maintaining GitHub Organizations and Repositories</li>
+<li>Maintain own GitHub user profile and repositories</li>
+</ul>
+</div>
+<p>Version control refers to keeping track of the version of a file, set of
+files, or a whole project.</p>
+<p>Some version control tools:</p>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.94 5.59v12.8q0 .67-.39 1.2-.39.52-1.05.7l-5.73 1.65q-.12.03-.27.06h-.22q-.33 0-.6-.09t-.55-.24l-3.75-2.12q-.21-.12-.33-.31t-.12-.43q0-.36.26-.61.25-.25.61-.25h4.86V6.14L9 7.44q-.43.16-.7.56-.27.38-.27.85v6.73q0 .42-.21.76-.2.34-.57.54l-1.72.94q-.24.13-.48.13-.41 0-.7-.29t-.29-.71V7.47q0-.52.27-.97.28-.5.73-.76l6.16-3.5q.21-.12.45-.18t.48-.06q.17 0 .31.03.14.02.31.07l5.73 1.59q.33.09.59.27t.45.43q.2.26.3.56.1.31.1.64m-1.32 12.8V5.59q0-.23-.12-.4-.15-.19-.37-.23l-2.82-.78Q15 4.09 14.65 4q-.33-.11-.65-.19v16.4L18.13 19q.22-.04.37-.21.12-.17.12-.4"/></svg></span> Microsoft Office's <a href="https://support.microsoft.com/en-au/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a"><em>Track Changes</em></a> functionality</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg></span> Apple's <a href="https://support.apple.com/en-us/HT201250"><em>Time Machine</em></a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.727 6.727H14V0H4.91c-.905 0-1.637.732-1.637 1.636v20.728c0 .904.732 1.636 1.636 1.636h14.182c.904 0 1.636-.732 1.636-1.636V6.727zm-.545 10.455H7.09v-1.364h7.09v1.364zm2.727-3.273H7.091v-1.364h9.818zm0-3.273H7.091V9.273h9.818zM14.727 6h6l-6-6z"/></svg></span> Google Docs' <a href="https://support.google.com/docs/answer/190843?hl=en&amp;co=GENIE.Platform%3DDesktop"><em>Version History</em></a></li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> <a href="https://git-scm.com/">Git</a></li>
+</ul>
+<p>Version control is as much a philosophy as a set of tools; you don't
+need to master Git to utilize version control (though it is certainly a
+worthwhile tool for many researchers).</p>
+<figure>
+<p><a href="https://swcarpentry.github.io/git-novice/01-basics.html" target="blank" rel="git_def"><img alt="git_def" src="https://swcarpentry.github.io/git-novice/fig/phd101212s.png" /> </a>
+    <figcaption> We have all been here, taken by the <a href="https://swcarpentry.github.io/git-novice/01-basics.html">Software Carpentry Version Control lesson</a>. </figcaption></p>
+</figure>
+<hr />
+<h2 id="git-vs-github"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> Git vs. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub<a class="headerlink" href="#git-vs-github" title="Permanent link">&para;</a></h2>
+<p><strong>Git</strong> is a command-line program for version control of repositories.
+It keeps track of changes you make to files in your repository and
+stores those changes in a <em>.git</em> folder in that repository.
+These changes happen whenever you make a <strong>commit</strong>. Git stores the
+history of these commits in a "tree", so you can go back to any
+previous commit. By keeping track of the <strong>differences</strong> between
+commits, Git can be much more efficient than storing an entire copy of
+each version in a document's history.</p>
+<p>You could utilize Git completely on its own, on your local computer, and
+get a lot of benefits. You will have a history of the changes you made
+to a project, allowing you to go back to any old version of your work.
+However, where Git really shines is in <em>collaborative</em> work. In order to
+effectively collaborate with others on a project, you need two basic
+features: a way to allow people to work in parallel, and a way to host
+repositories somewhere where everyone can access them. The first feature
+is <strong>branching</strong>, which is part of Git, and the hosting part can be
+taken care of by platforms like GitHub, GitLab, or Bitbucket. We will
+focus on GitHub.</p>
+<p>GitHub is a site that can remotely host your Git repositories. By
+putting your repository onto GitHub, you get a backup of the repository,
+a way to collaborate with others, and a lot of other features.</p>
+<ul>
+<li>
+<p><strong>Git</strong>: </p>
+<ul>
+<li>First developed in 2005, git is a version control software that allows users to make changes and add versions to their code.</li>
+<li>Changes and versions are saved locally.</li>
+<li>Accessible through the Shell.</li>
+</ul>
+</li>
+<li>
+<p><strong>GitHub</strong>:</p>
+<ul>
+<li>First launched in 2008, its main focus is hosting and sharing code.</li>
+<li>Uses Git version control software. </li>
+<li>Changes and versions are saved online (requires an account).</li>
+<li>Mainly administered through the web (it also has a <a href="https://desktop.github.com/" target="_blank">desktop app</a>).</li>
+<li>Acquired by Microsoft in 2018.</li>
+</ul>
+</li>
+</ul>
+<figure>
+<p><a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github"><img alt="git_v_github" src="https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg" /> </a>
+    <figcaption> Git vs GitHub, simplified </figcaption></p>
+</figure>
+<h3 id="definitions">Definitions<a class="headerlink" href="#definitions" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Git-related Definitions</p>
+<p><strong>Platforms</strong>:</p>
+<ul>
+<li><strong>Git</strong>: tool for version control.</li>
+<li><strong>GitHub</strong>: hosted server that is also interactive.</li>
+</ul>
+<p><strong>Locations and directions</strong>:</p>
+<ul>
+<li><strong>repo</strong>: short for repository</li>
+<li><strong>local</strong>: on your personal computer.</li>
+<li><strong>remote</strong>: somewhere other than your computer. GitHub can host remote
+repositories.</li>
+<li><strong>upstream</strong>: primary or main branch of original repository.</li>
+<li><strong>downstream</strong>: branch or fork of repository.</li>
+</ul>
+<p><strong>Actions</strong>:</p>
+<ul>
+<li><strong>clone</strong>: copy of a repository that lives locally on your computer.
+Pushing changes will affect the repository online.</li>
+<li><strong>pull</strong>: getting latest changes to the repository on your local
+computer.<ul>
+<li>the <strong>fetch</strong> command does the same, however one needs to also <strong>merge</strong> the changes, whilst with pull, the merge action is automatic.</li>
+</ul>
+</li>
+<li><strong>branch</strong>: a history of changes to a repository. You can have parallel
+branches with separate histories, allowing you to keep a "main"
+version and development versions.</li>
+<li><strong>fork</strong>: copy of someone else's repository stored locally on your
+account. From forks, you can make pull requests to the main branch.</li>
+<li><strong>commit</strong>: finalize a change.</li>
+<li><strong>push</strong>: add changes back to the remote repository.</li>
+<li><strong>merge</strong>: takes changes from a branch or fork and applies them to the
+main.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">These are also commands when paired with <code>git</code>!</p>
+<p>Using the following synthax <code>git &lt;command&gt;</code> one can trigger an action. An example is <code>git pull</code>, which will pull all of the latest changes in the remote repository.</p>
+</div>
+<p><strong>Funtional</strong>: </p>
+<ul>
+<li>
+<p><strong>pull request</strong>: proposed changes to/within a repository.</p>
+</li>
+<li>
+<p><strong>issue</strong>: suggestions or tasks needed for the repository. Allows you to
+track decisions, bugs with the repository, etc.</p>
+</li>
+</ul>
+</div>
+<figure>
+<p><a href="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/" target="blank" rel="git_def"><img alt="git_def" src="https://www.c-sharpcorner.com/article/git-and-github-version-control-local-and-remote-repository/Images/Git%20And%20Github%20Version%20Control.png" /> </a>
+    <figcaption> Visualizing the commands through a workflow example <br> (graphic's correction: <del>marged</del> merged) </figcaption></p>
+</figure>
+<hr />
+<h2 id="introducing-github">Introducing GitHub<a class="headerlink" href="#introducing-github" title="Permanent link">&para;</a></h2>
+<p>Since we are talking about making science accessible, we invite you to use GitHub to save and share your code. Please start by creating a GitHub account at <a href="https://github.com/">https://github.com/</a>.</p>
+<p><strong>User Profile</strong></p>
+<p>Just like in any other social media platform, you can create a profile for yourself. This is where you can add a picture, a description of yourself, and a link to your website. You can also add your location, your organization, and your pronouns. You can have a list of your most important repositories and show off your daily contributions. You are able to customize your profile to your liking. Check out <a href="https://github.com/Gchism94">this profile</a> for fancy example. </p>
+<figure>
+<p><img alt="github_shot1" src="../assets/github_shot1.png" /></p>
+</figure>
+<p><strong>Search</strong></p>
+<p>At the top of most pages, is a search bar. Use this to find repositories, users, and organizations. You can also use it to search for specific code within a repository.</p>
+<figure>
+<p><img alt="github_shot2" src="../assets/github_shot2.png" /></p>
+</figure>
+<p><strong>Starring Repositories</strong></p>
+<p>You can star repositories that you like. This is a way to bookmark repositories that you want to come back to later. You can also use this to show your appreciation for a repository. You can see all of your starred repositories by clicking on your profile picture and then clicking on <strong>Your stars</strong>.</p>
+<figure>
+<p><img alt="github_shot3" src="../assets/github_shot3.png" /></p>
+</figure>
+<p><strong>Creating Your Own Repository</strong></p>
+<p>Repositories are where your code is stored. A suggestion is to have <em>one</em> repository for <em>one</em> project.</p>
+<p>You can create repositories by clicking on the <strong>Repositories</strong> tab, and then clicking <strong>New</strong>.</p>
+<figure>
+<p><img alt="git_1" src="../assets/git_1.png" /></p>
+</figure>
+<p>Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is <strong>strongly</strong> reccomended that you choose to add an empty README file.</p>
+<figure>
+<p><img alt="git_2" src="../assets/git_2.png" /></p>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">So, why a README?</p>
+<p>There are two main reasons why you would like a README file:</p>
+<ol>
+<li>It adds structure to your repository <em>automatically</em> - otherwise you would need to create said structure by yourself (not recommended for beginners).</li>
+<li>It is the "default" file that GitHub reads upon opening the repository. It can be treated as the go-to file that explains what the repository is for, what each file does, how to cite your reasearch, amongst other things.</li>
+</ol>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Adding a Licence</p>
+<p>The addition of a licence can heavily contribute to the shareability of your code. Make sure that whichever licence you choose is in line with your principals as well as your project's. GitHub comes with a list of licences which you can review. It is also common to choose a licence later on!</p>
+</div>
+<p>Ultimately, your new repository should look like the following screenshot. Notice the <strong>LICENCE</strong> document and the <strong>README.md</strong></p>
+<figure>
+<p><img alt="git_3" src="../assets/git_3.png" /></p>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">Editing the README.md (and other text files on GitHub)</p>
+<p>The Github repository file has a <strong>.md</strong> extension which stands for Markdown. Markdown is a lightweight markup language for creating formatted text using a plain-text editor common throughout text files on the web. It uses symbols (*~-#`) for syntaxing text, and it is what GitHub (and this website!) use to format text. Markdown is easier to use than HTML. You can read more on Markdown on the <a href="https://www.markdownguide.org/">Markdown Guide</a>.</p>
+</div>
+<hr />
+<h2 id="practical-git-techniques">Practical Git Techniques<a class="headerlink" href="#practical-git-techniques" title="Permanent link">&para;</a></h2>
+<figure>
+<p><a href="https://resources.pcb.cadence.com/blog/what-is-a-version-control-system" target="blank" rel="vc_path"><img alt="vc_path" src="https://content.cdntwrk.com/files/aHViPTg1NDMzJmNtZD1pdGVtZWRpdG9yaW1hZ2UmZmlsZW5hbWU9aXRlbWVkaXRvcmltYWdlXzYzOTkwY2I4OWU5YTUuanBnJnZlcnNpb249MDAwMCZzaWc9OWJjZTA5NDIxNzY4MWFhZjYyNmEwNWNhYmI1YTUzMWQ%253D" /> </a>
+    <figcaption> The version control path sofware takes before release </figcaption></p>
+</figure>
+<div class="admonition info">
+<p class="admonition-title">The basic Git life cycle</p>
+<p>When using Git for your version control, the usual life cycle is the following:</p>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. <code>git clone &lt;repository&gt;</code></td>
+<td>Clones the target repository to your machine</td>
+</tr>
+<tr>
+<td>2. <code>git status</code></td>
+<td>Checks whether there are changes in the remote, original repository</td>
+</tr>
+<tr>
+<td>3. <code>git pull</code></td>
+<td>Pulls any change to your local repository</td>
+</tr>
+<tr>
+<td>4. <code>git add &lt;changes&gt;</code></td>
+<td>Adds to a future commit any change</td>
+</tr>
+<tr>
+<td>5. <code>git commit -m "&lt;message&gt;"</code></td>
+<td>Creates the commit and adds a descriptive message</td>
+</tr>
+<tr>
+<td>6. <code>git push</code></td>
+<td>Pushes the changes commited from local to the remote repository</td>
+</tr>
+</tbody>
+</table>
+<p>If there are no branches or external pull requests, the <em>basic</em> Git life cycle is summarizable like this:</p>
+<pre class="mermaid"><code>graph LR
+A[1. git clone] --&gt; B[2. git status] --&gt;C([differences from origin?]):::colorclass;
+C--&gt;|yes| D[3. git pull]--&gt; E;
+C--&gt;|no| E[4. git add];
+E--&gt;F[5. git commit] --&gt;G[6. git push];
+G--&gt;B;
+classDef colorclass fill:#f96</code></pre>
+</div>
+<p>After learning the basics of using Git, which you can learn with the
+<a href="https://swcarpentry.github.io/git-novice/">Software Carpentry Git Lesson</a>, there are some next
+things that can be useful to learn. Here are a couple topics that are
+worth digging into more:</p>
+<ul>
+<li>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.197 10a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zm-2.382 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5zm-1.581 4a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5z"/><path d="M4.125 0h15.75a4.1 4.1 0 0 1 2.92 1.205A4.1 4.1 0 0 1 24 4.125c0 1.384-.476 2.794-1.128 4.16-.652 1.365-1.515 2.757-2.352 4.104l-.008.013c-.849 1.368-1.669 2.691-2.28 3.97-.614 1.283-.982 2.45-.982 3.503a2.625 2.625 0 1 0 4.083-2.183.75.75 0 1 1 .834-1.247A4.126 4.126 0 0 1 19.875 24H4.5a4.125 4.125 0 0 1-4.125-4.125c0-2.234 1.258-4.656 2.59-6.902.348-.586.702-1.162 1.05-1.728.8-1.304 1.567-2.553 2.144-3.738H3.39c-.823 0-1.886-.193-2.567-1.035A3.65 3.65 0 0 1 0 4.125 4.125 4.125 0 0 1 4.125 0M15.75 19.875c0-1.38.476-2.786 1.128-4.15.649-1.358 1.509-2.743 2.343-4.086l.017-.028c.849-1.367 1.669-2.692 2.28-3.972.614-1.285.982-2.457.982-3.514A2.615 2.615 0 0 0 19.875 1.5a2.625 2.625 0 0 0-2.625 2.625c0 .865.421 1.509 1.167 2.009A.75.75 0 0 1 18 7.507H7.812c-.65 1.483-1.624 3.069-2.577 4.619-.334.544-.666 1.083-.98 1.612-1.355 2.287-2.38 4.371-2.38 6.137A2.625 2.625 0 0 0 4.5 22.5h12.193a4.1 4.1 0 0 1-.943-2.625M1.5 4.125c-.01.511.163 1.008.487 1.403.254.313.74.479 1.402.479h12.86a3.65 3.65 0 0 1-.499-1.882 4.1 4.1 0 0 1 .943-2.625H4.125A2.625 2.625 0 0 0 1.5 4.125"/></svg></span> Using the Git log</strong></p>
+<ul>
+<li>You can access using <strong>git log</strong></li>
+<li>Will show you your commit history</li>
+<li>Useful for figuring out where you need to roll back to</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6H2v12h2m7-12-6 6 6 6 1.41-1.42L8.83 13H23v-2H8.83l3.58-3.59z"/></svg></span> Reverting</strong></p>
+<ul>
+<li>There are a lot of different ways to "undo" something in Git</li>
+<li>Some are safer, some are a bit riskier</li>
+<li>Depends on what stage of the commit process you're in</li>
+<li><strong>Here are some useful resources</strong>:<ul>
+<li><a href="https://www.codementor.io/@citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd"><em>10 Common Git Problems and How to Fix Them</em></a></li>
+<li><a href="http://justinhileman.info/article/git-pretty/git-pretty.png"><em>"So you have a mess on your hands..."</em></a></li>
+<li><a href="https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/"><em>How to undo almost anything</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0M2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0m0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0M5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5m0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21m12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25"/></svg></span> Branching</strong></p>
+<ul>
+<li>This is important to learn if you're going to be doing any sort of collaboration</li>
+<li>Here is a fantastic resource for learning how git branching really works: <a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
+<li><strong>you will probably have to deal with <em>merge conflicts</em> at some point</strong><ul>
+<li>Merge conflicts happen when two branches are being merged, but they have <em>different</em> changes to the same part of a file</li>
+<li>Perhaps you are working on a feature branch, and you change line 61 in <em>file.R</em>, but someone else made a change to the main branch at line 61 in <em>file.R</em>. When you try to merge the feature and main branches, Git won't know which changes to line 61 in <em>file.R</em> are correct, and you will need to manually decide.</li>
+<li>Here are some good resources:<ul>
+<li><a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/">Resolving merge conflics</a>resolving-a-merge-conflict-using-the-command-line</li>
+<li><a href="https://nitaym.github.io/ourstheirs/">git - ours &amp; theirs, a CLI resource to help with conflicts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.08 7.143c-.958.57-1.977 1.065-3.743 1.02-2.082 0-3.55 1.11-3.55 2.91 0 1.035.405 1.74 1.409 2.28-.57.36-.884.93-.884 1.516 0 .84.719 1.575 2.456 1.575h1.257c.794 0 1.153.33 1.153.795 0 .525-.344.915-1.841.915-1.513 0-1.812-.315-1.812-1.005H7.428c0 1.575.794 2.565 3.849 2.565 2.815 0 4.252-1.005 4.252-2.64 0-1.335-1.183-2.31-3.024-2.31h-1.318c-.764 0-.869-.24-.869-.48 0-.18.09-.36.255-.45.284.06.584.09.928.09 2.052 0 3.37-1.125 3.37-2.67 0-1.036-.54-1.62-1.543-2.056 1.003 0 1.737-.09 2.291-.315zm-3.683 2.565c.793 0 1.212.42 1.212 1.305 0 .915-.434 1.395-1.212 1.395-.734 0-1.213-.495-1.213-1.365 0-.825.464-1.335 1.213-1.335m9.135-5.423c-.826 0-1.412.588-1.412 1.341 0 .77.586 1.342 1.412 1.342s1.396-.573 1.396-1.341c0-.754-.57-1.341-1.396-1.341zm1.426 4.19h-4.55v1.627h2.178v4.747h-2.253v1.627H24V14.85h-2.042zM3.933 13.933l1.02 1.02-2.477 2.476-.62-.62v-.8zm-2.695-.219v2.477L0 14.952zm2.257-.219-1.638 1.639v-2.039l.619-.619 1.019 1.02z"/></svg></span> .gitignore</strong></p>
+<ul>
+<li>You often want Git to completely ignore certain files</li>
+<li>Generated files (like HTML files from Markdown docs)</li>
+<li>IDE-specific files like in <em>.RStudio</em> or <em>.vscode</em> folders</li>
+<li><strong>really big files, like data or images</strong><ul>
+<li>If you accidentally commit a really big file, GitHub might not let you push that commit</li>
+<li>If you have a huge file in Git, your repository size can get way too big</li>
+<li>This is a pain to solve, so use the <em>.gitignore</em> file ahead of time, but if you need to fix this, here is a great resource: </li>
+<li><a href="https://necromuralist.github.io/posts/removing-large-files-from-git-using-bfg-and-a-local-repository/">Removing Large Files From git Using BFG and a Local Repository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="large-data-and-github">Large Data and GitHub<a class="headerlink" href="#large-data-and-github" title="Permanent link">&para;</a></h2>
+<p>GitHub allows commited files to be uploaded only if the file is of 100MB or less (with a warning being issued for files between 50MB and 100MB). Additionally, <a href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#repository-size-limits">GitHub recommends to keep repositories below the 1GB threshold</a>, as this also allows for quicker cloning and sharing of the repository. If a large file has been uploaded by mistake and you wish to remove it, <a href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#removing-files-from-a-repositorys-history">you can follow these instrutctions</a>.</p>
+<p>If you <em>do</em> have to work with large files and Git, here are some questions to ask yourself:</p>
+<ul>
+<li>Is this data shareable?</li>
+<li>Are there alternative file hosting platforms I can use?</li>
+<li>How will this data impact the sharability of this repository?</li>
+<li>Am I using a .gitignore?</li>
+</ul>
+<p>GitHub now offers the <a href="https://git-lfs.com/"><strong>Git Large File Storage (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.967.304 0 7.215v9.68l11.79 6.802V14.02l11.96-6.91-4.383-2.53-11.959 6.905v3.887l-2.775-1.601V9.886l11.965-6.91zM24 7.545 12.29 14.31v9.387L24 16.929V7.547z"/></svg></span> Git LFS)</strong></a>: the system works by storing references to the file in your repository, but not the file itself -- it creates a <em>pointer</em> file within the repo, and stores the file elsewhere. If you were to clone the repository, the pointer file will act as a map to show you how to obtain the original file.</p>
+<p>Git LFS data upload limits are based on your GitHub subscription: </p>
+<ul>
+<li>2 GB for GitHub free and GitHub Pro</li>
+<li>4 GB for GitHub Team</li>
+<li>5 GB for GitHub Enterprise Cloud</li>
+</ul>
+<figure>
+<p><a href="https://git-lfs.com/" target="blank" rel="gitlfs"><img alt="gitlfs" src="https://git-lfs.com/images/tweet-promo.png" /> </a>
+    <figcaption> A depiction of how the Git LFS pointer-repository relationship works. </figcaption></p>
+</figure>
+<hr />
+<h2 id="useful-github-features">Useful GitHub Features<a class="headerlink" href="#useful-github-features" title="Permanent link">&para;</a></h2>
+<p>At its core, GitHub is just a place to host your Git repositories.
+However, it offers a lot of functionality that has less to do with Git,
+and more to do with <a href="02_project_management.md"><strong>Project Management</strong></a>. We will
+walk through a few of these useful features.</p>
+<ul>
+<li>
+<p><a href="https://docs.github.com/en/issues"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg></span> Issues</strong></a></p>
+<ul>
+<li>Issues let you plan out changes and suggestions to a repo</li>
+<li>Closing/reopening</li>
+<li>Labels</li>
+<li>Assigning</li>
+<li>Templates</li>
+<li>Numbering/mentioning</li>
+</ul>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 3a3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v6.34c1.17.41 2 1.52 2 2.83a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V8.83A2.99 2.99 0 0 1 3 6a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m0 12a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m15 1a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7h-2v3.25L10.75 6 15 1.75V5h2a2 2 0 0 1 2 2v8.17c1.17.41 2 1.52 2 2.83m-3-1a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span> Pull Requests</strong></a></p>
+<ul>
+<li>Pull requests are a way to request merging code from one branch to another</li>
+<li>typical workflow is for someone to fork a repo, then make a PR from that repo to another</li>
+<li>Reviews</li>
+<li>Commenting</li>
+<li>Merging</li>
+<li>Closing issues</li>
+</ul>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/organizations"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5q0 .127-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.8.8 0 0 1-.197-.026q-.148.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5M3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75m4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75M7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5M3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75M7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5"/></svg></span> Organizations</strong></a></p>
+<ul>
+<li>You can use Organizations to organize sets of repositories</li>
+<li>Roles</li>
+<li>Teams</li>
+<li>GitHub documentation:</li>
+</ul>
+</li>
+<li>
+<p><strong>Other neat things</strong></p>
+<ul>
+<li>Permissions/collaborators</li>
+<li>GitHub Classroom</li>
+<li>Gists</li>
+<li>CSV and map rendering</li>
+<li>Code editor</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="beyond-git-and-github">Beyond Git and GitHub<a class="headerlink" href="#beyond-git-and-github" title="Permanent link">&para;</a></h2>
+<p>There are other platforms that address Version Control and have similar functionalities to GitHub:</p>
+<ul>
+<li>
+<p><strong><a href="https://gitlab.com/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.94 13.11-1.05-3.22c0-.03-.01-.06-.02-.09l-2.11-6.48a.86.86 0 0 0-.8-.57c-.36 0-.68.25-.79.58l-2 6.17H8.84L6.83 3.33a.85.85 0 0 0-.79-.58c-.37 0-.69.25-.8.58L3.13 9.82v.01l-1.07 3.28c-.16.5.01 1.04.44 1.34l9.22 6.71c.17.12.39.12.56-.01l9.22-6.7c.43-.3.6-.84.44-1.34M8.15 10.45l2.57 7.91-6.17-7.91m8.73 7.92 2.47-7.59.1-.33h3.61l-5.59 7.16m4.1-13.67 1.81 5.56h-3.62m-1.3.95-1.79 5.51L12 19.24l-2.86-8.79M6.03 3.94 7.84 9.5H4.23m-1.18 4.19c-.09-.07-.13-.19-.09-.29l.79-2.43 5.82 7.45m11.38-4.73-6.51 4.73.02-.03 5.79-7.42.79 2.43c.04.1 0 .22-.09.29"/></svg></span> GitLab</a></strong>: An alternative to GitHub, GitLab offers both a cloud-hosted platform and a self-hosted option (<a href="https://about.gitlab.com/install/ce-or-ee/">GitLab CE/EE</a>). It provides a comprehensive DevOps platform with built-in CI/CD, container registry, and more.</p>
+</li>
+<li>
+<p><strong><a href="https://bitbucket.org/product/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.778 1.213a.768.768 0 0 0-.768.892l3.263 19.81c.084.5.515.868 1.022.873H19.95a.77.77 0 0 0 .77-.646l3.27-20.03a.768.768 0 0 0-.768-.891zM14.52 15.53H9.522L8.17 8.466h7.561z"/></svg></span> Bitbucket</a></strong>: Atlassian's Bitbucket is a Git repository hosting service that also supports Mercurial repositories. It offers integration with Jira, Confluence, and other Atlassian products.</p>
+</li>
+<li>
+<p><strong><a href="https://sourceforge.net/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.998 1.465a.35.35 0 0 0-.24.103L.102 11.215a.334.334 0 0 0 0 .48l9.152 9.135a.32.32 0 0 0 .24.106.34.34 0 0 0 .238-.106l1.37-1.385a.334.334 0 0 0 0-.48L3.93 11.79a.47.47 0 0 1 0-.664l9.078-9.078a.35.35 0 0 0 .072-.377.34.34 0 0 0-.312-.207zm4.531 1.592a.35.35 0 0 0-.24.105l-1.393 1.393a.334.334 0 0 0 0 .48l7.172 7.182a.47.47 0 0 1 .137.328c0 .12-.049.24-.137.328l-9.078 9.078a.35.35 0 0 0-.072.377c.04.096.144.207.313.207v-.008H14a.34.34 0 0 0 .24-.095l9.657-9.655a.32.32 0 0 0 .103-.24.35.35 0 0 0-.103-.24L14.77 3.162a.32.32 0 0 0-.24-.105m-3.095 3.156a.224.224 0 0 0-.211.238c.144 2.218-2.643 2.764-2.643 6.246v.024c0 2.121 1.603 3.842 3.58 3.842s3.578-1.72 3.578-3.842v-.024c0-.984-.368-1.922-.744-2.627-.072-.136-.29-.087-.266.041.673 2.995-1.015 4.851-1.015 2.545 0-3.93-1.394-5.716-2.131-6.388a.2.2 0 0 0-.148-.055"/></svg></span> SourceForge</a></strong>: A platform that provides Git and Subversion hosting, as well as tools for project management, issue tracking, and collaboration.</p>
+</li>
+<li>
+<p><strong><a href="https://aws.amazon.com/codecommit/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M180.41 203.01c-.72 22.65 10.6 32.68 10.88 39.05a8.16 8.16 0 0 1-4.1 6.27l-12.8 8.96a10.66 10.66 0 0 1-5.63 1.92c-.43-.02-8.19 1.83-20.48-25.61a78.6 78.6 0 0 1-62.61 29.45c-16.28.89-60.4-9.24-58.13-56.21-1.59-38.28 34.06-62.06 70.93-60.05 7.1.02 21.6.37 46.99 6.27v-15.62c2.69-26.46-14.7-46.99-44.81-43.91-2.4.01-19.4-.5-45.84 10.11-7.36 3.38-8.3 2.82-10.75 2.82-7.41 0-4.36-21.48-2.94-24.2 5.21-6.4 35.86-18.35 65.94-18.18a76.86 76.86 0 0 1 55.69 17.28 70.29 70.29 0 0 1 17.67 52.36zM93.99 235.4c32.43-.47 46.16-19.97 49.29-30.47 2.46-10.05 2.05-16.41 2.05-27.4-9.67-2.32-23.59-4.85-39.56-4.87-15.15-1.14-42.82 5.63-41.74 32.26-1.24 16.79 11.12 31.4 29.96 30.48m170.92 23.05c-7.86.72-11.52-4.86-12.68-10.37l-49.8-164.65c-.97-2.78-1.61-5.65-1.92-8.58a4.61 4.61 0 0 1 3.86-5.25c.24-.04-2.13 0 22.25 0 8.78-.88 11.64 6.03 12.55 10.37l35.72 140.83 33.16-140.83c.53-3.22 2.94-11.07 12.8-10.24h17.16c2.17-.18 11.11-.5 12.68 10.37l33.42 142.63L420.98 80.1c.48-2.18 2.72-11.37 12.68-10.37h19.72c.85-.13 6.15-.81 5.25 8.58-.43 1.85 3.41-10.66-52.75 169.9-1.15 5.51-4.82 11.09-12.68 10.37h-18.69c-10.94 1.15-12.51-9.66-12.68-10.75L328.67 110.7l-32.78 136.99c-.16 1.09-1.73 11.9-12.68 10.75h-18.3zm273.48 5.63c-5.88.01-33.92-.3-57.36-12.29a12.8 12.8 0 0 1-7.81-11.91v-10.75c0-8.45 6.2-6.9 8.83-5.89 10.04 4.06 16.48 7.14 28.81 9.6 36.65 7.53 52.77-2.3 56.72-4.48 13.15-7.81 14.19-25.68 5.25-34.95-10.48-8.79-15.48-9.12-53.13-21-4.64-1.29-43.7-13.61-43.79-52.36-.61-28.24 25.05-56.18 69.52-55.95 12.67-.01 46.43 4.13 55.57 15.62 1.35 2.09 2.02 4.55 1.92 7.04v10.11c0 4.44-1.62 6.66-4.87 6.66-7.71-.86-21.39-11.17-49.16-10.75-6.89-.36-39.89.91-38.41 24.97-.43 18.96 26.61 26.07 29.7 26.89 36.46 10.97 48.65 12.79 63.12 29.58 17.14 22.25 7.9 48.3 4.35 55.44-19.08 37.49-68.42 34.44-69.26 34.42m40.2 104.86c-70.03 51.72-171.69 79.25-258.49 79.25A469.13 469.13 0 0 1 2.83 327.46c-6.53-5.89-.77-13.96 7.17-9.47a637.37 637.37 0 0 0 316.88 84.12 630.2 630.2 0 0 0 241.59-49.55c11.78-5 21.77 7.8 10.12 16.38m29.19-33.29c-8.96-11.52-59.28-5.38-81.81-2.69-6.79.77-7.94-5.12-1.79-9.47 40.07-28.17 105.88-20.1 113.44-10.63 7.55 9.47-2.05 75.41-39.56 106.91-5.76 4.87-11.27 2.3-8.71-4.1 8.44-21.25 27.39-68.49 18.43-80.02"/></svg></span> AWS CodeCommit</a></strong>: Part of Amazon Web Services (AWS), CodeCommit is a managed Git service that integrates seamlessly with other AWS services.</p>
+</li>
+<li>
+<p><strong><a href="https://azure.microsoft.com/en-us/products/devops"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22 18-5 4-8-3v3l-4.19-5.75 12.91 1.05V6.34L22 5.65zM4.81 16.25V8.96l12.91-2.62L10.6 2v2.84L3.97 6.76 2 9.38v5.69z"/></svg></span> Azure DevOps Services (formerly VSTS)</a>)</strong>: Microsoft's Azure DevOps Services offers Git repository hosting along with a wide range of DevOps tools for planning, developing, testing, and deploying software.</p>
+</li>
+<li>
+<p><strong><a href="https://www.mercurial-scm.org/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.822.431A10 10 0 0 0 12.4.51c-7.083.876-7.198 8.33-.956 10.101 7.07 1.07 2.813 6.405 2.209 9.095-.542 2.41 5.714 2.807 8.608-6.769C23.997 7.932 20.7.538 13.82.431m6.165 2.096c-.022.015 0 .066.103.174 1.01 1.067 1.488 1.692 2.469 3.871 2.19 4.87-2.165 12.59-4.996 14.195-1.133.643-2.568.708-3.227.65-.414-.036-.818.438-.554.866.993 1.611 3.541.72 5.72-.832 2.174-1.55 3.659-5.133 4.09-6.717.618-2.277.703-5.907-.96-8.96-.984-1.807-1.944-2.917-2.49-3.204-.07-.036-.134-.058-.155-.043m-13.784.955c-1.947 3.188-.283 7.656 4.773 9.09 6.636 1.885 1.371 6.093 1.525 8.897.154 2.802 5.77 3.82 10.199-3.542.053-.089.1-.182.15-.272-4.426 7.338-10.03 6.321-10.184 3.521-.154-2.803 5.111-7.013-1.526-8.897-4.902-1.391-6.613-5.634-4.937-8.797m-.23 2.906c-.068.054-.036.25.001.486.106.66.52 1.824 1.335 2.89 1.106 1.446 3.018 2.06 4.5 2.5 1.9.564 2.342 1.659 2.56 1.524.217-.134.164-1.318-.48-1.867-.626-.533-2.477-.987-3.37-1.193A5.66 5.66 0 0 1 7.444 8.76c-.863-1.093-1.44-2.398-1.472-2.373M2.835 8.59c-.59-.03-1.278.154-1.761.594-.55.5-.702 1.337-.487 2.014.088.278.316.685.793.753.636.09.767.378 1.519.228.752-.149 1.32-.764 1.549-1.446.261-.943-.128-1.432-.717-1.867-.22-.163-.541-.257-.896-.276m1.79.74c-.048-.03-.06.03.018.244.393 1.083-.37 2.097-1.03 2.566-.657.469-1.491.247-1.832.143s-.522.014-.507.194c.009.101.092.221.243.318a2.46 2.46 0 0 1-1.341-1.96A2.4 2.4 0 0 1 .39 9.562a2.4 2.4 0 0 0-.379 1.567 2.47 2.47 0 0 0 2.695 2.222 2.47 2.47 0 0 0 1.754-1.003c.79-.857.786-2.326.373-2.739-.075-.134-.16-.25-.208-.28zm-1.12.627a.69.69 0 0 1 .546.326c.38.6-.384 1.388-.961 1.539-.613.16-.899.005-.855-.82.028-.516.547-.958 1.047-1.035a1 1 0 0 1 .223-.01m18.691.03c.183.084.193 1.621-.11 2.737-.521 1.924-2.324 4.901-3.532 6.28-.927 1.057-1.963 1.499-3.212 1.684-2.6.506.158-3.82 2.074-3.583s3.972-3.732 4.436-6.155c.142-.738.26-1.002.344-.963m-17.367.621c.014.003.025.091.036.21-.07 1.247-1.215 1.934-1.87 2.025-.178.024-.49.011-.34-.123.098-.089.593-.054 1.04-.294.448-.241.98-.768 1.075-1.518.028-.22.045-.302.06-.3m3.935.111c.406.149.734.324 1.057.424.589.18 1.277.345 1.7.428.657.13 1.342.451 1.75.587.602.2.873.576.851 1.014-.02.438-.23-.055-.56-.276-.31-.208-1.054-.641-2.58-1.142-1.263-.414-1.905-.769-2.218-1.034m14.908 2.118c.126.515-.695 4.097-3.015 7.124-.778 1.015-1.84 1.768-2.89 2.294-.774.388-1.343.463-2.016.564-.525.079-.914.012-.886-.328.038-.447.567-.163 1.333-.35 2.751-.667 3.946-2.044 5.591-4.63 1.281-2.014 1.84-4.249 1.883-4.674m-16.471 2.53c-1-.034-2.08.394-2.747 1.233-1.442 1.874-.348 3.957.095 3.965.444.007.711.07 1.16.385.888.369 2.52.136 3.273-.856s.778-2.36.491-3.186c-.351-1.01-1.272-1.507-2.272-1.54m2.494 1.164q-.027.01.006.115c.622 1.898.048 3.4-1.025 4.173-1.051.759-2.497.886-3.654.286-.34-.176-.48.08-.322.226 2.937 2.721 7.357-1.016 5.41-4.317-.164-.278-.364-.506-.415-.483m-6.115.346a3.78 3.78 0 0 0-.449 2.953 3.775 3.775 0 0 0 4.608 2.697 3.78 3.78 0 0 0 2.42-1.96 3.78 3.78 0 0 1-2.255 1.666 3.775 3.775 0 0 1-4.608-2.695 3.78 3.78 0 0 1 .284-2.662zm5.438.61c.06-.008.102.075.13.283.283 2.196-1.228 2.81-1.72 2.94-1.665.435-1.856-.621-.154-1.186.913-.303 1.485-2.007 1.744-2.038m1.194 1.58c.021-.004.016.1-.006.25-.23 1.543-1.687 2.68-2.928 2.721-.251.026-.582-.082-.274-.147.374-.078 2.548-.642 3.059-2.43.08-.28.127-.39.149-.394"/></svg></span> Mercurial</a></strong>: Like Git, Mercurial is a distributed version control system, but with a different branching and merging model. It's an alternative to Git for version control.</p>
+</li>
+</ul>
+<hr />
+<h2 id="adding-code-to-github-via-command-line">Adding Code to GitHub via Command Line<a class="headerlink" href="#adding-code-to-github-via-command-line" title="Permanent link">&para;</a></h2>
+<details class="warning">
+<summary>Prerequisite: a GitHub account</summary>
+<p>Navigate to the <a href="https://github.com/">GitHub website</a> and click <em>Sign Up</em>, and follow the on screen instructions.</p>
+</details>
+<p>Through this exercise, users will learn to make changes using the command line. To remove potential issues with SSH and Tokens, we are going to carry out this exercise using <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"/><path d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75m-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75"/></svg></span> <strong>CodeSpaces</strong>. Refer to the "<a href="https://foss.cyverse.org/04_talk_to_computer/#accessing-a-linux-shell-in-github">Steps to Launch Codespaces</a>" section in the How to Talk to Computers in order to launch a <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"/><path d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75m-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75"/></svg></span> <strong>CodeSpace</strong>.</p>
+<details class="warning">
+<summary>Adding Code Locally Using Your Machine</summary>
+<p>This exercise can be carried out locally, on your machine. Here are the requisites and steps required to clone the repository and push changes back to GitHub.</p>
+<div class="admonition warning">
+<p class="admonition-title">Prerequisites</p>
+<details class="info">
+<summary>Installing Git</summary>
+<p>You can follow the official guidelines here: <a href="https://github.com/git-guides/install-git">https://github.com/git-guides/install-git</a>. Here we recommend how to install Git on your local machine.</p>
+<details class="info">
+<summary>Windows</summary>
+<div class="admonition warning">
+<p class="admonition-title">These instructions are for Windows users <strong>NOT</strong> using <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL2</a>. If you do have WSL2, follow the <strong>Unix</strong> instructions.</p>
+</div>
+<ol>
+<li>Navigate to the <a href="https://gitforwindows.org/">latest Git for Windows installer</a> and download the latest version.</li>
+<li>Once the installer has started, follow the instructions as provided in the Git Setup wizard screen until the installation is complete.</li>
+<li>Search and open <strong>Git Bash</strong>. From here, you should be able to run Git commands.</li>
+</ol>
+</details>
+<details class="info">
+<summary>MacOS</summary>
+<ol>
+<li>Install <a href="https://brew.sh/">Homebrew</a> (a package manager for MacOS): `/bin/bash -c "$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh">https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh</a>)"``</li>
+<li>Install Git: <code>brew install git</code></li>
+</ol>
+</details>
+<details class="info">
+<summary>Unix</summary>
+<p>The following command will install git and all related packages on your Unix machine.
+<div class="highlight"><pre><span></span><code>$ sudo apt-get install -y git-all
+</code></pre></div></p>
+</details>
+</details>
+<p>You then need to choose between generating a <strong>Personal Access Token</strong> or using <strong>SSH keys</strong>. This is useful if you want to work locally and push your changes to GitHub.</p>
+<details class="info">
+<summary>Choice A: Generate a Personal Access Token</summary>
+<p>You can follow the official documentation on how to generate Tokens <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">here</a>. Following are quick steps you can follow in order to setup your account on your machine using tokens:</p>
+<ol>
+<li>On your coumputer:<ol>
+<li>Clone your repository (<code>git clone &lt;repository&gt;</code>)</li>
+<li>Make changes where necessary, and <strong>add</strong> (<code>git add &lt;changed files&gt;</code>), <strong>commit</strong> (<code>git commit -m "&lt;message on changes&gt;"</code>) and <strong>push</strong> your changes (<code>git push origin</code>).</li>
+<li>You should be prompted to logging in your GitHub account. Put your email <strong>but not your password</strong>. Instead, open your web browser and follow the steps below:</li>
+</ol>
+</li>
+<li>On GitHub:<ol>
+<li>Navigate to your GitHub Settings (You can access your account Settings from the drop down menu where your account icon is, on the top right of the screen)</li>
+<li>Scroll to the bottom of the left hand side menu to find <em>Developer settings</em> and open it.</li>
+<li>Click <em>Personal access tokens</em> &gt; <em>Tokens (classic)</em></li>
+<li>Click <em>Generate new token</em> &gt; <em>Generate new token (classic)</em>. You might need to input your Authentification code if you have enabled 2FA.</li>
+<li>Give it a name, and all the scopes you require (tip: select all scopes and <em>No Expiration</em>), then click <em>Generate Token</em>. <strong>Copy the new generated Token</strong></li>
+</ol>
+</li>
+<li>Back on your computer:<ol>
+<li>If you have been following the steps above, you should still be in your shell with GitHub still asking for your password.</li>
+<li><strong>Paste</strong> your Token here, and you should be logging in. Your changes should then be saved to GitHub.</li>
+</ol>
+</li>
+</ol>
+</details>
+<details class="info">
+<summary>Choice B: Connecting via SSH</summary>
+<p>The process of connecting your computer to GitHub using an SSH key is more expedited (and probably less confusing). </p>
+<p>As a setup step, see if your computer is already connected to GitHub by doing <code>ssh -T git@github.com</code>. If the response message is <code>git@github.com: Permission denied (publickey).</code> it signifies that your computer is not yet linked with GitHub. To link your computer to github to the following:</p>
+<ol>
+<li>Generate an SSH key with a level of encryption that you prefer: <code>ssh-keygen -T ed25519 -C &lt;your github email&gt;</code>. This command generates an SSH key with <a href="https://ed25519.cr.yp.to/">ed25519</a> encryption (harder to crack!) and adds your email as "comment" (<code>-C</code>, will help recongizing the user adding the key). A number of additional questions are going to ask you where you'd like to save the key and whether you'd like to add a password for protection; unless you want to save it elsewhere, feel free to use the default options. Upon completion you should see something like this:
+<div class="highlight"><pre><span></span><code>Your identification has been saved in /c/Users/&lt;user&gt;/.ssh/id_ed25519
+Your public key has been saved in /c/Users/&lt;user&gt;/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o &lt;your github email&gt;
+The key&#39;s randomart image is:
++--[ED25519 256]--+
+|^B== o.          |
+|%*=.*.+          |
+|+=.E =.+         |
+| .=.+.o..        |
+|....  . S        |
+|.+ o             |
+|+ =              |
+|.o.o             |
+|oo+.             |
++----[SHA256]-----+
+</code></pre></div></li>
+<li>Upon generating the ssh key, copy it. You can reveal it by doing <code>cat ~/.ssh/id_ed25519.pub</code>.</li>
+<li>In GitHub, go to your settings: click your account icon on top right, and from the drop down menu, select <em>Settings</em> and then <em>SSH and GPG keys</em>. Here, click on <em>New SSH Key</em>, where you can then paste the newly geneated key. Add a name reflecting your machine and save changes. </li>
+</ol>
+<p>Optional: if you want to check if you successfully linked your computer to GitHub, do <code>ssh -T git@github.com</code>. You should receive the following message: `Hi <GitHub username>! You've successfully authenticated, but GitHub does not provide shell access.</p>
+</details>
+<p>Adding code locally is a more complex than adding code through the web page, but it allows for better control on what files you commit.</p>
+<ul>
+<li>To add or modify code locally, you need to <strong>clone</strong> the repository on your computer.</li>
+<li>You can then clone the repository by clicking on the <strong>Code</strong> button, and copying the link shown
+    <figure markdown>
+    <img alt="git_4" src="../assets/git_4.png" />
+    </figure></li>
+<li>On your machine, open a terminal window and type the following command:
+<div class="highlight"><pre><span></span><code>$ git clone &lt;repository address&gt;     # Replace &lt;repository address&gt; with the link you copied such as below
+
+$ git clone https://github.com/CosiMichele/FOSSF24-tutorial.git
+Cloning into &#39;FOSSF24-tutorial_tutorial&#39;...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (13/13), 14.47 KiB | 90.00 KiB/s, done.
+</code></pre></div></li>
+<li>Your code is now available to you on your machine, and you can add and modify files as needed.</li>
+</ul>
+</div>
+</details>
+<div class="admonition info">
+<p class="admonition-title">When using CodeSpaces, there is no need to clone your repository (steps for cloning are reported in the admonition above).</p>
+</div>
+<p>You can now modify or add files locally. However you will still have to push changes to the repository. Prior to doing so there are a couple of steps you should do:</p>
+<ul>
+<li><code>git status</code>: it checkes on the status of the repository (files that have been modified, deleted, added - from either local or in the online repository)</li>
+<li><code>git pull</code>: it checks and "pulls" changes from the online repository to your local repository. It ensures that you are always updated on the repository files <em>and</em> it can save a lot of time in case there are clashing commits from different users.</li>
+</ul>
+<p>To do so:</p>
+<ul>
+<li><strong>Add</strong> all fiels you have modified and want to commit:
+<div class="highlight"><pre><span></span><code>$ git add .    # Recall that &quot;.&quot; (period) stands for all files in a folder 
+</code></pre></div></li>
+<li><strong>Commit</strong> the changes. When committing changes, you have to add a message (in quotation marks) with the <code>-m</code> flag. This message is a concise and descriptive few words about what you did:
+<div class="highlight"><pre><span></span><code>$ git commit -m &quot;locally added and modified files&quot;
+[main 05f0ef6] locally added and modified files
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+ create mode 100644 file_from_local.md
+</code></pre></div></li>
+<li>push your changes with <strong>push</strong>:
+<div class="highlight"><pre><span></span><code>$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 585 bytes | 32.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/CosiMichele/FOSSF24-tutorial.git
+   b649de3..05f0ef6  main -&gt; main
+</code></pre></div></li>
+</ul>
+<p>You can now see the changes you made locally on the GitHub repository page.</p>
+<p><img alt="git_09" src="../assets/git_9.png" /></p>
+<h2 id="branching">Branching<a class="headerlink" href="#branching" title="Permanent link">&para;</a></h2>
+<p>Branching allows you to develop your code whilst in a contained environment separate from your <strong>main</strong> environment. You can view the list and number of branches on the top of your repository.</p>
+<p><img alt="git_10" src="../assets/git_10.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Why working on branches?</p>
+<p>Branches allow you to add/remove/change exisiting code independently from your main branch. This code can include alphas, betas and different versions of your code. Branches can be used to develop documentation or include different functionalitiets focused on Operating Systems and/or clusters and job schedulers. If needed, you can add these codes to your main branch later using <a href="00_basics.md#pull-requests"><strong>pull requests</strong></a>.</p>
+</div>
+<p>To create a new branch select the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.5 2.5 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25m-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0m8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5M4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5"/></svg></span> branch icon (listing the number of branches). This will open the branch page, which will list all of the branches in this repository.</p>
+<p><img alt="git_11" src="../assets/git_11.png" /></p>
+<p>Select <strong>New Branch</strong> on the top right. Give the new branch a name of your choice, select the source of code (in this case the only source of code can be the main branch) and select <strong>Create branch</strong>.</p>
+<p><img alt="git_12" src="../assets/git_12.png" /></p>
+<p>You can now see the updated list of all your branches.</p>
+<p><img alt="git_13" src="../assets/git_13.png" /></p>
+<p>You can now use this new branch to create changes you are not yet ready to put in your main branch.</p>
+<div class="admonition warning">
+<p class="admonition-title">Want to delete a branch?</p>
+<p>You can delete a branch from the branch web page by clicking on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75M4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.75 1.75 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15M6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25"/></svg></span> trash can icon. <strong>Beware!</strong> All the changes you've made on that branch will be deleted!</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Working on your machine?</p>
+<p>Once you create a branch online, you can change to the desired branch on your machine with <code>git switch &lt;branch&gt;</code>. Don't forget to push your changes first!</p>
+<div class="admonition tip">
+<p class="admonition-title">Pull and Tab</p>
+<ul>
+<li>Don't forget to perform a <code>git pull</code>!</li>
+<li>Don't know your branches? Tab! When typing <code>git switch</code>, press tab to see the options of all the branches you've created.</li>
+</ul>
+</div>
+</div>
+<h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h2>
+<p>Pull requests (PR) are proposed changes you can make on a repository. In this specific case, pull requests can be used to merge changes from a branch to another. Pull requests can also come from <strong>forks</strong> of your repository that another user or collaborator has made. </p>
+<p>Assuming you have made changes in your branch (added a file, for example), a pop up will notify you that a branch has pushed some changes. In case you want to merge the branch and the main repository, you can review and merge by clicking the <strong>Compare &amp; pull request</strong> button. However, you may want to wait until more changes are made.</p>
+<p><img alt="git_14" src="../assets/git_14.png" /></p>
+<p>Once you are ready to merge the changes onto your main branch, click on the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.5 2.5 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25m-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0m8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5M4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5"/></svg></span> branch icon, and select <strong>New pull request</strong> from the branch you have just made changes. This will open a new page which will list all the changes made showing all files that have been modified, added, or deleted. When you're done reviewing your changes, click <strong>Create pull request</strong>.</p>
+<p><img alt="git_15" src="../assets/git_15.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Pay attention to the information on the PR page!</p>
+<p>The PR page will not only show you what changes you've made, but also where the changes are coming from (which branch), as well as reviewers, assigneers, labels and other information necessary when working on a big project. It will also show whether the changes are <strong>Able</strong> to be merged (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span>) or not (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-3.22 3.22a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06"/></svg></span>)! </p>
+</div>
+<p>Upon createing the pull request, a new page will open which will test whether the changes can be merged automatically. Changes that are not able to be merged usually clash with other changes other collaborators have made - this will require your revision prior to merging the PR! After revision, select <strong>Merge pull request</strong> and <strong>Confirm merge</strong>.</p>
+<p><img alt="git_16" src="../assets/git_16.png" /></p>
+<p>Your main repository should now have the files created in your other branch and merged through the PR!</p>
+<p><img alt="git_17" src="../assets/git_17.png" /></p>
+<hr />
+<h2 id="self-assessment">Self Assessment<a class="headerlink" href="#self-assessment" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>True or False: Using <code>Git</code> requires a GitHub account</summary>
+<div class="admonition failure">
+<p class="admonition-title">False</p>
+<p><code>Git</code> is open source software.</p>
+<p>GitHub is a privately owned (Microsoft) company</p>
+<p>Other platforms like <a href="https://gitlab.com" target="_blank">GitLab</a>, <a href="https://gitbucket.github.io/" target="_blank">GitBucket</a>, and <a href="https://savannah.gnu.org/" target="_blank">GNU Savannah</a> all offer <code>Git</code> as a version control system service.</p>
+</div>
+</details>
+<details class="question">
+<summary>True or False: Using <code>Git</code> is easy</summary>
+<div class="admonition failure">
+<p class="admonition-title">False</p>
+<p>Using <code>Git</code> can be frustrating to even the most experienced users</p>
+</div>
+</details>
+<details class="question">
+<summary>When you find a new repository on GitHub that you think can help your research, what are the first things you should do?</summary>
+<div class="admonition success">
+<p class="admonition-title">Look at the README.md</p>
+<p>Most GitHub repositories have a README.md file which explains what you're looking at.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Look at the LICENSE</p>
+<p>Not all repositories are licensed the same way - be sure to check the LICENSE file to see whether the software is open source, or if it has specific requirements for reuse. </p>
+</div>
+</details>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-10-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2435 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/01_intro_open_sci/">
+      
+      
+        <link rel="prev" href="../glossary/">
+      
+      
+        <link rel="next" href="../02_managing_data/">
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+    
+    
+      
+        <title>1. Open Science - CyVerse Foundational Open Science Skills 2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-open-science" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Open Science
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2024" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72zM7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"/></svg>
+
+    </a>
+    CyVerse Foundational Open Science Skills 2024
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Before FOSS Starts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary & Acronyms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Open Science
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Open Science?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundational-open-science-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foundational Open Science Skills
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-the-year-of-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023: the Year of Open Science
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pillars-of-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Pillars of Open Science
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-access-publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Access Publications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Access Publications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-publishing-business-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Publishing Business Models:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-article-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Article Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-open-access-mandates-in-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Open Access Mandates in US
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAIR Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-open-as-possible-as-closed-as-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      As Open as Possible, as Closed as Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="As Open as Possible, as Closed as Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-info_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-educational-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Educational Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Methodology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sharing-research-computer-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sharing Research Computer Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-your-methods-or-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publishing Your Methods or Protocols
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preregistration" class="md-nav__link">
+    <span class="md-ellipsis">
+      PreRegistration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PreRegistration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-do-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Do This?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-info_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Peer Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Peer Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traditional-closed-peer-review-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traditional Closed Peer-Review System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complaints-with-the-traditional-closed-peer-review-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complaints with the Traditional Closed Peer-Review System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-peer-review-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Peer-Review Ideas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source Software
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      WHY do Open Science?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-open-science-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Open Science Communities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Assessment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_managing_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_documentation_communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Documentation & Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_computer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. How to Talk to Computers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_version_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Version Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_reproducibility_I/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Reproducibility I: Software Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_reproducibility_II/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Reproducibility II: Run Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_reproducibility_III/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Reproducibility III: Build Containers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Remote Computing: Cyverse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_reproducibility_IV/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Remote Computing: HPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capstone Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capstone Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Open Science?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foundational-open-science-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foundational Open Science Skills
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-the-year-of-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023: the Year of Open Science
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pillars-of-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Pillars of Open Science
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-access-publications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Access Publications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Access Publications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-publishing-business-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Publishing Business Models:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-article-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Article Versions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-open-access-mandates-in-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      New Open Access Mandates in US
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAIR Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#as-open-as-possible-as-closed-as-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      As Open as Possible, as Closed as Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="As Open as Possible, as Closed as Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-info_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-educational-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Educational Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Methodology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Methodology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sharing-research-computer-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sharing Research Computer Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-your-methods-or-protocols" class="md-nav__link">
+    <span class="md-ellipsis">
+      Publishing Your Methods or Protocols
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preregistration" class="md-nav__link">
+    <span class="md-ellipsis">
+      PreRegistration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PreRegistration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-do-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Do This?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-info_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Info
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Peer Review
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Open Peer Review">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#traditional-closed-peer-review-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traditional Closed Peer-Review System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complaints-with-the-traditional-closed-peer-review-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complaints with the Traditional Closed Peer-Review System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-peer-review-ideas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Peer-Review Ideas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open Source Software
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-do-open-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      WHY do Open Science?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommended-open-science-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommended Open Science Communities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self Assessment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="introduction-to-open-science">Introduction to Open Science<a class="headerlink" href="#introduction-to-open-science" title="Permanent link">&para;</a></h1>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<p>After this lesson, you should be able to:</p>
+<ul>
+<li>Explain what Open Science is</li>
+<li>Explain the components of Open Science</li>
+<li>Describe the behaviors of Open Science</li>
+<li>Explain why Open Science matters in education, research, and society</li>
+<li>Understand the advantages and the challenges to Open Science</li>
+</ul>
+</div>
+<p><br>
+<br></p>
+<h2 id="what-is-open-science">What is Open Science?<a class="headerlink" href="#what-is-open-science" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<p><span style="font-size:1.3em;"><em>"Open Science is transparent and accessible knowledge that is shared and developed through collaborative networks"</em></span></p>
+<p><a href="https://doi.org/10.1016/j.jbusres.2017.12.043">-Vincente-Saez &amp; Martinez-Fuentes 2018</a></p>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<p><span style="font-size:1.3em;"><em>"Open Science is a collaborative and transparent approach to scientific research that emphasizes the accessibility, sharing, and reproducibility of data, methodologies, and findings to foster innovation and inclusivity"</em></span></p>
+<p>-ChatGPT</p>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<p><span style="font-size:1.3em;"><em>"A series of reforms that interrogate every step in the research life cycle to make it more efficient, powerful and accountable in our emerging digital society".</em></span></p>
+<p>-Jeffrey Gillan</p>
+<figure>
+<p><a target="blank" rel="open science"><img alt="open science" src="../assets/life_cycle.png" width="400" /> </a>
+    <figcaption> The Research Life Cycle from <a href="https://osf.io/">Open Science Framework</a></figcaption></p>
+</figure>
+<p><br>
+<br>
+<br>
+<br></p>
+<div class="admonition quote">
+<p class="admonition-title">Other Definitions</p>
+<p>"Open Science is defined as an inclusive construct that combines various movements and practices aiming to make multilingual scientific knowledge openly  available,  accessible  and  reusable  for  everyone,  to  increase  scientific  collaborations  and  sharing of information for the benefits of science and society, and to open the processes of scientific knowledge creation, evaluation and communication to societal actors beyond the traditional scientific community." - <a href="https://www.unesco.org/en/natural-sciences/open-science" target="_blank">UNESCO Definition</a></p>
+<ul>
+<li><a href="https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en" target="_blank">UNESCO's Recommendation on Open Science</a></li>
+</ul>
+<p>"Open Science is the movement to make scientific research (including publications, data, physical samples, and software) and its dissemination accessible to all levels of society, amateur or professional..." <a href="https://en.wikipedia.org/wiki/Open_science" target="_blank"> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03v.42c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2z"/></svg></span> Wikipedia definition</a></p>
+</div>
+<p><br></p>
+<h2 id="foundational-open-science-skills">Foundational Open Science Skills<a class="headerlink" href="#foundational-open-science-skills" title="Permanent link">&para;</a></h2>
+<p><span style="font-size:1.2em;"><em>1. Building a culture of scientists eager to share research materials - such as data, code, methods, documentation, and early results - with colleagues and society at large, in addition to traditional publications</em></span> </p>
+<p><br>
+<br></p>
+<p><span style="font-size:1.2em;"><em>2. Mastery of digital tools to create reproducible science that others can build upon</em></span></p>
+<p><br>
+<br></p>
+<p><span style="font-size:1.2em;"><em>3. Understanding the push towards increased transparency and accountability for those practicing science (ie., compliance)</em></span></p>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<figure>
+  <a href="" target="blank" rel="open science"><img alt="open science" src="../assets/open_science_word_cloud.png" width="500" /> </a>
+    <figcaption> Open Science Word Cloud by <a href="http://dx.doi.org/10.31234/osf.io/vypkb">Pownall et al. 2023</a></figcaption>
+</figure>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<figure>
+    <iframe width="526" height="340" src="https://www.youtube.com/embed/8fGRN5fa-Ks" title="What is &#39;open science&#39;? | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <vidcaption> <br> <em>What is Open Science | The Royal Society</em> </figcaption> 
+</figure>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+<h2 id="2023-the-year-of-open-science">2023: the Year of Open Science<a class="headerlink" href="#2023-the-year-of-open-science" title="Permanent link">&para;</a></h2>
+<p>The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the Year of Open Science as a way to bring awareness to the benefits of Open Science and to steer the scientitic community towards its adoption. </p>
+<p>NASA leads a prominent program called <a href="https://github.com/nasa/Transform-to-Open-Science">Transform to Open Science</a> which includes an <a href="https://nasa.github.io/Transform-to-Open-Science/take-os101/">online class on Open Science</a>. </p>
+<figure>
+<p><a href="https://github.com/nasa/Transform-to-Open-Science" target="blank" rel="open science"><img alt="open science" src="https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png" width="200" /> </a>
+    <figcaption> NASA Transform to Open Science (TOPS) </figcaption></p>
+</figure>
+<p><br>
+<br>
+<br></p>
+<hr />
+<p><br>
+<br>
+<br></p>
+<h2 id="6-pillars-of-open-science"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> 6 Pillars of Open Science</strong><a class="headerlink" href="#6-pillars-of-open-science" title="Permanent link">&para;</a></h2>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Access Publications</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Data</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Educational Resources</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Methodology</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Peer Review</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Source Software</strong></p>
+<details class="question">
+<summary>Wait, how many pillars <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> of Open Science Are There Really?</summary>
+<p>The number can be from <a href="https://narratives.insidehighered.com/four-pillars-of-open-science/" target="_blank">4 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span></a> to <a href="https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science" target="_blank">8 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span></a></p>
+</details>
+<p><br>
+<br>
+<br>
+<br>
+<br></p>
+<h2 id="open-access-publications"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Access Publications</strong><a class="headerlink" href="#open-access-publications" title="Permanent link">&para;</a></h2>
+<p><a href="https://en.wikipedia.org/wiki/Open_access" target="_blank"><img alt="open access" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg" width="210" /></a></p>
+<div class="admonition quote">
+<p class="admonition-title">Definition</p>
+<p>"Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- <a href="https://www.openaccess.nl/en/what-is-open-access" target="_blank">OpenAccess.nl</a></p>
+</div>
+<p><br>
+<br>
+<br></p>
+<div class="admonition example">
+<p class="admonition-title">Open Access Journal Examples</p>
+<p>Major publishers have provided access points for publishing your work </p>
+<ul>
+<li><a href="https://www.science.org/content/page/open-access-aaas" target="_blank">AAAS Science</a></li>
+<li><a href="https://www.nature.com/nature-portfolio/open-access" target="_blank">Nature</a></li>
+<li><a href="https://www.agu.org/Publish-with-AGU/Publish/Open-Access" target="_blank">American Geophysical Union</a></li>
+<li><a href="https://acsopenscience.org/australia-csiro/" target="_blank">Commonwealth Scientific and Industrial Research Organisation (CSIRO)</a></li>
+<li><a href="https://open-research-europe.ec.europa.eu/" target="_blank">Open Research Europe</a></li>
+<li><a href="https://plos.org/" target="_blank">PLOS</a></li>
+<li><a href="https://www.mdpi.com/" target="_blank">MDPI</a></li>
+<li><a href="https://esajournals.onlinelibrary.wiley.com/journal/21508925" target="_blank">Ecosphere</a></li>
+</ul>
+</div>
+<p><br>
+<br></p>
+<h3 id="types-of-publishing-business-models">Types of Publishing Business Models:<a class="headerlink" href="#types-of-publishing-business-models" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Subscription model - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).</p>
+</li>
+<li>
+<p>Open Access model - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. </p>
+<ul>
+<li>Open Access publishing in Nature costs $12,290!</li>
+<li>Open Access publising in PlosOne costs $2,290</li>
+</ul>
+</li>
+</ol>
+<p><br>
+<br>
+<br></p>
+<h3 id="research-article-versions">Research Article Versions<a class="headerlink" href="#research-article-versions" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Preprint - In academic publishing, a preprint is a version of scholary paper that precedes formal peer-review and publication in a scientific journal. The preprint may be available, often as a non-typeset version available for free online. </p>
+<details class="example">
+<summary>Pre-print Services</summary>
+<ul>
+<li><a href="https://asapbio.org/preprint-servers" target="_blank">ASAPbio Pre-Print Server List</a> - ASAPbio is a scientist-driven non-profit promoting transparency and innovation comprehensive list of pre-print servers inthe field of life science communication.</li>
+<li><a href="https://www.essoar.org/" target="_blank">ESSOar</a> - Earth and Space Science Open Archive hosted by the American Geophysical Union.</li>
+<li><a href="https://peercommunityin.org/">Peer Community In (PCI)</a> a free recommendation process of scientific preprints based on peer reviews</li>
+<li><a href="https://osf.io/preprints/" target="_blank">OSF.io Preprints</a> are partnered with numerous projects under the "-rXivs"</li>
+</ul>
+<details class="tip">
+<summary>The rXivs</summary>
+<ul>
+<li>
+<p><a href="https://osf.io/preprints/africarxiv/" target="_blank">AfricArXiv</a></p>
+</li>
+<li>
+<p><a href="https://cabidigitallibrary.org/journal/agrirxiv" target="_blank">AgrirXiv</a></p>
+</li>
+<li>
+<p><a href="https://arabixiv.org/discover" target="_blank">Arabixiv</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/" target="_blank">arXiv</a> - is a free distribution service and an open-access archive for 2,086,431 scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.</p>
+</li>
+<li>
+<p><a href="https://biohackrxiv.org/" target="_blank">BioHackrXiv</a></p>
+</li>
+<li><a href="https://www.biorxiv.org/" target="_blank">BioRxiv</a> -  is an open access preprint repository for the biological sciences.</li>
+<li><a href="https://bodoarxiv.wordpress.com/" target="_blank">BodorXiv</a></li>
+<li><a href="https://eartharxiv.org/" target="_blank">EarthArXiv</a> - is an open access preprint repository for the Earth sciences.</li>
+<li><a href="https://ecsarxiv.org/" target="_blank">EcsArXiv</a> - a free preprint service for electrochemistry and solid state science and technology</li>
+<li><a href="https://edarxiv.org/" target="_blank">EdArXiv</a> - for the education research community</li>
+<li><a href="https://engrxiv.org/" target="_blank">EngrXiv</a> for the engineering community</li>
+<li><a href="https://www.ecoevorxiv.com/" target="_blank">EvoEcoRxiv</a> - is an open acccess preprint repository for Evolutionary and Ecological sciences.</li>
+<li><a href="https://mediarxiv.com/" target="_blank">MediArXiv</a> for Media, Film, &amp; Communication Studies</li>
+<li><a href="https://www.medrxiv.org/" target="_blank">MedRxiv</a> - is an open access preprint repository for Medical sciences.</li>
+<li><a href="https://paleorxiv.org/" target="_blank">PaleorXiv</a> - is an open access preprint repository for Paleo Sciences</li>
+<li><a href="https://psyarxiv.com/" target="_blank">PsyrXiv</a> - is an open access preprint repository for Psychological sciences.</li>
+<li><a href="https://socopen.org/" target="_blank">SocArXiv</a> - is an open access preprint repository for Social sciences.</li>
+<li><a href="https://sportrxiv.org/" target="_blank">SportrXiv</a> - is an open access preprint for Sports sciences.</li>
+<li><a href="https://thesiscommons.org/">ThesisCommons</a> - open Theses</li>
+</ul>
+</details>
+</details>
+</li>
+<li>
+<p>Author's accepted manuscript (AAM) - includes changes that came about during peer-review process. It is a non-typeset or formatted article. This often had an embargo period of 12-24 months</p>
+</li>
+<li>
+<p>Published version of record (VOR) - includes stylistic edits, online &amp; print formatting. This is the version that publishers claim ownership of with copyrights or exclusive licensing. </p>
+</li>
+</ol>
+<p><br>
+<br></p>
+<details class="tip">
+<summary>Copyrights and Science Publishing</summary>
+<p>Upon completion of a peer-reviewed science paper, the author typically 1. signs over the copyright of the paper to the publisher or 2. signs an exclusive license agreement with the publisher</p>
+<p>For example authors that publish in <a href="https://www.science.org/content/page/science-journals-editorial-policies#copyright-license-to-publish"><em>Science</em></a> retain their copyright but sign a 'license to pubish' agreement with AAAS</p>
+<p>Elsevier requires authors to sign over copyright of the article but authors retains some rights of distribution</p>
+<ul>
+<li><a href="https://www.elsevier.com/about/policies-and-standards/copyright#1-author-rights">Elesevier summary of copyright policies</a></li>
+<li><a href="https://www.elsevier.com/about/policies-and-standards/sharing">Elesevier article sharing policy</a></li>
+<li><a href="https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html">Wiley policy on self-archiving</a></li>
+<li><a href="https://www.springer.com/gp/open-access/publication-policies/copyright-transfer#:~:text=Springer%20Nature%20authors%20retain%20copyright,found%20in%20our%20publishing%20policies.">Springer Nature copyright policies</a></li>
+</ul>
+</details>
+<p><br>
+<br></p>
+<h3 id="new-open-access-mandates-in-us">New Open Access Mandates in US<a class="headerlink" href="#new-open-access-mandates-in-us" title="Permanent link">&para;</a></h3>
+<p>The White House Office of Science and Technology (OSTP) has recently released a policy document known as the <a href="https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/">Nelson Memo</a> stating that tax-payer funded research must by open access by 2026 with no embargo period. </p>
+<p>Authors can comply with the memo by either:</p>
+<ol>
+<li>Publishing Open Access (this usually requires higher fees)</li>
+<li>Distributing the Author's Accepted Manuscript (AAM) </li>
+</ol>
+<p>Read <a href="NSF’s Public Access Plan 2.0 is document NSF 23-104">NSF's open access plan</a> in reponse to the Nelson Memo</p>
+<p>Read <a href="https://www.nal.usda.gov/sites/default/files/page-files/USDA_Public_Access_Implementation_Plan_8_10_2023_0.pdf">USDA's open access plan</a> in reponse to the Nelson Memo</p>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="additional-info">Additional Info<a class="headerlink" href="#additional-info" title="Permanent link">&para;</a></h3>
+<p>University of Arizona Libraries information on <a href="https://lib.arizona.edu/research/open-access">Open Access publishing</a> including agreements with several journals to reduce or waive publishing fees. </p>
+<p><a href="https://www.coalition-s.org/">https://www.coalition-s.org/</a></p>
+<p><br><br />
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>
+<br></p>
+<h2 id="open-data"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Data</strong><a class="headerlink" href="#open-data" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<div class="admonition quote">
+<p class="admonition-title">Definitions</p>
+<p>“Open data and content can be freely used, modified, and shared by anyone for any purpose” - <a href="https://opendefinition.org/" target="_blank">The Open Definition</a></p>
+<p>"Open data is data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and sharealike." - <a href="https://opendatahandbook.org/guide/en/what-is-open-data/" target="_blank">Open Data Handbook</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Open_data" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03v.42c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2z"/></svg></span> Wikipedia definition</a></p>
+</div>
+<p><br>
+<br>
+<br></p>
+<p><span style="font-size:1.1em;">Data are the foundation for any scientific endeavor. A lot of thought needs to go into how to best collect, store, analyze, curate, share, and archive data.</span></p>
+<figure>
+<p><a href="https://en.wikipedia.org/wiki/DIKW_pyramid" target="blank" rel="open science"><img alt="open science" src="https://upload.wikimedia.org/wikipedia/commons/0/06/DIKW_Pyramid.svg" width="400" /> </a>
+    <figcaption> DIKW Pyramid</figcaption></p>
+</figure>
+<p><br>
+<br></p>
+<h3 id="fair-principles">FAIR Principles<a class="headerlink" href="#fair-principles" title="Permanent link">&para;</a></h3>
+<p>In 2016, the <a href="https://www.nature.com/articles/sdata201618">FAIR Guiding Principles</a> for scientific data management and stewardship were published in <em>Scientific Data</em>. </p>
+<p><em><strong>Findable:</strong></em>
+Making data discoverable by the wider academic community and the public</p>
+<p><em><strong>Accessible:</strong></em>
+Using unique identifiers, metadata and a clear use of language and access protocols</p>
+<p><em><strong>Interoperable:</strong></em>
+Applying standards to encode and exchange data and metadata</p>
+<p><em><strong>Reusable:</strong></em>
+Enabling the repurposing of researach outputs to maximize their research potential</p>
+<p><br>
+<br>
+<br>
+<br></p>
+<div class="admonition tip">
+<p class="admonition-title">Reasons to Make your Data Open</p>
+<ul>
+<li>Unnecessary duplication. Duplication of research is costly for society, and places unnecessary burden on heavily researched people and populations.  </li>
+<li>The data underlying publications are maintained and accessible, allowing for validation of results.</li>
+<li>Data openness leads to more collaboration and advances research and innovation.</li>
+<li>Your research is more visible and has greater impact. Publications which allow access to the underlying data get more citations. Greater visibility also allows for better validation and scrutiny of findings.</li>
+<li>Other researchers can cite your data, which will drive up your citation number and increase your influence in your field of research.</li>
+<li>Storing your data in a public repository also provides you with secure and ongoing storage that may otherwise not be available to you.
+-<a href="https://www.fosteropenscience.eu/">Foster Open Science</a></li>
+</ul>
+</div>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="as-open-as-possible-as-closed-as-necessary">As Open as Possible, as Closed as Necessary<a class="headerlink" href="#as-open-as-possible-as-closed-as-necessary" title="Permanent link">&para;</a></h3>
+<p>There are many circumstances where open data could be harmful:</p>
+<ul>
+<li>
+<p>Data on human health</p>
+</li>
+<li>
+<p>Location of endangered species or archaeological sites</p>
+</li>
+<li>
+<p>Data that individuals or groups do not want to be public</p>
+<details class="tip">
+<summary>CARE Principles</summary>
+<p>The <a href="https://www.gida-global.org/care">CARE Principles</a> for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event "Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop," 8 November 2018, Gaborone, Botswana.</p>
+<p><em>Collective Benefit</em></p>
+<ul>
+<li>C1. For inclusive development and innovation</li>
+<li>C2. For improved governance and citizen engagement</li>
+<li>C3. For equitable outcomes</li>
+</ul>
+<p><em>Authority to Control</em></p>
+<ul>
+<li>A1. Recognizing rights and interests</li>
+<li>A2. Data for governance</li>
+<li>A3. Governance of data</li>
+</ul>
+<p><em>Responsibility</em></p>
+<ul>
+<li>R1. For positive relationships</li>
+<li>R2. For expanding capability and capacity</li>
+<li>R3. For Indigenous languages and worldviews</li>
+</ul>
+<p><em>Ethics</em></p>
+<ul>
+<li>E1. For minimizing harm and maximizing benefit</li>
+<li>E2. For justice</li>
+<li>E3. For future use</li>
+</ul>
+</details>
+</li>
+<li>
+<p>Data for making <a href="https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx">lethal weapons</a></p>
+</li>
+</ul>
+<p><br>
+<br></p>
+<div class="admonition tip">
+<p class="admonition-title">Open vs. FAIR</p>
+<p>FAIR does not demand that data be open: See one definition of open: <a href="http://opendefinition.org/">http://opendefinition.org/</a></p>
+<p>Open data does not necessarily mean it is FAIR</p>
+</div>
+<p><br>
+<br></p>
+<h4 id="additional-info_1">Additional Info<a class="headerlink" href="#additional-info_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>The Ethics of Geolocated Data from <a href="https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/" target="_blank">UK Statistics Authority</a> </p>
+</li>
+<li>
+<p>Health information <a href="https://www.hhs.gov/hipaa/index.html" target="_blank">US HIPAA</a></p>
+</li>
+<li>
+<p>Indigenous data sovereignty: <a href="http://doi.org/10.5334/dsj-2020-043" target="_blank">CARE Principles for Indigenous Data Governance</a> , <a href="https://www.gida-global.org/care" target="_blank">Global Indigenous Data Alliance (GIDA)</a>, <a href="https://fnigc.ca/ocap-training/" target="_blank">First Nations OCAP® (Ownership Control Access and Possession)</a>, <a href="https://www.arcus.org/arctic-info/archive/33236" target="_blank">Circumpolar Inuit Protocols for Equitable and Ethical Engagement</a> </p>
+</li>
+</ul>
+<p><br>
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br>
+<br></p>
+<h2 id="open-educational-resources"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Educational Resources</strong><a class="headerlink" href="#open-educational-resources" title="Permanent link">&para;</a></h2>
+<figure>
+    <a href="https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources"><img alt="open educational resources" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg" width="240" /></a>
+</figure>
+<div class="admonition quote">
+<p class="admonition-title">Definitions</p>
+<p>"Open Educational Resources (OER) are learning, teaching and research materials in any format and medium that reside in the public domain or are under copyright that have been released under an open license, that permit no-cost access, re-use, re-purpose, adaptation and redistribution by others." - <a href="https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources" target="_blank">UNESCO</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Open_educational_resources" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03v.42c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2z"/></svg></span> Wikipedia definition</a></p>
+</div>
+<details class="example">
+<summary>Digital Literacy Organizations</summary>
+<ul>
+<li><a href="https://carpentries.org/" target="_blank">The Carpentries</a> - teaches foundational coding and data science skills to researchers worldwide  </li>
+<li><a href="https://www.edx.org/" target="_blank">EdX</a> - Massively Open Online Courses (not all open) hosted through University of California Berkeley</li>
+<li><a href="https://www.everyoneon.org/" target="_blank">EveryoneOn</a> - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings </li>
+<li><a href="https://connecthomeusa.org/" target="_blank">ConnectHomeUSA</a> - is a movement to bridge the digital divide for HUD-assisted housing residents in the United States under the leadership of national nonprofit EveryoneOn</li>
+<li><a href="https://www.gdlcouncil.org/" target="_blank">Global Digital Literacy Council</a> -  has dedicated more than 15 years of hard work to the creation and maintenance of worldwide standards in digital literacy</li>
+<li><a href="https://indigidata.nativebio.org/" target="_blank">IndigiData</a> - training and engaging tribal undergraduate and graduate students in informatics</li>
+<li><a href="https://digitalequitycenter.org/about-us/" target="_blank">National Digital Equity Center</a> a 501c3 non-profit, is a nationally recognized organization with a mission to close the digital divide across the United States</li>
+<li><a href="https://www.digitalinclusion.org/" target="_blank">National Digital Inclusion Allaince</a> - advances digital equity by supporting community programs and equipping policymakers to act</li>
+<li><a href="https://www.netliteracy.org/" target="_blank">Net Literacy</a></li>
+<li><a href="https://www.oercommons.org/" target="_blank">Open Educational Resources Commons</a></li>
+<li><a href="https://projectpythia.org/" target="_blank">Project Pythia</a> is the education working group for Pangeo and is an educational resource for the entire geoscience community</li>
+<li><a href="https://resbaz.github.io/resbaz2021/" target="_blank">Research Bazaar</a> - is a worldwide festival promoting the digital literacy emerging at the centre of modern research</li>
+<li><a href="https://techboomers.com/" target="_blank">TechBoomers</a> - is an education and discovery website that provides free tutorials of popular websites and Internet-based services in a manner that is accessible to older adults and other digital technology newcomers</li>
+</ul>
+</details>
+<details class="example">
+<summary>Educational Materials</summary>
+<ul>
+<li><a href="https://teachtogether.tech/en/index.html#" target="_blank">Teach Together</a> by Greg Wilson</li>
+<li><a href="https://www.digitallearn.org/" target="_blank">DigitalLearn</a></li>
+</ul>
+</details>
+<p><br>
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br>
+<br></p>
+<h2 id="open-methodology"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Methodology</strong><a class="headerlink" href="#open-methodology" title="Permanent link">&para;</a></h2>
+<p><br></p>
+<div class="admonition quote">
+<p class="admonition-title">Definitions</p>
+<p>"An open methodology is simply one which has been described in sufficient detail to allow other researchers to repeat the work and apply it elsewhere." - <a href="https://doi.org/10.1186/s13059-015-0669-2" target="_blank">Watson (2015)</a></p>
+<p>"Open Methodology refers to opening up methods that are used by researchers to achieve scientific results and making them publicly available." - <a href="https://www.oana.at/en/about-open-science" target="_blank">Open Science Network Austria</a></p>
+</div>
+<p><br>
+<br></p>
+<h3 id="sharing-research-computer-code">Sharing Research Computer Code<a class="headerlink" href="#sharing-research-computer-code" title="Permanent link">&para;</a></h3>
+<p>Scientists around the globe are creating computer code for scientific analysis. These are valuable contributions that need to be shared!</p>
+<p>Platforms like <a href="https://github.com/search?q=open+science" target="_blank">GitHub</a> and <a href="https://gitlab.com/explore/projects/topics/Open%20Science" target="_blank">GitLab</a> are ideal for collaboratively developing code and sharing with the open internet. In FOSS, we will show you how to use Github for sharing code, <a href="04_documentation_communication.md">documentation</a>, <a href="04_documentation_communication.md">hosting websites</a>, and <a href="../05_version_control/">software version control</a>. </p>
+<figure style="display: flex; justify-content: center;">
+    <a href="https://github.com/"><img src="https://cdn.iconscout.com/icon/free/png-256/free-github-169-1174970.png" alt="github" style="width: 200px; margin-right: 30px;"></a>
+    <a href="https://gitlab.com/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/gitlab_logo.png" alt="gitlab" style="width: 200px;"></a>
+</figure>
+
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="publishing-your-methods-or-protocols">Publishing Your Methods or Protocols<a class="headerlink" href="#publishing-your-methods-or-protocols" title="Permanent link">&para;</a></h3>
+<details class="example">
+<summary>Platforms for Publishing Protocols &amp; Bench Techniques</summary>
+<ul>
+<li><a href="https://bio-protocol.org/Default.aspx" target="_blank">BioProtocol</a></li>
+<li><a href="https://currentprotocols.onlinelibrary.wiley.com/" target="_blank">Current Protocols</a></li>
+<li><a href="https://www.goldbio.com/search?q=&amp;type=documentation&amp;documentation_type=protocol" target="_blank">Gold Biotechnology Protocol list</a></li>
+<li><a href="https://www.jove.com/" target="_blank">JoVE</a> - Journal of Visualized Experiments</li>
+<li><a href="https://www.nature.com/nprot/" target="_blank">Nature Protocols</a></li>
+<li><a href="https://openwetware.org/wiki/Main_Page" target="_blank">OpenWetWare</a></li>
+<li><a href="https://protocolexchange.researchsquare.com/" target="_blank">Protocol Exchange</a></li>
+<li><a href="http://www.protocol-online.org/prot/" target="_blank">Protocols Online</a></li>
+<li><a href="https://www.protocols.io/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.46 6.28 11.05 9c-2.58.26-4.55 2.41-4.55 5a5 5 0 0 0 5 5c2.05 0 3.81-1.23 4.58-3H13.5v-2h8v2h-2.25a8.05 8.05 0 0 1-2.46 4h2.71v2h-16v-2h2.71a8 8 0 0 1-2.71-6c0-3.63 2.46-6.8 5.96-7.72m3.28-4.21.76 1.3.86-.5 3.5 6.06-3.47 2-3.5-6.06.87-.5-.76-1.3z"/></svg></span> Protocols</a></li>
+<li><a href="http://scigine.com/blog/" target="_blank">SciGene</a></li>
+<li><a href="https://experiments.springernature.com/" target="_blank">Springer Nature Experiments</a></li>
+</ul>
+</details>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="preregistration">PreRegistration<a class="headerlink" href="#preregistration" title="Permanent link">&para;</a></h3>
+<p>Preregistration is detailing your research and analysis plan and submitting it to an online registry <strong>before</strong> you engage in the research. </p>
+<figure>
+<p><a target="blank" rel="open science"><img alt="open science" src="../assets/cycle_prereg.png" width="500" /> </a>
+    <figcaption> PreRegistration in the Research Life Cycle</figcaption></p>
+</figure>
+<h4 id="why-do-this">Why Do This?<a class="headerlink" href="#why-do-this" title="Permanent link">&para;</a></h4>
+<p>Preregistration makes your process more open and records the difference between your initial research plan what you end up actually doing.</p>
+<p>Preregistration separates <em>hypothesis-generating</em>  (exploratory) from <em>hypothesis-testing</em> (confirmatory) research. Both are important. But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results. </p>
+<p>It also helps us avoid practices like <a href="https://en.wikipedia.org/wiki/Data_dredging" target="_blank">p-hacking</a> or <a href="https://en.wikipedia.org/wiki/HARKing" target="_blank">Hypothesizing After the Results are Known(HARKing)</a>. </p>
+<p><br></p>
+<h4 id="additional-info_2">Additional Info<a class="headerlink" href="#additional-info_2" title="Permanent link">&para;</a></h4>
+<p>Read this publication by <a href="https://www.pnas.org/doi/10.1073/pnas.1708274114" target="_blank">Nosek et al. 2018</a></p>
+<p>Open Science Framework Preregistration <a href="https://www.cos.io/initiatives/prereg">https://www.cos.io/initiatives/prereg</a></p>
+<p><br>
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br> 
+<br> </p>
+<h2 id="open-peer-review"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Peer Review</strong><a class="headerlink" href="#open-peer-review" title="Permanent link">&para;</a></h2>
+<p><br> 
+<br> </p>
+<div class="admonition quote">
+<p class="admonition-title">Definitions</p>
+<p>Open peer review is an umbrella term for a number of overlapping ways that peer review models can be adapted in line with the aims of Open Science, including making reviewer and author identities open, publishing review reports and enabling greater participation in the peer review process.  </p>
+<p><a href="https://doi.org/10.12688%2Ff1000research.11369.2">-Ross-Hellauer et al. (2017)</a></p>
+<p><br></p>
+<p><a href="https://en.wikipedia.org/wiki/Open_peer_review"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03v.42c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2z"/></svg></span> Wikipedia's definition</a></p>
+</div>
+<p><br>
+<br>
+<br></p>
+<h3 id="traditional-closed-peer-review-system">Traditional Closed Peer-Review System<a class="headerlink" href="#traditional-closed-peer-review-system" title="Permanent link">&para;</a></h3>
+<figure>
+<p><a target="blank" rel="open science"><img alt="close peer-review" src="../assets/peer_review.png" width="400" /> </a>
+    <figcaption> </figcaption></p>
+</figure>
+<ul>
+<li>Throughout and after the process, the author remains unaware of the reviewers' identities, while the reviewers know the identity of the authors. </li>
+<li>All communications between authors, reviewers and editors remains private </li>
+</ul>
+<p><br>
+<br>
+<br></p>
+<h3 id="complaints-with-the-traditional-closed-peer-review-system">Complaints with the Traditional Closed Peer-Review System<a class="headerlink" href="#complaints-with-the-traditional-closed-peer-review-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Unreliable and Inconsistent</li>
+<li>Delays and Expense</li>
+<li>Lack of Accountability and Risks of Subversion</li>
+<li>Social and Publication Biases</li>
+<li>Lack of Incentives</li>
+</ul>
+<p><a href="https://f1000research.com/articles/6-588/v2"><em>Ross-Hallauer 2017</em></a></p>
+<p><br>
+<br>
+<br>
+<br></p>
+<h3 id="open-peer-review-ideas">Open Peer-Review Ideas<a class="headerlink" href="#open-peer-review-ideas" title="Permanent link">&para;</a></h3>
+<figure>
+<p><a target="blank" rel="open science"><img alt="open science" src="../assets/plos_peer_review.png" width="500" /> </a>
+    <figcaption> Open Peer Review Options at <a href="https://plos.org/resource/open-peer-review/">PLOS</a></figcaption></p>
+</figure>
+<p><br>
+<br>
+<br></p>
+<p><a href="https://doi.org/10.1038/6295">Defenders of the Traditional Peer-Review System</a></p>
+<p><br>
+<br>
+<br></p>
+<div class="admonition tips">
+<p class="admonition-title">Example Open Peer-Review Systems</p>
+<p><a href="https://f1000research.com/about" target="_blank">F1000Research</a> An open research publishing platform that offers open peer review and rapid publication.
+The article from <a href="https://doi.org/10.12688%2Ff1000research.11369.2">Ross-Hellauer et al. (2017)</a> has open peer-reviews.</p>
+</div>
+<p><br></p>
+<div class="admonition tips">
+<p class="admonition-title">Platforms for Reviewing Preprints</p>
+<ul>
+<li><a href="https://prereview.org/" target="_blank">PREreview</a> </li>
+<li><a href="https://sciety.org/" target="_blank">Sciety</a> </li>
+<li><a href="https://pubpeer.com/" target="_blank">PubPeer</a> </li>
+<li><a href="https://asapbio.org/" target="_blank">ASAPbio</a> </li>
+</ul>
+</div>
+<p><br>
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br>
+<br></p>
+<h2 id="open-source-software"><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Source Software</strong><a class="headerlink" href="#open-source-software" title="Permanent link">&para;</a></h2>
+<p><a href="https://opensource.org/" target="_blank"><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg" width="240" /></a></p>
+<div class="admonition quote">
+<p class="admonition-title">Definitions</p>
+<p>"Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source software is developed in a decentralized and collaborative way, relying on peer review and community production." - <a href="https://www.redhat.com/en/topics/open-source/what-is-open-source" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.34 13.16c1.32 0 3.22-.27 3.22-1.84q.015-.18-.03-.36l-.78-3.4c-.18-.75-.34-1.09-1.66-1.75-1.02-.52-3.24-1.38-3.9-1.38-.61 0-.79.79-1.52.79-.7 0-1.22-.59-1.88-.59-.63 0-1.04.43-1.36 1.31 0 0-.88 2.5-1 2.86-.01.07-.02.13-.02.2 0 .97 3.82 4.15 8.93 4.15m3.43-1.19c.18.86.18.95.18 1.04 0 1.5-1.66 2.31-3.83 2.31-4.92 0-9.23-2.88-9.23-4.78 0-.27.06-.53.16-.77-1.77.08-4.05.4-4.05 2.42 0 3.32 7.84 7.39 14.05 7.39 4.76 0 5.95-2.15 5.95-3.85 0-1.34-1.15-2.86-3.23-3.76"/></svg></span> Red Hat</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Open-source_software" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.97 18.95-2.56-6.03c-1.02 1.99-2.14 4.08-3.1 6.03-.01.01-.47 0-.47 0C7.37 15.5 5.85 12.1 4.37 8.68 4.03 7.84 2.83 6.5 2 6.5v-.45h5.06v.45c-.6 0-1.62.4-1.36 1.05.72 1.54 3.24 7.51 3.93 9.03.47-.94 1.8-3.42 2.37-4.47-.45-.88-1.87-4.18-2.29-5-.32-.54-1.13-.61-1.75-.61 0-.15.01-.25 0-.44l4.46.01v.4c-.61.03-1.18.24-.92.82.6 1.24.95 2.13 1.5 3.28.17-.34 1.07-2.19 1.5-3.16.26-.65-.13-.91-1.21-.91.01-.12.01-.33.01-.43 1.39-.01 3.48-.01 3.85-.02v.42c-.71.03-1.44.41-1.82.99L13.5 11.3c.18.51 1.96 4.46 2.15 4.9l3.85-8.83c-.3-.72-1.16-.87-1.5-.87v-.45l4 .03v.42c-.88 0-1.43.5-1.75 1.25-.8 1.79-3.25 7.49-4.85 11.2z"/></svg></span> Wikipedia definition</a></p>
+</div>
+<p><br>
+<br></p>
+<p>Research science (and also many companies) rely on open source software to operate</p>
+<p><br>
+<br></p>
+<div class="admonition tip">
+<p class="admonition-title">Open Source Software</p>
+<ul>
+<li>Linux operating system and shell</li>
+<li>Python </li>
+<li>R</li>
+<li>git</li>
+<li>Conda</li>
+<li>Docker</li>
+<li>Cyverse</li>
+<li>Pytorch</li>
+<li><a href="https://tyson-swetnam.github.io/awesome-open-science/software/" target="_blank">Tyson's Awesome List</a></li>
+</ul>
+</div>
+<p><br>
+<br></p>
+<p>When you create a new software, library, or package, you become its parent and guardian.</p>
+<figure>
+<p><a href="https://m.xkcd.com/2347/" target="blank" rel="xkcd"><img alt="xkcd" src="https://imgs.xkcd.com/comics/dependency.png" width="400" /> </a>
+    <figcaption> Image Credit: <a href="https://m.xkcd.com/2347/" target="_blank">XKCD Dependency</a> </figcaption></p>
+</figure>
+<p><br>
+<br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br>
+<br></p>
+<h2 id="why-do-open-science"><em>WHY</em> do Open Science?<a class="headerlink" href="#why-do-open-science" title="Permanent link">&para;</a></h2>
+<p>A paper from <a href="https://doi.org/10.1007/978-3-319-00026-8">Bartling &amp; Friesike (2014)</a> posits that there are 5 main schools of thought in Open Science, which represent 5 underlying motivations:</p>
+<ol>
+<li><strong>Democratic school</strong>: primarily concerned with making scholarly work freely available to everyone</li>
+<li><strong>Pragmatic school</strong>: primarily concerned with improving the quality of scholarly work by fostering collaboration and improving critiques</li>
+<li><strong>Infrastructure school</strong>: primarily focused on the platforms, tools, and services necessary to conduct efficient research, collaboration, and communication</li>
+<li><strong>Public school</strong>: primarily concerned with societal impact of scholarly work, focusing on engagement with broader public via citizen science, understandable scientific communication, and less formal communication</li>
+<li><strong>Measurement school</strong>: primarily concerned with the existing focus on journal publications as a means of measuring scholarly output, and focused on developing alternative measurements of scientific impact</li>
+</ol>
+<figure>
+<p><a href="https://library.oapen.org/bitstream/handle/20.500.12657/28008/1001989.pdf" target="blank" rel="fecher_friesike"><img alt="fecher_friesike" src="../assets/five_schools.png" width="700" /> </a>
+    <figcaption> In <a href="https://doi.org/10.1007/978-3-319-00026-8" target="_blank">Bartling &amp; Friesike (2014)</a> Open Science: One Term, Five Schools of Thought </figcaption></p>
+</figure>
+<p>We have added another school of thought </p>
+<ol>
+<li><strong>Compliance school</strong>: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
+<br>
+<br>
+<br>
+<br></li>
+</ol>
+<hr />
+<p><br>  <br />
+<br>
+<br></p>
+<h2 id="discussion-questions">Discussion Questions<a class="headerlink" href="#discussion-questions" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>Which of the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> pillars of Open Science is nearest to your own heart?</summary>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Access Publications</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Data</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Educational Resources</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Methodology</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Peer Review</strong></p>
+<p><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> Open Source Software</strong></p>
+</details>
+<details class="question">
+<summary>Are any of the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> pillars more important than the others?</summary>
+</details>
+<details class="question">
+<summary>Are there any <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 5h12a1 1 0 0 1 1 1 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1 1 1 0 0 1 1-1m15-3v2H3V2zm-6 6h2v14h-2zM7 8h2v14H7zm4 0h2v14h-2z"/></svg></span> pillars not identified that you think should be considered?</summary>
+</details>
+<details class="question">
+<summary>What characteristics might a paper, project, lab group require to qualify as doing <em>Open Science</em></summary>
+</details>
+<details class="question">
+<summary>What are some barriers to you, your lab group, or your domain doing Open Science?</summary>
+</details>
+<details class="question">
+<summary>What motivates you to do Open Science?</summary>
+</details>
+<details class="question">
+<summary>Do you feel that you fall into a particular "school"? If so, which one, and why?</summary>
+</details>
+<details class="question">
+<summary>Are there any motivating factors for doing Open Science that don't fit into this framework?</summary>
+</details>
+<p><br>
+<br>
+<br></p>
+<hr />
+<p><br>  <br />
+<br></p>
+<h2 id="recommended-open-science-communities">Recommended Open Science Communities<a class="headerlink" href="#recommended-open-science-communities" title="Permanent link">&para;</a></h2>
+<figure style="display: flex; justify-content: center;">
+    <a href="https://the-turing-way.netlify.app/welcome.html"><img src="https://the-turing-way-personas.netlify.app/_static/logo.jpg" alt="turingway" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://github.com/nasa/Transform-to-Open-Science"><img src="https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png" alt="nasatops" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://openscience.eu/foster-open-science"><img src="https://pbs.twimg.com/profile_images/464812585712234496/tI9cRV8S_400x400.png" alt="foster" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://carpentries.org/"><img src="https://datascience.wisc.edu/wp-content/uploads/sites/1430/2021/06/TheCarpentries-260x300.jpg" alt="carpentries" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://www.cos.io/"><img src="https://imagecdn.mightycause.com/2e70620b-783f-4389-93f2-79b2e9b81a22/" alt="cos" style="width: 120px;"></a>
+</figure>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1LNF5_bOkRV-RLIF4HYmu-gOemIa4IdfXEer89fM-Vy8/edit#gid=847887324" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg></span> Open Scholarship Grassroots Community Networks</a></p>
+<details class="info">
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m266.3 48.3-33.8 25.3c-5.4 4-8.5 10.4-8.5 17.1v9.1c0 6.8 5.5 12.3 12.3 12.3 2.4 0 4.8-.7 6.8-2.1l41.8-27.9c2-1.3 4.4-2.1 6.8-2.1h1c6.2 0 11.3 5.1 11.3 11.3 0 3-1.2 5.9-3.3 8l-19.9 19.9a53 53 0 0 1-20.7 12.8l-26.5 8.8c-5.8 1.9-9.6 7.3-9.6 13.4 0 3.7-1.5 7.3-4.1 10L202 182.1c-6.4 6.4-9.9 15-9.9 24v4.3c0 16.4 13.6 29.7 29.9 29.7 11 0 21.2-6.2 26.1-16l4-8.1c2.4-4.8 7.4-7.9 12.8-7.9 4.5 0 8.7 2.1 11.4 5.7l16.3 21.7c2.1 2.9 5.5 4.5 9.1 4.5 8.4 0 13.9-8.9 10.1-16.4l-1.1-2.3c-3.5-7 0-15.5 7.5-18l21.2-7.1c7.6-2.5 12.7-9.6 12.7-17.6 0-10.3 8.3-18.6 18.6-18.6h29.4c8.8 0 16 7.2 16 16s-7.2 16-16 16h-20.7c-7.2 0-14.2 2.9-19.3 8l-4.7 4.7c-2.1 2.1-3.3 5-3.3 8 0 6.2 5.1 11.3 11.3 11.3h11.3c6 0 11.8 2.4 16 6.6l6.5 6.5c1.8 1.8 2.8 4.3 2.8 6.8s-1 5-2.8 6.8l-7.5 7.5c-3.7 3.8-5.7 8.7-5.7 13.8s2 10 5.7 13.7L408 304c10.2 10.2 24.1 16 38.6 16h7.3c6.5-20.2 10-41.7 10-64 0-111.4-87.6-202.4-197.7-207.7zm172 307.9c-3.7-2.6-8.2-4.1-13-4.1-6 0-11.8-2.4-16-6.6L396 332c-7.7-7.7-18-12-28.9-12-9.7 0-19.2-3.5-26.6-9.8L314 287.4c-11.6-9.9-26.4-15.4-41.7-15.4h-20.9c-12.6 0-25 3.7-35.5 10.7L188.5 301c-17.8 11.9-28.5 31.9-28.5 53.3v3.2c0 17 6.7 33.3 18.7 45.3l16 16c8.5 8.5 20 13.3 32 13.3H248c13.3 0 24 10.7 24 24 0 2.5.4 5 1.1 7.3 71.3-5.8 132.5-47.6 165.2-107.2M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m187.3-155.3c-6.2-6.2-16.4-6.2-22.6 0l-32 32c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l32-32c6.2-6.2 6.2-16.4 0-22.6"/></svg></span> International Open Science Networks</summary>
+<ul>
+<li><a href="https://www.cscce.org/" target="_blank">Center for Scientific Collaboration and Community Engagement (CSCCE)</a></li>
+<li><a href="https://www.cos.io/" target="_blank">Center for Open Science (COS)</a></li>
+<li><a href="https://science.eclipse.org/" target="_blank">Eclipse Science Working Group</a></li>
+<li><a href="https://elifesciences.org/" target="_blank">eLife</a></li>
+<li><a href="https://numfocus.org/" target="_blank">NumFocus</a></li>
+<li><a href="https://sparcopen.org/people/open-access-working-group/" target="_blank">Open Access Working Group</a></li>
+<li><a href="https://www.orfg.org/">Open Research Funders Group</a></li>
+<li><a href="https://osf.io/" target="_blank">Open Science Foundation</a></li>
+<li><a href="https://www.opensciencenetwork.org/" target="_blank">Open Science Network</a></li>
+<li><a href="https://www.pyopensci.org/" target="_blank">pyOpenSci</a></li>
+<li><a href="https://ropensci.org/" target="_blank">R OpenSci</a></li>
+<li><a href="https://www.rd-alliance.org/" target="_blank">Research Data Alliance (RDA)</a></li>
+<li><a href="https://the-turing-way.netlify.app/welcome" target="_blank">The Turing Way</a></li>
+<li><a href="https://en.unesco.org/science-sustainable-future/open-science/partnership" target="_blank">UNESCO Global Open Science Partnership</a></li>
+<li><a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a></li>
+</ul>
+</details>
+<details class="info">
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m57.7 193 9.4 16.4c8.3 14.5 21.9 25.2 38 29.8l57.9 16.5c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6 16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5 4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5.3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3-92.8 0-171.5 60.9-198.2 145M464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0"/></svg></span> US-based Open Science Networks</summary>
+<ul>
+<li><a href="https://ci-compass.org/" target="_blank">CI Compass</a> - provides expertise and active support to cyberinfrastructure practitioners at USA NSF Major Facilities in order to accelerate the data lifecycle and ensure the integrity and effectiveness of the cyberinfrastructure upon which research and discovery depend.</li>
+<li><a href="https://www.esipfed.org/" target="_blank">Earth Science Information Partners (ESIP) Federation</a> -  is a 501&copy;(3) nonprofit supported by NASA, NOAA, USGS and 130+ member organizations.</li>
+<li><a href="https://internet2.edu/" target="_blank">Internet2</a> - is a community providing cloud solutions, research support, and services tailored for Research and Education. </li>
+<li><a href="https://www.ms-cc.org/" target="_blank">Minority Serving Cyberinfrastructure Consortium (MS-CC)</a> envisions a transformational partnership to promote advanced cyberinfrastructure (CI) capabilities on the campuses of Historically Black Colleges and Universities (HBCUs), Hispanic-Serving Institutions (HSIs), Tribal Colleges and Universities (TCUs), and other Minority Serving Institutions (MSIs). </li>
+<li><a href="https://github.com/nasa/Transform-to-Open-Science" target="_blank">NASA Transform to Open Science (TOPS)</a> - coordinates efforts designed to rapidly transform agencies, organizations, and communities for Earth Science</li>
+<li><a href="https://www.openscapes.org/" target="_blank">OpenScapes</a> - is an approach for doing better science for future us</li>
+<li><a href="https://www.thequilt.net/" target="_blank">The Quilt</a> - non-profit regional research and education networks collaborate to develop, deploy and operate advanced cyberinfrastructure that enables innovation in research and education.</li>
+</ul>
+</details>
+<details class="info">
+<summary><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-47.4-154.7-39-13.5c-6.5-2.2-13.6-2.3-20.1-.3l-15.3 4.9c-18.5 5.9-38.5-2.4-47.5-19.5l-3.3-6.2c-10.6-20.1-2.3-45 18.2-54.7l35.3-16.8c2.3-1.1 4.4-2.8 5.9-4.8l5.3-7c7.2-9.6 18.6-15.3 30.6-15.3s23.4 5.7 30.6 15.3l4.6 6.1c2 2.6 4.9 4.5 8.1 5.1 7.8 1.6 15.7-1.5 20.4-7.9l10.4-14.2c2-2.8 5.3-4.4 8.7-4.4 4.4 0 8.4 2.7 10 6.8l10.1 25.9c2.8 7.2 6.7 14 11.5 20.2l17.9 22.8c5.8 7.4 9 16.6 9 26s-3.2 18.6-9 26l-12 15.4c-8.3 10.6-21 16.8-34.4 16.8-8.4 0-16.6-2.4-23.7-7l-25.4-16.4c-2.2-1.4-4.5-2.5-6.9-3.4zm65.2-214.8 22.2 22.2c10.1 10.1 2.9 27.3-11.3 27.3h-29.9c-5.6 0-11.1-1.2-16.2-3.4l-42.8-19c-14.3-6.3-11.9-27.3 3.4-30.3l38.5-7.7c13.1-2.6 26.7 1.5 36.1 10.9M248 432c0-8.8 7.2-16 16-16h16c8.8 0 16 7.2 16 16s-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16m183.2-133.1 8 24c2.8 8.4-1.7 17.4-10.1 20.2s-17.4-1.7-20.2-10.1l-8-24c-2.8-8.4 1.7-17.4 10.1-20.2s17.4 1.7 20.2 10.1m-19.9 80.4-32 32c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l32-32c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg></span> Oceania Open Science Networks</summary>
+<ul>
+<li><a href="https://nzorn.netlify.app/">New Zealand Open Research Network</a> - New Zealand Open Research Network (NZORN) is a collection of researchers and research-associated workers in New Zealand.</li>
+<li><a href="https://www.anzopenresearch.org/">Australia &amp; New Zealand Open Research Network</a> - ANZORN is a network of local networks distributed without Australia and New Zealand.</li>
+</ul>
+</details>
+<p><br>
+<br>
+<br></p>
+<hr />
+<p><br>
+<br>
+<br></p>
+<h2 id="self-assessment">Self Assessment<a class="headerlink" href="#self-assessment" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>True or False: All research papers published in the top journals, like Science and Nature, are always Open Access?</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>False</p>
+<p>Major Research journals like <a href="https://www.science.org/content/page/open-access-aaas" target="_blank">Science</a> and <a href="https://www.nature.com/nature-portfolio/open-access" target="_blank">Nature</a> have an "Open Access" option when a manuscript is accepted, but they charge an extra fee to the authors to make those papers Open Access.</p>
+<p>These <a href="https://www.science.org/content/article/9500-nature-journals-will-now-make-your-paper-free-read" target="_blank">high page costs</a> are exclusionary to the majority of global scientists who cannot afford to front these costs out of pocket.</p>
+<p>This will soon change, at least in the United States. The <a href="https://www.nature.com/articles/d41586-022-02351-1" target="_blank">Executive Branch of the federal government recently mandated</a> that future federally funded research be made Open Access after 2026.</p>
+</details>
+</details>
+<details class="question">
+<summary>True or False: an article states all of the research data used in the experiments "are available upon request from the corresponding author(s)," meaning the data are "Open"</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>False</p>
+<p>In order for research to be open, the data need to be freely available from a digital repository, like <a href="https://datadryad.org" target="_blank">Data Dryad</a>, <a href="https://zenodo.org" target="_blank">Zenodo.org</a>, or <a href="https://cyverse.org/data-commons" target="_blank">CyVerse</a>.</p>
+<p>Data that are 'available upon request' do not meet the FAIR data principles. </p>
+</details>
+</details>
+<details class="question">
+<summary>Using a version control system to host the analysis code and computational notebooks, and including these in your Methods section or Supplementary Materials, is an example of an Open Methodology?</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>Yes!</p>
+<p>Using a VCS like GitHub or GitLab is a great step towards making your research more reproducible. </p>
+<p>Ways to improve your open methology can include documentation of your physical bench work, and even video recordings and step-by-step guides for every part of your project.</p>
+</details>
+</details>
+<details class="question">
+<summary>You are asked to review a paper for an important journal in your field. The editor asks if you're willing to release your identity to the authors, thereby "signing" your review. Is this an example of "Open Peer Review"?</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>Maybe</p>
+<p>There are many opinions on what 'open-review' should consist of. A reviewer signing their review and releasing their identity to the authors is a step toward a more open process. However, it is far less open than publishing the peer-review reports online next to the final published paper. </p>
+</details>
+</details>
+<details class="question">
+<summary>You read a paper where the author(s) wrote their own code and licensed as "Open Source" software for a specific set of scientific tasks which you want to replicate. When you visit their personal website, you find the GitHub repository does not exist (because its now private). You contact the authors asking for access, but they refuse to share it 'due to competing researchers who are seeking to steal their intellectual property". Is the software open source?</summary>
+<details class="success">
+<summary>Answer</summary>
+<p>No</p>
+<p>Just because an author states they have given their software a permissive software license, does not make the software open source. </p>
+<p>Always make certain there is a <a href="https://choosealicense.com/licenses/" target="_blank">LICENSE</a> associated with any software you find on the internet. </p>
+<p>In order for the software to be open, it must follow the <a href="https://opensource.org/osd" target="_blank">Open Source Initiative definition</a></p>
+</details>
+</details>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-10-24
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M294.75 188.19h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8m-80.79 360.76h-29.84v-207.5h29.84zm-14.92-231.14a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1-19.57 19.57M300 369h-81V161.26h80.6c76.73 0 110.44 54.83 110.44 103.85C410 318.39 368.38 369 300 369"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
