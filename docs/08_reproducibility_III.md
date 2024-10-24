@@ -28,7 +28,7 @@ In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and
 
 ## General Workflow
 <figure markdown>
-  <a href="https://www.tutorialspoint.com/docker/index.htm" target="blank" rel="containerexp">![containerexp](https://www.tutorialspoint.com/docker/images/docker_hub_1.jpg) </a>
+  ![containerexp](assets/docker_lifecycle.jpg)
     <figcaption> The container's life cycle. Figure source: [Tutorialspoint](https://www.tutorialspoint.com/docker/index.htm). </figcaption>
 </figure>
 
@@ -37,89 +37,97 @@ In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and
 
 ## Run an Example Container
 
-The example container is located in the following Github repository https://github.com/jeffgillan/r-script-containerized. The docker container launches Rstudio where a user can run an R script to convert a point cloud to a canopy height model (CHM).
+The example container is located in the following Github repository **https://github.com/jeffgillan/r-script-containerized**. The docker container launches Rstudio where a user can run an R script to convert a point cloud to a canopy height model (CHM).
 
 <figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/laz_to_tif.png){ width="600" } </a>
+  ![](../assets/laz_to_tif.png){ width="600" }
     <figcaption> Rstudio running in a container</figcaption>
 </figure>
 
-
-
 <br>
 
-#### 1 Launch Codespaces from the `r-script-containerized` repository
+#### 1. Launch Codespaces from the `r-script-containerized` repository
+
 <figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/rscript_codespaces.png){ width="600" } </a>
+  ![open science](../assets/rscript_codespaces.png){ width="600" }
     <figcaption> Launch CodeSpaces from the `r-script-containerized` repository </figcaption>
 </figure>
 
 <br>
 <br>
 
-#### 2 On the codespaces terminal, run the following command to run the docker container:
+#### 2. On the codespaces terminal, run the following command to run the docker container:
 
-```docker run --rm -ti -e DISABLE_AUTH=true -v $(pwd):/home/rstudio/data -p 8787:8787 jeffgillan/pointcloud_to_chm:amd64```
+```
+docker run --rm -ti -e DISABLE_AUTH=true -v $(pwd):/home/rstudio/data -p 8787:8787 jeffgillan/pointcloud_to_chm:amd64
+```
 
 ??? Tip "Dissecting the Docker Run Command"
 
     Within the command we are doing the following:
 
-    * `--rm` - Automatically remove the container when it exits
-
-    * `-ti` - Allocate a pseudo-TTY connected to the container’s stdin. It gives you an interactive terminal session in the container, allowing you to run commands in the container just as you would in a regular terminal window.
-
-    * `-e DISABLE_AUTH=true` - Disable authentication for the Rstudio server
-
-    * `-v $(pwd):/home/rstudio/data` - Mount the current working directory to the /home/rstudio/data directory in the container. This allows us to access the data on our local machine (in this case Codespaces) from within the container. The directory is where you should have pointcloud .laz files.
-
-    * `-p 8787:8787` - Expose port 8787 on the container to port 8787 on the host machine. This allows us to access the Rstudio server from our web browser.
-
-    * `jeffgillan/pointcloud_to_chm:amd64` - The name and version number of the docker image we want to run. In this case, we are running the `pointcloud_to_chm` image from the `jeffgillan` repository in Docker Hub.
+    | Flag/Option | Explanation |
+    | --- | --- |
+    |`--rm` | Automatically remove the container when it exits | 
+    |`-ti` | Allocate a pseudo-TTY (terminal) connected to the container’s stdin. It gives you an interactive terminal session in the container, allowing you to run commands in the container just as you would in a regular terminal window. | 
+    | `-e DISABLE_AUTH=true` | Disable authentication for the Rstudio server | 
+    | `-v $(pwd):/home/rstudio/data` | Mount the current working directory to the `/home/rstudio/data directory` in the container. This allows us to access the data on our local machine (in this case Codespaces) from within the container. The directory is where you should have pointcloud `.laz` files. |
+    |`-p 8787:8787` | Expose port 8787 on the container to port 8787 on the host machine. This allows us to access the Rstudio server from our web browser. |
+    | `jeffgillan/pointcloud_to_chm:amd64` | The name and version number of the docker image we want to run. In this case, we are running the `pointcloud_to_chm` image from the `jeffgillan` repository in Docker Hub. |
 
 
 <figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/codespace_docker_run.png){ width="600" } </a>
+  ![](../assets/codespace_docker_run.png){ width="600" }
     <figcaption> `docker run` command</figcaption>
 </figure>
 
 <br>
 <br>
 
-#### 3 View Rstudio in a Browser
+#### 3. View Rstudio in a Browser
 
 Open a new browser tab and navigate to `localhost:8787` to access the Rstudio server running in the container. In Codespaces you can click on _Ports_ and then _Open Browser_ to access the Rstudio server.
 
 <figure markdown>
-  <a href="" target="blank" rel="open science">![open science](../assets/rstudio_screenshot.png){ width="600" } </a>
+  ![](../assets/rstudio_screenshot.png){ width="600" }
     <figcaption> Rstudio running in a container</figcaption>
 </figure>
 
 <br>
 <br>
 
-#### 4 Run the Script
+#### 4. Run the Script
 
 Open the script `pointcloud_to_DTM.R`
 
 Highlight all of the code and click *Run*
-![](../assets/rstudio_screenshot2.png)
+
+<figure markdown>
+  ![](../assets/rstudio_screenshot2.png){ width="600" }
+</figure>
 
 <br>
 <br>
 
 Upon completing the code, you should have a 2D plot of the tree
 
-![](../assets/rstudio_screenshot4.png)
+<figure markdown>
+  ![](../assets/rstudio_screenshot4.png){ width="600" }
+</figure>
+
 
 You should also have a new file called `chm.tif` in the mounted `data` folder. The `chm.tif` has been written to your local machine!
 
+<figure markdown>
+  ![](../assets/rstudio_screenshot5.png){ width="600" }
+</figure>
 
-![](../assets/rstudio_screenshot5.png)
 
 <br>
 <br>
+
 ---
+
 <br>
 
 
@@ -127,9 +135,12 @@ You should also have a new file called `chm.tif` in the mounted `data` folder. T
 ## Building Docker Images
 <br>
 
+<figure markdown>
+  ![](https://www.simplyrecipes.com/thmb/YcUhCId23s3dGZ-fUIaQhQMEn5c=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Rainbow-Layer-Cake-Lead-3-341176ca14d545229c16ce0e20cc1a64.jpg){ width="400" }
+    <figcaption> Docker Images are just like cakes: both are made of layers! </figcaption>
+</figure>
+
 ### Writing a Dockerfile
-
-
 
 Create a file called `Dockerfile`, and add content to it as described below, e.g.
 
@@ -137,20 +148,17 @@ Create a file called `Dockerfile`, and add content to it as described below, e.g
 $ touch Dockerfile
 ```
 
-
-!!! Note "Important"
-
-    `Dockerfile` must be capitalized. It does not have a file extension.
-
+Or, since we are using Codespaces, you can click the Create File button :material-file-plus: and name it `Dockerfile`
 
 <br>
 <br>
-
 
 !!! Tip "What is a Dockerfile?"
 
 
-    A Dockerfile is a text file that contains a list of commands, known as **instructions** used by Docker to build an image. **A Dockerfile is a recipe for creating a Docker image.**
+    A Dockerfile is a text file that contains a list of commands, known as **instructions** used by Docker to build an image. 
+    
+    **If a *Docker Image* is a cake, the *Dockerfile* is the recipe!**
     
     
     ```
@@ -177,7 +185,9 @@ $ touch Dockerfile
 <br>
 <br>
 
-??? "ARG"
+#### Dockerfile Statements
+
+??? Abstract "ARG"
 
     The only command that can come before a `FROM` statement is `ARG`
 
@@ -189,7 +199,7 @@ $ touch Dockerfile
     FROM ubuntu:$VERSION
     ```
 
-??? "FROM"
+??? Abstract "FROM"
 
     A valid `Dockerfile` must start with a `FROM` statement which initializes a new build stage and sets the **base image** for subsequent layers.
 
@@ -230,7 +240,7 @@ $ touch Dockerfile
         ENTRYPOINT ./hello
         ```
 
-??? "LABEL"
+??? Abstract "LABEL"
 
     You can create labels which are then tagged as  JSON metadata to the image
 
@@ -252,7 +262,7 @@ $ touch Dockerfile
     $ docker inspect ###
     ```
 
-??? "RUN"
+??? Abstract "RUN"
 
     Different than the `docker run` command is the `RUN` build function. `RUN` is used to create new layers atop the "base image"
 
@@ -268,7 +278,7 @@ $ touch Dockerfile
 
         Ever time you use the `RUN` command it is a good idea to use the `apt-get update` or `apt update` command to make sure your layer is up-to-date. This can become a problem though if you have a very large container with a large number of `RUN` layers. 
 
-??? "ENV"
+??? Abstract "ENV"
 
     In our new container, we need to change and update some of the environment flags. We can do this using the `ENV` command
 
@@ -282,7 +292,7 @@ $ touch Dockerfile
 
     We are also updating the "[locales](https://www.tecmint.com/set-system-locales-in-linux/)" to set the language of the container.
 
-??? "COPY"
+??? Abstract "COPY"
 
     The `COPY` command will copy files from the directory where `Dockerfile` is kept into the new image. You must specify where to copy the files or directories
 
@@ -296,7 +306,7 @@ $ touch Dockerfile
 
         `ADD` has some extra features like `.tar` extraction and URL support
 
-??? "CMD"
+??? Abstract "CMD"
 
     The `CMD` command is used to run software in your image. In general use the ["command"] syntax:
 
@@ -304,7 +314,7 @@ $ touch Dockerfile
     CMD ["executable", "parameter1", "parameter2"]
     ```
 
-??? "ENTRYPOINT"
+??? Abstract "ENTRYPOINT"
 
     ENTRYPOINT works similarly to `CMD` but is designed to allow you to run your container as an executable.
 
@@ -321,15 +331,15 @@ $ touch Dockerfile
 
     An entrypoint is the initial command(s) executed upon starting the Docker container. It is listed in the `Dockerfile` as `ENTRYPOINT` and can take 2 forms: as commands followed by parameters (`ENTRYPOINT command param1 param2`)  or as an executable (`ENTRYPOINT [“executable”, “param1”, “param2”]`)
 
-??? question "What is the difference in the `ENTRYPOINT` and `CMD`"
+    ??? question "What is the difference in the `ENTRYPOINT` and `CMD`"
 
-    The CMD instruction is used to define what is execute when the container is run.
+        The CMD instruction is used to define what is execute when the container is run.
 
-    The ENTRYPOINT instruction cannot be overridden, instead it is appended to when a new command is given to the `docker run container:tag new-cmd` statement 
+        The ENTRYPOINT instruction cannot be overridden, instead it is appended to when a new command is given to the `docker run container:tag new-cmd` statement 
 
-    the executable is defined with ENTRYPOINT, while CMD specifies the default parameter
+        the executable is defined with ENTRYPOINT, while CMD specifies the default parameter
 
-??? "USER"
+??? Abstract "USER"
 
     Most containers are run as `root` meaning that they have super-user privileges within themselves
 
@@ -350,7 +360,7 @@ $ touch Dockerfile
     USER ubuntu
     ```
 
-??? "EXPOSE"
+??? Abstract "EXPOSE"
 
     You can open [ports](intro.md#understanding-ports) using the `EXPOSE` command.
 
@@ -361,16 +371,14 @@ $ touch Dockerfile
     The above command will expose port 8888.
 
     !!! Note
-        Running multiple containers using the same port is not trivial and would require the usage of a web server such as [NGINX](https://www.nginx.com/). However, you can have multiple containers interact with each other using [Docker Compose](compose.md).
-
-
+        Running multiple containers using the same port is not trivial and would require the usage of a web server such as [NGINX](https://www.nginx.com/). However, you can have multiple containers interact with each other using [Docker Compose](https://docs.docker.com/compose/).
 
 <br>
 
 ### Summary of Instructions
 
 | Instruction Command | Description |
-| --- | --- | 
+| :---: | --- | 
 | `ARG` | Sets environmental variables during image building |
 | `FROM` | Instructs to use a specific Docker image |
 | `LABEL` | Adds metadata to the image |
@@ -382,28 +390,32 @@ $ touch Dockerfile
 | `USER` | Used to set User specific information |
 | `EXPOSE` |  exposes a specific port |
 
-
-
 <br>
 <br>
+
 ---
 
 <br>
+
 ### Building the Image
 
 Once the Dockerfile has been created, we can build the image using the `docker build` command. At the codespaces terminal, run the following command:
 
+```
+docker build -t <dockerhub username>/pointcloud_to_chm:amd64 .
+```
 
-`docker build -t jeffgillan/pointcloud_to_chm:amd64 .`
+Example:
+
+```
+docker build -t jeffgillan/pointcloud_to_chm:amd64 .
+```
 
 ??? "Dissecting the Docker Build Command"
 
-    * The -t flag allows us to tag the image with a name and version number.  
-    
-    * In the command, 'jeffgillan' is the dockerhub username, 'pointcloud_to_dtm' is the name of the image, and 'amd64' is the version tag. Substitute your Dockerhub username into the command. 
-    
-    * The . at the end of the command tells docker to look in the current directory for the dockerfile.
-
+- The `-t` flag allows us to tag the image with a name and version number.  
+- In the command you need to add your own DockerHub username instead of `<dockerhub username>`, which acts as the address to your own DockerHub Repository; `pointcloud_to_dtm` is the name of the image, and `amd64` is the version tag.    
+- The `.` at the end of the command tells docker to look in the current directory for the dockerfile.
 
 <br>
 <br>
@@ -428,103 +440,35 @@ To push the image to the Docker Hub:
 docker push username/imagename:tag 
 ```
 
-
-<br>
 <br>
 <br>
 
 ---
 
-## Managing Data in Docker
-
-It is possible to store data within the writable layer of a container, but there are some limitations:
-
-- The data doesn’t persist when that container is no longer running, and it can be difficult to get the data out of the container if another process needs it.
-- A container’s writable layer is tightly coupled to the host machine where the container is running. You can’t easily move the data somewhere else.
-- Its better to put your data into the container **AFTER** it is built - this keeps the container size smaller and easier to move across networks.
-
-Docker offers three different ways to mount data into a container from the Docker host:
-
-- **Volumes**
-- **tmpfs mounts**
-- **Bind mounts**
-
-![vol_mount](assets/volume_mount.png/)
-
-When in doubt, volumes are almost always the right choice.
-
-### Volumes
-
-Volumes are often a better choice than persisting data in a container’s writable layer, because using a volume does not increase the size of containers using it, and the volume’s contents exist outside the lifecycle of a given container. While bind mounts (which we will see in the Advanced portion of the Camp) are dependent on the directory structure of the host machine, volumes are completely managed by Docker. Volumes have several advantages over bind mounts:
-
-- Volumes are easier to back up or migrate than bind mounts.
-- You can manage volumes using Docker CLI commands or the Docker API.
-- Volumes work on both UNIX and Windows containers.
-- Volumes can be more safely shared among multiple containers.
-- A new volume’s contents can be pre-populated by a container.
-
-??? Tip "When Should I Use the Temporary File System mount?"
-
-	If your container generates non-persistent state data, consider using a `tmpfs` mount to avoid storing the data anywhere permanently, and to increase the container’s performance by avoiding writing into the container’s writable layer. The data is written to the host's memory instead of a volume; When the container stops, the `tmpfs` mount is removed, and files written there will not be kept.
-
-Choose the `-v` flag for mounting volumes
-
-`-v` or `--volume`: Consists of three fields, separated by colon characters (:). 
-
-The fields must be in the correct order, and the meaning of each field is not immediately obvious.
-
-- The **first** field is the path on your **local machine** that where the data are.
-- The **second** field is the path where the file or directory are **mounted in the container**.
-- The third field is optional, and is a comma-separated list of options, such as `ro` (read only).
-
-```
--v /home/username/your_data_folder:/container_folder
-```
-
-```
-$ docker run -v /home/$USER/read_cleanup:/work alpine:latest ls -l /work
-```
-
-So what if we wanted to work interactively inside the container?
-
-```
-$ docker run -it -v /home/$USER/read_cleanup:/work alpine:latest sh
-```
-
-```
-$ ls -l 
-$ ls -l work
-```
-
-Once you're in the container, you will see that the `/work` directory is mounted in the working directory.
-
-Any data that you add to that folder outside the container will appear INSIDE the container. And any work you do inside the container saved in that folder will be saved OUTSIDE the container as well.
-
 ---
 
+### Exercises and Additional Dockerfiles
 
+!!! success ""
 
-``` mermaid
-graph LR
-    A[Dockerfile] --> |Local build| B{Image}:::colorclass;
-    B --> |storage| C[Online Registry];
-    C ---> |Image pull to local <br> and Execution| D[Container];
-    B ----> |Local Execution| E[Container];
-    B ----> |Local Execution| F[Container];
-    B ----> |Local Execution| G[Container]
-    classDef colorclass fill:#f96
-```
+    We have a number of pre-written Dockerfiles that you can access in our [Intro 2 Docker Repository](https://github.com/cyverse-education/intro2docker).
 
+    It contains:
 
-### Requirements
+    - **Alpine**: a minimal Linux distribution 
+    - **Cowsay**: will output wise messages when executed
+    - **Jupyter/minimal-notebook**: Jupyter Notebook accessible from your browser
+    - **rstudio/verse**: RStudio containing the Tidyverse data science packages 
+    - **Ubuntu**
 
-Clone our example repository with pre-written Dockerfiles From your CodeSpace, we are going to copy a second GitHub repository onto our VM. If you are working locally, make sure that you change directories away from any other Git repository that you may have been working in.
+    Clone our example repository, or work directly on the repository using Codespaces.
 
-```
-$ cd /workspaces
+    Clone command:
 
-$ git clone https://github.com/cyverse-education/intro2docker
+    ```
+    $ cd /workspaces
 
-$ cd intro2docker/
+    $ git clone https://github.com/cyverse-education/intro2docker
 
-```
+    $ cd intro2docker/
+    ```
