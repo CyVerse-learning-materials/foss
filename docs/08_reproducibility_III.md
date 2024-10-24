@@ -414,7 +414,7 @@ docker build -t jeffgillan/pointcloud_to_chm:amd64 .
 ??? "Dissecting the Docker Build Command"
 
 - The `-t` flag allows us to tag the image with a name and version number.  
-- In the command you need to add your own DockerHub username instead of `<dockerhub username>`, which acts as the address to your own DockerHub Repository; `pointcloud_to_dtm` is the name of the image, and `amd64` is the version tag.    
+- In the command you need to add your own DockerHub username instead of `<dockerhub username>`, which acts as the address to your own DockerHub Repository; `pointcloud_to_chm` is the name of the image, and `amd64` is the version tag.    
 - The `.` at the end of the command tells docker to look in the current directory for the dockerfile.
 
 <br>
@@ -426,7 +426,7 @@ By default `docker push` will upload your local container image to the [Docker H
 
 Also, make sure that your container has the appropriate [tag](07_reproducibility_ii.md#tag).
 
-First, make sure to log into the Docker Hub, this will allow you to download private limages, to upload private/public images:
+First, make sure to log into the Docker Hub, this will allow you to download private images, to upload private/public images:
 
 ```
 docker login
