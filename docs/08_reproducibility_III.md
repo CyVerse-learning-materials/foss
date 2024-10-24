@@ -422,7 +422,7 @@ docker build -t jeffgillan/pointcloud_to_chm:amd64 .
 
 ---
 
-### Building an Executable Image
+### Executable Images
 
 ```
  _____________________________
@@ -444,6 +444,12 @@ docker run <repository>/<image>:<tag> <potential arguments/options> <input file/
 ```
 
 An easy to reproduce example is **Lolcow**, which builds a small executable that outputs a "quote of the day". It does not require any input and will output to the terminal directly.
+
+You can run a prebuilt Lolcow with 
+
+```
+docker run cosimichele/lolcow:f24
+```
 
 Here is the minimal recipie required to build Lolcow: 
 
