@@ -413,9 +413,9 @@ docker build -t jeffgillan/pointcloud_to_chm:amd64 .
 
 ??? "Dissecting the Docker Build Command"
 
-- The `-t` flag allows us to tag the image with a name and version number.  
-- In the command you need to add your own DockerHub username instead of `<dockerhub username>`, which acts as the address to your own DockerHub Repository; `pointcloud_to_chm` is the name of the image, and `amd64` is the version tag.    
-- The `.` at the end of the command tells docker to look in the current directory for the dockerfile.
+    - The `-t` flag allows us to tag the image with a name and version number.  
+    - In the command you need to add your own DockerHub username instead of `<dockerhub username>`, which acts as the address to your own DockerHub Repository; `pointcloud_to_chm` is the name of the image, and `amd64` is the version tag.    
+    - The `.` at the end of the command tells docker to look in the current directory for the dockerfile.
 
 <br>
 <br>
