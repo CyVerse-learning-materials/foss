@@ -12,6 +12,11 @@ Housed at the University of Arizona, [CyVerse](https://cyverse.org) is a one-of-
 
 Cyverse (originally called Iplant) has been in existence for 16 years; has spent $120M in research funds; has 135,000 registered users; and has facilitated 1,700 peer-reviewed publications across many scientific fields such as plant genetics, genomics, astronomy, geosciences, health, and agriculture. 
 
+<figure markdown>
+  <a href="" target="blank" rel="open science">![open science](../assets/cyverse_today.png){ width="500" } </a>
+    <figcaption>  </figcaption>
+</figure>
+
 **Cyverse is completely Free for University of Arizona students, staff, and faculty.**
 
 * [Cyverse homepage](https://cyverse.org)
@@ -35,11 +40,23 @@ Cyverse (originally called Iplant) has been in existence for 16 years; has spent
 <br>
 <br>
 
+
+## CyVerse Discovery Environment
+
+<a href="https://user.cyverse.org/">
+  <img src="/assets/de_cyverse.png" width="250">
+</a>
+
+The [CyVerse Discovery Environment](https://de.cyverse.org) is where users can store and share data as well as run analysis applications with the click of a button. It is backed by robust computing resources that can help scale your analysis beyond what is possible on your laptop.
+
+<br>
+<br>
+
 ## Data Storage and Sharing
 
 
 <a href="https://cyverse.org/data-store">
-  <img src="/assets/data_store.png" width="300">
+  <img src="/assets/dataIcon.png" width="150">
 </a>
 
 Cyverse Data Store is the ideal cloud storage to host your large (or small) datasets, share data with colleagues, and meet publication/grant archival requirements.  
@@ -54,7 +71,7 @@ Cyverse Data Store is the ideal cloud storage to host your large (or small) data
 <br>
 <br>
 
-## Permanent Archival
+
 <a href="https://datacommons.cyverse.org/">
   <img src="/assets/data_commons.png" width="300">
 </a>
@@ -70,12 +87,43 @@ _**Curated:**_ Data that is tied to a peer-reviewed publication and needs perman
 <br>
 <br>
 
-## CyVerse Discovery Environment
+## Apps
 
-<a href="https://user.cyverse.org/">
-  <img src="/assets/de_cyverse.png" width="250">
+<a href="https://cyverse.org/data-store">
+  <img src="/assets/de_apps.png" width="100">
 </a>
 
-The [CyVerse Discovery Environment](https://de.cyverse.org) is a place where you can run cloud instances of the most popular and powerful data analysis programs. It is backed by robust computing resources that can help scale your analysis beyond what is possible on your laptop.
 
-* Launch instances of QGIS, RStudio, Jupyter Notebooks, VSCode,and more 
+The CyVerse Discovery Environment has a large number of analysis applications that can be run on your data. These applications are pre-installed and ready to use with a few clicks. You get to choose the amount of computing resources you need to run your analysis.
+
+Apps come in two basics flavors:
+
+* Executable Apps: Run a script or a series of scripts on your data
+
+* Interactive Apps: Launch software such as Jupyter notebooks, RStudio, QGIS, VScode, and more 
+
+
+!!! Tip "Important Notes"
+        
+    * When you launch an app in Cyverse DE, you are actually launching containers such as Docker
+    * When you close the app, the container is destroyed but your data can be saved in the Data Store
+
+<br>
+<br>
+<br>
+
+## Analysis Dashboard
+
+<a href="https://cyverse.org/data-store">
+  <img src="/assets/de_analysis_logo.png" width="100">
+</a>
+
+The Analysis Dashboard is where you can monitor the status of Apps you have launched
+
+* Stop and Relaunch Apps
+* Extend the time of an App (beyond 72 hours)
+* View you history of Apps launched
+
+!!! Attention "Attention"
+        
+    If you are not using an app, please shut it down!
