@@ -96,8 +96,13 @@ extra:
     provider: google
     property: UA-72224033-6
 
+# Custom CSS and JavaScript for chatbot
 extra_css:
   - stylesheets/extra.css
+  - chatbot_widget.css
+
+extra_javascript:
+  - chatbot_widget.js
 
 # Extensions
 markdown_extensions:
