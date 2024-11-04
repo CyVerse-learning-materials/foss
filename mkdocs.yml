@@ -73,9 +73,8 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.top
-  favicon: assets/favicon.png
-  icon:
-    logo: material/rocket
+  favicon: 'assets/favicon.ico'
+  logo: 'assets/android-chrome-512x512.png'
 
 # Options
 extra:
