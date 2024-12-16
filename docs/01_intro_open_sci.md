@@ -1,4 +1,4 @@
-# Introduction to Open Science
+# Introduction to Open Science.
 
 !!! Success "Learning Objectives"
 
