@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chatContainer.innerHTML = `
         <div id="chat-header">
             <span>FOSS Chatbot</span>
-            <button id="chat-close">X</button>
+            <button id="chat-close">×</button>
         </div>
         <div id="chat-body">
             <iframe src="https://chat-qa.cyverse.org/" id="chat-frame" width="100%" height="100%"></iframe>
