@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <button id="chat-close">×</button>
         </div>
         <div id="chat-body">
-            <iframe src="https://chat-qa.cyverse.org/foss" id="chat-frame" width="100%" height="100%"></iframe>
+            <iframe src="https://chat-qa.cyverse.org/foss/" id="chat-frame" width="100%" height="100%"></iframe>
         </div>
     `;
     document.body.appendChild(chatContainer);
