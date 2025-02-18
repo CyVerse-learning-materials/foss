@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <iframe 
                 src="https://chat-qa.cyverse.org/learning/" 
                 id="chat-frame" 
-                width="100%" 
-                height="100%"
                 sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
             ></iframe>
         </div>

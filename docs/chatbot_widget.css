@@ -5,6 +5,10 @@
     --primary-blue: #4054b4;*/
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Chat Icon Button */
 #chat-icon {
     position: fixed;
