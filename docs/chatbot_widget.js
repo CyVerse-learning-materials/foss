@@ -12,21 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
     chatContainer.id = 'chat-container';
     chatContainer.innerHTML = `
         <div id="chat-header">
-            <span>FOSS Chatbot</span>
-			<div class="header-buttons">
-				<button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
+            <span>CyVerse Learning</span>
+            <div class="header-buttons">
+                <button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
                 <button id="popout-button" class="header-button">⧉</button>   <!-- Popout icon -->
                 <button id="chat-close" class="header-button">×</button>
-			</div>
-		</div>
+            </div>
+        </div>
         <div id="chat-body">
             <iframe 
-				src="https://chat-qa.cyverse.org/foss/" id="chat-frame" width="100%" height="100%"
-				id="chat-frame" 
+                src="https://chat-qa.cyverse.org/learning/" 
+                id="chat-frame" 
                 width="100%" 
                 height="100%"
                 sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
-			></iframe>
+            ></iframe>
         </div>
     `;
     document.body.appendChild(chatContainer);

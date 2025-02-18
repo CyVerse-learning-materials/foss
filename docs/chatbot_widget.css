@@ -32,23 +32,32 @@
     content: url('robot-face.png'); 
 }
 
-/* Chat Container - Responsive */
+/* Chat Container - Responsive & Enhanced */
 #chat-container {
     display: none;
     position: fixed;
     bottom: 0;
     right: 0;
     width: 30%;
-    max-width: 500px; /* Max width for larger screens */
-    min-width: 300px; /* Min width for smaller screens */
+    max-width: 500px;
+    min-width: 300px;
     height: 60%;
     max-height: 600px;
-    background: #ffffff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color); /* Use variable for background */
+    border-top-left-radius: 15px; /* Slightly less rounded */
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 20px var(--box-shadow-color); /* Use variable for box-shadow */
     z-index: 1000;
     overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Expanded State */
+#chat-container.expanded {
+    width: 80%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 800px;
 }
 
 /* Chat Header */
