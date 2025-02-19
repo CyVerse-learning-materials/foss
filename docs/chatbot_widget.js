@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chatContainer.id = 'chat-container';
     chatContainer.innerHTML = `
         <div id="chat-header">
-            <span>GPT-101 Chatbot</span>
+            <span>FOSS Chatbot</span>
             <div class="header-buttons">
                 <button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
                 <button id="popout-button" class="header-button">⧉</button>   <!-- Popout icon -->
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         <div id="chat-body">
             <iframe 
-                src="https://chat-qa.cyverse.org/intro-gpt/" 
+                src="https://chat-qa.cyverse.org/foss/" 
                 id="chat-frame" 
                 width="100%" 
                 height="100%"
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Event listener for iframe messages (if the iframe sends any)
     window.addEventListener('message', function(event) {
-        if (event.origin === 'https://chat-qa.cyverse.org/intro-gpt/') {
+        if (event.origin === 'https://chat-qa.cyverse.org/foss/') {
             if (event.data.type === 'link') {
                 window.open(event.data.url, '_blank', 'noopener,noreferrer');
             }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>CyVerse Chatbot Popout</title>
+                    <title>FOSS Chatbot Popout</title>
                     <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
                     <style>
                         /* Override the chat container styles for full-window display */
