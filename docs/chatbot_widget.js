@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
         chatContainer.classList.toggle('expanded');
     });
       
-    // Popout the chat window using a Blob URL to avoid about:blank and ensure proper sizing on mobile
+	// Popout the chat window using a Blob URL to avoid about:blank and ensure proper sizing on mobile
     const popoutButton = document.getElementById('popout-button');
     popoutButton.addEventListener('click', function() {
         // Clone the entire chat container element as outerHTML
