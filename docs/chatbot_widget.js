@@ -1,5 +1,4 @@
 // chatbot_widget.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Create the chat icon button
     const chatIcon = document.createElement('div');
@@ -12,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     chatContainer.id = 'chat-container';
     chatContainer.innerHTML = `
         <div id="chat-header">
-            <span>CyVerse Learning</span>
+            <span>GPT-101 Chatbot</span>
             <div class="header-buttons">
                 <button id="expand-button" class="header-button">⛶</button>  <!-- Expand icon -->
                 <button id="popout-button" class="header-button">⧉</button>   <!-- Popout icon -->
@@ -21,17 +20,19 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         <div id="chat-body">
             <iframe 
-                src="https://chat-qa.cyverse.org/learning/" 
+                src="https://chat-qa.cyverse.org/intro-gpt/" 
                 id="chat-frame" 
+                width="100%" 
+                height="100%"
                 sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
             ></iframe>
         </div>
     `;
     document.body.appendChild(chatContainer);
 
-   // Event listener for iframe messages (if the iframe sends any)
+    // Event listener for iframe messages (if the iframe sends any)
     window.addEventListener('message', function(event) {
-        if (event.origin === 'https://chat-qa.cyverse.org/learning/') {
+        if (event.origin === 'https://chat-qa.cyverse.org/intro-gpt/') {
             if (event.data.type === 'link') {
                 window.open(event.data.url, '_blank', 'noopener,noreferrer');
             }
@@ -54,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         chatContainer.classList.toggle('expanded');
     });
       
-	// Popout the chat window using a Blob URL to avoid about:blank and ensure proper sizing on mobile
+    // Popout the chat window using a Blob URL to avoid about:blank and ensure proper sizing on mobile
     const popoutButton = document.getElementById('popout-button');
     popoutButton.addEventListener('click', function() {
         // Clone the entire chat container element as outerHTML
@@ -64,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>FOSS Chatbot Popout</title>
+                    <title>CyVerse Chatbot Popout</title>
                     <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
                     <style>
                         /* Override the chat container styles for full-window display */
@@ -123,4 +124,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 });
-
