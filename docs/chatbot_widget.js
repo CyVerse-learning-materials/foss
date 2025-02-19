@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <html>
                 <head>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>CyVerse Chatbot Popout</title>
+                    <title>FOSS Chatbot Popout</title>
                     <link rel="stylesheet" type="text/css" href="chatbot_widget.css">
                     <style>
                         /* Override the chat container styles for full-window display */

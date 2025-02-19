@@ -2,7 +2,10 @@
 
 /* Common Color - Replace with your exact hex code */
 :root {
-    --primary-blue: #4054b4;*/
+    --primary-blue: #4054b4;
+    --text-color: #333; /* Default text color */
+    --background-color: #f9f9f9; /* Default background color */
+    --box-shadow-color: rgba(0, 0, 0, 0.1); /* Default box-shadow color */
 }
 
 *, *::before, *::after {
