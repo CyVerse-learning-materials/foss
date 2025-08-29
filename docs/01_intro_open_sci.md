@@ -136,7 +136,7 @@
 
 ## :material-pillar: 6 Pillars of Open Science
 
-|**<p style="color:orange"> Open Access Publications <br> :material-pillar:</p>**|**<p style="color:purple"> Open Data <br> :material-pillar:</p>**|**<p style="color:green"> Open Educational Resources <br> :material-pillar:</p>**|**<p style="color:chocolate"> Open Methodology <br> :material-pillar:</p>**|**<p style="color:navy"> Open Peer Review <br> :material-pillar:</p>**|**<p style="color:violet"> Open Source Software <br> :material-pillar:</p>**|
+|**<p style="color:orange"> Open Access Publications <br> :material-pillar:</p>**|**<p style="color:DarkTurquoise"> Open Data <br> :material-pillar:</p>**|**<p style="color:DodgerBlue"> Open Educational Resources <br> :material-pillar:</p>**|**<p style="color:chocolate"> Open Methodology <br> :material-pillar:</p>**|**<p style="color:purple"> Open Peer Review <br> :material-pillar:</p>**|**<p style="color:violet"> Open Source Software <br> :material-pillar:</p>**|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 
 ??? Question "Wait, how many pillars :material-pillar: of Open Science Are There Really?"
@@ -230,7 +230,7 @@
 
 ---
 
-### **<p style="color:purple"> :material-pillar: Open Data </p>**
+### **<p style="color:DarkTurquoise"> :material-pillar: Open Data </p>**
 
 
 !!! Quote "Definitions"
@@ -337,7 +337,8 @@ There are many circumstances where open data could be harmful:
 <br>
 <br>
 
-## **<p style="color:green"> :material-pillar: Open Educational Resources </p>**
+### **<p style="color:DodgerBlue"> :material-pillar: Open Educational Resources </p>**
+
 <figure markdown = "span">
     [![open educational resources](https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg){width=240}](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources)
 </figure>
@@ -369,20 +370,11 @@ There are many circumstances where open data could be harmful:
     - [Teach Together](https://teachtogether.tech/en/index.html#){target=_blank} by Greg Wilson
     - [DigitalLearn](https://www.digitallearn.org/){target=_blank}
 
-<br>
-<br>
-<br>
-<br>
 
 ---
 
-<br>    
-<br>
-<br>
+### **<p style="color:chocolate"> :material-pillar: Open Methodology </p>**
 
-## **<p style="color:chocolate"> :material-pillar: Open Methodology </p>**
-
-<br>
 
 !!! Quote "Definitions"
 
@@ -390,10 +382,7 @@ There are many circumstances where open data could be harmful:
 
     "Open Methodology refers to opening up methods that are used by researchers to achieve scientific results and making them publicly available." - [Open Science Network Austria](https://www.oana.at/en/about-open-science){target=_blank}
 
-<br>
-<br>
-
-### Sharing Research Computer Code
+#### Sharing Research Computer Code
 
 Scientists around the globe are creating computer code for scientific analysis. These are valuable contributions that need to be shared!
 
@@ -404,12 +393,7 @@ Platforms like [GitHub](https://github.com/search?q=open+science){target=_blank}
     <a href="https://gitlab.com/"><img src="https://raw.githubusercontent.com/CyVerse-learning-materials/foss/mkdocs/docs/assets/gitlab_logo.png" alt="gitlab" style="width: 200px;"></a>
 </figure>
 
-<br>
-<br>
-<br>
-<br>
-
-### Publishing Your Methods or Protocols 
+#### Publishing Your Methods or Protocols 
 
 ??? Example "Platforms for Publishing Protocols & Bench Techniques"
 
@@ -425,13 +409,7 @@ Platforms like [GitHub](https://github.com/search?q=open+science){target=_blank}
     - [SciGene](http://scigine.com/blog/){target=_blank}
     - [Springer Nature Experiments](https://experiments.springernature.com/){target=_blank}
       
-
-<br>
-<br>
-<br>
-<br>
-
-### PreRegistration
+#### PreRegistration
 
 Preregistration is detailing your research and analysis plan and submitting it to an online registry **before** you engage in the research. 
 
@@ -440,39 +418,23 @@ Preregistration is detailing your research and analysis plan and submitting it t
     <figcaption> PreRegistration in the Research Life Cycle</figcaption>
 </figure>
 
-#### Why Do This?
+??? Question "Why Do This?"
 
-Preregistration makes your process more open and records the difference between your initial research plan what you end up actually doing.
+    Preregistration makes your process more open and records the difference between your initial research plan what you end up actually doing.
 
-Preregistration separates _hypothesis-generating_  (exploratory) from _hypothesis-testing_ (confirmatory) research. Both are important. But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results. 
+    Preregistration separates _hypothesis-generating_  (exploratory) from _hypothesis-testing_ (confirmatory) research. Both are important. But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results. 
 
-It also helps us avoid practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [Hypothesizing After the Results are Known(HARKing)](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
+    It also helps us avoid practices like [p-hacking](https://en.wikipedia.org/wiki/Data_dredging){target=_blank} or [Hypothesizing After the Results are Known(HARKing)](https://en.wikipedia.org/wiki/HARKing){target=_blank}. 
 
-<br>
+??? Info "Additional Info"
 
-#### Additional Info
+    Read this publication by [Nosek et al. 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
 
-Read this publication by [Nosek et al. 2018](https://www.pnas.org/doi/10.1073/pnas.1708274114){target=_blank}
-
-Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
-
-<br>
-<br>
-<br>
-<br>
+    Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
 ---
 
-<br>    
-<br> 
-<br> 
-
-## **<p style="color:navy"> :material-pillar: Open Peer Review </p>**
-
-
-<br> 
-<br> 
-
+### **<p style="color:purple"> :material-pillar: Open Peer Review </p>**
 
 !!! Quote "Definitions"
 
@@ -484,12 +446,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
     [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review)
 
-<br>
-<br>
-<br>
-
-
-### Traditional Closed Peer-Review System
+#### Traditional Closed Peer-Review System
 
 <figure markdown>
   <a target="blank" rel="open science">![close peer-review](../assets/peer_review.png){ width="400" } </a>
@@ -499,11 +456,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 - Throughout and after the process, the author remains unaware of the reviewers' identities, while the reviewers know the identity of the authors. 
 - All communications between authors, reviewers and editors remains private 
 
-<br>
-<br>
-<br>
-
-### Complaints with the Traditional Closed Peer-Review System
+#### Complaints with the Traditional Closed Peer-Review System
 
 - Unreliable and Inconsistent
 - Delays and Expense
@@ -513,29 +466,14 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
 [_Ross-Hallauer 2017_](https://f1000research.com/articles/6-588/v2)
 
-<br>
-<br>
-<br>
-<br>
-
-
-### Open Peer-Review Ideas
+#### Open Peer-Review Ideas
 
 <figure markdown>
   <a target="blank" rel="open science">![open science](../assets/plos_peer_review.png){ width="500" } </a>
     <figcaption> Open Peer Review Options at [PLOS](https://plos.org/resource/open-peer-review/)</figcaption>
 </figure>
 
-<br>
-<br>
-<br>
-
-
 [Defenders of the Traditional Peer-Review System](https://doi.org/10.1038/6295)
-
-<br>
-<br>
-<br>
 
 !!! Tips "Example Open Peer-Review Systems"
 
@@ -552,18 +490,9 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
     - [PubPeer](https://pubpeer.com/){target=_blank} 
     - [ASAPbio](https://asapbio.org/){target=_blank} 
 
-<br>
-<br>
-<br>
-<br>
-
 ---
 
-<br>    
-<br>
-<br>
-
-## **<p style="color:violet"> :material-pillar: Open Source Software </p>**
+### **<p style="color:violet"> :material-pillar: Open Source Software </p>**
 
 [![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
 
@@ -574,13 +503,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 
     [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open-source_software){target=_blank}
 
-<br>
-<br>
-
 Research science (and also many companies) rely on open source software to operate
-
-<br>
-<br>
 
 !!! tip "Open Source Software"
 
@@ -594,10 +517,6 @@ Research science (and also many companies) rely on open source software to opera
     - Pytorch
     - [Tyson's Awesome List](https://tyson-swetnam.github.io/awesome-open-science/software/){target=_blank}
 
-
-<br>
-<br>
-
 When you create a new software, library, or package, you become its parent and guardian.
 
 <figure markdown>
@@ -605,16 +524,7 @@ When you create a new software, library, or package, you become its parent and g
     <figcaption> Image Credit: [XKCD Dependency](https://m.xkcd.com/2347/){target=_blank} </figcaption>
 </figure>
 
-<br>
-<br>
-<br>
-<br>
-
 ---
-
-<br>    
-<br>
-<br>
 
 ## *WHY* do Open Science?
 
@@ -635,16 +545,8 @@ A paper from [Bartling & Friesike (2014)](https://doi.org/10.1007/978-3-319-0002
 We have added another school of thought 
 
 6. **Compliance school**: government, universities, and granting agencies have embraced Open Science and are mandating some elements (e.g., data sharing with publications)
-<br>
-<br>
-<br>
-<br>
 
 ---
-
-<br>    
-<br>
-<br>
 
 ## Discussion Questions
 
