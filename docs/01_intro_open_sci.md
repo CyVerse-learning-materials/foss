@@ -1,4 +1,4 @@
-# Introduction to Open Science.
+# Introduction to Open Science
 
 !!! Success "Learning Objectives"
 
@@ -15,13 +15,10 @@
 
 ## What is Open Science?
 
-<br>
-
 <span style="font-size:1.3em;">_"Open Science is transparent and accessible knowledge that is shared and developed through collaborative networks"_</span>
 
 [-Vincente-Saez & Martinez-Fuentes 2018](https://doi.org/10.1016/j.jbusres.2017.12.043)
 
-<br>
 <br>
 <br>
 <br>
@@ -31,7 +28,6 @@
 
 -ChatGPT
 
-<br>
 <br>
 <br>
 <br>
@@ -46,6 +42,7 @@
   <a target="blank" rel="open science">![open science](../assets/life_cycle.png){ width="400" } </a>
     <figcaption> The Research Life Cycle from [Open Science Framework](https://osf.io/)</figcaption>
 </figure>
+
 <br>
 <br>
 <br>
@@ -62,33 +59,21 @@
 
 ## Foundational Open Science Skills
 
-<span style="font-size:1.2em;">_1. Building a culture of scientists eager to share research materials - such as data, code, methods, documentation, and early results - with colleagues and society at large, in addition to traditional publications_</span> 
-
-<br>
-<br>
-
-<span style="font-size:1.2em;">_2. Mastery of digital tools to create reproducible science that others can build upon_</span>
-
-<br>
-<br>
-
-<span style="font-size:1.2em;">_3. Understanding the push towards increased transparency and accountability for those practicing science (ie., compliance)_</span>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <figure markdown="span">
   <a href="" target="blank" rel="open science">![open science](../assets/open_science_word_cloud.png){ width="500" } </a>
     <figcaption> Open Science Word Cloud by [Pownall et al. 2023](http://dx.doi.org/10.31234/osf.io/vypkb)</figcaption>
 </figure>
 
+<span style="font-size:1.2em;">_1. Building a culture of scientists eager to share research materials - such as data, code, methods, documentation, and early results - with colleagues and society at large, in addition to traditional publications_</span> 
+
 <br>
+
+<span style="font-size:1.2em;">_2. Mastery of digital tools to create reproducible science that others can build upon_</span>
+
 <br>
-<br>
-<br>
+
+<span style="font-size:1.2em;">_3. Understanding the push towards increased transparency and accountability for those practicing science (ie., compliance)_</span>
+
 <br>
 
 <figure markdown="span">
@@ -98,68 +83,75 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
-## 2023: the Year of Open Science
 
-The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the Year of Open Science as a way to bring awareness to the benefits of Open Science and to steer the scientitic community towards its adoption. 
+!!! Info "Governamental footprints: 2023 vs 2025"
 
-NASA leads a prominent program called [Transform to Open Science](https://github.com/nasa/Transform-to-Open-Science) which includes an [online class on Open Science](https://nasa.github.io/Transform-to-Open-Science/take-os101/). 
+    2023 was deemed the Year of Open Science, but recent changes at the administration level are seeing the approach to science being reshaped.   
 
-<figure markdown>
-  <a href="https://github.com/nasa/Transform-to-Open-Science" target="blank" rel="open science">![open science](https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png){ width="200" } </a>
-    <figcaption> NASA Transform to Open Science (TOPS) </figcaption>
-</figure>
+    ??? Tip "2023: the Year of Open Science"
 
-<br>
-<br>
-<br>
+        The White House, joined by 10 federal agencies, and a coalition of more than 85 universities, declared 2023 the Year of Open Science as a way to bring awareness to the benefits of Open Science and to steer the scientitic community towards its adoption. 
+
+        In 2024, [the first year of Open Science was celebrated in an effort to continue the promotion of the Open Science movement](https://bidenwhitehouse.archives.gov/ostp/news-updates/2024/01/31/fact-sheet-biden-harris-administration-marks-the-anniversary-of-ostps-year-of-open-science/). The goals and activities around the White House's promotion of Open Science were centered around five key themes:
+
+        - Strengthening Open Science Policies
+        - Investing in Open Science Infrastructures
+        - Supporting the Research Community in Building Open Science Skills
+        - Engaging Communities to Broaden Participation in Open Science
+        - Promoting Incentives for Open Research Practices
+
+        Grant funding organizations such as the NIH, NASA and the US Department of Agriculture were prompt at sustaining the White House' vision by releasing Open Science policy guidelines across the board.
+
+        <figure markdown="span">
+            <iframe width="526" height="340" src="https://www.youtube.com/embed/Nspcf7fsBBY?si=JUYvBg_VBrAl66ZH" title="Reflections on a Year of Open Science: Initiatives and Achievements Realized and Where to Next" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <vidcaption> <br> _Reflections on a Year of Open Science: Initiatives and Achievements Realized and Where to Next_ </figcaption> 
+        </figure>
+
+    ??? Warning "2025: Gold Standard Science"
+
+        After the recent Presidential elections of late 2024, the White House deprecated or ended nearly all of the scientific policies of the previous administration. This includes the 2023 "Open Science" mandates. 
+
+        [Memorandums](https://www.whitehouse.gov/wp-content/uploads/2025/03/OSTP-Guidance-for-GSS-June-2025.pdf){target=_blank} by OSTP director Michael Krastios and executive orders on ["Gold Standard Science"](https://www.whitehouse.gov/presidential-actions/2025/05/restoring-gold-standard-science/){target=_blank} retain language on the principles of Open Science, though [critics argue](https://www.science.org/content/article/what-does-trump-s-call-gold-standard-science-really-mean){target=_blank} political interference and scientific gate keeping may hinder what types of science is allowed to be funded under the current administration.  
+
+        !!! Quote "2025 Executive Orders"
+
+            * [REMOVING BARRIERS TO AMERICAN LEADERSHIP IN ARTIFICIAL INTELLIGENCE, January 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/){target=_blank}
+
+            * [OMB Accelerating Federal Use of AI through Innovation, Governance, and Public Trust, April 3, 2025](https://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf){target=_blank}
+
+                * [Fact Sheet: Eliminating Barriers for Federal Artificial Intelligence Use and Procurement, April 7, 2025](https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-eliminating-barriers-for-federal-artificial-intelligence-use-and-procurement/){target=_blank}
+
+            * [ADVANCING ARTIFICIAL INTELLIGENCE EDUCATION FOR AMERICAN YOUTH, April 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/){target=_blank}
+
+            * [Restoring Gold Standard Science, May 23, 2025](https://www.whitehouse.gov/presidential-actions/2025/05/restoring-gold-standard-science/){target=_blank}
+
+                * [Fact Sheet: President Donald J. Trump is Restoring Gold Standard Science in America](https://www.whitehouse.gov/fact-sheets/2025/05/fact-sheet-president-donald-j-trump-deploys-advanced-nuclear-reactor-technologies-for-national-security/){target=_blank}
+                
+                * [Krastios June 23, 2025 Memorandum](https://www.whitehouse.gov/wp-content/uploads/2025/03/OSTP-Guidance-for-GSS-June-2025.pdf){target=_blank}
 
 ---
 
-<br>
-<br>
-<br>
+---
 
+## :material-pillar: 6 Pillars of Open Science
 
-## **:material-pillar: 6 Pillars of Open Science**
-
-**:material-pillar: Open Access Publications**
-
-**:material-pillar: Open Data**
-
-**:material-pillar: Open Educational Resources**
-
-**:material-pillar: Open Methodology**
-      
-**:material-pillar: Open Peer Review**
-
-**:material-pillar: Open Source Software**
+|**<p style="color:orange"> Open Access Publications <br> :material-pillar:</p>**|**<p style="color:purple"> Open Data <br> :material-pillar:</p>**|**<p style="color:green"> Open Educational Resources <br> :material-pillar:</p>**|**<p style="color:chocolate"> Open Methodology <br> :material-pillar:</p>**|**<p style="color:navy"> Open Peer Review <br> :material-pillar:</p>**|**<p style="color:violet"> Open Source Software <br> :material-pillar:</p>**|
+|:-:|:-:|:-:|:-:|:-:|:-:|
 
 ??? Question "Wait, how many pillars :material-pillar: of Open Science Are There Really?"
 
     The number can be from [4 :material-pillar:](https://narratives.insidehighered.com/four-pillars-of-open-science/){target=_blank} to [8 :material-pillar:](https://www.ucl.ac.uk/library/research-support/open-science/8-pillars-open-science){target=_blank}
 
-<br>
-<br>
-<br>
-<br>
-<br>
+### **<p style="color:orange"> :material-pillar: Open Access Publications </p>**
 
-## **:material-pillar: Open Access Publications**
-
-[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=210}](https://en.wikipedia.org/wiki/Open_access){target=_blank}
+<figure markdown>
+  <a target="blank" rel="open science">[![open access](https://upload.wikimedia.org/wikipedia/commons/f/f3/Open_Access_PLoS.svg){width=210}](https://en.wikipedia.org/wiki/Open_access){target=_blank} </a>
+</figure>
 
 !!! Quote "Definition"
 
     "Open access is a publishing model for scholarly communication that makes research information available to readers at no cost, as opposed to the traditional subscription model in which readers have access to scholarly information by paying a subscription (usually via libraries)." -- [OpenAccess.nl](https://www.openaccess.nl/en/what-is-open-access){target=_blank}
-
-<br>
-<br>
-<br>
 
 !!! Example "Open Access Journal Examples"
 
@@ -174,25 +166,20 @@ NASA leads a prominent program called [Transform to Open Science](https://github
     - [MDPI](https://www.mdpi.com/){target=_blank}
     - [Ecosphere](https://esajournals.onlinelibrary.wiley.com/journal/21508925){target=_blank}
 
-<br>
-<br>
 
-### Types of Publishing Business Models:
+#### Types of Publishing Business Models
 
-1. Subscription model - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).
+1. **Subscription model** - the author pays a smaller fee (or no fee) for the article to be published. The publisher then sells subscription access to the article (usually to institutes of higher education).
 
-2. Open Access model - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. 
+2. **Open Access model** - The author pays a larger fee to make the article freely available to anyone through a Creative Commons license. 
 
     - Open Access publishing in Nature costs $12,290!
     - Open Access publising in PlosOne costs $2,290
 
-<br>
-<br>
-<br>
 
-### Research Article Versions 
+#### Research Article Versions 
 
-1. Preprint - In academic publishing, a preprint is a version of scholary paper that precedes formal peer-review and publication in a scientific journal. The preprint may be available, often as a non-typeset version available for free online. 
+1. **Preprint** - In academic publishing, a preprint is a version of scholary paper that precedes formal peer-review and publication in a scientific journal. The preprint may be available, often as a non-typeset version available for free online. 
 
     ??? Example "Pre-print Services"
 
@@ -204,13 +191,9 @@ NASA leads a prominent program called [Transform to Open Science](https://github
         ??? Tip "The rXivs"
 
             - [AfricArXiv](https://osf.io/preprints/africarxiv/){target=_blank}
-
             - [AgrirXiv](https://cabidigitallibrary.org/journal/agrirxiv){target=_blank}
-
             - [Arabixiv](https://arabixiv.org/discover){target=_blank}
-
             - [arXiv](https://arxiv.org/){target=_blank} - is a free distribution service and an open-access archive for 2,086,431 scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.
-
             - [BioHackrXiv](https://biohackrxiv.org/){target=_blank}
             - [BioRxiv](https://www.biorxiv.org/){target=_blank} -  is an open access preprint repository for the biological sciences.
             - [BodorXiv](https://bodoarxiv.wordpress.com/){target=_blank}
@@ -228,12 +211,9 @@ NASA leads a prominent program called [Transform to Open Science](https://github
             - [ThesisCommons](https://thesiscommons.org/) - open Theses
 
 
-2. Author's accepted manuscript (AAM) - includes changes that came about during peer-review process. It is a non-typeset or formatted article. This often had an embargo period of 12-24 months
+2. **Author's accepted manuscript (AAM)** - includes changes that came about during peer-review process. It is a non-typeset or formatted article. This often had an embargo period of 12-24 months
 
-3. Published version of record (VOR) - includes stylistic edits, online & print formatting. This is the version that publishers claim ownership of with copyrights or exclusive licensing. 
-
-<br>
-<br>
+3. **Published version of record (VOR)** - includes stylistic edits, online & print formatting. This is the version that publishers claim ownership of with copyrights or exclusive licensing. 
 
 ??? Tip "Copyrights and Science Publishing"
 
@@ -248,48 +228,10 @@ NASA leads a prominent program called [Transform to Open Science](https://github
     - [Wiley policy on self-archiving](https://authorservices.wiley.com/author-resources/Journal-Authors/licensing/self-archiving.html)
     - [Springer Nature copyright policies](https://www.springer.com/gp/open-access/publication-policies/copyright-transfer#:~:text=Springer%20Nature%20authors%20retain%20copyright,found%20in%20our%20publishing%20policies.)
 
-<br>
-<br>
-
-### New Open Access Mandates in US
-
-The White House Office of Science and Technology (OSTP) has recently released a policy document known as the [Nelson Memo](https://www.whitehouse.gov/ostp/news-updates/2022/08/25/ostp-issues-guidance-to-make-federally-funded-research-freely-available-without-delay/) stating that tax-payer funded research must by open access by 2026 with no embargo period. 
-
-Authors can comply with the memo by either:
-
-1. Publishing Open Access (this usually requires higher fees)
-2. Distributing the Author's Accepted Manuscript (AAM) 
-
-Read [NSF's open access plan](NSF’s Public Access Plan 2.0 is document NSF 23-104) in reponse to the Nelson Memo
-
-Read [USDA's open access plan](https://www.nal.usda.gov/sites/default/files/page-files/USDA_Public_Access_Implementation_Plan_8_10_2023_0.pdf) in reponse to the Nelson Memo
-
-<br>
-<br>
-<br>
-<br>
-
-### Additional Info
-
-University of Arizona Libraries information on [Open Access publishing](https://lib.arizona.edu/research/open-access) including agreements with several journals to reduce or waive publishing fees. 
-
-https://www.coalition-s.org/
-
-
-<br>  
-<br>
-<br>
-<br>
-
 ---
 
-<br>
-<br>
+### **<p style="color:purple"> :material-pillar: Open Data </p>**
 
-
-## **:material-pillar: Open Data**
-
-<br>
 
 !!! Quote "Definitions"
 
@@ -299,10 +241,6 @@ https://www.coalition-s.org/
 
     [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open_data){target=_blank}
 
-<br>
-<br>
-<br>
-   
 <span style="font-size:1.1em;">Data are the foundation for any scientific endeavor. A lot of thought needs to go into how to best collect, store, analyze, curate, share, and archive data.</span>
 
 <figure markdown>
@@ -310,11 +248,9 @@ https://www.coalition-s.org/
     <figcaption> DIKW Pyramid</figcaption>
 </figure>
 
-<br>
-<br>
 
 
-### FAIR Principles
+#### FAIR Principles
 
 In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were published in _Scientific Data_. 
 
@@ -330,11 +266,6 @@ Applying standards to encode and exchange data and metadata
 _**Reusable:**_
 Enabling the repurposing of researach outputs to maximize their research potential
 
-<br>
-<br>
-<br>
-<br>
-
 !!! Tip "Reasons to Make your Data Open"
 
     - Unnecessary duplication. Duplication of research is costly for society, and places unnecessary burden on heavily researched people and populations.  
@@ -345,13 +276,7 @@ Enabling the repurposing of researach outputs to maximize their research potenti
     - Storing your data in a public repository also provides you with secure and ongoing storage that may otherwise not be available to you.
     -[Foster Open Science](https://www.fosteropenscience.eu/)
 
-
-<br>
-<br>
-<br>
-<br>
-
-### As Open as Possible, as Closed as Necessary
+#### As Open as Possible, as Closed as Necessary
 
 There are many circumstances where open data could be harmful:
 
@@ -391,30 +316,20 @@ There are many circumstances where open data could be harmful:
 
 * Data for making [lethal weapons](https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx)
 
-<br>
-<br>
-
 !!! Tip "Open vs. FAIR"
 
     FAIR does not demand that data be open: See one definition of open: http://opendefinition.org/
     
     Open data does not necessarily mean it is FAIR
 
-<br>
-<br>
 
-#### Additional Info
+!!! Info "Additional Info"
 
-- The Ethics of Geolocated Data from [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/){target=_blank} 
+    - The Ethics of Geolocated Data from [UK Statistics Authority](https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/pages/1/){target=_blank} 
 
-- Health information [US HIPAA](https://www.hhs.gov/hipaa/index.html){target=_blank}
+    - Health information [US HIPAA](https://www.hhs.gov/hipaa/index.html){target=_blank}
 
-- Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank} 
-
-<br>
-<br>
-<br>
-<br>
+    - Indigenous data sovereignty: [CARE Principles for Indigenous Data Governance](http://doi.org/10.5334/dsj-2020-043){target=_blank} , [Global Indigenous Data Alliance (GIDA)](https://www.gida-global.org/care){target=_blank}, [First Nations OCAP® (Ownership Control Access and Possession)](https://fnigc.ca/ocap-training/){target=_blank}, [Circumpolar Inuit Protocols for Equitable and Ethical Engagement](https://www.arcus.org/arctic-info/archive/33236){target=_blank} 
 
 ---
 
@@ -422,8 +337,7 @@ There are many circumstances where open data could be harmful:
 <br>
 <br>
 
-## **:material-pillar: Open Educational Resources**
-
+## **<p style="color:green"> :material-pillar: Open Educational Resources </p>**
 <figure markdown = "span">
     [![open educational resources](https://upload.wikimedia.org/wikipedia/commons/2/20/Global_Open_Educational_Resources_Logo.svg){width=240}](https://www.unesco.org/en/communication-information/open-solutions/open-educational-resources)
 </figure>
@@ -466,7 +380,7 @@ There are many circumstances where open data could be harmful:
 <br>
 <br>
 
-## **:material-pillar: Open Methodology**
+## **<p style="color:chocolate"> :material-pillar: Open Methodology </p>**
 
 <br>
 
@@ -553,7 +467,8 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 <br> 
 <br> 
 
-## **:material-pillar: Open Peer Review**
+## **<p style="color:navy"> :material-pillar: Open Peer Review </p>**
+
 
 <br> 
 <br> 
@@ -648,7 +563,7 @@ Open Science Framework Preregistration https://www.cos.io/initiatives/prereg
 <br>
 <br>
 
-## **:material-pillar: Open Source Software**
+## **<p style="color:violet"> :material-pillar: Open Source Software </p>**
 
 [![](https://upload.wikimedia.org/wikipedia/commons/4/42/Opensource.svg){width=240}](https://opensource.org/){target=_blank}
 
