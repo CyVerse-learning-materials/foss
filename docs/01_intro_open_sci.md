@@ -160,7 +160,6 @@
     - [AAAS Science](https://www.science.org/content/page/open-access-aaas){target=_blank}
     - [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank}
     - [American Geophysical Union](https://www.agu.org/Publish-with-AGU/Publish/Open-Access){target=_blank}
-    - [Commonwealth Scientific and Industrial Research Organisation (CSIRO)](https://acsopenscience.org/australia-csiro/){target=_blank}
     - [Open Research Europe](https://open-research-europe.ec.europa.eu/){target=_blank}
     - [PLOS](https://plos.org/){target=_blank}
     - [MDPI](https://www.mdpi.com/){target=_blank}
@@ -249,7 +248,6 @@
 </figure>
 
 
-
 #### FAIR Principles
 
 In 2016, the [FAIR Guiding Principles](https://www.nature.com/articles/sdata201618) for scientific data management and stewardship were published in _Scientific Data_. 
@@ -333,9 +331,6 @@ There are many circumstances where open data could be harmful:
 
 ---
 
-<br>    
-<br>
-<br>
 
 ### **<p style="color:DodgerBlue"> :material-pillar: Open Educational Resources </p>**
 
@@ -354,22 +349,19 @@ There are many circumstances where open data could be harmful:
     - [The Carpentries](https://carpentries.org/){target=_blank} - teaches foundational coding and data science skills to researchers worldwide  
     - [EdX](https://www.edx.org/){target=_blank} - Massively Open Online Courses (not all open) hosted through University of California Berkeley
     - [EveryoneOn](https://www.everyoneon.org/ ){target=_blank} - mission is to unlock opportunity by connecting families in underserved communities to affordable internet service and computers, and delivering digital skills trainings 
-    - [ConnectHomeUSA](https://connecthomeusa.org/){target=_blank} - is a movement to bridge the digital divide for HUD-assisted housing residents in the United States under the leadership of national nonprofit EveryoneOn
     - [Global Digital Literacy Council](https://www.gdlcouncil.org/){target=_blank} -  has dedicated more than 15 years of hard work to the creation and maintenance of worldwide standards in digital literacy
-    - [IndigiData](https://indigidata.nativebio.org/){target=_blank} - training and engaging tribal undergraduate and graduate students in informatics
     - [National Digital Equity Center](https://digitalequitycenter.org/about-us/){target=_blank} a 501c3 non-profit, is a nationally recognized organization with a mission to close the digital divide across the United States
     - [National Digital Inclusion Allaince](https://www.digitalinclusion.org/){target=_blank} - advances digital equity by supporting community programs and equipping policymakers to act
     - [Net Literacy](https://www.netliteracy.org/){target=_blank}
     - [Open Educational Resources Commons](https://www.oercommons.org/){target=_blank}
     - [Project Pythia](https://projectpythia.org/){target=_blank} is the education working group for Pangeo and is an educational resource for the entire geoscience community
-    - [Research Bazaar](https://resbaz.github.io/resbaz2021/){target=_blank} - is a worldwide festival promoting the digital literacy emerging at the centre of modern research
+    - [Research Bazaar](https://researchbazaar.arizona.edu/){target=_blank} - is a worldwide festival promoting the digital literacy emerging at the centre of modern research
     - [TechBoomers](https://techboomers.com/){target=_blank} - is an education and discovery website that provides free tutorials of popular websites and Internet-based services in a manner that is accessible to older adults and other digital technology newcomers
 
 ??? Example "Educational Materials"
 
     - [Teach Together](https://teachtogether.tech/en/index.html#){target=_blank} by Greg Wilson
     - [DigitalLearn](https://www.digitallearn.org/){target=_blank}
-
 
 ---
 
@@ -386,7 +378,7 @@ There are many circumstances where open data could be harmful:
 
 Scientists around the globe are creating computer code for scientific analysis. These are valuable contributions that need to be shared!
 
-Platforms like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} are ideal for collaboratively developing code and sharing with the open internet. In FOSS, we will show you how to use Github for sharing code, [documentation](04_documentation_communication.md), [hosting websites](04_documentation_communication.md), and [software version control](05_version_control.md). 
+Platforms like [GitHub](https://github.com/search?q=open+science){target=_blank} and [GitLab](https://gitlab.com/explore/projects/topics/Open%20Science){target=_blank} are ideal for collaboratively developing code and sharing with the open internet. In FOSS, we will show you how to use Github for sharing code, [documentation](04_documentation_communication.md), hosting websites, and [software version control](05_version_control.md). 
 
 <figure style="display: flex; justify-content: center;">
     <a href="https://github.com/"><img src="https://cdn.iconscout.com/icon/free/png-256/free-github-169-1174970.png" alt="github" style="width: 200px; margin-right: 30px;"></a>
@@ -440,11 +432,8 @@ Preregistration is detailing your research and analysis plan and submitting it t
 
     Open peer review is an umbrella term for a number of overlapping ways that peer review models can be adapted in line with the aims of Open Science, including making reviewer and author identities open, publishing review reports and enabling greater participation in the peer review process.  
     
-    [-Ross-Hellauer et al. (2017)](https://doi.org/10.12688%2Ff1000research.11369.2)
-
-    <br>
-
-    [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review)
+    - [-Ross-Hellauer et al. (2017)](https://doi.org/10.12688%2Ff1000research.11369.2)
+    - [:material-wikipedia: Wikipedia's definition](https://en.wikipedia.org/wiki/Open_peer_review)
 
 #### Traditional Closed Peer-Review System
 
@@ -480,10 +469,7 @@ Preregistration is detailing your research and analysis plan and submitting it t
     [F1000Research](https://f1000research.com/about){target=_blank} An open research publishing platform that offers open peer review and rapid publication.
     The article from [Ross-Hellauer et al. (2017)](https://doi.org/10.12688%2Ff1000research.11369.2) has open peer-reviews.
 
-<br>
-
-!!! Tips "Platforms for Reviewing Preprints"
-    
+!!! Info "Platforms for Reviewing Preprints"
 
     - [PREreview](https://prereview.org/){target=_blank} 
     - [Sciety](https://sciety.org/){target=_blank} 
@@ -499,7 +485,6 @@ Preregistration is detailing your research and analysis plan and submitting it t
 !!! Quote "Definitions"
 
     "Open source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. Open source software is developed in a decentralized and collaborative way, relying on peer review and community production." - [:material-redhat: Red Hat](https://www.redhat.com/en/topics/open-source/what-is-open-source){target=_blank}
-
 
     [:material-wikipedia: Wikipedia definition](https://en.wikipedia.org/wiki/Open-source_software){target=_blank}
 
@@ -578,23 +563,14 @@ We have added another school of thought
 
 ??? Question "Are there any motivating factors for doing Open Science that don't fit into this framework?"
 
-
-<br>
-<br>
-<br>
-
 ---
 
-<br>    
-<br>
-
-
+---
 
 ## Recommended Open Science Communities
 
 <figure style="display: flex; justify-content: center;">
-    <a href="https://the-turing-way.netlify.app/welcome.html"><img src="https://the-turing-way-personas.netlify.app/_static/logo.jpg" alt="turingway" style="width: 120px; margin-right: 15px;"></a>
-    <a href="https://github.com/nasa/Transform-to-Open-Science"><img src="https://zenodo.org/record/7262104/files/Tops_Badge_Nasa.png" alt="nasatops" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://book.the-turing-way.org/"><img src="https://book.the-turing-way.org/build/logo-detail-with-tex-e54ca078c3b2fecbb21b378288123980.svg" alt="turingway" style="width: 120px; margin-right: 15px;"></a>
     <a href="https://openscience.eu/foster-open-science"><img src="https://pbs.twimg.com/profile_images/464812585712234496/tI9cRV8S_400x400.png" alt="foster" style="width: 120px; margin-right: 15px;"></a>
     <a href="https://carpentries.org/"><img src="https://datascience.wisc.edu/wp-content/uploads/sites/1430/2021/06/TheCarpentries-260x300.jpg" alt="carpentries" style="width: 120px; margin-right: 15px;"></a>
     <a href="https://www.cos.io/"><img src="https://imagecdn.mightycause.com/2e70620b-783f-4389-93f2-79b2e9b81a22/" alt="cos" style="width: 120px;"></a>
@@ -612,12 +588,11 @@ We have added another school of thought
     - [Open Access Working Group](https://sparcopen.org/people/open-access-working-group/){target=_blank}
     - [Open Research Funders Group](https://www.orfg.org/)
     - [Open Science Foundation](https://osf.io/){target=_blank}
-    - [Open Science Network](https://www.opensciencenetwork.org/){target=_blank}
     - [pyOpenSci](https://www.pyopensci.org/){target=_blank}
     - [R OpenSci](https://ropensci.org/){target=_blank}
     - [Research Data Alliance (RDA)](https://www.rd-alliance.org/){target=_blank}
-    - [The Turing Way](https://the-turing-way.netlify.app/welcome){target=_blank}
-    - [UNESCO Global Open Science Partnership](https://en.unesco.org/science-sustainable-future/open-science/partnership){target=_blank}
+    - [The Turing Way](https://book.the-turing-way.org/){target=_blank}
+    - [UNESCO Global Open Science Partnership](https://www.unesco.org/en/open-science){target=_blank}
     - [World Wide Web Consortium (W3C)](https://www.w3.org/){target=_blank}
 
 ??? Info ":fontawesome-solid-earth-americas: US-based Open Science Networks"
@@ -626,7 +601,6 @@ We have added another school of thought
     - [Earth Science Information Partners (ESIP) Federation](https://www.esipfed.org/){target=_blank} -  is a 501(c)(3) nonprofit supported by NASA, NOAA, USGS and 130+ member organizations.
     - [Internet2](https://internet2.edu/){target=_blank} - is a community providing cloud solutions, research support, and services tailored for Research and Education. 
     - [Minority Serving Cyberinfrastructure Consortium (MS-CC)](https://www.ms-cc.org/){target=_blank} envisions a transformational partnership to promote advanced cyberinfrastructure (CI) capabilities on the campuses of Historically Black Colleges and Universities (HBCUs), Hispanic-Serving Institutions (HSIs), Tribal Colleges and Universities (TCUs), and other Minority Serving Institutions (MSIs). 
-    - [NASA Transform to Open Science (TOPS)](https://github.com/nasa/Transform-to-Open-Science){target=_blank} - coordinates efforts designed to rapidly transform agencies, organizations, and communities for Earth Science
     - [OpenScapes](https://www.openscapes.org/){target=_blank} - is an approach for doing better science for future us
     - [The Quilt](https://www.thequilt.net/){target=_blank} - non-profit regional research and education networks collaborate to develop, deploy and operate advanced cyberinfrastructure that enables innovation in research and education.
 
@@ -635,72 +609,58 @@ We have added another school of thought
     - [New Zealand Open Research Network](https://nzorn.netlify.app/) - New Zealand Open Research Network (NZORN) is a collection of researchers and research-associated workers in New Zealand.
     - [Australia & New Zealand Open Research Network](https://www.anzopenresearch.org/) - ANZORN is a network of local networks distributed without Australia and New Zealand.
 
-<br>
-<br>
-<br>
-
 ---
 
-<br>
-<br>
-<br>
+---
 
 ## Self Assessment
 
 ??? Question "True or False: All research papers published in the top journals, like Science and Nature, are always Open Access?"
 
-    ??? Success "Answer"
+    **False**
 
-        False
+    Major Research journals like [Science](https://www.science.org/content/page/open-access-aaas){target=_blank} and [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank} have an "Open Access" option when a manuscript is accepted, but they charge an extra fee to the authors to make those papers Open Access.
 
-        Major Research journals like [Science](https://www.science.org/content/page/open-access-aaas){target=_blank} and [Nature](https://www.nature.com/nature-portfolio/open-access){target=_blank} have an "Open Access" option when a manuscript is accepted, but they charge an extra fee to the authors to make those papers Open Access.
+    These [high page costs](https://www.science.org/content/article/9500-nature-journals-will-now-make-your-paper-free-read){target=_blank} are exclusionary to the majority of global scientists who cannot afford to front these costs out of pocket.
 
-        These [high page costs](https://www.science.org/content/article/9500-nature-journals-will-now-make-your-paper-free-read){target=_blank} are exclusionary to the majority of global scientists who cannot afford to front these costs out of pocket.
-
-        This will soon change, at least in the United States. The [Executive Branch of the federal government recently mandated](https://www.nature.com/articles/d41586-022-02351-1){target=_blank} that future federally funded research be made Open Access after 2026.
+    This will soon change, at least in the United States. The [Executive Branch of the federal government recently mandated](https://www.nature.com/articles/d41586-022-02351-1){target=_blank} that future federally funded research be made Open Access after 2026.
 
 
 ??? Question "True or False: an article states all of the research data used in the experiments "are available upon request from the corresponding author(s)," meaning the data are "Open""
 
-    ??? Success "Answer"
+    **False**
 
-        False
+    In order for research to be open, the data need to be freely available from a digital repository, like [Data Dryad](https://datadryad.org){target=_blank}, [Zenodo.org](https://zenodo.org){target=_blank}, or [CyVerse](https://cyverse.org/data-commons){target=_blank}.
 
-        In order for research to be open, the data need to be freely available from a digital repository, like [Data Dryad](https://datadryad.org){target=_blank}, [Zenodo.org](https://zenodo.org){target=_blank}, or [CyVerse](https://cyverse.org/data-commons){target=_blank}.
-
-        Data that are 'available upon request' do not meet the FAIR data principles. 
+    Data that are 'available upon request' do not meet the FAIR data principles. 
 
 
 
 ??? Question "Using a version control system to host the analysis code and computational notebooks, and including these in your Methods section or Supplementary Materials, is an example of an Open Methodology?"
 
-    ??? Success "Answer"
+    **Yes!**
 
-        Yes!
+    Using a VCS like GitHub or GitLab is a great step towards making your research more reproducible. 
 
-        Using a VCS like GitHub or GitLab is a great step towards making your research more reproducible. 
-
-        Ways to improve your open methology can include documentation of your physical bench work, and even video recordings and step-by-step guides for every part of your project.
+    Ways to improve your open methology can include documentation of your physical bench work, and even video recordings and step-by-step guides for every part of your project.
 
 ??? Question "You are asked to review a paper for an important journal in your field. The editor asks if you're willing to release your identity to the authors, thereby "signing" your review. Is this an example of "Open Peer Review"?"
 
-    ??? Success "Answer"
+    **Maybe**
 
-        Maybe
-
-        There are many opinions on what 'open-review' should consist of. A reviewer signing their review and releasing their identity to the authors is a step toward a more open process. However, it is far less open than publishing the peer-review reports online next to the final published paper. 
+    There are many opinions on what 'open-review' should consist of. A reviewer signing their review and releasing their identity to the authors is a step toward a more open process. However, it is far less open than publishing the peer-review reports online next to the final published paper. 
 
 
 ??? Question "You read a paper where the author(s) wrote their own code and licensed as "Open Source" software for a specific set of scientific tasks which you want to replicate. When you visit their personal website, you find the GitHub repository does not exist (because its now private). You contact the authors asking for access, but they refuse to share it 'due to competing researchers who are seeking to steal their intellectual property". Is the software open source?"
 
-    ??? Success "Answer"
+    **No**
 
-        No
+    Just because an author states they have given their software a permissive software license, does not make the software open source. 
 
-        Just because an author states they have given their software a permissive software license, does not make the software open source. 
+    Always make certain there is a [LICENSE](https://choosealicense.com/licenses/){target=_blank} associated with any software you find on the internet. 
 
-        Always make certain there is a [LICENSE](https://choosealicense.com/licenses/){target=_blank} associated with any software you find on the internet. 
+    In order for the software to be open, it must follow the [Open Source Initiative definition](https://opensource.org/osd){target=_blank}
 
-        In order for the software to be open, it must follow the [Open Source Initiative definition](https://opensource.org/osd){target=_blank}
+---
 
-
+---
