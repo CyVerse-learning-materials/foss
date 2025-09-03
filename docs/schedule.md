@@ -1,6 +1,6 @@
 # Weekly Schedule & Communications
 
-Tuesday 11 am - 12:30 pm Arizona Time.
+Tuesday 11 am - 13:00 pm Arizona Time.
     
 **This schedule is tentative and subject to change**
 
