@@ -84,27 +84,6 @@ Different types of data require different management practices. Here are some ex
 - Reproducible, but can be very expensive and time-consuming
 - Examples: text and data mining, compiled database, 3D models
 
-## Data Self-assessment
-
-!!! Question "Activity"
-    In small groups, discuss the following questions.
-        
-    1. What are the two or three data types that you most frequently work with?
-            -   Think about the sources (observational, experimental, simulated, compiled/derived)
-            -   Also consider the formats (tabular, sequence, database, image, etc.)    
-    2.  What is the scale of your data?
-
-        ??? Tip "Tip: think of the [Three V's](https://www.bigdataframework.org/four-vs-of-big-data/)"
-            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
-            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
-            -   Variety: How many different data types (raw files? databases?)
-            A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
-
-    3.  What is your strategy for storing and backing up your data?    
-    4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  
-    5.  What is your strategy for searching your data?  
-    6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
-
 ---
 
 ## The Data Life Cycle 
@@ -334,6 +313,29 @@ While a lot is up to you, the first step is to evaluate how FAIR you think your 
     - [Go-FAIR website](https://www.go-fair.org/fair-principles/)
     - [Carroll *et al.* (2020)](http://doi.org/10.5334/dsj-2020-043) established the CARE Principles for Indigenous Data Governance. [full document :fontawesome-solid-file-pdf:](https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf)
     - [Indigenous Data Sovereignty Networks](https://indigenousdatalab.org/networks/)
+
+---
+
+## Data Self-assessment
+
+!!! Question "Activity"
+    In small groups, discuss the following questions.
+        
+    1. What are the two or three data types that you most frequently work with?
+            -   Think about the sources (observational, experimental, simulated, compiled/derived)
+            -   Also consider the formats (tabular, sequence, database, image, etc.)    
+    2.  What is the scale of your data?
+
+        ??? Tip "Tip: think of the [Three V's](https://www.bigdataframework.org/four-vs-of-big-data/)"
+            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+            -   Variety: How many different data types (raw files? databases?)
+            A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
+
+    3.  What is your strategy for storing and backing up your data?    
+    4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  
+    5.  What is your strategy for searching your data?  
+    6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
 
 ---
 
