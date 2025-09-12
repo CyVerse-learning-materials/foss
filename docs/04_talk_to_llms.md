@@ -2,6 +2,234 @@
 
 [CyVerse Full Prompt Engineering Workshop](https://tyson-swetnam.github.io/intro-gpt){target=_blank}
 
+---
+
+## LLM Chatbots for Open Science
+
+Large Language Model (LLM) chatbots have fundamentally changed how we humans are going to interact with computers going forward. They provide a natural language interface to instruct computers to do many tasks including:
+
+- Read, write, and summarize text
+- Analyze data
+- Explain techical topics
+- Search the web and retrieve information
+- Generate, optimize, and explain many types of computer code 
+- Understand and generate images
+
+<br>
+
+Current LLMs generally provide recommendation for how _you_ could do things. ie, they provide you code and text recommendations but don't actually execute anything. But these technologies are advancing quickly and new capabilities are developed and released constantly. Soon, [AI Agents](https://github.com/Significant-Gravitas/AutoGPT) could be everywhere executing on instructions in autonomous and semi-autonomous ways.
+
+<br>
+
+### Commercial Chatbots
+
+<figure style="display: flex; justify-content: center;">
+    <a href="https://openai.com/chatgpt"><img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" alt="openai" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://gemini.google.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="gemini" style="width: 240px; margin-right: 15px;"></a>
+    <a href="https://www.anthropic.com/claude"><img src="https://claude.ai/images/claude_app_icon.png" alt="foster" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://www.microsoft.com/en-us/bing?form=MA13FV"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Microsoft_365_Copilot_Icon.svg/2048px-Microsoft_365_Copilot_Icon.svg.png" alt="cos" style="width: 120px;"></a>
+</figure>
+
+<br>
+<br>
+
+- [:simple-openai: ChatGPT](https://openai.com/chatgpt)
+- [:simple-google: Gemini](https://gemini.google.com/)
+- [:simple-anthropic: Claude](https://www.anthropic.com/claude)
+- [:octicons-copilot-16: Copilot](https://www.microsoft.com/en-us/bing?form=MA13FV)
+
+<br>
+<br>
+<br>
+
+### LLMs in 150 words (or less)
+
+**How they're made**: LLMs work by training on vast amounts of text from the internet. They learn patterns, grammar, and context from this data. When you give them a prompt, they generate text based on what they've learned. Imagine a super-smart autocomplete for text, but it can also create entire paragraphs or articles.
+
+**How they work**: LLMs don't understand like humans do. They predict what comes next in a sentence using math and probabilities. They don't have thoughts or feelings. They mimic human language but can make mistakes or write nonsense if not guided well.
+
+**How you can use them**: They're incredibly versatile. You can use them for answering questions, writing essays, coding help, and more. ***But you must be cautious because they can generate biased or false information if not used responsibly***. 
+
+In a nutshell, LLMs are like super-powered text generators trained on the internet's vast knowledge.
+
+<br>
+<br>
+
+!!! Warning ":warning::warning: **VERIFY EVERTHING CHATBOTS TELL YOU!** :warning::warning:"
+
+<br>
+<br>
+<br>
+
+### :simple-openai: Prompt Writing
+
+LLM Chatbots are meant to be conversational. In general, you are asking the Chatbot questions (known as **Prompts**) and the Chatbot will respond with answers. 
+
+It is a bit of an artform to get the Chatbot to provide answers with the specificity and format that you want. An entire field of study has sprung up, called **Prompt Engineering**, which seeks to find the magic words that will elicit the best (and technically correct) responses from the Chatbot. 
+
+<br>
+<br>
+
+#### **Prompt Priming** 
+
+Provide lots of organized details to help the Chatbot understand the question and what it's task is. This could include adding a backstory or context for why you are asking the question. Be very specific in terms of what you want from the Chatbot and how you want it. 
+
+Zero-shot unconditioned prompts are likely to return the least specific responses. Responses are more likely to be useful when multiple specific output types are defined.
+
+| Types of Priming | Example |
+|------------------|---------|
+| Zero (Shot) | "Write five examples of assessments for watershed health." |
+| Single | "Write five examples of assessments for watershed health. Here is one example: Geomorphology" |
+| Multiple | "Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity." |
+
+<br>
+<br>
+
+#### **Linked Prompts**
+
+Responses to prompts may not return the exact details or information that you are after the first time. Follow-up by rephrasing your prompts more carefully and continuing with iterative prompting can build upon your priors.
+
+"Chain prompting" or "Linked Prompting" brings multiple prompts together.
+
+| Linked Prompting | Examples |
+|------------------|----------|
+| Step 1: Priming | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
+| Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
+| Step 3: Try again with a web search | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
+
+!!! tip "Encouraging the Chatbot to do Better"
+    Chatbot responses can be missing information or just plain wrong. When this occurs, you can point out the mistake and ask the Chatbot to provide a more complete or better answer. Don't settle for poor responses!
+
+<br>
+<br>
+
+#### Role Playing
+
+Some people find that asking the Chatbot to adopt a persona will lead to better responses. 
+
+"I want you to act as ..." will establish what type of conversation you are planning to have. 
+
+| Types of Roles |
+|---|
+| Project Manager  | 
+| Copywriter / Editor  | 
+| Paper Reviewer | 
+| Teacher / Mentor / Advisor |
+| Student / Learner / Participant |
+| Software Engineer  |
+| DevOps Engineer  |
+| Linux Terminal  |
+| Python Interpreter |
+| Web Browser |
+
+<br>
+<br>
+<br>
+
+### Prompting Chatbots for FOSS
+
+<br>
+
+#### Provide a general outline for a data management plan
+
+```
+I am writing a grant proposal to the National Science Foundation. 
+Could you please provide me a basic template for a data management plan (DMP) and 
+please provide url links to resources that can help me with NSF DMP requirements.
+```
+<br>
+<br>
+
+
+#### Provide a step-by-step recipe to create and serve an mkdocs website in Github
+
+```
+I would like to create a personal website using the MKdocs style 
+and host it on Github pages.
+
+Could you please write me a step-by-step guide starting 
+with importing an existing github repository that has the mkdocs material.
+```
+<br>
+<br>
+
+#### Write shell commands and shell scripts
+
+```
+I would like to create a linux shell script to automate the backup of my working directory. 
+Could you please suggest a shell script that will copy my working directory 
+in a different directory and compress the file into an archive. 
+Please name the file based on the current time and date. 
+```
+
+<br>
+<br>
+
+#### Write git commands
+
+```
+Could you please provide me a step-by-step workflow for using git with github? 
+I found a repository that I want to build on in Github. 
+I would like to work on the material on my local machine and then save it back up to github. 
+I would like to workflow to be for the linux command line. 
+```
+
+<br>
+<br>
+
+#### Write download and conda commands
+```
+I am writing a lot of scripts using python. I have heard that environment managers such as conda may be useful to me. 
+I don't know anything about conda, so can you explain some things?
+1. Give me a high level overview of what environment managers are and what conda is specifically.
+2. Please create a step-by-step guide for downloading conda on my machine, and how to use conda to create custom environments. 
+3. Please explain and give my steps to share my environment with colleagues.
+```
+<br>
+<br>
+
+#### Write docker run commands
+
+```
+I would like to run a docker container that consists of a jupyter notebook. 
+Can you please suggest a docker run command that launches the jupyter notebook
+and mounts a volume of data in it. 
+```
+
+<br>
+<br>
+
+#### Write docker files
+
+```
+I would like to create a docker image that consists of R studio and 
+some customized Rcode. Can you tell me the steps to 1. make a dockerfile and 
+build the docker image; and 2. Upload the docker image to docker hub.
+```
+
+
+<br>
+<br>
+<br>
+<br>
+
+??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
+
+    There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
+
+    [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc)
+
+    Check out lists around:
+
+    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts)
+   
+    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
+
+---
+
+
 ## Local LLMs vs APIs
 
 ### Managing API keys
