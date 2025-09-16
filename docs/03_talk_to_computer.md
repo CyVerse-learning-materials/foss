@@ -49,7 +49,6 @@ For this FOSS lesson on CLI, we will focus on the Unix CLI which is present in M
 
 The CLI sees the computer stripped down to only a [Terminal](https://en.wikipedia.org/wiki/Terminal_emulator) from where one can run powerful commands executed through the [Shell](https://en.wikipedia.org/wiki/Shell_(computing)).
 
-
 Though there are technical differences between them, the terms **Command Line Interface**, **Terminal**, **Shell**, and **BASH** will be used more or less interchangeably throughout the lesson. 
 
 <figure markdown>
@@ -57,16 +56,10 @@ Though there are technical differences between them, the terms **Command Line In
     <figcaption> The Terminal shell</figcaption>
 </figure>
 
-<br>
-<br>
-
 <figure markdown="span">
     <iframe width="526" height="340" src="https://www.youtube.com/embed/fhv2dX0axeY" title="What do tutorials mean when they say my shell? Developer Fundamentals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <vidcaption> <br>Quick video on the shell.</vidcaption> 
 </figure>
-
-<br>
-<br>
 
 ## Accessing a Linux Shell on CyVerse
 
@@ -75,11 +68,24 @@ In addition to sharing code and documentation, Github is also a place to do dire
 #### Steps to Launch the CLI on CyVerse
 
 1. Navigate to the **CyVerse Discovery Environment**: https://de.cyverse.org/
-2. On the left hand side, click the CloudShell button
 
-<br>
-<br>
+    !!! Warning "You may need to first log in into the [User Portal](https://user.cyverse.org/) if this is your first time logging onto CyVerse."
 
+    <figure markdown>
+    <a>![terminal1](../assets/de/cyverse_terminal_01.png){width=600} </a>
+    </figure>
+
+2. On the left hand side, click the CloudShell button.
+
+    <figure markdown>
+    <a>![terminal2](../assets/de/cyverse_terminal_02.png){width=600} </a>
+    </figure>
+
+3. Your Terminal should be available within a few seconds.
+
+    <figure markdown>
+    <a>![terminal3](../assets/de/cyverse_terminal_03.png){width=600} </a>
+    </figure>
 
 ## Introductory Shell Commands
 
@@ -91,14 +97,9 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
     ??? Tip "The Command Line Way to Download and Unzip!"
         Execute the following commands:
         ```
-        $ sudo apt install unzip
         $ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
         $ unzip shell-lesson-data.zip
         ``` 
-
-<br>
-<br>
-
 
 ### Navigation
 
@@ -107,17 +108,12 @@ The following tutorial material was taken from the [Carpentries' Shell Module](h
     <figcaption> Linux Directory Structure</figcaption>
 </figure>
 
-
-
 | Command | Explanation |
 |---|---|
 |`pwd`| print working directory |
 |`ls`| list content of folder |
 |`cd`| change directory |
 
-
-
-<br>
 
 By typing `pwd`, the current working directory is printed.
 
@@ -135,8 +131,6 @@ We can then use `ls` to see the contents of the current directory.
 $ ls  
 shell-lesson-data/   shell-lesson-data.zip*
 ```
-<br>
-<br>
 
 ??? info "Command Flags"
     Each command has **flags**, or options that you can specify. which are summoned with a `-`, such as `<command> -<flag>`.
@@ -148,8 +142,6 @@ shell-lesson-data/   shell-lesson-data.zip*
     
     - If you do not know what flags are available, you can refer to the `man` command (or for many tools, use the `-h` (help) flag).
 
-<br>
-<br>
 
 We can then move inside the folder of our choice doing `cd`. Doing `ls` following the opening of the folder of choice, will show the contents of the folder you just moved in. Feel free to explore the contents of the folders by using `cd` and `ls`.
 
@@ -183,9 +175,6 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
     $ ls ~/Documents  # lists files and folders in Documents (a folder present in the home directory)
     ```
 
-<br>
-<br>
-
 !!! Tip "Use the Tab key to autocomplete"
     You do not need to type the entire name of a folder or file. By using the tab key, the Shell will autocomplete the name of the files or folders. For example, typing the following
 
@@ -205,12 +194,6 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
     $ ls exercise-data/
     animal-counts/ creatures/     numbers.txt    proteins/      writing/ 
     ```
-<br>
-
-
-
-<br>
-
 
 ### Working with Files and Directories
 
@@ -230,8 +213,6 @@ animal-counts/  creatures/  numbers.txt*  proteins/  writing/
     ```
 
     - The above command will result in opening the *manual* for the `ls` command. You can exit the man page by pressing `q`.
-<br>
-<br>
 
 Return to `shell-lesson-data`, and create a directory with `mkdir <name of folder>`.
 
@@ -243,9 +224,6 @@ exercise-data/  my_folder/  north-pacific-gyre/
 ```
 
 Notice the new `my_folder` directory.
-
-<br>
-<br>
 
 !!! danger "Naming your files"
     It is strongly suggested that you avoid using spaces when naming your files. When using the Shell to communicate with your machine, a space can cause errors when loading or transferring files. Instead, use dashes (`-`), underscores (`_`), periods (`.`) and CamelCase when naming your files.
@@ -268,9 +246,6 @@ Notice the new `my_folder` directory.
         ```
         Notice the two folders `my` and `folder`.
 
-<br>
-<br>
-
 Create an empty file with `touch <name of file>`
 
 ```
@@ -279,15 +254,10 @@ $ touch new_file.txt
 
 `touch` will create an **empty** file
 
-<br>
-
 Add text to the new file
 ```
 nano new_file.txt 
 ```
-
-<br>
-<br>
 
 Use `mv <name of file or folder you want to move> <name of destination folder>` to move your newly created file to the directory you created previously (you can then use `ls` to check if you successully moved the file).
 
@@ -311,10 +281,6 @@ $ ls
 my_file*
 ```
 
-<br>
-<br>
-<br>
-
 `cp` is the command to copy a file with the syntax `cp <name of file you want to copy> <name of copy file>`
 
 ```
@@ -337,10 +303,6 @@ copy_my_file*  my_file*
     copy_my_file*  my_file*
     ```
 
-<br>
-<br>
-<br>
-
 To remove an unwanted file, use `rm <name of file to remove>`.
 
 ```
@@ -357,10 +319,6 @@ my_file
     exercise-data/  my_folder/  north-pacific-gyre/
     ```
 
-<br>
-<br>
-
-
 ### Shell Script
 
 Here we are going to show an example command line automation using a shell script. This is what makes the command line powerful!
@@ -369,15 +327,11 @@ Here we are going to show an example command line automation using a shell scrip
 
     A shell script is a file with the extension '.sh'. It is essentially a text file that lists out multiple shell commands. When the shell script is run, the computer will run all of the commands in sequence in an automated way.  
 
-<br>
-
 Navigate to the `shell-lesson-data` directory
 
 ```
 $ cd /home/jgillan/shell-lesson-data
 ```
-
-<br>
 
 Create the shell script
 
@@ -396,17 +350,16 @@ Copy and paste the following commands into `backup.sh`
 
 ## Variables
 #the directory you want to back up (e.g., shell-lesson-data)
-SOURCE_DIR=$(find / -type d -name "shell-lesson-data" 2>/dev/null) # Note: if you are working on your computer, this will look in every folder. Be careful with this line!
+SOURCE_DIR=$(find $PWD -type d -name "shell-lesson-data" 2>/dev/null)
 
 #location where the backup will be stored
-BACKUP_DIR="$HOME/Backup"
+BACKUP_DIR="$PWD"
 
 #used to create a unique name for each backup based on the current date and time
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 
 # name of the compressed backup file
 ARCHIVE_NAME="backup_$TIMESTAMP.tar.gz"
-
 
 # Create backup directory if it doesn't exist
 mkdir -p "$BACKUP_DIR"
@@ -418,25 +371,20 @@ tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$SOURCE_DIR" .
 echo "Backup of $SOURCE_DIR completed!"
 echo "Archive created at $BACKUP_DIR/$ARCHIVE_NAME"
 ```
-<br>
 
 Exit nano with `ctrl + x`
 
-<br>
 
 Modify permission to make the shell script executable
 ```
 $ chmod +x backup.sh
 ```
 
-<br>
-
 Run the shell script
 ```
 $ ./backup.sh
 ```
 
-<br>
 Go back to your home directory and look for the new backup directory
 ```
 $ cd ~
@@ -444,9 +392,6 @@ $ cd ls
 ```
 
 There should be a new directory called 'Backup' with a compressed file within it. 
-
-<br>
-<br>
 
 
 ### More Carpentries Lessons on Linux Command line
