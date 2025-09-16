@@ -120,10 +120,8 @@ By typing `pwd`, the current working directory is printed.
 ```
 $ pwd
 
-/home/jgillan
+/home/jovyan/data-store
 ```
-<br>
-<br>
 
 We can then use `ls` to see the contents of the current directory. 
 
@@ -319,6 +317,8 @@ my_file
     exercise-data/  my_folder/  north-pacific-gyre/
     ```
 
+---
+
 ### Shell Script
 
 Here we are going to show an example command line automation using a shell script. This is what makes the command line powerful!
@@ -330,69 +330,94 @@ Here we are going to show an example command line automation using a shell scrip
 Navigate to the `shell-lesson-data` directory
 
 ```
-$ cd /home/jgillan/shell-lesson-data
+$ cd shell-lesson-data
 ```
 
 Create the shell script
 
 ```
-$ nano backup.sh
+$ nano script.sh
 ```
 The text editor Nano will pop up and it will be empty.
 
 <br>
 
-Copy and paste the following commands into `backup.sh`
+!!! example "Script exercises"
 
-```
-#use Bash shell to run the following commands
-#!/bin/bash
+    ??? example "word counting"
 
-## Variables
-#the directory you want to back up (e.g., shell-lesson-data)
-SOURCE_DIR=$(find $PWD -type d -name "shell-lesson-data" 2>/dev/null)
+        ```bash
+        #!/bin/bash
 
-#location where the backup will be stored
-BACKUP_DIR="$PWD"
+        # Find haiku.txt starting from current directory
+        file_path=$(find . -name "haiku.txt" | head -n 1)
 
-#used to create a unique name for each backup based on the current date and time
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+        # Navigate to its directory
+        cd "$(dirname "$file_path")"
 
-# name of the compressed backup file
-ARCHIVE_NAME="backup_$TIMESTAMP.tar.gz"
+        # Print absolute path
+        echo "haiku.txt found at: $(pwd)/haiku.txt"
 
-# Create backup directory if it doesn't exist
-mkdir -p "$BACKUP_DIR"
+        # Define keyword to search
+        keyword="not"
 
-# Create a compressed archive of the source directory
-tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$SOURCE_DIR" .
+        # Count how many times the keyword appears
+        keyword_count=$(grep -o "$keyword" haiku.txt | wc -l)
 
-# Output the result
-echo "Backup of $SOURCE_DIR completed!"
-echo "Archive created at $BACKUP_DIR/$ARCHIVE_NAME"
-```
+        # Extract and append keyword context
+        echo "" >> haiku.txt
+        echo "---- Keyword Summary ----" >> haiku.txt
+        echo "Keyword '$keyword' appears $keyword_count times" >> haiku.txt
+        echo "Summary generated on: $(date)" >> haiku.txt
+        echo "--------------------------" >> haiku.txt
+
+        # Show updated file
+        cat haiku.txt
+        ```
+
+    ??? example "Create a compressed backup with a timestamp"
+
+
+        ```bash
+        #use Bash shell to run the following commands
+        #!/bin/bash
+
+        ## Variables
+        #the directory you want to back up (e.g., shell-lesson-data)
+        SOURCE_DIR=$(find $PWD -type d -name "shell-lesson-data" 2>/dev/null)
+
+        #location where the backup will be stored
+        BACKUP_DIR="$PWD"
+
+        #used to create a unique name for each backup based on the current date and time
+        TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+        # name of the compressed backup file
+        ARCHIVE_NAME="backup_$TIMESTAMP.tar.gz"
+
+        # Create backup directory if it doesn't exist
+        mkdir -p "$BACKUP_DIR"
+
+        # Create a compressed archive of the source directory
+        tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$SOURCE_DIR" .
+
+        # Output the result
+        echo "Backup of $SOURCE_DIR completed!"
+        echo "Archive created at $BACKUP_DIR/$ARCHIVE_NAME"
+        ```
 
 Exit nano with `ctrl + x`
 
 
 Modify permission to make the shell script executable
 ```
-$ chmod +x backup.sh
+$ chmod +x script.sh
 ```
 
 Run the shell script
 ```
-$ ./backup.sh
+$ ./script.sh
 ```
-
-Go back to your home directory and look for the new backup directory
-```
-$ cd ~
-$ cd ls
-```
-
-There should be a new directory called 'Backup' with a compressed file within it. 
-
 
 ### More Carpentries Lessons on Linux Command line
 - [Pipes and Filters](https://swcarpentry.github.io/shell-novice/04-pipefilter.html)
