@@ -1,6 +1,39 @@
-# How to Talk to Large Language Models (Basics of Prompt Engineering)
+# How to Talk to Large Language Models
 
 [CyVerse Full Prompt Engineering Workshop](https://tyson-swetnam.github.io/intro-gpt){target=_blank}
+
+---
+
+## How is the AI revolution impacting Open Science?
+
+!!! quote "Center for Open Science: [Evaluating AI’s Impact on Open Research Infrastructure](https://www.cos.io/blog/evaluating-ai-impact-on-open-research-infrastructure) "
+
+    !!! success ""*When used responsibly, it can support open models and data, accelerate discovery, and aid in the evaluation of research...* <br> *... but it can also undermine credibility when used to plagiarize, fabricate findings, or mislead readers.* ""
+    
+    !!! failure ""*With the emergence of generative AI, it has become very easy to create content that looks like a real research paper, but is not genuine research.*""
+
+!!! quote "MDPI Blog: [How Artificial Intelligence is Accelerating Open Access Science](https://blog.mdpi.com/2025/09/09/open-science-artificial-intelligence/)"
+
+    !!! success ""*Artificial intelligence, like any new technology, presents both a threat and an opportunity. It requires reflection, adjustment, and adaptation. <br> <br> If implemented carefully and thoughtfully, AI could help us respond to some of the issues that the Open Access scientific publishing industry currently faces. These include the increasing amounts of data being produced and also language barriers and imbalances in outputs between countries. <br><br> Further, AI could help to promote openness in datasets and content aggregators.*""
+
+
+    !!! failure ""*GPT is not fully reliable. <br> <br> GPT training involves analysing a huge body of text and noticing patterns so it can predict the next word in a passage. <br> <br> This results in human-like text, meaning it sounds like it’s written by a human but may not necessarily be by one. Similarly, it may sound like it is conveying meaning, but the argument or claim being made may be without evidence or structure.*""
+        
+
+    !!! success ""*Artificial intelligence is changing Open Access; it’s changing everything. Ultimately, though, it’s a tool, so how it’s used determines its value. <br> <br> If used carefully, AI could help advance Open Access by automating repetitive data-related tasks, making the translation process more interactive, and promoting openness in datasets and content aggregators.* <br> <br> ***However, attention must be paid to its flaws and potential for misuse.***""
+
+<figure markdown>
+  <a target="blank">![ducky](https://upload.wikimedia.org/wikipedia/commons/d/d5/Rubber_duck_assisting_with_debugging.jpg){width=400} </a>
+    <figcaption> Rubber duck debugging, [Wikipedia](https://en.wikipedia.org/wiki/Rubber_duck_debugging)</figcaption>
+</figure>
+
+The AI revolution is here and it isn't going away any time soon. Tools such as ChatGPT, Machine Learning and Large Language Models (LLMs) present an opportunity that is as (probably) as impactful as the arrival of the internet for the average human. Over the course of decades, scientists have encouraged the application of techniques that are in the Open Science realm, but with AI, Open Science requires to revisit many of its pillars and values.
+
+For example, the necessity of communicating with another person in order to review your work is quickly being overtaken by using LLMs to help improve and edit your work, challenging the topic of simple collaborations and peer review. In the case of building code, LLMs are a fantastic resource that can help removing typos, encourage conciseness, and create helpful comments.
+
+However, these can act like echo chambers, where your expectations can lead to [**hallucinations** ](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)) or even pave the way to the ["new p-hacking": prompt-hacking](https://arxiv.org/pdf/2504.14571).
+
+Therefore, it is imperial that as scientists we embrace the discussion of AI in Open Science, understand how it can help us with our daily work and challenge ourselves to ensure that **science stays human**.
 
 ---
 
@@ -24,23 +57,17 @@ Current LLMs generally provide recommendation for how _you_ could do things. ie,
 ### Commercial Chatbots
 
 <figure style="display: flex; justify-content: center;">
-    <a href="https://openai.com/chatgpt"><img src="https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png" alt="openai" style="width: 120px; margin-right: 15px;"></a>
+    <a href="https://openai.com/chatgpt"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="openai" style="width: 120px; margin-right: 15px;"></a>
     <a href="https://gemini.google.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="gemini" style="width: 240px; margin-right: 15px;"></a>
     <a href="https://www.anthropic.com/claude"><img src="https://claude.ai/images/claude_app_icon.png" alt="foster" style="width: 120px; margin-right: 15px;"></a>
-    <a href="https://www.microsoft.com/en-us/bing?form=MA13FV"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Microsoft_365_Copilot_Icon.svg/2048px-Microsoft_365_Copilot_Icon.svg.png" alt="cos" style="width: 120px;"></a>
+    <a href="https://copilot.microsoft.com/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Microsoft_Copilot_Icon.svg/1024px-Microsoft_Copilot_Icon.svg.png" alt="cos" style="width: 120px;"></a>
 </figure>
-
-<br>
-<br>
 
 - [:simple-openai: ChatGPT](https://openai.com/chatgpt)
 - [:simple-google: Gemini](https://gemini.google.com/)
 - [:simple-anthropic: Claude](https://www.anthropic.com/claude)
-- [:octicons-copilot-16: Copilot](https://www.microsoft.com/en-us/bing?form=MA13FV)
+- [:octicons-copilot-16: Copilot](https://copilot.microsoft.com/)
 
-<br>
-<br>
-<br>
 
 ### LLMs in 150 words (or less)
 
@@ -55,9 +82,8 @@ In a nutshell, LLMs are like super-powered text generators trained on the intern
 <br>
 <br>
 
-!!! Warning ":warning::warning: **VERIFY EVERTHING CHATBOTS TELL YOU!** :warning::warning:"
+<p style="text-align: center; font-size:1.3em; color: orange;"> <b><u> ⚠️⚠️ VERIFY EVERTHING CHATBOTS TELL YOU! ⚠️⚠️</u></b></p>
 
-<br>
 <br>
 <br>
 
@@ -228,152 +254,6 @@ build the docker image; and 2. Upload the docker image to docker hub.
     [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
 
 ---
-
-
-## Local LLMs vs APIs
-
-### Managing API keys
-
-#### Extension Installation
-
-1.  **Open VS Code**.
-2.  Navigate to the **Extensions view** by clicking the :material-puzzle-outline: icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
-3.  In the search bar, type  "**Cline**" 
-4.  Find the official extension from the search results and click **Install**.
-5.  Once installed, you might need to **reload VS Code** if prompted.
-
-#### Selecting an API
-
-After installation, you'll typically need to configure an LLM API endpoint and key. Look for settings related to Roo Code or Cline in VS Code's settings (`Ctrl+,` or `Cmd+,`).
-
-##### Google Gemini
-
-1.  Obtain your **Google Gemini API key** from [Google AI Studio](https://aistudio.google.com/){target=_blank} or Google Cloud Console.
-2.  In VS Code settings, search for "Roo Code Gemini" or a similar setting.
-3.  Enter your API key in the designated field (e.g., `Roo Code: Gemini API Key`).
-4.  You might also need to specify the model (e.g., `gemini-pro-2.5`).
-
-##### Ollama (for Local Models)
-
-[Ollama](https://ollama.com){target=_blank} allows you to run open-source LLMs locally.
-
-1.  Ensure **Ollama is installed and running** on your machine with the desired models downloaded (e.g., `ollama pull gemma3:1b`).
-2.  In VS Code settings for Roo Code/Cline, look for an option to specify the **Ollama API endpoint**. This is usually `http://localhost:11434` by default.
-3.  Select or specify the Ollama model you wish to use (e.g., `gemma`, `qwen`). No API key is typically needed for local Ollama usage directly, but the extension must be configured to point to the local server.
-
-##### OpenAI Compatible
-
-This is for services that adhere to the OpenAI API specification, which can include OpenAI itself or other providers like Azure OpenAI or local LLM servers.
-
-1.  Obtain your **API key** and **API base URL** (endpoint) from your provider.
-    * For OpenAI: Key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}. Endpoint is typically `https://api.openai.com/v1`.
-    * For Azure OpenAI: Key and endpoint from your Azure deployment.
-    * For others: Refer to your provider's documentation.
-2.  In VS Code settings for Roo Code/Cline:
-    * Enter the API key (e.g., `Roo Code: OpenAI API Key`).
-    * Enter the API base URL if it's different from the default (e.g., `Roo Code: OpenAI API Base URL`).
-    * Select the desired model (e.g., `gpt-4o`).
-
-##### Claude (via API)
-
-If Roo Code/Cline supports direct Claude API integration (distinct from the Claude Desktop app):
-
-1.  Obtain your **Anthropic API key** from the [Anthropic Console](https://console.anthropic.com/){target=_blank}.
-2.  In VS Code settings for Roo Code/Cline, search for "Roo Code Claude" or a similar setting.
-3.  Enter your API key (e.g., `Roo Code: Claude API Key`).
-4.  Specify the Claude model you wish to use (e.g., `claude-4-sonnet`).
-
-!!! Tip "Restart for Changes"
-    After changing API settings, it's often a good idea to restart VS Code or the extension itself if it provides such an option, to ensure the new settings take effect.
-
----
-
-## Setting up GitHub Copilot on VS Code Locally
-
-GitHub Copilot is deeply integrated into the GitHub ecosystem and VS Code (local).
-
-### In GitHub CodeSpaces
-
-1.  **Enable Copilot for your account**: Ensure you have an active GitHub Copilot subscription associated with your GitHub account.
-2.  **Launch a CodeSpace**: When you create or open a repository in GitHub CodeSpaces, Copilot is often enabled by default if your account has access.
-3.  **Check Status**: Look for the Copilot icon :octicons-copilot-16: in the status bar at the bottom of the VS Code interface within CodeSpaces. If it's not active, click it to see options or troubleshoot. You might need to authorize it for the specific CodeSpace.
-
-### Extension Installation in VS Code (Desktop)
-
-1.  **Open VS Code**.
-2.  Navigate to the **Extensions view** (:material-puzzle-outline: or `Ctrl+Shift+X` / `Cmd+Shift+X`).
-3.  Search for "**GitHub Copilot**".
-4.  Find the official extension by GitHub and click **Install**.
-5.  **Sign In**: After installation, VS Code will prompt you to sign in with your GitHub account. Follow the prompts to authorize VS Code to use GitHub Copilot.
-    * If you're not prompted, you can often click the user icon in the bottom left of VS Code and sign in there, or find a "Sign In to GitHub Copilot" command in the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-6.  Once signed in and with an active subscription, Copilot will be ready to assist you. You'll see its icon :octicons-copilot-16: in the status bar.
-
----
-
-## Model Context Protocol (MCP)
-
-Model context protocol (MCP) is an open-source standard created by Anthropic, designed to communicate with LLMs and other AI systems. 
-
-MCP establishes a common protocol (language) for an AI assistant ("client") to request information or to execute actions from an external service ("server"). 
-
-MCP actions include reading the contents of files, querying other APIs or databases, writing new files or copying data, or executing commands. the MCP protocol defines the structure of the messages.
-
-MCPs offer a powerful framework for enhancing scientific reproducibility.
-
-* Standardized Data Access
-* Containerized Computational environments
-* Sharable Workflows
-
-### MCPs for Coding and commands
-
-A foundational MCP tool to use is the `filesystem` which gives the LLM the ability to `read`, `write`, and `execute` code on your computer or a remote server.
-
-* Ask the LLM to create a new file
-* Request the AI to refactor code or edit text in a file
-* Search through your codebase for relevant functions
-* Execute terminal commands
-
-
-
----
-
-## Vibe Coding 
-
-Vibe coding refers to using an LLM to generate and edit code directly within your IDE (e.g., VS Code). This approach allows for a more fluid and interactive coding experience, where the LLM acts as a collaborative partner.
-
-!!! Warning "Allowing an LLM to execute code on your computer may be a violation of institutional security and privacy policy"
-
-    Coding tools like Cline and Windsurf give you the option to allow 'execution' of code on your machine. 
-
-    You must understand the implications of giving these LLMs the authority to execute code on your computer and the network it is running upon.
-
-    !!! Danger "Malicious code lives on the internet, and your Vibing LLM might install it while you're not paying attention"
-
-        Read more: [:newspaper: Vibe Check: False Packages A New LLM Security Risk](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank} (Note: This is a fictional link as per the example for demonstration).
-
-## Vibe Coding Platforms
-
-| Emoji | Meaning |
-|-------|---------|
-| :material-microsoft-visual-studio-code: | VS Code | 
-| :octicons-codespaces-16: | GitHub CodeSpace |
-| :material-apple: | Apple OS |
-| :material-microsoft-windows: | Windows |
-| :simple-gnubash: | Command Line Interface |
-| :material-open-source-initiative: | Open Source |
-| :material-license: | Licensed |
-| :material-api: | API based | 
-
-* [:simple-anthropic: Claude Desktop](https://claude.ai/download){target=_blank} :material-apple: :material-microsoft-windows: :material-api:
-    An easy-to-install desktop platform that connects to Anthropic's powerful LLM API, and allows you to connect to MCP servers.
-* [:material-cursor-default-click: Cursor](https://www.cursor.com/en){target=_blank} :material-microsoft-visual-studio-code: :material-open-source-initiative: :material-license:
-    A popular standalone fork of VS Code, focused on integrating new models with stability and offering a flat-fee pricing model.
-* [:octicons-copilot-16: GitHub Copilot](https://github.com/features/copilot){target=_blank} :material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
-    Integrated with VS Code and GitHub CodeSpaces, provides agentic coding with periodic performance fluctuations and tiered pricing.
-* [:material-robot: Cline](https://github.com/cline/cline){target=_blank} :material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
-    Open-source and model-agnostic, pioneering features like “bring your own model” (BYOM) and operating on a per-request billing structure.
-* [:material-surfing: Windsurf](https://windsurf.com/editor){target=_blank} :material-microsoft-visual-studio-code: :material-license: :material-api:
-    Offers similar agentic and inline features with tiered pricing and a “just works” usability orientation.
 
 ## Introduction to Prompt Engineering
 
@@ -654,6 +534,153 @@ Use modern Python features (3.10+) and include error handling.
 - 5 key points as bullets
 - 1 paragraph on implications
 - Formatted with markdown headers"
+
+---
+
+## Local LLMs vs APIs
+
+### Managing API keys
+
+#### Extension Installation
+
+1.  **Open VS Code**.
+2.  Navigate to the **Extensions view** by clicking the :material-puzzle-outline: icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
+3.  In the search bar, type  "**Cline**" 
+4.  Find the official extension from the search results and click **Install**.
+5.  Once installed, you might need to **reload VS Code** if prompted.
+
+#### Selecting an API
+
+After installation, you'll typically need to configure an LLM API endpoint and key. Look for settings related to Roo Code or Cline in VS Code's settings (`Ctrl+,` or `Cmd+,`).
+
+##### Google Gemini
+
+1.  Obtain your **Google Gemini API key** from [Google AI Studio](https://aistudio.google.com/){target=_blank} or Google Cloud Console.
+2.  In VS Code settings, search for "Roo Code Gemini" or a similar setting.
+3.  Enter your API key in the designated field (e.g., `Roo Code: Gemini API Key`).
+4.  You might also need to specify the model (e.g., `gemini-pro-2.5`).
+
+##### Ollama (for Local Models)
+
+[Ollama](https://ollama.com){target=_blank} allows you to run open-source LLMs locally.
+
+1.  Ensure **Ollama is installed and running** on your machine with the desired models downloaded (e.g., `ollama pull gemma3:1b`).
+2.  In VS Code settings for Roo Code/Cline, look for an option to specify the **Ollama API endpoint**. This is usually `http://localhost:11434` by default.
+3.  Select or specify the Ollama model you wish to use (e.g., `gemma`, `qwen`). No API key is typically needed for local Ollama usage directly, but the extension must be configured to point to the local server.
+
+##### OpenAI Compatible
+
+This is for services that adhere to the OpenAI API specification, which can include OpenAI itself or other providers like Azure OpenAI or local LLM servers.
+
+1.  Obtain your **API key** and **API base URL** (endpoint) from your provider.
+    * For OpenAI: Key from [platform.openai.com](https://platform.openai.com/api-keys){target=_blank}. Endpoint is typically `https://api.openai.com/v1`.
+    * For Azure OpenAI: Key and endpoint from your Azure deployment.
+    * For others: Refer to your provider's documentation.
+2.  In VS Code settings for Roo Code/Cline:
+    * Enter the API key (e.g., `Roo Code: OpenAI API Key`).
+    * Enter the API base URL if it's different from the default (e.g., `Roo Code: OpenAI API Base URL`).
+    * Select the desired model (e.g., `gpt-4o`).
+
+##### Claude (via API)
+
+If Roo Code/Cline supports direct Claude API integration (distinct from the Claude Desktop app):
+
+1.  Obtain your **Anthropic API key** from the [Anthropic Console](https://console.anthropic.com/){target=_blank}.
+2.  In VS Code settings for Roo Code/Cline, search for "Roo Code Claude" or a similar setting.
+3.  Enter your API key (e.g., `Roo Code: Claude API Key`).
+4.  Specify the Claude model you wish to use (e.g., `claude-4-sonnet`).
+
+!!! Tip "Restart for Changes"
+    After changing API settings, it's often a good idea to restart VS Code or the extension itself if it provides such an option, to ensure the new settings take effect.
+
+---
+
+## Setting up GitHub Copilot on VS Code Locally
+
+GitHub Copilot is deeply integrated into the GitHub ecosystem and VS Code (local).
+
+### In GitHub CodeSpaces
+
+1.  **Enable Copilot for your account**: Ensure you have an active GitHub Copilot subscription associated with your GitHub account.
+2.  **Launch a CodeSpace**: When you create or open a repository in GitHub CodeSpaces, Copilot is often enabled by default if your account has access.
+3.  **Check Status**: Look for the Copilot icon :octicons-copilot-16: in the status bar at the bottom of the VS Code interface within CodeSpaces. If it's not active, click it to see options or troubleshoot. You might need to authorize it for the specific CodeSpace.
+
+### Extension Installation in VS Code (Desktop)
+
+1.  **Open VS Code**.
+2.  Navigate to the **Extensions view** (:material-puzzle-outline: or `Ctrl+Shift+X` / `Cmd+Shift+X`).
+3.  Search for "**GitHub Copilot**".
+4.  Find the official extension by GitHub and click **Install**.
+5.  **Sign In**: After installation, VS Code will prompt you to sign in with your GitHub account. Follow the prompts to authorize VS Code to use GitHub Copilot.
+    * If you're not prompted, you can often click the user icon in the bottom left of VS Code and sign in there, or find a "Sign In to GitHub Copilot" command in the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+6.  Once signed in and with an active subscription, Copilot will be ready to assist you. You'll see its icon :octicons-copilot-16: in the status bar.
+
+---
+
+## Model Context Protocol (MCP)
+
+Model context protocol (MCP) is an open-source standard created by Anthropic, designed to communicate with LLMs and other AI systems. 
+
+MCP establishes a common protocol (language) for an AI assistant ("client") to request information or to execute actions from an external service ("server"). 
+
+MCP actions include reading the contents of files, querying other APIs or databases, writing new files or copying data, or executing commands. the MCP protocol defines the structure of the messages.
+
+MCPs offer a powerful framework for enhancing scientific reproducibility.
+
+- Standardized Data Access
+- Containerized Computational environments
+- Sharable Workflows
+
+### MCPs for Coding and commands
+
+A foundational MCP tool to use is the `filesystem` which gives the LLM the ability to `read`, `write`, and `execute` code on your computer or a remote server.
+
+- Ask the LLM to create a new file
+- Request the AI to refactor code or edit text in a file
+- Search through your codebase for relevant functions
+- Execute terminal commands
+
+---
+
+## Vibe Coding 
+
+Vibe coding refers to using an LLM to generate and edit code directly within your IDE (e.g., VS Code). This approach allows for a more fluid and interactive coding experience, where the LLM acts as a collaborative partner.
+
+!!! Warning "Allowing an LLM to execute code on your computer may be a violation of institutional security and privacy policy"
+
+    Coding tools like Cline and Windsurf give you the option to allow 'execution' of code on your machine. 
+
+    You must understand the implications of giving these LLMs the authority to execute code on your computer and the network it is running upon.
+
+    !!! Danger "Malicious code lives on the internet, and your Vibing LLM might install it while you're not paying attention"
+
+        Read more: [:newspaper: Vibe Check: False Packages A New LLM Security Risk](https://hackaday.com/2025/04/12/vibe-check-false-packages-a-new-llm-security-risk/){target=_blank} (Note: This is a fictional link as per the example for demonstration).
+
+## Vibe Coding Platforms
+
+| Emoji | Meaning |
+|-------|---------|
+| :material-microsoft-visual-studio-code: | VS Code | 
+| :octicons-codespaces-16: | GitHub CodeSpace |
+| :material-apple: | Apple OS |
+| :material-microsoft-windows: | Windows |
+| :simple-gnubash: | Command Line Interface |
+| :material-open-source-initiative: | Open Source |
+| :material-license: | Licensed |
+| :material-api: | API based | 
+
+* [:simple-anthropic: Claude Desktop](https://claude.ai/download){target=_blank} :material-apple: :material-microsoft-windows: :material-api:
+    An easy-to-install desktop platform that connects to Anthropic's powerful LLM API, and allows you to connect to MCP servers.
+* [:material-cursor-default-click: Cursor](https://www.cursor.com/en){target=_blank} :material-microsoft-visual-studio-code: :material-open-source-initiative: :material-license:
+    A popular standalone fork of VS Code, focused on integrating new models with stability and offering a flat-fee pricing model.
+* [:octicons-copilot-16: GitHub Copilot](https://github.com/features/copilot){target=_blank} :material-microsoft-visual-studio-code: :octicons-codespaces-16: :material-license: :material-api:
+    Integrated with VS Code and GitHub CodeSpaces, provides agentic coding with periodic performance fluctuations and tiered pricing.
+* [:material-robot: Cline](https://github.com/cline/cline){target=_blank} :material-microsoft-visual-studio-code: :material-open-source-initiative: :material-api:
+    Open-source and model-agnostic, pioneering features like “bring your own model” (BYOM) and operating on a per-request billing structure.
+* [:material-surfing: Windsurf](https://windsurf.com/editor){target=_blank} :material-microsoft-visual-studio-code: :material-license: :material-api:
+    Offers similar agentic and inline features with tiered pricing and a “just works” usability orientation.
+
+---
 
 ## Quick Reference Card
 
