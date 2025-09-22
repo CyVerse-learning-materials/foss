@@ -1,6 +1,16 @@
 # How to Talk to Large Language Models
 
+---
+
 [CyVerse Full Prompt Engineering Workshop](https://tyson-swetnam.github.io/intro-gpt){target=_blank}
+
+---
+
+!!! Success "Learning Objectives"
+    - **Fundamentals**: How AI models process and respond to prompts
+    - **Modern Features**: Leveraging document uploads, web search, and multi-modal inputs
+    - **Best Practices**: Structured approaches to writing effective prompts
+    - **Advanced Techniques**: Context management, chaining, and custom instructions
 
 ---
 
@@ -24,7 +34,7 @@
 
 <figure markdown>
   <a target="blank">![ducky](https://upload.wikimedia.org/wikipedia/commons/d/d5/Rubber_duck_assisting_with_debugging.jpg){width=400} </a>
-    <figcaption> Rubber duck debugging, [Wikipedia](https://en.wikipedia.org/wiki/Rubber_duck_debugging)</figcaption>
+    <figcaption> Rubber duck debugging (or rubberducking), [Wikipedia](https://en.wikipedia.org/wiki/Rubber_duck_debugging)</figcaption>
 </figure>
 
 The AI revolution is here and it isn't going away any time soon. Tools such as ChatGPT, Machine Learning and Large Language Models (LLMs) present an opportunity that is as (probably) as impactful as the arrival of the internet for the average human. Over the course of decades, scientists have encouraged the application of techniques that are in the Open Science realm, but with AI, Open Science requires to revisit many of its pillars and values.
@@ -80,18 +90,18 @@ Current LLMs generally provide recommendation for how _you_ could do things. ie,
 In a nutshell, LLMs are like super-powered text generators trained on the internet's vast knowledge.
 
 <br>
+
+<p style="text-align: center; font-size:1.3em; color: white; background-color:orange;"> <b><u>⚠️⚠️ VERIFY EVERTHING CHATBOTS TELL YOU! ⚠️⚠️</u></b></p>
+
 <br>
 
-<p style="text-align: center; font-size:1.3em; color: orange;"> <b><u> ⚠️⚠️ VERIFY EVERTHING CHATBOTS TELL YOU! ⚠️⚠️</u></b></p>
-
-<br>
-<br>
+---
 
 ### :simple-openai: Prompt Writing
 
 LLM Chatbots are meant to be conversational. In general, you are asking the Chatbot questions (known as **Prompts**) and the Chatbot will respond with answers. 
 
-It is a bit of an artform to get the Chatbot to provide answers with the specificity and format that you want. An entire field of study has sprung up, called **Prompt Engineering**, which seeks to find the magic words that will elicit the best (and technically correct) responses from the Chatbot. 
+It is a bit of an artform to get the Chatbot to provide answers with the specificity and format that you want. An entire field of study has sprung up, called **Prompt Engineering**, is a technique of crafting effective instructions using AI large language models. With modern AI-powered tools like Claude Desktop, ChatGPT, Gemini, and NotebookLM offering capabilities to upload documents, search the web, and process multiple file types, mastering prompt engineering has become essential for productive AI interactions.
 
 <br>
 <br>
@@ -121,10 +131,19 @@ Responses to prompts may not return the exact details or information that you ar
 |------------------|----------|
 | Step 1: Priming | "I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems." |
 | Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
-| Step 3: Try again with a web search | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
+| Step 3: Try again with a web search (Control) | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
 
 !!! tip "Encouraging the Chatbot to do Better"
     Chatbot responses can be missing information or just plain wrong. When this occurs, you can point out the mistake and ask the Chatbot to provide a more complete or better answer. Don't settle for poor responses!
+
+``` mermaid
+graph LR
+  A[Priming] --> B{Result?};
+  B -->|Yes| C[Summarize];
+  C --> D[Quality Control];
+  D --> B;
+  B ----> E[Yay!];
+```
 
 <br>
 <br>
@@ -148,136 +167,9 @@ Some people find that asking the Chatbot to adopt a persona will lead to better 
 | Python Interpreter |
 | Web Browser |
 
-<br>
-<br>
-<br>
-
-### Prompting Chatbots for FOSS
-
-<br>
-
-#### Provide a general outline for a data management plan
-
-```
-I am writing a grant proposal to the National Science Foundation. 
-Could you please provide me a basic template for a data management plan (DMP) and 
-please provide url links to resources that can help me with NSF DMP requirements.
-```
-<br>
-<br>
-
-
-#### Provide a step-by-step recipe to create and serve an mkdocs website in Github
-
-```
-I would like to create a personal website using the MKdocs style 
-and host it on Github pages.
-
-Could you please write me a step-by-step guide starting 
-with importing an existing github repository that has the mkdocs material.
-```
-<br>
-<br>
-
-#### Write shell commands and shell scripts
-
-```
-I would like to create a linux shell script to automate the backup of my working directory. 
-Could you please suggest a shell script that will copy my working directory 
-in a different directory and compress the file into an archive. 
-Please name the file based on the current time and date. 
-```
-
-<br>
-<br>
-
-#### Write git commands
-
-```
-Could you please provide me a step-by-step workflow for using git with github? 
-I found a repository that I want to build on in Github. 
-I would like to work on the material on my local machine and then save it back up to github. 
-I would like to workflow to be for the linux command line. 
-```
-
-<br>
-<br>
-
-#### Write download and conda commands
-```
-I am writing a lot of scripts using python. I have heard that environment managers such as conda may be useful to me. 
-I don't know anything about conda, so can you explain some things?
-1. Give me a high level overview of what environment managers are and what conda is specifically.
-2. Please create a step-by-step guide for downloading conda on my machine, and how to use conda to create custom environments. 
-3. Please explain and give my steps to share my environment with colleagues.
-```
-<br>
-<br>
-
-#### Write docker run commands
-
-```
-I would like to run a docker container that consists of a jupyter notebook. 
-Can you please suggest a docker run command that launches the jupyter notebook
-and mounts a volume of data in it. 
-```
-
-<br>
-<br>
-
-#### Write docker files
-
-```
-I would like to create a docker image that consists of R studio and 
-some customized Rcode. Can you tell me the steps to 1. make a dockerfile and 
-build the docker image; and 2. Upload the docker image to docker hub.
-```
-
-
-<br>
-<br>
-<br>
-<br>
-
-??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
-
-    There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
-
-    [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc)
-
-    Check out lists around:
-
-    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
-
-    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts)
-   
-    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
-
 ---
 
-## Introduction to Prompt Engineering
-
-**Prompt Engineering** is a technique of crafting effective instructions using AI large language models. With modern AI-powered tools like Claude Desktop, ChatGPT, Gemini, and NotebookLM offering capabilities to upload documents, search the web, and process multiple file types, mastering prompt engineering has become essential for productive AI interactions.
-
-!!! info "What You'll Learn"
-    - **Fundamentals**: How AI models process and respond to prompts
-    - **Modern Features**: Leveraging document uploads, web search, and multi-modal inputs
-    - **Best Practices**: Structured approaches to writing effective prompts
-    - **Advanced Techniques**: Context management, chaining, and custom instructions
-
 ## Understanding Modern AI Capabilities
-
-### Core Features of Today's AI Tools
-
-Modern AI assistants have evolved beyond simple text chat:
-
-| Feature | :simple-claude: Claude | :simple-openai: ChatGPT | :simple-googlegemini: Gemini | NotebookLM | :material-microsoft: CoPilot |
-|---------|--------|---------|--------|------------|---------|
-| **Document Upload** | PDFs, text, code | PDFs, images, data | PDFs, images, GDrive | PDFs, Google Docs | PDFs, OneDrive |
-| **Web Search** | Via MCP | Yes | Yes | Yes | Yes |
-| **Context Window (tokens)** | 200K | 128K| 2M | Document-based | 128K |
-| **File Analysis** | Yes | Yes | Yes | Deep analysis | Yes |
-| **Code Execution** | Yes (MCP) | Yes | Yes | No | Yes |
 
 ### How AI Models Process Your Input
 
@@ -287,8 +179,6 @@ Modern AI assistants have evolved beyond simple text chat:
     3. **Attention Mechanism**: The model identifies relevant information
     4. **Generation**: Response is produced token by token
     5. **Formatting**: Output is structured according to your specifications
-
-## Getting Started: Basic Prompt Structure
 
 ### The Foundation: Clear Instructions
 
@@ -314,6 +204,18 @@ Summarize the attached PDF in 3 bullet points that cover:
 3. Key findings and limitations
 Format as a bullet list with sub-points for clarity."
 ```
+
+### Core Features of Today's AI Tools
+
+Modern AI assistants have evolved beyond simple text chat:
+
+| Feature | :simple-claude: Claude | :simple-openai: ChatGPT | :simple-googlegemini: Gemini | :simple-notebooklm: NotebookLM | :material-microsoft: CoPilot |
+|---------|--------|---------|--------|------------|---------|
+| **Document Upload** | PDFs, text, code | PDFs, images, data | PDFs, images, GDrive | PDFs, Google Docs | PDFs, OneDrive |
+| **Web Search** | Via MCP | Yes | Yes | Yes | Yes |
+| **Context Window (tokens)** | 200K | 128K| 2M | Document-based | 128K |
+| **File Analysis** | Yes | Yes | Yes | Deep analysis | Yes |
+| **Code Execution** | Yes (MCP) | Yes | Yes | No | Yes |
 
 ### Working with Documents
 
@@ -343,25 +245,19 @@ I've uploaded three research papers on climate change. Please:
 Format the response with clear headers and use markdown tables.
 ```
 
+---
+
 ## The CRAFT Framework
 
 For consistent, high-quality results, use the [CRAFT framework](https://www.geeky-gadgets.com/craft-prompt-framework/){target=_blank}:
 
-### **Context**
-
-Provide background information and set the scene
-
-### **Role**
-Define who the AI should act as
-
-### **Action**
-Specify exactly what you want done
-
-### **Format**
-Describe how the output should be structured
-
-### **Tone**
-Indicate the style and voice to use
+| Action | Description |
+|---|---|
+| **Context** | Provide background information and set the scene |
+|  **Role** | Define who the AI should act as |
+| **Action** | Specify exactly what you want done |
+| **Format** | Describe how the output should be structured |
+| **Tone** | Indicate the style and voice to use |
 
 #### CRAFT Example
 
@@ -376,6 +272,8 @@ Format: Provide feedback as tracked changes with explanations
 
 Tone: Professional, constructive, and encouraging
 ```
+
+---
 
 ## Advanced Techniques
 
@@ -462,6 +360,8 @@ Now classify these:
 3. "Package was left in the rain"
 ```
 
+---
+
 ## Practical Applications
 
 ### Research and Analysis
@@ -505,35 +405,134 @@ Based on the uploaded requirements document:
 Use modern Python features (3.10+) and include error handling.
 ```
 
+---
+
 ## Common Pitfalls and Solutions
 
 ### Pitfall 1: Vague Instructions
 
-❌ **Poor**: "Make this better"
+!!! Failure "*Poor*: "Make this better""
 
-✅ **Better**: "Improve this abstract by making it more concise (under 250 words), adding keywords, and ensuring it follows the journal's structure: background, methods, results, conclusions"
+!!! Success "*Better*: "Improve this abstract by making it more concise (under 250 words), adding keywords, and ensuring it follows the journal's structure: background, methods, results, conclusions""
 
 ### Pitfall 2: Information Overload
 
-❌ **Poor**: Uploading 50 documents without guidance
+!!! Failure "*Poor*: "Uploading 50 documents without guidance""
 
-✅ **Better**: "Focus on documents 1-3 which contain the methodology. Ignore the appendices."
+!!! Success "*Better*: "Focus on documents 1-3 which contain the methodology. Ignore the appendices.""
 
 ### Pitfall 3: Assuming Knowledge
 
-❌ **Poor**: "Fix the usual issues"
+!!! Failure "*Poor*: "Fix the usual issues""
 
-✅ **Better**: "Check for: passive voice, sentences over 25 words, undefined acronyms, and missing Oxford commas"
+!!! Success "*Better*: "Check for: passive voice, sentences over 25 words, undefined acronyms, and missing Oxford commas""
 
 ### Pitfall 4: No Output Format
 
-❌ **Poor**: "Summarize this"
+!!! Failure "*Poor*: "Summarize this""
 
-✅ **Better**: "Create an executive summary with: 
-- 3-sentence overview
-- 5 key points as bullets
-- 1 paragraph on implications
-- Formatted with markdown headers"
+!!! Success "*Better*: <br> Create an executive summary with: <br> - 3-sentence overview <br> - 5 key points as bullets <br> - 1 paragraph on implications <br> - Formatted with markdown headers"
+
+---
+
+## Prompting Chatbots for FOSS
+
+<br>
+
+#### Provide a general outline for a data management plan
+
+```
+I am writing a grant proposal to the National Science Foundation. 
+Could you please provide me a basic template for a data management plan (DMP) and 
+please provide url links to resources that can help me with NSF DMP requirements.
+```
+<br>
+<br>
+
+
+#### Provide a step-by-step recipe to create and serve an mkdocs website in Github
+
+```
+I would like to create a personal website using the MKdocs style 
+and host it on Github pages.
+
+Could you please write me a step-by-step guide starting 
+with importing an existing github repository that has the mkdocs material.
+```
+<br>
+<br>
+
+#### Write shell commands and shell scripts
+
+```
+I would like to create a linux shell script to automate the backup of my working directory. 
+Could you please suggest a shell script that will copy my working directory 
+in a different directory and compress the file into an archive. 
+Please name the file based on the current time and date. 
+```
+
+<br>
+<br>
+
+#### Write git commands
+
+```
+Could you please provide me a step-by-step workflow for using git with github? 
+I found a repository that I want to build on in Github. 
+I would like to work on the material on my local machine and then save it back up to github. 
+I would like to workflow to be for the linux command line. 
+```
+
+<br>
+<br>
+
+#### Write download and conda commands
+```
+I am writing a lot of scripts using python. I have heard that environment managers such as conda may be useful to me. 
+I don't know anything about conda, so can you explain some things?
+1. Give me a high level overview of what environment managers are and what conda is specifically.
+2. Please create a step-by-step guide for downloading conda on my machine, and how to use conda to create custom environments. 
+3. Please explain and give my steps to share my environment with colleagues.
+```
+<br>
+<br>
+
+#### Write docker run commands
+
+```
+I would like to run a docker container that consists of a jupyter notebook. 
+Can you please suggest a docker run command that launches the jupyter notebook
+and mounts a volume of data in it. 
+```
+
+<br>
+<br>
+
+#### Write docker files
+
+```
+I would like to create a docker image that consists of R studio and 
+some customized Rcode. Can you tell me the steps to 1. make a dockerfile and 
+build the docker image; and 2. Upload the docker image to docker hub.
+```
+
+<br>
+<br>
+
+
+??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
+
+    There is an ever changing meta-list of :simple-awesomelists: Awesome lists curated around ChatGPT plugins and extensions.
+
+    [:simple-github: search: `chatgpt+awesome`](https://github.com/search?q=awesome-chatgpt+&type=repositories&s=stars&o=desc)
+
+    Check out lists around:
+
+    [:simple-awesomelists: ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+
+    [:simple-awesomelists: ChatGPT Data Science Prompts](https://github.com/travistangvh/ChatGPT-Data-Science-Prompts)
+   
+    [:simple-awesomelists: API plugins, extensions, & applications](https://github.com/humanloop/awesome-chatgpt)
 
 ---
 
@@ -766,3 +765,5 @@ Vibe coding refers to using an LLM to generate and edit code directly within you
 - [:simple-github: Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts){target=_blank}
 
 - [Learn Prompting Online Courses](https://learnprompting.org/){target=_blank}
+
+---
