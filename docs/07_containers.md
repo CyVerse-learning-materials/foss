@@ -4,16 +4,111 @@
 
     After this lesson, you should be able to:
 
-    * Understand the Dockerfile structure and fields 
-    * Build, execute and push your own Docker image
+    - Explain what containers are used for in reproducible research contexts
+    - Search for and run a Docker container locally or on a remote system
+    - Understand how version control and data can be used inside a container
+    - Understand the Dockerfile structure and fields 
+    - Build, execute and push your own Docker image
 
-In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and execute Docker containers. In this lesson, we continue to explore containerization, covering how we can create our own container and the various commands necessary in order to create them.
+## Reproducible Computer Code
+
+Sharing your scientific analysis code with your colleagues is an essential pillar of Open Science that will help push your field forward. 
+
+There are, however, technical challenges that may prevent your colleagues from effectively running your code on their computers. In the previous lesson [Reproducibility II](06_soft_env.md) we described how [computing environments](06_reproducibility_I.md/#computing-environment) can lead the way of reproducibility by creating a "recipe" for replicating a computing environment.
+
+There is another method to overcoming the replicability obstacle. Instead of recreating a computing environment, **why not package up the code _and_ all of the software and send it to your colleague?**
+
+## What *are* containers?
+
+A [container](https://www.docker.com/resources/what-container/) is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another 
+
+- Container images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings
+- Each of these elements are specifically versioned and do not change
+- The recipient does not need to *install* the software in the traditional sense
+
+<br>
+
+A useful analogy is to think of software containers as shipping containers. It allows us move cargo (software) around the world in standard way. The shipping container can be offloading and executed anywhere, as long the destination has a shipping port (i.e., Docker) 
+
+<figure markdown>
+  <a href="" target="blank" rel="open science">![open science](../assets/shipping.jpg){ width="500" } </a>
+    <figcaption> Software Shipping Containers </figcaption>
+</figure>
+
+<br/>
+
+Containers are similar to virtual machines (VMs), but are smaller and easier to share. A big distinction between Containers and VMs is what is within each environment: VMs require the OS to be present within the image, whilst containers rely on the host OS and the container engine (e.g., Docker Engine). 
+
+<figure markdown>
+  <a href="https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/" target="blank" rel="containerexp">![containerexp](https://cloudblogs.microsoft.com/wp-content/uploads/sites/37/2019/07/Demystifying-containers_image1.png) </a>
+    <figcaption> Difference between Virtual Machines and Containers. Containers are a lot more portable as these do not require an OS to be bundled with the software. Figure source: [Microsoft Cloudblogs](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/). </figcaption>
+</figure>
+
+<br>
+
+## Containers for Reproducible Science
+Software containers, such as those managed by Docker or Singularity, are incredibly useful for reproducible science for several reasons:
+
+#### Environment Consistency: 
+Containers encapsulate the software environment, ensuring that the same versions of software, libraries, and dependencies are used every time, reducing the "it works on my machine" problem.
+
+- **Ease of Sharing**:
+    - Containers can be easily shared with other researchers, allowing them to replicate the exact software environment used in a study.
+- **Platform Independence**:
+    - Containers can run on different operating systems and cloud platforms, allowing for consistency across different hardware and infrastructure.
+- **Version Control**:
+    - Containers can be versioned, making it easy to keep track of changes in the software environment over time.
+- **Scalability**:
+    - Containers can be easily scaled and deployed on cloud infrastructure, allowing for reproducible science at scale.
+- **Isolation**:
+    - Containers isolate the software environment from the host system, reducing the risk of conflicts with other software and ensuring a clean and controlled environment.
 
 <br>
 <br>
 
-## Images vs Containers
+The most common container software is [:material-docker: Docker](https://www.docker.com/){target=_blank}, which is a platform for developers and sysadmins to develop, deploy, and run applications with containers. [Apptainer](https://apptainer.org/docs/user/main/) (formerly, Singularity), is another popular container engine, which allows you to deploy containers on HPC clusters.
 
+[DockerHub](https://hub.docker.com/) is the world's largest respository of container images. Think of it as the 'Github' of container images. It facilitates collaboration amongst developers and allows you to share your container images with the world. Dockerhub allows users to maintain different versions of container images.
+
+!!! Warning "While Docker allows you to quickly run software from other people, it may not work across every platform. <br> <br> There are different CPU architectures (`arm`, `amd64`, `x64`, `x86`) deployed across cloud, computer workstations, laptops, and cellular phones. Docker containers and their software can be cross-compiled across architectures, but this must be done by the creators."
+
+<br>
+<br>
+
+## Introduction to :material-docker: Docker 
+
+<figure markdown>
+  <a href="https://hub.docker.com" target="blank" rel="docker">![gitlfs](https://cc.cyverse.org/assets/docker/docker.png) </a>
+</figure>
+
+There are no specific skills needed for this tutorial beyond elementary command line ability and using a text editor. 
+
+We are going to be using [:material-github: GitHub CodeSpaces](https://github.com/features/codespaces){target=_blank} for the hands on portion of the workshop, which features [:material-microsoft-visual-studio-code: VS Code](https://code.visualstudio.com/){target=_blank} as a fully enabled development environment with Docker already installed. 
+
+
+Our instructions on starting a new CodeSpace are [here](https://cc.cyverse.org/cloud/codespaces/){target=_blank}. 
+
+??? Info "Installing Docker on your personal computer"
+
+    We are going to be using virtual machines on the cloud for this course, and we will explain why this is a good thing, but there may be a time when you want to run Docker on your own computer.
+
+    Installing Docker takes a little time but it is reasonably straight forward and it is a one-time setup.
+
+    Installation instructions from Docker Official Docs for common OS and chip architectures:
+
+	- [:fontawesome-brands-apple: Mac OS X](https://docs.docker.com/docker-for-mac/){target=_blank}
+	- [:fontawesome-brands-windows: Windows](https://docs.docker.com/docker-for-windows){target=_blank}
+	- [:fontawesome-brands-ubuntu: Ubuntu Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/){target=_blank}
+
+
+## General Workflow
+
+<figure markdown>
+  ![containerexp](assets/docker_lifecycle.jpg)
+    <figcaption> The container's life cycle. Figure source: [Tutorialspoint](https://www.tutorialspoint.com/docker/index.htm). </figcaption>
+</figure>
+
+### Images vs Containers
 
 || Image | Container |
 |:---:|---|---|
@@ -25,15 +120,221 @@ In [Reproducibility II](./07_reproducibility_ii.md) we saw how we can access and
 <br>
 <br>
 
+---
 
-## General Workflow
-<figure markdown>
-  ![containerexp](assets/docker_lifecycle.jpg)
-    <figcaption> The container's life cycle. Figure source: [Tutorialspoint](https://www.tutorialspoint.com/docker/index.htm). </figcaption>
-</figure>
+## Fundamental Docker Commands :octicons-terminal-16: 
 
-<br>
-<br>
+Docker commands in the terminal use the prefix `docker`.
+
+!!! Note "For every command listed, the correct execution of the commands through the command line is by using `docker` in front of the command: for example `docker help` or `docker search`. Thus, every :material-docker: = `docker`."
+
+### :material-docker: help
+
+Like many other command line applications the most helpful flag is the `help` command which can be used with the Management Commands:
+
+``` 
+$ docker 
+$ docker --help
+```
+
+### :material-docker: search
+
+We talk about the concept of [Docker Registries](https://cc.cyverse.org/docker/registry/){target=_blank} in the next section, but you can search the public list of registeries by using the `docker search` command to find public containers on the Official [Docker Hub Registry](https://hub.docker.com):
+
+```
+$ docker search  
+```
+
+### :material-docker: pull
+
+Go to the [Docker Hub](https://hub.docker.com) and type `hello-world` in the search bar at the top of the page. 
+
+Click on the 'tag' tab to see all the available 'hello-world' images. 
+
+Click the 'copy' icon at the right to copy the `docker pull` command, or type it into your terminal:
+
+```
+$ docker pull hello-world
+```
+
+!!! Note
+    If you leave off the `:` and the tag name, it will by default pull the `latest` image
+
+```
+$ docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+2db29710123e: Pull complete 
+Digest: sha256:bfea6278a0a267fad2634554f4f0c6f31981eea41c553fdf5a83e95a41d40c38
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest
+```
+
+Now try to list the files in your current working directory:
+
+```
+$ ls -l
+```
+
+??? Question "Where is the image you just pulled?"
+
+    Docker saves container images to the Docker directory (where Docker is installed). 
+    
+    You won't ever see them in your working directory.
+
+    Use 'docker images' to see all the images on your computer:
+
+    ```
+    $ docker images
+    ```
+
+### :material-docker: run
+
+The single most common command that you'll use with Docker is `docker run` ([see official help manual](https://docs.docker.com/engine/reference/commandline/run/) for more details).
+
+
+```
+$ docker run hello-world:latest
+```
+
+In the demo above, you used the `docker pull` command to download the `hello-world:latest` image.
+
+What about if you run a container that you haven't downloaded?
+
+
+```
+$ docker run alpine:latest
+```
+
+When you executed the command `docker run alpine:latest`, Docker first looked for the cached image locally, but did not find it, it then ran a `docker pull` behind the scenes to download the `alpine:latest` image and then execute your command.
+
+
+### :material-docker: images
+
+You can now use the `docker images` command to see a list of all the cached images on your system:
+
+```
+$ docker images	
+REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+alpine                 	latest              c51f86c28340        4 weeks ago         1.109 MB
+hello-world             latest              690ed74de00f        5 months ago        960 B
+```
+
+??? Info "Inspecting your containers"
+
+	To find out more about a Docker images, run `docker inspect hello-world:latest`
+
+### :material-docker: ps
+
+Now it's time to see the `docker ps` command which shows you all containers that are currently running on your machine. 
+
+```
+docker ps
+```
+
+Since no containers are running, you see a blank line.
+
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+```
+
+Let's try a more useful variant: `docker ps --all`
+
+```
+$ docker ps --all
+CONTAINER ID   IMAGE                                            COMMAND                  CREATED          STATUS                      PORTS     NAMES
+a5eab9243a15   hello-world                                      "/hello"                 5 seconds ago    Exited (0) 3 seconds ago              loving_mcnulty
+3bb4e26d2e0c   alpine:latest                                    "/bin/sh"                17 seconds ago   Exited (0) 16 seconds ago             objective_meninsky
+192ffdf0cbae   opensearchproject/opensearch-dashboards:latest   "./opensearch-dashbo…"   3 days ago       Exited (0) 3 days ago                 opensearch-dashboards
+a10d47d3b6de   opensearchproject/opensearch:latest              "./opensearch-docker…"   3 days ago       Exited (0) 3 days ago                 opensearch-node1
+
+```
+
+What you see above is a list of all containers that you have run. 
+
+Notice that the `STATUS` column shows the current condition of the container: running, or as shown in the example, when the container was exited.
+
+### :material-docker: stop
+
+The `stop` command is used for containers that are actively running, either as a foreground process or as a detached background one.
+
+You can find a running container using the `docker ps` command.
+
+### :material-docker: rm
+
+You can remove individual stopped containers by using the `rm` command. Use the `ps` command to see all your stopped contiainers:
+
+```
+@user ➜ /workspaces $ docker ps -a
+CONTAINER ID   IMAGE                        COMMAND                  CREATED              STATUS                          PORTS     NAMES
+03542eaac9dc   hello-world                  "/hello"                 About a minute ago   Exited (0) About a minute ago             unruffled_nobel
+```
+
+Use the first few unique alphanumerics in the CONTAINER ID to remove the stopped container:
+
+```
+@user ➜ /workspaces (mkdocs ✗) $ docker rm 0354
+0354
+```
+
+Check to see that the container is gone using `ps -a` a second time (`-a` is shorthand for `--all`; the full command is `docker ps -a` or `docker ps --all`).
+
+### :material-docker: rmi
+
+The `rmi` command is similar to `rm` but it will remove the cached images. Used in combination with `docker images` or `docker system df` you can clean up a full cache
+
+```
+docker rmi
+```
+
+```
+@user ➜ /workspaces/ (mkdocs ✗) $ docker images
+REPOSITORY                   TAG       IMAGE ID       CREATED        SIZE
+opendronemap/webodm_webapp   latest    e075d13aaf35   21 hours ago   1.62GB
+redis                        latest    a10f849e1540   5 days ago     117MB
+opendronemap/nodeodm         latest    b4c50165f838   6 days ago     1.77GB
+hello-world                  latest    feb5d9fea6a5   7 months ago   13.3kB
+opendronemap/webodm_db       latest    e40c0f274bba   8 months ago   695MB
+@user ➜ /workspaces (mkdocs ✗) $ docker rmi hello-world
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:10d7d58d5ebd2a652f4d93fdd86da8f265f5318c6a73cc5b6a9798ff6d2b2e67
+Deleted: sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412
+Deleted: sha256:e07ee1baac5fae6a26f30cabfe54a36d3402f96afda318fe0a96cec4ca393359
+@user ➜ /workspaces (mkdocs ✗) $ 
+```
+
+### :material-docker: system
+
+The `system` command can be used to view information about containers on your cache, you can view your total disk usage, view events or info.
+
+You can also use it to `prune` unused data and image layers.
+
+To remove all cached layers, images, and data you can use the `-af` flag for `all` and `force`
+
+```
+docker system prune -af
+```
+
+### :material-docker: tag
+
+By default an image will recieve the tag `latest` when it is not specified during the `docker build` 
+
+Image names and tags can be created or changed using the `docker tag` command. 
+
+```
+docker tag imagename:oldtag imagename:newtag
+```
+
+You can also change the registry name used in the tag:
+
+```
+docker tag docker.io/username/imagename:oldtag harbor.cyverse.org/project/imagename:newtag
+```
+
+The cached image laters will not change their `sha256` and both image tags will still be present after the new tag name is generated. 
+
+---
 
 ## Run an Example Container
 
