@@ -128,6 +128,8 @@ Docker commands in the terminal use the prefix `docker`.
 
 !!! Note "For every command listed, the correct execution of the commands through the command line is by using `docker` in front of the command: for example `docker help` or `docker search`. Thus, every :material-docker: = `docker`."
 
+!!! Important "To follow along, please start a Codespace in the following repository: **https://github.com/jeffgillan/r-script-containerized**. We are going to be using this repository throughout today, to learn docker commands, run docker containers and building our own container."
+
 ### :material-docker: help
 
 Like many other command line applications the most helpful flag is the `help` command which can be used with the Management Commands:
