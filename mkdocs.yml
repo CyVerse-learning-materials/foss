@@ -29,8 +29,8 @@ nav:
     - '5. Reproducibility I: Version Control': 05_version_control.md
     - '6. Reproducibility II Software Environments': 06_soft_env.md
     - '7. Reproducibility III: Containers': 07_containers.md
-    - '8. Remote Computing: Cyverse': 08_remote_computing_cyverse.md
-    - '9. Remote Computing: HPC': 09_HPC.md
+    - '8. Remote Computing: HPC': 09_HPC.md
+    - '9. Remote Computing: Cyverse': 08_remote_computing_cyverse.md
     - '10. AI Models & Where to Find Them': 10_llms_adv.md
 
   - Capstone Project:
