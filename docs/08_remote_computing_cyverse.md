@@ -1,6 +1,6 @@
 # Remote Computing with Cyverse
 
-!!! warning "This page is a summary of what today's lesson is going to cover. For the information covered, we are going to rely on the CyVerse Learning documentation: https://learning.cyverse.org/".
+!!! Warning "This page is a summary of what today's lesson is going to cover. For the information covered, we are going to rely on the CyVerse Learning documentation: https://learning.cyverse.org/."
 
 <figure markdown>
   <a href="" target="blank" rel="open science">![open science](../assets/cyverse_float.gif){ width="500" } </a>
@@ -62,7 +62,7 @@ The [CyVerse Discovery Environment](https://de.cyverse.org) is where users can s
 Cyverse Data Store is the ideal cloud storage to host your large (or small) datasets, share data with colleagues, and meet publication/grant archival requirements.  
 
 * Cyverse Data Store is object cloud storage similar to Azure Blob, or Amazon S3
-* Pro account has a 3TB limit
+* Pro account has a 5TB limit
 * [Moving data in or out of the Data Store](https://learning.cyverse.org/ds/move_data/) can be done through website or multiple command line tools
 * Share your data with your colleagues and world with a URL
 * Data can be public/private, shared with anyone, set permission levels
