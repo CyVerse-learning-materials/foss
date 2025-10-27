@@ -1,6 +1,6 @@
 # Remote Computing with Cyverse
 
-
+!!! warning "This page is a summary of what today's lesson is going to cover. For the information covered, we are going to rely on the CyVerse Learning documentation: https://learning.cyverse.org/".
 
 <figure markdown>
   <a href="" target="blank" rel="open science">![open science](../assets/cyverse_float.gif){ width="500" } </a>
