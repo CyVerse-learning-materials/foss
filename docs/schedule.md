@@ -1,22 +1,32 @@
-# Weekly Schedule
+# Weekly Schedule & Communications
 
-Thursdays 11 am - 12:30 pm Arizona Time.
+Tuesday 11 am - 13:00 pm Arizona Time.
     
 **This schedule is tentative and subject to change**
 
+!!! Info "In Session Communication"
+
+    Communications within meeting are done through [**HackMD**](https://homepage.hackmd.io/), a [Markdown](https://en.wikipedia.org/wiki/Markdown) based documentation tool that allows for multiple users to add notes at the same time.
+
+    Markdown is a lightweight and extremely simple text formatter used by platforms such as GitHub, GitLab and LLM chatbots such as ChatGPT to display text in an intended manner without using CSS or HTML. 
+
+    If you are not familiar with Markdown, we highly suggest visiting the [Markdown Guide](https://www.markdownguide.org/) for quick reference.
+
+    Links to each week's HackMD are posted next to the Topic Overview column and made available prior to the session starting.
+
 ## Calendar
 
-| Week | Date | Content | Description |
-|---|---|---|---|
-| **Week 1** | Sept. 5 |  [Intro to Open Science](01_intro_open_sci.md) | In the opening session of FOSS will we talk about the big picture of what Open Science is and why do it. We will discuss how an open approach can be applied to many aspects of the scientific process and enhance your individual research. This is our least technical session where we lay out a roadmap for the 12 week workshop.  |
-| **Week 2** | Sept. 12 | [Data management](02_managing_data.md) | The foundation of any science endeavor is data. In this session we will dive deep into storing, sharing, and managing your datasets. We'll specifically cover data management plans (DMPs) and explain how licenses can allow other researchers to build on your work. |
-| **Week 3** | Sept. 19 | [Documentation / Communication](03_documentation_communication.md): <br>  [GitHub Pages websites](documentation/githubpages.md)  | Beyond publications, researchers and labs that are creating shareable assets (e.g., methods & code) need strong documentation to make those assets usable by the scientific community. In this lesson, we will introduce Github as place to document the IP that you want to share with the world. We'll show you how to make a free website to promote your lab, project, or personal career.    |
-| **Week 4** | Sept. 26| [How to Talk to Computers](04_talk_to_computer.md) | Behind the veil of graphical point-and-click computing lies the command line, a more direct and powerful way to instruct your computer. In this session we will introduce you to the basics of the Unix command line (aka shell). This skill is not only useful for your personal computer, but also a necessity for cloud and HPC. We will also touch on LLM chatbots because they are changing the game of scientific computing very rapidly.    | 
-| **Week 5** | Oct. 3 | [Version Control](05_version_control.md)  | As you and your colleagues improve your code and docs over time, it can get messy and difficult to know which version is the latest. In this session, we will focus on Git & Github as tools for collaboratively working on projects while keeping track of versions.  | 
-| **Week 6** | Oct. 10 | [Reproducibility I](06_reproducibility_I.md): <br> - Software Environments  | Have you ever tried to run someone else's code on your machine and it won't work? You are not alone! Sharing reproducible analysis is a significant challenge in scientific research. To help alleviate some of that challenge, we will cover computing environments and package managers that can help your analysis run smoothly regardless of the machine you are using.   | 
-| **Week 7** | Oct. 17 | [Reproducibility II](07_reproducibility_II.md): <br> - Running Containers | We will continue on the theme of reproducible analysis code by introducing the concept of software containers. Container technology (e.g., Docker) can free us from having to build a unique environment on the machine we are using. For our hands-on exercise, we will run several simple containers to illustrate how and why to use them. | 
-| **Week 8** | Oct. 24 | [Reproducibility III](08_reproducibility_III.md): <br> - Building Containers | For the third installment of reproducibility, we will look under the hood and show you how to build your own containers. Don't worry,  we'll move at learning pace and keeps things simple.  |
-| **Week 9** | Oct. 31 | Remote Computing: <br> - [Cyverse](09_remote_computing_cyverse.md) | Housed the University of Arizona, Cyverse is a one-of-a-kind cloud computing platform with large data storage and a computing environment built for running your customized analysis. Cyverse is free for of U of A personnel and a great alternative to commerical cloud providers. We'll show you how easy it is to use this platform from you laptop.  |
-| **Week 10**| Nov. 7  | Remote Computing: <br> - [High Performance Computing (HPC)](10_reproducibility_IV.md) | When your laptop just won't cut it for your large-scale analysis, what do you do? You get a bigger computer! In this session, we will cover the basics of high performance computers (HPC) and show you how to logon, navigate, and submit jobs to the University of Arizona HPC. |
-| **Week 11**| Nov. 14 | Help Session | We will take a break from new content and simply be available to answer any questions related to the workshop content including helping with your personal capstone projects.  |
-| **Week 12**| Nov. 21 | Capstone Presentations | Each Student will present their capstone project!|
+| Week | Date | Content | Topic Overview | HackMD link |
+|---|---|---|---|---|
+| **Week 1** | Sept. 2 | [Intro to Open Science](01_intro_open_sci.md) | - The big picture of what Open Science is and why do it. <br> - How to apply the Open approach to various scientific processes and enhance your individual research. | [Session 1 HackMD](https://hackmd.io/@cyverse-foss/S1EsdPmqee) |
+| **Week 2** | Sept. 9 | [Data management & Documentation](02_managing_data.md) | - Inferring on the importance of data and how your project can benefit from successful data management, discussing DMPs, storage, sharing and licences. <br> - Emphasizing the role of effective documentation for research and projects in the age of Open Science. | [Session 2 HackMD](https://hackmd.io/MByoWD6HRxmcZiD9N8644Q) |
+| **Week 3** | Sept. 16 | [How to Talk to Computers](03_talk_to_computer.md) | - Learning of the command line, a more direct and powerful way to instruct your computer. <br> - Introduction to the basics of the Unix Shell. <br> - Why shell skills are useful for personal computing, cloud, and HPC. | [Session 3 HackMD](https://hackmd.io/dpcoltaSQ4WJ6Nz1moXBvw) |
+| **Week 4** | Sept. 23 | [How to Talk to LLMs](04_talk_to_llms.md) | - Understanding how large language models (LLMs) work and how to effectively prompt them. <br> - Exploring use cases for research and coding. <br> - Limitations, biases, and ethical considerations when working with AI tools. | Session 4 HackMD |
+| **Week 5** | Sept. 30 | [Reproducibility I: Version Control](05_version_control.md) | - Introduction to Git & GitHub as tools for personal and collaborative work through version tracking using GitHub. | Session 5 HackMD | 
+| **Week 6** | Oct. 7 | [Reproducibility II: Software Environments](06_soft_env.md) | - Reproducibility means for code to be executable on any machine; This session tackles this exact topic: computing enviroments and package managers ensure your analysis runs smoothly across machines. | Session 6 HackMD |
+| **Week 7** | Oct. 14 | [Reproducibility III: Containers](07_contaniers.md) | - Continuing on reproducible analysis with software containers. <br> - Introduction to container technology (e.g., Docker). <br> - Running simple containers to illustrate how and why to use them. | Session 7 HackMD |
+| **Week 8** | Oct. 21 | [Remote Computing: High Performance Computing (HPC)](09_HPC.md) | - What to do when your laptop won’t cut it for large-scale analysis. <br> - Basics of high performance computing (HPC). <br> - How to log on, navigate, and submit jobs to the University of Arizona HPC. | Session 9 HackMD |
+| **Week 9** | Oct. 28 | [Remote Computing: CyVerse](08_remote_computing_cyverse.md) | - Introduction to CyVerse, a University of Arizona cloud computing platform, useful for storing data, executing pipelines and publishing datasets. | Session 8 HackMD |
+| **Week 10** | Nov. 4 | [AI Models & Where to Find Them (Training Your Own AI Models)](10_llms_adv.md) | - Overview of available AI models for research. <br> - How to train, fine-tune, and deploy your own models. <br> - Practical considerations: compute needs, datasets, and reproducibility. | Session 10 HackMD |
+| **Week 11**| Nov. 11 | Help Session | We will take a break from new content and simply be available to answer any questions related to the workshop content including helping with your personal capstone projects.  | - |
+| **Week 12**| Nov. 18 | Capstone Presentations | Each Student will present their capstone project! | - |

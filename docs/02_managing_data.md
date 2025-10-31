@@ -1,13 +1,19 @@
 # Managing Data
 
+??? Info "Relating to Open Science"
+
+    As you may recall, Open Science is an ideology built around the goal of making the science you work on clear and accessible to everyone. 
+    
+    Data management and documentation fit well within this framework, as they emphasize that the first person who needs to understand the science is the one doing it — **you**.
+
 !!! Success "Learning Objectives"
 
     After this lesson, you should be able to:
 
-    * Recognize data as the foundation of open science and be able to describe the "life cycle of data"
-    * Use self-assessments to evaluate your current data management practices
-    * Cite tools and resources to improve your data management practices
-    * Know the biggest challenge to effective data management
+    - Recognize data as the foundation of open science and be able to describe the "life cycle of data"
+    - Use self-assessments to evaluate your current data management practices
+    - Cite tools and resources to improve your data management practices
+    - Know the biggest challenge to effective data management
 
 ??? Question "How would you answer?"
     - If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?
@@ -29,7 +35,7 @@ Well-managed Data Sets:
 -   Are becoming required by most funders and many journals, which are requesting a submission of a Data Management Plan (DMP) with the initial submission of your proposal.
 
 !!! info "The NSF is stepping in, getting stricter about data"
-    -   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp)from NSF's points out that:
+    -   Recent [Dear Colleague letter](https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp) from NSF's points out that:
         - Open science promotes broader access to research data, enhancing public benefits and replicability.
         - NSF requires (DMPs) in proposals, encouraging use of persistent IDs and machine-readable DMPs.
     -   NSF [proposal preparation guidelines](https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2D2i-ii) now require at least the following:
@@ -77,27 +83,6 @@ Different types of data require different management practices. Here are some ex
 - Generated from existing datasets
 - Reproducible, but can be very expensive and time-consuming
 - Examples: text and data mining, compiled database, 3D models
-
-## Data Self-assessment
-
-!!! Question "Activity"
-    In small groups, discuss the following questions.
-        
-    1. What are the two or three data types that you most frequently work with?
-            -   Think about the sources (observational, experimental, simulated, compiled/derived)
-            -   Also consider the formats (tabular, sequence, database, image, etc.)    
-    2.  What is the scale of your data?
-
-        ??? Tip "Tip: think of the [Three V's](https://www.bigdataframework.org/four-vs-of-big-data/)"
-            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
-            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
-            -   Variety: How many different data types (raw files? databases?)
-            A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
-
-    3.  What is your strategy for storing and backing up your data?    
-    4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  
-    5.  What is your strategy for searching your data?  
-    6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
 
 ---
 
@@ -211,7 +196,7 @@ Different types of data require different management practices. Here are some ex
 </figure>
 
 <figure markdown="span">
-  ![care](https://swehsc.pharmacy.arizona.edu/sites/default/files/styles/az_small/public/2023-11/CARE%20Principles%20graphic.png?itok=YnCAC_JI){width="350"}
+  ![care](https://swehsc.pharmacy.arizona.edu/sites/default/files/styles/az_small/public/2023-11/CARE%20Principles%20graphic.png.webp?itok=tA1pG3wf){width="350"}
   <figcaption markdown="span"> CARE data, [University of Arizona](https://swehsc.pharmacy.arizona.edu/news/using-care-principles-preserve-indigenous-data-sovereignty). </figcaption>
 </figure>
 
@@ -331,6 +316,29 @@ While a lot is up to you, the first step is to evaluate how FAIR you think your 
 
 ---
 
+## Data Self-assessment
+
+!!! Question "Activity"
+    In small groups, discuss the following questions.
+        
+    1. What are the two or three data types that you most frequently work with?
+            -   Think about the sources (observational, experimental, simulated, compiled/derived)
+            -   Also consider the formats (tabular, sequence, database, image, etc.)    
+    2.  What is the scale of your data?
+
+        ??? Tip "Tip: think of the [Three V's](https://www.bigdataframework.org/four-vs-of-big-data/)"
+            -   Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)
+            -   Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?
+            -   Variety: How many different data types (raw files? databases?)
+            A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)
+
+    3.  What is your strategy for storing and backing up your data?    
+    4.  What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  
+    5.  What is your strategy for searching your data?  
+    6.  What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )
+
+---
+
 ## Data Management Plans
 
 <p style="text-align: center; font-size:1.3em;"><i>"Those who fail to plan, plan to fail."</i></p>
@@ -371,9 +379,6 @@ Those are strong words. And while we might have an intuition of the boundaries o
 - Make your life easier.
 - Planning for you project makes it run more smoothly.
 - Avoid surprise costs.
-
-<br/>
-<br/>
 
 
 !!! Tip "DMPTools: making your (data) life a little easier"
@@ -424,7 +429,119 @@ If you want your work to be Open and used by others, you need to specify how oth
     - Repository registry (and search) service: http://www.re3data.org/
     - Your university library
 
-----
+---
+
+## :material-file-document-multiple: Project Documentation
+
+<span style="font-size:1.3em;">_A great Open Scientist is someone who documents their work and shares it with the world. This means going well beyond peer-reviewed publications._</span>
+
+Here are some discussing points on *why* you should carry out documentation:
+
+- Describe how to use or build your computer code or tools
+- Share best practices for a method or protocol
+- Create and share educational material so others in your field can learn from you
+- Share a first-person account of your journey through a project
+
+<figure markdown>
+  <a href="https://documentation.divio.com/" target="blank" rel="xkcd">![xkcd](./assets/documentation.webp) </a>
+    <figcaption> Read more in depth on the documentation system here: https://documentation.divio.com </figcaption>
+</figure>
+
+??? Question "Explanining the quadrants"
+
+    - **Tutorials**: Lessons! Tutorials are lessons that take the reader by the hand to understand how the basics of a tool work. They are what your project needs in order to show a beginner that they can achieve something with it. The techical teaching we do in FOSS are mostly tutorials. For example, we do simple tutorials to teach the mechanics of version control. 
+    - **How-to-guides**: Recipes! How-to-guides take the reader through the steps required to acheive a specific outcome or answer a specific question. An example how-to-guide could be a guide on how to install a specific software on a specific operating system.
+    - **References**: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.
+    - **Explanation**: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.
+
+
+
+### Tips for Great Documentation
+- **:material-glasses: Clarity**: Documentation should be easy to understand with clear language and no ambiguity.
+- **:octicons-circle-16: Completeness**: It must cover all essential details, leaving nothing crucial undocumented.
+- **:fontawesome-solid-bullseye: Accuracy**: Information should be up-to-date and correct to prevent errors and misunderstandings.
+- **:simple-instructure: Organization**: A logical structure and clear organization make it easy to navigate and find information.
+- **:fontawesome-solid-exclamation: Relevance**: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.
+
+### Public Repositories for Documentation
+
+??? "*:simple-github: GitHub Readme*"
+
+    - On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an [example](https://github.com/jeffgillan/geospatial_pipeline).
+    
+??? "*:simple-github: GitHub Wiki*"
+
+    -  Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an [example](https://github.com/ua-datalab/Geospatial_Workshops/wiki)
+
+??? "*:simple-github: GitHub Pages*"
+
+    -  [Github Pages](https://pages.github.com/) are hosted directly from your GitHub repository
+    -  GitHub pages are free, fast, and easy to build, but limited in use
+    of subdomain or URLs
+    -  You can pull templates from other GitHub users for your website, e.g. [:simple-jekyll: Jekyll themes](http://themes.jekyllrc.org/){target=_blank}
+    -  The FOSS website is rendered using [:simple-github: GitHub Pages](https://pages.github.com/){target=_blank} using [:simple-markdown: MkDocs](https://www.mkdocs.org/){target=_blank} and the [Material](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs.
+    -  Other popular website generator for GitHub Pages is [:simple-bootstrap: Bootstrap.js](https://getbootstrap.com/){target=_blank}.
+
+??? "*:simple-markdown: Material MkDocs*"
+
+    -  [Material Design](https://squidfunk.github.io/mkdocs-material/){target=_blank} theme for MkDocs, a static site generator geared towards (technical) project documentation.
+    -  Publish via GitHub Actions
+    -  Uses open source Material or ReadTheDocs Themes
+
+??? "*:simple-readthedocs: ReadTheDocs*"
+
+    -   publishing websites via
+    [ReadTheDocs.com](https://readthedocs.com/dashboard/){target=_blank} costs money.
+    -   You can work in an offline state, where you develop the materials
+    and publish them to your localhost using
+    [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html){target=_blank}
+    -   You can work on a website template in a GitHub repository, and
+    pushes are updated in near real time using ReadTheDocs.com.
+    -   Here is example documentation of Pytorch using ReadTheDocs: [PyTorch](https://pytorch.org/docs/stable/index.html){target=_blank}.
+
+
+??? "*:material-book-arrow-down: Bookdown*"
+
+    -   [:material-book-arrow-down: Bookdown](https://bookdown.org/){target=_blank} is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.
+    -   Bookdown websites can be hosted by [RStudio
+    Connect](https://www.rstudio.com/products/connect/){target=_blank}
+    -   You can publish a Bookdown website using [Github
+    Pages](https://github.blog/2016-08-17-simpler-github-pages-publishing/){target=_blank}
+
+
+??? "*:simple-r: Quarto*"
+
+    -   [:simple-r: Quarto](https://quarto.org/){target=_blank} is an open-source scientific and technical publishing system built on Pandoc
+    -   [Build a website](https://quarto.org/docs/websites/) using Quarto's template builder
+    -   [Build with Github Pages](https://quarto.org/docs/publishing/github-pages.html)
+
+??? "*:simple-jupyter: JupyterBook*"
+
+    -   [Based on Project Jupyter](https://jupyterbook.org/en/stable/start/overview.html){target=_blank} `ipynb` and MarkDown
+    -   Uses `conda` package management
+
+??? "*:simple-git: GitBook*"
+
+    - [GitBook](https://docs.gitbook.com/){target=_blank} websites use MarkDown syntax
+    - Free for open source projects, paid plans are available
+
+??? "*:simple-confluence: Confluence Wikis*"
+
+    -   [:simple-confluence: Confluence Wikis](https://www.atlassian.com/software/confluence/use-cases/wiki){target=_blank} are another tool for documenting your work. You can see an example from [Cyverse](https://wiki.cyverse.org){target=_blank}.
+
+<br>
+
+!!! Quote "Things to remember about Documentation"
+
+    - Documentation should be written in such a way that people who did not write the documentation can read and then use or read and then teach others in the applications of the material.
+
+    - Documentation is best treated as a living document, but version control is necessary to maintain it
+
+    - Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.
+
+<br>
+
+---
 
 ## Self Assessment
 
@@ -436,19 +553,30 @@ If you want your work to be Open and used by others, you need to specify how oth
 
 ??? Question "True or False: When science project funding ends, the data should end with it"
 
-    !!! Success "False"
+    **False**
 
-        Data live on after a project ends.
+    Data live on after a project ends.
 
-        Ensuring that data have a full lifecycle where they can be (re)hosted and made available after a project ends is critical to open science and reproducible research
+    Ensuring that data have a full lifecycle where they can be (re)hosted and made available after a project ends is critical to open science and reproducible research
 
-    !!! Danger "Maybe"
+    ??? Danger "... or maybe?"
 
         Sometimes destroying data is part of the life cycle of data - this may be required if data are sensitive and could be used unethically in the future, beyond the control of the original investigator team. 
 
 ??? Question "True or False: FAIR and CARE data principles are the same"
 
-    !!! Success "False"
+    **False**
 
-        The CARE principles were created in order to help guide and answer when and how applying FAIR data principles to soverign indigenous-controlled data should be done and when it should not. 
+    The CARE principles were created in order to help guide and answer when and how applying FAIR data principles to soverign indigenous-controlled data should be done and when it should not. 
 
+??? Question "(1/2) Your project has been greenlit and you require to create a GitHub repository for your work; What you are working on is likely going to be used by others in your field, thus you want to use a licence that allow for others to access your work and make changes where needed. Which licence do you choose?"
+
+    **MIT License**
+
+    A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+
+    ??? Question "(2/2) You approach your PI with the idea, and they're not happy with the choice. They are pushing to keep the attribution to your lab; Which license type would be useful in this situation?"
+
+        **CC By**
+
+        Rights are not waived, attribution is required.

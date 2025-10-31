@@ -25,6 +25,20 @@ need to master Git to utilize version control (though it is certainly a
 worthwhile tool for many researchers).
 
 
+!!! info "Why Version Control Matters to Open Science"
+
+    GitHub is widely used to share code, build websites and documentation, manage workflows or simply allow for your work to be accessible everywhere.
+
+    Importantly, **git** is a tool that allows for your code to be accessed by machines which only allow for terminal use, making your code accessibility largely platform agnostic.
+
+    Let's recall a few of Open Science's goals: accessibility, reproducibility, collaboration and transparency. Working with GitHub allows for your work to attain all of these points:
+
+    - Accessibility: with your work being saved in the GitHub platform, either publically or privately, you're ensuring collaborators can access your work.
+    - Reproducibility: git saved content allows for accessing your work at different stages thanks to Version Control.
+    - Collaboration: GitHub is accessible everywhere (with an internet connection).
+    - Transparency: everything is tracked unless specified in the `.gitignore`, a special file that when populated correctly allows for certain files to be skipped when saving your work.
+
+
 <figure markdown>
   <a href="https://swcarpentry.github.io/git-novice/01-basics.html" target="blank" rel="git_def">![git_def](https://swcarpentry.github.io/git-novice/fig/phd101212s.png) </a>
     <figcaption> We have all been here, taken by the [Software Carpentry Version Control lesson](https://swcarpentry.github.io/git-novice/01-basics.html). </figcaption>
@@ -73,7 +87,7 @@ a way to collaborate with others, and a lot of other features.
 
 
 <figure markdown>
-  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://devmountain.com/wp-content/uploads/2022/01/Gitvs_Github-1a-1.jpg) </a>
+  <a href="https://devmountain.com/blog/git-vs-github-whats-the-difference/" target="blank" rel="git_v_github">![git_v_github](https://xpertlab.com/wp-content/uploads/2020/06/Gitvs.Github-1a.jpg) </a>
     <figcaption> Git vs GitHub, simplified </figcaption>
 </figure>
 
@@ -115,7 +129,7 @@ a way to collaborate with others, and a lot of other features.
     !!! tip "These are also commands when paired with `git`!"
         Using the following synthax `git <command>` one can trigger an action. An example is `git pull`, which will pull all of the latest changes in the remote repository.
 
-    **Funtional**: 
+    **Functional**: 
     
     - **pull request**: proposed changes to/within a repository.
 
@@ -167,7 +181,7 @@ You can create repositories by clicking on the **Repositories** tab, and then cl
  ![git_1](assets/git_1.png)
 </figure>
 
-Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** reccomended that you choose to add an empty README file.
+Here, you can choose the name of your own repository, choose to make it private or public, adding a README and a licence. It is **strongly** recommended that you choose to add an empty README file.
 
 <figure markdown>
  ![git_2](assets/git_2.png)
@@ -546,6 +560,19 @@ Your main repository should now have the files created in your other branch and 
 
 ![git_17](assets/git_17.png)
 
+---
+
+!!! tip "What about AI and Version Control?"
+
+    Although not directly connected, chatbots like ChatGPT can be extremely hepful with git based work.
+
+    For example, it isn't unlikely that you may have forgotten to **`git pull`** your changes before you make some more development, at which point you try to **`git push`** your work, which will likely result in failure and git suggesting *rebasing*. LLMs can do quick work to explain what rebasing is, and how to follow up if this issue happens or persists.
+
+    Additionally, LLMs can be used to quickly create documentation, add comments to your code and suggestions to improve your repository.
+
+    As Codespace is readily available, VSCode will allow you to use the free version of :octicons-copilot-16: CoPilot directly on the Codespace you create.
+
+    Similar to how you may be using LLMs as an assistant for your work, you can use these platforms to help with git/GitHub related work.
 
 ---
 

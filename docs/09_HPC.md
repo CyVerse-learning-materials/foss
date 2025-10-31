@@ -12,7 +12,7 @@
     - Being able to search and load specific software
     - Execute NextFlow scripts on the HPC
 
-Through FOSS and FOSS+ we have learned about container technology and how it can affect reproducibility by wrapping all the necessary components that allow a specific software to be executed. 
+Through FOSS  we have learned about container technology and how it can affect reproducibility by wrapping all the necessary components that allow a specific software to be executed. 
 
 Similar to Docker, Singularity/Apptainer is a powerful tool that enables researchers to package entire environments, including software dependencies and libraries, into a single executable file.
 
@@ -26,7 +26,7 @@ In this workshop, we are going to learn how we can use Singularity/Apptainer on 
 
 ## A 10,000ft View of the HPC
 
-[Next week](10_hpc.md) (Apr 04th) [Chris Reidy](https://datascience.arizona.edu/person/chris-reidy) from [UITS](https://it.arizona.edu/) is going to talk in more details regarding the hardware specifications of the UA HPC systems. 
+**Official documentation: https://hpc.arizona.edu/**.
 
 Here, we are going to concentrate on *HOW* to operate the HPC system as a general user.
 
@@ -110,7 +110,7 @@ In the example above, we chose the Ocelote system. Notice how there are 2 other 
 |Ocelote|2016|2x Xeon E5-2695v3 14-core (28 cores total)|192GB|46x Nvidia P100|
 |El Gato|2013|2x Xeon E5-2650v2 8-core (16 core total)|64GB|removed as obsolete|
 
-Find the full systems specs at the [official UA HPC documentatio resources page](https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990208/Compute+Resources).
+Find the full systems specs at the [official UA HPC documentation resources page](https://uarizona.atlassian.net/wiki/spaces/UAHPC/pages/75990208/Compute+Resources).
 
 El Gato is the oldest system, and potentially not useful for heavy research. Puma is the newest and most requested, whislt Ocelote is the "middle child": not as popular but still able to pack a punch. 
 
