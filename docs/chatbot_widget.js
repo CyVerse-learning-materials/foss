@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </div>
         <div id="chat-body">
             <iframe 
-                src="https://chat-qa.cyverse.org/foss/" 
+                src="http://cyversegpt.cyverse.org/foss/" 
                 id="chat-frame" 
                 width="100%" 
                 height="100%"
