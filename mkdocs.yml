@@ -31,7 +31,7 @@ nav:
     - '7. Reproducibility III: Containers': 07_containers.md
     - '8. Remote Computing: HPC': 09_HPC.md
     - '9. Remote Computing: Cyverse': 08_remote_computing_cyverse.md
-    - '10. AI Models & Where to Find Them': 10_llms_adv.md
+    - '10. AI Models & Where to Find Them': https://ncems.github.io/pre-summit-foss/latest/04_prompt_engineering/
 
   - Capstone Project:
       - 'Overview': final_project/overview.md
