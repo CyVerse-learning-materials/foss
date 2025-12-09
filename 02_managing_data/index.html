@@ -1,0 +1,2219 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Workshop teaching researchers core skills for conducting open science.">
+      
+      
+        <meta name="author" content="CyVerse Science Team">
+      
+      
+        <link rel="canonical" href="https://foss.cyverse.org/02_managing_data/">
+      
+      
+        <link rel="prev" href="../01_intro_open_sci/">
+      
+      
+        <link rel="next" href="../03_talk_to_computer/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>2. Data Management & Documentation - CyVerse Foundational Open Science Skills 2025</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../chatbot_widget.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","UA-72224033-6"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","UA-72224033-6",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=UA-72224033-6",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#managing-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2025" class="md-header__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2025" data-md-component="logo">
+      
+  <img src="../assets/android-chrome-512x512.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Foundational Open Science Skills 2025
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. Data Management & Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_intro_open_sci/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../final_project/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Capstone Project
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Foundational Open Science Skills 2025" class="md-nav__button md-logo" aria-label="CyVerse Foundational Open Science Skills 2025" data-md-component="logo">
+      
+  <img src="../assets/android-chrome-512x512.png" alt="logo">
+
+    </a>
+    CyVerse Foundational Open Science Skills 2025
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/foss" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/foss
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Home
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Before FOSS Starts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of Conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary & Acronyms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lessons
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lessons
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_intro_open_sci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Open Science
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Data Management & Documentation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Data Management & Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-you-care-about-data-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why should you care about data management?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-classifies-as-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Classifies as Data?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data-life-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Data Life Cycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAIR Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CARE Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-get-to-fair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to get to FAIR?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Self-assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-management-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Management Plans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Licenses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Licenses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#license-options-from-uarizona-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        License Options from UArizona Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-great-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Great Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-repositories-for-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Repositories for Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_talk_to_computer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. How to Talk to Computers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_talk_to_llms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. How to Talk to LLMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_version_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Reproducibility I: Version Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_soft_env/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Reproducibility II Software Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Reproducibility III: Containers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_HPC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Remote Computing: HPC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_remote_computing_cyverse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Remote Computing: Cyverse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://tyson-swetnam.github.io/intro-gpt/agenda/#about" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. AI Models & Where to Find Them
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capstone Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capstone Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_project/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-you-care-about-data-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why should you care about data management?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-classifies-as-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Classifies as Data?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data-life-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Data Life Cycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fair-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAIR Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#care-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CARE Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-get-to-fair" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to get to FAIR?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Self-assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-management-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Management Plans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#licenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Licenses
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Licenses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#license-options-from-uarizona-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        License Options from UArizona Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-great-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Great Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-repositories-for-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public Repositories for Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="managing-data">Managing Data<a class="headerlink" href="#managing-data" title="Permanent link">&para;</a></h1>
+<details class="info">
+<summary>Relating to Open Science</summary>
+<p>As you may recall, Open Science is an ideology built around the goal of making the science you work on clear and accessible to everyone. </p>
+<p>Data management and documentation fit well within this framework, as they emphasize that the first person who needs to understand the science is the one doing it — <strong>you</strong>.</p>
+</details>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<p>After this lesson, you should be able to:</p>
+<ul>
+<li>Recognize data as the foundation of open science and be able to describe the "life cycle of data"</li>
+<li>Use self-assessments to evaluate your current data management practices</li>
+<li>Cite tools and resources to improve your data management practices</li>
+<li>Know the biggest challenge to effective data management</li>
+</ul>
+</div>
+<details class="question">
+<summary>How would you answer?</summary>
+<ul>
+<li>If you give your data to a colleague who has not been involved with your project, would they be able to make sense of it? Would they be able to use it properly?</li>
+<li>If you come back to your own data in five years, will you be able to make sense of it? Will you be able to use it properly?</li>
+<li>When you are ready to publish a paper, is it easy to find all the correct versions of all the data you used and present them in a comprehensible manner?</li>
+</ul>
+</details>
+<h2 id="why-should-you-care-about-data-management">Why should you care about data management?<a class="headerlink" href="#why-should-you-care-about-data-management" title="Permanent link">&para;</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">The biggest challenge to data management is <u> making it an afterthought. </u></p>
+</div>
+<p>Poor data management doesn't have an upfront cost. <strong>You can do substantial work before realizing you are in trouble.</strong></p>
+<p><strong>The solution?</strong> Make data management the first thing you consider when starting a research project.</p>
+<p>Well-managed Data Sets:</p>
+<ul>
+<li>Can make life much easier for you and your collaborators</li>
+<li>Benefit the scientific research community by allowing others to reuse your data</li>
+<li>Are becoming required by most funders and many journals, which are requesting a submission of a Data Management Plan (DMP) with the initial submission of your proposal.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">The NSF is stepping in, getting stricter about data</p>
+<ul>
+<li>Recent <a href="https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp">Dear Colleague letter</a> from NSF's points out that:<ul>
+<li>Open science promotes broader access to research data, enhancing public benefits and replicability.</li>
+<li>NSF requires (DMPs) in proposals, encouraging use of persistent IDs and machine-readable DMPs.</li>
+</ul>
+</li>
+<li>NSF <a href="https://new.nsf.gov/policies/pappg/23-1/ch-2-proposal-preparation#2D2i-ii">proposal preparation guidelines</a> now require at least the following:<ul>
+<li>Proposals must include a 2-page DMP outlining data types, formats, sharing, and archiving.</li>
+<li>The DMP must address privacy, intellectual property, and reuse policies, and collaborative projects should submit one unified DMP.</li>
+<li>A DMP stating no detailed plan is needed is allowed with justification, and the DMP will be reviewed as part of the proposal's merit.</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="what-classifies-as-data">What Classifies as Data?<a class="headerlink" href="#what-classifies-as-data" title="Permanent link">&para;</a></h2>
+<p>Different types of data require different management practices. Here are some examples of what we can call Data (Adapted from DMPTool <a href="https://dmptool.org/general_guidance#types-of-data">Data management general guidance</a>).</p>
+<p><strong>Data Types</strong>:</p>
+<ul>
+<li><strong>Text</strong>: field or laboratory notes, survey responses</li>
+<li><strong>Numeric</strong>: tables, counts, measurements</li>
+<li><strong>Audiovisual</strong>: images, sound recordings, video</li>
+<li><strong>Models, computer code</strong></li>
+<li><strong>Discipline-specific</strong>: FASTA in biology, FITS in astronomy, CIF in chemistry</li>
+<li><strong>Instrument-specific</strong>: equipment outputs</li>
+</ul>
+<p><strong>Data Sources</strong>:</p>
+<p><em>Observational</em></p>
+<ul>
+<li>Captured in real-time, typically outside the lab</li>
+<li>Usually irreplaceable and therefore the most important to safeguard</li>
+<li>Examples: Sensor readings, telemetry, survey results, images</li>
+</ul>
+<p><em>Experimental</em></p>
+<ul>
+<li>Typically generated in the lab or under controlled conditions</li>
+<li>Often reproducible, but can be expensive or time-consuming</li>
+<li>Examples: gene sequences, chromatograms, magnetic field readings</li>
+</ul>
+<p><em>Simulation</em></p>
+<ul>
+<li>Machine generated from test models</li>
+<li>Likely to be reproducible if the model and inputs are preserved</li>
+<li>Examples: climate models, economic models</li>
+</ul>
+<p><em>Derived / Compiled</em></p>
+<ul>
+<li>Generated from existing datasets</li>
+<li>Reproducible, but can be very expensive and time-consuming</li>
+<li>Examples: text and data mining, compiled database, 3D models</li>
+</ul>
+<hr />
+<h2 id="the-data-life-cycle">The Data Life Cycle<a class="headerlink" href="#the-data-life-cycle" title="Permanent link">&para;</a></h2>
+<p><strong>Data management</strong> is the set of practices that allow researchers to effectively and efficiently handle data throughout the data life cycle. Although typically shown as a circle (below) the actually life cycle of any data item may follow a different path, with branches and internal loops. Being aware of your data's future helps you plan how to best manage them.</p>
+<figure>
+  <img alt="lifecycle" src="../assets/data_life_cycle.png" />
+<br />
+<figcaption> The Data Life Cycle, from <a href="https://dataoneorg.github.io/Education/bestpractices/">Strasser <em>et al</em></a>. </figcaption>
+</figure>
+<details class="info">
+<summary>Breaking down the Data Life Cycle Graph</summary>
+<p><strong>Plan</strong></p>
+<ul>
+<li>Describe the data that will be compiled, and how the data will be managed and made accessible throughout its lifetime</li>
+<li>A good plan considers each of the stages below</li>
+</ul>
+<p><strong>Collect</strong></p>
+<ul>
+<li>Have a plan for data organization in place before collecting data</li>
+<li>Collect and store observation metadata at the same time you collect the metadata</li>
+<li>Take advantage of machine generated metadata</li>
+</ul>
+<p><strong>Assure</strong></p>
+<ul>
+<li>Record any conditions during collection that might affect the quality of the data</li>
+<li>Distinguish estimated values from measured values</li>
+<li>Double check any data entered by hand</li>
+<li>Perform statistical and graphical summaries (e.g., max/min, average, range) to check for questionable or impossible values.</li>
+<li>Mark data quality, outliers, missing values, etc.</li>
+</ul>
+<p><strong>Describe</strong></p>
+<ul>
+<li>Comprehensive data documentation (i.e. <strong>metadata</strong>) is the key to future understanding of data. Without a thorough description of the context of the data, the context in which they were collected, the measurements that were made, and the quality of the data, it is unlikely that the data can be easily discovered, understood, or effectively used.</li>
+<li>Thoroughly describe the dataset (e.g., name of dataset, list of files, date(s) created or modified, related datasets) including the people and organizations involved in data collection (e.g., authors, affiliations, sponsor). Also include:<ul>
+<li>An <a href="https://orcid.org/">ORCID</a> (obtain one if you don't have one).</li>
+<li>The scientific context (reason for collecting the data, how they were collected, equipment and software used to generate the data, conditions during data collection, spatial and temporal resolution)</li>
+<li>The data themselves</li>
+<li>How each measurement was produced</li>
+<li>Units</li>
+<li>Format</li>
+<li>Quality assurance activities</li>
+<li>Precision, accuracy, and uncertainty</li>
+</ul>
+</li>
+</ul>
+<p>Some metadata standards you may want to consider:</p>
+<ul>
+<li><a href="https://schema.datacite.org/">DataCite</a> for publishing data</li>
+<li><a href="http://www.dublincore.org/specifications/dublin-core/dcmi-terms/">Dublin Core</a> for sharing data on the web</li>
+<li><a href="https://press3.mcs.anl.gov/gensc/mixs/">MIxS</a> Minimum Information for any (x) sequence</li>
+<li><a href="https://www.opengeospatial.org/docs/is">OGC standards</a> for geospatial data</li>
+</ul>
+<details class="tip">
+<summary>Ontologies provide standardization for metadata values</summary>
+<p>Example of ontologies:</p>
+<ul>
+<li><a href="http://environmentontology.org/">Environment Ontology</a> terms for the MIxS standards</li>
+<li><a href="http://planteome.org/">Plant Ontology</a> for plant tissue types or development stages</li>
+<li><a href="https://fairsharing.org/">FAIRSharing.org</a> lists standards and ontologies for life sciences.</li>
+</ul>
+</details>
+<p><strong>Preserve</strong></p>
+<p>In general, data must be preserved in an appropriate long-term archive (i.e. data center). Here are some examples:</p>
+<ul>
+<li>Sequence data should go to a national repository, frequently <a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+<li>Identify data with value - it may not be necessary to preserve all data from a project</li>
+<li>The CyVerse <a href="http://datacommons.cyverse.org/">Data Commons</a> provides a place to publish and preserve data that was generated on or can be used in CyVerse, where no other repository exists.</li>
+<li>See lists of repositories at <a href="https://fairsharing.org/">FAIRSharing.org</a></li>
+<li>See lists of repositories at <a href="https://datadryad.org/stash">Data Dryad</a></li>
+<li>Github repos can get DOIs through <a href="https://guides.github.com/activities/citable-code/">Zenodo</a></li>
+<li>Be aware of licensing and other intellectual property issues<ul>
+<li>Repositories will require some kind of license, often the least restrictive (see for example <a href="https://creativecommons.org/">Creative Commons</a>)</li>
+<li>Repositories are unlikely to enforce reuse restrictions, even if you apply them.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Discover</strong></p>
+<ul>
+<li>Good metadata allows you to discover your own data!</li>
+<li>Databases, repositories, and search indices provide ways to discover relevant data for reuse <ul>
+<li><a href="https://toolbox.google.com/datasetsearch">Google dataset search</a></li>
+<li><a href="https://www.dataone.org/">DataOne</a></li>
+<li><a href="https://fairsharing.org/">FAIRSharing.org</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>Integrate</strong></p>
+<ul>
+<li>Data integration is a lot of work</li>
+<li>Standards and ontologies are key to future data integration</li>
+<li>Know the data before you integrate them</li>
+<li>Don't trust that two columns with the same header are the same data</li>
+<li>Properly cite the data you reuse!</li>
+<li>Use DOIs (<a href="https://en.wikipedia.org/wiki/Digital_object_identifier">Digital Object Identifiers</a>) wherever possible</li>
+</ul>
+<p><strong>Analyze</strong></p>
+<ul>
+<li>Follow open science principles for reproducible analyses (CyVerse, RStudio, notebooks, IDEs)</li>
+<li>State your hypotheses and analysis workflow before collecting data. Tools like <a href="https://osf.io/">Open Science Framework</a> (OSF) allow you to make this public.</li>
+<li>Record all software, parameters, inputs, etc.</li>
+</ul>
+</details>
+<details class="note">
+<summary>References and Resources</summary>
+<ul>
+<li><a href="https://dataoneorg.github.io/Education/bestpractices/">DataOne best practices</a></li>
+<li><a href="https://cos.io/">Center for Open Science</a></li>
+</ul>
+</details>
+<hr />
+<h2 id="data-principles">Data Principles<a class="headerlink" href="#data-principles" title="Permanent link">&para;</a></h2>
+<figure>
+  <img alt="fair" src="https://www.nlm.nih.gov/oet/ed/cde/tutorial/img/06aCDE.png" width="450" />
+<br />
+<figcaption> FAIR data, <a href="https://www.nlm.nih.gov/oet/ed/cde/tutorial/02-200.html">NIH</a>. </figcaption>
+</figure>
+<figure>
+  <img alt="care" src="https://swehsc.pharmacy.arizona.edu/sites/default/files/styles/az_small/public/2023-11/CARE%20Principles%20graphic.png.webp?itok=tA1pG3wf" width="350" />
+<br />
+<figcaption> CARE data, <a href="https://swehsc.pharmacy.arizona.edu/news/using-care-principles-preserve-indigenous-data-sovereignty">University of Arizona</a>. </figcaption>
+</figure>
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<ul>
+<li>Recall the meaning of FAIR</li>
+<li>Understand why FAIR is a collection of principles (rather than rules)</li>
+<li>Understand CARE</li>
+</ul>
+</div>
+<h3 id="fair-principles">FAIR Principles<a class="headerlink" href="#fair-principles" title="Permanent link">&para;</a></h3>
+<p>In 2016, the <a href="https://www.nature.com/articles/sdata201618"><strong>FAIR Guiding Principles</strong></a> for scientific data management and stewardship were published in Scientific Data.</p>
+<p style="text-align: center; font-size:1.3em;"> <b><u>Read it.</u></b></p>
+
+<div class="admonition tip">
+<p class="admonition-title">Why Principles?</p>
+<p>FAIR is a collection of principles. Ultimately, different communities within different scientific disciplines must work to interpret and implement these principles. Because technologies change quickly, focusing on the desired end result allows FAIR to be applied to a variety of situations now and in the foreseeable future.</p>
+</div>
+<p><strong>Findable</strong></p>
+<ul>
+<li>F1. (meta)data are assigned a globally unique and persistent identifier</li>
+<li>F2. data are described with rich metadata (defined by R1 below)</li>
+<li>F3. metadata clearly and explicitly include the identifier of the data it describes</li>
+<li>F4. (meta)data are registered or indexed in a searchable resource</li>
+</ul>
+<p><strong>Accessible</strong></p>
+<ul>
+<li>A1. (meta)data are retrievable by their identifier using a standardized communications protocol</li>
+<li>A1.1 the protocol is open, free, and universally implementable</li>
+<li>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</li>
+<li>A2. metadata are accessible, even when the data are no longer available</li>
+</ul>
+<p><strong>Interoperable</strong></p>
+<ul>
+<li>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</li>
+<li>I2. (meta)data use vocabularies that follow FAIR principles</li>
+<li>I3. (meta)data include qualified references to other (meta)data</li>
+</ul>
+<p><strong>Reusable</strong></p>
+<ul>
+<li>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</li>
+<li>R1.1. (meta)data are released with a clear and accessible data usage license</li>
+<li>R1.2. (meta)data are associated with detailed provenance</li>
+<li>R1.3. (meta)data meet domain-relevant community standard</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Open vs. Public vs. FAIR</p>
+<p>Open: <u>“Open data and content can be freely used, modified, and shared by anyone for any purpose”</u>.</p>
+<p>FAIR does <strong>NOT</strong> demand that data be open: See one definition of open:
+<a href="http://opendefinition.org/">http://opendefinition.org/</a>.</p>
+</div>
+<h3 id="care-principles">CARE Principles<a class="headerlink" href="#care-principles" title="Permanent link">&para;</a></h3>
+<p><br></p>
+<p style="text-align: center;"> <i>Nihil de nobis, sine nobis.</i></p>
+<p style="text-align: center; font-size:1.3em;"><a href="https://pubmed.ncbi.nlm.nih.gov/31746723/"><b><u>Nothing about us without us.</u></b></a></p>
+
+<p><br></p>
+<div class="admonition question">
+<p class="admonition-title">Who owns the açaí?</p>
+</div>
+<p>The <a href="https://www.gida-global.org/care">CARE Principles</a> for Indigenous Data Governance were drafted at the International Data Week and Research Data Alliance Plenary co-hosted event "Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop," 8 November 2018, Gaborone, Botswana.</p>
+<p><strong>Collective Benefit</strong></p>
+<ul>
+<li>C1. For inclusive development and innovation</li>
+<li>C2. For improved governance and citizen engagement</li>
+<li>C3. For equitable outcomes</li>
+</ul>
+<p><strong>Authority to Control</strong></p>
+<ul>
+<li>A1. Recognizing rights and interests</li>
+<li>A2. Data for governance</li>
+<li>A3. Governance of data</li>
+</ul>
+<p><strong>Responsibility</strong></p>
+<ul>
+<li>R1. For positive relationships</li>
+<li>R2. For expanding capability and capacity</li>
+<li>R3. For Indigenous languages and worldviews</li>
+</ul>
+<p><strong>Ethics</strong></p>
+<ul>
+<li>E1. For minimizing harm and maximizing benefit</li>
+<li>E2. For justice</li>
+<li>E3. For future use</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Connecting FOSS and CARE: <a href="https://nativesoilnerd.com/">Lydia Jennings</a></p>
+<p>Dr. Lydia Jennings was a Data Science Fellow at the University of Arizona, who attended FOSS in  Fall of 2022.    <br />
+Lydia graduated from the University of Arizona's Department of Evironemtal Sciences, and has published a paper on the application of the CARE principles to ecology and biodiversity research.
+Go Lydia!
+<a href="https://www.nature.com/articles/s41559-023-02161-2">Appying the 'CARE Principles for Indigenous Data Governance' to ecology and biodiversity</a>, <em>Nature Ecology &amp; Evolution</em>, 2023. </p>
+</div>
+<h3 id="how-to-get-to-fair">How to get to FAIR?<a class="headerlink" href="#how-to-get-to-fair" title="Permanent link">&para;</a></h3>
+<p>This is a question that only you can answer, that is because it depends on (among other things)</p>
+<ol>
+<li>Your scientific discipline: Your datatypes and existing standards for what constitutes acceptable data management will vary.</li>
+<li>The extent to which your scientific community has implemented FAIR: Some disciplines have significant guidelines on FAIR, while others have not addressed the subject in any concerted way.</li>
+<li>Your level of technical skills: Some approaches to implementing FAIR may require technical skills you may not yet feel comfortable with.</li>
+</ol>
+<p>While a lot is up to you, the first step is to evaluate how FAIR you think your data are:</p>
+<details class="question">
+<summary>Assessing the FAIRness of you data</summary>
+<p>Thinking about a dataset you work with, complete the ARDC <a href="https://ardc.edu.au/resource/fair-data-self-assessment-tool/">FAIR assessment</a> in your own time.</p>
+</details>
+<details class="note">
+<summary>Resources</summary>
+<ul>
+<li><a href="https://www.nature.com/articles/sdata201618">The FAIR Guiding Principles for scientific data management and stewardship</a></li>
+<li><a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al. (2016)</a> established the guidelines to improve the Findability, Accessibility, Interoperability, and Reuse (FAIR) of digital assets for research. </li>
+<li><a href="https://www.go-fair.org/fair-principles/">Go-FAIR website</a></li>
+<li><a href="http://doi.org/10.5334/dsj-2020-043">Carroll <em>et al.</em> (2020)</a> established the CARE Principles for Indigenous Data Governance. <a href="https://static1.squarespace.com/static/5d3799de845604000199cd24/t/5da9f4479ecab221ce848fb2/1571419335217/CARE+Principles_One+Pagers+FINAL_Oct_17_2019.pdf">full document <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64v384c0 35.3 28.7 64 64 64h80V400c0-35.3 28.7-64 64-64h176V170.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0zm261.5 176H264c-13.3 0-24-10.7-24-24V58.5zM240 380c-11 0-20 9-20 20v128c0 11 9 20 20 20s20-9 20-20v-28h12c33.1 0 60-26.9 60-60s-26.9-60-60-60zm32 80h-12v-40h12c11 0 20 9 20 20s-9 20-20 20m96-80c-11 0-20 9-20 20v128c0 11 9 20 20 20h32c28.7 0 52-23.3 52-52v-64c0-28.7-23.3-52-52-52zm20 128v-88h12c6.6 0 12 5.4 12 12v64c0 6.6-5.4 12-12 12zm88-108v128c0 11 9 20 20 20s20-9 20-20v-44h28c11 0 20-9 20-20s-9-20-20-20h-28v-24h28c11 0 20-9 20-20s-9-20-20-20h-48c-11 0-20 9-20 20"/></svg></span></a></li>
+<li><a href="https://indigenousdatalab.org/networks/">Indigenous Data Sovereignty Networks</a></li>
+</ul>
+</details>
+<hr />
+<h2 id="data-self-assessment">Data Self-assessment<a class="headerlink" href="#data-self-assessment" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Activity</p>
+<p>In small groups, discuss the following questions.</p>
+<ol>
+<li>What are the two or three data types that you most frequently work with?
+        -   Think about the sources (observational, experimental, simulated, compiled/derived)
+        -   Also consider the formats (tabular, sequence, database, image, etc.)    </li>
+<li>
+<p>What is the scale of your data?</p>
+<details class="tip">
+<summary>Tip: think of the <a href="https://www.bigdataframework.org/four-vs-of-big-data/">Three V's</a></summary>
+<ul>
+<li>Volume: Size of the data (MBs, GBs, TBs); can also include how many files (e.g dozens of big files, or millions of small ones)</li>
+<li>Velocity: How quickly are these data produced and analyzed? A lot coming in a single batch infrequently, or, a constant small amount of data that must be rapidly analyzed?</li>
+<li>Variety: How many different data types (raw files? databases?)
+A fourth V (Veracity) captures the need to make decisions about data processing (i.e., separating low- and high-quality data)</li>
+</ul>
+</details>
+</li>
+<li>
+<p>What is your strategy for storing and backing up your data?    </p>
+</li>
+<li>What is your strategy for verifying the integrity of your data? (i.e. verifying that your data has not be altered)  </li>
+<li>What is your strategy for searching your data?  </li>
+<li>What is your strategy for sharing (and getting credit for) your data? (i.e. How will do you share with your community/clients? How is that sharing documented? How do you evaluate the impact of data shared? )</li>
+</ol>
+</div>
+<hr />
+<h2 id="data-management-plans">Data Management Plans<a class="headerlink" href="#data-management-plans" title="Permanent link">&para;</a></h2>
+<p style="text-align: center; font-size:1.3em;"><i>"Those who fail to plan, plan to fail."</i></p>
+
+<div class="admonition success">
+<p class="admonition-title">Learning Objectives</p>
+<ul>
+<li>Describe the purpose of a data management plan</li>
+<li>Describe the important elements of a data management plan</li>
+</ul>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">What is a DMP?</p>
+<p>"A data management plan or DMP is a formal document that outlines how data are to be handled both during a research project, and after the project is completed. The goal of a data management plan is to consider the many aspects of data management, metadata generation, data preservation, and analysis before the project begins; this may lead to data being well-managed in the present, and prepared for preservation in the future."</p>
+<p>Source: <a href="https://en.wikipedia.org/wiki/Data_management_plan">Wikipedia</a>.</p>
+</div>
+<p>Here are some <a href="https://dmptool.org/public_plans">Example DMPs</a> made public from the DMPtool website. You can use these as example for creating your own DMP.</p>
+<p><strong>Why bother with a DMP?</strong></p>
+<details class="question">
+<summary>How would you answer?</summary>
+<p>Do you have a data management plan? If so, how do you use it?</p>
+</details>
+<p>Returning to the assertion that data (and its value) is at the foundation of your science, working without a data management plan should be considered scientific misconduct.</p>
+<p>Those are strong words. And while we might have an intuition of the boundaries of research ethics - data mismanagement seems more like an annoyance than misconduct. However, if your mismanagement leads to error in your research data, or the inability to make publicly-funded research open to the public, these are serious consequences. Increasingly, funders realize this.</p>
+<figure>
+  <img alt="carrot&amp;stick" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Europe_Boardman_Robinson.jpg/800px-Europe_Boardman_Robinson.jpg" width="450" />
+<br />
+<figcaption> "Europe 1916", by cartoonist Boardman Robinson, depicting the <a href="https://en.wikipedia.org/wiki/Carrot_and_stick">carrot and stick metaphor</a>. </figcaption>
+</figure>
+<p><strong>Stick:</strong></p>
+<ul>
+<li><a href="https://www.nsf.gov/pubs/2019/nsf19069/nsf19069.jsp">You have to make one</a>.</li>
+<li>Reviewers definitely look at them, but they may not be enforced.</li>
+</ul>
+<p><strong>Carrot:</strong></p>
+<ul>
+<li>Make your life easier.</li>
+<li>Planning for you project makes it run more smoothly.</li>
+<li>Avoid surprise costs.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">DMPTools: making your (data) life a little easier</p>
+<p>Here are a couple of tools you can utilize in order to create a Data Management Plan:</p>
+<ul>
+<li><a href="https://ds-wizard.org/">Data Stewardship Wizard</a>.</li>
+<li><a href="https://dmptool.org/">DMPTool</a>.</li>
+</ul>
+</div>
+<hr />
+<h2 id="licenses">Licenses<a class="headerlink" href="#licenses" title="Permanent link">&para;</a></h2>
+<p>By default, when you make creative work, that work is under exclusive copyright. This means that you have the right to decide how your work is used, and that others must ask your permission to use your work.</p>
+<p>If you want your work to be Open and used by others, you need to specify how others can use your work. This is done by <em>licensing</em> your work.</p>
+<div class="admonition tip">
+<p class="admonition-title">License Examples</p>
+<ul>
+<li><a href="https://choosealicense.com/licenses/mit/">MIT License</a></li>
+<li><a href="https://choosealicense.com/licenses/gpl-3.0/">GNU General Public License v3.0</a></li>
+<li>FOSS material has been licensed using the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></li>
+</ul>
+</div>
+<h3 id="license-options-from-uarizona-library">License Options from UArizona Library<a class="headerlink" href="#license-options-from-uarizona-library" title="Permanent link">&para;</a></h3>
+<figure>
+<p><a href="https://data.library.arizona.edu/supported-platforms/redata" target="blank" rel="open science"><img alt="open science" src="../assets/license_matrix.png" width="600" /> </a>
+    <figcaption> License options for University of <a href="https://data.library.arizona.edu/supported-platforms/redata">Arizona Research Data Repository (ReDATA)</a>.  </figcaption></p>
+</figure>
+<p><br></p>
+<p><strong>Additional Info</strong></p>
+<ul>
+<li>General guidance on how to choose a license <a href="https://choosealicense.com/">https://choosealicense.com/</a></li>
+<li>More good guidance on how to choose a license <a href="https://opensource.guide/legal/">https://opensource.guide/legal/</a></li>
+<li>Licensing options for your <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository#choosing-the-right-license" target="_blank">Github Repository</a></li>
+</ul>
+<details class="note">
+<summary>References and Resources</summary>
+<ul>
+<li><a href="https://www.nsf.gov/bio/biodmp.jsp">NSF Guidelines on DMPs</a></li>
+<li><a href="https://dmptool.org/general_guidance">https://dmptool.org/general_guidance</a></li>
+<li><a href="https://dmptool.org/public_templates">https://dmptool.org/public_templates</a></li>
+<li>Professional and scholarly societies, e.g., theEcological Society of America <a href="http://www.esa.org/esa/science/data-sharing/resources-and-tools/">http://www.esa.org/esa/science/data-sharing/resources-and-tools/</a></li>
+<li>DataOne - <a href="https://dataoneorg.github.io/Education/bestpractices/">https://dataoneorg.github.io/Education/bestpractices/</a></li>
+<li>Data Carpentry - <a href="http://datacarpentry.org/">http://datacarpentry.org/</a></li>
+<li>The US Geological Survey <a href="https://www.usgs.gov/data-management">https://www.usgs.gov/data-management</a></li>
+<li>Repository registry (and search) service: <a href="http://www.re3data.org/">http://www.re3data.org/</a></li>
+<li>Your university library</li>
+</ul>
+</details>
+<hr />
+<h2 id="project-documentation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4v18h16v2H4c-1.1 0-2-.9-2-2V4zm11 3h5.5L15 1.5zM8 0h8l6 6v12c0 1.11-.89 2-2 2H8a2 2 0 0 1-2-2V2c0-1.11.89-2 2-2m9 16v-2H8v2zm3-4v-2H8v2z"/></svg></span> Project Documentation<a class="headerlink" href="#project-documentation" title="Permanent link">&para;</a></h2>
+<p><span style="font-size:1.3em;"><em>A great Open Scientist is someone who documents their work and shares it with the world. This means going well beyond peer-reviewed publications.</em></span></p>
+<p>Here are some discussing points on <em>why</em> you should carry out documentation:</p>
+<ul>
+<li>Describe how to use or build your computer code or tools</li>
+<li>Share best practices for a method or protocol</li>
+<li>Create and share educational material so others in your field can learn from you</li>
+<li>Share a first-person account of your journey through a project</li>
+</ul>
+<figure>
+<p><a href="https://documentation.divio.com/" target="blank" rel="xkcd"><img alt="xkcd" src="../assets/documentation.webp" /> </a>
+    <figcaption> Read more in depth on the documentation system here: <a href="https://documentation.divio.com">https://documentation.divio.com</a> </figcaption></p>
+</figure>
+<details class="question">
+<summary>Explanining the quadrants</summary>
+<ul>
+<li><strong>Tutorials</strong>: Lessons! Tutorials are lessons that take the reader by the hand to understand how the basics of a tool work. They are what your project needs in order to show a beginner that they can achieve something with it. The techical teaching we do in FOSS are mostly tutorials. For example, we do simple tutorials to teach the mechanics of version control. </li>
+<li><strong>How-to-guides</strong>: Recipes! How-to-guides take the reader through the steps required to acheive a specific outcome or answer a specific question. An example how-to-guide could be a guide on how to install a specific software on a specific operating system.</li>
+<li><strong>References</strong>: References offer technical descriptions of the machinery and how to operate it. References have one job only: to describe. They are code-determined, because ultimately that’s what they describe: key classes, functions, APIs, and so they should list things like functions, fields, attributes and methods, and set out how to use them.</li>
+<li><strong>Explanation</strong>: Discussions! The aims of explanations are to clarify and illuminate a particular topic by broadening the documentation’s coverage of a topic.</li>
+</ul>
+</details>
+<h3 id="tips-for-great-documentation">Tips for Great Documentation<a class="headerlink" href="#tips-for-great-documentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 10c-.24 0-.45.09-.59.25-.14.15-.2.37-.17.61l.5 2.99C2.82 14.5 3.4 15 4 15h3c.64 0 1.36-.56 1.5-1.18l1.06-3.19c.04-.13.01-.32-.06-.44-.11-.12-.28-.19-.5-.19zm4 7H4C2.38 17 .96 15.74.76 14.14l-.5-2.99C.15 10.3.39 9.5.91 8.92S2.19 8 3 8h6c.83 0 1.58.35 2.06.96.11.15.21.31.29.49.43-.09.87-.09 1.29 0 .08-.18.18-.34.3-.49C13.41 8.35 14.16 8 15 8h6c.81 0 1.57.34 2.09.92.51.58.75 1.38.65 2.19l-.51 3.07C23.04 15.74 21.61 17 20 17h-3c-1.56 0-3.08-1.19-3.46-2.7l-.9-2.71c-.38-.28-.91-.28-1.29 0l-.92 2.78C10.07 15.82 8.56 17 7 17m8-7c-.22 0-.39.07-.5.19-.08.12-.1.31-.05.51l1.01 3.05c.18.69.9 1.25 1.54 1.25h3c.59 0 1.18-.5 1.25-1.11l.51-3.07c.03-.2-.03-.42-.17-.57A.77.77 0 0 0 21 10z"/></svg></span> Clarity</strong>: Documentation should be easy to understand with clear language and no ambiguity.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13"/></svg></span> Completeness</strong>: It must cover all essential details, leaving nothing crucial undocumented.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M448 256a192 192 0 1 0-384 0 192 192 0 1 0 384 0M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0m256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160m0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288m-32 144a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg></span> Accuracy</strong>: Information should be up-to-date and correct to prevent errors and misunderstandings.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.996 0-5.11 2.878L12 5.76l5.115-2.878ZM6.032 3.36.918 6.237 6.036 9.12l5.115-2.879Zm11.929 0-5.112 2.878 5.115 2.882 5.118-2.879zM12 11.52.918 17.76 12 24l11.082-6.241Z"/></svg></span> Organization</strong>: A logical structure and clear organization make it easy to navigate and find information.</li>
+<li><strong><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 432c22.1 0 40 17.9 40 40s-17.9 40-40 40-40-17.9-40-40 17.9-40 40-40M64 0c26.5 0 48 21.5 48 48v1.7l-16 304c-.9 17-15 30.3-32 30.3s-31-13.3-32-30.3l-16-304V48C16 21.5 37.5 0 64 0"/></svg></span> Relevance</strong>: Documentation should focus on what's pertinent to its intended audience or purpose, avoiding unnecessary information.</li>
+</ul>
+<h3 id="public-repositories-for-documentation">Public Repositories for Documentation<a class="headerlink" href="#public-repositories-for-documentation" title="Permanent link">&para;</a></h3>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Readme</em></summary>
+<ul>
+<li>On Github, good documentation starts with a robust ReadMe file. The ReadMe file is the first thing that people see when they visit your repository. It is a good place to explain what your project does, how to use it, and how to contribute to it. Here is an <a href="https://github.com/jeffgillan/geospatial_pipeline">example</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Wiki</em></summary>
+<ul>
+<li>Also on Github, you can use the Wiki feature to create a separate space for documentation. The Wiki is a place to document your project in a way that is separate from the code. Here is an <a href="https://github.com/ua-datalab/Geospatial_Workshops/wiki">example</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Pages</em></summary>
+<ul>
+<li><a href="https://pages.github.com/">Github Pages</a> are hosted directly from your GitHub repository</li>
+<li>GitHub pages are free, fast, and easy to build, but limited in use
+of subdomain or URLs</li>
+<li>You can pull templates from other GitHub users for your website, e.g. <a href="http://themes.jekyllrc.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.073 24q-.523 0-1.02-.189a2.85 2.85 0 0 1-1.726-3.402l-.015-.006.09-.226L12.399 2.01c.105-.27.057-.91.006-1.267a.5.5 0 0 1 .008-.24l.008-.023.006-.015V.458l.009-.019c.108-.292.45-.439 1.008-.439.673 0 1.602.21 2.551.573.797.307 1.523.689 2.033 1.075.602.45.842.854.707 1.2l-.031.045-.016.015a.8.8 0 0 1-.15.165c-.314.271-.764.735-.84.945l-7.063 18.421-.016-.006a2.87 2.87 0 0 1-2.543 1.561H8.07zm-2.187-3.718-.02.05A2.36 2.36 0 0 0 7.23 23.35q.407.156.837.154c.971 0 1.83-.585 2.188-1.5l.027-.061 6.959-18.09c.146-.39.84-1.02.979-1.14l.016-.016c.012-.015.02-.015.02-.03 0-.06-.061-.27-.557-.645-.479-.36-1.154-.72-1.904-1.005-.868-.328-1.768-.539-2.368-.539-.39 0-.524.082-.545.126v.04c.016.104.147 1.035-.034 1.515l-6.962 18.12zm8.95-11.507s-.964 1.109-1.843 1.509c-.88.398-1.529.293-2.32.756-.789.461-1.188 1.103-1.188 1.103L6.27 20.505c-.348.944.168 2.05 1.125 2.42.96.369 2.04-.12 2.412-1.056zM9.905 18.76c.104-.041.225 0 .266.105.042.104 0 .222-.105.264-.104.043-.225 0-.266-.104a.204.204 0 0 1 .105-.265m-1.014-1.802a.297.297 0 0 1-.397-.155.296.296 0 0 1 .154-.397c.154-.07.335 0 .398.153.074.15.008.314-.155.39zm.286-1.096a.58.58 0 0 1 .287-.758.574.574 0 0 1 .75.285.583.583 0 0 1-.285.757c-.3.126-.629 0-.765-.285zm2.426-2.258a.295.295 0 0 1 .398.15c.07.154 0 .336-.153.399a.297.297 0 0 1-.399-.155.293.293 0 0 1 .154-.397zm-1.293-1.379c.105-.042.226 0 .266.105.043.104 0 .226-.104.266-.104.042-.226 0-.265-.104a.205.205 0 0 1 .103-.267M13.681 1.14c.1-.261.993-.162 1.995.226.999.384 1.729.909 1.63 1.17-.104.264-.997.164-1.996-.221-1.005-.385-1.734-.91-1.632-1.176z"/></svg></span> Jekyll themes</a></li>
+<li>The FOSS website is rendered using <a href="https://pages.github.com/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> GitHub Pages</a> using <a href="https://www.mkdocs.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> MkDocs</a> and the <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material</a> theme for MkDocs.</li>
+<li>Other popular website generator for GitHub Pages is <a href="https://getbootstrap.com/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663M24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268m-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876"/></svg></span> Bootstrap.js</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.27 19.385H1.73A1.73 1.73 0 0 1 0 17.655V6.345a1.73 1.73 0 0 1 1.73-1.73h20.54A1.73 1.73 0 0 1 24 6.345v11.308a1.73 1.73 0 0 1-1.73 1.731zM5.769 15.923v-4.5l2.308 2.885 2.307-2.885v4.5h2.308V8.078h-2.308l-2.307 2.885-2.308-2.885H3.46v7.847zM21.232 12h-2.309V8.077h-2.307V12h-2.308l3.461 4.039z"/></svg></span> Material MkDocs</em></summary>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material Design</a> theme for MkDocs, a static site generator geared towards (technical) project documentation.</li>
+<li>Publish via GitHub Actions</li>
+<li>Uses open source Material or ReadTheDocs Themes</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.732 0a59 59 0 0 0-4.977.218V24a63 63 0 0 1 3.619-.687q.255-.041.509-.078.323-.05.644-.096l.205-.03zm1.18.003V22.96a61 61 0 0 1 12.333-.213V1.485A61 61 0 0 0 8.912.003m1.707 1.81h.015c3.06.088 6.125.404 9.167.95a.59.59 0 0 1 .476.686.59.59 0 0 1-.569.484.6.6 0 0 1-.116-.009 60.6 60.6 0 0 0-8.992-.931.59.59 0 0 1-.573-.607.59.59 0 0 1 .592-.572zm-4.212.028a.59.59 0 0 1 .578.565.59.59 0 0 1-.564.614 60 60 0 0 0-2.355.144l-.04.002a.59.59 0 0 1-.595-.542.59.59 0 0 1 .54-.635q1.2-.097 2.401-.148zm4.202 2.834h.015a61.6 61.6 0 0 1 9.167.8.59.59 0 0 1 .488.677.59.59 0 0 1-.602.494 1 1 0 0 1-.076-.006 60.4 60.4 0 0 0-8.99-.786.59.59 0 0 1-.584-.596.59.59 0 0 1 .582-.583m-4.211.097a.59.59 0 0 1 .587.555.59.59 0 0 1-.554.622q-1.18.069-2.356.184l-.04.003a.59.59 0 0 1-.603-.533.59.59 0 0 1 .53-.644q1.2-.117 2.4-.187zM10.6 7.535h.015c3.06-.013 6.125.204 9.167.65a.59.59 0 0 1 .498.67.59.59 0 0 1-.593.504 1 1 0 0 1-.076-.006 60 60 0 0 0-8.992-.638.59.59 0 0 1-.592-.588.59.59 0 0 1 .573-.592m1.153 2.846a61 61 0 0 1 8.02.515.59.59 0 0 1 .509.66.59.59 0 0 1-.586.514 1 1 0 0 1-.076-.005 60 60 0 0 0-8.99-.492.59.59 0 0 1-.603-.577.59.59 0 0 1 .578-.603q.573-.012 1.148-.012m1.139 2.832a61 61 0 0 1 6.871.394.59.59 0 0 1 .52.652.59.59 0 0 1-.577.523 1 1 0 0 1-.076-.004 60 60 0 0 0-8.991-.344.59.59 0 0 1-.61-.568.59.59 0 0 1 .567-.611q1.147-.042 2.296-.042"/></svg></span> ReadTheDocs</em></summary>
+<ul>
+<li>publishing websites via
+<a href="https://readthedocs.com/dashboard/" target="_blank">ReadTheDocs.com</a> costs money.</li>
+<li>You can work in an offline state, where you develop the materials
+and publish them to your localhost using
+<a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html" target="_blank">Sphinx</a></li>
+<li>You can work on a website template in a GitHub repository, and
+pushes are updated in near real time using ReadTheDocs.com.</li>
+<li>Here is example documentation of Pytorch using ReadTheDocs: <a href="https://pytorch.org/docs/stable/index.html" target="_blank">PyTorch</a>.</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg></span> Bookdown</em></summary>
+<ul>
+<li><a href="https://bookdown.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19c0 1.1.3 2.12.81 3H6c-1.11 0-2-.89-2-2V4a2 2 0 0 1 2-2h1v7l2.5-1.5L12 9V2h6a2 2 0 0 1 2 2v9.09c-.33-.05-.66-.09-1-.09-3.31 0-6 2.69-6 6m7 1v-4h-2v4h-2l3 3 3-3z"/></svg></span> Bookdown</a> is an open-source R package that facilitates writing books and long-form articles/reports with R Markdown.</li>
+<li>Bookdown websites can be hosted by <a href="https://www.rstudio.com/products/connect/" target="_blank">RStudio
+Connect</a></li>
+<li>You can publish a Bookdown website using <a href="https://github.blog/2016-08-17-simpler-github-pages-publishing/" target="_blank">Github
+Pages</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.746c-6.627 0-12 3.599-12 8.037 0 3.897 4.144 7.144 9.64 7.88V16.26c-2.924-.915-4.925-2.755-4.925-4.877 0-3.035 4.084-5.494 9.12-5.494 5.038 0 8.757 1.683 8.757 5.494 0 1.976-.999 3.379-2.662 4.272.09.066.174.128.258.216.169.149.25.363.372.544 2.128-1.45 3.44-3.437 3.44-5.631 0-4.44-5.373-8.038-12-8.038m-2.111 4.99v13.516l4.093-.002-.002-5.291h1.1c.225 0 .321.066.549.25.272.22.715.982.715.982l2.164 4.063 4.627-.002-2.864-4.826s-.086-.193-.265-.383a2.2 2.2 0 0 0-.582-.416c-.422-.214-1.149-.434-1.149-.434s3.578-.264 3.578-3.826-3.744-3.63-3.744-3.63zm4.127 2.93 2.478.002s1.149-.062 1.149 1.127c0 1.165-1.149 1.17-1.149 1.17h-2.478zm1.754 6.119c-.494.049-1.012.079-1.54.088v1.807a17 17 0 0 0 2.37-.473l-.471-.891s-.108-.183-.248-.394c-.039-.054-.08-.098-.111-.137"/></svg></span> Quarto</em></summary>
+<ul>
+<li><a href="https://quarto.org/" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.746c-6.627 0-12 3.599-12 8.037 0 3.897 4.144 7.144 9.64 7.88V16.26c-2.924-.915-4.925-2.755-4.925-4.877 0-3.035 4.084-5.494 9.12-5.494 5.038 0 8.757 1.683 8.757 5.494 0 1.976-.999 3.379-2.662 4.272.09.066.174.128.258.216.169.149.25.363.372.544 2.128-1.45 3.44-3.437 3.44-5.631 0-4.44-5.373-8.038-12-8.038m-2.111 4.99v13.516l4.093-.002-.002-5.291h1.1c.225 0 .321.066.549.25.272.22.715.982.715.982l2.164 4.063 4.627-.002-2.864-4.826s-.086-.193-.265-.383a2.2 2.2 0 0 0-.582-.416c-.422-.214-1.149-.434-1.149-.434s3.578-.264 3.578-3.826-3.744-3.63-3.744-3.63zm4.127 2.93 2.478.002s1.149-.062 1.149 1.127c0 1.165-1.149 1.17-1.149 1.17h-2.478zm1.754 6.119c-.494.049-1.012.079-1.54.088v1.807a17 17 0 0 0 2.37-.473l-.471-.891s-.108-.183-.248-.394c-.039-.054-.08-.098-.111-.137"/></svg></span> Quarto</a> is an open-source scientific and technical publishing system built on Pandoc</li>
+<li><a href="https://quarto.org/docs/websites/">Build a website</a> using Quarto's template builder</li>
+<li><a href="https://quarto.org/docs/publishing/github-pages.html">Build with Github Pages</a></li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.157 22.201A1.784 1.799 0 0 1 5.374 24a1.784 1.799 0 0 1-1.784-1.799 1.784 1.799 0 0 1 1.784-1.799 1.784 1.799 0 0 1 1.783 1.799M20.582 1.427a1.415 1.427 0 0 1-1.415 1.428 1.415 1.427 0 0 1-1.416-1.428A1.415 1.427 0 0 1 19.167 0a1.415 1.427 0 0 1 1.415 1.427M4.992 3.336A1.047 1.056 0 0 1 3.946 4.39a1.047 1.056 0 0 1-1.047-1.055A1.047 1.056 0 0 1 3.946 2.28a1.047 1.056 0 0 1 1.046 1.056m7.336 1.517c3.769 0 7.06 1.38 8.768 3.424a9.36 9.36 0 0 0-3.393-4.547 9.24 9.24 0 0 0-5.377-1.728A9.24 9.24 0 0 0 6.95 3.73a9.36 9.36 0 0 0-3.394 4.547c1.713-2.04 5.004-3.424 8.772-3.424m.001 13.295c-3.768 0-7.06-1.381-8.768-3.425a9.36 9.36 0 0 0 3.394 4.547A9.24 9.24 0 0 0 12.33 21a9.24 9.24 0 0 0 5.377-1.729 9.36 9.36 0 0 0 3.393-4.547c-1.712 2.044-5.003 3.425-8.772 3.425Z"/></svg></span> JupyterBook</em></summary>
+<ul>
+<li><a href="https://jupyterbook.org/en/stable/start/overview.html" target="_blank">Based on Project Jupyter</a> <code>ipynb</code> and MarkDown</li>
+<li>Uses <code>conda</code> package management</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 0 1 2.327 2.341l2.658 2.66a1.838 1.838 0 0 1 1.9 3.039 1.837 1.837 0 0 1-2.6 0 1.85 1.85 0 0 1-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348a1.85 1.85 0 0 1 0 2.6 1.844 1.844 0 0 1-2.609 0 1.834 1.834 0 0 1 0-2.598c.182-.18.387-.316.605-.406V8.835a1.834 1.834 0 0 1-.996-2.41L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477a1.545 1.545 0 0 0 2.186 0l10.43-10.43a1.544 1.544 0 0 0 0-2.187"/></svg></span> GitBook</em></summary>
+<ul>
+<li><a href="https://docs.gitbook.com/" target="_blank">GitBook</a> websites use MarkDown syntax</li>
+<li>Free for open source projects, paid plans are available</li>
+</ul>
+</details>
+<details>
+<summary><em><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 600 600 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257M23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26 66 66 0 0 1-.734 1.225c-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04"/></svg></span> Confluence Wikis</em></summary>
+<ul>
+<li><a href="https://www.atlassian.com/software/confluence/use-cases/wiki" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.87 18.257c-.248.382-.53.875-.763 1.245a.764.764 0 0 0 .255 1.04l4.965 3.054a.764.764 0 0 0 1.058-.26c.199-.332.454-.763.733-1.221 1.967-3.247 3.945-2.853 7.508-1.146l4.957 2.337a.764.764 0 0 0 1.028-.382l2.364-5.346a.764.764 0 0 0-.382-1 600 600 0 0 1-4.965-2.361C10.911 10.97 5.224 11.185.87 18.257M23.131 5.743c.249-.405.531-.875.764-1.25a.764.764 0 0 0-.256-1.034L18.675.404a.764.764 0 0 0-1.058.26 66 66 0 0 1-.734 1.225c-1.966 3.246-3.945 2.85-7.508 1.146L4.437.694a.764.764 0 0 0-1.027.382L1.046 6.422a.764.764 0 0 0 .382 1c1.039.49 3.105 1.467 4.965 2.361 6.698 3.246 12.392 3.029 16.738-4.04"/></svg></span> Confluence Wikis</a> are another tool for documenting your work. You can see an example from <a href="https://wiki.cyverse.org" target="_blank">Cyverse</a>.</li>
+</ul>
+</details>
+<p><br></p>
+<div class="admonition quote">
+<p class="admonition-title">Things to remember about Documentation</p>
+<ul>
+<li>
+<p>Documentation should be written in such a way that people who did not write the documentation can read and then use or read and then teach others in the applications of the material.</p>
+</li>
+<li>
+<p>Documentation is best treated as a living document, but version control is necessary to maintain it</p>
+</li>
+<li>
+<p>Technology changes over time, expect to refresh documentation every 3-5 years as your projects age and progress.</p>
+</li>
+</ul>
+</div>
+<p><br></p>
+<hr />
+<h2 id="self-assessment">Self Assessment<a class="headerlink" href="#self-assessment" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>What is a Data Management Plan?</summary>
+<p><strong>Important</strong>: A data management plan (DMP) is now required aspect of publicly funded research.</p>
+<p>DMPs are short, formal, documents outlining what types of data will be used, and what will be done with the data both during and after a research project concludes.</p>
+</details>
+<details class="question">
+<summary>True or False: When science project funding ends, the data should end with it</summary>
+<p><strong>False</strong></p>
+<p>Data live on after a project ends.</p>
+<p>Ensuring that data have a full lifecycle where they can be (re)hosted and made available after a project ends is critical to open science and reproducible research</p>
+<details class="danger">
+<summary>... or maybe?</summary>
+<p>Sometimes destroying data is part of the life cycle of data - this may be required if data are sensitive and could be used unethically in the future, beyond the control of the original investigator team. </p>
+</details>
+</details>
+<details class="question">
+<summary>True or False: FAIR and CARE data principles are the same</summary>
+<p><strong>False</strong></p>
+<p>The CARE principles were created in order to help guide and answer when and how applying FAIR data principles to soverign indigenous-controlled data should be done and when it should not. </p>
+</details>
+<details class="question">
+<summary>(&frac12;) Your project has been greenlit and you require to create a GitHub repository for your work; What you are working on is likely going to be used by others in your field, thus you want to use a licence that allow for others to access your work and make changes where needed. Which licence do you choose?</summary>
+<p><strong>MIT License</strong></p>
+<p>A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.</p>
+<details class="question">
+<summary>(2/2) You approach your PI with the idea, and they're not happy with the choice. They are pushing to keep the attribution to your lab; Which license type would be useful in this situation?</summary>
+<p><strong>CC By</strong></p>
+<p>Rights are not waived, attribution is required.</p>
+</details>
+</details>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2025-12-09
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 CyVerse
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cyverse-learning-material/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/cyverseorg" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/cyverse.org" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://harbor.cyverse.org/" target="_blank" rel="noopener" title="harbor.cyverse.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/CyverseOrgProject" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../chatbot_widget.js"></script>
+      
+    
+  </body>
+</html>
